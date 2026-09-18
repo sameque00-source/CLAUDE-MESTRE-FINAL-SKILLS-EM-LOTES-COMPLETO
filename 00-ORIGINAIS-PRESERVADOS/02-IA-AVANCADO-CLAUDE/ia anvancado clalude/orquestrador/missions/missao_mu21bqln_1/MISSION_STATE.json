@@ -1,0 +1,197 @@
+{
+  "id": "missao_mu21bqln_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:10:39.850Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:10:39.851Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (4 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:10:39.858Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:10:39.858Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21bqlt_2",
+      "descricao": "Localizar o arquivo README.md na raiz do projeto e garantir que ele seja legível.",
+      "tipo": "operacao",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo README.md encontrado e aberto sem erros de leitura."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Localizar o arquivo README.md na raiz do projeto e garantir que ele seja legível.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo README.md encontrado e aberto sem erros de leitura."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:39.857Z",
+      "atualizadaEm": "2026-09-15T02:10:39.857Z"
+    },
+    {
+      "id": "tarefa_mu21bqlt_3",
+      "descricao": "Substituir todas as ocorrências da string \"aplicacao\" por \"aplicação\" no README.md, preservando a codificação UTF-8.",
+      "tipo": "operacao",
+      "dependeDe": [
+        "tarefa_mu21bqlt_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo salvo contendo \"aplicação\" no lugar de \"aplicacao\" em todas as ocorrências."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Substituir todas as ocorrências da string \"aplicacao\" por \"aplicação\" no README.md, preservando a codificação UTF-8.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo salvo contendo \"aplicação\" no lugar de \"aplicacao\" em todas as ocorrências."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:39.857Z",
+      "atualizadaEm": "2026-09-15T02:10:39.857Z"
+    },
+    {
+      "id": "tarefa_mu21bqlt_4",
+      "descricao": "Verificar a alteração comparando o conteúdo antigo e o novo (diff) para assegurar que apenas a substituição esperada foi feita.",
+      "tipo": "verificacao",
+      "dependeDe": [
+        "tarefa_mu21bqlt_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Diff mostra que somente \"aplicacao\" foi trocado por \"aplicação\" e nenhum outro trecho foi modificado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Verificar a alteração comparando o conteúdo antigo e o novo (diff) para assegurar que apenas a substituição esperada foi feita.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diff mostra que somente \"aplicacao\" foi trocado por \"aplicação\" e nenhum outro trecho foi modificado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:39.857Z",
+      "atualizadaEm": "2026-09-15T02:10:39.857Z"
+    },
+    {
+      "id": "tarefa_mu21bqlt_5",
+      "descricao": "Se o projeto estiver versionado com Git, criar um commit descrevendo a correção ortográfica.",
+      "tipo": "operacao",
+      "dependeDe": [
+        "tarefa_mu21bqlt_4"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Commit criado com mensagem clara (e.g., \"Corrige ortografia de 'aplicacao' para 'aplicação' no README.md\")."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Se o projeto estiver versionado com Git, criar um commit descrevendo a correção ortográfica.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Commit criado com mensagem clara (e.g., \"Corrige ortografia de 'aplicacao' para 'aplicação' no README.md\")."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:39.857Z",
+      "atualizadaEm": "2026-09-15T02:10:39.857Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21bqlt_3",
+      "para": "tarefa_mu21bqlt_2"
+    },
+    {
+      "de": "tarefa_mu21bqlt_4",
+      "para": "tarefa_mu21bqlt_3"
+    },
+    {
+      "de": "tarefa_mu21bqlt_5",
+      "para": "tarefa_mu21bqlt_4"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:10:39.850Z",
+  "atualizadaEm": "2026-09-15T02:10:39.850Z",
+  "modoExecucao": "AUTO"
+}

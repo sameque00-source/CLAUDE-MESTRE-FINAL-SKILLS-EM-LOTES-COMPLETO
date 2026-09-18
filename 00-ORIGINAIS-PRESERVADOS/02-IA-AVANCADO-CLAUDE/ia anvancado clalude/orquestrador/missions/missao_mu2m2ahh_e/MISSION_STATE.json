@@ -1,0 +1,254 @@
+{
+  "id": "missao_mu2m2ahh_e",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:51:10.997Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:51:10.997Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T11:51:10.998Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:51:10.998Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m2ahi_f",
+      "descricao": "Definir a arquitetura da aplicação e biblioteca de IA para análise de imagem",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Stack tecnológica definida (ex: Next.js com API Routes e Google GenAI SDK)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura da aplicação e biblioteca de IA para análise de imagem",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Stack tecnológica definida (ex: Next.js com API Routes e Google GenAI SDK)"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:10.998Z",
+      "atualizadaEm": "2026-09-15T11:51:10.998Z"
+    },
+    {
+      "id": "tarefa_mu2m2ahi_g",
+      "descricao": "Implementar a interface de usuário (frontend) para upload e exibição da descrição",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2m2ahi_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Tela funcional com input de arquivo de imagem, botão de envio e área de texto para exibição do resultado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a interface de usuário (frontend) para upload e exibição da descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tela funcional com input de arquivo de imagem, botão de envio e área de texto para exibição do resultado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:10.998Z",
+      "atualizadaEm": "2026-09-15T11:51:10.998Z"
+    },
+    {
+      "id": "tarefa_mu2m2ahi_h",
+      "descricao": "Implementar o serviço de backend/API que recebe a imagem e chama o modelo multimodal",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2m2ahi_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint funcional que processa a imagem enviada, envia ao modelo de IA com prompt adequado e retorna o texto descritivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o serviço de backend/API que recebe a imagem e chama o modelo multimodal",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint funcional que processa a imagem enviada, envia ao modelo de IA com prompt adequado e retorna o texto descritivo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:10.998Z",
+      "atualizadaEm": "2026-09-15T11:51:10.998Z"
+    },
+    {
+      "id": "tarefa_mu2m2ahi_i",
+      "descricao": "Integrar frontend e backend, realizar testes end-to-end e validar o fluxo completo",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2m2ahi_g",
+        "tarefa_mu2m2ahi_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Fluxo de ponta a ponta validado: upload de foto de produto gera descrição coerente na tela sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Integrar frontend e backend, realizar testes end-to-end e validar o fluxo completo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Fluxo de ponta a ponta validado: upload de foto de produto gera descrição coerente na tela sem erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:10.998Z",
+      "atualizadaEm": "2026-09-15T11:51:10.998Z"
+    },
+    {
+      "id": "tarefa_mu2m2ahi_j",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2m2ahi_g",
+        "tarefa_mu2m2ahi_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:10.998Z",
+      "atualizadaEm": "2026-09-15T11:51:10.998Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2m2ahi_g",
+      "para": "tarefa_mu2m2ahi_f"
+    },
+    {
+      "de": "tarefa_mu2m2ahi_h",
+      "para": "tarefa_mu2m2ahi_f"
+    },
+    {
+      "de": "tarefa_mu2m2ahi_i",
+      "para": "tarefa_mu2m2ahi_g"
+    },
+    {
+      "de": "tarefa_mu2m2ahi_i",
+      "para": "tarefa_mu2m2ahi_h"
+    },
+    {
+      "de": "tarefa_mu2m2ahi_j",
+      "para": "tarefa_mu2m2ahi_g"
+    },
+    {
+      "de": "tarefa_mu2m2ahi_j",
+      "para": "tarefa_mu2m2ahi_h"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:51:10.997Z",
+  "atualizadaEm": "2026-09-15T11:51:10.997Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface simples para upload de imagem",
+    "Integração com API de visão computacional/LLM (ex: Google Gemini ou OpenAI GPT-4o)",
+    "Exibição da descrição gerada de forma clara"
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação",
+    "Instruções básicas de configuração e execução"
+  ],
+  "criteriosSucesso": [
+    "Aplicação roda localmente, aceita upload de foto de produto e exibe descrição gerada com sucesso."
+  ]
+}

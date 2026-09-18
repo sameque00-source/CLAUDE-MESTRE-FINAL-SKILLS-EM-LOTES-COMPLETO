@@ -1,0 +1,120 @@
+{
+  "id": "missao_mu21jcog_o",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:16:35.056Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:16:35.056Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T02:16:35.058Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:16:35.058Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21jcoi_p",
+      "descricao": "Pesquisar e selecionar a melhor API de visão (VL Model) para geração de descrições de produtos, comparando latência, custo e qualidade em português.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo com escolha final justificada.",
+        "Identificação da estrutura de dados (request/response) do fornecedor escolhido."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário validar o estado da arte de APIs de visão (ex: GPT-4V, Claude, Llama 3.2 Vision) e seus limites de uso gratuito/pago para definir a arquitetura de custo.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e selecionar a melhor API de visão (VL Model) para geração de descrições de produtos, comparando latência, custo e qualidade em português.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo com escolha final justificada."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:35.057Z",
+      "atualizadaEm": "2026-09-15T02:16:35.057Z"
+    },
+    {
+      "id": "tarefa_mu21jcoi_q",
+      "descricao": "Definir a arquitetura da aplicação (stack de front/back, estrutura de diretórios, gestão de estado de upload).",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Diagrama de blocos simples.",
+        "Escolha definida: Next.js (Front+API) para simplicidade de deployment local.",
+        "Estrutura de pastas do projeto criada."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura da aplicação (stack de front/back, estrutura de diretórios, gestão de estado de upload).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de blocos simples."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:35.058Z",
+      "atualizadaEm": "2026-09-15T02:16:35.058Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:16:35.056Z",
+  "atualizadaEm": "2026-09-15T02:16:35.056Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

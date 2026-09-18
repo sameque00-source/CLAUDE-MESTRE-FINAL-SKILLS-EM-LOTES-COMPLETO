@@ -1,0 +1,1232 @@
+{
+  "solucao_mu2pz0uq_2": {
+    "id": "solucao_mu2pz0uq_2",
+    "tipo": "solucao",
+    "conteudo": "erro-teste-fase78-1789479637008: adicionar guard de undefined antes do acesso",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789479637008: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2pz0uo_1"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789479637010,
+    "atualizadoEm": 1789479637010,
+    "expiraEm": 1821015637010,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2pzd3m_b": {
+    "id": "solucao_mu2pzd3m_b",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 2) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node -e \"const c=require('./contador'); c.increment(); c.increment(); if(c.getCount()!==2) throw new Error('fail'); console.log('ok')\" ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2pzd3l_a"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2pz95u_5",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789479652882,
+    "atualizadoEm": 1789479652882,
+    "expiraEm": 1821015652882,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q0b9f_2": {
+    "id": "solucao_mu2q0b9f_2",
+    "tipo": "solucao",
+    "conteudo": "erro-teste-fase78-1789479697153: adicionar guard de undefined antes do acesso",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789479697153: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2q0b9e_1"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789479697155,
+    "atualizadoEm": 1789479697155,
+    "expiraEm": 1821015697155,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q0muy_8": {
+    "id": "solucao_mu2q0muy_8",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 3) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"calculadora.js\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Tarefa concluída. O arquivo calculadora.js já existia e continha o bug identificado. A operação de leitura foi validamente executad",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2q0mux_7"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q0ek4_1",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789479712186,
+    "atualizadoEm": 1789479712186,
+    "expiraEm": 1821015712186,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q1ssj_2": {
+    "id": "solucao_mu2q1ssj_2",
+    "tipo": "solucao",
+    "conteudo": "erro-teste-fase78-1789479766530: adicionar guard de undefined antes do acesso",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789479766530: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2q1ssi_1"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789479766531,
+    "atualizadoEm": 1789479766531,
+    "expiraEm": 1821015766531,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q229x_8": {
+    "id": "solucao_mu2q229x_8",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 2) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"calculadora.js\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Conteúdo do arquivo calculadora.js lido com sucesso e bug identificado: a função soma utiliza operador de subtração (a - b) em vez",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2q229w_7"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q20eu_1",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789479778821,
+    "atualizadoEm": 1789479778821,
+    "expiraEm": 1821015778821,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q6v8p_m": {
+    "id": "solucao_mu2q6v8p_m",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2q6v8o_l"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q68e5_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480002985,
+    "atualizadoEm": 1789480002985,
+    "expiraEm": 1821016002985,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q74to_r": {
+    "id": "solucao_mu2q74to_r",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2q74tn_q"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q68e5_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480015404,
+    "atualizadoEm": 1789480015404,
+    "expiraEm": 1821016015404,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q7deb_w": {
+    "id": "solucao_mu2q7deb_w",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2q7de9_v"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q68e5_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480026515,
+    "atualizadoEm": 1789480026515,
+    "expiraEm": 1821016026515,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2q9x2s_i": {
+    "id": "solucao_mu2q9x2s_i",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2q9x2q_h"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q8uvv_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480145332,
+    "atualizadoEm": 1789480145332,
+    "expiraEm": 1821016145332,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qa6n8_n": {
+    "id": "solucao_mu2qa6n8_n",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2qa6n7_m"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q8uvv_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480157732,
+    "atualizadoEm": 1789480157732,
+    "expiraEm": 1821016157732,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qadhz_t": {
+    "id": "solucao_mu2qadhz_t",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2qadhy_s"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q8uvv_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480166615,
+    "atualizadoEm": 1789480166615,
+    "expiraEm": 1821016166615,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qbyc1_f": {
+    "id": "solucao_mu2qbyc1_f",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 3) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2qbyc0_e"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qbar5_e",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789480240273,
+    "atualizadoEm": 1789480240273,
+    "expiraEm": 1821016240273,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qd9rx_d": {
+    "id": "solucao_mu2qd9rx_d",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 2) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2qd9rw_c"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qd5j9_e",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789480301757,
+    "atualizadoEm": 1789480301757,
+    "expiraEm": 1821016301757,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qlj0z_e": {
+    "id": "solucao_mu2qlj0z_e",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2qlj0y_d"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ql9ga_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480686995,
+    "atualizadoEm": 1789480686995,
+    "expiraEm": 1821016686995,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qlsme_j": {
+    "id": "solucao_mu2qlsme_j",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2qlsmd_i"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ql9ga_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480699430,
+    "atualizadoEm": 1789480699430,
+    "expiraEm": 1821016699430,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qm0qb_o": {
+    "id": "solucao_mu2qm0qb_o",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 3) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2qm0qa_n"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ql9ga_e",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789480709939,
+    "atualizadoEm": 1789480709939,
+    "expiraEm": 1821016709939,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qo5rv_e": {
+    "id": "solucao_mu2qo5rv_e",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2qo5ru_d"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qnw6y_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480809787,
+    "atualizadoEm": 1789480809787,
+    "expiraEm": 1821016809787,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2qofd6_j": {
+    "id": "solucao_mu2qofd6_j",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2qofd5_i"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qnw6y_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789480822218,
+    "atualizadoEm": 1789480822218,
+    "expiraEm": 1821016822218,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2z0d4i_k": {
+    "id": "solucao_mu2z0d4i_k",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 2) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: timeout apos 20000ms",
+      "categoria": "erro_modelo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2z0d4h_j"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2yzkz5_p",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789494816114,
+    "atualizadoEm": 1789494816114,
+    "expiraEm": 1821030816114,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2z1p6b_2": {
+    "id": "solucao_mu2z1p6b_2",
+    "tipo": "solucao",
+    "conteudo": "erro-teste-fase78-1789494878385: adicionar guard de undefined antes do acesso",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789494878385: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2z1p69_1"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789494878387,
+    "atualizadoEm": 1789494878387,
+    "expiraEm": 1821030878387,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2z5w7d_g": {
+    "id": "solucao_mu2z5w7d_g",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2z5w7c_f"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2z5p49_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495074121,
+    "atualizadoEm": 1789495074121,
+    "expiraEm": 1821031074121,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2z5y0k_l": {
+    "id": "solucao_mu2z5y0k_l",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2z5y0j_k"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2z5p49_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495076468,
+    "atualizadoEm": 1789495076468,
+    "expiraEm": 1821031076468,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2z5y6s_q": {
+    "id": "solucao_mu2z5y6s_q",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2z5y6r_p"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2z5p49_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495076692,
+    "atualizadoEm": 1789495076692,
+    "expiraEm": 1821031076692,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2z7liz_2": {
+    "id": "solucao_mu2z7liz_2",
+    "tipo": "solucao",
+    "conteudo": "erro-teste-fase78-1789495153593: adicionar guard de undefined antes do acesso",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789495153593: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2z7lix_1"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789495153596,
+    "atualizadoEm": 1789495153596,
+    "expiraEm": 1821031153596,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zbe6i_b": {
+    "id": "solucao_mu2zbe6i_b",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: decisor não encontrou candidato: todos os candidatos elegíveis estão em cooldown no momento",
+      "categoria": "erro_codigo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zbe6h_a"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zbcaq_1",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495330698,
+    "atualizadoEm": 1789495330698,
+    "expiraEm": 1821031330698,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zfjzj_g": {
+    "id": "solucao_mu2zfjzj_g",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zfjzh_f"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zf1cp_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495524847,
+    "atualizadoEm": 1789495524847,
+    "expiraEm": 1821031524847,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zfk5r_l": {
+    "id": "solucao_mu2zfk5r_l",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zfk5q_k"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zf1cp_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495525071,
+    "atualizadoEm": 1789495525071,
+    "expiraEm": 1821031525071,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zfkch_q": {
+    "id": "solucao_mu2zfkch_q",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zfkcg_p"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zf1cp_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495525313,
+    "atualizadoEm": 1789495525313,
+    "expiraEm": 1821031525313,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zgvlb_c": {
+    "id": "solucao_mu2zgvlb_c",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "frontend",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo frontend geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zgvl9_b"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zgvco_1",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495586543,
+    "atualizadoEm": 1789495586543,
+    "expiraEm": 1821031586543,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zgvs2_h": {
+    "id": "solucao_mu2zgvs2_h",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "frontend",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo frontend geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zgvs1_g"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zgvco_1",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495586786,
+    "atualizadoEm": 1789495586786,
+    "expiraEm": 1821031586786,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zgvyf_m": {
+    "id": "solucao_mu2zgvyf_m",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "frontend",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo frontend geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zgvyd_l"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zgvco_1",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495587015,
+    "atualizadoEm": 1789495587015,
+    "expiraEm": 1821031587015,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zlh8r_i": {
+    "id": "solucao_mu2zlh8r_i",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node dividir.js 4 2 ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zlh8p_h"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zjfc0_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495801227,
+    "atualizadoEm": 1789495801227,
+    "expiraEm": 1821031801227,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zlztp_p": {
+    "id": "solucao_mu2zlztp_p",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zlzto_o"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zjfc0_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495825309,
+    "atualizadoEm": 1789495825309,
+    "expiraEm": 1821031825309,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zm9ef_u": {
+    "id": "solucao_mu2zm9ef_u",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zm9ee_t"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zjfc0_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789495837719,
+    "atualizadoEm": 1789495837719,
+    "expiraEm": 1821031837719,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2zpz35_e": {
+    "id": "solucao_mu2zpz35_e",
+    "tipo": "solucao",
+    "conteudo": "esgotou 2 tentativa(s), última estratégia: mesma categoria de falha 2x seguidas (erro_ambiente), mensagens diferentes — mudando de estratégia por precaução — categoria não tem correção automática viável após repetição",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node solver.js ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu2zpz34_d"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zo3tz_p",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789496010977,
+    "atualizadoEm": 1789496010977,
+    "expiraEm": 1821032010977,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2ztske_2": {
+    "id": "solucao_mu2ztske_2",
+    "tipo": "solucao",
+    "conteudo": "erro-teste-fase78-1789496189147: adicionar guard de undefined antes do acesso",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789496189147: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2ztskc_1"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789496189150,
+    "atualizadoEm": 1789496189150,
+    "expiraEm": 1821032189150,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu2ztw9t_8": {
+    "id": "solucao_mu2ztw9t_8",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 2) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"-e\", \"const calc = require('./calculadora.js'); console.log('Bug identificado na linha 1: function soma(a, b) { return a - b; }');\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"O arquivo calcu",
+      "categoria": "erro_codigo",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu2ztw9r_7"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ztuiu_1",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789496193953,
+    "atualizadoEm": 1789496193953,
+    "expiraEm": 1821032193953,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu3046x6_l": {
+    "id": "solucao_mu3046x6_l",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node index.js ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu3046x5_k"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu3016tb_e",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789496674314,
+    "atualizadoEm": 1789496674314,
+    "expiraEm": 1821032674314,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu3049j5_q": {
+    "id": "solucao_mu3049j5_q",
+    "tipo": "solucao",
+    "conteudo": "trocou de estratégia e a tentativa seguinte (nº 2) foi validada com sucesso real",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo",
+      "resolveu=true"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node dividir.js ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "resolveu": true,
+      "erroRelacionadoId": "erro_mu3049j4_p"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu3016tb_e",
+    "projetoId": null,
+    "confianca": 0.7,
+    "criadoEm": 1789496677697,
+    "atualizadoEm": 1789496677697,
+    "expiraEm": 1821032677697,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "solucao_mu3089g5_l": {
+    "id": "solucao_mu3089g5_l",
+    "tipo": "solucao",
+    "conteudo": "esgotou 3 tentativa(s), última estratégia: orçamento esgotado: 3/3 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo",
+      "resolveu=false"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1789516800000\"},\"limit_source\":\"openrouter_free_tier_daily\",\"remedy_hi",
+      "categoria": "erro_modelo",
+      "resolveu": false,
+      "erroRelacionadoId": "erro_mu3089g4_k"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu306qgi_p",
+    "projetoId": null,
+    "confianca": 0.3,
+    "criadoEm": 1789496864213,
+    "atualizadoEm": 1789496864213,
+    "expiraEm": 1821032864213,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  }
+}

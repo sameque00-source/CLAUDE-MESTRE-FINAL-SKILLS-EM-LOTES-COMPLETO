@@ -1,0 +1,64 @@
+{
+  "id": "projeto_mu2zgtr3_4",
+  "nome": "Projeto Teste Multimídia",
+  "descricao": "app web + artefato multimídia real, com continuidade entre missões",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zgtr3_4\\workspace",
+  "estado": "ativo",
+  "missoes": [
+    "missao_mu2zgvco_1"
+  ],
+  "artefatos": [
+    {
+      "caminho": "logo.png",
+      "tipo": "image/png",
+      "modalidade": "imagem",
+      "tamanhoBytes": 68,
+      "timestamp": "2026-09-15T18:06:27.022Z",
+      "missaoId": "missao_mu2zgvco_1",
+      "tarefaId": null,
+      "resultado": "criado"
+    }
+  ],
+  "decisoes": [],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto Teste Multimídia\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:24.159Z"
+    },
+    {
+      "tipo": "missao_vinculada",
+      "descricao": "missão missao_mu2zgvco_1 vinculada ao projeto",
+      "missaoId": "missao_mu2zgvco_1",
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:27.020Z"
+    },
+    {
+      "tipo": "artefato",
+      "descricao": "artefato criado: logo.png",
+      "missaoId": "missao_mu2zgvco_1",
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:27.022Z"
+    },
+    {
+      "tipo": "fechamento",
+      "descricao": "projeto encerrado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:27.027Z"
+    },
+    {
+      "tipo": "reabertura",
+      "descricao": "projeto reaberto após fechamento",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:27.028Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:06:24.159Z",
+  "atualizadoEm": "2026-09-15T18:06:27.028Z"
+}

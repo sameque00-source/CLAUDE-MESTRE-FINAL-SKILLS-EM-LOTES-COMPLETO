@@ -1,0 +1,315 @@
+{
+  "id": "missao_mu2jnkb4_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:43:44.656Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:43:44.656Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via ninerouter-imperion-dev (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T10:43:44.660Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:43:44.660Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T10:44:30.870Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T10:44:30.871Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jnkb8_q",
+      "descricao": "Gerar e analisar um exemplo típico de utils.js contendo a função soma(a,b) sem validações para servir de base.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": "openrouter-nemotron-3-super-120b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo utils.js criado com a função original simples.",
+        "Identificação dos potenciais pontos de falha (NaN, undefined, strings)."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Gerar e analisar um exemplo típico de utils.js contendo a função soma(a,b) sem validações para servir de base.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo utils.js criado com a função original simples."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": null,\n  \"comandoTesteArgs\": [],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Não li o conteúdo atual de utils.js, portanto não posso garantir que as modificações estejam alinhadas ao estilo, nomenclatura e densidade de comentá"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:44:30.869Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T10:43:44.660Z",
+      "atualizadaEm": "2026-09-15T10:44:30.871Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Gerar e analisar um exemplo típico de utils.js contendo a função soma(a,b) sem validações para servir de base.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Arquivo utils.js criado com a função original simples.\nSUCCESS_CRITERIA: Arquivo utils.js criado com a função original simples.; Identificação dos potenciais pontos de falha (NaN, undefined, strings).",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2jnkb8_r",
+      "descricao": "Implementar melhorias no arquivo utils.js: adicionar validação de tipos, tratamento de NaN/Undefined e documentação JSDoc.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2jnkb8_q"
+      ],
+      "recursoExclusivo": "utils.js",
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Função atualizada com checks de tipo (typeof, Number.isNaN).",
+        "Lançamento de erros claros para entradas inválidas.",
+        "JSDoc adicionado descrevendo domínio/codominio e exceções."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar melhorias no arquivo utils.js: adicionar validação de tipos, tratamento de NaN/Undefined e documentação JSDoc.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função atualizada com checks de tipo (typeof, Number.isNaN)."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:43:44.660Z",
+      "atualizadaEm": "2026-09-15T10:44:30.871Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jnkb8_q\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2jnkb8_s",
+      "descricao": "Criar script de teste automatizado para validar a função soma nos estados normale e de erro.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2jnkb8_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Testes passam para inputs válidos (inteiros, floats).",
+        "Testes falham corretamente (assim, o exception é capturado) para inputs inválidos (strings, null, arrays)."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar script de teste automatizado para validar a função soma nos estados normale e de erro.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Testes passam para inputs válidos (inteiros, floats)."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:43:44.660Z",
+      "atualizadaEm": "2026-09-15T10:44:30.871Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jnkb8_r\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2jnkb8_t",
+      "descricao": "Revisar o código final e os testes, gerando um relatório de melhorias aplicadas.",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2jnkb8_r",
+        "tarefa_mu2jnkb8_s"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Relatório final gerado listando mudanças.",
+        "Confirmação de que a robustez foi aumentada sem introduzir bugs."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código final e os testes, gerando um relatório de melhorias aplicadas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório final gerado listando mudanças."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:43:44.660Z",
+      "atualizadaEm": "2026-09-15T10:44:30.871Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jnkb8_s\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jnkb8_r",
+      "para": "tarefa_mu2jnkb8_q"
+    },
+    {
+      "de": "tarefa_mu2jnkb8_s",
+      "para": "tarefa_mu2jnkb8_r"
+    },
+    {
+      "de": "tarefa_mu2jnkb8_t",
+      "para": "tarefa_mu2jnkb8_r"
+    },
+    {
+      "de": "tarefa_mu2jnkb8_t",
+      "para": "tarefa_mu2jnkb8_s"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2jnkb8_q",
+      "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node teste.js ENOENT\nstderr: \nstdout:",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:44:28.778Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2jnkb8_q",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: Não li o arquivo utils.js.",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:44:29.799Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2jnkb8_q",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": null,\n  \"comandoTesteArgs\": [],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Não li o conteúdo atual de utils.js, portanto não posso garantir que as modificações estejam alinhadas ao estilo, nomenclatura e densidade de comentá",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:44:30.870Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jnkb8_q",
+        "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node teste.js ENOENT\nstderr: \nstdout:",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:44:28.778Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:44:28.778Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jnkb8_q",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: Não li o arquivo utils.js.",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:44:29.799Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:44:29.799Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jnkb8_q",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": null,\n  \"comandoTesteArgs\": [],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Não li o conteúdo atual de utils.js, portanto não posso garantir que as modificações estejam alinhadas ao estilo, nomenclatura e densidade de comentá",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:44:30.870Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T10:44:30.870Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T10:44:30.871Z"
+  },
+  "criadaEm": "2026-09-15T10:43:44.656Z",
+  "atualizadaEm": "2026-09-15T10:44:30.871Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Implementar validação de entrada (defensiva).",
+    "Tratar casos de erro (NaN, undefined, não numéricos).",
+    "Manter compatibilidade com JS padrão (ES6+).",
+    "Incluir testes unitários para validar os novos comportamentos."
+  ],
+  "entregaveis": [
+    "Análise detalhada do código antigo e identificação de pontos fracos.",
+    "Novo código para a função soma com validações e tratamento de erros.",
+    "Arquivo de teste (utils.test.js) cobrindo casos válidos e inválidos.",
+    "Relatório final sintetizando as melhorias implementadas."
+  ],
+  "criteriosSucesso": [
+    "Todos os testes passam (case válidos e inválidos).",
+    "O código é limpo, comentado e segue boas práticas de JS moderno.",
+    "Erros de tipo são capturados e reportados de forma útil."
+  ]
+}

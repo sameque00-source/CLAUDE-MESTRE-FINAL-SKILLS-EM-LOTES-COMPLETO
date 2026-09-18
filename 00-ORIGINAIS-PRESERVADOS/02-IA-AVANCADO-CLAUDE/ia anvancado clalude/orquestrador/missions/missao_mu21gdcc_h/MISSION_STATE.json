@@ -1,0 +1,83 @@
+{
+  "id": "missao_mu21gdcc_h",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:14:15.948Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:14:15.948Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:14:15.949Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:14:15.949Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21gdcd_i",
+      "descricao": "Escrever o código do script Bash para automação do Git (init, add, commit, remote add e push).",
+      "tipo": "implementacao",
+      "dependeDe": [],
+      "recursoExclusivo": "backup_git.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "O arquivo backup_git.sh foi criado com a lógica completa e permissão de execução."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o código do script Bash para automação do Git (init, add, commit, remote add e push).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo backup_git.sh foi criado com a lógica completa e permissão de execução."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:15.949Z",
+      "atualizadaEm": "2026-09-15T02:14:15.949Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:14:15.948Z",
+  "atualizadaEm": "2026-09-15T02:14:15.948Z",
+  "modoExecucao": "AUTO"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "missao_mu2ywmz6_k",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:50:42.258Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:50:42.258Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T17:50:42.259Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:50:42.259Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ywmz7_l",
+      "descricao": "Pesquisar as melhores APIs atuais de visão computacional/compreensão de contextos (ex: GPT-4o, Llama-3-Vision, CLIP+FLAN-T5) para gerar descrições a partir de imagens, focando em custo x qualidade x latência para MVP.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Definição clara da API a ser utilizada e seus limites de tamanho/tipo de arquivo"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário escolher a API específica com base em benchmarks recentes e disponibilidade de SDKs, o que muda a implementação backend.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar as melhores APIs atuais de visão computacional/compreensão de contextos (ex: GPT-4o, Llama-3-Vision, CLIP+FLAN-T5) para gerar descrições a partir de imagens, focando em custo x qualidade x latência para MVP.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Definição clara da API a ser utilizada e seus limites de tamanho/tipo de arquivo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:42.259Z",
+      "atualizadaEm": "2026-09-15T17:50:42.259Z"
+    },
+    {
+      "id": "tarefa_mu2ywmz7_m",
+      "descricao": "Definir a arquitetura técnica do stack (Stack: Node.js/Express ou Python/FastAPI no backend; React ou Vanilla JS no frontend) baseada na escolha da API de IA e na simplicidade de deploy local.",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2ywmz7_l"
+      ],
+      "recursoExclusivo": "arquitetura.md",
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Diagrama ou descrição textual das camadas: Cliente -> Backend -> API de IA",
+        "Definição dos endpoints REST (ex: POST /analyze)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura técnica do stack (Stack: Node.js/Express ou Python/FastAPI no backend; React ou Vanilla JS no frontend) baseada na escolha da API de IA e na simplicidade de deploy local.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama ou descrição textual das camadas: Cliente -> Backend -> API de IA"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:42.259Z",
+      "atualizadaEm": "2026-09-15T17:50:42.259Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ywmz7_m",
+      "para": "tarefa_mu2ywmz7_l"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:50:42.258Z",
+  "atualizadaEm": "2026-09-15T17:50:42.258Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "arquitetura.md"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

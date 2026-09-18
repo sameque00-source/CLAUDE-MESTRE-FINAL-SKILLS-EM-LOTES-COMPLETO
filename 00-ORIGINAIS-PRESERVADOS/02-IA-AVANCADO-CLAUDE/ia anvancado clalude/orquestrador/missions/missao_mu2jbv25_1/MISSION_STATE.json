@@ -1,0 +1,320 @@
+{
+  "id": "missao_mu2jbv25_1",
+  "objetivo": "Crie um arquivo Node.js chamado soma.js que soma os numeros de um array [3,5,7] e imprime o resultado no console.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:34:38.716Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:34:38.718Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:34:38.724Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:34:38.724Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:34:41.117Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T10:34:41.119Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "Código cumpre os requisitos solicitados, segue boas práticas simples de JavaScript, não apresenta erros de sintaxe ou warnings de lint, e contém apenas o escopo pedido.",
+      "ts": "2026-09-15T10:34:41.120Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jbv2b_2",
+      "descricao": "Escrever o código JavaScript em soma.js que declara o array, calcula a soma e imprime o resultado",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "soma.js",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "arquivo soma.js criado com sintaxe correta",
+        "código inclui array [3,5,7], cálculo da soma e console.log do total"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o código JavaScript em soma.js que declara o array, calcula a soma e imprime o resultado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "arquivo soma.js criado com sintaxe correta"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Cria soma.js que define o array [3,5,7], calcula a soma e exibe o total via console.log.",
+        "arquivos": [
+          "soma.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=groq-gpt-oss-120b",
+          "agente=coding"
+        ],
+        "testes": [
+          {
+            "comando": "node soma.js",
+            "resultado": "passou",
+            "evidencia": "Soma total: 15\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:34:40.150Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:34:38.723Z",
+      "atualizadaEm": "2026-09-15T10:34:40.151Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Escrever o código JavaScript em soma.js que declara o array, calcula a soma e imprime o resultado\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: arquivo soma.js criado com sintaxe correta\nSUCCESS_CRITERIA: arquivo soma.js criado com sintaxe correta; código inclui array [3,5,7], cálculo da soma e console.log do total"
+    },
+    {
+      "id": "tarefa_mu2jbv2b_3",
+      "descricao": "Executar soma.js e validar que a saída no console é 15",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2jbv2b_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "comando `node soma.js` exibe exatamente \"15\" no console"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar soma.js e validar que a saída no console é 15",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "comando `node soma.js` exibe exatamente \"15\" no console"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "teste executado com sucesso (validação real)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "passou",
+            "evidencia": "Soma total: 15\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:34:40.228Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:34:38.723Z",
+      "atualizadaEm": "2026-09-15T10:34:41.117Z"
+    },
+    {
+      "id": "tarefa_mu2jbv2b_4",
+      "descricao": "Revisar o código de soma.js para garantir clareza, estilo e ausência de erros",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2jbv2b_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "código segue boas práticas de JavaScript simples",
+        "não há warnings de lint ou erros de sintaxe"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código de soma.js para garantir clareza, estilo e ausência de erros",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "código segue boas práticas de JavaScript simples"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Código cumpre os requisitos solicitados, segue boas práticas simples de JavaScript, não apresenta erros de sintaxe ou warnings de lint, e contém apenas o escopo pedido.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=true",
+          "agente=reviewer"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:34:41.116Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:34:38.723Z",
+      "atualizadaEm": "2026-09-15T10:34:41.117Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Revisar o código de soma.js para garantir clareza, estilo e ausência de erros\nCONTEXT: - Cria soma.js que define o array [3,5,7], calcula a soma e exibe o total via console.log.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: código segue boas práticas de JavaScript simples\nSUCCESS_CRITERIA: código segue boas práticas de JavaScript simples; não há warnings de lint ou erros de sintaxe"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jbv2b_3",
+      "para": "tarefa_mu2jbv2b_2"
+    },
+    {
+      "de": "tarefa_mu2jbv2b_4",
+      "para": "tarefa_mu2jbv2b_2"
+    }
+  ],
+  "agentes": [
+    "coding",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jbv2b_2",
+      "status": "ok",
+      "resultado": "Cria soma.js que define o array [3,5,7], calcula a soma e exibe o total via console.log.",
+      "arquivos": [
+        "soma.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=groq-gpt-oss-120b",
+        "agente=coding"
+      ],
+      "testes": [
+        {
+          "comando": "node soma.js",
+          "resultado": "passou",
+          "evidencia": "Soma total: 15\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:34:40.150Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jbv2b_3",
+      "status": "ok",
+      "resultado": "teste executado com sucesso (validação real)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [
+        {
+          "comando": "node",
+          "resultado": "passou",
+          "evidencia": "Soma total: 15\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:34:40.228Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jbv2b_4",
+      "status": "ok",
+      "resultado": "Código cumpre os requisitos solicitados, segue boas práticas simples de JavaScript, não apresenta erros de sintaxe ou warnings de lint, e contém apenas o escopo pedido.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=true",
+        "agente=reviewer"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:34:41.116Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: soma.js",
+      "ts": "2026-09-15T10:34:41.119Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "Código cumpre os requisitos solicitados, segue boas práticas simples de JavaScript, não apresenta erros de sintaxe ou warnings de lint, e contém apenas o escopo pedido.",
+    "ts": "2026-09-15T10:34:41.120Z"
+  },
+  "criadaEm": "2026-09-15T10:34:38.716Z",
+  "atualizadaEm": "2026-09-15T10:34:41.120Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Node.js instalado",
+    "arquivo soma.js contendo código JavaScript válido",
+    "cálculo correto da soma (resultado 15)",
+    "impressão do resultado no console"
+  ],
+  "entregaveis": [
+    "arquivo soma.js",
+    "evidência de execução que mostre o output \"15\""
+  ],
+  "criteriosSucesso": [
+    "soma.js existe, pode ser executado com `node soma.js` e imprime exatamente 15 no console"
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "soma.js"
+    ],
+    "tipoExecucao": "unica"
+  }
+}

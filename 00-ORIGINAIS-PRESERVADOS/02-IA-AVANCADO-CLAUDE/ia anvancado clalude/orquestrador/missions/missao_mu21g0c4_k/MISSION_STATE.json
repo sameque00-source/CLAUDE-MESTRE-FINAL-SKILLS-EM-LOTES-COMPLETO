@@ -1,0 +1,125 @@
+{
+  "id": "missao_mu21g0c4_k",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:13:59.092Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:13:59.092Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T02:13:59.093Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:13:59.094Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21g0c5_l",
+      "descricao": "Definir a lógica de verificação de pré-requisitos e sanitização de entrada, incluindo um 'setup' inicial discreto.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Função de verificação confirma presença do binário git",
+        "Função confimira validade do caminho da pasta local",
+        "Função verifica se a chave SSH/credenciais Git estão atingíveis (dry-run)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Definir a lógica de verificação de pré-requisitos e sanitização de entrada, incluindo um 'setup' inicial discreto.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função de verificação confirma presença do binário git"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:59.093Z",
+      "atualizadaEm": "2026-09-15T02:13:59.093Z"
+    },
+    {
+      "id": "tarefa_mu21g0c5_m",
+      "descricao": "Implementar a lógica de clone/fetch e resolução de conflitos de merge.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21g0c5_l"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Clona o repo localmente se a pasta .git não existir",
+        "Executa 'git pull --ff-only' com tratamento de erros para evitar merge conflitos automáticos",
+        "Atualiza a referência local para o estado mais recente do remoto"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a lógica de clone/fetch e resolução de conflitos de merge.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Clona o repo localmente se a pasta .git não existir"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:59.093Z",
+      "atualizadaEm": "2026-09-15T02:13:59.093Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21g0c5_m",
+      "para": "tarefa_mu21g0c5_l"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:13:59.092Z",
+  "atualizadaEm": "2026-09-15T02:13:59.092Z",
+  "modoExecucao": "AUTO"
+}

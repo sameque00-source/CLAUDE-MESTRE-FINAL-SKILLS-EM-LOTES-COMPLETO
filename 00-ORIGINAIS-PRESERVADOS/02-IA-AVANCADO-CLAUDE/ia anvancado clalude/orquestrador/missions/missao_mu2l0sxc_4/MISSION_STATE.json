@@ -1,0 +1,183 @@
+{
+  "id": "missao_mu2l0sxc_4",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:22:01.968Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:22:01.968Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T11:22:01.969Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:22:01.969Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:22:09.072Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l0sxd_5",
+      "descricao": "Pesquisar bibliotecas de manipulação de vídeo de alto desempenho e wrappers para FFmpeg",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de tecnologias avaliadas com prós e contras documentada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a melhor biblioteca para decodificação e edição baseada em C++/Rust com bindings para a aplicação",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas de manipulação de vídeo de alto desempenho e wrappers para FFmpeg",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de tecnologias avaliadas com prós e contras documentada"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas de manipulação de ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:22:09.056Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:22:01.969Z",
+      "atualizadaEm": "2026-09-15T11:22:09.057Z"
+    },
+    {
+      "id": "tarefa_mu2l0ydo_k",
+      "descricao": "Pesquisar e definir arquitetura de fallback no servidor ou alternativa nativa para processamento de vídeo compatível com Safari",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2l0sxd_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Identificar se o processamento será delegado ao backend ou se há alternativa viável ao ffmpeg.wasm",
+        "Documentar a estratégia de fallback para navegadores sem suporte"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e definir arquitetura de fallback no servidor ou alternativa nativa para processamento de vídeo compatível com Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar e definir arquitetura de fallb",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:22:09.072Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:22:09.036Z",
+      "atualizadaEm": "2026-09-15T11:22:09.072Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2l0ydo_k",
+      "para": "tarefa_mu2l0sxd_5"
+    }
+  ],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2l0sxd_5",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas de manipulação de ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:22:09.056Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2l0ydo_k",
+      "status": "ok",
+      "resultado": "mock: Pesquisar e definir arquitetura de fallb",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:22:09.072Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:22:01.968Z",
+  "atualizadaEm": "2026-09-15T11:22:09.072Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A descoberta de suporte limitado para ffmpeg.wasm no navegador Safari exige a expansão da pesquisa para incluir estratégias de fallback no servidor ou alternativas nativas, mantendo a tarefa original mas complementando-a com uma nova análise de arquitetura de fallback.",
+      "ts": "2026-09-15T11:22:09.036Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

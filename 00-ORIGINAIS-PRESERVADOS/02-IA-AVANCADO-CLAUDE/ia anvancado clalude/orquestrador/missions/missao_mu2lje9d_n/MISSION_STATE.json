@@ -1,0 +1,146 @@
+{
+  "id": "missao_mu2lje9d_n",
+  "objetivo": "Missão sintética de recuperação com agente",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:36:29.425Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:36:29.425Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:36:29.426Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:36:29.427Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:36:29.429Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:36:29.433Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T11:36:29.434Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lje9e_o",
+      "descricao": "Em 1 frase: o que é HTTP?",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: o que é HTTP?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Promise based HTTP client for the browser and node.js",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "memoria_reutilizada=true",
+          "confianca=0.83",
+          "agente=research",
+          "axios@1.20.0 (documentação oficial) - https://axios-http.com"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+        ],
+        "ts": "2026-09-15T11:36:29.429Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:36:29.426Z",
+      "atualizadaEm": "2026-09-15T11:36:29.429Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: o que é HTTP?\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lje9e_o",
+      "status": "ok",
+      "resultado": "Promise based HTTP client for the browser and node.js",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "memoria_reutilizada=true",
+        "confianca=0.83",
+        "agente=research",
+        "axios@1.20.0 (documentação oficial) - https://axios-http.com"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+      ],
+      "ts": "2026-09-15T11:36:29.429Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T11:36:29.433Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+    "ts": "2026-09-15T11:36:29.434Z"
+  },
+  "criadaEm": "2026-09-15T11:36:29.425Z",
+  "atualizadaEm": "2026-09-15T11:36:29.434Z",
+  "modoExecucao": "AUTO",
+  "_rodadasRevisaoMissao": 0
+}

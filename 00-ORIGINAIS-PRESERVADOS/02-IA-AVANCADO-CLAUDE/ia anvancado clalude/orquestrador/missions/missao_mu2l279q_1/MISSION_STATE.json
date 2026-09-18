@@ -1,0 +1,243 @@
+{
+  "id": "missao_mu2l279q_1",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:23:07.213Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:23:07.214Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T11:23:07.220Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:23:07.221Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:24:17.657Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l279w_2",
+      "descricao": "Pesquisar bibliotecas de processamento de vídeo (ex: FFmpeg, GStreamer, libav) para determinação da stack técnica do núcleo",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de no mínimo 3 bibliotecas de memória/C (FFmpeg, etc.)",
+        "Recomendação técnica justificada de qual usar"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário identificar a biblioteca mais estável, performática e com licença adequada para processamento de vídeo em desktop.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas de processamento de vídeo (ex: FFmpeg, GStreamer, libav) para determinação da stack técnica do núcleo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de no mínimo 3 bibliotecas de memória/C (FFmpeg, etc.)"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas de processamento d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:24:17.641Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:23:07.220Z",
+      "atualizadaEm": "2026-09-15T11:24:17.641Z"
+    },
+    {
+      "id": "tarefa_mu2l279w_3",
+      "descricao": "Pesquisar frameworks de UI/UX para construção de interface complexa tipo NLE (ex: Electron, Tauri, Qt, WPF) focando em performance canvas/timeline",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Análise de pros/contras de performance de dragging/zooming em timelines",
+        "Definição da stack de front-end (ex: React+Electron vs QtWidgets)"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher entre Web-like (Electron/Tauri) ou nativo (Qt/WPF) impacta drasticamente a experiência e performance do timeline.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar frameworks de UI/UX para construção de interface complexa tipo NLE (ex: Electron, Tauri, Qt, WPF) focando em performance canvas/timeline",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Análise de pros/contras de performance de dragging/zooming em timelines"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar frameworks de UI/UX para const",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:24:17.641Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:23:07.220Z",
+      "atualizadaEm": "2026-09-15T11:24:17.641Z"
+    },
+    {
+      "id": "tarefa_mu2l3plg_a",
+      "descricao": "Investigar arquiteturas de fallback para processamento de vídeo em navegadores com limitações de WASM (como Safari), comparando processamento server-side (Node.js + FFmpeg nativo) vs. soluções nativas locais (Electron/Qt com FFmpeg binário) para definir a estratégia de compatibilidade.",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2l279w_2",
+        "tarefa_mu2l279w_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Documento comparativo entre processamento 100% client-side (WASM) vs. híbrido (backend) vs. nativo local",
+        "Análise de impacto na latência e custo de infraestrutura",
+        "Recomendação técnica final para o framework escolhido"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Investigar arquiteturas de fallback para processamento de vídeo em navegadores com limitações de WASM (como Safari), comparando processamento server-side (Node.js + FFmpeg nativo) vs. soluções nativas locais (Electron/Qt com FFmpeg binário) para definir a estratégia de compatibilidade.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Investigar arquiteturas de fallback para",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:24:17.657Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:24:17.620Z",
+      "atualizadaEm": "2026-09-15T11:24:17.657Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2l3plg_a",
+      "para": "tarefa_mu2l279w_2"
+    },
+    {
+      "de": "tarefa_mu2l3plg_a",
+      "para": "tarefa_mu2l279w_3"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2l279w_2",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas de processamento d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:24:17.641Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2l279w_3",
+      "status": "ok",
+      "resultado": "mock: Pesquisar frameworks de UI/UX para const",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:24:17.641Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2l3plg_a",
+      "status": "ok",
+      "resultado": "mock: Investigar arquiteturas de fallback para",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:24:17.657Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:23:07.213Z",
+  "atualizadaEm": "2026-09-15T11:24:17.657Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A informação sobre a limitação do ffmpeg.wasm no Safari impacta diretamente a arquitetura do núcleo de processamento de vídeo (tarefa_mu2l279w_2) e potencialmente a escolha de framework de UI/UX (tarefa_mu2l279w_3) se a estratégia depender pesado de libs WASM no cliente. As tarefas de pesquisa atuais continuam válidas pois precisam investigar essas alternativas e limitações, não necessitam ser canceladas, mas exigem o acréscimo de uma tarefa específica para investigar as soluções de fallback (servidor ou nativa).",
+      "ts": "2026-09-15T11:24:17.620Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

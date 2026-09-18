@@ -1,0 +1,167 @@
+{
+  "id": "missao_mu2zhlvm_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:07:00.609Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:07:00.610Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T18:07:00.615Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:07:00.616Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2zhlvq_2",
+      "descricao": "Ler e editar o arquivo README.md substituindo 'aplicacao' por 'aplicação'.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo salvo com a substituição efetuada."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Ler e editar o arquivo README.md substituindo 'aplicacao' por 'aplicação'.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo salvo com a substituição efetuada."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:00.614Z",
+      "atualizadaEm": "2026-09-15T18:07:00.614Z"
+    },
+    {
+      "id": "tarefa_mu2zhlvr_3",
+      "descricao": "Validar que a substituição foi feita corretamente sem quebrar a formatação.",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2zhlvq_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Confirmação da ausência de 'aplicacao' e presença de 'aplicação' com formatação íntegra."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar que a substituição foi feita corretamente sem quebrar a formatação.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Confirmação da ausência de 'aplicacao' e presença de 'aplicação' com formatação íntegra."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:00.615Z",
+      "atualizadaEm": "2026-09-15T18:07:00.615Z"
+    },
+    {
+      "id": "tarefa_mu2zhlvs_4",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2zhlvq_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:00.616Z",
+      "atualizadaEm": "2026-09-15T18:07:00.616Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2zhlvr_3",
+      "para": "tarefa_mu2zhlvq_2"
+    },
+    {
+      "de": "tarefa_mu2zhlvs_4",
+      "para": "tarefa_mu2zhlvq_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:07:00.609Z",
+  "atualizadaEm": "2026-09-15T18:07:00.609Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Localizar a string 'aplicacao' no README.md",
+    "Substituir por 'aplicação'",
+    "Preservar formatação Markdown"
+  ],
+  "entregaveis": [
+    "README.md atualizado com a grafia correta"
+  ],
+  "criteriosSucesso": [
+    "A string 'aplicacao' não aparece mais no README.md",
+    "A string 'aplicação' aparece no local correto com acento"
+  ]
+}

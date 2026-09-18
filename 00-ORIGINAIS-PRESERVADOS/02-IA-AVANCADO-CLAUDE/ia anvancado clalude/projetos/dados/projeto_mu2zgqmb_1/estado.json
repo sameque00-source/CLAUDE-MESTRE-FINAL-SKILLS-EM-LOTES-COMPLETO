@@ -1,0 +1,36 @@
+{
+  "id": "projeto_mu2zgqmb_1",
+  "nome": "debug-teste-19-v2",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zgqmb_1\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [
+    {
+      "memoriaId": "decisao_mu2zgqmd_1",
+      "resumo": "teste de integração real v2",
+      "ts": "2026-09-15T18:06:20.102Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"debug-teste-19-v2\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:20.100Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "teste de integração real v2",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:20.102Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:06:20.098Z",
+  "atualizadoEm": "2026-09-15T18:06:20.102Z"
+}

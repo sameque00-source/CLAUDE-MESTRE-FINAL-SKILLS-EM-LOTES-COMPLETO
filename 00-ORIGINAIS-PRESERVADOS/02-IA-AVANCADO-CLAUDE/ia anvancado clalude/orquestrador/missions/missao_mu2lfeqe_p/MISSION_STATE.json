@@ -1,0 +1,268 @@
+{
+  "id": "missao_mu2lfeqe_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:33:23.414Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:33:23.414Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via openrouter-nemotron-3-super-120b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:33:23.420Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:33:23.420Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T11:33:25.458Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:33:25.460Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lfeqj_q",
+      "descricao": "Ler o arquivo utils.js existente e extrair a implementação atual da função soma(a,b).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Relatório de análise contendo a fonte da função soma e observação de falta de validação/tratamento de erro."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Ler o arquivo utils.js existente e extrair a implementação atual da função soma(a,b).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de análise contendo a fonte da função soma e observação de falta de validação/tratamento de erro."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (duckduckgo, npm, wikipedia)"
+        ],
+        "evidencias": [
+          "agente=research",
+          "tentativas=[{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"},{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"}]"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:33:25.458Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:33:23.419Z",
+      "atualizadaEm": "2026-09-15T11:33:25.460Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Ler o arquivo utils.js existente e extrair a implementação atual da função soma(a,b).\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Relatório de análise contendo a fonte da função soma e observação de falta de validação/tratamento de erro.\nSUCCESS_CRITERIA: Relatório de análise contendo a fonte da função soma e observação de falta de validação/tratamento de erro.",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2lfeqj_r",
+      "descricao": "Criar uma versão aprimorada de utils.js que inclua validação de tipos (typeof === 'number'), lançamento de TypeError para valores inválidos, tratamento de NaN e infinito opcional, e adicione comentário JSDoc.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2lfeqj_q"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo utils.js modificado contém: validação de ambos os argumentos, lança TypeError se não for número finito, JSDoc descrevendo parâmetros e retorno.",
+        "A assinatura soma(a,b) permanece inalterada."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Criar uma versão aprimorada de utils.js que inclua validação de tipos (typeof === 'number'), lançamento de TypeError para valores inválidos, tratamento de NaN e infinito opcional, e adicione comentário JSDoc.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo utils.js modificado contém: validação de ambos os argumentos, lança TypeError se não for número finito, JSDoc descrevendo parâmetros e retorno."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:33:23.419Z",
+      "atualizadaEm": "2026-09-15T11:33:25.460Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lfeqj_q\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2lfeqj_s",
+      "descricao": "Revisar as mudanças propostas verificando se atendem aos requisitos de robustez e não quebram compatibilidade.",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2lfeqj_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Checklist de revisão aprovado: validação presente, exceções lançadas para entradas não numéricas, JSDoc existente, nenhum código removido que quebre chamadas existentes."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar as mudanças propostas verificando se atendem aos requisitos de robustez e não quebram compatibilidade.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Checklist de revisão aprovado: validação presente, exceções lançadas para entradas não numéricas, JSDoc existente, nenhum código removido que quebre chamadas existentes."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:33:23.419Z",
+      "atualizadaEm": "2026-09-15T11:33:25.460Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lfeqj_r\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lfeqj_r",
+      "para": "tarefa_mu2lfeqj_q"
+    },
+    {
+      "de": "tarefa_mu2lfeqj_s",
+      "para": "tarefa_mu2lfeqj_r"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2lfeqj_q",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (duckduckgo, npm, wikipedia)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:33:24.277Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2lfeqj_q",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (duckduckgo, npm, wikipedia)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:33:24.858Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2lfeqj_q",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (duckduckgo, npm, wikipedia)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:33:25.458Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lfeqj_q",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (duckduckgo, npm, wikipedia)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:33:24.277Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:33:24.277Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lfeqj_q",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (duckduckgo, npm, wikipedia)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:33:24.858Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:33:24.858Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lfeqj_q",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (duckduckgo, npm, wikipedia)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:33:25.458Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:33:25.458Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:33:25.460Z"
+  },
+  "criadaEm": "2026-09-15T11:33:23.414Z",
+  "atualizadaEm": "2026-09-15T11:33:25.460Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Identificar falta de validação de tipos e tratamento de erros na função soma.",
+    "Propor alterações que adicionem checagem de tipos, lançamento de exceções para argumentos inválidos e documentação (JSDoc).",
+    "Manter compatibilidade com chamadas existentes que já passam números."
+  ],
+  "entregaveis": [
+    "Relatório de análise do código atual (texto).",
+    "Versão melhorada de utils.js (arquivo de código).",
+    "Checklist de revisão que confirme a aplicação das melhorias."
+  ],
+  "criteriosSucesso": [
+    "Relatório de análise produzido e revisado.",
+    "Arquivo utils.js melhorado contém validação de tipos, lança TypeError para argumentos não numéricos e inclui JSDoc.",
+    "Checklist de revisão aprovado sem pendências."
+  ]
+}

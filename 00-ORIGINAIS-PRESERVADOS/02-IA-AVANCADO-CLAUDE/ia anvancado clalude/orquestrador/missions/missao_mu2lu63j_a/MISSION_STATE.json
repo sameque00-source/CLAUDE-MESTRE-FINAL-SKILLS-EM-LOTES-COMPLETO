@@ -1,0 +1,183 @@
+{
+  "id": "missao_mu2lu63j_a",
+  "objetivo": "Missão sintética de paralelismo entre agentes",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:44:52.063Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:44:52.063Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:44:52.064Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:44:52.066Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:44:52.070Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lu63k_b",
+      "descricao": "Em 1 frase: vantagem do PostgreSQL",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do PostgreSQL",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "memoria_reutilizada=true",
+          "confianca=0.71",
+          "agente=research",
+          "Perl (publicação técnica) - https://pt.wikipedia.org/wiki/Perl"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+        ],
+        "ts": "2026-09-15T11:44:52.068Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:44:52.064Z",
+      "atualizadaEm": "2026-09-15T11:44:52.070Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do PostgreSQL\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2lu63l_c",
+      "descricao": "Em 1 frase: vantagem do MongoDB",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do MongoDB",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "memoria_reutilizada=true",
+          "confianca=0.71",
+          "agente=research",
+          "Delphi (software) (publicação técnica) - https://pt.wikipedia.org/wiki/Delphi_(software)"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+        ],
+        "ts": "2026-09-15T11:44:52.069Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:44:52.065Z",
+      "atualizadaEm": "2026-09-15T11:44:52.070Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do MongoDB\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lu63k_b",
+      "status": "ok",
+      "resultado": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "memoria_reutilizada=true",
+        "confianca=0.71",
+        "agente=research",
+        "Perl (publicação técnica) - https://pt.wikipedia.org/wiki/Perl"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+      ],
+      "ts": "2026-09-15T11:44:52.068Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lu63l_c",
+      "status": "ok",
+      "resultado": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "memoria_reutilizada=true",
+        "confianca=0.71",
+        "agente=research",
+        "Delphi (software) (publicação técnica) - https://pt.wikipedia.org/wiki/Delphi_(software)"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+      ],
+      "ts": "2026-09-15T11:44:52.069Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:44:52.063Z",
+  "atualizadaEm": "2026-09-15T11:44:52.070Z",
+  "modoExecucao": "AUTO"
+}

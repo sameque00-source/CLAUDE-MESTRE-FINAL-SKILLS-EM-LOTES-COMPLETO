@@ -1,0 +1,340 @@
+{
+  "id": "missao_mu2q0ek4_1",
+  "objetivo": "Existe um arquivo calculadora.js com uma função soma(a,b) que tem um BUG conhecido: ela está SUBTRAINDO em vez de somar (o código usa \"a - b\" no lugar de \"a + b\"). Leia o arquivo, corrija o bug para que soma(2,3) retorne 5, e valide rodando o arquivo de verdade (node calculadora.js).",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:41:41.427Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:41:41.428Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via ninerouter-imperion-dev (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T13:41:41.433Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:41:41.434Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T13:41:53.543Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T13:41:53.544Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: calculadora.js",
+      "ts": "2026-09-15T13:41:53.545Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q0ek9_2",
+      "descricao": "Ler o conteúdo do arquivo calculadora.js para identificar a implementação atual da função soma.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "calculadora.js",
+      "status": "concluida",
+      "agente": "debugger",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Conteúdo do arquivo lido e visualizado",
+        "Linha específica do bug (a - b) identificada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "debugger",
+      "contexto": {
+        "objetivo": "Ler o conteúdo do arquivo calculadora.js para identificar a implementação atual da função soma.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conteúdo do arquivo lido e visualizado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Causa raiz: operador de subtração '-' utilizado no lugar de adição '+'. Correção: alterado para a + b. Como prevenir: utilizar testes unitários automatizados.",
+        "arquivos": [
+          "calculadora.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 3/3",
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=debugger"
+        ],
+        "testes": [
+          {
+            "comando": "node calculadora.js",
+            "resultado": "passou",
+            "evidencia": "5\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:41:52.188Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:41:41.433Z",
+      "atualizadaEm": "2026-09-15T13:41:52.188Z",
+      "_contrato": "Voce parte de um sintoma e chega na causa raiz.\n\nMETODO\n1. Reproduza. Sem reproducao voce esta adivinhando.\n2. Isole: qual a menor entrada que ainda quebra?\n3. Causa raiz, nao sintoma. Corrigir o sintoma e devolver o bug depois.\n4. Corrija.\n5. Reproduza de novo e mostre que parou de quebrar.\n\nENTREGUE: Causa raiz / Correcao / Como prevenir (uma linha).\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Ler o conteúdo do arquivo calculadora.js para identificar a implementação atual da função soma.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Conteúdo do arquivo lido e visualizado\nSUCCESS_CRITERIA: Conteúdo do arquivo lido e visualizado; Linha específica do bug (a - b) identificada"
+    },
+    {
+      "id": "tarefa_mu2q0ek9_3",
+      "descricao": "Editar o arquivo calculadora.js trocando o operador '-' por '+' na função soma e adicionar um console.log para exibir o resultado de soma(2,3) caso não exista.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2q0ek9_2"
+      ],
+      "recursoExclusivo": "calculadora.js",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Operador de adição presente no código",
+        "Arquivo salvo com sucesso"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Editar o arquivo calculadora.js trocando o operador '-' por '+' na função soma e adicionar um console.log para exibir o resultado de soma(2,3) caso não exista.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Operador de adição presente no código"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "O arquivo calculadora.js já continha o operador '+' e o console.log corretos, portanto foi garantido que o código permaneça com o comportamento esperado.",
+        "arquivos": [
+          "calculadora.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [
+          {
+            "comando": "node calculadora.js",
+            "resultado": "passou",
+            "evidencia": "5\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:41:53.478Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:41:41.433Z",
+      "atualizadaEm": "2026-09-15T13:41:53.479Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Editar o arquivo calculadora.js trocando o operador '-' por '+' na função soma e adicionar um console.log para exibir o resultado de soma(2,3) caso não exista.\nCONTEXT: - Causa raiz: operador de subtração '-' utilizado no lugar de adição '+'. Correção: alterado para a + b. Como prevenir: utilizar testes unitários automatizados.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Operador de adição presente no código\nSUCCESS_CRITERIA: Operador de adição presente no código; Arquivo salvo com sucesso"
+    },
+    {
+      "id": "tarefa_mu2q0ek9_4",
+      "descricao": "Executar o comando 'node calculadora.js' no terminal para validar se a correção funcionou e se o valor retornado é 5.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2q0ek9_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Comando executa sem erros de sintaxe",
+        "Saída do terminal exibe o número 5"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar o comando 'node calculadora.js' no terminal para validar se a correção funcionou e se o valor retornado é 5.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comando executa sem erros de sintaxe"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "teste executado com sucesso (validação real)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "passou",
+            "evidencia": "5\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:41:53.542Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:41:41.433Z",
+      "atualizadaEm": "2026-09-15T13:41:53.542Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2q0ek9_3",
+      "para": "tarefa_mu2q0ek9_2"
+    },
+    {
+      "de": "tarefa_mu2q0ek9_4",
+      "para": "tarefa_mu2q0ek9_3"
+    }
+  ],
+  "agentes": [
+    "debugger",
+    "coding",
+    "testing"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2q0ek9_2",
+      "status": "ok",
+      "resultado": "Causa raiz: operador de subtração '-' utilizado no lugar de adição '+'. Correção: alterado para a + b. Como prevenir: utilizar testes unitários automatizados.",
+      "arquivos": [
+        "calculadora.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 3/3",
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=debugger"
+      ],
+      "testes": [
+        {
+          "comando": "node calculadora.js",
+          "resultado": "passou",
+          "evidencia": "5\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T13:41:52.188Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2q0ek9_3",
+      "status": "ok",
+      "resultado": "O arquivo calculadora.js já continha o operador '+' e o console.log corretos, portanto foi garantido que o código permaneça com o comportamento esperado.",
+      "arquivos": [
+        "calculadora.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [
+        {
+          "comando": "node calculadora.js",
+          "resultado": "passou",
+          "evidencia": "5\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T13:41:53.478Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2q0ek9_4",
+      "status": "ok",
+      "resultado": "teste executado com sucesso (validação real)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [
+        {
+          "comando": "node",
+          "resultado": "passou",
+          "evidencia": "5\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T13:41:53.542Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: calculadora.js",
+      "ts": "2026-09-15T13:41:53.544Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: calculadora.js",
+    "ts": "2026-09-15T13:41:53.545Z"
+  },
+  "criadaEm": "2026-09-15T13:41:41.427Z",
+  "atualizadaEm": "2026-09-15T13:41:53.545Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Localizar a função soma no arquivo calculadora.js",
+    "Substituir o operador de subtração (-) por adição (+) no corpo da função",
+    "Garantir que soma(2,3) retorne 5",
+    "Executar o arquivo com 'node calculadora.js' para validação"
+  ],
+  "entregaveis": [
+    "Arquivo calculadora.js corrigido",
+    "Saída do terminal confirmando que soma(2,3) === 5"
+  ],
+  "criteriosSucesso": [
+    "O comando 'node calculadora.js' executa sem erros",
+    "A função soma(2,3) retorna o valor 5"
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "calculadora.js"
+    ],
+    "tipoExecucao": "unica"
+  },
+  "_rodadasRevisaoMissao": 0
+}

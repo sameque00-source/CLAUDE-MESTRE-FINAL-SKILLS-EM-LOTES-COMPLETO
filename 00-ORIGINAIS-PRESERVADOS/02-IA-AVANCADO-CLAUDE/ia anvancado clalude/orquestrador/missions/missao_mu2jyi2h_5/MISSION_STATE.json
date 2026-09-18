@@ -1,0 +1,152 @@
+{
+  "id": "missao_mu2jyi2h_5",
+  "objetivo": "Missão de teste de erro/retry",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:52:14.969Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:52:14.969Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:52:14.970Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:52:14.971Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:52:14.974Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jyi2i_6",
+      "descricao": "Tarefa que falha 2x e passa na 3a",
+      "tipo": "texto",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "mock-model",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Tarefa que falha 2x e passa na 3a",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "passou na 3a tentativa",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "tentativa 3"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:14.974Z"
+      },
+      "tentativas": 2,
+      "criadaEm": "2026-09-15T10:52:14.970Z",
+      "atualizadaEm": "2026-09-15T10:52:14.974Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [
+    "mock-model"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jyi2i_6",
+      "status": "ok",
+      "resultado": "passou na 3a tentativa",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "tentativa 3"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:14.974Z"
+    }
+  ],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2jyi2i_6",
+      "erro": "HTTP 503: indisponível temporariamente (simulado)",
+      "tipo": "indisponivel",
+      "ts": "2026-09-15T10:52:14.972Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2jyi2i_6",
+      "erro": "HTTP 503: indisponível temporariamente (simulado)",
+      "tipo": "indisponivel",
+      "ts": "2026-09-15T10:52:14.973Z",
+      "tentativas": 2
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jyi2i_6",
+        "erro": "HTTP 503: indisponível temporariamente (simulado)",
+        "tipo": "indisponivel",
+        "ts": "2026-09-15T10:52:14.972Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:52:14.972Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jyi2i_6",
+        "erro": "HTTP 503: indisponível temporariamente (simulado)",
+        "tipo": "indisponivel",
+        "ts": "2026-09-15T10:52:14.973Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:52:14.973Z"
+    }
+  ],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:52:14.969Z",
+  "atualizadaEm": "2026-09-15T10:52:14.974Z",
+  "modoExecucao": "AUTO"
+}

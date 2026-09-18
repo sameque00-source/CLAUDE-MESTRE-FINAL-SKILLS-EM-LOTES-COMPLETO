@@ -1,0 +1,265 @@
+{
+  "id": "missao_mu304s2o_g",
+  "objetivo": "Crie um pequeno aplicativo web funcional: um servidor Node.js (http nativo, sem dependências externas) que responde na rota / com uma pagina HTML simples dizendo \"Ola, mundo!\", rodando na porta 3900.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:25:01.728Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:25:01.728Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T18:25:01.732Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:25:01.733Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:25:05.739Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T18:25:05.740Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T18:25:05.742Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu304s2s_h",
+      "descricao": "Implementar servidor Node.js nativo que responde GET / com HTML 'Olá, mundo!' na porta 3900.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "servidor.js",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Arquivo criado com código válido em Node.js.",
+        "Código usa apenas módulo http nativo.",
+        "Código configura escutador na porta 3900.",
+        "Código retorna HTML com 'Olá, mundo!' para rota /."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar servidor Node.js nativo que responde GET / com HTML 'Olá, mundo!' na porta 3900.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo criado com código válido em Node.js."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Servidor HTTP nativo em Node.js criado para responder com HTML na rota raiz '/' na porta 3900, validando entrada e tratando caminhos de erro.",
+        "arquivos": [
+          "server.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=backend",
+          "servidor validado com requisição HTTP real"
+        ],
+        "testes": [
+          {
+            "comando": "node (servidor, porta 3900)",
+            "resultado": "passou",
+            "evidencia": "HTTP 200 em /: <h1>Ol&aacute;, mundo!</h1>"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:25:04.518Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:25:01.732Z",
+      "atualizadaEm": "2026-09-15T18:25:04.519Z",
+      "_contrato": "Voce cuida do lado servidor.\n\nSEMPRE\n- Valide entrada na fronteira do sistema. Nunca confie no cliente.\n- Trate o caminho de erro, nao so o caminho feliz.\n- Nao logue credencial, token nem dado pessoal.\n- Migracao de banco exige aprovacao do coordenador.\n\nEntregue o codigo e diga explicitamente o que NAO foi coberto.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Implementar servidor Node.js nativo que responde GET / com HTML 'Olá, mundo!' na porta 3900.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Arquivo criado com código válido em Node.js.\nSUCCESS_CRITERIA: Arquivo criado com código válido em Node.js.; Código usa apenas módulo http nativo.; Código configura escutador na porta 3900.; Código retorna HTML com 'Olá, mundo!' para rota /."
+    },
+    {
+      "id": "tarefa_mu304s2s_i",
+      "descricao": "Validar funcionalidade executando o servidor e verificando a resposta HTTP na porta 3900.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu304s2s_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Servidor inicia sem erros no terminal.",
+        "Requisição curl http://localhost:3900/ retorna status 200.",
+        "Corpo da resposta contém 'Olá, mundo!'."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar funcionalidade executando o servidor e verificando a resposta HTTP na porta 3900.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Servidor inicia sem erros no terminal."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "teste executado com sucesso (validação real)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "passou",
+            "evidencia": "HTTP 200: <h1>Ol&aacute;, mundo!</h1>"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:25:05.738Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:25:01.732Z",
+      "atualizadaEm": "2026-09-15T18:25:05.739Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu304s2s_i",
+      "para": "tarefa_mu304s2s_h"
+    }
+  ],
+  "agentes": [
+    "backend",
+    "testing"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu304s2s_h",
+      "status": "ok",
+      "resultado": "Servidor HTTP nativo em Node.js criado para responder com HTML na rota raiz '/' na porta 3900, validando entrada e tratando caminhos de erro.",
+      "arquivos": [
+        "server.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=backend",
+        "servidor validado com requisição HTTP real"
+      ],
+      "testes": [
+        {
+          "comando": "node (servidor, porta 3900)",
+          "resultado": "passou",
+          "evidencia": "HTTP 200 em /: <h1>Ol&aacute;, mundo!</h1>"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:25:04.518Z"
+    },
+    {
+      "tarefaId": "tarefa_mu304s2s_i",
+      "status": "ok",
+      "resultado": "teste executado com sucesso (validação real)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [
+        {
+          "comando": "node",
+          "resultado": "passou",
+          "evidencia": "HTTP 200: <h1>Ol&aacute;, mundo!</h1>"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:25:05.738Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T18:25:05.740Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+    "ts": "2026-09-15T18:25:05.742Z"
+  },
+  "criadaEm": "2026-09-15T18:25:01.728Z",
+  "atualizadaEm": "2026-09-15T18:25:05.742Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Servidor Node.js usando apenas módulo http nativo.",
+    "Resposta GET na raiz '/' com conteúdo HTML.",
+    "Conteúdo HTML deve conter o texto 'Olá, mundo!'.",
+    "Servidor deve rodar na porta 3900."
+  ],
+  "entregaveis": [
+    "Arquivo servidor.js funcional.",
+    "Comando para rodar o servidor."
+  ],
+  "criteriosSucesso": [
+    "Executar 'node servidor.js' inicia o servidor na porta 3900.",
+    "Acessar http://localhost:3900/ exibe 'Olá, mundo!'.",
+    "Nenhum pacote externo foi instalado."
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "tipoExecucao": "servidor",
+    "porta": 3900,
+    "rotaTeste": "/"
+  },
+  "_rodadasRevisaoMissao": 0
+}

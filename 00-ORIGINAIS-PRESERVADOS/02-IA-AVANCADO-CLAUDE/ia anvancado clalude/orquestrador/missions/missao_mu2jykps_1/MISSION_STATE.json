@@ -1,0 +1,129 @@
+{
+  "id": "missao_mu2jykps_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:52:18.399Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:52:18.400Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T10:52:18.405Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:52:18.406Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jykpw_2",
+      "descricao": "Atualizar a grafia da palavra 'aplicacao' para 'aplicação' no arquivo README.md",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "O arquivo README.md contém 'aplicação' em vez de 'aplicacao' nos locais necessários."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Atualizar a grafia da palavra 'aplicacao' para 'aplicação' no arquivo README.md",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo README.md contém 'aplicação' em vez de 'aplicacao' nos locais necessários."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:18.404Z",
+      "atualizadaEm": "2026-09-15T10:52:18.404Z"
+    },
+    {
+      "id": "tarefa_mu2jykpx_3",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2jykpw_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:18.405Z",
+      "atualizadaEm": "2026-09-15T10:52:18.405Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jykpx_3",
+      "para": "tarefa_mu2jykpw_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:52:18.399Z",
+  "atualizadaEm": "2026-09-15T10:52:18.399Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Localizar o arquivo README.md",
+    "Substituir todas as ocorrências incorretas de 'aplicacao' por 'aplicação'",
+    "Garantir que a formatação do Markdown não seja corrompida"
+  ],
+  "entregaveis": [
+    "Arquivo README.md corrigido"
+  ],
+  "criteriosSucesso": [
+    "A palavra 'aplicacao' foi corrigida para 'aplicação' no README.md e o arquivo foi salvo com sucesso."
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "id": "missao_mu2m2h9n_5",
+  "objetivo": "Missão sintética de dependência estrita A→B→C",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:51:19.787Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:51:19.787Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:51:19.788Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:51:19.793Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m2h9o_6",
+      "descricao": "Responda apenas: A",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: A",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "A",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:22.992Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:19.788Z",
+      "atualizadaEm": "2026-09-15T11:51:22.992Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: A\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2m2h9p_7",
+      "descricao": "Responda apenas: B",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2m2h9o_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: B",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "B",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:52:09.750Z"
+      },
+      "tentativas": 1,
+      "criadaEm": "2026-09-15T11:51:19.788Z",
+      "atualizadaEm": "2026-09-15T11:52:09.751Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: B\nCONTEXT: - A\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2m2h9p_8",
+      "descricao": "Responda apenas: C",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2m2h9p_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: C",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:19.789Z",
+      "atualizadaEm": "2026-09-15T11:51:19.789Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2m2h9p_7",
+      "para": "tarefa_mu2m2h9o_6"
+    },
+    {
+      "de": "tarefa_mu2m2h9p_8",
+      "para": "tarefa_mu2m2h9p_7"
+    }
+  ],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest",
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2m2h9o_6",
+      "status": "ok",
+      "resultado": "A",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:22.992Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m2h9p_7",
+      "status": "ok",
+      "resultado": "B",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:52:09.750Z"
+    }
+  ],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2m2h9p_7",
+      "erro": "resposta vazia",
+      "tipo": "vazio",
+      "ts": "2026-09-15T11:52:09.483Z",
+      "tentativas": 1
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2m2h9p_7",
+        "erro": "resposta vazia",
+        "tipo": "vazio",
+        "ts": "2026-09-15T11:52:09.483Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:52:09.483Z"
+    }
+  ],
+  "progresso": 0.667,
+  "proximaAcao": "continuar executando tarefas prontas",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:51:19.787Z",
+  "atualizadaEm": "2026-09-15T11:52:09.751Z",
+  "modoExecucao": "AUTO"
+}

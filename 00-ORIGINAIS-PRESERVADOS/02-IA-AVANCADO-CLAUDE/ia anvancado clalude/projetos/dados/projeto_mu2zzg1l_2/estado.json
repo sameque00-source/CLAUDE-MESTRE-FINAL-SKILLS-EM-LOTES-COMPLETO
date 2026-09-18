@@ -1,0 +1,23 @@
+{
+  "id": "projeto_mu2zzg1l_2",
+  "nome": "Projeto Isolamento 1789496452857",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zzg1l_2\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto Isolamento 1789496452857\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:20:52.857Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:20:52.857Z",
+  "atualizadoEm": "2026-09-15T18:20:52.857Z"
+}

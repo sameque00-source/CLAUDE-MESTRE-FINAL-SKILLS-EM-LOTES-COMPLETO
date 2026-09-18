@@ -1,0 +1,23 @@
+{
+  "id": "projeto_mu2zfsqf_4",
+  "nome": "Projeto Teste Multimídia",
+  "descricao": "app web + artefato multimídia real, com continuidade entre missões",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zfsqf_4\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto Teste Multimídia\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:05:36.183Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:05:36.183Z",
+  "atualizadoEm": "2026-09-15T18:05:36.183Z"
+}

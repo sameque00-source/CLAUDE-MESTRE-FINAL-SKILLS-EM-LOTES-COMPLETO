@@ -1,0 +1,71 @@
+{
+  "id": "missao_mu2q4vp2_m",
+  "objetivo": "Missão sintética para testar decisão pendente",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "PLANEJANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:45:10.262Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:45:10.263Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T13:45:10.264Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q4vp4_n",
+      "descricao": "Escolher entre publicar o app na loja ou manter uso pessoal",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": true,
+      "motivoDecisaoUsuario": "isso muda a arquitetura (loja exige compliance, uso pessoal não) e é preferência real do usuário, não algo tecnicamente decidível sozinho",
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Escolher entre publicar o app na loja ou manter uso pessoal",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:10.264Z",
+      "atualizadaEm": "2026-09-15T13:45:10.264Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "avaliar dependências e prontidão de tarefa_mu2q4vp4_n",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:45:10.262Z",
+  "atualizadaEm": "2026-09-15T13:45:10.264Z",
+  "modoExecucao": "AUTO"
+}

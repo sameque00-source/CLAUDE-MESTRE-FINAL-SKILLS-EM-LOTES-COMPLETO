@@ -1,0 +1,105 @@
+{
+  "id": "missao_mu2l26fi_d",
+  "objetivo": "Missão sintética de veto QA",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "PLANEJANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:23:06.126Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:23:06.126Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:23:06.127Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l26fj_e",
+      "descricao": "simulado",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "simulado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:23:06.127Z",
+      "atualizadaEm": "2026-09-15T11:23:06.127Z"
+    },
+    {
+      "id": "tarefa_mu2l26fk_f",
+      "descricao": "validar",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2l26fj_e"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "validar",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:23:06.128Z",
+      "atualizadaEm": "2026-09-15T11:23:06.128Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2l26fk_f",
+      "para": "tarefa_mu2l26fj_e"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "avaliar dependências e prontidão de tarefa_mu2l26fk_f",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:23:06.126Z",
+  "atualizadaEm": "2026-09-15T11:23:06.128Z",
+  "modoExecucao": "AUTO"
+}

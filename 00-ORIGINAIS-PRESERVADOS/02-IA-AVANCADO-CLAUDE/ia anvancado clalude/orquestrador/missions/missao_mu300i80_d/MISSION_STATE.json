@@ -1,0 +1,171 @@
+{
+  "id": "missao_mu300i80_d",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:21:42.336Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:21:42.336Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (3 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T18:21:42.337Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:21:42.337Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu300i81_e",
+      "descricao": "Pesquisar e selecionar a API multimodal mais adequada e gratuita/baixo custo para análise de imagens (ex: Gemini Flash API)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "API selecionada e documentação de integração revisada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a melhor opção de API multimodal atual com plano gratuito adequado.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e selecionar a API multimodal mais adequada e gratuita/baixo custo para análise de imagens (ex: Gemini Flash API)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "API selecionada e documentação de integração revisada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:42.337Z",
+      "atualizadaEm": "2026-09-15T18:21:42.337Z"
+    },
+    {
+      "id": "tarefa_mu300i81_f",
+      "descricao": "Desenvolver a interface frontend e a lógica de integração com a API em uma aplicação web leve (ex: React ou HTML/JS puro)",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu300i81_e"
+      ],
+      "recursoExclusivo": "src/app.js",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Aplicação funcional permitindo upload de imagem e exibição da descrição gerada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Desenvolver a interface frontend e a lógica de integração com a API em uma aplicação web leve (ex: React ou HTML/JS puro)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicação funcional permitindo upload de imagem e exibição da descrição gerada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:42.337Z",
+      "atualizadaEm": "2026-09-15T18:21:42.337Z"
+    },
+    {
+      "id": "tarefa_mu300i81_g",
+      "descricao": "Testar a aplicação com diferentes fotos de produtos e validar a precisão e velocidade das descrições",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu300i81_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Fluxo de ponta a ponta validado sem erros críticos de execução"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Testar a aplicação com diferentes fotos de produtos e validar a precisão e velocidade das descrições",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Fluxo de ponta a ponta validado sem erros críticos de execução"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:42.337Z",
+      "atualizadaEm": "2026-09-15T18:21:42.337Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu300i81_f",
+      "para": "tarefa_mu300i81_e"
+    },
+    {
+      "de": "tarefa_mu300i81_g",
+      "para": "tarefa_mu300i81_f"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:21:42.336Z",
+  "atualizadaEm": "2026-09-15T18:21:42.336Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface simples para upload de imagem (drag-and-drop ou seleção de arquivo)",
+    "Integração com uma API de IA multimodal (ex: Google Gemini API) para análise visual e geração de texto",
+    "Exibição da descrição gerada com opção de copiar para a área de transferência"
+  ],
+  "entregaveis": [
+    "Código-fonte completo da aplicação",
+    "Instruções claras de configuração e execução"
+  ],
+  "criteriosSucesso": [
+    "O usuário consegue enviar uma foto de produto e receber uma descrição coerente gerada automaticamente em segundos"
+  ]
+}

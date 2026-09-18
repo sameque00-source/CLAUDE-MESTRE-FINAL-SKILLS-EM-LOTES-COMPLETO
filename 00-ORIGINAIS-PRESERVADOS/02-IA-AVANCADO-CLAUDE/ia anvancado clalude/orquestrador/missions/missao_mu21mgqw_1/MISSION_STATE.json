@@ -1,0 +1,208 @@
+{
+  "id": "missao_mu21mgqw_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:19:00.295Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:19:00.296Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:19:00.302Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:19:00.303Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21mgr2_2",
+      "descricao": "Verificar a existência do arquivo README.md e listar todas as linhas que contenham a palavra \"aplicacao\"",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo README.md encontrado",
+        "Lista de linhas (número) contendo \"aplicacao\" gerada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Verificar a existência do arquivo README.md e listar todas as linhas que contenham a palavra \"aplicacao\"",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo README.md encontrado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:00.302Z",
+      "atualizadaEm": "2026-09-15T02:19:00.302Z"
+    },
+    {
+      "id": "tarefa_mu21mgr2_3",
+      "descricao": "Substituir, em todas as ocorrências listadas, a palavra \"aplicacao\" por \"aplicação\" mantendo a codificação UTF-8",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu21mgr2_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo README.md salvo com as substituições aplicadas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Substituir, em todas as ocorrências listadas, a palavra \"aplicacao\" por \"aplicação\" mantendo a codificação UTF-8",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo README.md salvo com as substituições aplicadas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:00.302Z",
+      "atualizadaEm": "2026-09-15T02:19:00.302Z"
+    },
+    {
+      "id": "tarefa_mu21mgr2_4",
+      "descricao": "Validar que nenhuma ocorrência da forma errada \"aplicacao\" permanece no README.md",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu21mgr2_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Comando de busca não retorna resultados para \"aplicacao\""
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar que nenhuma ocorrência da forma errada \"aplicacao\" permanece no README.md",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comando de busca não retorna resultados para \"aplicacao\""
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:00.302Z",
+      "atualizadaEm": "2026-09-15T02:19:00.302Z"
+    },
+    {
+      "id": "tarefa_mu21mgr3_5",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu21mgr2_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:00.303Z",
+      "atualizadaEm": "2026-09-15T02:19:00.303Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21mgr2_3",
+      "para": "tarefa_mu21mgr2_2"
+    },
+    {
+      "de": "tarefa_mu21mgr2_4",
+      "para": "tarefa_mu21mgr2_3"
+    },
+    {
+      "de": "tarefa_mu21mgr3_5",
+      "para": "tarefa_mu21mgr2_3"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:19:00.295Z",
+  "atualizadaEm": "2026-09-15T02:19:00.295Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Acessar o repositório local onde o README.md está localizado",
+    "Localizar cada ocorrência literal de \"aplicacao\"",
+    "Substituir por \"aplicação\" preservando a formatação e a codificação do arquivo"
+  ],
+  "entregaveis": [
+    "README.md atualizado com a palavra correta",
+    "Comprovante (log) de que não resta a forma errada \"aplicacao\""
+  ],
+  "criteriosSucesso": [
+    "README.md contém \"aplicação\" onde antes havia \"aplicacao\" e não há mais ocorrências da forma incorreta"
+  ]
+}

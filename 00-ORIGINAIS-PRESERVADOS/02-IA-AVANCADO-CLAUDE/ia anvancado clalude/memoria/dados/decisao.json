@@ -1,0 +1,461 @@
+{
+  "decisao_mu2zgqmd_1": {
+    "id": "decisao_mu2zgqmd_1",
+    "tipo": "decisao",
+    "conteudo": "teste de integração real v2",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zgqmb_1"
+    ],
+    "contexto": {
+      "query": "teste de integração real v2"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zgqmb_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495580101,
+    "atualizadoEm": 1789495580101,
+    "expiraEm": 1821031580101,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zgtq1_1": {
+    "id": "decisao_mu2zgtq1_1",
+    "tipo": "decisao",
+    "conteudo": "usar Node.js puro sem dependências externas",
+    "origem": "projeto",
+    "tags": [
+      "arquitetura",
+      "projeto:projeto_mu2zgtpz_1"
+    ],
+    "contexto": {
+      "query": "usar Node.js puro sem dependências externas"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zgtpz_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495584121,
+    "atualizadoEm": 1789495584121,
+    "expiraEm": 1821031584121,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zgtq5_2": {
+    "id": "decisao_mu2zgtq5_2",
+    "tipo": "decisao",
+    "conteudo": "decisao-unica-1789495584125: usar arquitetura modular por domínio",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zgtpz_1"
+    ],
+    "contexto": {
+      "query": "decisao-unica-1789495584125: usar arquitetura modular por domínio"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zgtpz_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495584125,
+    "atualizadoEm": 1789495584125,
+    "expiraEm": 1821031584125,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zgtqz_4": {
+    "id": "decisao_mu2zgtqz_4",
+    "tipo": "decisao",
+    "conteudo": "teste de integração real com memória da FASE 6",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zgtqy_3"
+    ],
+    "contexto": {
+      "query": "teste de integração real com memória da FASE 6"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zgtqy_3",
+    "confianca": 0.6,
+    "criadoEm": 1789495584155,
+    "atualizadoEm": 1789495584155,
+    "expiraEm": 1821031584155,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zgvyv_o": {
+    "id": "decisao_mu2zgvyv_o",
+    "tipo": "decisao",
+    "conteudo": "segredo-A-1789495587031: decisão exclusiva do projeto A",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zgvyt_5"
+    ],
+    "contexto": {
+      "query": "segredo-A-1789495587031: decisão exclusiva do projeto A"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zgvyt_5",
+    "confianca": 0.6,
+    "criadoEm": 1789495587031,
+    "atualizadoEm": 1789495587031,
+    "expiraEm": 1821031587031,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zgvyx_p": {
+    "id": "decisao_mu2zgvyx_p",
+    "tipo": "decisao",
+    "conteudo": "segredo-B-1789495587031: decisão exclusiva do projeto B",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zgvyu_6"
+    ],
+    "contexto": {
+      "query": "segredo-B-1789495587031: decisão exclusiva do projeto B"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zgvyu_6",
+    "confianca": 0.6,
+    "criadoEm": 1789495587033,
+    "atualizadoEm": 1789495587033,
+    "expiraEm": 1821031587033,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zgvzr_q": {
+    "id": "decisao_mu2zgvzr_q",
+    "tipo": "decisao",
+    "conteudo": "decisão tomada na missão A: usar formato texto simples",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zgvzo_7"
+    ],
+    "contexto": {
+      "query": "decisão tomada na missão A: usar formato texto simples"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zgvzo_7",
+    "confianca": 0.6,
+    "criadoEm": 1789495587063,
+    "atualizadoEm": 1789495587063,
+    "expiraEm": 1821031587063,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zh04x_1": {
+    "id": "decisao_mu2zh04x_1",
+    "tipo": "decisao",
+    "conteudo": "usar Node.js puro sem dependências externas",
+    "origem": "projeto",
+    "tags": [
+      "arquitetura",
+      "projeto:projeto_mu2zh04v_1"
+    ],
+    "contexto": {
+      "query": "usar Node.js puro sem dependências externas"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zh04v_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495592433,
+    "atualizadoEm": 1789495592433,
+    "expiraEm": 1821031592433,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zh052_2": {
+    "id": "decisao_mu2zh052_2",
+    "tipo": "decisao",
+    "conteudo": "decisao-unica-1789495592438: usar arquitetura modular por domínio",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zh04v_1"
+    ],
+    "contexto": {
+      "query": "decisao-unica-1789495592438: usar arquitetura modular por domínio"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zh04v_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495592438,
+    "atualizadoEm": 1789495592438,
+    "expiraEm": 1821031592438,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zh05x_4": {
+    "id": "decisao_mu2zh05x_4",
+    "tipo": "decisao",
+    "conteudo": "teste de integração real com memória da FASE 6",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zh05w_3"
+    ],
+    "contexto": {
+      "query": "teste de integração real com memória da FASE 6"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zh05w_3",
+    "confianca": 0.6,
+    "criadoEm": 1789495592469,
+    "atualizadoEm": 1789495592469,
+    "expiraEm": 1821031592469,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zh0ds_7": {
+    "id": "decisao_mu2zh0ds_7",
+    "tipo": "decisao",
+    "conteudo": "segredo-A-1789495592752: decisão exclusiva do projeto A",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zh0dq_5"
+    ],
+    "contexto": {
+      "query": "segredo-A-1789495592752: decisão exclusiva do projeto A"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zh0dq_5",
+    "confianca": 0.6,
+    "criadoEm": 1789495592752,
+    "atualizadoEm": 1789495592752,
+    "expiraEm": 1821031592752,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zh0du_8": {
+    "id": "decisao_mu2zh0du_8",
+    "tipo": "decisao",
+    "conteudo": "segredo-B-1789495592752: decisão exclusiva do projeto B",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zh0dr_6"
+    ],
+    "contexto": {
+      "query": "segredo-B-1789495592752: decisão exclusiva do projeto B"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zh0dr_6",
+    "confianca": 0.6,
+    "criadoEm": 1789495592754,
+    "atualizadoEm": 1789495592754,
+    "expiraEm": 1821031592754,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zh0es_9": {
+    "id": "decisao_mu2zh0es_9",
+    "tipo": "decisao",
+    "conteudo": "decisão tomada na missão A: usar formato texto simples",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zh0ep_7"
+    ],
+    "contexto": {
+      "query": "decisão tomada na missão A: usar formato texto simples"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zh0ep_7",
+    "confianca": 0.6,
+    "criadoEm": 1789495592788,
+    "atualizadoEm": 1789495592788,
+    "expiraEm": 1821031592788,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zzg0v_1": {
+    "id": "decisao_mu2zzg0v_1",
+    "tipo": "decisao",
+    "conteudo": "usar Node.js puro sem dependências externas",
+    "origem": "projeto",
+    "tags": [
+      "arquitetura",
+      "projeto:projeto_mu2zzg0t_1"
+    ],
+    "contexto": {
+      "query": "usar Node.js puro sem dependências externas"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zzg0t_1",
+    "confianca": 0.6,
+    "criadoEm": 1789496452831,
+    "atualizadoEm": 1789496452831,
+    "expiraEm": 1821032452831,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zzg10_2": {
+    "id": "decisao_mu2zzg10_2",
+    "tipo": "decisao",
+    "conteudo": "decisao-unica-1789496452836: usar arquitetura modular por domínio",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zzg0t_1"
+    ],
+    "contexto": {
+      "query": "decisao-unica-1789496452836: usar arquitetura modular por domínio"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zzg0t_1",
+    "confianca": 0.6,
+    "criadoEm": 1789496452836,
+    "atualizadoEm": 1789496452836,
+    "expiraEm": 1821032452836,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zzg1w_4": {
+    "id": "decisao_mu2zzg1w_4",
+    "tipo": "decisao",
+    "conteudo": "teste de integração real com memória da FASE 6",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zzg1v_3"
+    ],
+    "contexto": {
+      "query": "teste de integração real com memória da FASE 6"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zzg1v_3",
+    "confianca": 0.6,
+    "criadoEm": 1789496452868,
+    "atualizadoEm": 1789496452868,
+    "expiraEm": 1821032452868,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zzjub_9": {
+    "id": "decisao_mu2zzjub_9",
+    "tipo": "decisao",
+    "conteudo": "segredo-A-1789496457779: decisão exclusiva do projeto A",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zzju9_5"
+    ],
+    "contexto": {
+      "query": "segredo-A-1789496457779: decisão exclusiva do projeto A"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zzju9_5",
+    "confianca": 0.6,
+    "criadoEm": 1789496457779,
+    "atualizadoEm": 1789496457779,
+    "expiraEm": 1821032457779,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zzjud_a": {
+    "id": "decisao_mu2zzjud_a",
+    "tipo": "decisao",
+    "conteudo": "segredo-B-1789496457779: decisão exclusiva do projeto B",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zzjua_6"
+    ],
+    "contexto": {
+      "query": "segredo-B-1789496457779: decisão exclusiva do projeto B"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zzjua_6",
+    "confianca": 0.6,
+    "criadoEm": 1789496457781,
+    "atualizadoEm": 1789496457781,
+    "expiraEm": 1821032457781,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "decisao_mu2zzjvd_b": {
+    "id": "decisao_mu2zzjvd_b",
+    "tipo": "decisao",
+    "conteudo": "decisão tomada na missão A: usar formato texto simples",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zzjva_7"
+    ],
+    "contexto": {
+      "query": "decisão tomada na missão A: usar formato texto simples"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zzjva_7",
+    "confianca": 0.6,
+    "criadoEm": 1789496457817,
+    "atualizadoEm": 1789496457817,
+    "expiraEm": 1821032457817,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "missao_mu2iyjql_t",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:24:17.517Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:24:17.517Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:24:17.518Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:24:17.518Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iyjqm_u",
+      "descricao": "Escrever o código do script bash de backup git cobrindo validação de diretório, git init/add, commit com timestamp e push.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Script bash criado e com permissão de execução configurada.",
+        "Tratamento de erros para comandos git ausentes ou falhos implementado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o código do script bash de backup git cobrindo validação de diretório, git init/add, commit com timestamp e push.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script bash criado e com permissão de execução configurada."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:17.518Z",
+      "atualizadaEm": "2026-09-15T10:24:17.518Z"
+    },
+    {
+      "id": "tarefa_mu2iyjqm_v",
+      "descricao": "Validar e testar a execução do script em um cenário simulado.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2iyjqm_u"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Script executado com sucesso em um repositório de teste local."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar e testar a execução do script em um cenário simulado.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script executado com sucesso em um repositório de teste local."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:17.518Z",
+      "atualizadaEm": "2026-09-15T10:24:17.518Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2iyjqm_v",
+      "para": "tarefa_mu2iyjqm_u"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:24:17.517Z",
+  "atualizadaEm": "2026-09-15T10:24:17.517Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "O script deve aceitar o caminho da pasta e opcionalmente a URL do repositório.",
+    "Deve verificar se o diretório é um repositório git ou inicializá-lo.",
+    "Deve adicionar, commitar com mensagem padrão/customizada e enviar (push) para o remoto."
+  ],
+  "entregaveis": [
+    "Arquivo de script bash executável (ex: backup.sh)."
+  ],
+  "criteriosSucesso": [
+    "Script criado, com tratamento básico de erros e capaz de executar o fluxo git add, commit e push com sucesso."
+  ]
+}

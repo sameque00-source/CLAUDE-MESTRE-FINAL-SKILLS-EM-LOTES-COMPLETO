@@ -1,0 +1,288 @@
+{
+  "id": "missao_mu2iu1f5_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:20:47.152Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:20:47.153Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (6 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T10:20:47.160Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:20:47.161Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iu1fb_2",
+      "descricao": "Verificar a existência e o caminho do arquivo README.md no diretório do projeto",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "README.md encontrado no caminho esperado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Verificar a existência e o caminho do arquivo README.md no diretório do projeto",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md encontrado no caminho esperado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:47.159Z",
+      "atualizadaEm": "2026-09-15T10:20:47.159Z"
+    },
+    {
+      "id": "tarefa_mu2iu1fb_3",
+      "descricao": "Criar uma cópia de segurança do README.md chamada README.md.bak",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iu1fb_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md.bak existe e tem mesmo tamanho/hash que o original"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Criar uma cópia de segurança do README.md chamada README.md.bak",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md.bak existe e tem mesmo tamanho/hash que o original"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:47.159Z",
+      "atualizadaEm": "2026-09-15T10:20:47.159Z"
+    },
+    {
+      "id": "tarefa_mu2iu1fb_4",
+      "descricao": "Substituir todas as ocorrências de \"aplicacao\" por \"aplicação\" no README.md, preservando formatação",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iu1fb_2",
+        "tarefa_mu2iu1fb_3"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md atualizado sem ocorrências de \"aplicacao\""
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Substituir todas as ocorrências de \"aplicacao\" por \"aplicação\" no README.md, preservando formatação",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md atualizado sem ocorrências de \"aplicacao\""
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:47.159Z",
+      "atualizadaEm": "2026-09-15T10:20:47.159Z"
+    },
+    {
+      "id": "tarefa_mu2iu1fb_5",
+      "descricao": "Validar que o README.md não contém mais a forma errada e que a substituição não quebrou a formatação",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2iu1fb_4"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "grep -i \"aplicacao\" README.md não retorna resultados",
+        "Arquivo pode ser aberto em editor sem erros de codificação"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar que o README.md não contém mais a forma errada e que a substituição não quebrou a formatação",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "grep -i \"aplicacao\" README.md não retorna resultados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:47.159Z",
+      "atualizadaEm": "2026-09-15T10:20:47.159Z"
+    },
+    {
+      "id": "tarefa_mu2iu1fb_6",
+      "descricao": "Detectar se o projeto está versionado com Git (presença da pasta .git)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        ".git directory exists ou não"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "É necessário saber se há repositório Git para decidir sobre commit",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Detectar se o projeto está versionado com Git (presença da pasta .git)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": ".git directory exists ou não"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:47.159Z",
+      "atualizadaEm": "2026-09-15T10:20:47.159Z"
+    },
+    {
+      "id": "tarefa_mu2iu1fb_7",
+      "descricao": "Se o projeto usar Git, criar commit com mensagem \"Corrige ortografia de aplicacao para aplicação\"",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iu1fb_4",
+        "tarefa_mu2iu1fb_6"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "git log mostra novo commit com a mensagem esperada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Se o projeto usar Git, criar commit com mensagem \"Corrige ortografia de aplicacao para aplicação\"",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "git log mostra novo commit com a mensagem esperada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:47.159Z",
+      "atualizadaEm": "2026-09-15T10:20:47.159Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2iu1fb_3",
+      "para": "tarefa_mu2iu1fb_2"
+    },
+    {
+      "de": "tarefa_mu2iu1fb_4",
+      "para": "tarefa_mu2iu1fb_2"
+    },
+    {
+      "de": "tarefa_mu2iu1fb_4",
+      "para": "tarefa_mu2iu1fb_3"
+    },
+    {
+      "de": "tarefa_mu2iu1fb_5",
+      "para": "tarefa_mu2iu1fb_4"
+    },
+    {
+      "de": "tarefa_mu2iu1fb_7",
+      "para": "tarefa_mu2iu1fb_4"
+    },
+    {
+      "de": "tarefa_mu2iu1fb_7",
+      "para": "tarefa_mu2iu1fb_6"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:20:47.152Z",
+  "atualizadaEm": "2026-09-15T10:20:47.152Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "README.md deve conter a forma correta \"aplicação\"",
+    "Nenhuma outra alteração no arquivo deve ser feita",
+    "Manter uma cópia de backup do arquivo original"
+  ],
+  "entregaveis": [
+    "README.md atualizado",
+    "README.md.bak (cópia de segurança)"
+  ],
+  "criteriosSucesso": [
+    "README.md não contém mais a palavra \"aplicacao\" e contém \"aplicação\" em todas as ocorrências anteriores",
+    "Backup README.md.bak criado e corresponde ao conteúdo original"
+  ]
+}

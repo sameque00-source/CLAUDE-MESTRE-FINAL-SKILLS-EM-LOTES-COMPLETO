@@ -1,0 +1,213 @@
+{
+  "id": "missao_mu2iudwu_m",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:21:03.342Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:21:03.342Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T10:21:03.343Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:21:03.343Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iudwv_n",
+      "descricao": "Definir a pilha tecnológica e a API multimodal ideal (escolhido Google Gemini API por gratuidade e facilidade de integração em JS).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Framework e biblioteca de API definidos e documentados."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Definir a pilha tecnológica e a API multimodal ideal (escolhido Google Gemini API por gratuidade e facilidade de integração em JS).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Framework e biblioteca de API definidos e documentados."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:21:03.343Z",
+      "atualizadaEm": "2026-09-15T10:21:03.343Z"
+    },
+    {
+      "id": "tarefa_mu2iudwv_o",
+      "descricao": "Desenvolver a interface de usuário (frontend) com suporte a upload de imagem e exibição da descrição gerada.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iudwv_n"
+      ],
+      "recursoExclusivo": "src/index.html",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "compiler"
+      ],
+      "criterioConclusao": [
+        "Interface funcional com layout responsivo e campo para exibir o texto gerado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface de usuário (frontend) com suporte a upload de imagem e exibição da descrição gerada.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface funcional com layout responsivo e campo para exibir o texto gerado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:21:03.343Z",
+      "atualizadaEm": "2026-09-15T10:21:03.343Z"
+    },
+    {
+      "id": "tarefa_mu2iudwv_p",
+      "descricao": "Implementar a lógica de integração com a API de visão computacional para processar a imagem enviada e retornar a descrição.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iudwv_n"
+      ],
+      "recursoExclusivo": "src/api.js",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Função de envio de imagem e recepção da descrição descritiva testada e integrada."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a lógica de integração com a API de visão computacional para processar a imagem enviada e retornar a descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função de envio de imagem e recepção da descrição descritiva testada e integrada."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:21:03.343Z",
+      "atualizadaEm": "2026-09-15T10:21:03.343Z"
+    },
+    {
+      "id": "tarefa_mu2iudwv_q",
+      "descricao": "Realizar testes integrados do fluxo completo de upload e geração de texto, corrigindo eventuais falhas.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2iudwv_o",
+        "tarefa_mu2iudwv_p"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Fluxo validado sem erros de console e gerando descrições corretas a partir de fotos de teste."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Realizar testes integrados do fluxo completo de upload e geração de texto, corrigindo eventuais falhas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Fluxo validado sem erros de console e gerando descrições corretas a partir de fotos de teste."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:21:03.343Z",
+      "atualizadaEm": "2026-09-15T10:21:03.343Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2iudwv_o",
+      "para": "tarefa_mu2iudwv_n"
+    },
+    {
+      "de": "tarefa_mu2iudwv_p",
+      "para": "tarefa_mu2iudwv_n"
+    },
+    {
+      "de": "tarefa_mu2iudwv_q",
+      "para": "tarefa_mu2iudwv_o"
+    },
+    {
+      "de": "tarefa_mu2iudwv_q",
+      "para": "tarefa_mu2iudwv_p"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:21:03.342Z",
+  "atualizadaEm": "2026-09-15T10:21:03.342Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface simples para upload de imagem (drag-and-drop ou seleção de arquivo).",
+    "Integração com API de IA multimodal (Gemini) para análise da imagem e geração da descrição.",
+    "Exibição clara do resultado gerado com opção de cópia rápida para o usuário."
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação.",
+    "Instruções claras de configuração da chave de API e execução local."
+  ],
+  "criteriosSucesso": [
+    "O usuário consegue carregar uma foto de produto e receber uma descrição comercial coerente gerada automaticamente em segundos."
+  ]
+}

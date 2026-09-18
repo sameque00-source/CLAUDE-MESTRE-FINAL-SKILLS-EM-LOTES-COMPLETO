@@ -1,0 +1,283 @@
+{
+  "id": "missao_mu21a1h4_1",
+  "objetivo": "Crie um pequeno projeto web de demonstracao (uma pagina com um formulario de contato que salva mensagens).",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:09:20.631Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:09:20.632Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (6 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T02:09:20.638Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:09:20.639Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21a1h9_2",
+      "descricao": "Pesquisar a versão LTS atual do Node.js e a versão estável mais recente do Express compatível, garantindo que não haja incompatibilidades conhecidas com o uso de módulos ES ou CommonJS",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Versão LTS do Node.js identificada",
+        "Versão do Express selecionada e documentada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "É necessário confirmar a versão ideal para evitar problemas de dependência ao gerar o projeto",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar a versão LTS atual do Node.js e a versão estável mais recente do Express compatível, garantindo que não haja incompatibilidades conhecidas com o uso de módulos ES ou CommonJS",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Versão LTS do Node.js identificada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:09:20.637Z",
+      "atualizadaEm": "2026-09-15T02:09:20.637Z"
+    },
+    {
+      "id": "tarefa_mu21a1ha_3",
+      "descricao": "Definir a estrutura de diretórios do projeto (ex.: /frontend, /backend, /data) e criar arquivos iniciais (package.json, index.html, server.js, messages.json vazio)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21a1h9_2"
+      ],
+      "recursoExclusivo": "filesystem",
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Estrutura de pastas criada",
+        "Arquivos iniciais presentes"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a estrutura de diretórios do projeto (ex.: /frontend, /backend, /data) e criar arquivos iniciais (package.json, index.html, server.js, messages.json vazio)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Estrutura de pastas criada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:09:20.638Z",
+      "atualizadaEm": "2026-09-15T02:09:20.638Z"
+    },
+    {
+      "id": "tarefa_mu21a1ha_4",
+      "descricao": "Implementar o backend em Node.js usando Express: criar endpoint POST /api/contact que valida os campos recebidos e grava a mensagem no arquivo data/messages.json (append seguro)",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21a1ha_3"
+      ],
+      "recursoExclusivo": "messages.json",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Servidor inicia sem erros",
+        "Endpoint POST funcional grava objeto JSON no arquivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o backend em Node.js usando Express: criar endpoint POST /api/contact que valida os campos recebidos e grava a mensagem no arquivo data/messages.json (append seguro)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Servidor inicia sem erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:09:20.638Z",
+      "atualizadaEm": "2026-09-15T02:09:20.638Z"
+    },
+    {
+      "id": "tarefa_mu21a1ha_5",
+      "descricao": "Desenvolver a página frontend: HTML com formulário (nome, email, mensagem), CSS simples, e JavaScript que envia os dados via fetch POST para /api/contact e exibe feedback ao usuário",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21a1ha_3"
+      ],
+      "recursoExclusivo": "index.html",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Formulário renderiza corretamente",
+        "Envio via fetch funciona e exibe mensagem de sucesso/erro"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a página frontend: HTML com formulário (nome, email, mensagem), CSS simples, e JavaScript que envia os dados via fetch POST para /api/contact e exibe feedback ao usuário",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Formulário renderiza corretamente"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:09:20.638Z",
+      "atualizadaEm": "2026-09-15T02:09:20.638Z"
+    },
+    {
+      "id": "tarefa_mu21a1ha_6",
+      "descricao": "Realizar testes manuais: iniciar o servidor, abrir a página no navegador, submeter o formulário com dados válidos e inválidos, confirmar que o arquivo messages.json contém as mensagens enviadas e que o feedback ao usuário é adequado",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21a1ha_4",
+        "tarefa_mu21a1ha_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "navegador",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Todas as combinações de teste executadas sem erro",
+        "messages.json atualizado conforme esperado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Realizar testes manuais: iniciar o servidor, abrir a página no navegador, submeter o formulário com dados válidos e inválidos, confirmar que o arquivo messages.json contém as mensagens enviadas e que o feedback ao usuário é adequado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Todas as combinações de teste executadas sem erro"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:09:20.638Z",
+      "atualizadaEm": "2026-09-15T02:09:20.638Z"
+    },
+    {
+      "id": "tarefa_mu21a1ha_7",
+      "descricao": "Redigir README.md contendo descrição do projeto, pré-requisitos, instruções de instalação (npm install), como iniciar o servidor (npm start) e como testar a funcionalidade",
+      "tipo": "docs",
+      "dependeDe": [
+        "tarefa_mu21a1ha_6"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md criado e revisado, instruções validadas por teste da tarefa t5"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Redigir README.md contendo descrição do projeto, pré-requisitos, instruções de instalação (npm install), como iniciar o servidor (npm start) e como testar a funcionalidade",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md criado e revisado, instruções validadas por teste da tarefa t5"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:09:20.638Z",
+      "atualizadaEm": "2026-09-15T02:09:20.638Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21a1ha_3",
+      "para": "tarefa_mu21a1h9_2"
+    },
+    {
+      "de": "tarefa_mu21a1ha_4",
+      "para": "tarefa_mu21a1ha_3"
+    },
+    {
+      "de": "tarefa_mu21a1ha_5",
+      "para": "tarefa_mu21a1ha_3"
+    },
+    {
+      "de": "tarefa_mu21a1ha_6",
+      "para": "tarefa_mu21a1ha_4"
+    },
+    {
+      "de": "tarefa_mu21a1ha_6",
+      "para": "tarefa_mu21a1ha_5"
+    },
+    {
+      "de": "tarefa_mu21a1ha_7",
+      "para": "tarefa_mu21a1ha_6"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:09:20.631Z",
+  "atualizadaEm": "2026-09-15T02:09:20.631Z",
+  "modoExecucao": "AUTO"
+}

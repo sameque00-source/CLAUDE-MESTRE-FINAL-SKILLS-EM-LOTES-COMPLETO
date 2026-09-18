@@ -1,0 +1,552 @@
+{
+  "id": "missao_mu2jyopd_4",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:52:23.569Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:52:23.569Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (7 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T10:52:23.570Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:52:23.570Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:52:30.313Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jyope_5",
+      "descricao": "Pesquisar tecnologias de manipulação de vídeo no client-side (WebCodecs API vs FFmpeg.wasm)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de desempenho e viabilidade técnica entregue"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a melhor biblioteca para processamento de vídeo de alta performance no navegador/Electron",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar tecnologias de manipulação de vídeo no client-side (WebCodecs API vs FFmpeg.wasm)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de desempenho e viabilidade técnica entregue"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar tecnologias de manipulação de ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.250Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:23.570Z",
+      "atualizadaEm": "2026-09-15T10:52:30.250Z"
+    },
+    {
+      "id": "tarefa_mu2jyope_6",
+      "descricao": "Pesquisar arquiteturas de UI para editores de vídeo profissionais (referências como Premiere, DaVinci, CapCut)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Guia de layout com painéis de preview, linha do tempo e biblioteca de mídia definido"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Mapear padrões de UX/UI esperados em um editor de vídeo profissional",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Pesquisar arquiteturas de UI para editores de vídeo profissionais (referências como Premiere, DaVinci, CapCut)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Guia de layout com painéis de preview, linha do tempo e biblioteca de mídia definido"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar arquiteturas de UI para editor",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.250Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:23.570Z",
+      "atualizadaEm": "2026-09-15T10:52:30.250Z"
+    },
+    {
+      "id": "tarefa_mu2jyope_7",
+      "descricao": "Definir a arquitetura técnica do aplicativo desktop combinando Electron, React e a engine de vídeo escolhida",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2jyope_5",
+        "tarefa_mu2jyope_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura de software aprovado e estruturado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura técnica do aplicativo desktop combinando Electron, React e a engine de vídeo escolhida",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura de software aprovado e estruturado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir a arquitetura técnica do aplicat",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.266Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:23.570Z",
+      "atualizadaEm": "2026-09-15T10:52:30.266Z"
+    },
+    {
+      "id": "tarefa_mu2jyope_8",
+      "descricao": "Implementar a interface frontend principal com timeline multi-pista e painel de pré-visualização",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2jyope_7"
+      ],
+      "recursoExclusivo": "src/frontend",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Componentes de UI da timeline e preview funcionais no React"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a interface frontend principal com timeline multi-pista e painel de pré-visualização",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Componentes de UI da timeline e preview funcionais no React"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar a interface frontend princip",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.281Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:23.570Z",
+      "atualizadaEm": "2026-09-15T10:52:30.281Z"
+    },
+    {
+      "id": "tarefa_mu2jyope_9",
+      "descricao": "Implementar a camada de processamento de mídia e integração com a engine de vídeo",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2jyope_7"
+      ],
+      "recursoExclusivo": "src/engine",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "multimidia",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Módulos de importação, corte, edição e exportação de vídeo implementados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a camada de processamento de mídia e integração com a engine de vídeo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulos de importação, corte, edição e exportação de vídeo implementados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar a camada de processamento de",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.281Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:23.570Z",
+      "atualizadaEm": "2026-09-15T10:52:30.281Z"
+    },
+    {
+      "id": "tarefa_mu2jyope_a",
+      "descricao": "Executar testes de integração, validação de performance e correção de bugs na manipulação de mídia",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2jyope_8",
+        "tarefa_mu2jyope_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "testes",
+        "multimidia",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Suite de testes executada com sucesso e gargalos de performance mitigados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes de integração, validação de performance e correção de bugs na manipulação de mídia",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Suite de testes executada com sucesso e gargalos de performance mitigados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar testes de integração, validação",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.297Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:23.570Z",
+      "atualizadaEm": "2026-09-15T10:52:30.297Z"
+    },
+    {
+      "id": "tarefa_mu2jyope_b",
+      "descricao": "Realizar revisão final do código, empacotamento e documentação de uso do aplicativo",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2jyope_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [
+        "git",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Aplicativo empacotado e pronto para distribuição com documentação completa"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Realizar revisão final do código, empacotamento e documentação de uso do aplicativo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicativo empacotado e pronto para distribuição com documentação completa"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Realizar revisão final do código, empaco",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.313Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:23.570Z",
+      "atualizadaEm": "2026-09-15T10:52:30.313Z"
+    },
+    {
+      "id": "tarefa_mu2jytui_q",
+      "descricao": "Pesquisar estratégias de fallback e alternativas nativas para o ffmpeg.wasm visando compatibilidade total com o Safari",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2jyope_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Mapear alternativas ao ffmpeg.wasm compatíveis com Safari",
+        "Definir a estratégia de fallback (servidor vs nativo) documentada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar estratégias de fallback e alternativas nativas para o ffmpeg.wasm visando compatibilidade total com o Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar estratégias de fallback e alte",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:52:30.266Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:30.234Z",
+      "atualizadaEm": "2026-09-15T10:52:30.266Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jyope_7",
+      "para": "tarefa_mu2jyope_5"
+    },
+    {
+      "de": "tarefa_mu2jyope_7",
+      "para": "tarefa_mu2jyope_6"
+    },
+    {
+      "de": "tarefa_mu2jyope_8",
+      "para": "tarefa_mu2jyope_7"
+    },
+    {
+      "de": "tarefa_mu2jyope_9",
+      "para": "tarefa_mu2jyope_7"
+    },
+    {
+      "de": "tarefa_mu2jyope_a",
+      "para": "tarefa_mu2jyope_8"
+    },
+    {
+      "de": "tarefa_mu2jyope_a",
+      "para": "tarefa_mu2jyope_9"
+    },
+    {
+      "de": "tarefa_mu2jyope_b",
+      "para": "tarefa_mu2jyope_a"
+    },
+    {
+      "de": "tarefa_mu2jytui_q",
+      "para": "tarefa_mu2jyope_5"
+    }
+  ],
+  "agentes": [
+    "research",
+    "uiux",
+    "architecture",
+    "frontend",
+    "backend",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jyope_5",
+      "status": "ok",
+      "resultado": "mock: Pesquisar tecnologias de manipulação de ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.250Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jyope_6",
+      "status": "ok",
+      "resultado": "mock: Pesquisar arquiteturas de UI para editor",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.250Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jyope_7",
+      "status": "ok",
+      "resultado": "mock: Definir a arquitetura técnica do aplicat",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.266Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jytui_q",
+      "status": "ok",
+      "resultado": "mock: Pesquisar estratégias de fallback e alte",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.266Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jyope_8",
+      "status": "ok",
+      "resultado": "mock: Implementar a interface frontend princip",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.281Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jyope_9",
+      "status": "ok",
+      "resultado": "mock: Implementar a camada de processamento de",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.281Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jyope_a",
+      "status": "ok",
+      "resultado": "mock: Executar testes de integração, validação",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.297Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jyope_b",
+      "status": "ok",
+      "resultado": "mock: Realizar revisão final do código, empaco",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:52:30.313Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:52:23.569Z",
+  "atualizadaEm": "2026-09-15T10:52:30.313Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface gráfica moderna e responsiva baseada em desktop (Electron + React)",
+    "Engine de manipulação e edição de vídeo (FFmpeg / WebCodecs)",
+    "Suporte a múltiplas faixas de vídeo, áudio e legendas",
+    "Sistema de efeitos, filtros e transições em tempo real",
+    "Exportação de vídeo em diferentes resoluções e codecs"
+  ],
+  "entregaveis": [
+    "Código-fonte completo do aplicativo de edição de vídeo",
+    "Documentação de arquitetura e guia de instalação",
+    "Instaladores empacotados para distribuição"
+  ],
+  "criteriosSucesso": [
+    "Aplicativo executa localmente abrindo arquivos de vídeo e áudio",
+    "Permite cortes, adição de faixas e exportação de um novo vídeo funcional"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A descoberta de limitações do ffmpeg.wasm no navegador Safari afeta a arquitetura de processamento client-side, tornando necessária uma pesquisa adicional sobre estratégias de fallback ou alternativas para suporte multiplataforma.",
+      "ts": "2026-09-15T10:52:30.234Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "missao_mu2jyszr_h",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:52:29.127Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:52:29.127Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:52:29.128Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:52:29.128Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jyszs_i",
+      "descricao": "Escrever o script bash de backup e publicação via git",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo .sh criado com tratamento básico de erros para comandos git."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script bash de backup e publicação via git",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo .sh criado com tratamento básico de erros para comandos git."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:29.128Z",
+      "atualizadaEm": "2026-09-15T10:52:29.128Z"
+    },
+    {
+      "id": "tarefa_mu2jyszs_j",
+      "descricao": "Validar e testar o script bash em um ambiente simulado",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2jyszs_i"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Script executado com sucesso em repositório local temporário."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar e testar o script bash em um ambiente simulado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script executado com sucesso em repositório local temporário."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:29.128Z",
+      "atualizadaEm": "2026-09-15T10:52:29.128Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jyszs_j",
+      "para": "tarefa_mu2jyszs_i"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:52:29.127Z",
+  "atualizadaEm": "2026-09-15T10:52:29.127Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "O script deve aceitar o caminho da pasta e a URL do repositório remoto como parâmetros (ou variáveis configuráveis).",
+    "Deve inicializar o repositório git caso ainda não exista.",
+    "Deve adicionar, commitar com mensagem padrão/customizada e enviar as alterações para o remoto."
+  ],
+  "entregaveis": [
+    "Script bash executável (.sh) documentado e funcional."
+  ],
+  "criteriosSucesso": [
+    "O script executa sem erros em uma pasta de teste e reflete os arquivos no repositório remoto."
+  ]
+}

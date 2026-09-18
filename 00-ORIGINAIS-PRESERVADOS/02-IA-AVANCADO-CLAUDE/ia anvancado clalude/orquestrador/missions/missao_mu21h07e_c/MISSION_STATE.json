@@ -1,0 +1,353 @@
+{
+  "id": "missao_mu21h07e_c",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:14:45.578Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:14:45.578Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (8 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:14:45.579Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21h07f_d",
+      "descricao": "Pesquisar e selecionar frameworks de manipulação de vídeo e áudio de alta performance (ex: FFmpeg, WebCodecs, GStreamer)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de tecnologias de mídia concluído"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a biblioteca mais estável e performática para processamento de vídeo atual",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e selecionar frameworks de manipulação de vídeo e áudio de alta performance (ex: FFmpeg, WebCodecs, GStreamer)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de tecnologias de mídia concluído"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "id": "tarefa_mu21h07f_e",
+      "descricao": "Pesquisar padrões de UX/UI e arquitetura de componentes para interfaces de edição de vídeo não-linear (NLE)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "uiux",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento de diretrizes de UI/UX aprovado"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Entender as melhores práticas de usabilidade para timelines complexas",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Pesquisar padrões de UX/UI e arquitetura de componentes para interfaces de edição de vídeo não-linear (NLE)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de diretrizes de UI/UX aprovado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "id": "tarefa_mu21h07f_f",
+      "descricao": "Consolidar a arquitetura técnica do aplicativo com base na escolha de tecnologias e requisitos de UX",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu21h07f_d",
+        "tarefa_mu21h07f_e"
+      ],
+      "recursoExclusivo": "docs/architecture.md",
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Diagrama de arquitetura e documento de design definidos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar a arquitetura técnica do aplicativo com base na escolha de tecnologias e requisitos de UX",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de arquitetura e documento de design definidos"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "id": "tarefa_mu21h07f_g",
+      "descricao": "Implementar o núcleo de processamento de mídia e integração com o motor de vídeo",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21h07f_f"
+      ],
+      "recursoExclusivo": "src/core/",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "compiler",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Módulo de processamento capaz de carregar e exportar mídia básica"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o núcleo de processamento de mídia e integração com o motor de vídeo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo de processamento capaz de carregar e exportar mídia básica"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "id": "tarefa_mu21h07f_h",
+      "descricao": "Desenvolver a interface gráfica do usuário incluindo a timeline multitrack e painel de preview",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21h07f_f"
+      ],
+      "recursoExclusivo": "src/ui/",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "compiler",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Interface responsiva com controles de timeline funcionais"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface gráfica do usuário incluindo a timeline multitrack e painel de preview",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface responsiva com controles de timeline funcionais"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "id": "tarefa_mu21h07f_i",
+      "descricao": "Integrar a interface de usuário com o núcleo de processamento de mídia",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21h07f_g",
+        "tarefa_mu21h07f_h"
+      ],
+      "recursoExclusivo": "src/",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "compiler",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Ações na timeline refletem corretamente no preview e na exportação do vídeo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar a interface de usuário com o núcleo de processamento de mídia",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Ações na timeline refletem corretamente no preview e na exportação do vídeo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "id": "tarefa_mu21h07f_j",
+      "descricao": "Realizar testes de estresse, validação de performance e correção de bugs",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21h07f_i"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Relatório de QA sem falhas críticas de estabilidade ou vazamento de memória"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Realizar testes de estresse, validação de performance e correção de bugs",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de QA sem falhas críticas de estabilidade ou vazamento de memória"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    },
+    {
+      "id": "tarefa_mu21h07f_k",
+      "descricao": "Configurar pipeline de CI/CD para geração de pacotes e instaladores multiplataforma",
+      "tipo": "devops",
+      "dependeDe": [
+        "tarefa_mu21h07f_j"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Instaladores gerados automaticamente para os principais sistemas operacionais"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Configurar pipeline de CI/CD para geração de pacotes e instaladores multiplataforma",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Instaladores gerados automaticamente para os principais sistemas operacionais"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:45.579Z",
+      "atualizadaEm": "2026-09-15T02:14:45.579Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21h07f_f",
+      "para": "tarefa_mu21h07f_d"
+    },
+    {
+      "de": "tarefa_mu21h07f_f",
+      "para": "tarefa_mu21h07f_e"
+    },
+    {
+      "de": "tarefa_mu21h07f_g",
+      "para": "tarefa_mu21h07f_f"
+    },
+    {
+      "de": "tarefa_mu21h07f_h",
+      "para": "tarefa_mu21h07f_f"
+    },
+    {
+      "de": "tarefa_mu21h07f_i",
+      "para": "tarefa_mu21h07f_g"
+    },
+    {
+      "de": "tarefa_mu21h07f_i",
+      "para": "tarefa_mu21h07f_h"
+    },
+    {
+      "de": "tarefa_mu21h07f_j",
+      "para": "tarefa_mu21h07f_i"
+    },
+    {
+      "de": "tarefa_mu21h07f_k",
+      "para": "tarefa_mu21h07f_j"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:14:45.578Z",
+  "atualizadaEm": "2026-09-15T02:14:45.578Z",
+  "modoExecucao": "AUTO"
+}

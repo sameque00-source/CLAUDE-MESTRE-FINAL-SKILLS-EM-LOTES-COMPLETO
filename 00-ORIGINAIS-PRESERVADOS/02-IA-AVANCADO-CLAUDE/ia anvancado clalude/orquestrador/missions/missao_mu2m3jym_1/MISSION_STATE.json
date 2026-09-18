@@ -1,0 +1,115 @@
+{
+  "id": "missao_mu2m3jym_1",
+  "objetivo": "Missão sintética de execução de agente único",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:52:09.933Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:52:09.934Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:52:09.935Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:52:09.936Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:52:10.390Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m3jyn_2",
+      "descricao": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "A vantagem principal do Node.js para servidores é sua capacidade de alta concorrência e baixo consumo de memória, permitindo processar um grande volume de requisições simultâneas de forma eficiente e escalável.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:52:10.389Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:52:09.935Z",
+      "atualizadaEm": "2026-09-15T11:52:10.390Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, qual a vantagem principal do Node.js para servidores?\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2m3jyn_2",
+      "status": "ok",
+      "resultado": "A vantagem principal do Node.js para servidores é sua capacidade de alta concorrência e baixo consumo de memória, permitindo processar um grande volume de requisições simultâneas de forma eficiente e escalável.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:52:10.389Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:52:09.933Z",
+  "atualizadaEm": "2026-09-15T11:52:10.390Z",
+  "modoExecucao": "AUTO"
+}

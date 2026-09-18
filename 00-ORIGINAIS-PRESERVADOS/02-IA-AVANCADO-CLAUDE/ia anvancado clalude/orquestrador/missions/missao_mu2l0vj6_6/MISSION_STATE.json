@@ -1,0 +1,205 @@
+{
+  "id": "missao_mu2l0vj6_6",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:22:05.346Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:22:05.346Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (3 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T11:22:05.347Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:22:05.347Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l0vj7_7",
+      "descricao": "Escolher a biblioteca de interface e o provedor de API multimodal de melhor custo-benefício.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Definida a stack (ex: Streamlit + Google GenAI SDK) com exemplo de chamada validado."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Verificar versão atual e sintaxe correta da SDK do provedor escolhido para visão.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Escolher a biblioteca de interface e o provedor de API multimodal de melhor custo-benefício.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Definida a stack (ex: Streamlit + Google GenAI SDK) com exemplo de chamada validado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:22:05.347Z",
+      "atualizadaEm": "2026-09-15T11:22:05.347Z"
+    },
+    {
+      "id": "tarefa_mu2l0vj7_8",
+      "descricao": "Desenvolver a aplicação completa em arquivo único (interface e integração com API de visão).",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2l0vj7_7"
+      ],
+      "recursoExclusivo": "app.py",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Script principal criado com tratamento de erro para upload e chamada da API."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Desenvolver a aplicação completa em arquivo único (interface e integração com API de visão).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script principal criado com tratamento de erro para upload e chamada da API."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:22:05.347Z",
+      "atualizadaEm": "2026-09-15T11:22:05.347Z"
+    },
+    {
+      "id": "tarefa_mu2l0vj7_9",
+      "descricao": "Criar o arquivo de dependências (requirements.md ou requirements.txt) e o README com instruções de uso.",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu2l0vj7_8"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Dependências listadas e instruções de configuração da chave de API documentadas."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Criar o arquivo de dependências (requirements.md ou requirements.txt) e o README com instruções de uso.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Dependências listadas e instruções de configuração da chave de API documentadas."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:22:05.347Z",
+      "atualizadaEm": "2026-09-15T11:22:05.347Z"
+    },
+    {
+      "id": "tarefa_mu2l0vj7_a",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2l0vj7_8"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:22:05.347Z",
+      "atualizadaEm": "2026-09-15T11:22:05.347Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2l0vj7_8",
+      "para": "tarefa_mu2l0vj7_7"
+    },
+    {
+      "de": "tarefa_mu2l0vj7_9",
+      "para": "tarefa_mu2l0vj7_8"
+    },
+    {
+      "de": "tarefa_mu2l0vj7_a",
+      "para": "tarefa_mu2l0vj7_8"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:22:05.346Z",
+  "atualizadaEm": "2026-09-15T11:22:05.346Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface simples com upload de imagem e exibição da descrição gerada",
+    "Integração com API de IA multimodal (ex: Google Gemini Flash ou OpenAI GPT-4o-mini) para análise da imagem",
+    "Stack única em Python (FastAPI + Streamlit ou Gradio) para entrega rápida e sem complexidade de frontend separado"
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação",
+    "Instruções claras de execução em README.md"
+  ],
+  "criteriosSucesso": [
+    "Aplicação inicia sem erros, aceita o upload de uma foto de produto e exibe a descrição gerada em segundos."
+  ]
+}

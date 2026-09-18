@@ -1,0 +1,303 @@
+{
+  "id": "missao_mu2lg2ju_t",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:33:54.282Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:33:54.282Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via openrouter-nemotron-3-super-120b (3 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T11:33:54.283Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:33:54.283Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T11:38:28.809Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:38:28.810Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lg2jv_u",
+      "descricao": "Ler o arquivo utils.js para obter a função soma atual.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": "openrouter-nemotron-3-super-120b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Conteúdo do arquivo utils.js obtido e exibido."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Ler o arquivo utils.js para obter a função soma atual.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conteúdo do arquivo utils.js obtido e exibido."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: ```json\n{\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\n    \"-e\",\n    \"const fs = require('fs'); console.log(fs.readFileSync('utils.js', 'utf8'));\"\n  ],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Leitura e exibicao do conteudo do arquivo ut"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:38:28.809Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:33:54.283Z",
+      "atualizadaEm": "2026-09-15T11:38:28.810Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Ler o arquivo utils.js para obter a função soma atual.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Conteúdo do arquivo utils.js obtido e exibido.\nSUCCESS_CRITERIA: Conteúdo do arquivo utils.js obtido e exibido.",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2lg2jv_v",
+      "descricao": "Analisar a função soma e enumerar melhorias necessárias (validação de tipos, tratamento de erros, documentação).",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2lg2jv_u"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Lista de melhorias identificada com pelo menos 3 itens."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Analisar a função soma e enumerar melhorias necessárias (validação de tipos, tratamento de erros, documentação).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de melhorias identificada com pelo menos 3 itens."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:33:54.283Z",
+      "atualizadaEm": "2026-09-15T11:38:28.810Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lg2jv_u\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2lg2jv_w",
+      "descricao": "Gerar versão aprimorada de utils.js com as melhorias propostas.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2lg2jv_v"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo utils.js atualizado contém validação de tipos, lançamento de erros para tipos inválidos, JSDoc e comportamento definido para parâmetros faltantes."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Gerar versão aprimorada de utils.js com as melhorias propostas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo utils.js atualizado contém validação de tipos, lançamento de erros para tipos inválidos, JSDoc e comportamento definido para parâmetros faltantes."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:33:54.283Z",
+      "atualizadaEm": "2026-09-15T11:38:28.810Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lg2jv_v\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2lg2jv_x",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2lg2jv_u",
+        "tarefa_mu2lg2jv_w"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:33:54.283Z",
+      "atualizadaEm": "2026-09-15T11:38:28.810Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lg2jv_w\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lg2jv_v",
+      "para": "tarefa_mu2lg2jv_u"
+    },
+    {
+      "de": "tarefa_mu2lg2jv_w",
+      "para": "tarefa_mu2lg2jv_v"
+    },
+    {
+      "de": "tarefa_mu2lg2jv_x",
+      "para": "tarefa_mu2lg2jv_u"
+    },
+    {
+      "de": "tarefa_mu2lg2jv_x",
+      "para": "tarefa_mu2lg2jv_w"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2lg2jv_u",
+      "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): Command failed: node readUtils.js\nnode:fs:441\r\n    return binding.readFileUtf8(path, stringToFlags(options.flag));\r\n                   ^\r\n\r\nError: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2lg2ju_t\\workspace\\utils.js'\r\n    at Object.readFileSync (node:fs:441:20)\r\n    at Object.<anonymous> (C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2lg2ju_t\\workspace\\readUtils.js:2:16)\r\n ",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:34:25.041Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2lg2jv_u",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - User wants me to \"write code that looks like it was written by someone who already maintained the file: same comment density, same nomenclature, same language.\"\n   - There's a contract/task description.\n   - Input/Objective: Read the file ",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:38:27.909Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2lg2jv_u",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: ```json\n{\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\n    \"-e\",\n    \"const fs = require('fs'); console.log(fs.readFileSync('utils.js', 'utf8'));\"\n  ],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Leitura e exibicao do conteudo do arquivo ut",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:38:28.809Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lg2jv_u",
+        "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): Command failed: node readUtils.js\nnode:fs:441\r\n    return binding.readFileUtf8(path, stringToFlags(options.flag));\r\n                   ^\r\n\r\nError: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2lg2ju_t\\workspace\\utils.js'\r\n    at Object.readFileSync (node:fs:441:20)\r\n    at Object.<anonymous> (C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2lg2ju_t\\workspace\\readUtils.js:2:16)\r\n ",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:34:25.041Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:34:25.041Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lg2jv_u",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - User wants me to \"write code that looks like it was written by someone who already maintained the file: same comment density, same nomenclature, same language.\"\n   - There's a contract/task description.\n   - Input/Objective: Read the file ",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:38:27.909Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:38:27.909Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lg2jv_u",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: ```json\n{\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\n    \"-e\",\n    \"const fs = require('fs'); console.log(fs.readFileSync('utils.js', 'utf8'));\"\n  ],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Leitura e exibicao do conteudo do arquivo ut",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:38:28.809Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:38:28.809Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:38:28.810Z"
+  },
+  "criadaEm": "2026-09-15T11:33:54.282Z",
+  "atualizadaEm": "2026-09-15T11:38:28.810Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Identificar a implementação atual da função soma.",
+    "Propor validação de tipos (number) e tratamento de argumentos inválidos.",
+    "Adicionar documentação (JSDoc) e garantir comportamento previsível."
+  ],
+  "entregaveis": [
+    "Lista de melhorias sugeridas para soma.",
+    "Versão revisada do utils.js com as melhorias aplicadas."
+  ],
+  "criteriosSucesso": [
+    "A proposta inclui validação de tipos numéricos e lançamento de TypeError para valores não numéricos.",
+    "O código revisado contém comentários JSDoc descrevendo parâmetros e retorno.",
+    "A função retorna a soma apenas quando ambos os argumentos são números finitos."
+  ]
+}

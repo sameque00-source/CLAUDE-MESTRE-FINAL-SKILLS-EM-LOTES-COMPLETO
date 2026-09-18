@@ -1,0 +1,607 @@
+{
+  "id": "missao_mu21g8dz_3",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:14:09.527Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:14:09.527Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (7 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:14:09.529Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:14:09.529Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T02:14:17.500Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21g8e0_4",
+      "descricao": "Definir a arquitetura técnica e escolher o framework de renderização de vídeo (ex: Electron + WebCodecs / Tauri + Rust)",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": "docs/architecture.md",
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura aprovado especificando stack tecnológica"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Avaliar o estado atual de desempenho de Tauri vs Electron para edição de vídeo pesada",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura técnica e escolher o framework de renderização de vídeo (ex: Electron + WebCodecs / Tauri + Rust)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura aprovado especificando stack tecnológica"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir a arquitetura técnica e escolher",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.437Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.528Z",
+      "atualizadaEm": "2026-09-15T02:14:17.437Z"
+    },
+    {
+      "id": "tarefa_mu21g8e0_5",
+      "descricao": "Configurar o projeto base, sistema de build e dependências principais",
+      "tipo": "setup",
+      "dependeDe": [
+        "tarefa_mu21g8e0_4"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Repositório inicializado com build rodando com sucesso"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Configurar o projeto base, sistema de build e dependências principais",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório inicializado com build rodando com sucesso"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Configurar o projeto base, sistema de bu",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.453Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.528Z",
+      "atualizadaEm": "2026-09-15T02:14:17.453Z"
+    },
+    {
+      "id": "tarefa_mu21g8e1_6",
+      "descricao": "Desenvolver a interface de usuário principal (Timeline, Preview de Vídeo e Painel de Mídia)",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu21g8e0_5"
+      ],
+      "recursoExclusivo": "src/ui",
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Layout responsivo implementado com os painéis principais navegáveis"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Desenvolver a interface de usuário principal (Timeline, Preview de Vídeo e Painel de Mídia)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Layout responsivo implementado com os painéis principais navegáveis"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver a interface de usuário princ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.469Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.529Z",
+      "atualizadaEm": "2026-09-15T02:14:17.469Z"
+    },
+    {
+      "id": "tarefa_mu21g8e1_7",
+      "descricao": "Implementar o motor de manipulação e reprodução de mídia (Player e decodificação)",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu21g8e0_5"
+      ],
+      "recursoExclusivo": "src/engine",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "multimidia",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Módulo capaz de carregar e reproduzir arquivos de vídeo na tela de preview"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Verificar melhores práticas de integração com FFmpeg ou WebCodecs API",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o motor de manipulação e reprodução de mídia (Player e decodificação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo capaz de carregar e reproduzir arquivos de vídeo na tela de preview"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o motor de manipulação e rep",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.469Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.529Z",
+      "atualizadaEm": "2026-09-15T02:14:17.469Z"
+    },
+    {
+      "id": "tarefa_mu21g8e1_8",
+      "descricao": "Implementar as operações da Timeline (corte, arrastar, múltiplas faixas)",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21g8e1_6",
+        "tarefa_mu21g8e1_7"
+      ],
+      "recursoExclusivo": "src/ui/timeline",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Usuário consegue manipular clipes na timeline e ver o resultado no player"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar as operações da Timeline (corte, arrastar, múltiplas faixas)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Usuário consegue manipular clipes na timeline e ver o resultado no player"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar as operações da Timeline (co",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.485Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.529Z",
+      "atualizadaEm": "2026-09-15T02:14:17.485Z"
+    },
+    {
+      "id": "tarefa_mu21g8e1_9",
+      "descricao": "Implementar o sistema de exportação e renderização final do projeto",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21g8e1_7"
+      ],
+      "recursoExclusivo": "src/engine/export",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "multimidia",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Exportação de vídeo renderizado com áudio e vídeo sincronizados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o sistema de exportação e renderização final do projeto",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Exportação de vídeo renderizado com áudio e vídeo sincronizados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o sistema de exportação e re",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.485Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.529Z",
+      "atualizadaEm": "2026-09-15T02:14:17.485Z"
+    },
+    {
+      "id": "tarefa_mu21g8e1_a",
+      "descricao": "Executar testes de integração e validar estabilidade geral da aplicação",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21g8e1_8",
+        "tarefa_mu21g8e1_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "testes",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Suite de testes executada sem falhas críticas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes de integração e validar estabilidade geral da aplicação",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Suite de testes executada sem falhas críticas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar testes de integração e validar ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.500Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.529Z",
+      "atualizadaEm": "2026-09-15T02:14:17.500Z"
+    },
+    {
+      "id": "tarefa_mu21g8e1_b",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu21g8e1_6",
+        "tarefa_mu21g8e1_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Revisar e validar o resultado das tarefa",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.485Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:09.529Z",
+      "atualizadaEm": "2026-09-15T02:14:17.485Z"
+    },
+    {
+      "id": "tarefa_mu21geh7_p",
+      "descricao": "Analisar alternativas ao ffmpeg.wasm (como fallback em servidor ou integração nativa) para garantir compatibilidade total com o navegador Safari",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu21g8e0_4"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Documento de decisão técnica aprovado cobrindo o suporte ao Safari",
+        "Estratégia de fallback ou alternativa nativa definida"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Analisar alternativas ao ffmpeg.wasm (como fallback em servidor ou integração nativa) para garantir compatibilidade total com o navegador Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Analisar alternativas ao ffmpeg.wasm (co",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:14:17.453Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:17.419Z",
+      "atualizadaEm": "2026-09-15T02:14:17.453Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21g8e0_5",
+      "para": "tarefa_mu21g8e0_4"
+    },
+    {
+      "de": "tarefa_mu21g8e1_6",
+      "para": "tarefa_mu21g8e0_5"
+    },
+    {
+      "de": "tarefa_mu21g8e1_7",
+      "para": "tarefa_mu21g8e0_5"
+    },
+    {
+      "de": "tarefa_mu21g8e1_8",
+      "para": "tarefa_mu21g8e1_6"
+    },
+    {
+      "de": "tarefa_mu21g8e1_8",
+      "para": "tarefa_mu21g8e1_7"
+    },
+    {
+      "de": "tarefa_mu21g8e1_9",
+      "para": "tarefa_mu21g8e1_7"
+    },
+    {
+      "de": "tarefa_mu21g8e1_a",
+      "para": "tarefa_mu21g8e1_8"
+    },
+    {
+      "de": "tarefa_mu21g8e1_a",
+      "para": "tarefa_mu21g8e1_9"
+    },
+    {
+      "de": "tarefa_mu21g8e1_b",
+      "para": "tarefa_mu21g8e1_6"
+    },
+    {
+      "de": "tarefa_mu21g8e1_b",
+      "para": "tarefa_mu21g8e1_7"
+    },
+    {
+      "de": "tarefa_mu21geh7_p",
+      "para": "tarefa_mu21g8e0_4"
+    }
+  ],
+  "agentes": [
+    "architecture",
+    "coding",
+    "uiux",
+    "backend",
+    "frontend",
+    "reviewer",
+    "testing"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu21g8e0_4",
+      "status": "ok",
+      "resultado": "mock: Definir a arquitetura técnica e escolher",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.437Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21g8e0_5",
+      "status": "ok",
+      "resultado": "mock: Configurar o projeto base, sistema de bu",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.453Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21geh7_p",
+      "status": "ok",
+      "resultado": "mock: Analisar alternativas ao ffmpeg.wasm (co",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.453Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21g8e1_6",
+      "status": "ok",
+      "resultado": "mock: Desenvolver a interface de usuário princ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.469Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21g8e1_7",
+      "status": "ok",
+      "resultado": "mock: Implementar o motor de manipulação e rep",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.469Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21g8e1_8",
+      "status": "ok",
+      "resultado": "mock: Implementar as operações da Timeline (co",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.485Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21g8e1_9",
+      "status": "ok",
+      "resultado": "mock: Implementar o sistema de exportação e re",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.485Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21g8e1_b",
+      "status": "ok",
+      "resultado": "mock: Revisar e validar o resultado das tarefa",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.485Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21g8e1_a",
+      "status": "ok",
+      "resultado": "mock: Executar testes de integração e validar ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:14:17.500Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:14:09.527Z",
+  "atualizadaEm": "2026-09-15T02:14:17.500Z",
+  "modoExecucao": "AUTO",
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A limitação do ffmpeg.wasm no Safari impacta diretamente a escolha da arquitetura técnica de renderização e manipulação de vídeo, exigindo a inclusão de uma tarefa para avaliar alternativas nativas ou estratégias de fallback no servidor antes de prosseguir com o setup e o desenvolvimento do motor de mídia.",
+      "ts": "2026-09-15T02:14:17.419Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

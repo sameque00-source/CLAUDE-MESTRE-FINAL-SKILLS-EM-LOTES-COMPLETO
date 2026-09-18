@@ -1,0 +1,435 @@
+{
+  "id": "missao_mu304azo_g",
+  "objetivo": "Crie um pequeno aplicativo web funcional: um servidor Node.js (http nativo, sem dependências externas) que responde na rota / com uma pagina HTML simples dizendo \"Ola, mundo!\", rodando na porta 3900.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:24:39.588Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:24:39.588Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T18:24:39.593Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:24:39.594Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:24:43.569Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T18:24:43.570Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T18:24:43.572Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T18:24:43.572Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:24:46.513Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T18:24:46.515Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T18:24:46.515Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T18:24:46.515Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:24:49.164Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T18:24:49.165Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Há afirmação de funcionamento sem execução real por trás e falta de cobertura de testes ou evidência de execução no ambiente.",
+      "ts": "2026-09-15T18:24:49.166Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:24:49.167Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T18:24:49.168Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Há afirmação de funcionamento sem execução real por trás e falta de cobertura de testes ou evidência de execução no ambiente.",
+      "ts": "2026-09-15T18:24:49.169Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:24:49.170Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T18:24:49.171Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Há afirmação de funcionamento sem execução real por trás e falta de cobertura de testes ou evidência de execução no ambiente.",
+      "ts": "2026-09-15T18:24:49.172Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:24:49.173Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T18:24:49.174Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu304azt_h",
+      "descricao": "Criar o arquivo server.js com o servidor HTTP nativo Node.js respondendo 'Ola, mundo!' na porta 3900.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "server.js",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Arquivo server.js criado corretamente com a lógica do servidor HTTP",
+        "Servidor executa e responde corretamente na porta 3900"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Criar o arquivo server.js com o servidor HTTP nativo Node.js respondendo 'Ola, mundo!' na porta 3900.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo server.js criado corretamente com a lógica do servidor HTTP"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Servidor HTTP nativo Node.js criado e configurado para escutar na porta 3900, respondendo 'Ola, mundo!' na raiz.",
+        "arquivos": [
+          "server.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=backend",
+          "servidor validado com requisição HTTP real"
+        ],
+        "testes": [
+          {
+            "comando": "node (servidor, porta 3900)",
+            "resultado": "passou",
+            "evidencia": "HTTP 200 em /: Ola, mundo!"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:24:49.164Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:24:39.593Z",
+      "atualizadaEm": "2026-09-15T18:24:49.164Z",
+      "_contrato": "Voce cuida do lado servidor.\n\nSEMPRE\n- Valide entrada na fronteira do sistema. Nunca confie no cliente.\n- Trate o caminho de erro, nao so o caminho feliz.\n- Nao logue credencial, token nem dado pessoal.\n- Migracao de banco exige aprovacao do coordenador.\n\nEntregue o codigo e diga explicitamente o que NAO foi coberto.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Criar o arquivo server.js com o servidor HTTP nativo Node.js respondendo 'Ola, mundo!' na porta 3900.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Arquivo server.js criado corretamente com a lógica do servidor HTTP\nSUCCESS_CRITERIA: Arquivo server.js criado corretamente com a lógica do servidor HTTP; Servidor executa e responde corretamente na porta 3900",
+      "motivoReabertura": null
+    },
+    {
+      "id": "tarefa_mu304azu_i",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu304azt_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Há afirmação de funcionamento sem execução real por trás e falta de cobertura de testes ou evidência de execução no ambiente.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=false",
+          "agente=reviewer",
+          "Não há evidência de execução real do server.js via terminal para garantir que ele sobe na porta 3900 e responde corretamente às requisições (Violação do item 4: 'Ha afirmacao de que funciona sem execucao real por tras?').",
+          "O código trata apenas da rota raiz ('/'), mas não lida com rotas inexistentes (404 Not Found), focando apenas no caminho feliz da resposta padrão 'Ola, mundo!'."
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "Não há evidência de execução real do server.js via terminal para garantir que ele sobe na porta 3900 e responde corretamente às requisições (Violação do item 4: 'Ha afirmacao de que funciona sem execucao real por tras?').",
+          "O código trata apenas da rota raiz ('/'), mas não lida com rotas inexistentes (404 Not Found), focando apenas no caminho feliz da resposta padrão 'Ola, mundo!'."
+        ],
+        "ts": "2026-09-15T18:24:43.568Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:24:39.594Z",
+      "atualizadaEm": "2026-09-15T18:24:43.569Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)\nCONTEXT: - Criado o arquivo server.js utilizando apenas módulos nativos do Node.js, com validação de entrada básica e tratamento de erros.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: aprovação ou reprovação explícita registrada; todas as tarefas de implementação foram cobertas pela revisão"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu304azu_i",
+      "para": "tarefa_mu304azt_h"
+    }
+  ],
+  "agentes": [
+    "backend",
+    "reviewer"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu304azt_h",
+      "status": "ok",
+      "resultado": "Criado o arquivo server.js utilizando apenas módulos nativos do Node.js, com validação de entrada básica e tratamento de erros.",
+      "arquivos": [
+        "server.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=backend",
+        "servidor validado com requisição HTTP real"
+      ],
+      "testes": [
+        {
+          "comando": "node (servidor, porta 3900)",
+          "resultado": "passou",
+          "evidencia": "HTTP 200 em /: Ola, mundo!"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:24:42.314Z"
+    },
+    {
+      "tarefaId": "tarefa_mu304azu_i",
+      "status": "ok",
+      "resultado": "Há afirmação de funcionamento sem execução real por trás e falta de cobertura de testes ou evidência de execução no ambiente.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=false",
+        "agente=reviewer",
+        "Não há evidência de execução real do server.js via terminal para garantir que ele sobe na porta 3900 e responde corretamente às requisições (Violação do item 4: 'Ha afirmacao de que funciona sem execucao real por tras?').",
+        "O código trata apenas da rota raiz ('/'), mas não lida com rotas inexistentes (404 Not Found), focando apenas no caminho feliz da resposta padrão 'Ola, mundo!'."
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "Não há evidência de execução real do server.js via terminal para garantir que ele sobe na porta 3900 e responde corretamente às requisições (Violação do item 4: 'Ha afirmacao de que funciona sem execucao real por tras?').",
+        "O código trata apenas da rota raiz ('/'), mas não lida com rotas inexistentes (404 Not Found), focando apenas no caminho feliz da resposta padrão 'Ola, mundo!'."
+      ],
+      "ts": "2026-09-15T18:24:43.568Z"
+    },
+    {
+      "tarefaId": "tarefa_mu304azt_h",
+      "status": "ok",
+      "resultado": "Criado o arquivo server.js com servidor HTTP nativo Node.js respondendo 'Ola, mundo!' na porta 3900 com validação de entrada.",
+      "arquivos": [
+        "server.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=backend",
+        "servidor validado com requisição HTTP real"
+      ],
+      "testes": [
+        {
+          "comando": "node (servidor, porta 3900)",
+          "resultado": "passou",
+          "evidencia": "HTTP 200 em /: Ola, mundo!"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:24:46.513Z"
+    },
+    {
+      "tarefaId": "tarefa_mu304azt_h",
+      "status": "ok",
+      "resultado": "Servidor HTTP nativo Node.js criado e configurado para escutar na porta 3900, respondendo 'Ola, mundo!' na raiz.",
+      "arquivos": [
+        "server.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=backend",
+        "servidor validado com requisição HTTP real"
+      ],
+      "testes": [
+        {
+          "comando": "node (servidor, porta 3900)",
+          "resultado": "passou",
+          "evidencia": "HTTP 200 em /: Ola, mundo!"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:24:49.164Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T18:24:43.570Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T18:24:46.515Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T18:24:49.165Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T18:24:49.168Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T18:24:49.171Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T18:24:49.174Z"
+  },
+  "criadaEm": "2026-09-15T18:24:39.588Z",
+  "atualizadaEm": "2026-09-15T18:24:49.174Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Servidor usando o módulo http nativo do Node.js",
+    "Resposta HTML simples com o texto 'Ola, mundo!' na rota /",
+    "Servidor escutando na porta 3900"
+  ],
+  "entregaveis": [
+    "Arquivo server.js funcional"
+  ],
+  "criteriosSucesso": [
+    "O servidor inicia sem erros na porta 3900",
+    "Acessar http://localhost:3900/ retorna a página HTML com 'Ola, mundo!'"
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "tipoExecucao": "servidor",
+    "porta": 3900,
+    "rotaTeste": "/"
+  },
+  "_rodadasRevisaoMissao": 5
+}

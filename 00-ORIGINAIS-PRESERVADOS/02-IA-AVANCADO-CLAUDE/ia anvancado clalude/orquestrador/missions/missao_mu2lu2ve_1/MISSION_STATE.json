@@ -1,0 +1,115 @@
+{
+  "id": "missao_mu2lu2ve_1",
+  "objetivo": "Missão sintética de execução de agente único",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:44:47.881Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:44:47.882Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:44:47.883Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:44:47.884Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:44:49.285Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lu2vf_2",
+      "descricao": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "- **As opções reais:** Não há opções a listar, pois a solicitação exige apenas **uma** resposta direta (1 frase) sobre a principal vantagem do Node.js para servidores, conforme definido no input/objective.\n- **Para cada uma:** Não aplicável (questão factual direta, não uma decisão arquitetural com múltiplos caminhos).\n- **O precedente:** Não aplicável.\n- **Uma recomendação com o motivo:** Não aplicável.\n\n---\n\n**RESULTADO DA TAREFA:**\n\nA principal vantagem do Node.js para servidores é o seu modelo de I/O assíncrono e orientado a eventos, que permite processar milhares de conexões concorrentes de forma eficiente com uma única thread.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:44:49.284Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:44:47.883Z",
+      "atualizadaEm": "2026-09-15T11:44:49.285Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, qual a vantagem principal do Node.js para servidores?\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lu2vf_2",
+      "status": "ok",
+      "resultado": "- **As opções reais:** Não há opções a listar, pois a solicitação exige apenas **uma** resposta direta (1 frase) sobre a principal vantagem do Node.js para servidores, conforme definido no input/objective.\n- **Para cada uma:** Não aplicável (questão factual direta, não uma decisão arquitetural com múltiplos caminhos).\n- **O precedente:** Não aplicável.\n- **Uma recomendação com o motivo:** Não aplicável.\n\n---\n\n**RESULTADO DA TAREFA:**\n\nA principal vantagem do Node.js para servidores é o seu modelo de I/O assíncrono e orientado a eventos, que permite processar milhares de conexões concorrentes de forma eficiente com uma única thread.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:44:49.284Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:44:47.881Z",
+  "atualizadaEm": "2026-09-15T11:44:49.285Z",
+  "modoExecucao": "AUTO"
+}

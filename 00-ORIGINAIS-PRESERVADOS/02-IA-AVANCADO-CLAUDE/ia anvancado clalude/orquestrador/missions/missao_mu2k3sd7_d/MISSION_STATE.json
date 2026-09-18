@@ -1,0 +1,172 @@
+{
+  "id": "missao_mu2k3sd7_d",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:56:21.595Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:56:21.595Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (3 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T10:56:21.596Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:56:21.596Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2k3sd8_e",
+      "descricao": "Criar a estrutura base do projeto web e a interface de usuário (frontend para upload e exibição do texto).",
+      "tipo": "frontend",
+      "dependeDe": [],
+      "recursoExclusivo": "src/app/page.tsx",
+      "status": "pendente",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Interface renderiza botão de upload, pré-visualização da imagem e área de texto."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Criar a estrutura base do projeto web e a interface de usuário (frontend para upload e exibição do texto).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface renderiza botão de upload, pré-visualização da imagem e área de texto."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:21.596Z",
+      "atualizadaEm": "2026-09-15T10:56:21.596Z"
+    },
+    {
+      "id": "tarefa_mu2k3sd8_f",
+      "descricao": "Implementar a rota de backend/Server Action para receber a imagem e integrá-la com a API multimodal de IA.",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2k3sd8_e"
+      ],
+      "recursoExclusivo": "src/app/api/analyze/route.ts",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "API recebe a imagem, envia para o modelo multimodal com prompt de descrição de produto e retorna o texto gerado com sucesso."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a rota de backend/Server Action para receber a imagem e integrá-la com a API multimodal de IA.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "API recebe a imagem, envia para o modelo multimodal com prompt de descrição de produto e retorna o texto gerado com sucesso."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:21.596Z",
+      "atualizadaEm": "2026-09-15T10:56:21.596Z"
+    },
+    {
+      "id": "tarefa_mu2k3sd8_g",
+      "descricao": "Conectar o frontend ao backend, testar o fluxo completo de ponta a ponta e validar tratamento de erros.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2k3sd8_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Upload de foto de teste gera descrição exibida corretamente na interface sem erros no console."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Conectar o frontend ao backend, testar o fluxo completo de ponta a ponta e validar tratamento de erros.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Upload de foto de teste gera descrição exibida corretamente na interface sem erros no console."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:21.596Z",
+      "atualizadaEm": "2026-09-15T10:56:21.596Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2k3sd8_f",
+      "para": "tarefa_mu2k3sd8_e"
+    },
+    {
+      "de": "tarefa_mu2k3sd8_g",
+      "para": "tarefa_mu2k3sd8_f"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:56:21.595Z",
+  "atualizadaEm": "2026-09-15T10:56:21.595Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Upload de imagens (JPG/PNG)",
+    "Integração com API de IA multimodal (ex: Google Gemini Flash ou OpenAI GPT-4o-mini) para análise de imagem e geração de texto",
+    "Interface simples com visualização da foto e da descrição gerada",
+    "Botão para copiar o texto gerado"
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação",
+    "Instruções claras de configuração e execução"
+  ],
+  "criteriosSucesso": [
+    "Aplicação roda localmente, aceita upload de imagem de produto e retorna descrição coerente gerada por IA."
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "id": "missao_mu2ywek1_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:50:31.343Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:50:31.345Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T17:50:31.351Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:50:31.352Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ywek6_2",
+      "descricao": "Confirmar a presença do arquivo README.md no diretório raiz do repositório",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo README.md encontrado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Confirmar a presença do arquivo README.md no diretório raiz do repositório",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo README.md encontrado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:31.350Z",
+      "atualizadaEm": "2026-09-15T17:50:31.350Z"
+    },
+    {
+      "id": "tarefa_mu2ywek6_3",
+      "descricao": "Abrir README.md, substituir todas as ocorrências de \"aplicacao\" por \"aplicação\" e salvar com codificação UTF-8",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ywek6_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md salvo e contém \"aplicação\" nos locais corretos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Abrir README.md, substituir todas as ocorrências de \"aplicacao\" por \"aplicação\" e salvar com codificação UTF-8",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md salvo e contém \"aplicação\" nos locais corretos"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:31.350Z",
+      "atualizadaEm": "2026-09-15T17:50:31.350Z"
+    },
+    {
+      "id": "tarefa_mu2ywek6_4",
+      "descricao": "Validar que o README.md agora contém a palavra \"aplicação\" e que não há regressões de conteúdo",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2ywek6_3"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Busca por \"aplicacao\" não retorna resultados; busca por \"aplicação\" retorna os locais esperados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar que o README.md agora contém a palavra \"aplicação\" e que não há regressões de conteúdo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Busca por \"aplicacao\" não retorna resultados; busca por \"aplicação\" retorna os locais esperados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:31.350Z",
+      "atualizadaEm": "2026-09-15T17:50:31.350Z"
+    },
+    {
+      "id": "tarefa_mu2ywek8_5",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2ywek6_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:31.352Z",
+      "atualizadaEm": "2026-09-15T17:50:31.352Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ywek6_3",
+      "para": "tarefa_mu2ywek6_2"
+    },
+    {
+      "de": "tarefa_mu2ywek6_4",
+      "para": "tarefa_mu2ywek6_3"
+    },
+    {
+      "de": "tarefa_mu2ywek8_5",
+      "para": "tarefa_mu2ywek6_3"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:50:31.343Z",
+  "atualizadaEm": "2026-09-15T17:50:31.343Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Localizar o arquivo README.md no diretório raiz do projeto",
+    "Substituir todas as ocorrências de \"aplicacao\" por \"aplicação\"",
+    "Preservar a codificação UTF-8 para que o acento seja salvo corretamente"
+  ],
+  "entregaveis": [
+    "README.md atualizado com a ortografia correta"
+  ],
+  "criteriosSucesso": [
+    "O README.md contém a palavra \"aplicação\" onde antes aparecia \"aplicacao\" e o arquivo permanece válido em UTF-8"
+  ]
+}

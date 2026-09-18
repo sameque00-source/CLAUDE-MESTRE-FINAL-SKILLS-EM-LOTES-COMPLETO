@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Cliques Acessível</title>
+  <style>
+    body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }
+    .container { text-align: center; width: 100%; max-width: 390px; }
+    button { padding: 15px 30px; font-size: 1.2rem; cursor: pointer; background: #005a9c; color: #fff; border: none; border-radius: 8px; }
+    button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
+    #contador { font-size: 2rem; margin: 20px 0; color: #333; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Contador de Cliques</h1>
+    <div id="contador" aria-live="polite">0</div>
+    <button id="btn-incrementar" aria-label="Incrementar contador">Clique aqui</button>
+  </main>
+  <script>
+    const btn = document.getElementById('btn-incrementar');
+    const display = document.getElementById('contador');
+    let count = 0;
+    btn.addEventListener('click', () => {
+      count++;
+      display.textContent = count;
+    });
+  </script>
+</body>
+</html>

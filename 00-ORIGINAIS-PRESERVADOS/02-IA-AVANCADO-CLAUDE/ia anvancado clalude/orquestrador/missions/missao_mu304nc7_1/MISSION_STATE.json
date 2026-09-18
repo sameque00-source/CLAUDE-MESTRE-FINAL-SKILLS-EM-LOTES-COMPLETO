@@ -1,0 +1,224 @@
+{
+  "id": "missao_mu304nc7_1",
+  "objetivo": "Missão sintética de paralelismo real",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:24:55.590Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:24:55.591Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T18:24:55.592Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:24:55.595Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:24:57.026Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu304nc8_2",
+      "descricao": "Em uma frase, diga uma vantagem do Node.js.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Node.js.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Node.js é assíncrono e baseado em eventos, permitindo lidar com alto volume de conexões simultâneas sem bloquear a thread principal.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:24:56.158Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:24:55.592Z",
+      "atualizadaEm": "2026-09-15T18:24:57.025Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Node.js.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu304nc9_3",
+      "descricao": "Em uma frase, diga uma vantagem do Python.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Python.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Penso como um programador usando raciocínio lógico: o Python permite prototipar soluções complexas com muito menos código do que linguagens compiladas tradicionais.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:24:56.288Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:24:55.593Z",
+      "atualizadaEm": "2026-09-15T18:24:57.025Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Python.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu304nca_4",
+      "descricao": "Em uma frase, diga uma vantagem do Go.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Go.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Como você não forneceu o arquivo existente para leitura (conforme as regras: *\"Se não leu, diga que não leu\"* e *\"Leia o arquivo antes de editar\"*), não posso imitar o estilo de um código pré-existente. \n\nNo entanto, respondendo estritamente ao INPUT/OBJECTIVE dentro das restrições:\n\nUma vantagem do Go é a sua tipagem estática combinada com um sistema de concorrência nativo (goroutines e channels) de altíssima performance e baixo consumo de memória.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:24:57.025Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:24:55.594Z",
+      "atualizadaEm": "2026-09-15T18:24:57.025Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Go.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b",
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu304nc8_2",
+      "status": "ok",
+      "resultado": "Node.js é assíncrono e baseado em eventos, permitindo lidar com alto volume de conexões simultâneas sem bloquear a thread principal.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:24:56.158Z"
+    },
+    {
+      "tarefaId": "tarefa_mu304nc9_3",
+      "status": "ok",
+      "resultado": "Penso como um programador usando raciocínio lógico: o Python permite prototipar soluções complexas com muito menos código do que linguagens compiladas tradicionais.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:24:56.288Z"
+    },
+    {
+      "tarefaId": "tarefa_mu304nca_4",
+      "status": "ok",
+      "resultado": "Como você não forneceu o arquivo existente para leitura (conforme as regras: *\"Se não leu, diga que não leu\"* e *\"Leia o arquivo antes de editar\"*), não posso imitar o estilo de um código pré-existente. \n\nNo entanto, respondendo estritamente ao INPUT/OBJECTIVE dentro das restrições:\n\nUma vantagem do Go é a sua tipagem estática combinada com um sistema de concorrência nativo (goroutines e channels) de altíssima performance e baixo consumo de memória.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:24:57.025Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:24:55.590Z",
+  "atualizadaEm": "2026-09-15T18:24:57.026Z",
+  "modoExecucao": "AUTO"
+}

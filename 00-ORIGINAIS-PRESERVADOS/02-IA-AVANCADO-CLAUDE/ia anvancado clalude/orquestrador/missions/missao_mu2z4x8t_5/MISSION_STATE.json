@@ -1,0 +1,320 @@
+{
+  "id": "missao_mu2z4x8t_5",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:57:08.813Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:57:08.813Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-3.1-flash-lite (6 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T17:57:08.814Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:57:08.814Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2z4x8u_6",
+      "descricao": "Pesquisar melhor modelo multimodal (custo/benefício) para análise de imagens de produtos",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Escolha definida entre modelos com justificativa de custo/benefício"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário comparar latência e custo por imagem entre GPT-4o e alternativas open-source ou menores.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar melhor modelo multimodal (custo/benefício) para análise de imagens de produtos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Escolha definida entre modelos com justificativa de custo/benefício"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:57:08.814Z",
+      "atualizadaEm": "2026-09-15T17:57:08.814Z"
+    },
+    {
+      "id": "tarefa_mu2z4x8u_7",
+      "descricao": "Pesquisar padrões de prompt para E-commerce (SEO-friendly)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Prompt template estruturado para produtos"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir que a descrição gerada seja útil para plataformas de venda.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar padrões de prompt para E-commerce (SEO-friendly)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Prompt template estruturado para produtos"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:57:08.814Z",
+      "atualizadaEm": "2026-09-15T17:57:08.814Z"
+    },
+    {
+      "id": "tarefa_mu2z4x8u_8",
+      "descricao": "Definir arquitetura e stack: Node.js (Backend) e Frontend estático",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2z4x8u_6",
+        "tarefa_mu2z4x8u_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Documento de arquitetura definido com endpoints e fluxo de dados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir arquitetura e stack: Node.js (Backend) e Frontend estático",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura definido com endpoints e fluxo de dados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:57:08.814Z",
+      "atualizadaEm": "2026-09-15T17:57:08.814Z"
+    },
+    {
+      "id": "tarefa_mu2z4x8u_9",
+      "descricao": "Implementar backend para upload de imagem e integração com API de visão",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2z4x8u_8"
+      ],
+      "recursoExclusivo": "main_repo",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "API funcional recebendo imagem e retornando string"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar backend para upload de imagem e integração com API de visão",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "API funcional recebendo imagem e retornando string"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:57:08.814Z",
+      "atualizadaEm": "2026-09-15T17:57:08.814Z"
+    },
+    {
+      "id": "tarefa_mu2z4x8u_a",
+      "descricao": "Criar interface simples de upload e exibição do resultado",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2z4x8u_9"
+      ],
+      "recursoExclusivo": "main_repo",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "UI funcional conectada ao backend"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Criar interface simples de upload e exibição do resultado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "UI funcional conectada ao backend"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:57:08.814Z",
+      "atualizadaEm": "2026-09-15T17:57:08.814Z"
+    },
+    {
+      "id": "tarefa_mu2z4x8u_b",
+      "descricao": "Validar qualidade das descrições geradas",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2z4x8u_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "teste"
+      ],
+      "criterioConclusao": [
+        "Relatório de teste com 5 imagens de produtos reais gerando descrições precisas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar qualidade das descrições geradas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de teste com 5 imagens de produtos reais gerando descrições precisas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:57:08.814Z",
+      "atualizadaEm": "2026-09-15T17:57:08.814Z"
+    },
+    {
+      "id": "tarefa_mu2z4x8u_c",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2z4x8u_9",
+        "tarefa_mu2z4x8u_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:57:08.814Z",
+      "atualizadaEm": "2026-09-15T17:57:08.814Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2z4x8u_8",
+      "para": "tarefa_mu2z4x8u_6"
+    },
+    {
+      "de": "tarefa_mu2z4x8u_8",
+      "para": "tarefa_mu2z4x8u_7"
+    },
+    {
+      "de": "tarefa_mu2z4x8u_9",
+      "para": "tarefa_mu2z4x8u_8"
+    },
+    {
+      "de": "tarefa_mu2z4x8u_a",
+      "para": "tarefa_mu2z4x8u_9"
+    },
+    {
+      "de": "tarefa_mu2z4x8u_b",
+      "para": "tarefa_mu2z4x8u_a"
+    },
+    {
+      "de": "tarefa_mu2z4x8u_c",
+      "para": "tarefa_mu2z4x8u_9"
+    },
+    {
+      "de": "tarefa_mu2z4x8u_c",
+      "para": "tarefa_mu2z4x8u_a"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:57:08.813Z",
+  "atualizadaEm": "2026-09-15T17:57:08.813Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface para upload de fotos",
+    "Integração com LLM multimodal (ex: GPT-4o ou Claude 3.5 Sonnet)",
+    "Extração de características do produto (cor, material, uso, estilo)",
+    "Geração de descrição estruturada"
+  ],
+  "entregaveis": [
+    "Script de backend (Node.js) para processamento",
+    "Interface web simples para upload",
+    "Relatório de prompt otimizado"
+  ],
+  "criteriosSucesso": [
+    "Usuário consegue subir uma foto e receber uma descrição comercial coerente em menos de 10 segundos"
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "id": "missao_mu2m4slm_t",
+  "objetivo": "Melhore um pequeno aplicativo web: crie uma pagina HTML simples com um contador de cliques em JavaScript puro (sem framework), pesquisando rapidamente a melhor pratica de acessibilidade para botoes antes de implementar, e revise o resultado final.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:53:07.786Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:53:07.787Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-3.1-flash-lite (3 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T11:53:07.788Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:53:07.788Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:53:18.579Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:53:18.580Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T11:53:18.581Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T11:53:18.582Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:53:22.337Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:53:22.339Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T11:53:22.340Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T11:53:22.340Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:54:13.525Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:54:13.526Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "REPROVADO - Há problemas de acessibilidade na semântica do contador, falta de tratamento de limites numéricos e ausência de evidência de teste real.",
+      "ts": "2026-09-15T11:54:13.527Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:54:13.528Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:54:13.530Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "REPROVADO - Há problemas de acessibilidade na semântica do contador, falta de tratamento de limites numéricos e ausência de evidência de teste real.",
+      "ts": "2026-09-15T11:54:13.531Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:54:13.532Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:54:13.533Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m4sln_u",
+      "descricao": "Pesquisar melhores práticas de acessibilidade (A11y) para botões web (uso de aria-labels, navegação por teclado e semântica HTML).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de diretrizes A11y para elementos de interação definida."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar os padrões atuais da W3C para garantir que o botão seja acessível.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar melhores práticas de acessibilidade (A11y) para botões web (uso de aria-labels, navegação por teclado e semântica HTML).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de diretrizes A11y para elementos de interação definida."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Nenhuma fonte externa encontrada para \"Pesquisar melhores práticas de acessibilidade (A11y) para botões web (uso de aria-labels, navegação por teclado e semântica HTML).\" (providers gratuitos tentados: [{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]). Nenhum fato foi inventado — prosseguindo apenas com conhecimento geral do agente, sem alegar pesquisa concluída.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "pesquisa_indisponivel=true",
+          "agente=research",
+          "tentativas=[{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "pesquisa web indisponível (todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)) — [PRECISA VERIFICAÇÃO] nenhuma fonte externa confirmada, não bloquear tarefas dependentes por isso"
+        ],
+        "ts": "2026-09-15T11:53:08.831Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:53:07.787Z",
+      "atualizadaEm": "2026-09-15T11:53:08.831Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Pesquisar melhores práticas de acessibilidade (A11y) para botões web (uso de aria-labels, navegação por teclado e semântica HTML).\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Lista de diretrizes A11y para elementos de interação definida.\nSUCCESS_CRITERIA: Lista de diretrizes A11y para elementos de interação definida."
+    },
+    {
+      "id": "tarefa_mu2m4slo_v",
+      "descricao": "Implementar a estrutura HTML e a lógica do contador em JavaScript puro, aplicando as práticas de acessibilidade pesquisadas.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2m4sln_u"
+      ],
+      "recursoExclusivo": "index.html",
+      "status": "cancelada",
+      "agente": "frontend",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "index.html criado e funcional com incremento de contador e teclado ativo."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a estrutura HTML e a lógica do contador em JavaScript puro, aplicando as práticas de acessibilidade pesquisadas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "index.html criado e funcional com incremento de contador e teclado ativo."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "geração de código falhou: resposta vazia"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:54:13.523Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:53:07.788Z",
+      "atualizadaEm": "2026-09-15T11:54:13.525Z",
+      "_contrato": "Voce cuida do lado cliente.\n\nSEMPRE\n- Mobile-first. Nenhum scroll horizontal em 390px.\n- Um unico h1, hierarquia de heading sem salto.\n- Foco de teclado visivel. Nunca outline:none sem substituto.\n- Contraste minimo 4.5:1 em texto normal.\n- Toda imagem informativa com alt significativo; decorativa com alt vazio.\n\nEntregue o codigo e diga o que ainda precisa de teste em navegador real.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Implementar a estrutura HTML e a lógica do contador em JavaScript puro, aplicando as práticas de acessibilidade pesquisadas.\nCONTEXT: - Nenhuma fonte externa encontrada para \"Pesquisar melhores práticas de acessibilidade (A11y) para botões web (uso de aria-labels, navegação por teclado e semântica HTML).\" (providers gratuitos tentados: [{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]). Nenhum fato foi inventado — prosseguindo apenas com conhecimento geral do agente, sem alegar pesquisa concluída.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: index.html criado e funcional com incremento de contador e teclado ativo.\nSUCCESS_CRITERIA: index.html criado e funcional com incremento de contador e teclado ativo.",
+      "motivoReabertura": null,
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2m4slo_w",
+      "descricao": "Revisar o código final quanto à semântica HTML, acessibilidade aplicada e limpeza do JavaScript.",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2m4slo_v"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Relatório de revisão gerado e código validado sem erros críticos."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código final quanto à semântica HTML, acessibilidade aplicada e limpeza do JavaScript.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de revisão gerado e código validado sem erros críticos."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "REPROVADO - Há problemas de acessibilidade na semântica do contador, falta de tratamento de limites numéricos e ausência de evidência de teste real.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=false",
+          "agente=reviewer",
+          "O elemento com id='contador' utiliza um <div> simples com aria-live='polite'. Para leitores de tela, o ideal semântico para exibição de valores dinâmicos de status seria utilizar um elemento com função de output ou region mais explícita, ou garantir que a mudança seja lida corretamente sem poluir o buffer do leitor.",
+          "O contador incrementa infinitamente (`count++`) sem nenhum limite máximo (overflow). Embora seja um contador simples, a falta de validação de limite (ex: Number.MAX_SAFE_INTEGER) pode quebrar o layout se o número crescer indefinidamente.",
+          "Não há indicação ou prova de execução real dos testes de acessibilidade (como navegação via teclado puro ou validação com leitor de tela real), baseando-se apenas na suposição de que funciona.",
+          "O foco visível está definido apenas para o botão (`button:focus`), mas faltam estados de foco para outros elementos interativos caso venham a ser adicionados, embora para o escopo atual atenda parcialmente. Contudo, o escopo pedia 'acessibilidade aplicada' globalmente."
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "O elemento com id='contador' utiliza um <div> simples com aria-live='polite'. Para leitores de tela, o ideal semântico para exibição de valores dinâmicos de status seria utilizar um elemento com função de output ou region mais explícita, ou garantir que a mudança seja lida corretamente sem poluir o buffer do leitor.",
+          "O contador incrementa infinitamente (`count++`) sem nenhum limite máximo (overflow). Embora seja um contador simples, a falta de validação de limite (ex: Number.MAX_SAFE_INTEGER) pode quebrar o layout se o número crescer indefinidamente.",
+          "Não há indicação ou prova de execução real dos testes de acessibilidade (como navegação via teclado puro ou validação com leitor de tela real), baseando-se apenas na suposição de que funciona.",
+          "O foco visível está definido apenas para o botão (`button:focus`), mas faltam estados de foco para outros elementos interativos caso venham a ser adicionados, embora para o escopo atual atenda parcialmente. Contudo, o escopo pedia 'acessibilidade aplicada' globalmente."
+        ],
+        "ts": "2026-09-15T11:53:18.578Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:53:07.788Z",
+      "atualizadaEm": "2026-09-15T11:53:18.579Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Revisar o código final quanto à semântica HTML, acessibilidade aplicada e limpeza do JavaScript.\nCONTEXT: - Implementei uma interface mobile-first com foco visível (outline de alto contraste), ARIA-live para leitura por leitores de tela e semântica HTML adequada. O contador usa JavaScript puro para manipular o DOM.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Relatório de revisão gerado e código validado sem erros críticos.\nSUCCESS_CRITERIA: Relatório de revisão gerado e código validado sem erros críticos."
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2m4slo_v",
+      "para": "tarefa_mu2m4sln_u"
+    },
+    {
+      "de": "tarefa_mu2m4slo_w",
+      "para": "tarefa_mu2m4slo_v"
+    }
+  ],
+  "agentes": [
+    "research",
+    "frontend",
+    "reviewer"
+  ],
+  "modelos": [
+    "google-gemini-3.1-flash-lite",
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2m4sln_u",
+      "status": "ok",
+      "resultado": "Nenhuma fonte externa encontrada para \"Pesquisar melhores práticas de acessibilidade (A11y) para botões web (uso de aria-labels, navegação por teclado e semântica HTML).\" (providers gratuitos tentados: [{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]). Nenhum fato foi inventado — prosseguindo apenas com conhecimento geral do agente, sem alegar pesquisa concluída.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "pesquisa_indisponivel=true",
+        "agente=research",
+        "tentativas=[{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "pesquisa web indisponível (todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)) — [PRECISA VERIFICAÇÃO] nenhuma fonte externa confirmada, não bloquear tarefas dependentes por isso"
+      ],
+      "ts": "2026-09-15T11:53:08.831Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m4slo_v",
+      "status": "ok",
+      "resultado": "Implementei uma interface mobile-first com foco visível (outline de alto contraste), ARIA-live para leitura por leitores de tela e semântica HTML adequada. O contador usa JavaScript puro para manipular o DOM.",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=frontend"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T11:53:16.509Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m4slo_w",
+      "status": "ok",
+      "resultado": "REPROVADO - Há problemas de acessibilidade na semântica do contador, falta de tratamento de limites numéricos e ausência de evidência de teste real.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=false",
+        "agente=reviewer",
+        "O elemento com id='contador' utiliza um <div> simples com aria-live='polite'. Para leitores de tela, o ideal semântico para exibição de valores dinâmicos de status seria utilizar um elemento com função de output ou region mais explícita, ou garantir que a mudança seja lida corretamente sem poluir o buffer do leitor.",
+        "O contador incrementa infinitamente (`count++`) sem nenhum limite máximo (overflow). Embora seja um contador simples, a falta de validação de limite (ex: Number.MAX_SAFE_INTEGER) pode quebrar o layout se o número crescer indefinidamente.",
+        "Não há indicação ou prova de execução real dos testes de acessibilidade (como navegação via teclado puro ou validação com leitor de tela real), baseando-se apenas na suposição de que funciona.",
+        "O foco visível está definido apenas para o botão (`button:focus`), mas faltam estados de foco para outros elementos interativos caso venham a ser adicionados, embora para o escopo atual atenda parcialmente. Contudo, o escopo pedia 'acessibilidade aplicada' globalmente."
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "O elemento com id='contador' utiliza um <div> simples com aria-live='polite'. Para leitores de tela, o ideal semântico para exibição de valores dinâmicos de status seria utilizar um elemento com função de output ou region mais explícita, ou garantir que a mudança seja lida corretamente sem poluir o buffer do leitor.",
+        "O contador incrementa infinitamente (`count++`) sem nenhum limite máximo (overflow). Embora seja um contador simples, a falta de validação de limite (ex: Number.MAX_SAFE_INTEGER) pode quebrar o layout se o número crescer indefinidamente.",
+        "Não há indicação ou prova de execução real dos testes de acessibilidade (como navegação via teclado puro ou validação com leitor de tela real), baseando-se apenas na suposição de que funciona.",
+        "O foco visível está definido apenas para o botão (`button:focus`), mas faltam estados de foco para outros elementos interativos caso venham a ser adicionados, embora para o escopo atual atenda parcialmente. Contudo, o escopo pedia 'acessibilidade aplicada' globalmente."
+      ],
+      "ts": "2026-09-15T11:53:18.578Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m4slo_v",
+      "status": "ok",
+      "resultado": "Criado index.html com layout mobile-first sem scroll horizontal, semântica correta com h1 único, foco de teclado visível via focus-visible e aria-live para leitores de tela.",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=frontend"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T11:53:22.337Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:53:18.580Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:53:22.339Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/3 subtarefas concluídas (1 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:54:13.526Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/3 subtarefas concluídas (1 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:54:13.530Z"
+    }
+  ],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2m4slo_v",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [\n    {\n      \"caminho\": \"index.html\",\n      \"conteudo\": \"<!doctype html>\\n<html lang=\\\"pt-BR\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n<title>Contador Acessível</title>\\n<style>\\n  :root{\\n    --bg:#0f1419;\\n    -",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:53:24.682Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2m4slo_v",
+      "erro": "geração de código falhou: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1789516800000\"},\"limit_source\":\"openrouter_free_tier_daily\",\"remedy_hi",
+      "tipo": "quota",
+      "ts": "2026-09-15T11:54:09.307Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2m4slo_v",
+      "erro": "geração de código falhou: resposta vazia",
+      "tipo": "vazio",
+      "ts": "2026-09-15T11:54:13.523Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2m4slo_v",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [\n    {\n      \"caminho\": \"index.html\",\n      \"conteudo\": \"<!doctype html>\\n<html lang=\\\"pt-BR\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n<title>Contador Acessível</title>\\n<style>\\n  :root{\\n    --bg:#0f1419;\\n    -",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:53:24.682Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:53:24.682Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2m4slo_v",
+        "erro": "geração de código falhou: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1789516800000\"},\"limit_source\":\"openrouter_free_tier_daily\",\"remedy_hi",
+        "tipo": "quota",
+        "ts": "2026-09-15T11:54:09.307Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:54:09.307Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2m4slo_v",
+        "erro": "geração de código falhou: resposta vazia",
+        "tipo": "vazio",
+        "ts": "2026-09-15T11:54:13.523Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:54:13.523Z"
+    }
+  ],
+  "progresso": 0.667,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:54:13.533Z"
+  },
+  "criadaEm": "2026-09-15T11:53:07.786Z",
+  "atualizadaEm": "2026-09-15T11:54:13.533Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "HTML5 sem frameworks externos",
+    "JavaScript puro (Vanilla JS)",
+    "Implementação de práticas de acessibilidade em botões",
+    "Revisão técnica do código final"
+  ],
+  "entregaveis": [
+    "Arquivo index.html funcional com o contador",
+    "Relatório curto de revisão da implementação"
+  ],
+  "criteriosSucesso": [
+    "Página funcional com contador de cliques operacional",
+    "Botão com suporte a leitura por leitores de tela e navegação via teclado"
+  ],
+  "_rodadasRevisaoMissao": 4
+}

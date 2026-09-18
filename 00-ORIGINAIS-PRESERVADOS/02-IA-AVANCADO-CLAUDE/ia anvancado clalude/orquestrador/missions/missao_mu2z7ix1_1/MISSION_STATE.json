@@ -1,0 +1,157 @@
+{
+  "id": "missao_mu2z7ix1_1",
+  "objetivo": "Descubra qual é a versão atual do pacote npm date-fns.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:59:10.213Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:59:10.213Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via ninerouter-imperion-dev (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T17:59:10.218Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:59:10.218Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T17:59:10.714Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T17:59:10.716Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T17:59:10.717Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2z7ix6_2",
+      "descricao": "Acesse o registro npm do pacote date-fns e retrieve the latest version number.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Número de versão exato do date-fns identificado no npm registry"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário consultar a fonte oficial npm para confirmar a versão mais recente.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Acesse o registro npm do pacote date-fns e retrieve the latest version number.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Número de versão exato do date-fns identificado no npm registry"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Modern JavaScript date utility library",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "provider=npm",
+          "situacao=insuficiente",
+          "confianca=0.8",
+          "agente=research",
+          "memoria_gravada=true",
+          "date-fns@4.4.0 (documentação oficial, confiança=0.8) - https://www.npmjs.com/package/date-fns"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:59:10.714Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:59:10.217Z",
+      "atualizadaEm": "2026-09-15T17:59:10.714Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Acesse o registro npm do pacote date-fns e retrieve the latest version number.\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Número de versão exato do date-fns identificado no npm registry\nSUCCESS_CRITERIA: Número de versão exato do date-fns identificado no npm registry"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2z7ix6_2",
+      "status": "ok",
+      "resultado": "Modern JavaScript date utility library",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "provider=npm",
+        "situacao=insuficiente",
+        "confianca=0.8",
+        "agente=research",
+        "memoria_gravada=true",
+        "date-fns@4.4.0 (documentação oficial, confiança=0.8) - https://www.npmjs.com/package/date-fns"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:59:10.714Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T17:59:10.716Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+    "ts": "2026-09-15T17:59:10.717Z"
+  },
+  "criadaEm": "2026-09-15T17:59:10.213Z",
+  "atualizadaEm": "2026-09-15T17:59:10.717Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "Versão atual do pacote date-fns"
+  ],
+  "criteriosSucesso": [
+    "Versão do date-fns confirmada no registro npm"
+  ],
+  "_rodadasRevisaoMissao": 0
+}

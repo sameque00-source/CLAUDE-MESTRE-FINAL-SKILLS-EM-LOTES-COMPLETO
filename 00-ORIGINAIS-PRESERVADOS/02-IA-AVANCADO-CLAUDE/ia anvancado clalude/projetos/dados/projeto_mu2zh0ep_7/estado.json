@@ -1,0 +1,85 @@
+{
+  "id": "projeto_mu2zh0ep_7",
+  "nome": "Projeto Continuidade 1789495592785",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zh0ep_7\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [
+    {
+      "caminho": "parte1.txt",
+      "tipo": "text/plain",
+      "modalidade": "texto",
+      "tamanhoBytes": 27,
+      "timestamp": "2026-09-15T18:06:32.787Z",
+      "missaoId": "missao_A",
+      "tarefaId": null,
+      "resultado": "criado"
+    },
+    {
+      "caminho": "parte2.txt",
+      "tipo": "text/plain",
+      "modalidade": "texto",
+      "tamanhoBytes": 37,
+      "timestamp": "2026-09-15T18:06:32.792Z",
+      "missaoId": "missao_B",
+      "tarefaId": null,
+      "resultado": "criado"
+    }
+  ],
+  "decisoes": [
+    {
+      "memoriaId": "decisao_mu2zh0es_9",
+      "resumo": "decisão tomada na missão A: usar formato texto simples",
+      "ts": "2026-09-15T18:06:32.789Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto Continuidade 1789495592785\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.785Z"
+    },
+    {
+      "tipo": "artefato",
+      "descricao": "artefato criado: parte1.txt",
+      "missaoId": "missao_A",
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.787Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "decisão tomada na missão A: usar formato texto simples",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.789Z"
+    },
+    {
+      "tipo": "fechamento",
+      "descricao": "projeto encerrado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.789Z"
+    },
+    {
+      "tipo": "reabertura",
+      "descricao": "projeto reaberto após fechamento",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.790Z"
+    },
+    {
+      "tipo": "artefato",
+      "descricao": "artefato criado: parte2.txt",
+      "missaoId": "missao_B",
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.792Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:06:32.785Z",
+  "atualizadoEm": "2026-09-15T18:06:32.792Z"
+}

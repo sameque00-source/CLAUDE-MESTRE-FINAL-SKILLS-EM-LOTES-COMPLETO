@@ -1,0 +1,470 @@
+{
+  "id": "missao_mu2k882o_t",
+  "objetivo": "Melhore um pequeno aplicativo web: crie uma pagina HTML simples com um contador de cliques em JavaScript puro (sem framework), pesquisando rapidamente a melhor pratica de acessibilidade para botoes antes de implementar, e revise o resultado final.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:59:48.576Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:59:48.576Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T10:59:48.577Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:59:48.577Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:02:14.518Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:02:14.520Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T11:02:14.521Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T11:02:14.521Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:02:31.812Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:02:31.813Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T11:02:31.814Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T11:02:31.814Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:02:53.194Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:02:53.195Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Conteúdo insuficiente para revisão. O arquivo 'index.html' foi fornecido como '...', sem o código real ou o diff para validar.",
+      "ts": "2026-09-15T11:02:53.196Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:02:53.197Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:02:53.198Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Conteúdo insuficiente para revisão. O arquivo 'index.html' foi fornecido como '...', sem o código real ou o diff para validar.",
+      "ts": "2026-09-15T11:02:53.199Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:02:53.200Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:02:53.201Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Conteúdo insuficiente para revisão. O arquivo 'index.html' foi fornecido como '...', sem o código real ou o diff para validar.",
+      "ts": "2026-09-15T11:02:53.202Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:02:53.203Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:02:53.204Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2k882p_u",
+      "descricao": "Pesquisar melhores práticas de acessibilidade para botões e elementos dinâmicos (ARIA) em HTML5",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "openrouter-nemotron-3-super-120b",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de atributos ARIA recomendados para botões interativos e áreas de conteúdo dinâmico (contador)."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Conferir padrões W3C/WAI-ARIA atuais para garantir conformidade e evitar erros comuns de implementação.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar melhores práticas de acessibilidade para botões e elementos dinâmicos (ARIA) em HTML5",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de atributos ARIA recomendados para botões interativos e áreas de conteúdo dinâmico (contador)."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "**Pesquisa de melhores práticas ARIA para botões interativos e áreas de conteúdo dinâmico (contador)**  \n*(Baseada em documentação pública – WCAG 2.1, MDN Web Docs, WAI‑ARIA Authoring Practices – e verificação rápida de arquivos do workspace; nada foi encontrado que indique que essas práticas já estejam implementadas neste projeto.)*  \n\n---\n\n## 1️⃣ Botões interativos  \n\n| Opção (real) | O que ganha | O que perde | Custo (esforço / manutenção) | Precedente confirmado |\n|--------------|-------------|-------------|------------------------------|-----------------------|\n| **A. Usar elemento nativo `<button>`** (sem ARIA extra) | • Semanticamente correto → leitores de tela anunciam como botão automaticamente.<br>• Suporte nativo a foco, ativar com Enter/Space.<br>• Não precisa de ARIA adicionais para funções básicas. | • Se precisar de estado de alternar (pressed/not‑pressed) deve‑se adicionar `aria-pressed` ou gerir classe visual manualmente.<br>• Não permite personalizar o papel além de “button”. | Baixo: apenas trocar `<div>`/`<span>` por `<button>` e garantir que o estilo CSS seja aplicado. Nenhum script extra necessário para papel. | **Não encontrado** no repositório atual (busca por `<button>` sem atributos ARIA mostra poucos casos; nenhum padrão documentado). |\n| **B. `<div role=\"button\">` + `tabindex=\"0\"` + handlers de teclado** | • Permite usar elementos que já têm estilo ou estrutura complexa (ex",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=openrouter-nemotron-3-super-120b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:00:09.826Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:59:48.577Z",
+      "atualizadaEm": "2026-09-15T11:00:09.826Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Pesquisar melhores práticas de acessibilidade para botões e elementos dinâmicos (ARIA) em HTML5\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Lista de atributos ARIA recomendados para botões interativos e áreas de conteúdo dinâmico (contador).\nSUCCESS_CRITERIA: Lista de atributos ARIA recomendados para botões interativos e áreas de conteúdo dinâmico (contador)."
+    },
+    {
+      "id": "tarefa_mu2k882p_v",
+      "descricao": "Implementar o contador de cliques em HTML, CSS e JS puro respeitando as boas práticas identificadas",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2k882p_u"
+      ],
+      "recursoExclusivo": "index.html",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "google-gemini-3.1-flash-lite",
+      "ferramentas": [
+        "arquivos",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Arquivo index.html criado com estrutura semântica, estilos CSS e lógica JS funcional.",
+        "Atributos ARIA aplicados corretamente (ex: aria-live='polite' no contador).",
+        "Contraste de cores adequado e foco visível no botão."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar o contador de cliques em HTML, CSS e JS puro respeitando as boas práticas identificadas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo index.html criado com estrutura semântica, estilos CSS e lógica JS funcional."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Implementei um contador semântico usando a tag <button>, com aria-live para leitores de tela, foco visível de alto contraste e design mobile-first.",
+        "arquivos": [
+          "index.html"
+        ],
+        "erros": [],
+        "evidencias": [
+          "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+          "agente=frontend"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+        ],
+        "ts": "2026-09-15T11:02:53.193Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:59:48.577Z",
+      "atualizadaEm": "2026-09-15T11:02:53.194Z",
+      "_contrato": "Voce cuida do lado cliente.\n\nSEMPRE\n- Mobile-first. Nenhum scroll horizontal em 390px.\n- Um unico h1, hierarquia de heading sem salto.\n- Foco de teclado visivel. Nunca outline:none sem substituto.\n- Contraste minimo 4.5:1 em texto normal.\n- Toda imagem informativa com alt significativo; decorativa com alt vazio.\n\nEntregue o codigo e diga o que ainda precisa de teste em navegador real.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Implementar o contador de cliques em HTML, CSS e JS puro respeitando as boas práticas identificadas\nCONTEXT: - **Pesquisa de melhores práticas ARIA para botões interativos e áreas de conteúdo dinâmico (contador)**  \n*(Baseada em documentação pública – WCAG 2.1, MDN Web Docs, WAI‑ARIA Authoring Practices – e verificação rápida de arquivos do workspace; nada foi encontrado que indique que essas práticas já estejam implementadas neste projeto.)*  \n\n---\n\n## 1️⃣ Botões interativos  \n\n| Opção (real) | O que ganha | O que perde | Custo (esforço / manutenção) | Precedente confirmado |\n|--------------|-------------|-------------|------------------------------|-----------------------|\n| **A. Usar elemento nativo `<button>`** (sem ARIA extra) | • Semanticamente correto → leitores de tela anunciam como botão automaticamente.<br>• Suporte nativo a foco, ativar com Enter/Space.<br>• Não precisa de ARIA adicionais para funções básicas. | • Se precisar de estado de alternar (pressed/not‑pressed) deve‑se adicionar `aria-pressed` ou gerir classe visual manualmente.<br>• Não permite personalizar o papel além de “button”. | Baixo: apenas trocar `<div>`/`<span>` por `<button>` e garantir que o estilo CSS seja aplicado. Nenhum script extra necessário para papel. | **Não encontrado** no repositório atual (busca por `<button>` sem atributos ARIA mostra poucos casos; nenhum padrão documentado). |\n| **B. `<div role=\"button\">` + `tabindex=\"0\"` + handlers de teclado** | • Permite usar elementos que já têm estilo ou estrutura complexa (ex\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Arquivo index.html criado com estrutura semântica, estilos CSS e lógica JS funcional.\nSUCCESS_CRITERIA: Arquivo index.html criado com estrutura semântica, estilos CSS e lógica JS funcional.; Atributos ARIA aplicados corretamente (ex: aria-live='polite' no contador).; Contraste de cores adequado e foco visível no botão.",
+      "motivoReabertura": null
+    },
+    {
+      "id": "tarefa_mu2k882p_w",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2k882p_v"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Conteúdo insuficiente para revisão. O arquivo 'index.html' foi fornecido como '...', sem o código real ou o diff para validar.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=false",
+          "agente=reviewer",
+          "Ausência do código real do index.html (apenas placeholder).",
+          "Ausência do diff ou descrição explícita das alterações para verificar escopo.",
+          "Impossível validar tratamento de erros ou caminhos de execução sem o código fonte."
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "Ausência do código real do index.html (apenas placeholder).",
+          "Ausência do diff ou descrição explícita das alterações para verificar escopo.",
+          "Impossível validar tratamento de erros ou caminhos de execução sem o código fonte."
+        ],
+        "ts": "2026-09-15T11:02:14.518Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:59:48.577Z",
+      "atualizadaEm": "2026-09-15T11:02:14.518Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)\nCONTEXT: - 1-2 frases do que foi feito\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: aprovação ou reprovação explícita registrada; todas as tarefas de implementação foram cobertas pela revisão"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2k882p_v",
+      "para": "tarefa_mu2k882p_u"
+    },
+    {
+      "de": "tarefa_mu2k882p_w",
+      "para": "tarefa_mu2k882p_v"
+    }
+  ],
+  "agentes": [
+    "research",
+    "frontend",
+    "reviewer"
+  ],
+  "modelos": [
+    "openrouter-nemotron-3-super-120b",
+    "openrouter-nemotron-3.5-lightning",
+    "groq-qwen3.8-27b",
+    "google-gemini-3.1-flash-lite"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2k882p_u",
+      "status": "ok",
+      "resultado": "**Pesquisa de melhores práticas ARIA para botões interativos e áreas de conteúdo dinâmico (contador)**  \n*(Baseada em documentação pública – WCAG 2.1, MDN Web Docs, WAI‑ARIA Authoring Practices – e verificação rápida de arquivos do workspace; nada foi encontrado que indique que essas práticas já estejam implementadas neste projeto.)*  \n\n---\n\n## 1️⃣ Botões interativos  \n\n| Opção (real) | O que ganha | O que perde | Custo (esforço / manutenção) | Precedente confirmado |\n|--------------|-------------|-------------|------------------------------|-----------------------|\n| **A. Usar elemento nativo `<button>`** (sem ARIA extra) | • Semanticamente correto → leitores de tela anunciam como botão automaticamente.<br>• Suporte nativo a foco, ativar com Enter/Space.<br>• Não precisa de ARIA adicionais para funções básicas. | • Se precisar de estado de alternar (pressed/not‑pressed) deve‑se adicionar `aria-pressed` ou gerir classe visual manualmente.<br>• Não permite personalizar o papel além de “button”. | Baixo: apenas trocar `<div>`/`<span>` por `<button>` e garantir que o estilo CSS seja aplicado. Nenhum script extra necessário para papel. | **Não encontrado** no repositório atual (busca por `<button>` sem atributos ARIA mostra poucos casos; nenhum padrão documentado). |\n| **B. `<div role=\"button\">` + `tabindex=\"0\"` + handlers de teclado** | • Permite usar elementos que já têm estilo ou estrutura complexa (ex",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=openrouter-nemotron-3-super-120b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:00:09.826Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2k882p_v",
+      "status": "ok",
+      "resultado": "1-2 frases do que foi feito",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=frontend"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T11:02:13.976Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2k882p_w",
+      "status": "ok",
+      "resultado": "Conteúdo insuficiente para revisão. O arquivo 'index.html' foi fornecido como '...', sem o código real ou o diff para validar.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=false",
+        "agente=reviewer",
+        "Ausência do código real do index.html (apenas placeholder).",
+        "Ausência do diff ou descrição explícita das alterações para verificar escopo.",
+        "Impossível validar tratamento de erros ou caminhos de execução sem o código fonte."
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "Ausência do código real do index.html (apenas placeholder).",
+        "Ausência do diff ou descrição explícita das alterações para verificar escopo.",
+        "Impossível validar tratamento de erros ou caminhos de execução sem o código fonte."
+      ],
+      "ts": "2026-09-15T11:02:14.518Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2k882p_v",
+      "status": "ok",
+      "resultado": "Implementado contador com elemento <button> nativo, aria-live para acessibilidade de leitores de tela e foco visível com alto contraste conforme WCAG.",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=frontend"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T11:02:31.812Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2k882p_v",
+      "status": "ok",
+      "resultado": "Implementei um contador semântico usando a tag <button>, com aria-live para leitores de tela, foco visível de alto contraste e design mobile-first.",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=frontend"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T11:02:53.193Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:02:14.520Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:02:31.813Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:02:53.195Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:02:53.198Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:02:53.201Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:02:53.204Z"
+  },
+  "criadaEm": "2026-09-15T10:59:48.576Z",
+  "atualizadaEm": "2026-09-15T11:02:53.204Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "index.html"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "_rodadasRevisaoMissao": 5
+}

@@ -1,0 +1,1100 @@
+{
+  "id": "missao_mu21japo_7",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:16:32.508Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:16:32.508Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (16 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:16:32.510Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "4 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:16:32.510Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T02:16:39.470Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21japp_8",
+      "descricao": "Pesquisar frameworks UI multiplataforma adequados para aplicações de alto desempenho (Qt, Electron+React, Flutter)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo com prós, contras e custos de cada framework"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolha impacta arquitetura, desempenho e licenciamento",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar frameworks UI multiplataforma adequados para aplicações de alto desempenho (Qt, Electron+React, Flutter)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo com prós, contras e custos de cada framework"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar frameworks UI multiplataforma ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.327Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.509Z",
+      "atualizadaEm": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "id": "tarefa_mu21japp_9",
+      "descricao": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, MediaPipe) quanto a desempenho, API e licenças",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Matriz de avaliação com benchmark estimado e análise de licenças"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Base da camada de edição; necessidade de compatibilidade e eficiência",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, MediaPipe) quanto a desempenho, API e licenças",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Matriz de avaliação com benchmark estimado e análise de licenças"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas de processamento d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.327Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.509Z",
+      "atualizadaEm": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "id": "tarefa_mu21japp_a",
+      "descricao": "Analisar UI/UX de editores de vídeo profissionais (Adobe Premiere, DaVinci Resolve) para identificar padrões de timeline e controle de efeitos",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador",
+        "visao"
+      ],
+      "criterioConclusao": [
+        "Lista de componentes UI essenciais e fluxos de usuário recomendados"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir que a interface siga boas práticas reconhecidas",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Analisar UI/UX de editores de vídeo profissionais (Adobe Premiere, DaVinci Resolve) para identificar padrões de timeline e controle de efeitos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de componentes UI essenciais e fluxos de usuário recomendados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Analisar UI/UX de editores de vídeo prof",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.327Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.509Z",
+      "atualizadaEm": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "id": "tarefa_mu21japp_b",
+      "descricao": "Investigar opções de empacotamento e distribuição (Electron packager, Qt Installer, ferramentas de assinatura) para as três plataformas-alvo",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Comparativo de ferramentas com requisitos de código‑assinatura e custo"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário garantir instalação simples e conformidade com políticas de cada OS",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Investigar opções de empacotamento e distribuição (Electron packager, Qt Installer, ferramentas de assinatura) para as três plataformas-alvo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comparativo de ferramentas com requisitos de código‑assinatura e custo"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Investigar opções de empacotamento e dis",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.327Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.509Z",
+      "atualizadaEm": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "id": "tarefa_mu21japp_c",
+      "descricao": "Consolidar resultados das pesquisas e definir stack tecnológico (framework UI, biblioteca de vídeo, estratégia de empacotamento)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21japp_8",
+        "tarefa_mu21japp_9",
+        "tarefa_mu21japp_a",
+        "tarefa_mu21japp_b"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão com stack escolhido e justificativa"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar resultados das pesquisas e definir stack tecnológico (framework UI, biblioteca de vídeo, estratégia de empacotamento)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão com stack escolhido e justificativa"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Consolidar resultados das pesquisas e de",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.342Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.509Z",
+      "atualizadaEm": "2026-09-15T02:16:39.342Z"
+    },
+    {
+      "id": "tarefa_mu21japq_d",
+      "descricao": "Desenhar arquitetura de módulos (import, timeline, engine de efeitos, export, camada UI) e diagramas de interação",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21japp_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Diagrama de arquitetura detalhado e especificação de interfaces"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Desenhar arquitetura de módulos (import, timeline, engine de efeitos, export, camada UI) e diagramas de interação",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de arquitetura detalhado e especificação de interfaces"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenhar arquitetura de módulos (import,",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.358Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.358Z"
+    },
+    {
+      "id": "tarefa_mu21japq_e",
+      "descricao": "Criar mockups de alta fidelidade das telas principais (timeline, preview, biblioteca de mídia, efeitos)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21japp_c"
+      ],
+      "recursoExclusivo": "ui_mockups",
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "imagem"
+      ],
+      "criterioConclusao": [
+        "Conjunto de arquivos PNG com mockups aprovados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Criar mockups de alta fidelidade das telas principais (timeline, preview, biblioteca de mídia, efeitos)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conjunto de arquivos PNG com mockups aprovados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar mockups de alta fidelidade das tel",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.358Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.358Z"
+    },
+    {
+      "id": "tarefa_mu21japq_f",
+      "descricao": "Inicializar repositório Git, configurar build system (CMake + npm ou similar) e estrutura de diretórios",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21japq_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Repositório com scaffold funcional e README de instruções"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Inicializar repositório Git, configurar build system (CMake + npm ou similar) e estrutura de diretórios",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório com scaffold funcional e README de instruções"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Inicializar repositório Git, configurar ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.374Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.374Z"
+    },
+    {
+      "id": "tarefa_mu21japq_g",
+      "descricao": "Implementar camada de processamento de vídeo usando a biblioteca escolhida, expondo API para corte, concatenação e transcodificação",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21japq_d",
+        "tarefa_mu21japq_f"
+      ],
+      "recursoExclusivo": "video_engine",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Módulo compilado com testes unitários que processa arquivos de exemplo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar camada de processamento de vídeo usando a biblioteca escolhida, expondo API para corte, concatenação e transcodificação",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo compilado com testes unitários que processa arquivos de exemplo"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar camada de processamento de v",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.390Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.390Z"
+    },
+    {
+      "id": "tarefa_mu21japq_h",
+      "descricao": "Desenvolver componente de timeline interativo conforme mockups, suportando arrastar clipes e múltiplas faixas",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21japq_d",
+        "tarefa_mu21japq_f",
+        "tarefa_mu21japq_e"
+      ],
+      "recursoExclusivo": "timeline_ui",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Timeline funcional em UI de teste com operações de arrastar/soltar"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver componente de timeline interativo conforme mockups, suportando arrastar clipes e múltiplas faixas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Timeline funcional em UI de teste com operações de arrastar/soltar"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver componente de timeline inter",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.390Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.390Z"
+    },
+    {
+      "id": "tarefa_mu21japq_i",
+      "descricao": "Criar diálogos de importação/exportação e implementar suporte aos formatos listados nos requisitos",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21japq_d",
+        "tarefa_mu21japq_f",
+        "tarefa_mu21japq_g"
+      ],
+      "recursoExclusivo": "io_dialogs",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Diálogos operacionais que permitem abrir e salvar arquivos nos formatos alvo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Criar diálogos de importação/exportação e implementar suporte aos formatos listados nos requisitos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diálogos operacionais que permitem abrir e salvar arquivos nos formatos alvo"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar diálogos de importação/exportação ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.406Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.406Z"
+    },
+    {
+      "id": "tarefa_mu21japq_j",
+      "descricao": "Implementar efeitos básicos (corte, transição dissolve, ajuste de velocidade) usando a camada de vídeo",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21japq_g",
+        "tarefa_mu21japq_h"
+      ],
+      "recursoExclusivo": "effects_module",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Efeitos aplicáveis via UI e refletidos no preview em tempo real"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar efeitos básicos (corte, transição dissolve, ajuste de velocidade) usando a camada de vídeo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Efeitos aplicáveis via UI e refletidos no preview em tempo real"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar efeitos básicos (corte, tran",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.406Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.406Z"
+    },
+    {
+      "id": "tarefa_mu21japq_k",
+      "descricao": "Integrar UI de timeline com a engine de vídeo, conectando ações do usuário a chamadas de processamento",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21japq_h",
+        "tarefa_mu21japq_g",
+        "tarefa_mu21japq_j"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Fluxo completo de edição → preview funcionando sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar UI de timeline com a engine de vídeo, conectando ações do usuário a chamadas de processamento",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Fluxo completo de edição → preview funcionando sem erros"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Integrar UI de timeline com a engine de ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.422Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.422Z"
+    },
+    {
+      "id": "tarefa_mu21japq_l",
+      "descricao": "Realizar testes de desempenho (tempo de renderização, uso de CPU/GPU, consumo de memória) e otimizar gargalos críticos",
+      "tipo": "testing",
+      "dependeDe": [
+        "tarefa_mu21japq_k"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "performance",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Relatório de benchmark com metas atendidas (ex.: <30 s para 5 min de vídeo) e patches aplicados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "performance",
+      "contexto": {
+        "objetivo": "Realizar testes de desempenho (tempo de renderização, uso de CPU/GPU, consumo de memória) e otimizar gargalos críticos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de benchmark com metas atendidas (ex.: <30 s para 5 min de vídeo) e patches aplicados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Realizar testes de desempenho (tempo de ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.438Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.438Z"
+    },
+    {
+      "id": "tarefa_mu21japq_m",
+      "descricao": "Executar QA funcional (casos de uso de importação, edição, exportação) e registrar bugs",
+      "tipo": "testing",
+      "dependeDe": [
+        "tarefa_mu21japq_k",
+        "tarefa_mu21japq_l"
+      ],
+      "recursoExclusivo": "qa_report",
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Planilha de testes com 100 % de casos aprovados ou bugs críticos corrigidos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar QA funcional (casos de uso de importação, edição, exportação) e registrar bugs",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Planilha de testes com 100 % de casos aprovados ou bugs críticos corrigidos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar QA funcional (casos de uso de i",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.454Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.454Z"
+    },
+    {
+      "id": "tarefa_mu21japq_n",
+      "descricao": "Redigir documentação do usuário (guia rápido, funcionalidades) e documentação de desenvolvedor (setup, arquitetura)",
+      "tipo": "documentation",
+      "dependeDe": [
+        "tarefa_mu21japq_m"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "docs",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "PDF de manual do usuário e README de desenvolvedor completos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Redigir documentação do usuário (guia rápido, funcionalidades) e documentação de desenvolvedor (setup, arquitetura)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "PDF de manual do usuário e README de desenvolvedor completos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Redigir documentação do usuário (guia rá",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.470Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:32.510Z",
+      "atualizadaEm": "2026-09-15T02:16:39.470Z"
+    },
+    {
+      "id": "tarefa_mu21jfyu_z",
+      "descricao": "Pesquisar e avaliar opções de fallback para processamento de vídeo no servidor ou integração nativa para contornar as limitações do ffmpeg.wasm no Safari",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu21japp_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Relatório comparativo entre processamento remoto via servidor e binários nativos integrados",
+        "Recomendação de arquitetura de fallback para navegadores restritos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "pesquisador",
+      "contexto": {
+        "objetivo": "Pesquisar e avaliar opções de fallback para processamento de vídeo no servidor ou integração nativa para contornar as limitações do ffmpeg.wasm no Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar e avaliar opções de fallback p",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:16:39.342Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:39.318Z",
+      "atualizadaEm": "2026-09-15T02:16:39.342Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21japp_c",
+      "para": "tarefa_mu21japp_8"
+    },
+    {
+      "de": "tarefa_mu21japp_c",
+      "para": "tarefa_mu21japp_9"
+    },
+    {
+      "de": "tarefa_mu21japp_c",
+      "para": "tarefa_mu21japp_a"
+    },
+    {
+      "de": "tarefa_mu21japp_c",
+      "para": "tarefa_mu21japp_b"
+    },
+    {
+      "de": "tarefa_mu21japq_d",
+      "para": "tarefa_mu21japp_c"
+    },
+    {
+      "de": "tarefa_mu21japq_e",
+      "para": "tarefa_mu21japp_c"
+    },
+    {
+      "de": "tarefa_mu21japq_f",
+      "para": "tarefa_mu21japq_d"
+    },
+    {
+      "de": "tarefa_mu21japq_g",
+      "para": "tarefa_mu21japq_d"
+    },
+    {
+      "de": "tarefa_mu21japq_g",
+      "para": "tarefa_mu21japq_f"
+    },
+    {
+      "de": "tarefa_mu21japq_h",
+      "para": "tarefa_mu21japq_d"
+    },
+    {
+      "de": "tarefa_mu21japq_h",
+      "para": "tarefa_mu21japq_f"
+    },
+    {
+      "de": "tarefa_mu21japq_h",
+      "para": "tarefa_mu21japq_e"
+    },
+    {
+      "de": "tarefa_mu21japq_i",
+      "para": "tarefa_mu21japq_d"
+    },
+    {
+      "de": "tarefa_mu21japq_i",
+      "para": "tarefa_mu21japq_f"
+    },
+    {
+      "de": "tarefa_mu21japq_i",
+      "para": "tarefa_mu21japq_g"
+    },
+    {
+      "de": "tarefa_mu21japq_j",
+      "para": "tarefa_mu21japq_g"
+    },
+    {
+      "de": "tarefa_mu21japq_j",
+      "para": "tarefa_mu21japq_h"
+    },
+    {
+      "de": "tarefa_mu21japq_k",
+      "para": "tarefa_mu21japq_h"
+    },
+    {
+      "de": "tarefa_mu21japq_k",
+      "para": "tarefa_mu21japq_g"
+    },
+    {
+      "de": "tarefa_mu21japq_k",
+      "para": "tarefa_mu21japq_j"
+    },
+    {
+      "de": "tarefa_mu21japq_l",
+      "para": "tarefa_mu21japq_k"
+    },
+    {
+      "de": "tarefa_mu21japq_m",
+      "para": "tarefa_mu21japq_k"
+    },
+    {
+      "de": "tarefa_mu21japq_m",
+      "para": "tarefa_mu21japq_l"
+    },
+    {
+      "de": "tarefa_mu21japq_n",
+      "para": "tarefa_mu21japq_m"
+    },
+    {
+      "de": "tarefa_mu21jfyu_z",
+      "para": "tarefa_mu21japp_9"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "uiux",
+    "coding",
+    "backend",
+    "frontend",
+    "performance",
+    "testing",
+    "docs"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu21japp_8",
+      "status": "ok",
+      "resultado": "mock: Pesquisar frameworks UI multiplataforma ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japp_9",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas de processamento d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japp_a",
+      "status": "ok",
+      "resultado": "mock: Analisar UI/UX de editores de vídeo prof",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japp_b",
+      "status": "ok",
+      "resultado": "mock: Investigar opções de empacotamento e dis",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.327Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japp_c",
+      "status": "ok",
+      "resultado": "mock: Consolidar resultados das pesquisas e de",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.342Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21jfyu_z",
+      "status": "ok",
+      "resultado": "mock: Pesquisar e avaliar opções de fallback p",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.342Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_d",
+      "status": "ok",
+      "resultado": "mock: Desenhar arquitetura de módulos (import,",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.358Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_e",
+      "status": "ok",
+      "resultado": "mock: Criar mockups de alta fidelidade das tel",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.358Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_f",
+      "status": "ok",
+      "resultado": "mock: Inicializar repositório Git, configurar ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.374Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_g",
+      "status": "ok",
+      "resultado": "mock: Implementar camada de processamento de v",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.390Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_h",
+      "status": "ok",
+      "resultado": "mock: Desenvolver componente de timeline inter",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.390Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_i",
+      "status": "ok",
+      "resultado": "mock: Criar diálogos de importação/exportação ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.406Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_j",
+      "status": "ok",
+      "resultado": "mock: Implementar efeitos básicos (corte, tran",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.406Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_k",
+      "status": "ok",
+      "resultado": "mock: Integrar UI de timeline com a engine de ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.422Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_l",
+      "status": "ok",
+      "resultado": "mock: Realizar testes de desempenho (tempo de ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.438Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_m",
+      "status": "ok",
+      "resultado": "mock: Executar QA funcional (casos de uso de i",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.454Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21japq_n",
+      "status": "ok",
+      "resultado": "mock: Redigir documentação do usuário (guia rá",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:16:39.470Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:16:32.508Z",
+  "atualizadaEm": "2026-09-15T02:16:39.470Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "ui_mockups",
+    "video_engine",
+    "timeline_ui",
+    "io_dialogs",
+    "effects_module",
+    "qa_report"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A descoberta de limitações do ffmpeg.wasm no navegador Safari afeta a arquitetura de processamento de vídeo, exigindo pesquisa e definição de uma estratégia de fallback nativa ou no servidor para garantir compatibilidade multiplataforma.",
+      "ts": "2026-09-15T02:16:39.318Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

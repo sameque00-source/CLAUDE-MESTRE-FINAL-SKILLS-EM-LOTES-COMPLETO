@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicativo de Contador</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --danger: #ef4444;
+      --danger-hover: #dc2626;
+      --success: #22c55e;
+      --success-hover: #16a34a;
+      --focus-ring: #60a5fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+
+    main {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .counter-card {
+      background-color: var(--card-bg);
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .counter-display {
+      font-size: 4rem;
+      font-weight: 700;
+      margin: 1.5rem 0;
+      font-variant-numeric: tabular-nums;
+      min-width: 120px;
+      display: inline-block;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      min-height: 48px;
+    }
+
+    button:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .btn-increment {
+      background-color: var(--primary);
+      color: var(--text);
+    }
+
+    .btn-increment:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-decrement {
+      background-color: var(--danger);
+      color: var(--text);
+    }
+
+    .btn-decrement:hover {
+      background-color: var(--danger-hover);
+    }
+
+    .btn-reset {
+      background-color: var(--success);
+      color: #0f172a;
+    }
+
+    .btn-reset:hover {
+      background-color: var(--success-hover);
+    }
+
+    .status-message {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      min-height: 1.5rem;
+    }
+
+    @media (max-width: 390px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .counter-display {
+        font-size: 3rem;
+      }
+      .counter-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Contador Interativo</h1>
+    <section class="counter-card" role="group" aria-labelledby="counter-heading">
+      <h2 id="counter-heading" hidden>Valor do contador</h2>
+      <output class="counter-display" id="counter-value" aria-live="polite" aria-atomic="true">0</output>
+      <div class="button-group">
+        <button type="button" id="btn-increment" aria-label="Incrimentar contador">
+          + Adicionar
+        </button>
+        <button type="button" id="btn-decrement" aria-label="Decrementar contador">
+          − Subtrair
+        </button>
+        <button type="button" id="btn-reset" aria-label="Resetar contador para zero">
+          ↺ Resetar
+        </button>
+      </div>
+      <p class="status-message" id="status-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script>
+    (function() {
+      'use strict';
+
+      const counterDisplay = document.getElementById('counter-value');
+      const btnIncrement = document.getElementById('btn-increment');
+      const btnDecrement = document.getElementById('btn-decrement');
+      const btnReset = document.getElementById('btn-reset');
+      const statusMessage = document.getElementById('status-message');
+
+      let count = 0;
+
+      function updateDisplay() {
+        counterDisplay.textContent = count;
+      }
+
+      function increment() {
+        count++;
+        updateDisplay();
+        statusMessage.textContent = 'Valor incrementado para ' + count;
+      }
+
+      function decrement() {
+        count--;
+        updateDisplay();
+        statusMessage.textContent = 'Valor decrementado para ' + count;
+      }
+
+      function reset() {
+        count = 0;
+        updateDisplay();
+        statusMessage.textContent = 'Contador resetado para zero';
+      }
+
+      btnIncrement.addEventListener('click', increment);
+      btnDecrement.addEventListener('click', decrement);
+      btnReset.addEventListener('click', reset);
+
+      updateDisplay();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+{
+  "id": "missao_mu2jkbth_s",
+  "objetivo": "Analise o arquivo utils.js (que contém uma função soma sem tratamento de erro) e proponha melhorias reais de código.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:41:13.685Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:41:13.685Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:41:13.686Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:41:13.686Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T10:41:50.922Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T10:41:50.923Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jkbti_t",
+      "descricao": "Ler o arquivo utils.js para analisar a implementação atual da função soma e o contexto geral do código",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": "utils.js",
+      "status": "cancelada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Conteúdo do utils.js lido e compreendido"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Ler o arquivo utils.js para analisar a implementação atual da função soma e o contexto geral do código",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conteúdo do utils.js lido e compreendido"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "HTTP 413: {\"error\":{\"message\":\"Request Entity Too Large\",\"type\":\"invalid_request_error\",\"code\":\"request_too_large\"}}"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:41:50.922Z"
+      },
+      "tentativas": 1,
+      "criadaEm": "2026-09-15T10:41:13.686Z",
+      "atualizadaEm": "2026-09-15T10:41:50.923Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Ler o arquivo utils.js para analisar a implementação atual da função soma e o contexto geral do código\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Conteúdo do utils.js lido e compreendido\nSUCCESS_CRITERIA: Conteúdo do utils.js lido e compreendido",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2jkbti_u",
+      "descricao": "Modificar o arquivo utils.js para implementar tratamento de erros robusto na função soma e aplicar boas práticas de código",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2jkbti_t"
+      ],
+      "recursoExclusivo": "utils.js",
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Função soma refatorada com validação de entradas e lançamento ou retorno adequado de erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Modificar o arquivo utils.js para implementar tratamento de erros robusto na função soma e aplicar boas práticas de código",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função soma refatorada com validação de entradas e lançamento ou retorno adequado de erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:41:13.686Z",
+      "atualizadaEm": "2026-09-15T10:41:50.923Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jkbti_t\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2jkbti_v",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2jkbti_u"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:41:13.686Z",
+      "atualizadaEm": "2026-09-15T10:41:50.923Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jkbti_u\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jkbti_u",
+      "para": "tarefa_mu2jkbti_t"
+    },
+    {
+      "de": "tarefa_mu2jkbti_v",
+      "para": "tarefa_mu2jkbti_u"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2jkbti_t",
+      "erro": "HTTP 413: {\"error\":{\"message\":\"Request Entity Too Large\",\"type\":\"invalid_request_error\",\"code\":\"request_too_large\"}}",
+      "tipo": "payload",
+      "ts": "2026-09-15T10:41:50.922Z",
+      "tentativas": 1
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jkbti_t",
+        "erro": "HTTP 413: {\"error\":{\"message\":\"Request Entity Too Large\",\"type\":\"invalid_request_error\",\"code\":\"request_too_large\"}}",
+        "tipo": "payload",
+        "ts": "2026-09-15T10:41:50.922Z",
+        "tentativas": 1
+      },
+      "diagnostico": "erro de payload — não adianta repetir sem mudar a entrada",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T10:41:50.922Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T10:41:50.923Z"
+  },
+  "criadaEm": "2026-09-15T10:41:13.685Z",
+  "atualizadaEm": "2026-09-15T10:41:50.923Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Ler e analisar o conteúdo do arquivo utils.js",
+    "Identificar a ausência de tratamento de erro na função soma",
+    "Propor e implementar melhorias de robustez e código limpo"
+  ],
+  "entregaveis": [
+    "Arquivo utils.js refatorado com tratamento de erro adequado",
+    "Explicação clara das melhorias aplicadas"
+  ],
+  "criteriosSucesso": [
+    "A função soma lida corretamente com entradas inválidas (ex: strings, nulos, undefined) sem quebrar a execução",
+    "O código está limpo e documentado"
+  ]
+}

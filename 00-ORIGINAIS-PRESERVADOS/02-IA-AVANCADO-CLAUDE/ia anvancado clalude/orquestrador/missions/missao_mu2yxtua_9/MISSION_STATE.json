@@ -1,0 +1,150 @@
+{
+  "id": "missao_mu2yxtua_9",
+  "objetivo": "Missão sintética de falha controlada",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:51:37.810Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:51:37.810Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T17:51:37.810Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:51:37.811Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2yxtua_a",
+      "descricao": "Tarefa que sempre falha de propósito (teste)",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "erro",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Tarefa que sempre falha de propósito (teste)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "HTTP 503: indisponível temporariamente (falha forçada para teste real de recuperação)"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:37.814Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T17:51:37.810Z",
+      "atualizadaEm": "2026-09-15T17:51:37.814Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2yxtua_a",
+      "erro": "HTTP 503: indisponível temporariamente (falha forçada para teste real de recuperação)",
+      "tipo": "indisponivel",
+      "ts": "2026-09-15T17:51:37.812Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2yxtua_a",
+      "erro": "HTTP 503: indisponível temporariamente (falha forçada para teste real de recuperação)",
+      "tipo": "indisponivel",
+      "ts": "2026-09-15T17:51:37.813Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2yxtua_a",
+      "erro": "HTTP 503: indisponível temporariamente (falha forçada para teste real de recuperação)",
+      "tipo": "indisponivel",
+      "ts": "2026-09-15T17:51:37.814Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2yxtua_a",
+        "erro": "HTTP 503: indisponível temporariamente (falha forçada para teste real de recuperação)",
+        "tipo": "indisponivel",
+        "ts": "2026-09-15T17:51:37.812Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T17:51:37.812Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2yxtua_a",
+        "erro": "HTTP 503: indisponível temporariamente (falha forçada para teste real de recuperação)",
+        "tipo": "indisponivel",
+        "ts": "2026-09-15T17:51:37.813Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T17:51:37.813Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2yxtua_a",
+        "erro": "HTTP 503: indisponível temporariamente (falha forçada para teste real de recuperação)",
+        "tipo": "indisponivel",
+        "ts": "2026-09-15T17:51:37.814Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T17:51:37.814Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "continuar executando tarefas prontas",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:51:37.810Z",
+  "atualizadaEm": "2026-09-15T17:51:37.814Z",
+  "modoExecucao": "AUTO"
+}

@@ -1,0 +1,915 @@
+{
+  "id": "missao_mu21mlpw_6",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:19:06.740Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:19:06.740Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (12 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:19:06.742Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "4 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:19:06.742Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T02:19:16.528Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21mlpx_7",
+      "descricao": "Analisar aplicativos concorrentes (Adobe Premiere, DaVinci Resolve, Shotcut) para definir conjunto mínimo de funcionalidades profissionais",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de funcionalidades prioritárias documentada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisa validar quais recursos são essenciais para ser considerado 'profissional'",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Analisar aplicativos concorrentes (Adobe Premiere, DaVinci Resolve, Shotcut) para definir conjunto mínimo de funcionalidades profissionais",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de funcionalidades prioritárias documentada"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Analisar aplicativos concorrentes (Adobe",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.419Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.420Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_8",
+      "descricao": "Investigar stacks de desenvolvimento desktop cross‑platform (Electron+React, Qt, Flutter) quanto a desempenho e comunidade",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Matriz comparativa com prós/contras e recomendação"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolha da stack impacta performance da edição de vídeo",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Investigar stacks de desenvolvimento desktop cross‑platform (Electron+React, Qt, Flutter) quanto a desempenho e comunidade",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Matriz comparativa com prós/contras e recomendação"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Investigar stacks de desenvolvimento des",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.420Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.420Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_9",
+      "descricao": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav) e APIs de aceleração GPU (CUDA, OpenCL, Metal)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório de viabilidade e seleção da biblioteca principal"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Definir a camada que realizará cortes, filtros e renderização",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav) e APIs de aceleração GPU (CUDA, OpenCL, Metal)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de viabilidade e seleção da biblioteca principal"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas de processamento d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.420Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.420Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_a",
+      "descricao": "Verificar requisitos de licenciamento e possíveis royalties dos codecs de áudio/vídeo que serão suportados",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Checklist de codecs permitidos e notas de licenciamento"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir que o produto final não viole direitos de uso",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Verificar requisitos de licenciamento e possíveis royalties dos codecs de áudio/vídeo que serão suportados",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Checklist de codecs permitidos e notas de licenciamento"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Verificar requisitos de licenciamento e ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.420Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.420Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_b",
+      "descricao": "Consolidar resultados das pesquisas e definir arquitetura geral (stack, módulos de vídeo, UI framework, estratégia de build)",
+      "tipo": "decisao",
+      "dependeDe": [
+        "tarefa_mu21mlpx_7",
+        "tarefa_mu21mlpx_8",
+        "tarefa_mu21mlpx_9",
+        "tarefa_mu21mlpx_a"
+      ],
+      "recursoExclusivo": "arquitetura.md",
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura aprovado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar resultados das pesquisas e definir arquitetura geral (stack, módulos de vídeo, UI framework, estratégia de build)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura aprovado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Consolidar resultados das pesquisas e de",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.435Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.435Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_c",
+      "descricao": "Criar wireframes e protótipo de alta fidelidade da interface (timeline, painel de mídia, barra de ferramentas)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21mlpx_b"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "imagem",
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Arquivos de design (Figma/Sketch) entregues"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Criar wireframes e protótipo de alta fidelidade da interface (timeline, painel de mídia, barra de ferramentas)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivos de design (Figma/Sketch) entregues"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar wireframes e protótipo de alta fid",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.450Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.450Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_d",
+      "descricao": "Implementar módulo de importação/exportação usando a biblioteca de vídeo selecionada, com suporte aos codecs liberados",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21mlpx_b"
+      ],
+      "recursoExclusivo": "src/video/io.*",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Funções import/export testadas com arquivos MP4 e MOV"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar módulo de importação/exportação usando a biblioteca de vídeo selecionada, com suporte aos codecs liberados",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Funções import/export testadas com arquivos MP4 e MOV"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar módulo de importação/exporta",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.450Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.450Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_e",
+      "descricao": "Desenvolver a timeline editável (corte, arraste, múltiplas trilhas) e integração com o módulo de mídia",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21mlpx_c",
+        "tarefa_mu21mlpx_d"
+      ],
+      "recursoExclusivo": "src/ui/timeline.*",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Timeline funcional demonstrada com edição básica"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Desenvolver a timeline editável (corte, arraste, múltiplas trilhas) e integração com o módulo de mídia",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Timeline funcional demonstrada com edição básica"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver a timeline editável (corte, ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.466Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.466Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_f",
+      "descricao": "Implementar conjunto básico de efeitos (transição fade, correção de cor, inserção de texto)",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21mlpx_d"
+      ],
+      "recursoExclusivo": "src/effects/*",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Efeitos aplicáveis e renderizados corretamente na timeline"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar conjunto básico de efeitos (transição fade, correção de cor, inserção de texto)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Efeitos aplicáveis e renderizados corretamente na timeline"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar conjunto básico de efeitos (",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.466Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.466Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_g",
+      "descricao": "Criar pipeline de renderização acelerada (CPU/GPU) integrando os efeitos e a timeline",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21mlpx_e",
+        "tarefa_mu21mlpx_f"
+      ],
+      "recursoExclusivo": "src/render/*",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Renderização de um clipe de 1 min com efeitos concluída em tempo aceitável"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Criar pipeline de renderização acelerada (CPU/GPU) integrando os efeitos e a timeline",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Renderização de um clipe de 1 min com efeitos concluída em tempo aceitável"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar pipeline de renderização acelerada",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.482Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.482Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_h",
+      "descricao": "Testes automatizados (unitários e integração) para import/export, timeline e renderização",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21mlpx_d",
+        "tarefa_mu21mlpx_e",
+        "tarefa_mu21mlpx_g"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Cobertura de testes ≥ 80% e todos os testes passando"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Testes automatizados (unitários e integração) para import/export, timeline e renderização",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Cobertura de testes ≥ 80% e todos os testes passando"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Testes automatizados (unitários e integr",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.497Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.497Z"
+    },
+    {
+      "id": "tarefa_mu21mlpx_i",
+      "descricao": "Configurar build e empacotamento (Electron Builder ou equivalente) para gerar instaladores Windows, macOS e Linux",
+      "tipo": "devops",
+      "dependeDe": [
+        "tarefa_mu21mlpx_h"
+      ],
+      "recursoExclusivo": "build/*",
+      "status": "concluida",
+      "agente": "devops",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Instaladores funcionais testados em cada sistema operacional"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Configurar build e empacotamento (Electron Builder ou equivalente) para gerar instaladores Windows, macOS e Linux",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Instaladores funcionais testados em cada sistema operacional"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Configurar build e empacotamento (Electr",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.513Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.741Z",
+      "atualizadaEm": "2026-09-15T02:19:16.513Z"
+    },
+    {
+      "id": "tarefa_mu21mlpy_j",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu21mlpx_i"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Revisar e validar o resultado das tarefa",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.528Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:06.742Z",
+      "atualizadaEm": "2026-09-15T02:19:16.528Z"
+    },
+    {
+      "id": "tarefa_mu21mt6c_10",
+      "descricao": "Investigar alternativas e estratégia de fallback (servidor ou processamento nativo) para contornar as limitações do ffmpeg.wasm no Safari",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu21mlpx_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Documento de viabilidade técnica das alternativas ao ffmpeg.wasm no Safari aprovado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "pesquisador",
+      "contexto": {
+        "objetivo": "Investigar alternativas e estratégia de fallback (servidor ou processamento nativo) para contornar as limitações do ffmpeg.wasm no Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Investigar alternativas e estratégia de ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:19:16.435Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:16.404Z",
+      "atualizadaEm": "2026-09-15T02:19:16.435Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21mlpx_b",
+      "para": "tarefa_mu21mlpx_7"
+    },
+    {
+      "de": "tarefa_mu21mlpx_b",
+      "para": "tarefa_mu21mlpx_8"
+    },
+    {
+      "de": "tarefa_mu21mlpx_b",
+      "para": "tarefa_mu21mlpx_9"
+    },
+    {
+      "de": "tarefa_mu21mlpx_b",
+      "para": "tarefa_mu21mlpx_a"
+    },
+    {
+      "de": "tarefa_mu21mlpx_c",
+      "para": "tarefa_mu21mlpx_b"
+    },
+    {
+      "de": "tarefa_mu21mlpx_d",
+      "para": "tarefa_mu21mlpx_b"
+    },
+    {
+      "de": "tarefa_mu21mlpx_e",
+      "para": "tarefa_mu21mlpx_c"
+    },
+    {
+      "de": "tarefa_mu21mlpx_e",
+      "para": "tarefa_mu21mlpx_d"
+    },
+    {
+      "de": "tarefa_mu21mlpx_f",
+      "para": "tarefa_mu21mlpx_d"
+    },
+    {
+      "de": "tarefa_mu21mlpx_g",
+      "para": "tarefa_mu21mlpx_e"
+    },
+    {
+      "de": "tarefa_mu21mlpx_g",
+      "para": "tarefa_mu21mlpx_f"
+    },
+    {
+      "de": "tarefa_mu21mlpx_h",
+      "para": "tarefa_mu21mlpx_d"
+    },
+    {
+      "de": "tarefa_mu21mlpx_h",
+      "para": "tarefa_mu21mlpx_e"
+    },
+    {
+      "de": "tarefa_mu21mlpx_h",
+      "para": "tarefa_mu21mlpx_g"
+    },
+    {
+      "de": "tarefa_mu21mlpx_i",
+      "para": "tarefa_mu21mlpx_h"
+    },
+    {
+      "de": "tarefa_mu21mlpy_j",
+      "para": "tarefa_mu21mlpx_i"
+    },
+    {
+      "de": "tarefa_mu21mt6c_10",
+      "para": "tarefa_mu21mlpx_9"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "uiux",
+    "coding",
+    "testing",
+    "devops",
+    "reviewer"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu21mlpx_7",
+      "status": "ok",
+      "resultado": "mock: Analisar aplicativos concorrentes (Adobe",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.419Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_8",
+      "status": "ok",
+      "resultado": "mock: Investigar stacks de desenvolvimento des",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.420Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_9",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas de processamento d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.420Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_a",
+      "status": "ok",
+      "resultado": "mock: Verificar requisitos de licenciamento e ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.420Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_b",
+      "status": "ok",
+      "resultado": "mock: Consolidar resultados das pesquisas e de",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.435Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mt6c_10",
+      "status": "ok",
+      "resultado": "mock: Investigar alternativas e estratégia de ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.435Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_c",
+      "status": "ok",
+      "resultado": "mock: Criar wireframes e protótipo de alta fid",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.450Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_d",
+      "status": "ok",
+      "resultado": "mock: Implementar módulo de importação/exporta",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.450Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_e",
+      "status": "ok",
+      "resultado": "mock: Desenvolver a timeline editável (corte, ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.466Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_f",
+      "status": "ok",
+      "resultado": "mock: Implementar conjunto básico de efeitos (",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.466Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_g",
+      "status": "ok",
+      "resultado": "mock: Criar pipeline de renderização acelerada",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.482Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_h",
+      "status": "ok",
+      "resultado": "mock: Testes automatizados (unitários e integr",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.497Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpx_i",
+      "status": "ok",
+      "resultado": "mock: Configurar build e empacotamento (Electr",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.513Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21mlpy_j",
+      "status": "ok",
+      "resultado": "mock: Revisar e validar o resultado das tarefa",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:19:16.528Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:19:06.740Z",
+  "atualizadaEm": "2026-09-15T02:19:16.528Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Importar e exportar vídeos nos principais codecs (MP4, MOV, MKV)",
+    "Timeline editável com corte, arraste e múltiplas trilhas de áudio/vídeo",
+    "Conjunto básico de efeitos (transições, correção de cor, texto)",
+    "Renderização acelerada por CPU/GPU",
+    "Interface responsiva e intuitiva para usuários avançados",
+    "Instalador para Windows, macOS e Linux"
+  ],
+  "entregaveis": [
+    "Documento de arquitetura e stack tecnológica escolhida",
+    "Protótipos de UI (wireframes)",
+    "Código-fonte completo (frontend + backend)",
+    "Binários instaláveis para Windows, macOS e Linux",
+    "Guia de instalação e uso básico"
+  ],
+  "criteriosSucesso": [
+    "Aplicativo compilado para as três plataformas, capaz de importar, editar e exportar um vídeo de 5 minutos sem erros"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A nova informação sobre o suporte limitado do ffmpeg.wasm no navegador Safari exige a pesquisa e definição de uma estratégia alternativa (como fallback no servidor ou processamento nativo), impactando diretamente as tarefas de pesquisa de bibliotecas de vídeo e arquitetura.",
+      "ts": "2026-09-15T02:19:16.404Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

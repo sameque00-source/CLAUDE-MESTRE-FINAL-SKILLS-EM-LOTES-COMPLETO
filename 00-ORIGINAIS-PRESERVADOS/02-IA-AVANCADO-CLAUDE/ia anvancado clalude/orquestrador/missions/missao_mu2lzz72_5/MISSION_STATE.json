@@ -1,0 +1,236 @@
+{
+  "id": "missao_mu2lzz72_5",
+  "objetivo": "Missão sintética de dependência estrita A→B→C",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:49:23.054Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:49:23.054Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:49:23.055Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:49:23.060Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:49:24.039Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lzz73_6",
+      "descricao": "Responda apenas: A",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: A",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "A",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:49:23.367Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:49:23.055Z",
+      "atualizadaEm": "2026-09-15T11:49:23.367Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: A\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2lzz74_7",
+      "descricao": "Responda apenas: B",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2lzz73_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: B",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "B",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:49:23.680Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:49:23.056Z",
+      "atualizadaEm": "2026-09-15T11:49:23.680Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: B\nCONTEXT: - A\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2lzz75_8",
+      "descricao": "Responda apenas: C",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2lzz74_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: C",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "C",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:49:24.039Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:49:23.057Z",
+      "atualizadaEm": "2026-09-15T11:49:24.039Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: C\nCONTEXT: - B\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lzz74_7",
+      "para": "tarefa_mu2lzz73_6"
+    },
+    {
+      "de": "tarefa_mu2lzz75_8",
+      "para": "tarefa_mu2lzz74_7"
+    }
+  ],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lzz73_6",
+      "status": "ok",
+      "resultado": "A",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:49:23.367Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lzz74_7",
+      "status": "ok",
+      "resultado": "B",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:49:23.680Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lzz75_8",
+      "status": "ok",
+      "resultado": "C",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:49:24.039Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:49:23.054Z",
+  "atualizadaEm": "2026-09-15T11:49:24.039Z",
+  "modoExecucao": "AUTO"
+}

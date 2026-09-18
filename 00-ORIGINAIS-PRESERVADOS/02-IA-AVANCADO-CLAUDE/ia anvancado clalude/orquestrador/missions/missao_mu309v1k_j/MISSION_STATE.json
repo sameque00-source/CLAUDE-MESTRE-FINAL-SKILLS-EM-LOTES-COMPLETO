@@ -1,0 +1,71 @@
+{
+  "id": "missao_mu309v1k_j",
+  "objetivo": "Missão sintética de arquivo limpo",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "PLANEJANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:28:58.856Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:28:58.856Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T18:28:58.857Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu309v1l_k",
+      "descricao": "verificar",
+      "tipo": "security",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "verificar",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:28:58.857Z",
+      "atualizadaEm": "2026-09-15T18:28:58.857Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "avaliar dependências e prontidão de tarefa_mu309v1l_k",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:28:58.856Z",
+  "atualizadaEm": "2026-09-15T18:28:58.857Z",
+  "modoExecucao": "AUTO"
+}

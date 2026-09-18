@@ -1,0 +1,372 @@
+{
+  "id": "missao_mu21fy9v_b",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:13:56.419Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:13:56.419Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (8 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:13:56.420Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21fy9w_c",
+      "descricao": "Pesquisar modelos de visão‑linguagem open‑source adequados (ex.: BLIP, OFA, CLIP‑GPT) e suas licenças",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo com modelo recomendado"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolha do modelo impacta qualidade, custos e requisitos de hardware",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar modelos de visão‑linguagem open‑source adequados (ex.: BLIP, OFA, CLIP‑GPT) e suas licenças",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo com modelo recomendado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "id": "tarefa_mu21fy9w_d",
+      "descricao": "Definir arquitetura da solução (frontend React, backend FastAPI, integração do modelo)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21fy9w_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Diagrama de componentes e fluxo de dados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir arquitetura da solução (frontend React, backend FastAPI, integração do modelo)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de componentes e fluxo de dados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "id": "tarefa_mu21fy9w_e",
+      "descricao": "Criar repositório Git e configurar pipeline CI básico (lint, testes)",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fy9w_d"
+      ],
+      "recursoExclusivo": "repo",
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Repositório público com CI ativo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Criar repositório Git e configurar pipeline CI básico (lint, testes)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório público com CI ativo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "id": "tarefa_mu21fy9w_f",
+      "descricao": "Implementar API REST em FastAPI: receber imagem, chamar modelo e devolver descrição",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fy9w_d",
+        "tarefa_mu21fy9w_e"
+      ],
+      "recursoExclusivo": "backend_code",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Endpoint /describe funciona com teste unitário"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar API REST em FastAPI: receber imagem, chamar modelo e devolver descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint /describe funciona com teste unitário"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "id": "tarefa_mu21fy9w_g",
+      "descricao": "Desenvolver frontend em React: upload de foto e exibição da descrição retornada",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fy9w_d",
+        "tarefa_mu21fy9w_e"
+      ],
+      "recursoExclusivo": "frontend_code",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Página web funcional com upload e resultado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver frontend em React: upload de foto e exibição da descrição retornada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Página web funcional com upload e resultado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "id": "tarefa_mu21fy9w_h",
+      "descricao": "Integrar modelo de visão‑linguagem selecionado ao backend (carregamento, inferência, pós‑processamento)",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fy9w_f",
+        "tarefa_mu21fy9w_c"
+      ],
+      "recursoExclusivo": "model_code",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Função de inferência retorna descrição plausível em testes"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Integrar modelo de visão‑linguagem selecionado ao backend (carregamento, inferência, pós‑processamento)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função de inferência retorna descrição plausível em testes"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "id": "tarefa_mu21fy9w_i",
+      "descricao": "Realizar testes end‑to‑end: upload de imagens reais e validação de respostas",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21fy9w_f",
+        "tarefa_mu21fy9w_g",
+        "tarefa_mu21fy9w_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Conjunto de 10 casos de teste aprovados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Realizar testes end‑to‑end: upload de imagens reais e validação de respostas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conjunto de 10 casos de teste aprovados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    },
+    {
+      "id": "tarefa_mu21fy9w_j",
+      "descricao": "Escrever README com instruções de instalação, uso e exemplos de API",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu21fy9w_i"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md completo e revisado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever README com instruções de instalação, uso e exemplos de API",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md completo e revisado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:56.420Z",
+      "atualizadaEm": "2026-09-15T02:13:56.420Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21fy9w_d",
+      "para": "tarefa_mu21fy9w_c"
+    },
+    {
+      "de": "tarefa_mu21fy9w_e",
+      "para": "tarefa_mu21fy9w_d"
+    },
+    {
+      "de": "tarefa_mu21fy9w_f",
+      "para": "tarefa_mu21fy9w_d"
+    },
+    {
+      "de": "tarefa_mu21fy9w_f",
+      "para": "tarefa_mu21fy9w_e"
+    },
+    {
+      "de": "tarefa_mu21fy9w_g",
+      "para": "tarefa_mu21fy9w_d"
+    },
+    {
+      "de": "tarefa_mu21fy9w_g",
+      "para": "tarefa_mu21fy9w_e"
+    },
+    {
+      "de": "tarefa_mu21fy9w_h",
+      "para": "tarefa_mu21fy9w_f"
+    },
+    {
+      "de": "tarefa_mu21fy9w_h",
+      "para": "tarefa_mu21fy9w_c"
+    },
+    {
+      "de": "tarefa_mu21fy9w_i",
+      "para": "tarefa_mu21fy9w_f"
+    },
+    {
+      "de": "tarefa_mu21fy9w_i",
+      "para": "tarefa_mu21fy9w_g"
+    },
+    {
+      "de": "tarefa_mu21fy9w_i",
+      "para": "tarefa_mu21fy9w_h"
+    },
+    {
+      "de": "tarefa_mu21fy9w_j",
+      "para": "tarefa_mu21fy9w_i"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:13:56.419Z",
+  "atualizadaEm": "2026-09-15T02:13:56.419Z",
+  "modoExecucao": "AUTO"
+}

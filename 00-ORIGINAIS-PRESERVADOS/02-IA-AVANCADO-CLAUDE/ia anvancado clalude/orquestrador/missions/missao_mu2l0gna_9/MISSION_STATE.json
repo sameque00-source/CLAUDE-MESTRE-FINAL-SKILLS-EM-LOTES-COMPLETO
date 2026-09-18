@@ -1,0 +1,183 @@
+{
+  "id": "missao_mu2l0gna_9",
+  "objetivo": "Missão sintética de pesquisas paralelas",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:21:46.054Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:21:46.054Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:21:46.055Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:21:46.057Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:21:46.061Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l0gnb_a",
+      "descricao": "Descobrir a versão atual do pacote npm uuid",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Descobrir a versão atual do pacote npm uuid",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "RFC9562 UUIDs",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "memoria_reutilizada=true",
+          "confianca=0.83",
+          "agente=research",
+          "uuid@14.0.2 (documentação oficial) - https://github.com/uuidjs/uuid#readme"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+        ],
+        "ts": "2026-09-15T11:21:46.059Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:21:46.055Z",
+      "atualizadaEm": "2026-09-15T11:21:46.061Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Descobrir a versão atual do pacote npm uuid\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2l0gnc_b",
+      "descricao": "Descobrir a versão atual do pacote npm semver",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Descobrir a versão atual do pacote npm semver",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "The semantic version parser used by npm.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "memoria_reutilizada=true",
+          "confianca=0.83",
+          "agente=research",
+          "semver@7.8.5 (documentação oficial) - https://github.com/npm/node-semver#readme"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+        ],
+        "ts": "2026-09-15T11:21:46.060Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:21:46.056Z",
+      "atualizadaEm": "2026-09-15T11:21:46.061Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Descobrir a versão atual do pacote npm semver\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2l0gnb_a",
+      "status": "ok",
+      "resultado": "RFC9562 UUIDs",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "memoria_reutilizada=true",
+        "confianca=0.83",
+        "agente=research",
+        "uuid@14.0.2 (documentação oficial) - https://github.com/uuidjs/uuid#readme"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+      ],
+      "ts": "2026-09-15T11:21:46.059Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2l0gnc_b",
+      "status": "ok",
+      "resultado": "The semantic version parser used by npm.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "memoria_reutilizada=true",
+        "confianca=0.83",
+        "agente=research",
+        "semver@7.8.5 (documentação oficial) - https://github.com/npm/node-semver#readme"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+      ],
+      "ts": "2026-09-15T11:21:46.060Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:21:46.054Z",
+  "atualizadaEm": "2026-09-15T11:21:46.061Z",
+  "modoExecucao": "AUTO"
+}

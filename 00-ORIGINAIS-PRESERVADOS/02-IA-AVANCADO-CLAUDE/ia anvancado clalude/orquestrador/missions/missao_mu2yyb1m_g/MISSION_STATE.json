@@ -1,0 +1,262 @@
+{
+  "id": "missao_mu2yyb1m_g",
+  "objetivo": "Crie um pequeno aplicativo web funcional: um servidor Node.js (http nativo, sem dependências externas) que responde na rota / com uma pagina HTML simples dizendo \"Ola, mundo!\", rodando na porta 3900.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:52:00.106Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:52:00.106Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T17:52:00.110Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:52:00.110Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T17:52:05.844Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T17:52:05.845Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T17:52:05.846Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2yyb1p_h",
+      "descricao": "Implementar o servidor Node.js (server.js) usando o módulo http nativo. O servidor deve escutar na porta 3900. Na rota '/', responder com status 200, Content-Type text/html; charset=utf-8 e o body HTML contendo a string 'Ola, mundo!'.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "server.js",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "ninerouter-imperion-dev",
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "O arquivo server.js é criado com a lógica correta",
+        "O código não requer nenhum pacote externo (verificar imports)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o servidor Node.js (server.js) usando o módulo http nativo. O servidor deve escutar na porta 3900. Na rota '/', responder com status 200, Content-Type text/html; charset=utf-8 e o body HTML contendo a string 'Ola, mundo!'.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo server.js é criado com a lógica correta"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Implementei um servidor HTTP nativo em Node.js que escuta na porta 3900 e responde 'Ola, mundo!' na raiz, com tratamento básico para 404.",
+        "arquivos": [
+          "server.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=ninerouter-imperion-dev",
+          "agente=backend",
+          "servidor validado com requisição HTTP real"
+        ],
+        "testes": [
+          {
+            "comando": "node (servidor, porta 3900)",
+            "resultado": "passou",
+            "evidencia": "HTTP 200 em /: <!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>Ola, mundo!</title></head><body><h1>Ola, mundo!</h1></body></html>"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:52:04.617Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:52:00.109Z",
+      "atualizadaEm": "2026-09-15T17:52:04.617Z",
+      "_contrato": "Voce cuida do lado servidor.\n\nSEMPRE\n- Valide entrada na fronteira do sistema. Nunca confie no cliente.\n- Trate o caminho de erro, nao so o caminho feliz.\n- Nao logue credencial, token nem dado pessoal.\n- Migracao de banco exige aprovacao do coordenador.\n\nEntregue o codigo e diga explicitamente o que NAO foi coberto.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Implementar o servidor Node.js (server.js) usando o módulo http nativo. O servidor deve escutar na porta 3900. Na rota '/', responder com status 200, Content-Type text/html; charset=utf-8 e o body HTML contendo a string 'Ola, mundo!'.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: O arquivo server.js é criado com a lógica correta\nSUCCESS_CRITERIA: O arquivo server.js é criado com a lógica correta; O código não requer nenhum pacote externo (verificar imports)"
+    },
+    {
+      "id": "tarefa_mu2yyb1p_i",
+      "descricao": "Iniciar o servidor e validar a resposta. Executar 'node server.js'. Abaixo estão os passos de validação: 1) Verificar se não há erros de conexão. 2) Usar 'curl http://localhost:3900' para dar GET na rota raiz. 3) Confirmar que a saída contém 'Ola, mundo!'. Se falhar, depurar e encerrar o processo.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2yyb1p_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "O comando curl retorna o HTML esperado",
+        "O status HTTP é 200"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Iniciar o servidor e validar a resposta. Executar 'node server.js'. Abaixo estão os passos de validação: 1) Verificar se não há erros de conexão. 2) Usar 'curl http://localhost:3900' para dar GET na rota raiz. 3) Confirmar que a saída contém 'Ola, mundo!'. Se falhar, depurar e encerrar o processo.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O comando curl retorna o HTML esperado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "teste executado com sucesso (validação real)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "passou",
+            "evidencia": "HTTP 200: <!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>Ola, mundo!</title></head><body><h1>Ola, mundo!</h1></body></html>"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:52:05.843Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:52:00.109Z",
+      "atualizadaEm": "2026-09-15T17:52:05.844Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2yyb1p_i",
+      "para": "tarefa_mu2yyb1p_h"
+    }
+  ],
+  "agentes": [
+    "backend",
+    "testing"
+  ],
+  "modelos": [
+    "ninerouter-imperion-dev"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2yyb1p_h",
+      "status": "ok",
+      "resultado": "Implementei um servidor HTTP nativo em Node.js que escuta na porta 3900 e responde 'Ola, mundo!' na raiz, com tratamento básico para 404.",
+      "arquivos": [
+        "server.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=ninerouter-imperion-dev",
+        "agente=backend",
+        "servidor validado com requisição HTTP real"
+      ],
+      "testes": [
+        {
+          "comando": "node (servidor, porta 3900)",
+          "resultado": "passou",
+          "evidencia": "HTTP 200 em /: <!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>Ola, mundo!</title></head><body><h1>Ola, mundo!</h1></body></html>"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:52:04.617Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2yyb1p_i",
+      "status": "ok",
+      "resultado": "teste executado com sucesso (validação real)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [
+        {
+          "comando": "node",
+          "resultado": "passou",
+          "evidencia": "HTTP 200: <!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>Ola, mundo!</title></head><body><h1>Ola, mundo!</h1></body></html>"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:52:05.843Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+      "ts": "2026-09-15T17:52:05.845Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: server.js",
+    "ts": "2026-09-15T17:52:05.846Z"
+  },
+  "criadaEm": "2026-09-15T17:52:00.106Z",
+  "atualizadaEm": "2026-09-15T17:52:05.846Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Servidor Node.js usando módulo http nativo",
+    "Rota '/' retorna HTML com 'Ola, mundo!'",
+    "Porta de escuta 3900",
+    "Sem dependências externas (npm install prohibited/impossível)"
+  ],
+  "entregaveis": [
+    "Arquivo server.js funcional",
+    "Resposta HTML válida na rota raiz",
+    "Servidor acessível em localhost:3900"
+  ],
+  "criteriosSucesso": [
+    "curl http://localhost:3900 retorna HTML contendo 'Ola, mundo!'",
+    "Servidor inicia sem erros no console"
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "tipoExecucao": "servidor",
+    "porta": 3900,
+    "rotaTeste": "/"
+  },
+  "_rodadasRevisaoMissao": 0
+}

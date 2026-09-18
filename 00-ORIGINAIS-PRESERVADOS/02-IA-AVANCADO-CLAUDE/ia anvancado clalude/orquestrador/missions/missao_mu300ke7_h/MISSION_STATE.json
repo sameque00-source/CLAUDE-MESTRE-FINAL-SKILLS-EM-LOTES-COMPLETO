@@ -1,0 +1,132 @@
+{
+  "id": "missao_mu300ke7_h",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:21:45.151Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:21:45.151Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T18:21:45.152Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:21:45.152Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu300ke8_i",
+      "descricao": "Escrever o script bash de automação git (backup e push)",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Script criado com tratamento de erros básicos e permissão de execução"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script bash de automação git (backup e push)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script criado com tratamento de erros básicos e permissão de execução"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:45.152Z",
+      "atualizadaEm": "2026-09-15T18:21:45.152Z"
+    },
+    {
+      "id": "tarefa_mu300ke8_j",
+      "descricao": "Testar a execução do script em um repositório git local de teste",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu300ke8_i"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Script executado com sucesso validando commit e envio para remote simulado/real"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Testar a execução do script em um repositório git local de teste",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script executado com sucesso validando commit e envio para remote simulado/real"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:45.152Z",
+      "atualizadaEm": "2026-09-15T18:21:45.152Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu300ke8_j",
+      "para": "tarefa_mu300ke8_i"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:21:45.151Z",
+  "atualizadaEm": "2026-09-15T18:21:45.151Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Aceitar diretório alvo como argumento ou usar o diretório atual",
+    "Verificar se o diretório é um repositório Git ou inicializá-lo",
+    "Adicionar alterações, criar commit com mensagem padrão ou personalizada e enviar para o remote"
+  ],
+  "entregaveis": [
+    "Script bash executável de backup e publicação"
+  ],
+  "criteriosSucesso": [
+    "Script executa sem erros, faz commit das alterações locais e envia com sucesso para o repositório remoto"
+  ]
+}

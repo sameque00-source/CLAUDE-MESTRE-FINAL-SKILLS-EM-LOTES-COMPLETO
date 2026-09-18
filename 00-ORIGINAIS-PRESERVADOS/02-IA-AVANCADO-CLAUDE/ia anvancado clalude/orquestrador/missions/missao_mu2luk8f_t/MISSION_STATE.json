@@ -1,0 +1,483 @@
+{
+  "id": "missao_mu2luk8f_t",
+  "objetivo": "Melhore um pequeno aplicativo web: crie uma pagina HTML simples com um contador de cliques em JavaScript puro (sem framework), pesquisando rapidamente a melhor pratica de acessibilidade para botoes antes de implementar, e revise o resultado final.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:45:10.383Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:45:10.383Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:45:10.384Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:45:10.384Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:45:28.022Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:45:28.023Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T11:45:28.024Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T11:45:28.024Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:45:36.770Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:45:36.772Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T11:45:36.773Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T11:45:36.773Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:46:30.568Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:46:30.570Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "O código possui um defeito de acessibilidade em relação ao requisito de leitor de tela.",
+      "ts": "2026-09-15T11:46:30.571Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:46:30.572Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:46:30.573Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "O código possui um defeito de acessibilidade em relação ao requisito de leitor de tela.",
+      "ts": "2026-09-15T11:46:30.575Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:46:30.576Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:46:30.577Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2luk8g_u",
+      "descricao": "Pesquisar as melhores práticas de acessibilidade W3C/ARIA para botões em aplicações web",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista clara de diretrizes de acessibilidade para botões obtida"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir o uso correto de atributos de acessibilidade em botões HTML nativos.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar as melhores práticas de acessibilidade W3C/ARIA para botões em aplicações web",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista clara de diretrizes de acessibilidade para botões obtida"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Nenhuma fonte externa encontrada para \"Pesquisar as melhores práticas de acessibilidade W3C/ARIA para botões em aplicações web\" (providers gratuitos tentados: [{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]). Nenhum fato foi inventado — prosseguindo apenas com conhecimento geral do agente, sem alegar pesquisa concluída.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "pesquisa_indisponivel=true",
+          "agente=research",
+          "tentativas=[{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "pesquisa web indisponível (todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)) — [PRECISA VERIFICAÇÃO] nenhuma fonte externa confirmada, não bloquear tarefas dependentes por isso"
+        ],
+        "ts": "2026-09-15T11:45:11.211Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:45:10.384Z",
+      "atualizadaEm": "2026-09-15T11:45:11.212Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Pesquisar as melhores práticas de acessibilidade W3C/ARIA para botões em aplicações web\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Lista clara de diretrizes de acessibilidade para botões obtida\nSUCCESS_CRITERIA: Lista clara de diretrizes de acessibilidade para botões obtida"
+    },
+    {
+      "id": "tarefa_mu2luk8g_v",
+      "descricao": "Desenvolver a página HTML e o script em JavaScript puro com o contador de cliques e acessibilidade aplicada",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2luk8g_u"
+      ],
+      "recursoExclusivo": "index.html",
+      "status": "cancelada",
+      "agente": "frontend",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo index.html criado contendo HTML, CSS básico e lógica JS do contador"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a página HTML e o script em JavaScript puro com o contador de cliques e acessibilidade aplicada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo index.html criado contendo HTML, CSS básico e lógica JS do contador"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "geração de código falhou: resposta vazia"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:46:30.566Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:45:10.384Z",
+      "atualizadaEm": "2026-09-15T11:46:30.568Z",
+      "_contrato": "Voce cuida do lado cliente.\n\nSEMPRE\n- Mobile-first. Nenhum scroll horizontal em 390px.\n- Um unico h1, hierarquia de heading sem salto.\n- Foco de teclado visivel. Nunca outline:none sem substituto.\n- Contraste minimo 4.5:1 em texto normal.\n- Toda imagem informativa com alt significativo; decorativa com alt vazio.\n\nEntregue o codigo e diga o que ainda precisa de teste em navegador real.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Desenvolver a página HTML e o script em JavaScript puro com o contador de cliques e acessibilidade aplicada\nCONTEXT: - Nenhuma fonte externa encontrada para \"Pesquisar as melhores práticas de acessibilidade W3C/ARIA para botões em aplicações web\" (providers gratuitos tentados: [{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]). Nenhum fato foi inventado — prosseguindo apenas com conhecimento geral do agente, sem alegar pesquisa concluída.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Arquivo index.html criado contendo HTML, CSS básico e lógica JS do contador\nSUCCESS_CRITERIA: Arquivo index.html criado contendo HTML, CSS básico e lógica JS do contador",
+      "motivoReabertura": null,
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2luk8g_w",
+      "descricao": "Realizar a revisão final do código implementado e da conformidade com os requisitos solicitados",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2luk8g_v"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Código revisado e validado quanto à simplicidade, funcionamento e acessibilidade"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Realizar a revisão final do código implementado e da conformidade com os requisitos solicitados",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código revisado e validado quanto à simplicidade, funcionamento e acessibilidade"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "O código possui um defeito de acessibilidade em relação ao requisito de leitor de tela.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=false",
+          "agente=reviewer",
+          "O elemento com 'aria-live=\"polite\"' (.counter-display) é um div estático e, ao ter seu 'textContent' alterado via JavaScript, alguns leitores de tela podem não anunciar a mudança corretamente a menos que façam parte de uma região ativa adequada ou que o container inteiro receba o anúncio. Além disso, o botão possui 'aria-describedby=\"contador\"', o que faz com que o leitor de tela leia o número atual ('0') a cada vez que o botão foca, gerando redundância e confusão quando o valor muda sem que o foco saia do botão."
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "O elemento com 'aria-live=\"polite\"' (.counter-display) é um div estático e, ao ter seu 'textContent' alterado via JavaScript, alguns leitores de tela podem não anunciar a mudança corretamente a menos que façam parte de uma região ativa adequada ou que o container inteiro receba o anúncio. Além disso, o botão possui 'aria-describedby=\"contador\"', o que faz com que o leitor de tela leia o número atual ('0') a cada vez que o botão foca, gerando redundância e confusão quando o valor muda sem que o foco saia do botão."
+        ],
+        "ts": "2026-09-15T11:45:28.021Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:45:10.384Z",
+      "atualizadaEm": "2026-09-15T11:45:28.022Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Realizar a revisão final do código implementado e da conformidade com os requisitos solicitados\nCONTEXT: - Criado arquivo index.html mobile-first com semântica correta, contraste adequado, foco visível e leitor de tela (aria-live).\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Código revisado e validado quanto à simplicidade, funcionamento e acessibilidade\nSUCCESS_CRITERIA: Código revisado e validado quanto à simplicidade, funcionamento e acessibilidade"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2luk8g_v",
+      "para": "tarefa_mu2luk8g_u"
+    },
+    {
+      "de": "tarefa_mu2luk8g_w",
+      "para": "tarefa_mu2luk8g_v"
+    }
+  ],
+  "agentes": [
+    "research",
+    "frontend",
+    "reviewer"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2luk8g_u",
+      "status": "ok",
+      "resultado": "Nenhuma fonte externa encontrada para \"Pesquisar as melhores práticas de acessibilidade W3C/ARIA para botões em aplicações web\" (providers gratuitos tentados: [{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]). Nenhum fato foi inventado — prosseguindo apenas com conhecimento geral do agente, sem alegar pesquisa concluída.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "pesquisa_indisponivel=true",
+        "agente=research",
+        "tentativas=[{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "pesquisa web indisponível (todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)) — [PRECISA VERIFICAÇÃO] nenhuma fonte externa confirmada, não bloquear tarefas dependentes por isso"
+      ],
+      "ts": "2026-09-15T11:45:11.211Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2luk8g_v",
+      "status": "ok",
+      "resultado": "Criado arquivo index.html mobile-first com semântica correta, contraste adequado, foco visível e leitor de tela (aria-live).",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=frontend"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T11:45:26.553Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2luk8g_w",
+      "status": "ok",
+      "resultado": "O código possui um defeito de acessibilidade em relação ao requisito de leitor de tela.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=false",
+        "agente=reviewer",
+        "O elemento com 'aria-live=\"polite\"' (.counter-display) é um div estático e, ao ter seu 'textContent' alterado via JavaScript, alguns leitores de tela podem não anunciar a mudança corretamente a menos que façam parte de uma região ativa adequada ou que o container inteiro receba o anúncio. Além disso, o botão possui 'aria-describedby=\"contador\"', o que faz com que o leitor de tela leia o número atual ('0') a cada vez que o botão foca, gerando redundância e confusão quando o valor muda sem que o foco saia do botão."
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "O elemento com 'aria-live=\"polite\"' (.counter-display) é um div estático e, ao ter seu 'textContent' alterado via JavaScript, alguns leitores de tela podem não anunciar a mudança corretamente a menos que façam parte de uma região ativa adequada ou que o container inteiro receba o anúncio. Além disso, o botão possui 'aria-describedby=\"contador\"', o que faz com que o leitor de tela leia o número atual ('0') a cada vez que o botão foca, gerando redundância e confusão quando o valor muda sem que o foco saia do botão."
+      ],
+      "ts": "2026-09-15T11:45:28.021Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2luk8g_v",
+      "status": "ok",
+      "resultado": "Criado index.html com design mobile-first (max-width 390px sem scroll horizontal), hierarquia estrita de títulos (um único h1), foco de teclado visível via :focus-visible com alto contraste, e aria-live no contador para suporte correto a leitores de tela.",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=frontend"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T11:45:36.770Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:45:28.023Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:45:36.772Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/3 subtarefas concluídas (1 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:46:30.570Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/3 subtarefas concluídas (1 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T11:46:30.573Z"
+    }
+  ],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2luk8g_v",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [\n    {\n      \"caminho\": \"index.html\",\n      \"conteudo\": \"<!DOCTYPE html>\\n<html lang=\\\"pt-BR\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n  <title>Contador de Cliques Acessível</title>\\n  <style>\\n    :root{color",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:45:59.154Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2luk8g_v",
+      "erro": "geração de código falhou: resposta vazia",
+      "tipo": "vazio",
+      "ts": "2026-09-15T11:46:10.284Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2luk8g_v",
+      "erro": "geração de código falhou: resposta vazia",
+      "tipo": "vazio",
+      "ts": "2026-09-15T11:46:30.567Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2luk8g_v",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [\n    {\n      \"caminho\": \"index.html\",\n      \"conteudo\": \"<!DOCTYPE html>\\n<html lang=\\\"pt-BR\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n  <title>Contador de Cliques Acessível</title>\\n  <style>\\n    :root{color",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:45:59.154Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:45:59.154Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2luk8g_v",
+        "erro": "geração de código falhou: resposta vazia",
+        "tipo": "vazio",
+        "ts": "2026-09-15T11:46:10.284Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:46:10.284Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2luk8g_v",
+        "erro": "geração de código falhou: resposta vazia",
+        "tipo": "vazio",
+        "ts": "2026-09-15T11:46:30.567Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:46:30.567Z"
+    }
+  ],
+  "progresso": 0.667,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:46:30.577Z"
+  },
+  "criadaEm": "2026-09-15T11:45:10.383Z",
+  "atualizadaEm": "2026-09-15T11:46:30.577Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Página HTML simples",
+    "Contador de cliques funcional em JavaScript puro",
+    "Aplicação de boas práticas de acessibilidade (ARIA, foco, contraste ou semântica)",
+    "Revisão final do código e da acessibilidade"
+  ],
+  "entregaveis": [
+    "Arquivo index.html com o aplicativo funcional"
+  ],
+  "criteriosSucesso": [
+    "Página HTML funcional abrindo no navegador com contador operando via cliques e botões acessíveis."
+  ],
+  "_rodadasRevisaoMissao": 4
+}

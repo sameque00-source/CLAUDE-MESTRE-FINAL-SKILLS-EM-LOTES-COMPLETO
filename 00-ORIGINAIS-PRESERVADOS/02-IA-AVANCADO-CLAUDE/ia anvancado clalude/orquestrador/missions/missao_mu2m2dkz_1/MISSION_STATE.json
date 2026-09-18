@@ -1,0 +1,223 @@
+{
+  "id": "missao_mu2m2dkz_1",
+  "objetivo": "Missão sintética de paralelismo real",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:51:15.010Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:51:15.011Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:51:15.012Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:51:15.015Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:51:19.785Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m2dl0_2",
+      "descricao": "Em uma frase, diga uma vantagem do Node.js.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Node.js.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "O Node.js permite usar JavaScript tanto no frontend quanto no backend, unificando a linguagem de programação em toda a stack de desenvolvimento.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:19.130Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:15.012Z",
+      "atualizadaEm": "2026-09-15T11:51:19.785Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Node.js.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2m2dl1_3",
+      "descricao": "Em uma frase, diga uma vantagem do Python.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Python.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Como não há nenhum arquivo fornecido no workspace para leitura prévia (não li nenhum arquivo existente), não posso imitar um estilo pré-existente de código. No entanto, atendendo estritamente ao contrato e à instrução principal de emitir em uma frase a vantagem solicitada:\n\nUma das grandes vantagens do Python é a sua alta legibilidade e sintaxe concisa, que facilitam a aprendizagem e reduzem o tempo de desenvolvimento.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:19.784Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:15.013Z",
+      "atualizadaEm": "2026-09-15T11:51:19.785Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Python.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2m2dl2_4",
+      "descricao": "Em uma frase, diga uma vantagem do Go.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Go.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Como não foi fornecido nenhum arquivo prévio para leitura (conforme as regras: \"Se não leu, diga que não leu\"), respondo diretamente ao objetivo da tarefa seguindo o padrão esperado:\n\nA compilação estática gera um único binário autocontido, facilitando drasticamente o deploy sem dependências externas em tempo de execução.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:16.231Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:15.014Z",
+      "atualizadaEm": "2026-09-15T11:51:19.785Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Go.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2m2dl0_2",
+      "status": "ok",
+      "resultado": "O Node.js permite usar JavaScript tanto no frontend quanto no backend, unificando a linguagem de programação em toda a stack de desenvolvimento.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:19.130Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m2dl1_3",
+      "status": "ok",
+      "resultado": "Como não há nenhum arquivo fornecido no workspace para leitura prévia (não li nenhum arquivo existente), não posso imitar um estilo pré-existente de código. No entanto, atendendo estritamente ao contrato e à instrução principal de emitir em uma frase a vantagem solicitada:\n\nUma das grandes vantagens do Python é a sua alta legibilidade e sintaxe concisa, que facilitam a aprendizagem e reduzem o tempo de desenvolvimento.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:19.784Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m2dl2_4",
+      "status": "ok",
+      "resultado": "Como não foi fornecido nenhum arquivo prévio para leitura (conforme as regras: \"Se não leu, diga que não leu\"), respondo diretamente ao objetivo da tarefa seguindo o padrão esperado:\n\nA compilação estática gera um único binário autocontido, facilitando drasticamente o deploy sem dependências externas em tempo de execução.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:16.231Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:51:15.010Z",
+  "atualizadaEm": "2026-09-15T11:51:19.785Z",
+  "modoExecucao": "AUTO"
+}

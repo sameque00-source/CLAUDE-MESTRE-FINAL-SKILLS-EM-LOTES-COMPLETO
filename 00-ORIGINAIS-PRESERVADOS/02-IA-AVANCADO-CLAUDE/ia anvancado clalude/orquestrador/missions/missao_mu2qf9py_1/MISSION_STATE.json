@@ -1,0 +1,131 @@
+{
+  "id": "missao_mu2qf9py_1",
+  "objetivo": "teste paralelismo isolado 3b",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:53:14.997Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:53:14.998Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T13:53:15.000Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:53:15.002Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2qf9q0_2",
+      "descricao": "Em uma frase, diga uma vantagem do Node.js.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Node.js.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:53:15.000Z",
+      "atualizadaEm": "2026-09-15T13:53:15.000Z"
+    },
+    {
+      "id": "tarefa_mu2qf9q1_3",
+      "descricao": "Em uma frase, diga uma vantagem do Python.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Python.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:53:15.001Z",
+      "atualizadaEm": "2026-09-15T13:53:15.001Z"
+    },
+    {
+      "id": "tarefa_mu2qf9q1_4",
+      "descricao": "Em uma frase, diga uma vantagem do Go.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Go.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:53:15.001Z",
+      "atualizadaEm": "2026-09-15T13:53:15.001Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "avaliar dependências e prontidão de tarefa_mu2qf9q1_4",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:53:14.997Z",
+  "atualizadaEm": "2026-09-15T13:53:15.001Z",
+  "modoExecucao": "AUTO"
+}

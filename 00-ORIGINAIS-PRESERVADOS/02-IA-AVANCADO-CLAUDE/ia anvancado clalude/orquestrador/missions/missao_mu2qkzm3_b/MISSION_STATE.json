@@ -1,0 +1,203 @@
+{
+  "id": "missao_mu2qkzm3_b",
+  "objetivo": "Missão sintética de recuperação",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:57:41.835Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:57:41.835Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T13:57:41.836Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:57:41.838Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T13:57:54.513Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T13:57:54.514Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2qkzm4_c",
+      "descricao": "Responda apenas: primeira",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: primeira",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "resposta vazia (categoria=resposta_vazia)"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:57:54.513Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T13:57:41.836Z",
+      "atualizadaEm": "2026-09-15T13:57:54.514Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: primeira\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2qkzm5_d",
+      "descricao": "Responda apenas: segunda",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2qkzm4_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: segunda",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:57:41.837Z",
+      "atualizadaEm": "2026-09-15T13:57:54.514Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2qkzm4_c\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2qkzm5_d",
+      "para": "tarefa_mu2qkzm4_c"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2qkzm4_c",
+      "erro": "resposta vazia (categoria=resposta_vazia)",
+      "tipo": "vazio",
+      "ts": "2026-09-15T13:57:45.982Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2qkzm4_c",
+      "erro": "resposta vazia (categoria=resposta_vazia)",
+      "tipo": "vazio",
+      "ts": "2026-09-15T13:57:50.122Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2qkzm4_c",
+      "erro": "resposta vazia (categoria=resposta_vazia)",
+      "tipo": "vazio",
+      "ts": "2026-09-15T13:57:54.513Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2qkzm4_c",
+        "erro": "resposta vazia (categoria=resposta_vazia)",
+        "tipo": "vazio",
+        "ts": "2026-09-15T13:57:45.982Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T13:57:45.982Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2qkzm4_c",
+        "erro": "resposta vazia (categoria=resposta_vazia)",
+        "tipo": "vazio",
+        "ts": "2026-09-15T13:57:50.122Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T13:57:50.122Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2qkzm4_c",
+        "erro": "resposta vazia (categoria=resposta_vazia)",
+        "tipo": "vazio",
+        "ts": "2026-09-15T13:57:54.513Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T13:57:54.513Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T13:57:54.514Z"
+  },
+  "criadaEm": "2026-09-15T13:57:41.835Z",
+  "atualizadaEm": "2026-09-15T13:57:54.514Z",
+  "modoExecucao": "AUTO"
+}

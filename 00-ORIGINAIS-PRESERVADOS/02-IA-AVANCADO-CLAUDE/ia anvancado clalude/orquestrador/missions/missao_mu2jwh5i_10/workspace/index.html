@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Botão de Contador</title>
+  <style>
+    :root {
+      --fundo: #ffffff;
+      --texto: #111111;
+      --acento: #0b5fff;
+      --foco: #b45309;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      line-height: 1.5;
+    }
+
+    main {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(1.25rem, 5vw, 1.75rem);
+      margin: 0 0 8px;
+    }
+
+    p.dica {
+      font-size: 0.95rem;
+      color: #374151;
+      margin: 0 0 24px;
+    }
+
+    .contador {
+      font-size: clamp(2rem, 12vw, 3rem);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      margin: 0 0 24px;
+      color: var(--texto);
+    }
+
+    .btn {
+      font: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: var(--acento);
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 28px;
+      cursor: pointer;
+      transition: background-color 0.15s ease, transform 0.05s ease;
+    }
+
+    .btn:hover {
+      background: #0a4fd6;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Foco de teclado visível — nunca ocultar outline sem substituto */
+    .btn:focus-visible {
+      outline: 3px solid var(--foco);
+      outline-offset: 3px;
+    }
+
+    areset {
+      margin-top: 16px;
+    }
+
+    .btn-reset {
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #374151;
+      background: transparent;
+      border: 2px solid #d1d5db;
+      border-radius: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn-reset:hover {
+      background: #f3f4f6;
+      border-color: #9ca3af;
+    }
+
+    .btn-reset:focus-visible {
+      outline: 3px solid var(--foco);
+      outline-offset: 3px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn, .btn-reset { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Contador</h1>
+    <p class="dica">Clique ou use <kbd>Space</kbd> / <kbd>Enter</kbd> para incrementar.</p>
+
+    <p class="contador" id="contador" role="status" aria-live="polite" aria-atomic="true" aria-label="Valor do contador">0</p>
+
+    <button type="button" class="btn" id="btnIncrementar">
+      Incrementar (+1)
+    </button>
+
+    <div class="arreset">
+      <button type="button" class="btn-reset" id="btnResetar">
+        Zerar contador
+      </button>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var contadorEl = document.getElementById("contador");
+      var btnIncrementar = document.getElementById("btnIncrementar");
+      var btnResetar = document.getElementById("btnResetar");
+
+      var valor = 0;
+
+      function render() {
+        contadorEl.textContent = String(valor);
+      }
+
+      btnIncrementar.addEventListener("click", function () {
+        valor += 1;
+        render();
+      });
+
+      btnResetar.addEventListener("click", function () {
+        valor = 0;
+        render();
+      });
+
+      // Estado inicial
+      render();
+    })();
+  </script>
+</body>
+</html>

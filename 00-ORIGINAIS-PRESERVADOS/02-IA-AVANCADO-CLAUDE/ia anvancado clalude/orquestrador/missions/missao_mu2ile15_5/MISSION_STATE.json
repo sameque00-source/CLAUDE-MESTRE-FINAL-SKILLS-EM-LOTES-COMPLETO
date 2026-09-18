@@ -1,0 +1,225 @@
+{
+  "id": "missao_mu2ile15_5",
+  "objetivo": "Missão sintética de dependência estrita A→B→C",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:14:03.593Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:14:03.593Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:14:03.594Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:14:03.598Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:14:04.865Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ile16_6",
+      "descricao": "Responda apenas: A",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: A",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "A",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:03.972Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:03.594Z",
+      "atualizadaEm": "2026-09-15T10:14:03.972Z"
+    },
+    {
+      "id": "tarefa_mu2ile17_7",
+      "descricao": "Responda apenas: B",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2ile16_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: B",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "B",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:04.423Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:03.595Z",
+      "atualizadaEm": "2026-09-15T10:14:04.423Z"
+    },
+    {
+      "id": "tarefa_mu2ile18_8",
+      "descricao": "Responda apenas: C",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2ile17_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: C",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "C",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:04.865Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:03.596Z",
+      "atualizadaEm": "2026-09-15T10:14:04.865Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ile17_7",
+      "para": "tarefa_mu2ile16_6"
+    },
+    {
+      "de": "tarefa_mu2ile18_8",
+      "para": "tarefa_mu2ile17_7"
+    }
+  ],
+  "agentes": [],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2ile16_6",
+      "status": "ok",
+      "resultado": "A",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:03.972Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ile17_7",
+      "status": "ok",
+      "resultado": "B",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:04.423Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ile18_8",
+      "status": "ok",
+      "resultado": "C",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:04.865Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:14:03.593Z",
+  "atualizadaEm": "2026-09-15T10:14:04.865Z",
+  "modoExecucao": "AUTO"
+}

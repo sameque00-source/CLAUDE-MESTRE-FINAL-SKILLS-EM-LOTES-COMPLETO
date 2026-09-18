@@ -1,0 +1,966 @@
+{
+  "id": "missao_mu2ywkqy_6",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:50:39.370Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:50:39.370Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (13 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T17:50:39.371Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:50:39.371Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T17:51:13.949Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ywkqz_7",
+      "descricao": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav, OpenCV) quanto a funcionalidades, desempenho e licenciamento.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo listando funcionalidades suportadas, benchmark resumido e tipo de licença (GPL, LGPL, BSD)"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolha da base de processamento de vídeo afeta recursos, performance e questões de licença.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav, OpenCV) quanto a funcionalidades, desempenho e licenciamento.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo listando funcionalidades suportadas, benchmark resumido e tipo de licença (GPL, LGPL, BSD)"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas de processamento d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.825Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.825Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_8",
+      "descricao": "Pesquisar frameworks de UI para aplicativos desktop (Qt, Electron+React, Flutter, WPF) avaliando cross‑platform, desempenho e curva de aprendizado.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Tabela comparativa com prós, contras, tamanho do runtime e licenças"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "A UI define a experiência do usuário e determina a complexidade de desenvolvimento multi‑plataforma.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar frameworks de UI para aplicativos desktop (Qt, Electron+React, Flutter, WPF) avaliando cross‑platform, desempenho e curva de aprendizado.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tabela comparativa com prós, contras, tamanho do runtime e licenças"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar frameworks de UI para aplicati",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.825Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.825Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_9",
+      "descricao": "Pesquisar opções de aceleração de hardware (CUDA, Metal, Vulkan, DXVA) e sua disponibilidade nas bibliotecas de vídeo selecionadas.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de APIs suportadas por cada biblioteca e plataformas correspondentes"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "A aceleração determina a velocidade de renderização e a compatibilidade com diferentes GPUs.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar opções de aceleração de hardware (CUDA, Metal, Vulkan, DXVA) e sua disponibilidade nas bibliotecas de vídeo selecionadas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de APIs suportadas por cada biblioteca e plataformas correspondentes"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar opções de aceleração de hardwa",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.825Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.825Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_a",
+      "descricao": "Consolidar os resultados de t1, t2 e t3 e definir o stack tecnológico completo (linguagem, engine de vídeo, framework UI, estratégia de aceleração).",
+      "tipo": "consolidacao",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_7",
+        "tarefa_mu2ywkqz_8",
+        "tarefa_mu2ywkqz_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão contendo linguagem (ex.: C++/Qt ou TypeScript/Electron), bibliotecas escolhidas e justificativa"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar os resultados de t1, t2 e t3 e definir o stack tecnológico completo (linguagem, engine de vídeo, framework UI, estratégia de aceleração).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão contendo linguagem (ex.: C++/Qt ou TypeScript/Electron), bibliotecas escolhidas e justificativa"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Consolidar os resultados de t1, t2 e t3 ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.840Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.840Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_b",
+      "descricao": "Desenhar a arquitetura de alto nível (camada de core, módulo de UI, plugin de export, integração de GPU).",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto",
+        "visao"
+      ],
+      "criterioConclusao": [
+        "Diagrama UML/Arquitetura em PNG ou PDF e descrição dos componentes principais"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Desenhar a arquitetura de alto nível (camada de core, módulo de UI, plugin de export, integração de GPU).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama UML/Arquitetura em PNG ou PDF e descrição dos componentes principais"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenhar a arquitetura de alto nível (ca",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.855Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.855Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_c",
+      "descricao": "Inicializar repositório Git, configurar build system (CMake para core + npm para UI) e CI básico.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_b"
+      ],
+      "recursoExclusivo": "repo",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "editor"
+      ],
+      "criterioConclusao": [
+        "Repo público com README, arquivos CMakeLists.txt, package.json e pipeline CI configurado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Inicializar repositório Git, configurar build system (CMake para core + npm para UI) e CI básico.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repo público com README, arquivos CMakeLists.txt, package.json e pipeline CI configurado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Inicializar repositório Git, configurar ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.870Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.870Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_d",
+      "descricao": "Implementar o motor de vídeo: wrappers da biblioteca escolhida, estrutura de timeline, operações básicas de corte e trim.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_c"
+      ],
+      "recursoExclusivo": "core_engine",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "editor",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Módulo compilado que aceita comandos de importação, corte e exporta clipe de teste sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar o motor de vídeo: wrappers da biblioteca escolhida, estrutura de timeline, operações básicas de corte e trim.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo compilado que aceita comandos de importação, corte e exporta clipe de teste sem erros"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o motor de vídeo: wrappers d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.887Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.887Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_e",
+      "descricao": "Desenvolver a interface de usuário: timeline visual, painel de mídia, dialogs de importação/exportação.",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_c"
+      ],
+      "recursoExclusivo": "ui_code",
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "editor",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Aplicação lançada em modo dev com UI funcional mostrando timeline e botões operacionais"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Desenvolver a interface de usuário: timeline visual, painel de mídia, dialogs de importação/exportação.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicação lançada em modo dev com UI funcional mostrando timeline e botões operacionais"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver a interface de usuário: time",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.887Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.887Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_f",
+      "descricao": "Integrar UI com o motor de vídeo: eventos de UI acionam chamadas ao core, atualizando a timeline.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_d",
+        "tarefa_mu2ywkqz_e"
+      ],
+      "recursoExclusivo": "integration",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "editor"
+      ],
+      "criterioConclusao": [
+        "Fluxo completo onde arrastar um clipe na UI dispara corte no core e reflete na visualização"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar UI com o motor de vídeo: eventos de UI acionam chamadas ao core, atualizando a timeline.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Fluxo completo onde arrastar um clipe na UI dispara corte no core e reflete na visualização"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Integrar UI com o motor de vídeo: evento",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.902Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.902Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_g",
+      "descricao": "Implementar pipeline de renderização/exportação com presets (HD, 4K) usando aceleração de GPU quando disponível.",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_f"
+      ],
+      "recursoExclusivo": "render_module",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "editor",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Exportador gera arquivos MP4 de 30 s em HD e 4K, verificando presença/ausência de aceleração"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar pipeline de renderização/exportação com presets (HD, 4K) usando aceleração de GPU quando disponível.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Exportador gera arquivos MP4 de 30 s em HD e 4K, verificando presença/ausência de aceleração"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar pipeline de renderização/exp",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.918Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.918Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_h",
+      "descricao": "Criar e executar testes funcionais automatizados (import, edição, export) e validar resultados.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_g"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Suite de testes executada com 100 % de sucesso em todos os casos críticos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar e executar testes funcionais automatizados (import, edição, export) e validar resultados.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Suite de testes executada com 100 % de sucesso em todos os casos críticos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar e executar testes funcionais autom",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.933Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.933Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_i",
+      "descricao": "Redigir manual do usuário e guia rápido de início (PDF e markdown).",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "docs",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Documentação completa com instruções de instalação, fluxo de trabalho básico e solução de problemas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Redigir manual do usuário e guia rápido de início (PDF e markdown).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documentação completa com instruções de instalação, fluxo de trabalho básico e solução de problemas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Redigir manual do usuário e guia rápido ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.949Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.949Z"
+    },
+    {
+      "id": "tarefa_mu2ywkqz_j",
+      "descricao": "Criar scripts de empacotamento e gerar instaladores para Windows (.exe), macOS (.dmg) e Linux (.AppImage).",
+      "tipo": "devops",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_g",
+        "tarefa_mu2ywkqz_h"
+      ],
+      "recursoExclusivo": "installers",
+      "status": "concluida",
+      "agente": "devops",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Instaladores testados que instalam o app completo e executam edição básica em cada SO"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Criar scripts de empacotamento e gerar instaladores para Windows (.exe), macOS (.dmg) e Linux (.AppImage).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Instaladores testados que instalam o app completo e executam edição básica em cada SO"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar scripts de empacotamento e gerar i",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.949Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:39.371Z",
+      "atualizadaEm": "2026-09-15T17:51:13.949Z"
+    },
+    {
+      "id": "tarefa_mu2yxbbm_10",
+      "descricao": "Avaliar bibliotecas de processamento de vídeo nativas (FFmpeg compilado, GStreamer, libav) como alternativa ao ffmpeg.wasm para uso em desktop e como fallback para Safari.",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Relatório comparativo das bibliotecas nativas com foco em compatibilidade Safari e desempenho"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Avaliar bibliotecas de processamento de vídeo nativas (FFmpeg compilado, GStreamer, libav) como alternativa ao ffmpeg.wasm para uso em desktop e como fallback para Safari.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Avaliar bibliotecas de processamento de ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.840Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:51:13.810Z",
+      "atualizadaEm": "2026-09-15T17:51:13.840Z"
+    },
+    {
+      "id": "tarefa_mu2yxbbm_11",
+      "descricao": "Desenvolver fallback no servidor para processamento de vídeo usando a biblioteca nativa escolhida, garantindo suporte a usuários Safari.",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2ywkqz_7",
+        "tarefa_mu2yxbbm_10"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Serviço de fallback implementado e testado com uploads de vídeo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Desenvolver fallback no servidor para processamento de vídeo usando a biblioteca nativa escolhida, garantindo suporte a usuários Safari.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver fallback no servidor para pr",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:13.855Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:51:13.810Z",
+      "atualizadaEm": "2026-09-15T17:51:13.855Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ywkqz_a",
+      "para": "tarefa_mu2ywkqz_7"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_a",
+      "para": "tarefa_mu2ywkqz_8"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_a",
+      "para": "tarefa_mu2ywkqz_9"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_b",
+      "para": "tarefa_mu2ywkqz_a"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_c",
+      "para": "tarefa_mu2ywkqz_b"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_d",
+      "para": "tarefa_mu2ywkqz_c"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_e",
+      "para": "tarefa_mu2ywkqz_c"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_f",
+      "para": "tarefa_mu2ywkqz_d"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_f",
+      "para": "tarefa_mu2ywkqz_e"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_g",
+      "para": "tarefa_mu2ywkqz_f"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_h",
+      "para": "tarefa_mu2ywkqz_g"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_i",
+      "para": "tarefa_mu2ywkqz_h"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_j",
+      "para": "tarefa_mu2ywkqz_g"
+    },
+    {
+      "de": "tarefa_mu2ywkqz_j",
+      "para": "tarefa_mu2ywkqz_h"
+    },
+    {
+      "de": "tarefa_mu2yxbbm_10",
+      "para": "tarefa_mu2ywkqz_7"
+    },
+    {
+      "de": "tarefa_mu2yxbbm_11",
+      "para": "tarefa_mu2ywkqz_7"
+    },
+    {
+      "de": "tarefa_mu2yxbbm_11",
+      "para": "tarefa_mu2yxbbm_10"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "coding",
+    "uiux",
+    "testing",
+    "docs",
+    "devops"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2ywkqz_7",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas de processamento d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.825Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_8",
+      "status": "ok",
+      "resultado": "mock: Pesquisar frameworks de UI para aplicati",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.825Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_9",
+      "status": "ok",
+      "resultado": "mock: Pesquisar opções de aceleração de hardwa",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.825Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_a",
+      "status": "ok",
+      "resultado": "mock: Consolidar os resultados de t1, t2 e t3 ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.840Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2yxbbm_10",
+      "status": "ok",
+      "resultado": "mock: Avaliar bibliotecas de processamento de ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.840Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_b",
+      "status": "ok",
+      "resultado": "mock: Desenhar a arquitetura de alto nível (ca",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.855Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2yxbbm_11",
+      "status": "ok",
+      "resultado": "mock: Desenvolver fallback no servidor para pr",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.855Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_c",
+      "status": "ok",
+      "resultado": "mock: Inicializar repositório Git, configurar ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.870Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_d",
+      "status": "ok",
+      "resultado": "mock: Implementar o motor de vídeo: wrappers d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.887Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_e",
+      "status": "ok",
+      "resultado": "mock: Desenvolver a interface de usuário: time",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.887Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_f",
+      "status": "ok",
+      "resultado": "mock: Integrar UI com o motor de vídeo: evento",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.902Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_g",
+      "status": "ok",
+      "resultado": "mock: Implementar pipeline de renderização/exp",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.918Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_h",
+      "status": "ok",
+      "resultado": "mock: Criar e executar testes funcionais autom",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.933Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_i",
+      "status": "ok",
+      "resultado": "mock: Redigir manual do usuário e guia rápido ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.949Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ywkqz_j",
+      "status": "ok",
+      "resultado": "mock: Criar scripts de empacotamento e gerar i",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:13.949Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:50:39.370Z",
+  "atualizadaEm": "2026-09-15T17:51:13.949Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Edição não-linear com timeline",
+    "Importação/exportação de formatos populares (MP4, MOV, AVI, MKV)",
+    "Renderização acelerada por GPU quando disponível",
+    "Interface intuitiva e responsiva",
+    "Funcionar offline em Windows, macOS e Linux"
+  ],
+  "entregaveis": [
+    "Documentação de requisitos e arquitetura",
+    "Diagrama de arquitetura de alto nível",
+    "Repositório Git com código-fonte completo",
+    "Instaladores para Windows, macOS e Linux",
+    "Manual do usuário (PDF/Markdown)",
+    "Suite de testes automatizados"
+  ],
+  "criteriosSucesso": [
+    "Aplicativo instalável funciona em todas as três plataformas, permitindo importar, editar e exportar vídeos sem erros críticos."
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "O suporte limitado do ffmpeg.wasm no Safari exige avaliar alternativas nativas e criar um fallback no servidor, mas não invalida as tarefas existentes.",
+      "ts": "2026-09-15T17:51:13.810Z",
+      "canceladas": 0,
+      "adicionadas": 2
+    }
+  ]
+}

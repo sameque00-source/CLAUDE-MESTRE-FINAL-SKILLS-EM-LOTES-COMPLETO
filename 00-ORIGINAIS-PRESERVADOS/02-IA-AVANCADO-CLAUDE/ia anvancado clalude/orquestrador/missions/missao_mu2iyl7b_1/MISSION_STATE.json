@@ -1,0 +1,212 @@
+{
+  "id": "missao_mu2iyl7b_1",
+  "objetivo": "Missão sintética de paralelismo real",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:24:19.413Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:24:19.415Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:24:19.416Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:24:19.418Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:24:21.001Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iyl7c_2",
+      "descricao": "Em uma frase, diga uma vantagem do Node.js.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Node.js.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Uma grande vantagem do Node.js é permitir o uso de JavaScript tanto no frontend quanto no backend, agilizando o desenvolvimento e facilitando a integração entre cliente e servidor.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:20.255Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:19.416Z",
+      "atualizadaEm": "2026-09-15T10:24:21.001Z"
+    },
+    {
+      "id": "tarefa_mu2iyl7d_3",
+      "descricao": "Em uma frase, diga uma vantagem do Python.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Python.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Uma grande vantagem do Python é a sua **sintaxe simples e legível**, que facilita o aprendizado e acelera o desenvolvimento de códigos.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:20.202Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:19.417Z",
+      "atualizadaEm": "2026-09-15T10:24:21.001Z"
+    },
+    {
+      "id": "tarefa_mu2iyl7e_4",
+      "descricao": "Em uma frase, diga uma vantagem do Go.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Go.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Uma das principais vantagens do Go é a sua **alta performance em concorrência**, permitindo executar milhares de tarefas simultaneamente de forma simples e eficiente através das *goroutines*.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:21.000Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:19.418Z",
+      "atualizadaEm": "2026-09-15T10:24:21.001Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2iyl7c_2",
+      "status": "ok",
+      "resultado": "Uma grande vantagem do Node.js é permitir o uso de JavaScript tanto no frontend quanto no backend, agilizando o desenvolvimento e facilitando a integração entre cliente e servidor.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:20.255Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iyl7d_3",
+      "status": "ok",
+      "resultado": "Uma grande vantagem do Python é a sua **sintaxe simples e legível**, que facilita o aprendizado e acelera o desenvolvimento de códigos.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:20.202Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iyl7e_4",
+      "status": "ok",
+      "resultado": "Uma das principais vantagens do Go é a sua **alta performance em concorrência**, permitindo executar milhares de tarefas simultaneamente de forma simples e eficiente através das *goroutines*.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:21.000Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:24:19.413Z",
+  "atualizadaEm": "2026-09-15T10:24:21.001Z",
+  "modoExecucao": "AUTO"
+}

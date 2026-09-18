@@ -1,0 +1,201 @@
+{
+  "id": "missao_mu2mboge_b",
+  "objetivo": "Missão sintética de recuperação",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:58:29.006Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:58:29.006Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:58:29.007Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:58:29.010Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:58:29.530Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:58:29.531Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T11:58:29.533Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2mbogf_c",
+      "descricao": "Responda apenas: primeira",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: primeira",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "primeira",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:58:29.271Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:58:29.007Z",
+      "atualizadaEm": "2026-09-15T11:58:29.271Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: primeira\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2mbogg_d",
+      "descricao": "Responda apenas: segunda",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2mbogf_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: segunda",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "segunda",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:58:29.529Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:58:29.008Z",
+      "atualizadaEm": "2026-09-15T11:58:29.530Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: segunda\nCONTEXT: - primeira\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2mbogg_d",
+      "para": "tarefa_mu2mbogf_c"
+    }
+  ],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2mbogf_c",
+      "status": "ok",
+      "resultado": "primeira",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:58:29.271Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2mbogg_d",
+      "status": "ok",
+      "resultado": "segunda",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:58:29.529Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T11:58:29.531Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+    "ts": "2026-09-15T11:58:29.533Z"
+  },
+  "criadaEm": "2026-09-15T11:58:29.006Z",
+  "atualizadaEm": "2026-09-15T11:58:29.533Z",
+  "modoExecucao": "AUTO",
+  "_rodadasRevisaoMissao": 0
+}

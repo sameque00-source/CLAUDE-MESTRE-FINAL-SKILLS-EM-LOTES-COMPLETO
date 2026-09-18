@@ -1,0 +1,115 @@
+{
+  "id": "missao_mu2jn8aj_1",
+  "objetivo": "Missão sintética de execução de agente único",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:43:29.082Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:43:29.083Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:43:29.084Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:43:29.086Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:43:30.756Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jn8al_2",
+      "descricao": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "A principal vantagem do Node.js para servidores é sua arquitetura assíncrona e orientada a eventos, que permite lidar com milhares de conexões simultâneas de forma eficiente usando um único thread, proporcionando alta escalabilidade e baixa latência.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:43:30.755Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:43:29.085Z",
+      "atualizadaEm": "2026-09-15T10:43:30.756Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, qual a vantagem principal do Node.js para servidores?\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jn8al_2",
+      "status": "ok",
+      "resultado": "A principal vantagem do Node.js para servidores é sua arquitetura assíncrona e orientada a eventos, que permite lidar com milhares de conexões simultâneas de forma eficiente usando um único thread, proporcionando alta escalabilidade e baixa latência.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:43:30.755Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:43:29.082Z",
+  "atualizadaEm": "2026-09-15T10:43:30.756Z",
+  "modoExecucao": "AUTO"
+}

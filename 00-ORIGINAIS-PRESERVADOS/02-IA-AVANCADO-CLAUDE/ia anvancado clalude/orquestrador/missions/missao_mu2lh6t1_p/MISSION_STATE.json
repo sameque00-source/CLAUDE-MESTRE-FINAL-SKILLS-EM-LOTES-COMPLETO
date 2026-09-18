@@ -1,0 +1,304 @@
+{
+  "id": "missao_mu2lh6t1_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:34:46.453Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:34:46.453Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:34:46.459Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:34:46.459Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T11:34:52.898Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:34:52.900Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lh6t6_q",
+      "descricao": "Analisar o arquivo utils.js e identificar os tipos de entrada possíveis e cenários de falha atuais.",
+      "tipo": "revisao",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "openrouter-nemotron-3-super-120b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Lista identificada de casos de falha (ex: NaN, strings, objects)",
+        "Confirmado que a função atual não tem guards"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Analisar o arquivo utils.js e identificar os tipos de entrada possíveis e cenários de falha atuais.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista identificada de casos de falha (ex: NaN, strings, objects)"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Arquivo utils.js não encontrado no workspace, impossível analisar entradas e falhas.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=false",
+          "agente=reviewer",
+          "Arquivo utils.js não encontrado"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "Arquivo utils.js não encontrado"
+        ],
+        "ts": "2026-09-15T11:34:52.891Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:34:46.458Z",
+      "atualizadaEm": "2026-09-15T11:34:52.892Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Analisar o arquivo utils.js e identificar os tipos de entrada possíveis e cenários de falha atuais.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Lista identificada de casos de falha (ex: NaN, strings, objects)\nSUCCESS_CRITERIA: Lista identificada de casos de falha (ex: NaN, strings, objects); Confirmado que a função atual não tem guards"
+    },
+    {
+      "id": "tarefa_mu2lh6t6_r",
+      "descricao": "Escrever testes unitários para o comportamento esperado (valores válidos) e o comportamento desejado (erros para tipos inválidos).",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2lh6t6_q"
+      ],
+      "recursoExclusivo": "utils.test.js",
+      "status": "cancelada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Testes criados cobrindo soma válida, soma com string, soma com null/undefined",
+        "Testes falham no código atual para os casos de erro (TDD)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Escrever testes unitários para o comportamento esperado (valores válidos) e o comportamento desejado (erros para tipos inválidos).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Testes criados cobrindo soma válida, soma com string, soma com null/undefined"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "nenhum arquivo no workspace e nenhum comando de teste conhecido"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:34:52.898Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:34:46.458Z",
+      "atualizadaEm": "2026-09-15T11:34:52.899Z",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2lh6t6_s",
+      "descricao": "Refatorar a função soma em utils.js adicionando validação de tipos e tratamento de erros explícito.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2lh6t6_r"
+      ],
+      "recursoExclusivo": "utils.js",
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Função aceita apenas números",
+        "Lança Error ou TypeError com mensagem clara para tipos inválidos",
+        "Testes passam 100%"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Refatorar a função soma em utils.js adicionando validação de tipos e tratamento de erros explícito.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função aceita apenas números"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:34:46.458Z",
+      "atualizadaEm": "2026-09-15T11:34:52.900Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lh6t6_r\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lh6t6_r",
+      "para": "tarefa_mu2lh6t6_q"
+    },
+    {
+      "de": "tarefa_mu2lh6t6_s",
+      "para": "tarefa_mu2lh6t6_r"
+    }
+  ],
+  "agentes": [
+    "reviewer"
+  ],
+  "modelos": [
+    "openrouter-nemotron-3-super-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lh6t6_q",
+      "status": "ok",
+      "resultado": "Arquivo utils.js não encontrado no workspace, impossível analisar entradas e falhas.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=false",
+        "agente=reviewer",
+        "Arquivo utils.js não encontrado"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "Arquivo utils.js não encontrado"
+      ],
+      "ts": "2026-09-15T11:34:52.891Z"
+    }
+  ],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2lh6t6_r",
+      "erro": "nenhum arquivo no workspace e nenhum comando de teste conhecido",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:34:52.894Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2lh6t6_r",
+      "erro": "nenhum arquivo no workspace e nenhum comando de teste conhecido",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:34:52.896Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2lh6t6_r",
+      "erro": "nenhum arquivo no workspace e nenhum comando de teste conhecido",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:34:52.898Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lh6t6_r",
+        "erro": "nenhum arquivo no workspace e nenhum comando de teste conhecido",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:34:52.894Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:34:52.894Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lh6t6_r",
+        "erro": "nenhum arquivo no workspace e nenhum comando de teste conhecido",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:34:52.896Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:34:52.896Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lh6t6_r",
+        "erro": "nenhum arquivo no workspace e nenhum comando de teste conhecido",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:34:52.898Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:34:52.898Z"
+    }
+  ],
+  "progresso": 0.333,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:34:52.900Z"
+  },
+  "criadaEm": "2026-09-15T11:34:46.453Z",
+  "atualizadaEm": "2026-09-15T11:34:52.900Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Analisar código-sorte (utils.js) contendo soma(a,b)",
+    "Adicionar validação de tipos (number)",
+    "Implementar tratamento de erros (try/catch ou guards)",
+    "Garantir compatibilidade com o código existente"
+  ],
+  "entregaveis": [
+    "Código refatorado de utils.js",
+    "Testes unitários cobrindo casos de erro e tipos inválidos"
+  ],
+  "criteriosSucesso": [
+    "Código passes em todos os testes novos e antigos",
+    "Erros são lançados com mensagens claras para tipos inválidos"
+  ]
+}

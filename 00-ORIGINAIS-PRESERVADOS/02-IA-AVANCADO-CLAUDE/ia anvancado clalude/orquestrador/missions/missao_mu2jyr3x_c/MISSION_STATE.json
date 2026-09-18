@@ -1,0 +1,212 @@
+{
+  "id": "missao_mu2jyr3x_c",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:52:26.685Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:52:26.685Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T10:52:26.686Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:52:26.686Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jyr3y_d",
+      "descricao": "Escolher a stack tecnológica ideal (ex: Next.js + Tailwind + Google Gemini API para visão)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Framework e API de IA definidos e documentados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Escolher a stack tecnológica ideal (ex: Next.js + Tailwind + Google Gemini API para visão)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Framework e API de IA definidos e documentados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:26.686Z",
+      "atualizadaEm": "2026-09-15T10:52:26.686Z"
+    },
+    {
+      "id": "tarefa_mu2jyr3y_e",
+      "descricao": "Desenvolver a interface de usuário (frontend) com componente de upload e exibição da descrição",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2jyr3y_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Tela de upload funcional criada e integrada ao layout"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface de usuário (frontend) com componente de upload e exibição da descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tela de upload funcional criada e integrada ao layout"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:26.686Z",
+      "atualizadaEm": "2026-09-15T10:52:26.686Z"
+    },
+    {
+      "id": "tarefa_mu2jyr3y_f",
+      "descricao": "Implementar a rota de backend para receber a imagem, enviar para a API multimodal e retornar a descrição",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2jyr3y_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint de processamento de imagem respondendo corretamente"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a rota de backend para receber a imagem, enviar para a API multimodal e retornar a descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint de processamento de imagem respondendo corretamente"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:26.686Z",
+      "atualizadaEm": "2026-09-15T10:52:26.686Z"
+    },
+    {
+      "id": "tarefa_mu2jyr3y_g",
+      "descricao": "Realizar teste ponta a ponta do fluxo de envio de imagem e geração da descrição",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2jyr3y_e",
+        "tarefa_mu2jyr3y_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Fluxo completo validado com imagem de teste"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Realizar teste ponta a ponta do fluxo de envio de imagem e geração da descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Fluxo completo validado com imagem de teste"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:26.686Z",
+      "atualizadaEm": "2026-09-15T10:52:26.686Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jyr3y_e",
+      "para": "tarefa_mu2jyr3y_d"
+    },
+    {
+      "de": "tarefa_mu2jyr3y_f",
+      "para": "tarefa_mu2jyr3y_d"
+    },
+    {
+      "de": "tarefa_mu2jyr3y_g",
+      "para": "tarefa_mu2jyr3y_e"
+    },
+    {
+      "de": "tarefa_mu2jyr3y_g",
+      "para": "tarefa_mu2jyr3y_f"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:52:26.685Z",
+  "atualizadaEm": "2026-09-15T10:52:26.685Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface web para upload de imagens",
+    "Integração com API de IA multimodal para análise visual",
+    "Geração de título e descrição de produto com base na foto"
+  ],
+  "entregaveis": [
+    "Código fonte completo do projeto",
+    "Instruções básicas de execução local"
+  ],
+  "criteriosSucesso": [
+    "Usuário consegue enviar uma foto e visualizar uma descrição gerada com sucesso"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "missao_mu2kpwpv_1",
+  "objetivo": "Descubra qual e a versao atual do pacote npm express, consulte a documentacao oficial e produza uma recomendacao curta sobre usa-lo ou nao em um novo projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:13:33.665Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:13:33.667Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:13:33.672Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:13:33.673Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2kpwq0_2",
+      "descricao": "Identificar a versão atual do pacote npm express via API do registro npm.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "api"
+      ],
+      "criterioConclusao": [
+        "Retorno da API contém um campo 'version' ou 'dist-tags.latest' válido.",
+        "O valor obtido é numérico e segue o formato semver."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "A versão de software muda com o tempo; é um fato dinâmico que não está no meu conhecimento treinado.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Identificar a versão atual do pacote npm express via API do registro npm.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Retorno da API contém um campo 'version' ou 'dist-tags.latest' válido."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:13:33.672Z",
+      "atualizadaEm": "2026-09-15T11:13:33.672Z"
+    },
+    {
+      "id": "tarefa_mu2kpwq0_3",
+      "descricao": "Consultar a documentação oficial do Express para entender a arquitetura, estabilidade e práticas recomendadas atuais.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Identificados pontos-chave sobre estabilidade, manutenção e melhores práticas.",
+        "Verificada a seção de 'Roadmap' ou 'Status' se disponível."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisa verificar o estado atual da documentação, if statements, exemplos e guia de segurança/recomendações do framework.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Consultar a documentação oficial do Express para entender a arquitetura, estabilidade e práticas recomendadas atuais.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Identificados pontos-chave sobre estabilidade, manutenção e melhores práticas."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:13:33.672Z",
+      "atualizadaEm": "2026-09-15T11:13:33.672Z"
+    },
+    {
+      "id": "tarefa_mu2kpwq0_4",
+      "descricao": "Consolidar os dados da versão e da documentação para produzir a recomendação final.",
+      "tipo": "consolidacao",
+      "dependeDe": [
+        "tarefa_mu2kpwq0_2",
+        "tarefa_mu2kpwq0_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Produzido um parágrafo ou lista curta contendo: 1) Versão obtida, 2) Resumo da saúde do projeto, 3) Veredito (Sim/Não/Condicionado).",
+        "A linguagem é objetiva e direta, sem jargões desnecessários."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar os dados da versão e da documentação para produzir a recomendação final.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Produzido um parágrafo ou lista curta contendo: 1) Versão obtida, 2) Resumo da saúde do projeto, 3) Veredito (Sim/Não/Condicionado)."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:13:33.672Z",
+      "atualizadaEm": "2026-09-15T11:13:33.672Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2kpwq0_4",
+      "para": "tarefa_mu2kpwq0_2"
+    },
+    {
+      "de": "tarefa_mu2kpwq0_4",
+      "para": "tarefa_mu2kpwq0_3"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:13:33.665Z",
+  "atualizadaEm": "2026-09-15T11:13:33.665Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Obter a versão exata corrente do pacote npm express.",
+    "Consultar a documentação oficial atual.",
+    "Produzir uma recomendação recomendação curta (short recommendation).",
+    "A recomendação deve ser baseada nas informações coletadas."
+  ],
+  "entregaveis": [
+    "Versão atual do express.",
+    "Resumo da análise da documentação oficial.",
+    "Recomendação final (usar/não usar) com justificativa breve."
+  ],
+  "criteriosSucesso": [
+    "A versão reportada é a mais recente no registro npm.",
+    "A recomendação é coerente com os prós e contras identificados.",
+    "O texto final é conciso e direto ao ponto."
+  ]
+}

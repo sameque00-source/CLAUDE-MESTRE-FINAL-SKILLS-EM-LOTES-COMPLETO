@@ -1,0 +1,82 @@
+{
+  "id": "projeto_mu2zgtpz_1",
+  "nome": "Projeto Teste 1789495584118",
+  "descricao": "projeto de teste automatizado",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zgtpz_1\\workspace",
+  "estado": "fechado",
+  "missoes": [
+    "missao_teste_1789495584147"
+  ],
+  "artefatos": [
+    {
+      "caminho": "index.html",
+      "tipo": "text/plain",
+      "modalidade": "texto",
+      "tamanhoBytes": 28,
+      "timestamp": "2026-09-15T18:06:24.146Z",
+      "missaoId": null,
+      "tarefaId": null,
+      "resultado": "criado"
+    }
+  ],
+  "decisoes": [
+    {
+      "memoriaId": "decisao_mu2zgtq1_1",
+      "resumo": "usar Node.js puro sem dependências externas",
+      "ts": "2026-09-15T18:06:24.122Z"
+    },
+    {
+      "memoriaId": "decisao_mu2zgtq5_2",
+      "resumo": "decisao-unica-1789495584125: usar arquitetura modular por domínio",
+      "ts": "2026-09-15T18:06:24.126Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto Teste 1789495584118\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:24.120Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "usar Node.js puro sem dependências externas",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:24.122Z"
+    },
+    {
+      "tipo": "fechamento",
+      "descricao": "projeto encerrado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:24.123Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "decisao-unica-1789495584125: usar arquitetura modular por domínio",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:24.126Z"
+    },
+    {
+      "tipo": "artefato",
+      "descricao": "artefato criado: index.html",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:24.146Z"
+    },
+    {
+      "tipo": "missao_vinculada",
+      "descricao": "missão missao_teste_1789495584147 vinculada ao projeto",
+      "missaoId": "missao_teste_1789495584147",
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:24.148Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:06:24.118Z",
+  "atualizadoEm": "2026-09-15T18:06:24.148Z"
+}

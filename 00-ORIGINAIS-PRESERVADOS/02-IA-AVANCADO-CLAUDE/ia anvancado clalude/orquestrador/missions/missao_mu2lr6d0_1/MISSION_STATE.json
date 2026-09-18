@@ -1,0 +1,115 @@
+{
+  "id": "missao_mu2lr6d0_1",
+  "objetivo": "Missão sintética de execução de agente único",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:42:32.435Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:42:32.436Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:42:32.437Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:42:32.438Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:42:34.603Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lr6d2_2",
+      "descricao": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase, qual a vantagem principal do Node.js para servidores?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "## 1️⃣ Objetivo da tarefa  \n**Em 1 frase, qual a vantagem principal do Node.js para servidores?**  \n\n> **Vantagem principal:** *Node.js permite atender milhares de conexões simultâneas com um único thread graças ao seu modelo de I/O não‑bloqueante, proporcionando alta escalabilidade e baixa latência.*  \n\n---\n\n## 2️⃣ Levantamento de terreno – Opções reais para a escolha da plataforma de backend\n\n| Opção | O que ganha (benefícios) | O que perde (trade‑offs) | O que custa (financeiro / esforço) | Precedente (interno ou externo) |\n|-------|--------------------------|--------------------------|-----------------------------------|---------------------------------|\n| **A – Adotar Node.js** | • Escalabilidade horizontal com poucos recursos de CPU  <br>• Reuso de código JavaScript entre front‑end e back‑end  <br>• Ecossistema NPM enorme (> 1 milhão de pacotes) <br>• Excelente para APIs REST/GraphQL e aplicações em",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:42:34.602Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:42:32.437Z",
+      "atualizadaEm": "2026-09-15T11:42:34.603Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, qual a vantagem principal do Node.js para servidores?\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lr6d2_2",
+      "status": "ok",
+      "resultado": "## 1️⃣ Objetivo da tarefa  \n**Em 1 frase, qual a vantagem principal do Node.js para servidores?**  \n\n> **Vantagem principal:** *Node.js permite atender milhares de conexões simultâneas com um único thread graças ao seu modelo de I/O não‑bloqueante, proporcionando alta escalabilidade e baixa latência.*  \n\n---\n\n## 2️⃣ Levantamento de terreno – Opções reais para a escolha da plataforma de backend\n\n| Opção | O que ganha (benefícios) | O que perde (trade‑offs) | O que custa (financeiro / esforço) | Precedente (interno ou externo) |\n|-------|--------------------------|--------------------------|-----------------------------------|---------------------------------|\n| **A – Adotar Node.js** | • Escalabilidade horizontal com poucos recursos de CPU  <br>• Reuso de código JavaScript entre front‑end e back‑end  <br>• Ecossistema NPM enorme (> 1 milhão de pacotes) <br>• Excelente para APIs REST/GraphQL e aplicações em",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:42:34.602Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:42:32.435Z",
+  "atualizadaEm": "2026-09-15T11:42:34.603Z",
+  "modoExecucao": "AUTO"
+}

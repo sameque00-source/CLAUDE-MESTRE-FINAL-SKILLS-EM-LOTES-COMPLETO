@@ -1,0 +1,208 @@
+{
+  "id": "missao_mu2iygpg_o",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:24:13.588Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:24:13.588Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T10:24:13.589Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:24:13.589Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iygph_p",
+      "descricao": "Pesquisar e selecionar o melhor modelo de API multimodal e SDK leve (ex: Google Gen AI SDK) para processamento de imagens no cliente ou servidor simples.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "SDK e modelo escolhidos e documentados"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Verificar a versão mais recente e estável do SDK e os limites atuais para envio de imagens.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e selecionar o melhor modelo de API multimodal e SDK leve (ex: Google Gen AI SDK) para processamento de imagens no cliente ou servidor simples.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "SDK e modelo escolhidos e documentados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:13.589Z",
+      "atualizadaEm": "2026-09-15T10:24:13.589Z"
+    },
+    {
+      "id": "tarefa_mu2iygph_q",
+      "descricao": "Desenvolver a interface de usuário (HTML/CSS/JS) com área de upload de imagem, pré-visualização e painel para exibição da descrição gerada.",
+      "tipo": "frontend",
+      "dependeDe": [],
+      "recursoExclusivo": "src/index.html",
+      "status": "pendente",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Interface responsiva funcional com input de arquivo e botão de envio"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface de usuário (HTML/CSS/JS) com área de upload de imagem, pré-visualização e painel para exibição da descrição gerada.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface responsiva funcional com input de arquivo e botão de envio"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:13.589Z",
+      "atualizadaEm": "2026-09-15T10:24:13.589Z"
+    },
+    {
+      "id": "tarefa_mu2iygph_r",
+      "descricao": "Implementar a lógica de integração com a API multimodal para enviar a imagem convertida em base64 e receber a descrição estruturada do produto.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iygph_p",
+        "tarefa_mu2iygph_q"
+      ],
+      "recursoExclusivo": "src/app.js",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Chamada à API funcionando e exibindo o texto gerado dinamicamente na tela"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar a lógica de integração com a API multimodal para enviar a imagem convertida em base64 e receber a descrição estruturada do produto.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Chamada à API funcionando e exibindo o texto gerado dinamicamente na tela"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:13.589Z",
+      "atualizadaEm": "2026-09-15T10:24:13.589Z"
+    },
+    {
+      "id": "tarefa_mu2iygph_s",
+      "descricao": "Executar testes finais de usabilidade e fluxo completo de upload e geração de descrição.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2iygph_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Nenhum erro crítico no console e descrições geradas com sucesso para diferentes imagens"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes finais de usabilidade e fluxo completo de upload e geração de descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Nenhum erro crítico no console e descrições geradas com sucesso para diferentes imagens"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:13.589Z",
+      "atualizadaEm": "2026-09-15T10:24:13.589Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2iygph_r",
+      "para": "tarefa_mu2iygph_p"
+    },
+    {
+      "de": "tarefa_mu2iygph_r",
+      "para": "tarefa_mu2iygph_q"
+    },
+    {
+      "de": "tarefa_mu2iygph_s",
+      "para": "tarefa_mu2iygph_r"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:24:13.588Z",
+  "atualizadaEm": "2026-09-15T10:24:13.588Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface simples para upload de imagens",
+    "Integração com API de IA multimodal (ex: Google Gemini API) para análise visual e geração de texto",
+    "Exibição clara da descrição gerada para cada foto enviada",
+    "Opção para copiar o texto gerado"
+  ],
+  "entregaveis": [
+    "Código-fonte completo da aplicação (HTML/CSS/JS com Vite ou React)",
+    "Instruções claras de configuração de chave de API e execução"
+  ],
+  "criteriosSucesso": [
+    "Usuário consegue carregar uma foto de produto e receber uma descrição coerente gerada automaticamente"
+  ]
+}

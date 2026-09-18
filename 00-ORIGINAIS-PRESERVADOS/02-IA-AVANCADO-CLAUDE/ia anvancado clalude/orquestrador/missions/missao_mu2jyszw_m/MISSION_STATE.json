@@ -1,0 +1,98 @@
+{
+  "id": "missao_mu2jyszw_m",
+  "objetivo": "Missão sintética só com código, sem teste/revisão",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "PLANEJANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:52:29.132Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:52:29.132Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:52:29.133Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jyszx_n",
+      "descricao": "Implementar função de soma",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Implementar função de soma",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:29.133Z",
+      "atualizadaEm": "2026-09-15T10:52:29.133Z"
+    },
+    {
+      "id": "tarefa_mu2jyszx_o",
+      "descricao": "Implementar função de subtração",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Implementar função de subtração",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:52:29.133Z",
+      "atualizadaEm": "2026-09-15T10:52:29.133Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "avaliar dependências e prontidão de tarefa_mu2jyszx_o",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:52:29.132Z",
+  "atualizadaEm": "2026-09-15T10:52:29.133Z",
+  "modoExecucao": "AUTO"
+}

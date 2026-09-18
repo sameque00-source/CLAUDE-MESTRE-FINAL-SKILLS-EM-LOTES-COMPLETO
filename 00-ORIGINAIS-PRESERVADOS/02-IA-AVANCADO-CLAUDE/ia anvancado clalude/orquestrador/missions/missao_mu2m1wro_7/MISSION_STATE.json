@@ -1,0 +1,37 @@
+{
+  "id": "missao_mu2m1wro_7",
+  "objetivo": "Missão para testar transição inválida",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "ANALISANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:50:53.220Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:50:53.220Z"
+    }
+  ],
+  "subtarefas": [],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:50:53.220Z",
+  "atualizadaEm": "2026-09-15T11:50:53.220Z",
+  "modoExecucao": "AUTO"
+}

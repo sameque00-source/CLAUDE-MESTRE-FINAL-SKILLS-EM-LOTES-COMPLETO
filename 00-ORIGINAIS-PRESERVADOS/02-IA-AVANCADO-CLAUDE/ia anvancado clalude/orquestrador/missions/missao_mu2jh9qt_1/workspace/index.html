@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador Acessível</title>
+  <style>
+    /* Reset básico e mobile-first */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      color: #222;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    main {
+      width: 100%;
+      max-width: 480px;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      color: #111;
+    }
+    .contador-display {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #0056b3;
+    }
+    .botoes-container {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    /* Botões nativos com foco visível obrigatório e contraste mínimo */
+    button {
+      background-color: #0056b3;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #004085;
+    }
+    button:focus-visible {
+      outline: 3px solid #ffbf47;
+      outline-offset: 2px;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Contador de Cliques Acessível</h1>
+    <div class="contador-display" aria-live="polite">
+      <span id="contador-valor">0</span>
+    </div>
+    <div class="botoes-container">
+      <button type="button" id="btn-decrementar" aria-label="Decrementar contador">
+        Menos (-)
+      </button>
+      <button type="button" id="btn-incrementar" aria-label="Incrementar contador">
+        Mais (+)
+      </button>
+    </div>
+  </main>
+
+  <script>
+    const btnIncrementar = document.getElementById('btn-incrementar');
+    const btnDecrementar = document.getElementById('btn-decrementar');
+    const contadorValor = document.getElementById('contador-valor');
+
+    let valorAtual = 0;
+
+    function atualizarContador(novoValor) {
+      valorAtual = novoValor;
+      contadorValor.textContent = valorAtual;
+    }
+
+    btnIncrementar.addEventListener('click', () => {
+      atualizarContador(valorAtual + 1);
+    });
+
+    btnDecrementar.addEventListener('click', () => {
+      atualizarContador(valorAtual - 1);
+    });
+  </script>
+</body>
+</html>

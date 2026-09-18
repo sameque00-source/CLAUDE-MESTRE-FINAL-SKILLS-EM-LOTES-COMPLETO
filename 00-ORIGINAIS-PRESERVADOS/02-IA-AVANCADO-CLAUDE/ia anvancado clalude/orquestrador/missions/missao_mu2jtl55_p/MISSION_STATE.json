@@ -1,0 +1,352 @@
+{
+  "id": "missao_mu2jtl55_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:48:25.673Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:48:25.673Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via openrouter-nemotron-3-super-120b (5 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:48:25.678Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:48:25.678Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T10:48:46.767Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T10:48:46.769Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jtl59_q",
+      "descricao": "Ler o arquivo utils.js existente para entender sua estrutura atual.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": "ninerouter-imperion-dev",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Conteúdo do arquivo utils.js lido e armazenado em variável ou registro."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Ler o arquivo utils.js existente para entender sua estrutura atual.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conteúdo do arquivo utils.js lido e armazenado em variável ou registro."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [
+          "lerUtils.js"
+        ],
+        "erros": [
+          "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node lerUtils.js ENOENT\nstderr: \nstdout:"
+        ],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node lerUtils.js",
+            "resultado": "falhou",
+            "evidencia": "spawn node lerUtils.js ENOENT\nstderr: \nstdout:"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:48:46.767Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T10:48:25.677Z",
+      "atualizadaEm": "2026-09-15T10:48:46.768Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Ler o arquivo utils.js existente para entender sua estrutura atual.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Conteúdo do arquivo utils.js lido e armazenado em variável ou registro.\nSUCCESS_CRITERIA: Conteúdo do arquivo utils.js lido e armazenado em variável ou registro.",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2jtl59_r",
+      "descricao": "Identificar pontos de fragilidade na função soma(a,b) (ausência de validação de tipo, tratamento de exceções, etc.).",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2jtl59_q"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Lista de problemas identificada (pelo menos 3 itens)."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Identificar pontos de fragilidade na função soma(a,b) (ausência de validação de tipo, tratamento de exceções, etc.).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de problemas identificada (pelo menos 3 itens)."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:48:25.677Z",
+      "atualizadaEm": "2026-09-15T10:48:46.769Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jtl59_q\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2jtl59_s",
+      "descricao": "Propor e gerar versão melhorada da função soma com validação de tipo número, lançamento de erro apropriado e documentação JSDoc.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2jtl59_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo utils.js atualizado contendo função soma com validação e JSDoc."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Propor e gerar versão melhorada da função soma com validação de tipo número, lançamento de erro apropriado e documentação JSDoc.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo utils.js atualizado contendo função soma com validação e JSDoc."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:48:25.677Z",
+      "atualizadaEm": "2026-09-15T10:48:46.769Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jtl59_r\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2jtl59_t",
+      "descricao": "Criar testes unitários para a função soma melhorada cobrindo casos válidos, tipos inválidos e valores não numéricos.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2jtl59_s"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "teste"
+      ],
+      "criterioConclusao": [
+        "Suite de testes passes (ex: usando Jest) com pelo menos 4 casos de teste."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar testes unitários para a função soma melhorada cobrindo casos válidos, tipos inválidos e valores não numéricos.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Suite de testes passes (ex: usando Jest) com pelo menos 4 casos de teste."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:48:25.677Z",
+      "atualizadaEm": "2026-09-15T10:48:46.769Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jtl59_s\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2jtl59_u",
+      "descricao": "Revisar o código melhorado e os testes para garantir conformidade com boas práticas e ausência de regressões.",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2jtl59_s",
+        "tarefa_mu2jtl59_t"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Aprovação da revisão sem comentários críticos."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código melhorado e os testes para garantir conformidade com boas práticas e ausência de regressões.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aprovação da revisão sem comentários críticos."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:48:25.677Z",
+      "atualizadaEm": "2026-09-15T10:48:46.769Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2jtl59_t\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jtl59_r",
+      "para": "tarefa_mu2jtl59_q"
+    },
+    {
+      "de": "tarefa_mu2jtl59_s",
+      "para": "tarefa_mu2jtl59_r"
+    },
+    {
+      "de": "tarefa_mu2jtl59_t",
+      "para": "tarefa_mu2jtl59_s"
+    },
+    {
+      "de": "tarefa_mu2jtl59_u",
+      "para": "tarefa_mu2jtl59_s"
+    },
+    {
+      "de": "tarefa_mu2jtl59_u",
+      "para": "tarefa_mu2jtl59_t"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2jtl59_q",
+      "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): Command failed: node readUtils.js\nErro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstderr: Erro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstdout:",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:48:28.258Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2jtl59_q",
+      "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): Command failed: node readUtilsContent.js\nErro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstderr: Erro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstdout:",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:48:30.089Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2jtl59_q",
+      "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node lerUtils.js ENOENT\nstderr: \nstdout:",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:48:46.767Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jtl59_q",
+        "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): Command failed: node readUtils.js\nErro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstderr: Erro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstdout:",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:48:28.258Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:48:28.258Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jtl59_q",
+        "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): Command failed: node readUtilsContent.js\nErro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstderr: Erro ao ler utils.js: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\orquestrador\\missions\\missao_mu2jtl55_p\\workspace\\utils.js'\n\nstdout:",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:48:30.089Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:48:30.089Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2jtl59_q",
+        "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node lerUtils.js ENOENT\nstderr: \nstdout:",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:48:46.767Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T10:48:46.767Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T10:48:46.769Z"
+  },
+  "criadaEm": "2026-09-15T10:48:25.673Z",
+  "atualizadaEm": "2026-09-15T10:48:46.769Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Validar que os parâmetros sejam números.",
+    "Lançar erro descritivo para tipos inválidos.",
+    "Manter compatibilidade com uso existente.",
+    "Adicionar documentação (JSDoc)."
+  ],
+  "entregaveis": [
+    "utils.js aprimorado com validação e JSDoc.",
+    "Suite de testes unitários para a função soma."
+  ],
+  "criteriosSucesso": [
+    "O arquivo utils.js contém a função soma com verificação de tipo Number e lança TypeError para valores não numéricos.",
+    "Todos os testes unitários criados passam."
+  ]
+}

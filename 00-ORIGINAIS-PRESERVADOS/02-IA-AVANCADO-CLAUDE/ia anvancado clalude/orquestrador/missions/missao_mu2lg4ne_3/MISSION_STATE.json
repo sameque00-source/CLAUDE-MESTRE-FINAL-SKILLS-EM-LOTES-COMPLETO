@@ -1,0 +1,176 @@
+{
+  "id": "missao_mu2lg4ne_3",
+  "objetivo": "Missão sintética multi-agente",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:33:57.002Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:33:57.002Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:33:57.003Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:33:57.004Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:33:57.008Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lg4nf_4",
+      "descricao": "Em 1 frase, defina o que é uma API REST",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase, defina o que é uma API REST",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "memoria_reutilizada=true",
+          "confianca=0.71",
+          "agente=research",
+          "Web service (publicação técnica) - https://pt.wikipedia.org/wiki/Web_service"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+        ],
+        "ts": "2026-09-15T11:33:57.006Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:33:57.003Z",
+      "atualizadaEm": "2026-09-15T11:33:57.008Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, defina o que é uma API REST\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2lg4nf_5",
+      "descricao": "Em 1 frase, qual o risco de armazenar senha em texto puro?",
+      "tipo": "security",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "security",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "security",
+      "contexto": {
+        "objetivo": "Em 1 frase, qual o risco de armazenar senha em texto puro?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Security: nenhum risco óbvio encontrado na varredura determinística (5 padrões, 0 arquivo(s))",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "veto=false",
+          "agente=security"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:33:57.007Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:33:57.003Z",
+      "atualizadaEm": "2026-09-15T11:33:57.008Z",
+      "_contrato": "Voce tem VETO. Se reprovar, a mudanca nao integra.\n\nPROCURE\n1. Validacao que so existe no cliente.\n2. Injecao: SQL, comando, template, path traversal.\n3. Credencial em codigo, log, URL ou mensagem de erro.\n4. Permissao verificada no lugar errado ou nao verificada.\n5. Dado sensivel indo para onde nao devia.\n\nVEREDICTO obrigatorio ao final, exatamente uma destas linhas:\nAPROVADO\nAPROVADO COM RESSALVAS - <motivo em uma linha>\nREPROVADO - <o que precisa ser corrigido antes de integrar>\n\nNao reprove por estilo. Reprove por risco real e demonstravel.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, qual o risco de armazenar senha em texto puro?\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research",
+    "security"
+  ],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lg4nf_4",
+      "status": "ok",
+      "resultado": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "memoria_reutilizada=true",
+        "confianca=0.71",
+        "agente=research",
+        "Web service (publicação técnica) - https://pt.wikipedia.org/wiki/Web_service"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "resultado obtido da memória (pesquisa anterior ainda válida) — pesquisa web NÃO refeita, evitando redundância (FASE 6, seção 9/13)"
+      ],
+      "ts": "2026-09-15T11:33:57.006Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lg4nf_5",
+      "status": "ok",
+      "resultado": "Security: nenhum risco óbvio encontrado na varredura determinística (5 padrões, 0 arquivo(s))",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "veto=false",
+        "agente=security"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:33:57.007Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:33:57.002Z",
+  "atualizadaEm": "2026-09-15T11:33:57.008Z",
+  "modoExecucao": "AUTO"
+}

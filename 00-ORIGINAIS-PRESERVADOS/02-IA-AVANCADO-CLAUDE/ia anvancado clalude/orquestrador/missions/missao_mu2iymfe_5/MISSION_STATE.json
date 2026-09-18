@@ -1,0 +1,225 @@
+{
+  "id": "missao_mu2iymfe_5",
+  "objetivo": "Missão sintética de dependência estrita A→B→C",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:24:21.002Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:24:21.002Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:24:21.003Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:24:21.007Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:24:22.629Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iymff_6",
+      "descricao": "Responda apenas: A",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: A",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "A",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:21.535Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:21.003Z",
+      "atualizadaEm": "2026-09-15T10:24:21.535Z"
+    },
+    {
+      "id": "tarefa_mu2iymfg_7",
+      "descricao": "Responda apenas: B",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2iymff_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: B",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "B",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:22.163Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:21.004Z",
+      "atualizadaEm": "2026-09-15T10:24:22.163Z"
+    },
+    {
+      "id": "tarefa_mu2iymfh_8",
+      "descricao": "Responda apenas: C",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2iymfg_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: C",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "C",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:22.629Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:21.005Z",
+      "atualizadaEm": "2026-09-15T10:24:22.629Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2iymfg_7",
+      "para": "tarefa_mu2iymff_6"
+    },
+    {
+      "de": "tarefa_mu2iymfh_8",
+      "para": "tarefa_mu2iymfg_7"
+    }
+  ],
+  "agentes": [],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2iymff_6",
+      "status": "ok",
+      "resultado": "A",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:21.535Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iymfg_7",
+      "status": "ok",
+      "resultado": "B",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:22.163Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iymfh_8",
+      "status": "ok",
+      "resultado": "C",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:22.629Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:24:21.002Z",
+  "atualizadaEm": "2026-09-15T10:24:22.629Z",
+  "modoExecucao": "AUTO"
+}

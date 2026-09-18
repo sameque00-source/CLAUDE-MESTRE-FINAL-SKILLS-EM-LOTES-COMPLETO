@@ -1,0 +1,169 @@
+{
+  "id": "missao_mu2k3lfk_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:56:12.607Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:56:12.608Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T10:56:12.613Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:56:12.614Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2k3lfp_2",
+      "descricao": "Executar substituição de 'aplicacao' para 'aplicação' no arquivo README.md",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "O comando de substituição retorna sucesso ou não encontra mais a string alvo",
+        "O arquivo README.md contém 'aplicação' e não contém 'aplicacao'"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Executar substituição de 'aplicacao' para 'aplicação' no arquivo README.md",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O comando de substituição retorna sucesso ou não encontra mais a string alvo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:12.613Z",
+      "atualizadaEm": "2026-09-15T10:56:12.613Z"
+    },
+    {
+      "id": "tarefa_mu2k3lfp_3",
+      "descricao": "Validar a integridade do arquivo README.md após a edição",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2k3lfp_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Confirmação visual ou via ferramenta de diff de que apenas a palavra alvo foi alterada",
+        "Não há erros de sintaxe de Markdown no arquivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar a integridade do arquivo README.md após a edição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Confirmação visual ou via ferramenta de diff de que apenas a palavra alvo foi alterada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:12.613Z",
+      "atualizadaEm": "2026-09-15T10:56:12.613Z"
+    },
+    {
+      "id": "tarefa_mu2k3lfq_4",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2k3lfp_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:12.614Z",
+      "atualizadaEm": "2026-09-15T10:56:12.614Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2k3lfp_3",
+      "para": "tarefa_mu2k3lfp_2"
+    },
+    {
+      "de": "tarefa_mu2k3lfq_4",
+      "para": "tarefa_mu2k3lfp_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:56:12.607Z",
+  "atualizadaEm": "2026-09-15T10:56:12.607Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Localizar a palavra 'aplicacao' no arquivo README.md",
+    "Substituir por 'aplicação' preservando o contexto"
+  ],
+  "entregaveis": [
+    "Arquivo README.md atualizado com a correção ortográfica"
+  ],
+  "criteriosSucesso": [
+    "A palavra 'aplicacao' não existe mais no README.md",
+    "A palavra 'aplicação' está presente no local correto",
+    "O arquivo permanece válido e legível"
+  ]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Cliques</title>
+    <style>
+        /* Estilo mínimo e acessível */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        #contador {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão acessível com rótulo descritivo -->
+    <button id="meuBotao" aria-label="Clique para incrementar o contador">
+        Clique aqui
+    </button>
+    <!-- Região live para atualização de contagem -->
+    <div id="contador" aria-live="polite">0 cliques</div>
+
+    <script>
+        // Contador de cliques
+        (function () {
+            const botao = document.getElementById('meuBotao');
+            const contadorEl = document.getElementById('contador');
+            let contador = 0;
+
+            function atualizarContador() {
+                contador++;
+                contadorEl.textContent = contador + ' cliques';
+            }
+
+            botao.addEventListener('click', atualizarContador);
+        })();
+    </script>
+</body>
+</html>

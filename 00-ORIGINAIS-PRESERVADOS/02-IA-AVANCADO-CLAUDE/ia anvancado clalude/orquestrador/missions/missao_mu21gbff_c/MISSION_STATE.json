@@ -1,0 +1,196 @@
+{
+  "id": "missao_mu21gbff_c",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:14:13.467Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:14:13.467Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T02:14:13.468Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:14:13.468Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21gbfg_d",
+      "descricao": "Inicializar projeto Node.js/Express e configurar o cliente da API multimodal (ex: Google GenAI ou OpenAI)",
+      "tipo": "implementacao",
+      "dependeDe": [],
+      "recursoExclusivo": "backend-setup",
+      "status": "pendente",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Estrutura básica do projeto criada com dependências instaladas e servidor funcional"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Inicializar projeto Node.js/Express e configurar o cliente da API multimodal (ex: Google GenAI ou OpenAI)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Estrutura básica do projeto criada com dependências instaladas e servidor funcional"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:13.468Z",
+      "atualizadaEm": "2026-09-15T02:14:13.468Z"
+    },
+    {
+      "id": "tarefa_mu21gbfg_e",
+      "descricao": "Criar endpoint de backend para receber a imagem, enviá-la ao modelo multimodal e retornar a descrição gerada",
+      "tipo": "implementacao",
+      "dependeDe": [
+        "tarefa_mu21gbfg_d"
+      ],
+      "recursoExclusivo": "backend-setup",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint /api/analisar-produto recebe imagem via multipart/form-data e retorna texto descritivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Criar endpoint de backend para receber a imagem, enviá-la ao modelo multimodal e retornar a descrição gerada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint /api/analisar-produto recebe imagem via multipart/form-data e retorna texto descritivo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:13.468Z",
+      "atualizadaEm": "2026-09-15T02:14:13.468Z"
+    },
+    {
+      "id": "tarefa_mu21gbfg_f",
+      "descricao": "Desenvolver interface frontend simples com formulário de upload e área de exibição da descrição",
+      "tipo": "implementacao",
+      "dependeDe": [
+        "tarefa_mu21gbfg_e"
+      ],
+      "recursoExclusivo": "frontend-setup",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Página HTML/JS ou componente funcional que envia a foto para o backend e exibe o resultado formatado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver interface frontend simples com formulário de upload e área de exibição da descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Página HTML/JS ou componente funcional que envia a foto para o backend e exibe o resultado formatado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:13.468Z",
+      "atualizadaEm": "2026-09-15T02:14:13.468Z"
+    },
+    {
+      "id": "tarefa_mu21gbfg_g",
+      "descricao": "Validar fluxo completo de ponta a ponta com testes manuais ou automatizados básicos",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21gbfg_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Upload de imagem de teste resulta em descrição gerada corretamente na interface"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar fluxo completo de ponta a ponta com testes manuais ou automatizados básicos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Upload de imagem de teste resulta em descrição gerada corretamente na interface"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:13.468Z",
+      "atualizadaEm": "2026-09-15T02:14:13.468Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21gbfg_e",
+      "para": "tarefa_mu21gbfg_d"
+    },
+    {
+      "de": "tarefa_mu21gbfg_f",
+      "para": "tarefa_mu21gbfg_e"
+    },
+    {
+      "de": "tarefa_mu21gbfg_g",
+      "para": "tarefa_mu21gbfg_f"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:14:13.467Z",
+  "atualizadaEm": "2026-09-15T02:14:13.467Z",
+  "modoExecucao": "AUTO"
+}

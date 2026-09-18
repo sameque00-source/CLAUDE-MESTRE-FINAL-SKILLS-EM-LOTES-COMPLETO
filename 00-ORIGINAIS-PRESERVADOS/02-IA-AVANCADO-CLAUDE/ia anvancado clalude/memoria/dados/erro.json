@@ -1,0 +1,1336 @@
+{
+  "erro_mu2pz0uo_1": {
+    "id": "erro_mu2pz0uo_1",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] erro-teste-fase78-1789479637008: TypeError ao acessar propriedade indefinida",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789479637008: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "causaProvavel": "variável não inicializada",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789479637008,
+    "atualizadoEm": 1789479637008,
+    "expiraEm": 1821015637008,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2pzd3l_a": {
+    "id": "erro_mu2pzd3l_a",
+    "tipo": "erro",
+    "conteudo": "[erro_ambiente] spawn node -e \"const c=require('./contador'); c.increment(); c.increment(); if(c.getCount()!==2) throw new Error('fail'); console.log('ok')\" ENOENT\nstderr: \nstdout:",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node -e \"const c=require('./contador'); c.increment(); c.increment(); if(c.getCount()!==2) throw new Error('fail'); console.log('ok')\" ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "causaProvavel": "falha de execução classificada como \"erro_ambiente\"",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2pz95u_5",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789479652881,
+    "atualizadoEm": 1789479652881,
+    "expiraEm": 1821015652881,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q0b9e_1": {
+    "id": "erro_mu2q0b9e_1",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] erro-teste-fase78-1789479697153: TypeError ao acessar propriedade indefinida",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789479697153: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "causaProvavel": "variável não inicializada",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789479697154,
+    "atualizadoEm": 1789479697154,
+    "expiraEm": 1821015697154,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q0mux_7": {
+    "id": "erro_mu2q0mux_7",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"calculadora.js\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Tarefa concluída. O arquivo calculadora.js já existia e continha o bug identificado. A operação de leitura foi validamente executad",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"calculadora.js\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Tarefa concluída. O arquivo calculadora.js já existia e continha o bug identificado. A operação de leitura foi validamente executad",
+      "categoria": "erro_codigo",
+      "causaProvavel": "nenhum padrão reconhecido — assumindo falha de implementação por ser a causa mais comum estatisticamente (heurística, não certeza)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q0ek4_1",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789479712185,
+    "atualizadoEm": 1789479712185,
+    "expiraEm": 1821015712185,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q1ssi_1": {
+    "id": "erro_mu2q1ssi_1",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] erro-teste-fase78-1789479766530: TypeError ao acessar propriedade indefinida",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789479766530: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "causaProvavel": "variável não inicializada",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789479766530,
+    "atualizadoEm": 1789479766530,
+    "expiraEm": 1821015766530,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q229w_7": {
+    "id": "erro_mu2q229w_7",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"calculadora.js\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Conteúdo do arquivo calculadora.js lido com sucesso e bug identificado: a função soma utiliza operador de subtração (a - b) em vez ",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"calculadora.js\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Conteúdo do arquivo calculadora.js lido com sucesso e bug identificado: a função soma utiliza operador de subtração (a - b) em vez",
+      "categoria": "erro_codigo",
+      "causaProvavel": "nenhum padrão reconhecido — assumindo falha de implementação por ser a causa mais comum estatisticamente (heurística, não certeza)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q20eu_1",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789479778820,
+    "atualizadoEm": 1789479778820,
+    "expiraEm": 1821015778820,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q6v8o_l": {
+    "id": "erro_mu2q6v8o_l",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q68e5_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480002984,
+    "atualizadoEm": 1789480002984,
+    "expiraEm": 1821016002984,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q74tn_q": {
+    "id": "erro_mu2q74tn_q",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q68e5_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480015403,
+    "atualizadoEm": 1789480015403,
+    "expiraEm": 1821016015403,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q7de9_v": {
+    "id": "erro_mu2q7de9_v",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q68e5_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480026513,
+    "atualizadoEm": 1789480026513,
+    "expiraEm": 1821016026513,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2q9x2q_h": {
+    "id": "erro_mu2q9x2q_h",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q8uvv_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480145330,
+    "atualizadoEm": 1789480145330,
+    "expiraEm": 1821016145330,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qa6n7_m": {
+    "id": "erro_mu2qa6n7_m",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q8uvv_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480157731,
+    "atualizadoEm": 1789480157731,
+    "expiraEm": 1821016157731,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qadhy_s": {
+    "id": "erro_mu2qadhy_s",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2q8uvv_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480166614,
+    "atualizadoEm": 1789480166614,
+    "expiraEm": 1821016166614,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qbyc0_e": {
+    "id": "erro_mu2qbyc0_e",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qbar5_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480240272,
+    "atualizadoEm": 1789480240272,
+    "expiraEm": 1821016240272,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qd9rw_c": {
+    "id": "erro_mu2qd9rw_c",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qd5j9_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480301756,
+    "atualizadoEm": 1789480301756,
+    "expiraEm": 1821016301756,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qlj0y_d": {
+    "id": "erro_mu2qlj0y_d",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ql9ga_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480686994,
+    "atualizadoEm": 1789480686994,
+    "expiraEm": 1821016686994,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qlsmd_i": {
+    "id": "erro_mu2qlsmd_i",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ql9ga_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480699429,
+    "atualizadoEm": 1789480699429,
+    "expiraEm": 1821016699429,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qm0qa_n": {
+    "id": "erro_mu2qm0qa_n",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ql9ga_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480709938,
+    "atualizadoEm": 1789480709938,
+    "expiraEm": 1821016709938,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qo5ru_d": {
+    "id": "erro_mu2qo5ru_d",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qnw6y_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480809786,
+    "atualizadoEm": 1789480809786,
+    "expiraEm": 1821016809786,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2qofd5_i": {
+    "id": "erro_mu2qofd5_i",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2qnw6y_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789480822217,
+    "atualizadoEm": 1789480822217,
+    "expiraEm": 1821016822217,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2z0d4h_j": {
+    "id": "erro_mu2z0d4h_j",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: timeout apos 20000ms",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: timeout apos 20000ms",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (timeout)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2yzkz5_p",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789494816113,
+    "atualizadoEm": 1789494816113,
+    "expiraEm": 1821030816113,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2z1p69_1": {
+    "id": "erro_mu2z1p69_1",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] erro-teste-fase78-1789494878385: TypeError ao acessar propriedade indefinida",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789494878385: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "causaProvavel": "variável não inicializada",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789494878385,
+    "atualizadoEm": 1789494878385,
+    "expiraEm": 1821030878385,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2z5w7c_f": {
+    "id": "erro_mu2z5w7c_f",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2z5p49_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495074120,
+    "atualizadoEm": 1789495074120,
+    "expiraEm": 1821031074120,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2z5y0j_k": {
+    "id": "erro_mu2z5y0j_k",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2z5p49_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495076467,
+    "atualizadoEm": 1789495076467,
+    "expiraEm": 1821031076467,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2z5y6r_p": {
+    "id": "erro_mu2z5y6r_p",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2z5p49_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495076691,
+    "atualizadoEm": 1789495076691,
+    "expiraEm": 1821031076691,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2z7lix_1": {
+    "id": "erro_mu2z7lix_1",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] erro-teste-fase78-1789495153593: TypeError ao acessar propriedade indefinida",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789495153593: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "causaProvavel": "variável não inicializada",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495153593,
+    "atualizadoEm": 1789495153593,
+    "expiraEm": 1821031153593,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zbe6h_a": {
+    "id": "erro_mu2zbe6h_a",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] geração de código falhou: decisor não encontrou candidato: todos os candidatos elegíveis estão em cooldown no momento",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: decisor não encontrou candidato: todos os candidatos elegíveis estão em cooldown no momento",
+      "categoria": "erro_codigo",
+      "causaProvavel": "nenhum padrão reconhecido — assumindo falha de implementação por ser a causa mais comum estatisticamente (heurística, não certeza)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zbcaq_1",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495330697,
+    "atualizadoEm": 1789495330697,
+    "expiraEm": 1821031330697,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zfjzh_f": {
+    "id": "erro_mu2zfjzh_f",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zf1cp_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495524845,
+    "atualizadoEm": 1789495524845,
+    "expiraEm": 1821031524845,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zfk5q_k": {
+    "id": "erro_mu2zfk5q_k",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zf1cp_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495525070,
+    "atualizadoEm": 1789495525070,
+    "expiraEm": 1821031525070,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zfkcg_p": {
+    "id": "erro_mu2zfkcg_p",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zf1cp_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495525312,
+    "atualizadoEm": 1789495525312,
+    "expiraEm": 1821031525312,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zfsq9_3": {
+    "id": "erro_mu2zfsq9_3",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] orçamento esgotado: 2/2 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "multimidia_texto"
+    ],
+    "contexto": {
+      "query": "erro_codigo multimidia_texto orçamento esgotado: 2/2 tentativas",
+      "categoria": "erro_codigo",
+      "causaProvavel": "processamento multimídia esgotou tentativas ou bloqueou",
+      "tarefaTipo": "multimidia_texto"
+    },
+    "evidencias": [],
+    "missaoId": "teste",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495536177,
+    "atualizadoEm": 1789495536177,
+    "expiraEm": 1821031536177,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zgtqx_3": {
+    "id": "erro_mu2zgtqx_3",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] orçamento esgotado: 2/2 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "multimidia_texto"
+    ],
+    "contexto": {
+      "query": "erro_codigo multimidia_texto orçamento esgotado: 2/2 tentativas",
+      "categoria": "erro_codigo",
+      "causaProvavel": "processamento multimídia esgotou tentativas ou bloqueou",
+      "tarefaTipo": "multimidia_texto"
+    },
+    "evidencias": [],
+    "missaoId": "teste",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495584153,
+    "atualizadoEm": 1789495584153,
+    "expiraEm": 1821031584153,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zgvl9_b": {
+    "id": "erro_mu2zgvl9_b",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "frontend"
+    ],
+    "contexto": {
+      "query": "erro_modelo frontend geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "frontend"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zgvco_1",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495586541,
+    "atualizadoEm": 1789495586541,
+    "expiraEm": 1821031586541,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zgvs1_g": {
+    "id": "erro_mu2zgvs1_g",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "frontend"
+    ],
+    "contexto": {
+      "query": "erro_modelo frontend geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "frontend"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zgvco_1",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495586785,
+    "atualizadoEm": 1789495586785,
+    "expiraEm": 1821031586785,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zgvyd_l": {
+    "id": "erro_mu2zgvyd_l",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "frontend"
+    ],
+    "contexto": {
+      "query": "erro_modelo frontend geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "frontend"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zgvco_1",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495587013,
+    "atualizadoEm": 1789495587013,
+    "expiraEm": 1821031587013,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zgvyp_n": {
+    "id": "erro_mu2zgvyp_n",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] orçamento esgotado: 2/2 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "multimidia_imagem"
+    ],
+    "contexto": {
+      "query": "erro_codigo multimidia_imagem orçamento esgotado: 2/2 tentativas",
+      "categoria": "erro_codigo",
+      "causaProvavel": "processamento multimídia esgotou tentativas ou bloqueou",
+      "tarefaTipo": "multimidia_imagem"
+    },
+    "evidencias": [],
+    "missaoId": "projeto_mu2zgtr3_4",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495587025,
+    "atualizadoEm": 1789495587025,
+    "expiraEm": 1821031587025,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zh05u_3": {
+    "id": "erro_mu2zh05u_3",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] orçamento esgotado: 2/2 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "multimidia_texto"
+    ],
+    "contexto": {
+      "query": "erro_codigo multimidia_texto orçamento esgotado: 2/2 tentativas",
+      "categoria": "erro_codigo",
+      "causaProvavel": "processamento multimídia esgotou tentativas ou bloqueou",
+      "tarefaTipo": "multimidia_texto"
+    },
+    "evidencias": [],
+    "missaoId": "teste",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495592466,
+    "atualizadoEm": 1789495592466,
+    "expiraEm": 1821031592466,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zlh8p_h": {
+    "id": "erro_mu2zlh8p_h",
+    "tipo": "erro",
+    "conteudo": "[erro_ambiente] spawn node dividir.js 4 2 ENOENT\nstderr: \nstdout:",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node dividir.js 4 2 ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "causaProvavel": "falha de execução classificada como \"erro_ambiente\"",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zjfc0_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495801225,
+    "atualizadoEm": 1789495801225,
+    "expiraEm": 1821031801225,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zlzto_o": {
+    "id": "erro_mu2zlzto_o",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zjfc0_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495825308,
+    "atualizadoEm": 1789495825308,
+    "expiraEm": 1821031825308,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zm9ee_t": {
+    "id": "erro_mu2zm9ee_t",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: resposta vazia",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: resposta vazia",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (resposta_vazia)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zjfc0_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789495837718,
+    "atualizadoEm": 1789495837718,
+    "expiraEm": 1821031837718,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zpz34_d": {
+    "id": "erro_mu2zpz34_d",
+    "tipo": "erro",
+    "conteudo": "[erro_ambiente] spawn node solver.js ENOENT\nstderr: \nstdout:",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node solver.js ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "causaProvavel": "falha de execução classificada como \"erro_ambiente\"",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2zo3tz_p",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789496010976,
+    "atualizadoEm": 1789496010976,
+    "expiraEm": 1821032010976,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2ztskc_1": {
+    "id": "erro_mu2ztskc_1",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] erro-teste-fase78-1789496189147: TypeError ao acessar propriedade indefinida",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo erro-teste-fase78-1789496189147: TypeError ao acessar propriedade indefinida",
+      "categoria": "erro_codigo",
+      "causaProvavel": "variável não inicializada",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789496189148,
+    "atualizadoEm": 1789496189148,
+    "expiraEm": 1821032189148,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2ztw9r_7": {
+    "id": "erro_mu2ztw9r_7",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"-e\", \"const calc = require('./calculadora.js'); console.log('Bug identificado na linha 1: function soma(a, b) { return a - b; }');\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"O arquivo calcu",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_codigo codigo geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": \"node\",\n  \"comandoTesteArgs\": [\"-e\", \"const calc = require('./calculadora.js'); console.log('Bug identificado na linha 1: function soma(a, b) { return a - b; }');\"],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"O arquivo calcu",
+      "categoria": "erro_codigo",
+      "causaProvavel": "nenhum padrão reconhecido — assumindo falha de implementação por ser a causa mais comum estatisticamente (heurística, não certeza)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu2ztuiu_1",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789496193951,
+    "atualizadoEm": 1789496193951,
+    "expiraEm": 1821032193951,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu2zzg1t_3": {
+    "id": "erro_mu2zzg1t_3",
+    "tipo": "erro",
+    "conteudo": "[erro_codigo] orçamento esgotado: 2/2 tentativas",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_codigo",
+      "multimidia_texto"
+    ],
+    "contexto": {
+      "query": "erro_codigo multimidia_texto orçamento esgotado: 2/2 tentativas",
+      "categoria": "erro_codigo",
+      "causaProvavel": "processamento multimídia esgotou tentativas ou bloqueou",
+      "tarefaTipo": "multimidia_texto"
+    },
+    "evidencias": [],
+    "missaoId": "teste",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789496452865,
+    "atualizadoEm": 1789496452865,
+    "expiraEm": 1821032452865,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu3046x5_k": {
+    "id": "erro_mu3046x5_k",
+    "tipo": "erro",
+    "conteudo": "[erro_ambiente] spawn node index.js ENOENT\nstderr: \nstdout:",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node index.js ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "causaProvavel": "falha de execução classificada como \"erro_ambiente\"",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu3016tb_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789496674313,
+    "atualizadoEm": 1789496674313,
+    "expiraEm": 1821032674313,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu3049j4_p": {
+    "id": "erro_mu3049j4_p",
+    "tipo": "erro",
+    "conteudo": "[erro_ambiente] spawn node dividir.js ENOENT\nstderr: \nstdout:",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_ambiente",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_ambiente codigo spawn node dividir.js ENOENT\nstderr: \nstdout:",
+      "categoria": "erro_ambiente",
+      "causaProvavel": "falha de execução classificada como \"erro_ambiente\"",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu3016tb_e",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789496677696,
+    "atualizadoEm": 1789496677696,
+    "expiraEm": 1821032677696,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "erro_mu3089g4_k": {
+    "id": "erro_mu3089g4_k",
+    "tipo": "erro",
+    "conteudo": "[erro_modelo] geração de código falhou: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1789516800000\"},\"limit_source\":\"openrouter_free_tier_daily\",\"remedy_hi",
+    "origem": "autocorrecao",
+    "tags": [
+      "autocorrecao",
+      "erro_modelo",
+      "codigo"
+    ],
+    "contexto": {
+      "query": "erro_modelo codigo geração de código falhou: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1789516800000\"},\"limit_source\":\"openrouter_free_tier_daily\",\"remedy_hi",
+      "categoria": "erro_modelo",
+      "causaProvavel": "provider/modelo não entregou resposta utilizável (quota)",
+      "tarefaTipo": "codigo"
+    },
+    "evidencias": [],
+    "missaoId": "missao_mu306qgi_p",
+    "projetoId": null,
+    "confianca": 0.5,
+    "criadoEm": 1789496864212,
+    "atualizadoEm": 1789496864212,
+    "expiraEm": 1821032864212,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  }
+}

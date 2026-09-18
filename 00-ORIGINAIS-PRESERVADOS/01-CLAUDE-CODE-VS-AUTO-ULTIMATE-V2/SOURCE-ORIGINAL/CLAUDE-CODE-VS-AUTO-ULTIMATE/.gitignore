@@ -1,0 +1,53 @@
+# ── Segredos — NUNCA commitar ────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*secret*
+*token*
+*credential*
+id_rsa*
+id_ed25519*
+.npmrc
+.netrc
+jwt-secret
+cli-secret
+
+# Config local do Claude (pode conter estado da máquina)
+.claude/settings.local.json
+
+# ── Logs ─────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+.playwright-mcp/
+
+# ── Estado de runtime do Ruflo ───────────────────────────
+# store.json / state.json são versionáveis (definem a equipe);
+# métricas e tasks são regeneráveis e ruidosas.
+.claude-flow/system/
+.claude-flow/tasks/
+.swarm/
+
+# ── Dependências e build ─────────────────────────────────
+node_modules/
+dist/
+build/
+.cache/
+tmp/
+*.tmp
+
+# ── Backups locais ───────────────────────────────────────
+backups/
+*.bak
+*.zip
+*.tar.gz
+
+# ── SO / editor ──────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp

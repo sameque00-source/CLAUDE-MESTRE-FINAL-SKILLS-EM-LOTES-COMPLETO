@@ -1,0 +1,457 @@
+{
+  "id": "missao_mu21ksvw_g",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:17:42.716Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:17:42.716Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (10 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:17:42.717Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21ksvx_h",
+      "descricao": "Pesquisar modelos open‑source de captioning de imagens adequados para descrição de produtos (ex.: BLIP, OFA, ViT‑GPT2).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista comparativa com métricas de desempenho e requisitos de hardware"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário identificar modelo com boa acurácia e requisitos computacionais compatíveis.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar modelos open‑source de captioning de imagens adequados para descrição de produtos (ex.: BLIP, OFA, ViT‑GPT2).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista comparativa com métricas de desempenho e requisitos de hardware"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_i",
+      "descricao": "Pesquisar a melhor tecnologia front‑end leve para UI de upload (React, Vue, Svelte ou HTML puro).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Recomendação de framework com justificativa de escolha"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher framework que equilibre simplicidade e experiência de desenvolvedor.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar a melhor tecnologia front‑end leve para UI de upload (React, Vue, Svelte ou HTML puro).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Recomendação de framework com justificativa de escolha"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_j",
+      "descricao": "Pesquisar backend adequado para servir modelo de ML (Flask, FastAPI, Node.js).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Recomendação de framework backend com prós e contras"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisamos de um servidor fácil de integrar com bibliotecas Python de visão computacional.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar backend adequado para servir modelo de ML (Flask, FastAPI, Node.js).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Recomendação de framework backend com prós e contras"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_k",
+      "descricao": "Consolidar resultados das pesquisas e definir stack tecnológico (modelo, frontend, backend).",
+      "tipo": "decisao",
+      "dependeDe": [
+        "tarefa_mu21ksvx_h",
+        "tarefa_mu21ksvx_i",
+        "tarefa_mu21ksvx_j"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão contendo framework escolhido e modelo a ser usado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar resultados das pesquisas e definir stack tecnológico (modelo, frontend, backend).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão contendo framework escolhido e modelo a ser usado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_l",
+      "descricao": "Inicializar repositório Git e criar estrutura de pastas (frontend/, backend/, docs/).",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21ksvx_k"
+      ],
+      "recursoExclusivo": "repo",
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Repositório inicial com README e estrutura de diretórios"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "coordinator",
+      "contexto": {
+        "objetivo": "Inicializar repositório Git e criar estrutura de pastas (frontend/, backend/, docs/).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório inicial com README e estrutura de diretórios"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_m",
+      "descricao": "Implementar API backend: endpoint de upload, validação de arquivo e retorno JSON com descrição.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21ksvx_k",
+        "tarefa_mu21ksvx_l"
+      ],
+      "recursoExclusivo": "backend",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "editor"
+      ],
+      "criterioConclusao": [
+        "API funcionando localmente com teste de upload bem‑sucedido (sem inferência ainda)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar API backend: endpoint de upload, validação de arquivo e retorno JSON com descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "API funcionando localmente com teste de upload bem‑sucedido (sem inferência ainda)"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_n",
+      "descricao": "Integrar o modelo de captioning escolhido ao backend e implementar a lógica de inferência.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21ksvx_m"
+      ],
+      "recursoExclusivo": "backend",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "editor"
+      ],
+      "criterioConclusao": [
+        "Endpoint retorna texto de descrição plausível para imagens de teste"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Integrar o modelo de captioning escolhido ao backend e implementar a lógica de inferência.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint retorna texto de descrição plausível para imagens de teste"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_o",
+      "descricao": "Desenvolver frontend: página com formulário de upload, chamada à API e exibição da descrição.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21ksvx_k",
+        "tarefa_mu21ksvx_l"
+      ],
+      "recursoExclusivo": "frontend",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "editor",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Interface web funcional que envia imagem ao backend e mostra texto retornado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver frontend: página com formulário de upload, chamada à API e exibição da descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface web funcional que envia imagem ao backend e mostra texto retornado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_p",
+      "descricao": "Realizar testes end‑to‑end: upload de diferentes fotos, verificação de tempo de resposta e validade do JSON.",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21ksvx_n",
+        "tarefa_mu21ksvx_o"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Relatório de testes com casos de sucesso e falhas corrigidas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Realizar testes end‑to‑end: upload de diferentes fotos, verificação de tempo de resposta e validade do JSON.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de testes com casos de sucesso e falhas corrigidas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    },
+    {
+      "id": "tarefa_mu21ksvx_q",
+      "descricao": "Escrever documentação completa: instruções de instalação, download do modelo, execução e exemplos de uso.",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu21ksvx_l",
+        "tarefa_mu21ksvx_p"
+      ],
+      "recursoExclusivo": "repo",
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "editor"
+      ],
+      "criterioConclusao": [
+        "README.md atualizado e guia de uso pronto para publicação"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever documentação completa: instruções de instalação, download do modelo, execução e exemplos de uso.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md atualizado e guia de uso pronto para publicação"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:42.717Z",
+      "atualizadaEm": "2026-09-15T02:17:42.717Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21ksvx_k",
+      "para": "tarefa_mu21ksvx_h"
+    },
+    {
+      "de": "tarefa_mu21ksvx_k",
+      "para": "tarefa_mu21ksvx_i"
+    },
+    {
+      "de": "tarefa_mu21ksvx_k",
+      "para": "tarefa_mu21ksvx_j"
+    },
+    {
+      "de": "tarefa_mu21ksvx_l",
+      "para": "tarefa_mu21ksvx_k"
+    },
+    {
+      "de": "tarefa_mu21ksvx_m",
+      "para": "tarefa_mu21ksvx_k"
+    },
+    {
+      "de": "tarefa_mu21ksvx_m",
+      "para": "tarefa_mu21ksvx_l"
+    },
+    {
+      "de": "tarefa_mu21ksvx_n",
+      "para": "tarefa_mu21ksvx_m"
+    },
+    {
+      "de": "tarefa_mu21ksvx_o",
+      "para": "tarefa_mu21ksvx_k"
+    },
+    {
+      "de": "tarefa_mu21ksvx_o",
+      "para": "tarefa_mu21ksvx_l"
+    },
+    {
+      "de": "tarefa_mu21ksvx_p",
+      "para": "tarefa_mu21ksvx_n"
+    },
+    {
+      "de": "tarefa_mu21ksvx_p",
+      "para": "tarefa_mu21ksvx_o"
+    },
+    {
+      "de": "tarefa_mu21ksvx_q",
+      "para": "tarefa_mu21ksvx_l"
+    },
+    {
+      "de": "tarefa_mu21ksvx_q",
+      "para": "tarefa_mu21ksvx_p"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:17:42.716Z",
+  "atualizadaEm": "2026-09-15T02:17:42.716Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface web para upload de imagens",
+    "Processamento automático das imagens usando modelo de captioning",
+    "Retorno da descrição em texto ao usuário",
+    "Utilizar somente soluções open‑source (sem custos de API)",
+    "Facilidade de instalação local ou em servidor simples"
+  ],
+  "entregaveis": [
+    "Repositório Git com código fonte completo",
+    "Backend API funcional (upload, inferência, resposta)",
+    "Frontend web simples (upload, visualização da descrição)",
+    "Instruções de setup e execução (README)",
+    "Modelo de captioning pré‑treinado ou script de download"
+  ],
+  "criteriosSucesso": [
+    "Usuário pode fazer upload de uma foto e receber uma descrição coerente em até 5 segundos"
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "missao_mu2zgvco_1",
+  "objetivo": "Crie uma pequena aplicação web: um arquivo index.html simples com um título \"Projeto Teste Multimídia\".",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:06:26.232Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:06:26.232Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T18:06:26.238Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:06:26.238Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T18:06:27.016Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T18:06:27.017Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2zgvct_2",
+      "descricao": "Criar o arquivo index.html com a estrutura HTML5 mínima e o título 'Projeto Teste Multimídia'",
+      "tipo": "frontend",
+      "dependeDe": [],
+      "recursoExclusivo": "index.html",
+      "status": "cancelada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo index.html criado",
+        "Contém tag <title> com o texto exato 'Projeto Teste Multimídia'"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Criar o arquivo index.html com a estrutura HTML5 mínima e o título 'Projeto Teste Multimídia'",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo index.html criado"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_modelo → erro_modelo → erro_modelo"
+        ],
+        "evidencias": [
+          "agente=frontend",
+          "tentativas=3/3"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:06:27.016Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T18:06:26.237Z",
+      "atualizadaEm": "2026-09-15T18:06:27.017Z",
+      "_contrato": "Voce cuida do lado cliente.\n\nSEMPRE\n- Mobile-first. Nenhum scroll horizontal em 390px.\n- Um unico h1, hierarquia de heading sem salto.\n- Foco de teclado visivel. Nunca outline:none sem substituto.\n- Contraste minimo 4.5:1 em texto normal.\n- Toda imagem informativa com alt significativo; decorativa com alt vazio.\n\nEntregue o codigo e diga o que ainda precisa de teste em navegador real.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Criar o arquivo index.html com a estrutura HTML5 mínima e o título 'Projeto Teste Multimídia'\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Arquivo index.html criado\nSUCCESS_CRITERIA: Arquivo index.html criado; Contém tag <title> com o texto exato 'Projeto Teste Multimídia'",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2zgvct_3",
+      "descricao": "Validar a sintaxe básica do HTML gerado",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2zgvct_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "HTML válido (sem erros de sintaxe graves)",
+        "Título visível na aba do navegador ao abrir o arquivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar a sintaxe básica do HTML gerado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "HTML válido (sem erros de sintaxe graves)"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:06:26.237Z",
+      "atualizadaEm": "2026-09-15T18:06:27.017Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2zgvct_2\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2zgvct_3",
+      "para": "tarefa_mu2zgvct_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2zgvct_2",
+      "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_modelo → erro_modelo → erro_modelo",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T18:06:26.545Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2zgvct_2",
+      "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_modelo → erro_modelo → erro_modelo",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T18:06:26.788Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2zgvct_2",
+      "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_modelo → erro_modelo → erro_modelo",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T18:06:27.016Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2zgvct_2",
+        "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_modelo → erro_modelo → erro_modelo",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T18:06:26.545Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T18:06:26.545Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2zgvct_2",
+        "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_modelo → erro_modelo → erro_modelo",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T18:06:26.788Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T18:06:26.788Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2zgvct_2",
+        "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_modelo → erro_modelo → erro_modelo",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T18:06:27.016Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T18:06:27.016Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T18:06:27.017Z"
+  },
+  "criadaEm": "2026-09-15T18:06:26.232Z",
+  "atualizadaEm": "2026-09-15T18:06:27.017Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Arquivo index.html válido",
+    "Título do documento: 'Projeto Teste Multimídia'",
+    "Estrutura HTML5 básica"
+  ],
+  "entregaveis": [
+    "Arquivo index.html pronto para uso"
+  ],
+  "criteriosSucesso": [
+    "O arquivo index.html existe, abre no navegador e exibe o título correto"
+  ]
+}

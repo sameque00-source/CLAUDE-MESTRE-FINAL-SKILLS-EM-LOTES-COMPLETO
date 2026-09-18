@@ -1,0 +1,105 @@
+{
+  "id": "missao_mu2lja94_d",
+  "objetivo": "Missão sintética de veto QA",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "PLANEJANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:36:24.232Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:36:24.232Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T11:36:24.233Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lja95_e",
+      "descricao": "simulado",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "simulado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:36:24.233Z",
+      "atualizadaEm": "2026-09-15T11:36:24.233Z"
+    },
+    {
+      "id": "tarefa_mu2lja96_f",
+      "descricao": "validar",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2lja95_e"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "validar",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:36:24.234Z",
+      "atualizadaEm": "2026-09-15T11:36:24.234Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lja96_f",
+      "para": "tarefa_mu2lja95_e"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "avaliar dependências e prontidão de tarefa_mu2lja96_f",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:36:24.232Z",
+  "atualizadaEm": "2026-09-15T11:36:24.235Z",
+  "modoExecucao": "AUTO"
+}

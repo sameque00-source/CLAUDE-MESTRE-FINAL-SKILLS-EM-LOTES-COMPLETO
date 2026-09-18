@@ -1,0 +1,93 @@
+{
+  "id": "missao_mu21px92_r",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:21:41.654Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:21:41.654Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:21:41.655Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:21:41.655Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21px93_s",
+      "descricao": "Escrever o script bash que automatiza git add, commit e push da pasta alvo",
+      "tipo": "desenvolvimento",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Script criado com tratamento básico de erros para comandos git"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script bash que automatiza git add, commit e push da pasta alvo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script criado com tratamento básico de erros para comandos git"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:41.655Z",
+      "atualizadaEm": "2026-09-15T02:21:41.655Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:21:41.654Z",
+  "atualizadaEm": "2026-09-15T02:21:41.654Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Script em Bash (.sh) funcional",
+    "Inicialização do repositório git local ou uso do existente",
+    "Adição, commit com mensagem padrão/dinâmica e push para o repositório remoto"
+  ],
+  "entregaveis": [
+    "Arquivo de script bash de backup"
+  ],
+  "criteriosSucesso": [
+    "Script executado sem erros e alterações publicadas no repositório remoto"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "missao_mu2jnfp5_l",
+  "objetivo": "Missão sintética de revisão",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "PLANEJANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:43:38.681Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:43:38.681Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:43:38.682Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jnfp6_m",
+      "descricao": "Revisar o trabalho da missão",
+      "tipo": "revisao",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar o trabalho da missão",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:43:38.682Z",
+      "atualizadaEm": "2026-09-15T10:43:38.682Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "avaliar dependências e prontidão de tarefa_mu2jnfp6_m",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:43:38.681Z",
+  "atualizadaEm": "2026-09-15T10:43:38.682Z",
+  "modoExecucao": "AUTO"
+}

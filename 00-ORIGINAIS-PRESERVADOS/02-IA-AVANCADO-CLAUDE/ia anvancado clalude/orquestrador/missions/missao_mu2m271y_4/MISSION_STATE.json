@@ -1,0 +1,667 @@
+{
+  "id": "missao_mu2m271y_4",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:51:06.550Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:51:06.550Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (9 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T11:51:06.551Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:51:06.551Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:51:14.838Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m271z_5",
+      "descricao": "Pesquisar tecnologias de manipulação de vídeo de alta performance (FFmpeg.wasm vs WebCodecs API vs Rust/Tauri)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de desempenho e viabilidade técnica entregue"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a melhor stack para garantir fluidez na edição de vídeo client-side.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar tecnologias de manipulação de vídeo de alta performance (FFmpeg.wasm vs WebCodecs API vs Rust/Tauri)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de desempenho e viabilidade técnica entregue"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar tecnologias de manipulação de ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.744Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.744Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_6",
+      "descricao": "Pesquisar arquiteturas de UI para timelines de vídeo complexas em frameworks web modernos",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de bibliotecas recomendadas e padrões de UI documentados"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Avaliar bibliotecas existentes de timeline (ex: Wavesurfer.js, Canvas-based timelines) para evitar reinventar a roda.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar arquiteturas de UI para timelines de vídeo complexas em frameworks web modernos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de bibliotecas recomendadas e padrões de UI documentados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar arquiteturas de UI para timeli",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.744Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.744Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_7",
+      "descricao": "Definir a arquitetura geral do software, estrutura de pastas e fluxo de dados com base nas pesquisas",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2m271z_5",
+        "tarefa_mu2m271z_6"
+      ],
+      "recursoExclusivo": "docs/architecture.md",
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura de software aprovado e estruturado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura geral do software, estrutura de pastas e fluxo de dados com base nas pesquisas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura de software aprovado e estruturado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir a arquitetura geral do software,",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.760Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.760Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_8",
+      "descricao": "Configurar o ambiente base do projeto, dependências principais e sistema de build",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2m271z_7"
+      ],
+      "recursoExclusivo": "package.json",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Repositório inicializado com build rodando sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Configurar o ambiente base do projeto, dependências principais e sistema de build",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório inicializado com build rodando sem erros"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Configurar o ambiente base do projeto, d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.775Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.775Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_9",
+      "descricao": "Implementar o motor de processamento e decodificação de mídia",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2m271z_8"
+      ],
+      "recursoExclusivo": "src/engine",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Módulo capaz de carregar e extrair frames/áudio de um arquivo de vídeo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o motor de processamento e decodificação de mídia",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo capaz de carregar e extrair frames/áudio de um arquivo de vídeo"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o motor de processamento e d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.791Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.791Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_a",
+      "descricao": "Desenvolver a interface do usuário (UI) incluindo a timeline multi-pista e player de vídeo",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2m271z_8"
+      ],
+      "recursoExclusivo": "src/ui",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Componentes de UI funcionais e integrados visualmente"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface do usuário (UI) incluindo a timeline multi-pista e player de vídeo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Componentes de UI funcionais e integrados visualmente"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver a interface do usuário (UI) ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.791Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.791Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_b",
+      "descricao": "Integrar o motor de mídia com a interface de usuário da timeline",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2m271z_9",
+        "tarefa_mu2m271z_a"
+      ],
+      "recursoExclusivo": "src/core",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Reprodução e edição básica sincronizadas na interface"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar o motor de mídia com a interface de usuário da timeline",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Reprodução e edição básica sincronizadas na interface"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Integrar o motor de mídia com a interfac",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.807Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.807Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_c",
+      "descricao": "Executar validação de qualidade e testes integrados das funcionalidades principais",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2m271z_b"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "testes",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Suíte de testes executada com sucesso e sem regressões críticas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar validação de qualidade e testes integrados das funcionalidades principais",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Suíte de testes executada com sucesso e sem regressões críticas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar validação de qualidade e testes",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.822Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.822Z"
+    },
+    {
+      "id": "tarefa_mu2m271z_d",
+      "descricao": "Realizar revisão final de código e empacotamento da aplicação para distribuição",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2m271z_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [
+        "compilador",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Código limpo, revisado e executável gerado com sucesso"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Realizar revisão final de código e empacotamento da aplicação para distribuição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código limpo, revisado e executável gerado com sucesso"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Realizar revisão final de código e empac",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.838Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:06.551Z",
+      "atualizadaEm": "2026-09-15T11:51:14.838Z"
+    },
+    {
+      "id": "tarefa_mu2m2dd5_t",
+      "descricao": "Pesquisar e definir estratégias de fallback no servidor ou alternativas nativas para o Safari devido às limitações do ffmpeg.wasm",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2m271z_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Relatório comparativo de viabilidade entre renderização no servidor e alternativas nativas para o Safari",
+        "Estratégia de fallback definida para a decodificação e processamento de vídeo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e definir estratégias de fallback no servidor ou alternativas nativas para o Safari devido às limitações do ffmpeg.wasm",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar e definir estratégias de fallb",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:51:14.760Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:14.729Z",
+      "atualizadaEm": "2026-09-15T11:51:14.760Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2m271z_7",
+      "para": "tarefa_mu2m271z_5"
+    },
+    {
+      "de": "tarefa_mu2m271z_7",
+      "para": "tarefa_mu2m271z_6"
+    },
+    {
+      "de": "tarefa_mu2m271z_8",
+      "para": "tarefa_mu2m271z_7"
+    },
+    {
+      "de": "tarefa_mu2m271z_9",
+      "para": "tarefa_mu2m271z_8"
+    },
+    {
+      "de": "tarefa_mu2m271z_a",
+      "para": "tarefa_mu2m271z_8"
+    },
+    {
+      "de": "tarefa_mu2m271z_b",
+      "para": "tarefa_mu2m271z_9"
+    },
+    {
+      "de": "tarefa_mu2m271z_b",
+      "para": "tarefa_mu2m271z_a"
+    },
+    {
+      "de": "tarefa_mu2m271z_c",
+      "para": "tarefa_mu2m271z_b"
+    },
+    {
+      "de": "tarefa_mu2m271z_d",
+      "para": "tarefa_mu2m271z_c"
+    },
+    {
+      "de": "tarefa_mu2m2dd5_t",
+      "para": "tarefa_mu2m271z_5"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "coding",
+    "backend",
+    "frontend",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2m271z_5",
+      "status": "ok",
+      "resultado": "mock: Pesquisar tecnologias de manipulação de ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.744Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_6",
+      "status": "ok",
+      "resultado": "mock: Pesquisar arquiteturas de UI para timeli",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.744Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_7",
+      "status": "ok",
+      "resultado": "mock: Definir a arquitetura geral do software,",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.760Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m2dd5_t",
+      "status": "ok",
+      "resultado": "mock: Pesquisar e definir estratégias de fallb",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.760Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_8",
+      "status": "ok",
+      "resultado": "mock: Configurar o ambiente base do projeto, d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.775Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_9",
+      "status": "ok",
+      "resultado": "mock: Implementar o motor de processamento e d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.791Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_a",
+      "status": "ok",
+      "resultado": "mock: Desenvolver a interface do usuário (UI) ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.791Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_b",
+      "status": "ok",
+      "resultado": "mock: Integrar o motor de mídia com a interfac",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.807Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_c",
+      "status": "ok",
+      "resultado": "mock: Executar validação de qualidade e testes",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.822Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2m271z_d",
+      "status": "ok",
+      "resultado": "mock: Realizar revisão final de código e empac",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:51:14.838Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:51:06.550Z",
+  "atualizadaEm": "2026-09-15T11:51:14.838Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface gráfica avançada com timeline multi-pista (vídeo, áudio, legendas)",
+    "Suporte a importação e decodificação de múltiplos formatos de mídia",
+    "Operações básicas de corte, divisão, transição e efeitos visuais",
+    "Renderização e exportação de vídeo em alta definição com aceleração por hardware",
+    "Arquitetura modular extensível baseada em WebCodecs/FFmpeg ou Electron"
+  ],
+  "entregaveis": [
+    "Código-fonte completo da aplicação estruturado em monorepo",
+    "Módulo de manipulação de mídia otimizado",
+    "Interface de usuário responsiva com timeline interativa",
+    "Instaladores empacotados para o sistema operacional alvo"
+  ],
+  "criteriosSucesso": [
+    "Aplicação executa localmente importando, editando e exportando um arquivo de vídeo com sucesso"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "O suporte limitado do ffmpeg.wasm no Safari exige uma tarefa de pesquisa dedicada para avaliar estratégias de fallback no servidor ou alternativas nativas, impactando a decisão de arquitetura e processamento de mídia.",
+      "ts": "2026-09-15T11:51:14.729Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

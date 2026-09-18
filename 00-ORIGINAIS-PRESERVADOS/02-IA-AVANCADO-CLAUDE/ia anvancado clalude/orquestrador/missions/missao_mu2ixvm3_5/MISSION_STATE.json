@@ -1,0 +1,1114 @@
+{
+  "id": "missao_mu2ixvm3_5",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:23:46.251Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:23:46.251Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (16 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T10:23:46.253Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "4 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:23:46.253Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:24:19.269Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ixvm4_6",
+      "descricao": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav, GPU‑accelerated APIs)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo com prós, contras e licenças"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Determinar a melhor base tecnológica que atenda a requisitos de codec, performance e licenciamento",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav, GPU‑accelerated APIs)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo com prós, contras e licenças"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas de processamento d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.145Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.252Z",
+      "atualizadaEm": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm4_7",
+      "descricao": "Pesquisar frameworks UI cross‑platform (Qt, Electron + React, Flutter Desktop)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Matriz de decisão contendo avaliação de performance, ergonomia de desenvolvimento e licenças"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher um framework que ofereça desempenho, boa integração com bibliotecas nativas e suporte a todas as OS alvo",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar frameworks UI cross‑platform (Qt, Electron + React, Flutter Desktop)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Matriz de decisão contendo avaliação de performance, ergonomia de desenvolvimento e licenças"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar frameworks UI cross‑platform (",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.145Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.252Z",
+      "atualizadaEm": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm4_8",
+      "descricao": "Pesquisar requisitos de licenciamento e patentes para codecs (H.264, HEVC, AV1)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento resumindo obrigações e recomendações (ex.: usar AV1 quando possível)"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir que o produto final não viole patentes e respeite licenças de uso comercial",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar requisitos de licenciamento e patentes para codecs (H.264, HEVC, AV1)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento resumindo obrigações e recomendações (ex.: usar AV1 quando possível)"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar requisitos de licenciamento e ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.145Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.252Z",
+      "atualizadaEm": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm4_9",
+      "descricao": "Analisar UI/UX de editores de vídeo profissionais (Premiere, DaVinci Resolve) para definição de padrões de timeline e fluxos de trabalho",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador",
+        "video"
+      ],
+      "criterioConclusao": [
+        "Lista de componentes UI essenciais e fluxo de interação"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar padrões de usabilidade que usuários experientes esperam",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Analisar UI/UX de editores de vídeo profissionais (Premiere, DaVinci Resolve) para definição de padrões de timeline e fluxos de trabalho",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de componentes UI essenciais e fluxo de interação"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Analisar UI/UX de editores de vídeo prof",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.145Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.252Z",
+      "atualizadaEm": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm4_a",
+      "descricao": "Consolidar resultados das pesquisas e decidir stack tecnológica (biblioteca de vídeo, framework UI, codecs)",
+      "tipo": "consolidacao",
+      "dependeDe": [
+        "tarefa_mu2ixvm4_6",
+        "tarefa_mu2ixvm4_7",
+        "tarefa_mu2ixvm4_8",
+        "tarefa_mu2ixvm4_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão aprovado contendo stack completo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar resultados das pesquisas e decidir stack tecnológica (biblioteca de vídeo, framework UI, codecs)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão aprovado contendo stack completo"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Consolidar resultados das pesquisas e de",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.160Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.252Z",
+      "atualizadaEm": "2026-09-15T10:24:19.160Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm4_b",
+      "descricao": "Desenhar arquitetura de alto nível (módulos de import, timeline, render, export, áudio)",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2ixvm4_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Diagrama de componentes e descrição de interfaces"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Desenhar arquitetura de alto nível (módulos de import, timeline, render, export, áudio)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de componentes e descrição de interfaces"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenhar arquitetura de alto nível (módu",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.176Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.252Z",
+      "atualizadaEm": "2026-09-15T10:24:19.176Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm4_c",
+      "descricao": "Criar mockups/wireframes das telas principais (timeline, media bin, export dialog)",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu2ixvm4_a",
+        "tarefa_mu2ixvm4_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "imagem"
+      ],
+      "criterioConclusao": [
+        "Conjunto de imagens PNG das telas aprovadas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Criar mockups/wireframes das telas principais (timeline, media bin, export dialog)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conjunto de imagens PNG das telas aprovadas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar mockups/wireframes das telas princ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.176Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.252Z",
+      "atualizadaEm": "2026-09-15T10:24:19.176Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_d",
+      "descricao": "Inicializar repositório Git, configurar CMake (ou build system escolhido) para multiplataforma",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ixvm4_a"
+      ],
+      "recursoExclusivo": "build_config",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Repositório com estrutura de pastas e script de build funcionando em CI local"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Inicializar repositório Git, configurar CMake (ou build system escolhido) para multiplataforma",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório com estrutura de pastas e script de build funcionando em CI local"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Inicializar repositório Git, configurar ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.176Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.176Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_e",
+      "descricao": "Implementar módulo core de processamento de vídeo usando a biblioteca escolhida (wrapper FFmpeg ou similar)",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ixvm4_a",
+        "tarefa_mu2ixvm5_d"
+      ],
+      "recursoExclusivo": "core_video",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "API C++/C# que permite abrir, buscar frames e extrair segmentos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar módulo core de processamento de vídeo usando a biblioteca escolhida (wrapper FFmpeg ou similar)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "API C++/C# que permite abrir, buscar frames e extrair segmentos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar módulo core de processamento",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.192Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.192Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_f",
+      "descricao": "Desenvolver UI da timeline (drag‑drop de clipes, zoom, playhead) no framework escolhido",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2ixvm4_a",
+        "tarefa_mu2ixvm4_c",
+        "tarefa_mu2ixvm5_d"
+      ],
+      "recursoExclusivo": "ui_timeline",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo",
+        "visao"
+      ],
+      "criterioConclusao": [
+        "Tela de timeline funcional integrada ao core de vídeo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver UI da timeline (drag‑drop de clipes, zoom, playhead) no framework escolhido",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tela de timeline funcional integrada ao core de vídeo"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver UI da timeline (drag‑drop de",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.192Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.192Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_g",
+      "descricao": "Implementar operações de edição básicas (cortar, aparar, dividir) usando o core de vídeo",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ixvm5_e",
+        "tarefa_mu2ixvm5_f"
+      ],
+      "recursoExclusivo": "edit_ops",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Funções de corte/aparar expostas ao UI e testadas com arquivos curtos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar operações de edição básicas (cortar, aparar, dividir) usando o core de vídeo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Funções de corte/aparar expostas ao UI e testadas com arquivos curtos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar operações de edição básicas ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.207Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.207Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_h",
+      "descricao": "Adicionar módulo de efeitos simples (transição fade, correção de cor básica)",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ixvm5_e",
+        "tarefa_mu2ixvm5_g"
+      ],
+      "recursoExclusivo": "effects",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Efeitos aplicáveis via UI e refletidos no preview"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Adicionar módulo de efeitos simples (transição fade, correção de cor básica)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Efeitos aplicáveis via UI e refletidos no preview"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Adicionar módulo de efeitos simples (tra",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.223Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.223Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_i",
+      "descricao": "Implementar manipulação de áudio (importar faixas, mixar, controlar volume)",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ixvm5_e",
+        "tarefa_mu2ixvm5_f"
+      ],
+      "recursoExclusivo": "audio_module",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Áudio sincronizado ao vídeo na timeline e exportável"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar manipulação de áudio (importar faixas, mixar, controlar volume)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Áudio sincronizado ao vídeo na timeline e exportável"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar manipulação de áudio (import",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.207Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.207Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_j",
+      "descricao": "Criar módulo de exportação que renderiza a sequência final em MP4 (H.264/AV1) usando o core",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ixvm5_e",
+        "tarefa_mu2ixvm5_g",
+        "tarefa_mu2ixvm5_h",
+        "tarefa_mu2ixvm5_i"
+      ],
+      "recursoExclusivo": "exporter",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Arquivo MP4 reproduzível em players padrão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Criar módulo de exportação que renderiza a sequência final em MP4 (H.264/AV1) usando o core",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo MP4 reproduzível em players padrão"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar módulo de exportação que renderiza",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.238Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.238Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_k",
+      "descricao": "Executar testes de performance de renderização e otimizar gargalos (CPU/GPU)",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2ixvm5_j"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Relatório com tempos de renderização < 2× duração do vídeo em hardware médio"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes de performance de renderização e otimizar gargalos (CPU/GPU)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório com tempos de renderização < 2× duração do vídeo em hardware médio"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar testes de performance de render",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.254Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.254Z"
+    },
+    {
+      "id": "tarefa_mu2ixvm5_l",
+      "descricao": "Escrever documentação técnica e guia rápido do usuário",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu2ixvm5_d",
+        "tarefa_mu2ixvm5_j",
+        "tarefa_mu2ixvm5_k"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "docs",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "README, manual do usuário e instruções de build em markdown"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever documentação técnica e guia rápido do usuário",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README, manual do usuário e instruções de build em markdown"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Escrever documentação técnica e guia ráp",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.269Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:46.253Z",
+      "atualizadaEm": "2026-09-15T10:24:19.269Z"
+    },
+    {
+      "id": "tarefa_mu2iykza_12",
+      "descricao": "Pesquisar e definir estratégia de fallback no servidor ou alternativa nativa para contornar limitações do ffmpeg.wasm no Safari",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2ixvm4_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Documentar viabilidade de servidor de renderização vs processamento local no Safari",
+        "Definir arquitetura de fallback recomendada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e definir estratégia de fallback no servidor ou alternativa nativa para contornar limitações do ffmpeg.wasm no Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar e definir estratégia de fallba",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:24:19.160Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:24:19.126Z",
+      "atualizadaEm": "2026-09-15T10:24:19.160Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ixvm4_a",
+      "para": "tarefa_mu2ixvm4_6"
+    },
+    {
+      "de": "tarefa_mu2ixvm4_a",
+      "para": "tarefa_mu2ixvm4_7"
+    },
+    {
+      "de": "tarefa_mu2ixvm4_a",
+      "para": "tarefa_mu2ixvm4_8"
+    },
+    {
+      "de": "tarefa_mu2ixvm4_a",
+      "para": "tarefa_mu2ixvm4_9"
+    },
+    {
+      "de": "tarefa_mu2ixvm4_b",
+      "para": "tarefa_mu2ixvm4_a"
+    },
+    {
+      "de": "tarefa_mu2ixvm4_c",
+      "para": "tarefa_mu2ixvm4_a"
+    },
+    {
+      "de": "tarefa_mu2ixvm4_c",
+      "para": "tarefa_mu2ixvm4_9"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_d",
+      "para": "tarefa_mu2ixvm4_a"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_e",
+      "para": "tarefa_mu2ixvm4_a"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_e",
+      "para": "tarefa_mu2ixvm5_d"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_f",
+      "para": "tarefa_mu2ixvm4_a"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_f",
+      "para": "tarefa_mu2ixvm4_c"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_f",
+      "para": "tarefa_mu2ixvm5_d"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_g",
+      "para": "tarefa_mu2ixvm5_e"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_g",
+      "para": "tarefa_mu2ixvm5_f"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_h",
+      "para": "tarefa_mu2ixvm5_e"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_h",
+      "para": "tarefa_mu2ixvm5_g"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_i",
+      "para": "tarefa_mu2ixvm5_e"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_i",
+      "para": "tarefa_mu2ixvm5_f"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_j",
+      "para": "tarefa_mu2ixvm5_e"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_j",
+      "para": "tarefa_mu2ixvm5_g"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_j",
+      "para": "tarefa_mu2ixvm5_h"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_j",
+      "para": "tarefa_mu2ixvm5_i"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_k",
+      "para": "tarefa_mu2ixvm5_j"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_l",
+      "para": "tarefa_mu2ixvm5_d"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_l",
+      "para": "tarefa_mu2ixvm5_j"
+    },
+    {
+      "de": "tarefa_mu2ixvm5_l",
+      "para": "tarefa_mu2ixvm5_k"
+    },
+    {
+      "de": "tarefa_mu2iykza_12",
+      "para": "tarefa_mu2ixvm4_6"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "uiux",
+    "coding",
+    "frontend",
+    "testing",
+    "docs"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2ixvm4_6",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas de processamento d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm4_7",
+      "status": "ok",
+      "resultado": "mock: Pesquisar frameworks UI cross‑platform (",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm4_8",
+      "status": "ok",
+      "resultado": "mock: Pesquisar requisitos de licenciamento e ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm4_9",
+      "status": "ok",
+      "resultado": "mock: Analisar UI/UX de editores de vídeo prof",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.145Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm4_a",
+      "status": "ok",
+      "resultado": "mock: Consolidar resultados das pesquisas e de",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.160Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iykza_12",
+      "status": "ok",
+      "resultado": "mock: Pesquisar e definir estratégia de fallba",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.160Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm4_b",
+      "status": "ok",
+      "resultado": "mock: Desenhar arquitetura de alto nível (módu",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.176Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm4_c",
+      "status": "ok",
+      "resultado": "mock: Criar mockups/wireframes das telas princ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.176Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_d",
+      "status": "ok",
+      "resultado": "mock: Inicializar repositório Git, configurar ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.176Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_e",
+      "status": "ok",
+      "resultado": "mock: Implementar módulo core de processamento",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.192Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_f",
+      "status": "ok",
+      "resultado": "mock: Desenvolver UI da timeline (drag‑drop de",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.192Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_g",
+      "status": "ok",
+      "resultado": "mock: Implementar operações de edição básicas ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.207Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_i",
+      "status": "ok",
+      "resultado": "mock: Implementar manipulação de áudio (import",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.207Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_h",
+      "status": "ok",
+      "resultado": "mock: Adicionar módulo de efeitos simples (tra",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.223Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_j",
+      "status": "ok",
+      "resultado": "mock: Criar módulo de exportação que renderiza",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.238Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_k",
+      "status": "ok",
+      "resultado": "mock: Executar testes de performance de render",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.254Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ixvm5_l",
+      "status": "ok",
+      "resultado": "mock: Escrever documentação técnica e guia ráp",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:24:19.269Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:23:46.251Z",
+  "atualizadaEm": "2026-09-15T10:24:19.269Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "build_config",
+    "core_video",
+    "ui_timeline",
+    "edit_ops",
+    "effects",
+    "audio_module",
+    "exporter"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A descoberta de suporte limitado para ffmpeg.wasm no navegador Safari exige a introdução de uma análise ou tarefa de arquitetura focada em estratégia híbrida, alternativa nativa ou fallback em servidor para garantir compatibilidade cross-browser, impactando a pesquisa de bibliotecas de vídeo e a arquitetura geral.",
+      "ts": "2026-09-15T10:24:19.126Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

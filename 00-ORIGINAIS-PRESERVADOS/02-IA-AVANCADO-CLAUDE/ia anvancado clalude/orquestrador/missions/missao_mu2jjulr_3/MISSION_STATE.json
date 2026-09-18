@@ -1,0 +1,170 @@
+{
+  "id": "missao_mu2jjulr_3",
+  "objetivo": "Missão sintética multi-agente",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:40:51.375Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:40:51.375Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:40:51.376Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:40:51.378Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:40:53.935Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jjuls_4",
+      "descricao": "Em 1 frase, defina o que é uma API REST",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase, defina o que é uma API REST",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "### Opções Reais\n\n1. **Opção A: Definição concisa baseada em arquitetura e protocolo (Padrão de Mercado)**\n   * **O que ganha:** Precisão técnica imediata, clareza sobre o uso do protocolo HTTP e separação de conceitos (cliente-servidor).\n   * **O que perde:** Pode parecer árida para leigos ou ignorar nuances de implementações práticas (como HATEOAS, que raramente é usado à risca).\n   * **O que custa:** Zero recursos financeiros. Custo cognitivo baixo.\n\n2. **Opção B: Definição orientada a contrato de dados e interoperabilidade (Foco em Negócio)**\n   * **O que ganha:** Conecta o conceito técnico ao valor de integração entre sistemas heterogêneos.\n   * **O que perde:** Afasta-se da definição estritamente acadêmica de REST (Roy Fielding).\n   * **O que custa:** Zero recursos financeiros.\n\n---\n\n### Precedente\n* **No projeto:** Informação não confirmada (primeira definição solicitada neste escopo).\n* **Fora dele:** Utilizada universalmente na documentação de gigantes de tecnologia (como MDN Web Docs, Microsoft Learn e arquiteturas de referência RESTful) para padronizar o entendimento de engenharia de software.\n\n---\n\n### Recomendação\n**Recomendo a Opção A.** \n* **Motivo:** Cumpre o objetivo de forma direta, inquestionável e rigorosa, sem extrapolar o escopo de uma única frase exigido pelo contrato da tarefa.\n\n---\n\n### Resultado (Output da Tarefa)\n\nUma API REST é uma interface de programação de aplicações que utiliza os princípios da arquitetura REST e os métodos padrão do protocolo HTTP (como GET, POST, PUT e DELETE) para permitir a comunicação stateless e a troca de dados entre sistemas de forma padronizada.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:40:53.935Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:40:51.376Z",
+      "atualizadaEm": "2026-09-15T10:40:53.935Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, defina o que é uma API REST\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2jjult_5",
+      "descricao": "Em 1 frase, qual o risco de armazenar senha em texto puro?",
+      "tipo": "security",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "security",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "security",
+      "contexto": {
+        "objetivo": "Em 1 frase, qual o risco de armazenar senha em texto puro?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Security: nenhum risco óbvio encontrado na varredura determinística (5 padrões, 0 arquivo(s))",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "veto=false",
+          "agente=security"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:40:51.381Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:40:51.377Z",
+      "atualizadaEm": "2026-09-15T10:40:53.935Z",
+      "_contrato": "Voce tem VETO. Se reprovar, a mudanca nao integra.\n\nPROCURE\n1. Validacao que so existe no cliente.\n2. Injecao: SQL, comando, template, path traversal.\n3. Credencial em codigo, log, URL ou mensagem de erro.\n4. Permissao verificada no lugar errado ou nao verificada.\n5. Dado sensivel indo para onde nao devia.\n\nVEREDICTO obrigatorio ao final, exatamente uma destas linhas:\nAPROVADO\nAPROVADO COM RESSALVAS - <motivo em uma linha>\nREPROVADO - <o que precisa ser corrigido antes de integrar>\n\nNao reprove por estilo. Reprove por risco real e demonstravel.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, qual o risco de armazenar senha em texto puro?\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research",
+    "security"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jjuls_4",
+      "status": "ok",
+      "resultado": "### Opções Reais\n\n1. **Opção A: Definição concisa baseada em arquitetura e protocolo (Padrão de Mercado)**\n   * **O que ganha:** Precisão técnica imediata, clareza sobre o uso do protocolo HTTP e separação de conceitos (cliente-servidor).\n   * **O que perde:** Pode parecer árida para leigos ou ignorar nuances de implementações práticas (como HATEOAS, que raramente é usado à risca).\n   * **O que custa:** Zero recursos financeiros. Custo cognitivo baixo.\n\n2. **Opção B: Definição orientada a contrato de dados e interoperabilidade (Foco em Negócio)**\n   * **O que ganha:** Conecta o conceito técnico ao valor de integração entre sistemas heterogêneos.\n   * **O que perde:** Afasta-se da definição estritamente acadêmica de REST (Roy Fielding).\n   * **O que custa:** Zero recursos financeiros.\n\n---\n\n### Precedente\n* **No projeto:** Informação não confirmada (primeira definição solicitada neste escopo).\n* **Fora dele:** Utilizada universalmente na documentação de gigantes de tecnologia (como MDN Web Docs, Microsoft Learn e arquiteturas de referência RESTful) para padronizar o entendimento de engenharia de software.\n\n---\n\n### Recomendação\n**Recomendo a Opção A.** \n* **Motivo:** Cumpre o objetivo de forma direta, inquestionável e rigorosa, sem extrapolar o escopo de uma única frase exigido pelo contrato da tarefa.\n\n---\n\n### Resultado (Output da Tarefa)\n\nUma API REST é uma interface de programação de aplicações que utiliza os princípios da arquitetura REST e os métodos padrão do protocolo HTTP (como GET, POST, PUT e DELETE) para permitir a comunicação stateless e a troca de dados entre sistemas de forma padronizada.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:40:53.935Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jjult_5",
+      "status": "ok",
+      "resultado": "Security: nenhum risco óbvio encontrado na varredura determinística (5 padrões, 0 arquivo(s))",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "veto=false",
+        "agente=security"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:40:51.381Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:40:51.375Z",
+  "atualizadaEm": "2026-09-15T10:40:53.935Z",
+  "modoExecucao": "AUTO"
+}

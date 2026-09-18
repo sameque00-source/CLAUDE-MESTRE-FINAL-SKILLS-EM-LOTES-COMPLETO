@@ -1,0 +1,364 @@
+{
+  "id": "missao_mu21byy2_6",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:10:50.666Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:10:50.666Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (8 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:10:50.668Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21byy4_7",
+      "descricao": "Pesquisar modelos de captioning de imagens gratuitos e adequados para uso local (ex.: BLIP, OFA, ClipCap) avaliando precisão, tamanho do modelo e requisitos de hardware",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista comparativa contendo modelo escolhido, versão, tamanho em GB, requisitos de GPU/CPU e licença"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "É necessário escolher o modelo que ofereça melhor trade‑off entre qualidade e consumo de recursos sem incorrer em custos",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar modelos de captioning de imagens gratuitos e adequados para uso local (ex.: BLIP, OFA, ClipCap) avaliando precisão, tamanho do modelo e requisitos de hardware",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista comparativa contendo modelo escolhido, versão, tamanho em GB, requisitos de GPU/CPU e licença"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "id": "tarefa_mu21byy4_8",
+      "descricao": "Definir stack tecnológico: backend em Python 3.11 com FastAPI, frontend em React (Create React App), armazenamento de imagens em filesystem temporário",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu21byy4_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão contendo stack completo e justificativa resumida"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir stack tecnológico: backend em Python 3.11 com FastAPI, frontend em React (Create React App), armazenamento de imagens em filesystem temporário",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão contendo stack completo e justificativa resumida"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "id": "tarefa_mu21byy4_9",
+      "descricao": "Arquitetar diagrama de componentes e fluxo de dados (upload → backend → modelo → resposta → UI)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21byy4_8"
+      ],
+      "recursoExclusivo": "architecture.md",
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Diagrama (ex.: mermaid) e descrição textual do fluxo de dados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Arquitetar diagrama de componentes e fluxo de dados (upload → backend → modelo → resposta → UI)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama (ex.: mermaid) e descrição textual do fluxo de dados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "id": "tarefa_mu21byy4_a",
+      "descricao": "Criar projeto backend FastAPI com endpoint POST /upload que receba multipart/form-data, salve a imagem em /tmp/uploads e retorne ID da operação",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21byy4_9"
+      ],
+      "recursoExclusivo": "backend/",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Código compilável, endpoint testado com curl e respondendo 200 OK"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Criar projeto backend FastAPI com endpoint POST /upload que receba multipart/form-data, salve a imagem em /tmp/uploads e retorne ID da operação",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código compilável, endpoint testado com curl e respondendo 200 OK"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "id": "tarefa_mu21byy4_b",
+      "descricao": "Integrar o modelo de captioning escolhido ao backend: carregar o modelo, receber caminho da imagem, gerar descrição e retornar JSON {description: \"...\"}",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21byy4_a",
+        "tarefa_mu21byy4_7"
+      ],
+      "recursoExclusivo": "backend/",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Endpoint /describe que, dado um ID de upload, devolve a descrição em menos de 10 s"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Integrar o modelo de captioning escolhido ao backend: carregar o modelo, receber caminho da imagem, gerar descrição e retornar JSON {description: \"...\"}",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint /describe que, dado um ID de upload, devolve a descrição em menos de 10 s"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "id": "tarefa_mu21byy4_c",
+      "descricao": "Desenvolver frontend React com página única: formulário de upload, chamada ao endpoint /upload, polling ou chamada direta ao /describe, exibição da descrição ao usuário",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21byy4_a",
+        "tarefa_mu21byy4_b"
+      ],
+      "recursoExclusivo": "frontend/",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Aplicação web rodando localmente, permitindo upload e mostrando descrição sem erros de console"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver frontend React com página única: formulário de upload, chamada ao endpoint /upload, polling ou chamada direta ao /describe, exibição da descrição ao usuário",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicação web rodando localmente, permitindo upload e mostrando descrição sem erros de console"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "id": "tarefa_mu21byy4_d",
+      "descricao": "Executar testes de ponta a ponta: subir backend, frontend, fazer upload de imagens de diferentes formatos (jpg, png, webp) e validar que a descrição retornada contém palavras-chave do produto",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21byy4_b",
+        "tarefa_mu21byy4_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "multimidia",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Relatório de teste com pelo menos 5 casos bem‑sucedidos e logs de execução"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes de ponta a ponta: subir backend, frontend, fazer upload de imagens de diferentes formatos (jpg, png, webp) e validar que a descrição retornada contém palavras-chave do produto",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de teste com pelo menos 5 casos bem‑sucedidos e logs de execução"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    },
+    {
+      "id": "tarefa_mu21byy4_e",
+      "descricao": "Escrever documentação de uso (README) contendo requisitos de ambiente, instruções de instalação (pip, npm), como executar backend e frontend, e exemplos de uso",
+      "tipo": "docs",
+      "dependeDe": [
+        "tarefa_mu21byy4_d"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md completo no repositório, renderizado corretamente no GitHub"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever documentação de uso (README) contendo requisitos de ambiente, instruções de instalação (pip, npm), como executar backend e frontend, e exemplos de uso",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md completo no repositório, renderizado corretamente no GitHub"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:10:50.668Z",
+      "atualizadaEm": "2026-09-15T02:10:50.668Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21byy4_8",
+      "para": "tarefa_mu21byy4_7"
+    },
+    {
+      "de": "tarefa_mu21byy4_9",
+      "para": "tarefa_mu21byy4_8"
+    },
+    {
+      "de": "tarefa_mu21byy4_a",
+      "para": "tarefa_mu21byy4_9"
+    },
+    {
+      "de": "tarefa_mu21byy4_b",
+      "para": "tarefa_mu21byy4_a"
+    },
+    {
+      "de": "tarefa_mu21byy4_b",
+      "para": "tarefa_mu21byy4_7"
+    },
+    {
+      "de": "tarefa_mu21byy4_c",
+      "para": "tarefa_mu21byy4_a"
+    },
+    {
+      "de": "tarefa_mu21byy4_c",
+      "para": "tarefa_mu21byy4_b"
+    },
+    {
+      "de": "tarefa_mu21byy4_d",
+      "para": "tarefa_mu21byy4_b"
+    },
+    {
+      "de": "tarefa_mu21byy4_d",
+      "para": "tarefa_mu21byy4_c"
+    },
+    {
+      "de": "tarefa_mu21byy4_e",
+      "para": "tarefa_mu21byy4_d"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:10:50.666Z",
+  "atualizadaEm": "2026-09-15T02:10:50.666Z",
+  "modoExecucao": "AUTO"
+}

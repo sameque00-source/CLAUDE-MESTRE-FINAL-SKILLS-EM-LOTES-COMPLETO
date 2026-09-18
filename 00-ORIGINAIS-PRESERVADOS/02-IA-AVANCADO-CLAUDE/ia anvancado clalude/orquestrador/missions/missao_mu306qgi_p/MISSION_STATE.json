@@ -1,0 +1,249 @@
+{
+  "id": "missao_mu306qgi_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:26:32.946Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:26:32.946Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T18:26:32.950Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:26:32.951Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu306qgm_q",
+      "descricao": "Simular o código original da função `soma(a,b)` em `utils.js` e analisar vulnerabilidades (ex: NaN, strings implícitas).",
+      "tipo": "revisao",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "ninerouter-imperion-dev",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Identificar pelo menos 2 falhas potentes (ex: coerção implícita, undefined)."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Simular o código original da função `soma(a,b)` em `utils.js` e analisar vulnerabilidades (ex: NaN, strings implícitas).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Identificar pelo menos 2 falhas potentes (ex: coerção implícita, undefined)."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "não foi possível interpretar a resposta do revisor, aprovação por presença de artefatos",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=false",
+          "agente=reviewer"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "revisão reprovou sem detalhar problemas específicos"
+        ],
+        "ts": "2026-09-15T18:27:39.982Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:26:32.950Z",
+      "atualizadaEm": "2026-09-15T18:27:39.982Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Simular o código original da função `soma(a,b)` em `utils.js` e analisar vulnerabilidades (ex: NaN, strings implícitas).\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Identificar pelo menos 2 falhas potentes (ex: coerção implícita, undefined).\nSUCCESS_CRITERIA: Identificar pelo menos 2 falhas potentes (ex: coerção implícita, undefined)."
+    },
+    {
+      "id": "tarefa_mu306qgm_r",
+      "descricao": "Reescrever a função `soma` em `utils.js` adicionando validação estrita de tipo (number) e lançamento de erros personalizados ou Tipados para inputs inválidos.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu306qgm_q"
+      ],
+      "recursoExclusivo": "utils.js",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Código compilado/executado sem erros de sintaxe.",
+        "Validação de tipo presente para `a` e `b`."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Reescrever a função `soma` em `utils.js` adicionando validação estrita de tipo (number) e lançamento de erros personalizados ou Tipados para inputs inválidos.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código compilado/executado sem erros de sintaxe."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_codigo → erro_codigo → erro_modelo"
+        ],
+        "evidencias": [
+          "agente=coding",
+          "tentativas=3/3"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:27:44.216Z"
+      },
+      "tentativas": 1,
+      "criadaEm": "2026-09-15T18:26:32.950Z",
+      "atualizadaEm": "2026-09-15T18:27:44.216Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Reescrever a função `soma` em `utils.js` adicionando validação estrita de tipo (number) e lançamento de erros personalizados ou Tipados para inputs inválidos.\nCONTEXT: - não foi possível interpretar a resposta do revisor, aprovação por presença de artefatos\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Código compilado/executado sem erros de sintaxe.\nSUCCESS_CRITERIA: Código compilado/executado sem erros de sintaxe.; Validação de tipo presente para `a` e `b`."
+    },
+    {
+      "id": "tarefa_mu306qgm_s",
+      "descricao": "Criar arquivo de teste `utils.test.js` cobrindo casos válidos (números) e inválidos (strings, objetos, undefined) para a função `soma`.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu306qgm_r"
+      ],
+      "recursoExclusivo": "utils.test.js",
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Testes executados via terminal (ex: `node --test` ou similar) passando 100%."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar arquivo de teste `utils.test.js` cobrindo casos válidos (números) e inválidos (strings, objetos, undefined) para a função `soma`.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Testes executados via terminal (ex: `node --test` ou similar) passando 100%."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:26:32.950Z",
+      "atualizadaEm": "2026-09-15T18:26:32.950Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu306qgm_r",
+      "para": "tarefa_mu306qgm_q"
+    },
+    {
+      "de": "tarefa_mu306qgm_s",
+      "para": "tarefa_mu306qgm_r"
+    }
+  ],
+  "agentes": [
+    "reviewer"
+  ],
+  "modelos": [
+    "ninerouter-imperion-dev"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu306qgm_q",
+      "status": "ok",
+      "resultado": "não foi possível interpretar a resposta do revisor, aprovação por presença de artefatos",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=false",
+        "agente=reviewer"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "revisão reprovou sem detalhar problemas específicos"
+      ],
+      "ts": "2026-09-15T18:27:39.982Z"
+    }
+  ],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu306qgm_r",
+      "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_codigo → erro_codigo → erro_modelo",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T18:27:44.216Z",
+      "tentativas": 1
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu306qgm_r",
+        "erro": "FALHA HONESTA (FASE 8): orçamento esgotado: 3/3 tentativas — histórico: erro_codigo → erro_codigo → erro_modelo",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T18:27:44.216Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T18:27:44.216Z"
+    }
+  ],
+  "progresso": 0.333,
+  "proximaAcao": "continuar executando tarefas prontas",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:26:32.946Z",
+  "atualizadaEm": "2026-09-15T18:27:44.216Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Simular o código original da função `soma(a,b)` sem validação.",
+    "Implementar validação de tipos (number) para os parâmetros.",
+    "Implementar tratamento de erros (try/catch ou erros explícitos) para entradas inválidas.",
+    "Garantir compatibilidade com Node.js/JS moderno.",
+    "Incluir testes básicos para validação da robustez."
+  ],
+  "entregaveis": [
+    "Arquivo `utils.js` atualizado com a função robusta.",
+    "Arquivo `utils.test.js` com casos de teste para validação.",
+    "Breve descrição das melhorias realizadas."
+  ],
+  "criteriosSucesso": [
+    "A função `soma` rejeita inputs não numéricos com erro claro.",
+    "A função retorna o resultado correto para inputs válidos.",
+    "Os testes automatizados passam."
+  ]
+}

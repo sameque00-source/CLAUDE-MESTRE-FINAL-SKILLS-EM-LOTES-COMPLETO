@@ -1,0 +1,88 @@
+{
+  "id": "missao_mu2ixxpe_m",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:23:48.962Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:23:48.962Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T10:23:48.963Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:23:48.963Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ixxpe_n",
+      "descricao": "Pesquisar e selecionar a melhor API de Vision-Language atual (ex: OpenAI, Anthropic, Stability) para geração de descrições, considerando custo, latência e qualidade de prompt em PT-BR.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório com top 3 opções de APIs Vision-Language",
+        "Justificativa técnica para a escolha da principal",
+        "Exemplo de response JSON esperado do modelo"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "A escolha do provedor de IA impacta diretamente a arquitetura de integração, custo e qualidade do resultado. Necessário verificar os modelos atuais suportando visão.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e selecionar a melhor API de Vision-Language atual (ex: OpenAI, Anthropic, Stability) para geração de descrições, considerando custo, latência e qualidade de prompt em PT-BR.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório com top 3 opções de APIs Vision-Language"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:48.962Z",
+      "atualizadaEm": "2026-09-15T10:23:48.962Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:23:48.962Z",
+  "atualizadaEm": "2026-09-15T10:23:48.962Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "id": "missao_mu2lrzpq_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:43:10.478Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:43:10.478Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via ninerouter-imperion-dev (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:43:10.483Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:43:10.483Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:44:22.807Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:44:22.808Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "revisão da missão reprovou, reabrindo implementação",
+      "ts": "2026-09-15T11:44:22.810Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "EXECUTANDO",
+      "motivo": "tarefas de implementação reabertas, retomando execução",
+      "ts": "2026-09-15T11:44:22.810Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:44:24.274Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:44:24.275Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Ausência de prova real de execução. O contexto afirma que o teste foi executado com sucesso, mas não há logs de terminal anexados ou ferramentas usadas para validar isso. Além disso, a validação falha em capturar Null/Undefined corretamente na mensagem de erro (diz 'deve ser número' mas o teste não cobre esses casos limpos) e o 'index.js' é colocado na raiz do workspace sem estrutura de pastas clara, o que pode conflitar com arquivos existentes. A abrangência do teste é insuficiente para garantir que 'não há lógica de negócio quebrada'.",
+      "ts": "2026-09-15T11:44:24.276Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:44:24.278Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T11:44:24.279Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CORRIGINDO",
+      "motivo": "Ausência de prova real de execução. O contexto afirma que o teste foi executado com sucesso, mas não há logs de terminal anexados ou ferramentas usadas para validar isso. Além disso, a validação falha em capturar Null/Undefined corretamente na mensagem de erro (diz 'deve ser número' mas o teste não cobre esses casos limpos) e o 'index.js' é colocado na raiz do workspace sem estrutura de pastas clara, o que pode conflitar com arquivos existentes. A abrangência do teste é insuficiente para garantir que 'não há lógica de negócio quebrada'.",
+      "ts": "2026-09-15T11:44:24.280Z"
+    },
+    {
+      "de": "CORRIGINDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:44:24.282Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:44:24.283Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lrzpu_q",
+      "descricao": "Implementar a função soma com validação de tipos e tratamento de erros no arquivo utils.js.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "utils.js",
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "A função verifica se a e b são números antes de somar.",
+        "A função lança um TypeError ou Error descritivo se os inputs forem inválidos.",
+        "O código está salvo no arquivo utils.js."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar a função soma com validação de tipos e tratamento de erros no arquivo utils.js.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "A função verifica se a e b são números antes de somar."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [
+          "utils.js",
+          "test_utils.js"
+        ],
+        "erros": [
+          "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node test_utils.js ENOENT\nstderr: \nstdout:"
+        ],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node test_utils.js",
+            "resultado": "falhou",
+            "evidencia": "spawn node test_utils.js ENOENT\nstderr: \nstdout:"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:44:24.271Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:43:10.482Z",
+      "atualizadaEm": "2026-09-15T11:44:24.273Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Implementar a função soma com validação de tipos e tratamento de erros no arquivo utils.js.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: A função verifica se a e b são números antes de somar.\nSUCCESS_CRITERIA: A função verifica se a e b são números antes de somar.; A função lança um TypeError ou Error descritivo se os inputs forem inválidos.; O código está salvo no arquivo utils.js.",
+      "motivoReabertura": null,
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2lrzpu_r",
+      "descricao": "Criar um arquivo de testes unitários que cobre casos de sucesso (números válidos) e falha (strings, objetos, ausência de args).",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2lrzpu_q"
+      ],
+      "recursoExclusivo": "utils.test.js",
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Arquivo de testes criado (ex: utils.test.js).",
+        "Testes incluem casos para: dois inteiros, dois floats, string, objeto, undefined, NaN.",
+        "Execução dos testes é possível via tooling padrão (node jest ou similar)."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar um arquivo de testes unitários que cobre casos de sucesso (números válidos) e falha (strings, objetos, ausência de args).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo de testes criado (ex: utils.test.js)."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "teste executado com sucesso (validação real)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "passou",
+            "evidencia": "Testando soma válida: 2 + 3 = 5\nTestando soma válida: -1 + 1 = 0\nErro capturado corretamente: O primeiro parâmetro 'a' deve ser um número válido.\nErro capturado corretamente: O segundo parâmetro 'b' deve ser um número válido.\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:44:22.020Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:43:10.482Z",
+      "atualizadaEm": "2026-09-15T11:44:22.020Z"
+    },
+    {
+      "id": "tarefa_mu2lrzpu_s",
+      "descricao": "Revisar o código final para garantir qualidade, clareza de mensagens de erro e cobertura de testes.",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2lrzpu_q",
+        "tarefa_mu2lrzpu_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Não há lógica de negócio quebrada.",
+        "Mensagens de erro são claras e informativas.",
+        "Sugestões de melhoria aplicadas ou justificadas."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código final para garantir qualidade, clareza de mensagens de erro e cobertura de testes.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Não há lógica de negócio quebrada."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Ausência de prova real de execução. O contexto afirma que o teste foi executado com sucesso, mas não há logs de terminal anexados ou ferramentas usadas para validar isso. Além disso, a validação falha em capturar Null/Undefined corretamente na mensagem de erro (diz 'deve ser número' mas o teste não cobre esses casos limpos) e o 'index.js' é colocado na raiz do workspace sem estrutura de pastas clara, o que pode conflitar com arquivos existentes. A abrangência do teste é insuficiente para garantir que 'não há lógica de negócio quebrada'.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=false",
+          "agente=reviewer",
+          "Não há prova concreta de que o teste foi executado (logs de terminal ausentes).",
+          "O teste não cobre casos de entrada 'null' ou 'undefined', que são comuns e podem gerar mensagens de erro confusas ou falhas inesperadas dependendo do ambiente estrito.",
+          "A estrutura de arquivos (index.js e utils.js na raiz) não é garantida por ferramentas; se houver um index.js pré-existente no workspace, ele seria sobrescrito silenciosamente.",
+          "A mensagem de erro não é suficientemente informativa quanto ao valor recebido vs o valor esperado (melhor prática de debug)."
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "Não há prova concreta de que o teste foi executado (logs de terminal ausentes).",
+          "O teste não cobre casos de entrada 'null' ou 'undefined', que são comuns e podem gerar mensagens de erro confusas ou falhas inesperadas dependendo do ambiente estrito.",
+          "A estrutura de arquivos (index.js e utils.js na raiz) não é garantida por ferramentas; se houver um index.js pré-existente no workspace, ele seria sobrescrito silenciosamente.",
+          "A mensagem de erro não é suficientemente informativa quanto ao valor recebido vs o valor esperado (melhor prática de debug)."
+        ],
+        "ts": "2026-09-15T11:44:22.807Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:43:10.482Z",
+      "atualizadaEm": "2026-09-15T11:44:22.807Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Revisar o código final para garantir qualidade, clareza de mensagens de erro e cobertura de testes.\nCONTEXT: - Implementei a função soma com validação de parâmetros e tratamento de erros no arquivo utils.js, e criei um script de teste para verificar o funcionamento.\n- teste executado com sucesso (validação real)\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Não há lógica de negócio quebrada.\nSUCCESS_CRITERIA: Não há lógica de negócio quebrada.; Mensagens de erro são claras e informativas.; Sugestões de melhoria aplicadas ou justificadas."
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lrzpu_r",
+      "para": "tarefa_mu2lrzpu_q"
+    },
+    {
+      "de": "tarefa_mu2lrzpu_s",
+      "para": "tarefa_mu2lrzpu_q"
+    },
+    {
+      "de": "tarefa_mu2lrzpu_s",
+      "para": "tarefa_mu2lrzpu_r"
+    }
+  ],
+  "agentes": [
+    "coding",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lrzpu_q",
+      "status": "ok",
+      "resultado": "Implementei a função soma com validação de parâmetros e tratamento de erros no arquivo utils.js, e criei um script de teste para verificar o funcionamento.",
+      "arquivos": [
+        "utils.js",
+        "index.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [
+        {
+          "comando": "node index.js",
+          "resultado": "passou",
+          "evidencia": "Testando soma válida: 2 + 3 = 5\nTestando soma válida: -1 + 1 = 0\nErro capturado corretamente: O primeiro parâmetro 'a' deve ser um número válido.\nErro capturado corretamente: O segundo parâmetro 'b' deve ser um número válido.\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:44:21.947Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lrzpu_r",
+      "status": "ok",
+      "resultado": "teste executado com sucesso (validação real)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [
+        {
+          "comando": "node",
+          "resultado": "passou",
+          "evidencia": "Testando soma válida: 2 + 3 = 5\nTestando soma válida: -1 + 1 = 0\nErro capturado corretamente: O primeiro parâmetro 'a' deve ser um número válido.\nErro capturado corretamente: O segundo parâmetro 'b' deve ser um número válido.\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:44:22.020Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lrzpu_s",
+      "status": "ok",
+      "resultado": "Ausência de prova real de execução. O contexto afirma que o teste foi executado com sucesso, mas não há logs de terminal anexados ou ferramentas usadas para validar isso. Além disso, a validação falha em capturar Null/Undefined corretamente na mensagem de erro (diz 'deve ser número' mas o teste não cobre esses casos limpos) e o 'index.js' é colocado na raiz do workspace sem estrutura de pastas clara, o que pode conflitar com arquivos existentes. A abrangência do teste é insuficiente para garantir que 'não há lógica de negócio quebrada'.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=false",
+        "agente=reviewer",
+        "Não há prova concreta de que o teste foi executado (logs de terminal ausentes).",
+        "O teste não cobre casos de entrada 'null' ou 'undefined', que são comuns e podem gerar mensagens de erro confusas ou falhas inesperadas dependendo do ambiente estrito.",
+        "A estrutura de arquivos (index.js e utils.js na raiz) não é garantida por ferramentas; se houver um index.js pré-existente no workspace, ele seria sobrescrito silenciosamente.",
+        "A mensagem de erro não é suficientemente informativa quanto ao valor recebido vs o valor esperado (melhor prática de debug)."
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "Não há prova concreta de que o teste foi executado (logs de terminal ausentes).",
+        "O teste não cobre casos de entrada 'null' ou 'undefined', que são comuns e podem gerar mensagens de erro confusas ou falhas inesperadas dependendo do ambiente estrito.",
+        "A estrutura de arquivos (index.js e utils.js na raiz) não é garantida por ferramentas; se houver um index.js pré-existente no workspace, ele seria sobrescrito silenciosamente.",
+        "A mensagem de erro não é suficientemente informativa quanto ao valor recebido vs o valor esperado (melhor prática de debug)."
+      ],
+      "ts": "2026-09-15T11:44:22.807Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 2 arquivo(s) real(is) no workspace: index.js, utils.js",
+      "ts": "2026-09-15T11:44:22.808Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/3 subtarefas concluídas (1 canceladas por falha definitiva), 3 arquivo(s) real(is) no workspace: index.js, test_utils.js, utils.js",
+      "ts": "2026-09-15T11:44:24.275Z"
+    },
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/3 subtarefas concluídas (1 canceladas por falha definitiva), 3 arquivo(s) real(is) no workspace: index.js, test_utils.js, utils.js",
+      "ts": "2026-09-15T11:44:24.279Z"
+    }
+  ],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2lrzpu_q",
+      "erro": "geração de código falhou: timeout apos 20000ms",
+      "tipo": "timeout",
+      "ts": "2026-09-15T11:44:04.735Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2lrzpu_q",
+      "erro": "geração de código falhou: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1789516800000\"},\"limit_source\":\"openrouter_free_tier_daily\",\"remedy_hi",
+      "tipo": "quota",
+      "ts": "2026-09-15T11:44:20.582Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2lrzpu_q",
+      "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node test_utils.js ENOENT\nstderr: \nstdout:",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:44:24.272Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lrzpu_q",
+        "erro": "geração de código falhou: timeout apos 20000ms",
+        "tipo": "timeout",
+        "ts": "2026-09-15T11:44:04.735Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:44:04.735Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lrzpu_q",
+        "erro": "geração de código falhou: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1789516800000\"},\"limit_source\":\"openrouter_free_tier_daily\",\"remedy_hi",
+        "tipo": "quota",
+        "ts": "2026-09-15T11:44:20.582Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:44:20.582Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lrzpu_q",
+        "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node test_utils.js ENOENT\nstderr: \nstdout:",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:44:24.272Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:44:24.272Z"
+    }
+  ],
+  "progresso": 0.667,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:44:24.283Z"
+  },
+  "criadaEm": "2026-09-15T11:43:10.478Z",
+  "atualizadaEm": "2026-09-15T11:44:24.283Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Implementar validação de tipos para os argumentos a e b (número).",
+    "Tratar erro se argumentos não forem numéricos.",
+    "Escrever testes unitários para casos válidos e inválidos.",
+    "Manter a assinatura da função compatível com o uso original."
+  ],
+  "entregaveis": [
+    "Código JavaScript melhorado da função soma.",
+    "Arquivo de testes unitários correspondente."
+  ],
+  "criteriosSucesso": [
+    "Função lança erro claro para inputs inválidos.",
+    "Função retorna resultado correto para inputs válidos.",
+    "Todos os testes unitários passam."
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "index.js"
+    ],
+    "tipoExecucao": "unica"
+  },
+  "_rodadasRevisaoMissao": 3
+}

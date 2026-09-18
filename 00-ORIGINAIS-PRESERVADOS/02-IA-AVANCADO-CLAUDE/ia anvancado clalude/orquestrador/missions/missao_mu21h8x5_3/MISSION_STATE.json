@@ -1,0 +1,536 @@
+{
+  "id": "missao_mu21h8x5_3",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:14:56.873Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:14:56.873Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (7 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:14:56.875Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:14:56.875Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T02:15:09.759Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21h8x6_4",
+      "descricao": "Pesquisar motores de renderização de vídeo e manipulação de mídia em código aberto (ex: FFmpeg, libopenshot, GStreamer).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de bibliotecas de mídia com prós, contras e viabilidade de integração."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a biblioteca de manipulação de vídeo mais estável e performática para o núcleo da aplicação.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar motores de renderização de vídeo e manipulação de mídia em código aberto (ex: FFmpeg, libopenshot, GStreamer).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de bibliotecas de mídia com prós, contras e viabilidade de integração."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar motores de renderização de víd",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.681Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.874Z",
+      "atualizadaEm": "2026-09-15T02:15:09.681Z"
+    },
+    {
+      "id": "tarefa_mu21h8x6_5",
+      "descricao": "Pesquisar frameworks de UI multiplataforma de alta performance para aplicações desktop complexas (ex: Tauri + React, Electron, Qt/C++).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório de frameworks de UI com foco em renderização em tempo real e consumo de memória."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Determinar a melhor stack tecnológica para suportar uma interface rica com canvas e linha do tempo fluida.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar frameworks de UI multiplataforma de alta performance para aplicações desktop complexas (ex: Tauri + React, Electron, Qt/C++).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de frameworks de UI com foco em renderização em tempo real e consumo de memória."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar frameworks de UI multiplatafor",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.681Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.874Z",
+      "atualizadaEm": "2026-09-15T02:15:09.681Z"
+    },
+    {
+      "id": "tarefa_mu21h8x6_6",
+      "descricao": "Definir a arquitetura técnica geral do editor de vídeo com base nas tecnologias pesquisadas (escolha: Tauri + Rust no backend com FFmpeg, e React + HTML5 Canvas no frontend).",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu21h8x6_4",
+        "tarefa_mu21h8x6_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura de software detalhando a comunicação entre UI e motor de mídia."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura técnica geral do editor de vídeo com base nas tecnologias pesquisadas (escolha: Tauri + Rust no backend com FFmpeg, e React + HTML5 Canvas no frontend).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura de software detalhando a comunicação entre UI e motor de mídia."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir a arquitetura técnica geral do e",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.696Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.874Z",
+      "atualizadaEm": "2026-09-15T02:15:09.696Z"
+    },
+    {
+      "id": "tarefa_mu21h8x6_7",
+      "descricao": "Implementar o núcleo de processamento de mídia (backend em Rust integrando FFmpeg para decodificação, edição multipista e exportação).",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21h8x6_6"
+      ],
+      "recursoExclusivo": "backend_midia",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "compilador",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Módulo backend compilando sem erros e executando operações básicas de corte e exportação via testes unitários."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o núcleo de processamento de mídia (backend em Rust integrando FFmpeg para decodificação, edição multipista e exportação).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo backend compilando sem erros e executando operações básicas de corte e exportação via testes unitários."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o núcleo de processamento de",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.712Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.874Z",
+      "atualizadaEm": "2026-09-15T02:15:09.712Z"
+    },
+    {
+      "id": "tarefa_mu21h8x6_8",
+      "descricao": "Desenvolver a interface do usuário (frontend em React/TypeScript com painel de preview, gerenciador de arquivos de mídia e linha do tempo interativa).",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21h8x6_6"
+      ],
+      "recursoExclusivo": "frontend_ui",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Interface renderizando a linha do tempo e permitindo arrastar e posicionar clipes visualmente."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface do usuário (frontend em React/TypeScript com painel de preview, gerenciador de arquivos de mídia e linha do tempo interativa).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface renderizando a linha do tempo e permitindo arrastar e posicionar clipes visualmente."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver a interface do usuário (fron",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.712Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.874Z",
+      "atualizadaEm": "2026-09-15T02:15:09.712Z"
+    },
+    {
+      "id": "tarefa_mu21h8x7_9",
+      "descricao": "Integrar a interface do usuário com o núcleo de processamento de mídia através da ponte Tauri e realizar testes de ponta a ponta.",
+      "tipo": "integracao",
+      "dependeDe": [
+        "tarefa_mu21h8x6_7",
+        "tarefa_mu21h8x6_8"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "testes",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Aplicativo completo capaz de importar, editar visualmente e exportar um arquivo de vídeo funcional."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar a interface do usuário com o núcleo de processamento de mídia através da ponte Tauri e realizar testes de ponta a ponta.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicativo completo capaz de importar, editar visualmente e exportar um arquivo de vídeo funcional."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Integrar a interface do usuário com o nú",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.728Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.875Z",
+      "atualizadaEm": "2026-09-15T02:15:09.728Z"
+    },
+    {
+      "id": "tarefa_mu21h8x7_a",
+      "descricao": "Configurar pipeline de CI/CD e empacotamento para gerar os instaladores multiplataforma (Windows, macOS, Linux).",
+      "tipo": "devops",
+      "dependeDe": [
+        "tarefa_mu21h8x7_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "devops",
+      "modelo": "mock",
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Artefatos de instalação gerados com sucesso para os sistemas operacionais alvo."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Configurar pipeline de CI/CD e empacotamento para gerar os instaladores multiplataforma (Windows, macOS, Linux).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Artefatos de instalação gerados com sucesso para os sistemas operacionais alvo."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Configurar pipeline de CI/CD e empacotam",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.743Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.875Z",
+      "atualizadaEm": "2026-09-15T02:15:09.743Z"
+    },
+    {
+      "id": "tarefa_mu21h8x7_b",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu21h8x7_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Revisar e validar o resultado das tarefa",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:15:09.758Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:56.875Z",
+      "atualizadaEm": "2026-09-15T02:15:09.758Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21h8x6_6",
+      "para": "tarefa_mu21h8x6_4"
+    },
+    {
+      "de": "tarefa_mu21h8x6_6",
+      "para": "tarefa_mu21h8x6_5"
+    },
+    {
+      "de": "tarefa_mu21h8x6_7",
+      "para": "tarefa_mu21h8x6_6"
+    },
+    {
+      "de": "tarefa_mu21h8x6_8",
+      "para": "tarefa_mu21h8x6_6"
+    },
+    {
+      "de": "tarefa_mu21h8x7_9",
+      "para": "tarefa_mu21h8x6_7"
+    },
+    {
+      "de": "tarefa_mu21h8x7_9",
+      "para": "tarefa_mu21h8x6_8"
+    },
+    {
+      "de": "tarefa_mu21h8x7_a",
+      "para": "tarefa_mu21h8x7_9"
+    },
+    {
+      "de": "tarefa_mu21h8x7_b",
+      "para": "tarefa_mu21h8x7_a"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "backend",
+    "frontend",
+    "coding",
+    "devops",
+    "reviewer"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu21h8x6_4",
+      "status": "ok",
+      "resultado": "mock: Pesquisar motores de renderização de víd",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.681Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21h8x6_5",
+      "status": "ok",
+      "resultado": "mock: Pesquisar frameworks de UI multiplatafor",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.681Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21h8x6_6",
+      "status": "ok",
+      "resultado": "mock: Definir a arquitetura técnica geral do e",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.696Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21h8x6_7",
+      "status": "ok",
+      "resultado": "mock: Implementar o núcleo de processamento de",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.712Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21h8x6_8",
+      "status": "ok",
+      "resultado": "mock: Desenvolver a interface do usuário (fron",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.712Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21h8x7_9",
+      "status": "ok",
+      "resultado": "mock: Integrar a interface do usuário com o nú",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.728Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21h8x7_a",
+      "status": "ok",
+      "resultado": "mock: Configurar pipeline de CI/CD e empacotam",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.743Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21h8x7_b",
+      "status": "ok",
+      "resultado": "mock: Revisar e validar o resultado das tarefa",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:15:09.758Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:14:56.873Z",
+  "atualizadaEm": "2026-09-15T02:15:09.759Z",
+  "modoExecucao": "AUTO",
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A limitação do ffmpeg.wasm no Safari afeta apenas implementações que dependam de FFmpeg compilado para WebAssembly. O plano atual utiliza FFmpeg nativo integrado ao backend Rust via Tauri, portanto não há impacto nas tarefas existentes.",
+      "ts": "2026-09-15T02:15:09.664Z",
+      "canceladas": 0,
+      "adicionadas": 0
+    }
+  ]
+}

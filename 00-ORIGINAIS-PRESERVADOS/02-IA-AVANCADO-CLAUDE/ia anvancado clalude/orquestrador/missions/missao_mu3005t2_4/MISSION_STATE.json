@@ -1,0 +1,614 @@
+{
+  "id": "missao_mu3005t2_4",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:21:26.246Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:21:26.246Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (8 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T18:21:26.247Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:21:26.247Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:21:46.502Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu3005t2_5",
+      "descricao": "Pesquisar APIs modernas do navegador para manipulação de mídia (WebCodecs, Web Audio API e WebGPU)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório de viabilidade técnica das APIs de mídia do navegador documentado"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar suporte atual de WebCodecs e WebGPU para processamento de vídeo eficiente",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar APIs modernas do navegador para manipulação de mídia (WebCodecs, Web Audio API e WebGPU)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de viabilidade técnica das APIs de mídia do navegador documentado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar APIs modernas do navegador par",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.424Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.246Z",
+      "atualizadaEm": "2026-09-15T18:21:46.424Z"
+    },
+    {
+      "id": "tarefa_mu3005t3_6",
+      "descricao": "Pesquisar bibliotecas existentes de interface de timeline e edição de vídeo em JavaScript/React",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de bibliotecas open source viáveis para timeline e UI selecionadas"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Evitar reinventar componentes complexos de timeline e manipulação de canvas",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas existentes de interface de timeline e edição de vídeo em JavaScript/React",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de bibliotecas open source viáveis para timeline e UI selecionadas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas existentes de inte",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.424Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.247Z",
+      "atualizadaEm": "2026-09-15T18:21:46.424Z"
+    },
+    {
+      "id": "tarefa_mu3005t3_7",
+      "descricao": "Definir a arquitetura técnica do editor, stack de frontend e pipeline de renderização",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu3005t2_5",
+        "tarefa_mu3005t3_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura de software aprovado especificando os módulos e fluxo de dados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura técnica do editor, stack de frontend e pipeline de renderização",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura de software aprovado especificando os módulos e fluxo de dados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir a arquitetura técnica do editor,",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.440Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.247Z",
+      "atualizadaEm": "2026-09-15T18:21:46.440Z"
+    },
+    {
+      "id": "tarefa_mu3005t3_8",
+      "descricao": "Implementar a estrutura base do projeto frontend e o layout principal da interface de edição",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu3005t3_7"
+      ],
+      "recursoExclusivo": "src/App.tsx",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Aplicação inicializa com painéis de preview, biblioteca de mídia e timeline integrados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a estrutura base do projeto frontend e o layout principal da interface de edição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicação inicializa com painéis de preview, biblioteca de mídia e timeline integrados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar a estrutura base do projeto ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.456Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.247Z",
+      "atualizadaEm": "2026-09-15T18:21:46.456Z"
+    },
+    {
+      "id": "tarefa_mu3005t3_9",
+      "descricao": "Desenvolver o componente de timeline multitrack com suporte a arrastar, cortar e posicionar clipes",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu3005t3_8"
+      ],
+      "recursoExclusivo": "src/components/Timeline.tsx",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Timeline interativa capaz de gerenciar múltiplas faixas de vídeo e áudio com precisão de frames"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver o componente de timeline multitrack com suporte a arrastar, cortar e posicionar clipes",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Timeline interativa capaz de gerenciar múltiplas faixas de vídeo e áudio com precisão de frames"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver o componente de timeline mul",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.471Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.247Z",
+      "atualizadaEm": "2026-09-15T18:21:46.471Z"
+    },
+    {
+      "id": "tarefa_mu3005t3_a",
+      "descricao": "Implementar o motor de reprodução e o pipeline de renderização/exportação usando WebCodecs",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu3005t3_7",
+        "tarefa_mu3005t3_8"
+      ],
+      "recursoExclusivo": "src/services/VideoEngine.ts",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Módulo capaz de decodificar frames de vídeo na timeline e exportar o resultado final em arquivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar o motor de reprodução e o pipeline de renderização/exportação usando WebCodecs",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo capaz de decodificar frames de vídeo na timeline e exportar o resultado final em arquivo"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o motor de reprodução e o pi",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.471Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.247Z",
+      "atualizadaEm": "2026-09-15T18:21:46.471Z"
+    },
+    {
+      "id": "tarefa_mu3005t3_b",
+      "descricao": "Executar testes de integração e validação de performance da renderização e UI",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu3005t3_9",
+        "tarefa_mu3005t3_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "testes",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Suíte de testes executada sem falhas e fluxo completo de edição e exportação validado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes de integração e validação de performance da renderização e UI",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Suíte de testes executada sem falhas e fluxo completo de edição e exportação validado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar testes de integração e validaçã",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.486Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.247Z",
+      "atualizadaEm": "2026-09-15T18:21:46.486Z"
+    },
+    {
+      "id": "tarefa_mu3005t3_c",
+      "descricao": "Realizar revisão final de código e refinamento de usabilidade (UX)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu3005t3_b"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Código limpo, sem erros de compilação e pronto para distribuição"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Realizar revisão final de código e refinamento de usabilidade (UX)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código limpo, sem erros de compilação e pronto para distribuição"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Realizar revisão final de código e refin",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.502Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:26.247Z",
+      "atualizadaEm": "2026-09-15T18:21:46.502Z"
+    },
+    {
+      "id": "tarefa_mu300ld2_q",
+      "descricao": "Pesquisar e definir estratégia de fallback no servidor ou alternativa nativa para compatibilidade de processamento de vídeo no Safari",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu3005t2_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Identificar se será utilizado serviço backend para transcoding no Safari",
+        "Documentar arquitetura de fallback para garantir compatibilidade multiplataforma"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e definir estratégia de fallback no servidor ou alternativa nativa para compatibilidade de processamento de vídeo no Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar e definir estratégia de fallba",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:21:46.440Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:21:46.406Z",
+      "atualizadaEm": "2026-09-15T18:21:46.440Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu3005t3_7",
+      "para": "tarefa_mu3005t2_5"
+    },
+    {
+      "de": "tarefa_mu3005t3_7",
+      "para": "tarefa_mu3005t3_6"
+    },
+    {
+      "de": "tarefa_mu3005t3_8",
+      "para": "tarefa_mu3005t3_7"
+    },
+    {
+      "de": "tarefa_mu3005t3_9",
+      "para": "tarefa_mu3005t3_8"
+    },
+    {
+      "de": "tarefa_mu3005t3_a",
+      "para": "tarefa_mu3005t3_7"
+    },
+    {
+      "de": "tarefa_mu3005t3_a",
+      "para": "tarefa_mu3005t3_8"
+    },
+    {
+      "de": "tarefa_mu3005t3_b",
+      "para": "tarefa_mu3005t3_9"
+    },
+    {
+      "de": "tarefa_mu3005t3_b",
+      "para": "tarefa_mu3005t3_a"
+    },
+    {
+      "de": "tarefa_mu3005t3_c",
+      "para": "tarefa_mu3005t3_b"
+    },
+    {
+      "de": "tarefa_mu300ld2_q",
+      "para": "tarefa_mu3005t2_5"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "frontend",
+    "coding",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu3005t2_5",
+      "status": "ok",
+      "resultado": "mock: Pesquisar APIs modernas do navegador par",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.424Z"
+    },
+    {
+      "tarefaId": "tarefa_mu3005t3_6",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas existentes de inte",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.424Z"
+    },
+    {
+      "tarefaId": "tarefa_mu3005t3_7",
+      "status": "ok",
+      "resultado": "mock: Definir a arquitetura técnica do editor,",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.440Z"
+    },
+    {
+      "tarefaId": "tarefa_mu300ld2_q",
+      "status": "ok",
+      "resultado": "mock: Pesquisar e definir estratégia de fallba",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.440Z"
+    },
+    {
+      "tarefaId": "tarefa_mu3005t3_8",
+      "status": "ok",
+      "resultado": "mock: Implementar a estrutura base do projeto ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.456Z"
+    },
+    {
+      "tarefaId": "tarefa_mu3005t3_9",
+      "status": "ok",
+      "resultado": "mock: Desenvolver o componente de timeline mul",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.471Z"
+    },
+    {
+      "tarefaId": "tarefa_mu3005t3_a",
+      "status": "ok",
+      "resultado": "mock: Implementar o motor de reprodução e o pi",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.471Z"
+    },
+    {
+      "tarefaId": "tarefa_mu3005t3_b",
+      "status": "ok",
+      "resultado": "mock: Executar testes de integração e validaçã",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.486Z"
+    },
+    {
+      "tarefaId": "tarefa_mu3005t3_c",
+      "status": "ok",
+      "resultado": "mock: Realizar revisão final de código e refin",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:21:46.502Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:21:26.246Z",
+  "atualizadaEm": "2026-09-15T18:21:46.502Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface timeline multitrack (vídeo, áudio, legendas)",
+    "Renderização e efeitos via WebCodecs e WebGL/WebGPU",
+    "Suporte a corte, divisão, transições e ajuste de velocidade",
+    "Exportação local de vídeo em múltiplos formatos e resoluções",
+    "Gerenciamento eficiente de arquivos de mídia locais (drag and drop)"
+  ],
+  "entregaveis": [
+    "Aplicação web funcional de edição de vídeo",
+    "Módulo de manipulação de timeline e stream de mídia",
+    "Pipeline de renderização e exportação de vídeo"
+  ],
+  "criteriosSucesso": [
+    "Aplicação capaz de importar, editar e exportar um vídeo 1080p com áudio e cortes na timeline sem travamentos críticos"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "O suporte limitado do ffmpeg.wasm no Safari exige uma tarefa de pesquisa e definição de estratégia para um fallback no servidor ou alternativa nativa, impactando a arquitetura técnica e o pipeline de renderização.",
+      "ts": "2026-09-15T18:21:46.406Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

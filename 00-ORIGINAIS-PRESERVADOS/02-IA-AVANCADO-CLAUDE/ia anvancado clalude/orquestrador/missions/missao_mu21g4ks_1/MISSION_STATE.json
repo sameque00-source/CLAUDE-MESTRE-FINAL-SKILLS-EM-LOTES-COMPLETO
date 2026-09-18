@@ -1,0 +1,82 @@
+{
+  "id": "missao_mu21g4ks_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:14:04.587Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:14:04.588Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T02:14:04.594Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:14:04.595Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21g4ky_2",
+      "descricao": "Localizar e substituir a palavra 'aplicacao' por 'aplicação' no arquivo README.md e verificar as alterações via git.",
+      "tipo": "execucao",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "O comando git diff mostra apenas a correção ortográfica esperada no README.md"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Localizar e substituir a palavra 'aplicacao' por 'aplicação' no arquivo README.md e verificar as alterações via git.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O comando git diff mostra apenas a correção ortográfica esperada no README.md"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:04.594Z",
+      "atualizadaEm": "2026-09-15T02:14:04.594Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:14:04.587Z",
+  "atualizadaEm": "2026-09-15T02:14:04.587Z",
+  "modoExecucao": "AUTO"
+}

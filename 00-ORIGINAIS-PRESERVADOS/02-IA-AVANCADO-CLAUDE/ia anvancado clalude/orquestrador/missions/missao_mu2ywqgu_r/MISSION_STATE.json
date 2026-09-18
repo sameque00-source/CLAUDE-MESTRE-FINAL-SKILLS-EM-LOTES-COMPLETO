@@ -1,0 +1,131 @@
+{
+  "id": "missao_mu2ywqgu_r",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:50:46.782Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:50:46.782Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T17:50:46.782Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:50:46.783Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ywqgu_s",
+      "descricao": "Escrever o script bash que valida a pasta, inicializa o git se necessário, faz commit e push para o repositório.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo de script criado com permissão de execução e lógica correta de comandos git."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script bash que valida a pasta, inicializa o git se necessário, faz commit e push para o repositório.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo de script criado com permissão de execução e lógica correta de comandos git."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:46.782Z",
+      "atualizadaEm": "2026-09-15T17:50:46.782Z"
+    },
+    {
+      "id": "tarefa_mu2ywqgv_t",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2ywqgu_s"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:46.783Z",
+      "atualizadaEm": "2026-09-15T17:50:46.783Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ywqgv_t",
+      "para": "tarefa_mu2ywqgu_s"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:50:46.782Z",
+  "atualizadaEm": "2026-09-15T17:50:46.782Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "O script deve aceitar o caminho da pasta e a URL do repositório remoto",
+    "Deve automatizar git init, add, commit e push",
+    "Deve lidar com cenários básicos de erro (ex: pasta não existe)"
+  ],
+  "entregaveis": [
+    "Script bash executável de backup e publicação"
+  ],
+  "criteriosSucesso": [
+    "Script criado, executável e capaz de enviar alterações para o repositório remoto com sucesso"
+  ]
+}

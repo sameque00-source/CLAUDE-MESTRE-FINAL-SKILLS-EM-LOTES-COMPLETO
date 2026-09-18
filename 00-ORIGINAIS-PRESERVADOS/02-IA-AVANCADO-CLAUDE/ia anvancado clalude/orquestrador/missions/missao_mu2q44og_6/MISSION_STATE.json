@@ -1,0 +1,259 @@
+{
+  "id": "missao_mu2q44og_6",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:44:35.248Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:44:35.248Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T13:44:35.249Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:44:35.249Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q44oh_7",
+      "descricao": "Definir a stack tecnológica (ex: React para frontend e Node.js/Express ou Serverless para backend com Gemini API)",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Stack definida e documentada em README inicial"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a stack tecnológica (ex: React para frontend e Node.js/Express ou Serverless para backend com Gemini API)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Stack definida e documentada em README inicial"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:35.249Z",
+      "atualizadaEm": "2026-09-15T13:44:35.249Z"
+    },
+    {
+      "id": "tarefa_mu2q44oh_8",
+      "descricao": "Implementar a interface de usuário (frontend) com componente de upload de imagem e exibição da descrição",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2q44oh_7"
+      ],
+      "recursoExclusivo": "src/App.jsx",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Tela funcional aceitando arquivos de imagem e exibindo o resultado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a interface de usuário (frontend) com componente de upload de imagem e exibição da descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tela funcional aceitando arquivos de imagem e exibindo o resultado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:35.249Z",
+      "atualizadaEm": "2026-09-15T13:44:35.249Z"
+    },
+    {
+      "id": "tarefa_mu2q44oh_9",
+      "descricao": "Implementar a integração com a API multimodal para receber a imagem, processar e retornar a descrição do produto",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2q44oh_7"
+      ],
+      "recursoExclusivo": "server.js",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint funcional retornando descrição textual baseada na imagem enviada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a integração com a API multimodal para receber a imagem, processar e retornar a descrição do produto",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint funcional retornando descrição textual baseada na imagem enviada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:35.249Z",
+      "atualizadaEm": "2026-09-15T13:44:35.249Z"
+    },
+    {
+      "id": "tarefa_mu2q44oh_a",
+      "descricao": "Conectar o frontend ao backend e realizar teste integrado do fluxo completo",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2q44oh_8",
+        "tarefa_mu2q44oh_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Upload de foto gera descrição exibida na tela sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Conectar o frontend ao backend e realizar teste integrado do fluxo completo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Upload de foto gera descrição exibida na tela sem erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:35.249Z",
+      "atualizadaEm": "2026-09-15T13:44:35.249Z"
+    },
+    {
+      "id": "tarefa_mu2q44oh_b",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2q44oh_8",
+        "tarefa_mu2q44oh_9",
+        "tarefa_mu2q44oh_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:35.249Z",
+      "atualizadaEm": "2026-09-15T13:44:35.249Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2q44oh_8",
+      "para": "tarefa_mu2q44oh_7"
+    },
+    {
+      "de": "tarefa_mu2q44oh_9",
+      "para": "tarefa_mu2q44oh_7"
+    },
+    {
+      "de": "tarefa_mu2q44oh_a",
+      "para": "tarefa_mu2q44oh_8"
+    },
+    {
+      "de": "tarefa_mu2q44oh_a",
+      "para": "tarefa_mu2q44oh_9"
+    },
+    {
+      "de": "tarefa_mu2q44oh_b",
+      "para": "tarefa_mu2q44oh_8"
+    },
+    {
+      "de": "tarefa_mu2q44oh_b",
+      "para": "tarefa_mu2q44oh_9"
+    },
+    {
+      "de": "tarefa_mu2q44oh_b",
+      "para": "tarefa_mu2q44oh_a"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:44:35.248Z",
+  "atualizadaEm": "2026-09-15T13:44:35.248Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface simples para upload de imagem",
+    "Integração com API de IA multimodal (ex: Google Gemini API) para análise visual e geração de texto",
+    "Exibição da descrição gerada em tempo real para cópia"
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação",
+    "Instruções básicas de execução"
+  ],
+  "criteriosSucesso": [
+    "O usuário consegue enviar uma foto de produto e receber uma descrição coerente gerada por IA."
+  ]
+}

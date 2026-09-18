@@ -1,0 +1,132 @@
+{
+  "id": "missao_mu21mqg8_o",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:19:12.872Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:19:12.873Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:19:12.874Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:19:12.874Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21mqga_p",
+      "descricao": "Pesquisar a API multimodal mais adequada e econômica para análise de imagens (ex: Google Generative AI SDK)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Biblioteca e modelo de IA definidos com exemplo funcional documentado"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir a escolha da API atual mais barata e simples para visão computacional.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar a API multimodal mais adequada e econômica para análise de imagens (ex: Google Generative AI SDK)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Biblioteca e modelo de IA definidos com exemplo funcional documentado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:12.874Z",
+      "atualizadaEm": "2026-09-15T02:19:12.874Z"
+    },
+    {
+      "id": "tarefa_mu21mqga_q",
+      "descricao": "Desenvolver a interface e a lógica backend em Next.js para upload de foto e chamada da API de IA",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21mqga_p"
+      ],
+      "recursoExclusivo": "codigo_fonte",
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Aplicação processa imagem enviada e retorna a descrição na interface com sucesso"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "fullstack",
+      "contexto": {
+        "objetivo": "Desenvolver a interface e a lógica backend em Next.js para upload de foto e chamada da API de IA",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicação processa imagem enviada e retorna a descrição na interface com sucesso"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:12.874Z",
+      "atualizadaEm": "2026-09-15T02:19:12.874Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21mqga_q",
+      "para": "tarefa_mu21mqga_p"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:19:12.872Z",
+  "atualizadaEm": "2026-09-15T02:19:12.872Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface web minimalista para upload de imagem",
+    "Integração com API de IA multimodal (ex: Google Gemini Flash ou OpenAI GPT-4o-mini) para análise da imagem",
+    "Exibição da descrição gerada na tela"
+  ],
+  "entregaveis": [
+    "Código-fonte completo da aplicação",
+    "Instruções básicas de configuração e execução"
+  ],
+  "criteriosSucesso": [
+    "Aplicação roda localmente, aceita upload de foto de produto e exibe descrição coerente gerada por IA."
+  ]
+}

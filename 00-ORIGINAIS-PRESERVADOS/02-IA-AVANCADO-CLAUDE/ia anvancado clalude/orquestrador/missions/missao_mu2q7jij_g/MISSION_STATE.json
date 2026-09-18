@@ -1,0 +1,131 @@
+{
+  "id": "missao_mu2q7jij_g",
+  "objetivo": "Crie um pequeno aplicativo web funcional: um servidor Node.js (http nativo, sem dependências externas) que responde na rota / com uma pagina HTML simples dizendo \"Ola, mundo!\", rodando na porta 3900.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:47:14.443Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:47:14.443Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T13:47:14.448Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:47:14.448Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q7jin_h",
+      "descricao": "Escrever o código do servidor HTTP nativo em server.js",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "server.js",
+      "status": "pendente",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Arquivo server.js criado com a lógica do servidor http na porta 3900"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Escrever o código do servidor HTTP nativo em server.js",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo server.js criado com a lógica do servidor http na porta 3900"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:47:14.447Z",
+      "atualizadaEm": "2026-09-15T13:47:14.447Z"
+    },
+    {
+      "id": "tarefa_mu2q7jio_i",
+      "descricao": "Validar o funcionamento do servidor executando-o e testando a resposta HTTP",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2q7jin_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Servidor responde com status 200 e conteúdo HTML 'Ola, mundo!' na porta 3900"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar o funcionamento do servidor executando-o e testando a resposta HTTP",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Servidor responde com status 200 e conteúdo HTML 'Ola, mundo!' na porta 3900"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:47:14.448Z",
+      "atualizadaEm": "2026-09-15T13:47:14.448Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2q7jio_i",
+      "para": "tarefa_mu2q7jin_h"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:47:14.443Z",
+  "atualizadaEm": "2026-09-15T13:47:14.443Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Usar módulo http nativo do Node.js",
+    "Responder na rota / com HTML simples contendo 'Ola, mundo!'",
+    "Rodar na porta 3900"
+  ],
+  "entregaveis": [
+    "Arquivo server.js funcional"
+  ],
+  "criteriosSucesso": [
+    "Servidor inicia sem erros na porta 3900 e retorna a página HTML na raiz"
+  ]
+}

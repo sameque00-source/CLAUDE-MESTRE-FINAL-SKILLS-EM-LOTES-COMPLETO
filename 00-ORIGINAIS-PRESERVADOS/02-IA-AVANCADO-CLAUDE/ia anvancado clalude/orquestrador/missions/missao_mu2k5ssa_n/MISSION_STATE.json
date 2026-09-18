@@ -1,0 +1,140 @@
+{
+  "id": "missao_mu2k5ssa_n",
+  "objetivo": "Missão sintética de recuperação com agente",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:57:55.450Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:57:55.450Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:57:55.451Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:57:55.452Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:58:06.485Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T10:58:06.488Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T10:58:06.490Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2k5ssb_o",
+      "descricao": "Em 1 frase: o que é HTTP?",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "google-gemini-3.1-flash-lite",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: o que é HTTP?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Aqui está o levantamento solicitado para a definição técnica de HTTP.\n\n### As Opções Reais\nConsiderando a natureza do termo, as opções de definição baseiam-se nos protocolos de referência (IETF) e na implementação prática:\n\n1. **Definição Base (RFC 9110):** HTTP é um protocolo de camada de aplicação baseado em texto para transferência de documentos hipermedia, operando através de um modelo cliente-servidor (request/response).\n2. **Definição Funcional (Abstração):** HTTP é a \"linguagem\" (protocolo) que permite a troca de dados estruturados entre navegadores (clientes) e servidores web, facilitando a navegação na rede mundial.\n\n---\n\n### Análise das Opções\n\n| Opção | O que ganha | O que perde | O que custa |\n| :--- | :--- | :--- | :--- |\n| **Definição Base** | Precisão técnica e conformidade com padrões de internet. | Legibilidade para leigos; foca em sintaxe. | R$0 |\n| **Definição Funcional** | Facilidade de compreensão e aplicabilidade imediata. | Profundidade técnica sobre headers/métodos. | R$0 |\n\n---\n\n### O Precedente\n*   **No projeto:** Não há histórico de definições prévias neste workspace.\n*   **Fora do projeto:** A documentação oficial da **IETF (Internet Engineering Task Force)**, especificamente a [RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110), é o padrão global utilizado por navegadores (Chrome, Firefox) e servidores (Apache, Nginx) para implementar HTTP.\n\n---\n\n### Recomendação\n**Recomendação:** Utilize a **Definição Funcional** para a missão atual.\n**Motivo:** Como o objetivo é uma entrega concisa em uma frase (conforme contrato), a definição técnica estrita (RFC) torna-se muito densa e menos útil para a comunicação clara do que o protocolo faz na prática.\n\n---\n\n### Resultado (Output da Tarefa)\n**HTTP é o protocolo padrão de comunicação utilizado para a troca de dados entre clientes (como navegadores) e servidores, permitindo que documentos, imagens e recursos sejam transferidos através da internet.**\n\n---\n\n*Nota: Não consegui confirmar se esta definição atende a um contexto específico de desenvolvimento interno além da sua pergunta, visto que não foram fornecidos documentos ou contexto adicional sobre o projeto específico.*",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-3.1-flash-lite",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:58:06.485Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:57:55.451Z",
+      "atualizadaEm": "2026-09-15T10:58:06.485Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: o que é HTTP?\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "google-gemini-3.1-flash-lite"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2k5ssb_o",
+      "status": "ok",
+      "resultado": "Aqui está o levantamento solicitado para a definição técnica de HTTP.\n\n### As Opções Reais\nConsiderando a natureza do termo, as opções de definição baseiam-se nos protocolos de referência (IETF) e na implementação prática:\n\n1. **Definição Base (RFC 9110):** HTTP é um protocolo de camada de aplicação baseado em texto para transferência de documentos hipermedia, operando através de um modelo cliente-servidor (request/response).\n2. **Definição Funcional (Abstração):** HTTP é a \"linguagem\" (protocolo) que permite a troca de dados estruturados entre navegadores (clientes) e servidores web, facilitando a navegação na rede mundial.\n\n---\n\n### Análise das Opções\n\n| Opção | O que ganha | O que perde | O que custa |\n| :--- | :--- | :--- | :--- |\n| **Definição Base** | Precisão técnica e conformidade com padrões de internet. | Legibilidade para leigos; foca em sintaxe. | R$0 |\n| **Definição Funcional** | Facilidade de compreensão e aplicabilidade imediata. | Profundidade técnica sobre headers/métodos. | R$0 |\n\n---\n\n### O Precedente\n*   **No projeto:** Não há histórico de definições prévias neste workspace.\n*   **Fora do projeto:** A documentação oficial da **IETF (Internet Engineering Task Force)**, especificamente a [RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110), é o padrão global utilizado por navegadores (Chrome, Firefox) e servidores (Apache, Nginx) para implementar HTTP.\n\n---\n\n### Recomendação\n**Recomendação:** Utilize a **Definição Funcional** para a missão atual.\n**Motivo:** Como o objetivo é uma entrega concisa em uma frase (conforme contrato), a definição técnica estrita (RFC) torna-se muito densa e menos útil para a comunicação clara do que o protocolo faz na prática.\n\n---\n\n### Resultado (Output da Tarefa)\n**HTTP é o protocolo padrão de comunicação utilizado para a troca de dados entre clientes (como navegadores) e servidores, permitindo que documentos, imagens e recursos sejam transferidos através da internet.**\n\n---\n\n*Nota: Não consegui confirmar se esta definição atende a um contexto específico de desenvolvimento interno além da sua pergunta, visto que não foram fornecidos documentos ou contexto adicional sobre o projeto específico.*",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-3.1-flash-lite",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:58:06.485Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T10:58:06.488Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+    "ts": "2026-09-15T10:58:06.490Z"
+  },
+  "criadaEm": "2026-09-15T10:57:55.450Z",
+  "atualizadaEm": "2026-09-15T10:58:06.490Z",
+  "modoExecucao": "AUTO",
+  "_rodadasRevisaoMissao": 0
+}

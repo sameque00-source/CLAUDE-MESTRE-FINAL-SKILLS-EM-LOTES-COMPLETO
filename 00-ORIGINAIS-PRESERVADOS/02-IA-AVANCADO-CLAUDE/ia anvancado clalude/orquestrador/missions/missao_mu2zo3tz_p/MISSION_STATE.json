@@ -1,0 +1,172 @@
+{
+  "id": "missao_mu2zo3tz_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:12:03.815Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:12:03.815Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T18:12:03.819Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:12:03.820Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2zo3u3_q",
+      "descricao": "Gerar o código refatorado da função 'soma' com validação de tipos rigorosa, tratamento de erros e anotações JSDoc.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "utils.js",
+      "status": "pendente",
+      "agente": "backend",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Código inclui função soma(a, b).",
+        "Validação de tipo Number presente.",
+        "Tratamento de erros (throw) implementado.",
+        "JSDoc presente com @param e @returns."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Gerar o código refatorado da função 'soma' com validação de tipos rigorosa, tratamento de erros e anotações JSDoc.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código inclui função soma(a, b)."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [
+          "solver.js"
+        ],
+        "erros": [
+          "FALHA HONESTA (FASE 8): mesma categoria de falha 2x seguidas (erro_ambiente), mensagens diferentes — mudando de estratégia por precaução — categoria não tem correção automática viável após repetição — histórico: erro_ambiente → erro_ambiente"
+        ],
+        "evidencias": [
+          "agente=backend",
+          "tentativas=2/3"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:13:30.979Z"
+      },
+      "tentativas": 1,
+      "criadaEm": "2026-09-15T18:12:03.819Z",
+      "atualizadaEm": "2026-09-15T18:13:30.980Z",
+      "_contrato": "Voce cuida do lado servidor.\n\nSEMPRE\n- Valide entrada na fronteira do sistema. Nunca confie no cliente.\n- Trate o caminho de erro, nao so o caminho feliz.\n- Nao logue credencial, token nem dado pessoal.\n- Migracao de banco exige aprovacao do coordenador.\n\nEntregue o codigo e diga explicitamente o que NAO foi coberto.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Gerar o código refatorado da função 'soma' com validação de tipos rigorosa, tratamento de erros e anotações JSDoc.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Código inclui função soma(a, b).\nSUCCESS_CRITERIA: Código inclui função soma(a, b).; Validação de tipo Number presente.; Tratamento de erros (throw) implementado.; JSDoc presente com @param e @returns."
+    },
+    {
+      "id": "tarefa_mu2zo3u3_r",
+      "descricao": "Escrever testes unitários para a função soma cobrindo casos de sucesso e falhas de validação.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2zo3u3_q"
+      ],
+      "recursoExclusivo": "utils.test.js",
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Testes para números válidos existem.",
+        "Testes para strings, undefined, null, NaN e Infinity existem.",
+        "Arquivo de testes é executaivel."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Escrever testes unitários para a função soma cobrindo casos de sucesso e falhas de validação.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Testes para números válidos existem."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:12:03.819Z",
+      "atualizadaEm": "2026-09-15T18:12:03.819Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2zo3u3_r",
+      "para": "tarefa_mu2zo3u3_q"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2zo3u3_q",
+      "erro": "FALHA HONESTA (FASE 8): mesma categoria de falha 2x seguidas (erro_ambiente), mensagens diferentes — mudando de estratégia por precaução — categoria não tem correção automática viável após repetição — histórico: erro_ambiente → erro_ambiente",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T18:13:30.980Z",
+      "tentativas": 1
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2zo3u3_q",
+        "erro": "FALHA HONESTA (FASE 8): mesma categoria de falha 2x seguidas (erro_ambiente), mensagens diferentes — mudando de estratégia por precaução — categoria não tem correção automática viável após repetição — histórico: erro_ambiente → erro_ambiente",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T18:13:30.980Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T18:13:30.980Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "continuar executando tarefas prontas",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:12:03.815Z",
+  "atualizadaEm": "2026-09-15T18:13:30.980Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "utils.js",
+    "utils.test.js"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

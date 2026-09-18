@@ -1,0 +1,227 @@
+{
+  "id": "missao_mu2zzhkb_1",
+  "objetivo": "Crie uma pequena aplicação web: um arquivo index.html simples com um título \"Projeto Teste Multimídia\".",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:20:54.826Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:20:54.827Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T18:20:54.832Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:20:54.833Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:20:56.771Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T18:20:56.772Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "O arquivo index.html foi criado corretamente contendo a estrutura básica HTML5 e o título exigido. A alteração está estritamente dentro do escopo, não há código destruído, o arquivo é válido e proporcional à simplicidade do objetivo.",
+      "ts": "2026-09-15T18:20:56.773Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2zzhkf_2",
+      "descricao": "Criar o arquivo index.html com a estrutura básica e o título 'Projeto Teste Multimídia'.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "index.html",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "O arquivo index.html foi gerado com sucesso contendo a marcação HTML correta."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Criar o arquivo index.html com a estrutura básica e o título 'Projeto Teste Multimídia'.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo index.html foi gerado com sucesso contendo a marcação HTML correta."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Criado o arquivo index.html contendo a estrutura básica HTML5 e o título exigido.",
+        "arquivos": [
+          "index.html"
+        ],
+        "erros": [],
+        "evidencias": [
+          "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [
+          "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+        ],
+        "ts": "2026-09-15T18:20:55.999Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:20:54.831Z",
+      "atualizadaEm": "2026-09-15T18:20:56.000Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Criar o arquivo index.html com a estrutura básica e o título 'Projeto Teste Multimídia'.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: O arquivo index.html foi gerado com sucesso contendo a marcação HTML correta.\nSUCCESS_CRITERIA: O arquivo index.html foi gerado com sucesso contendo a marcação HTML correta."
+    },
+    {
+      "id": "tarefa_mu2zzhkg_3",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2zzhkf_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "O arquivo index.html foi criado corretamente contendo a estrutura básica HTML5 e o título exigido. A alteração está estritamente dentro do escopo, não há código destruído, o arquivo é válido e proporcional à simplicidade do objetivo.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=true",
+          "agente=reviewer"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:20:56.770Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:20:54.832Z",
+      "atualizadaEm": "2026-09-15T18:20:56.771Z",
+      "_contrato": "Voce revisa o trabalho dos OUTROS. Sua funcao e achar o que eles nao viram.\nVoce NAO escreve codigo. Voce NAO conserta. Voce aponta.\n\nPOSTURA\nAdversarial e educado. Presuma que a proposta tem um defeito e procure-o.\nSe depois de procurar de verdade nao achar nada, diga isso claramente:\naprovar sem achado e resultado valido, desde que voce tenha procurado.\n\nSEMPRE CONFERIR\n1. O diff faz SO o que foi pedido? Alteracao fora de escopo e defeito.\n2. Funcao existente foi destruida sem prova de equivalencia?\n3. O caminho de erro foi tratado ou so o caminho feliz?\n4. Ha afirmacao de que \"funciona\" sem execucao real por tras?\n5. A solucao e maior que o problema?\n\nVEREDICTO obrigatorio:\nAPROVADO / APROVADO COM RESSALVAS - <motivo> / REPROVADO - <o que corrigir>\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)\nCONTEXT: - Criado o arquivo index.html contendo a estrutura básica HTML5 e o título exigido.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: aprovação ou reprovação explícita registrada; todas as tarefas de implementação foram cobertas pela revisão"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2zzhkg_3",
+      "para": "tarefa_mu2zzhkf_2"
+    }
+  ],
+  "agentes": [
+    "coding",
+    "reviewer"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2zzhkf_2",
+      "status": "ok",
+      "resultado": "Criado o arquivo index.html contendo a estrutura básica HTML5 e o título exigido.",
+      "arquivos": [
+        "index.html"
+      ],
+      "erros": [],
+      "evidencias": [
+        "arquivo(s) criado(s) sem comando de teste executável (index.html)",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [
+        "nenhum comando de teste automático disponível para este artefato — validação manual recomendada"
+      ],
+      "ts": "2026-09-15T18:20:55.999Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2zzhkg_3",
+      "status": "ok",
+      "resultado": "O arquivo index.html foi criado corretamente contendo a estrutura básica HTML5 e o título exigido. A alteração está estritamente dentro do escopo, não há código destruído, o arquivo é válido e proporcional à simplicidade do objetivo.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=true",
+        "agente=reviewer"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:20:56.770Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: index.html",
+      "ts": "2026-09-15T18:20:56.772Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "O arquivo index.html foi criado corretamente contendo a estrutura básica HTML5 e o título exigido. A alteração está estritamente dentro do escopo, não há código destruído, o arquivo é válido e proporcional à simplicidade do objetivo.",
+    "ts": "2026-09-15T18:20:56.773Z"
+  },
+  "criadaEm": "2026-09-15T18:20:54.826Z",
+  "atualizadaEm": "2026-09-15T18:20:56.773Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Criar um arquivo index.html válido",
+    "Incluir a tag de título com o texto 'Projeto Teste Multimídia'"
+  ],
+  "entregaveis": [
+    "Arquivo index.html criado no diretório raiz"
+  ],
+  "criteriosSucesso": [
+    "O arquivo index.html existe e possui a estrutura HTML básica com o título correto."
+  ],
+  "_rodadasRevisaoMissao": 0
+}

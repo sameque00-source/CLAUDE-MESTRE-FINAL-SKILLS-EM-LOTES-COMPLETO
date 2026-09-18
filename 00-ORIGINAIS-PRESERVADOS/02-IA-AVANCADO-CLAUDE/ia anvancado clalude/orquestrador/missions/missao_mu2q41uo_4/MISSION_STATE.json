@@ -1,0 +1,160 @@
+{
+  "id": "missao_mu2q41uo_4",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:44:31.584Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:44:31.584Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T13:44:31.585Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:44:31.586Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T13:44:40.001Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q41up_5",
+      "descricao": "Pesquisar estado da arte em motores de mídia open-source (FFmpeg, GStreamer, WebCodecs) e desempenho em plataformas WSL2 vs nativas.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de latência entre FFmpeg/GStreamer/WebCodecs",
+        "Matriz de compatibilidade de codecs por plataforma",
+        "Recomendação técnica fundamentada da stack de processamento de mídia"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário definir a base do motor de renderização e se a aceleração de hardware funcionará de forma idêntica em todas as plataformas. O uso de WebCodecs é limitado no desktop, exigindo fallbacks complexos.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar estado da arte em motores de mídia open-source (FFmpeg, GStreamer, WebCodecs) e desempenho em plataformas WSL2 vs nativas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de latência entre FFmpeg/GStreamer/WebCodecs"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:31.585Z",
+      "atualizadaEm": "2026-09-15T13:44:39.989Z",
+      "motivoCancelamento": "A tarefa original não especificava a análise de compatibilidade e fallbacks para navegadores restritos como o Safari, revelada pela nova informação."
+    },
+    {
+      "id": "tarefa_mu2q48c6_l",
+      "descricao": "Pesquisar estado da arte em motores de mídia open-source (FFmpeg, GStreamer, WebCodecs), desempenho em plataformas WSL2 vs nativas, e avaliar alternativas/fallbacks no servidor para compatibilidade com Safari (devido a limitações do ffmpeg.wasm).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Mapeamento completo das tecnologias",
+        "Análise de desempenho WSL2 vs nativo",
+        "Estratégia de fallback documentada para o Safari"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "pesquisador",
+      "contexto": {
+        "objetivo": "Pesquisar estado da arte em motores de mídia open-source (FFmpeg, GStreamer, WebCodecs), desempenho em plataformas WSL2 vs nativas, e avaliar alternativas/fallbacks no servidor para compatibilidade com Safari (devido a limitações do ffmpeg.wasm).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar estado da arte em motores de m",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:44:40.000Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:39.990Z",
+      "atualizadaEm": "2026-09-15T13:44:40.001Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2q48c6_l",
+      "status": "ok",
+      "resultado": "mock: Pesquisar estado da arte em motores de m",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T13:44:40.000Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0.5,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:44:31.584Z",
+  "atualizadaEm": "2026-09-15T13:44:40.001Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A descoberta de limitações do ffmpeg.wasm no navegador Safari exige a expansão da pesquisa do estado da arte para contemplar explicitamente estratégias de fallback no servidor ou alternativas nativas para o Safari.",
+      "ts": "2026-09-15T13:44:39.990Z",
+      "canceladas": 1,
+      "adicionadas": 1
+    }
+  ]
+}

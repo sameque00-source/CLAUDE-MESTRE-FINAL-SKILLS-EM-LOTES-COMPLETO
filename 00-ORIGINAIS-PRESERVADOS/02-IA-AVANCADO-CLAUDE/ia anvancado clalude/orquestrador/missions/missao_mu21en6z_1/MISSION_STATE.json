@@ -1,0 +1,122 @@
+{
+  "id": "missao_mu21en6z_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:12:55.402Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:12:55.403Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T02:12:55.409Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:12:55.410Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21en75_2",
+      "descricao": "Verificar a existência do arquivo README.md e procurar por ocorrências da palavra 'aplicacao'.",
+      "tipo": "verificacao",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Confirmado que o arquivo README.md existe.",
+        "Lista de linhas contendo 'aplicacao' obtida via grep."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Verificar a existência do arquivo README.md e procurar por ocorrências da palavra 'aplicacao'.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Confirmado que o arquivo README.md existe."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:55.409Z",
+      "atualizadaEm": "2026-09-15T02:12:55.409Z"
+    },
+    {
+      "id": "tarefa_mu21en75_3",
+      "descricao": "Executar a substituição de 'aplicacao' por 'aplicação' no README.md se houver ocorrências.",
+      "tipo": "edicao_codigo",
+      "dependeDe": [
+        "tarefa_mu21en75_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "O arquivo README.md foi reescrito com a substituição aplicada.",
+        "Novo grep confirma ausência de 'aplicacao' e presença de 'aplicação' onde esperado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Executar a substituição de 'aplicacao' por 'aplicação' no README.md se houver ocorrências.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo README.md foi reescrito com a substituição aplicada."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:55.409Z",
+      "atualizadaEm": "2026-09-15T02:12:55.409Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21en75_3",
+      "para": "tarefa_mu21en75_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:12:55.402Z",
+  "atualizadaEm": "2026-09-15T02:12:55.402Z",
+  "modoExecucao": "AUTO"
+}

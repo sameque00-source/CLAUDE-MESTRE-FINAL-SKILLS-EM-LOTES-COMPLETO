@@ -1,0 +1,129 @@
+{
+  "id": "missao_mu2q4may_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:44:58.089Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:44:58.091Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T13:44:58.095Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:44:58.096Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q4mb3_2",
+      "descricao": "Substituir a palavra 'aplicacao' por 'aplicação' no arquivo README.md",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "O arquivo README.md não contém mais a palavra 'aplicacao' sem acento"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Substituir a palavra 'aplicacao' por 'aplicação' no arquivo README.md",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo README.md não contém mais a palavra 'aplicacao' sem acento"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:58.095Z",
+      "atualizadaEm": "2026-09-15T13:44:58.095Z"
+    },
+    {
+      "id": "tarefa_mu2q4mb4_3",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2q4mb3_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:58.096Z",
+      "atualizadaEm": "2026-09-15T13:44:58.096Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2q4mb4_3",
+      "para": "tarefa_mu2q4mb3_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:44:58.089Z",
+  "atualizadaEm": "2026-09-15T13:44:58.089Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Substituir todas as ocorrências incorretas da palavra 'aplicacao' por 'aplicação' no README.md",
+    "Garantir que a formatação do arquivo README.md não seja corrompida"
+  ],
+  "entregaveis": [
+    "Arquivo README.md atualizado com a ortografia correta"
+  ],
+  "criteriosSucesso": [
+    "A palavra 'aplicacao' foi totalmente corrigida para 'aplicação' no README.md"
+  ]
+}

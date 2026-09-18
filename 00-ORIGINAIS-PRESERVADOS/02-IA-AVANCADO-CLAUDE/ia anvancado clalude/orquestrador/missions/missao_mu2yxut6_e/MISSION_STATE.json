@@ -1,0 +1,147 @@
+{
+  "id": "missao_mu2yxut6_e",
+  "objetivo": "Missão sintética de autocorreção",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:51:39.066Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:51:39.066Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T17:51:39.067Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:51:39.068Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T17:51:57.893Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2yxut7_f",
+      "descricao": "Crie dividir.js: le process.argv[2] e process.argv[3], divide o primeiro pelo segundo, imprime o resultado. Se faltar argumento ou o divisor for 0, deve imprimir exatamente \"invalido\" (sem quebrar, sem stack trace) — mas SEM usar try/catch em nenhum lugar do código, use validação explícita com if.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-compound",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "roda sem erro com argumentos válidos",
+        "imprime \"invalido\" com divisor 0",
+        "imprime \"invalido\" sem argumentos",
+        "não usa try/catch"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Crie dividir.js: le process.argv[2] e process.argv[3], divide o primeiro pelo segundo, imprime o resultado. Se faltar argumento ou o divisor for 0, deve imprimir exatamente \"invalido\" (sem quebrar, sem stack trace) — mas SEM usar try/catch em nenhum lugar do código, use validação explícita com if.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Criado dividir.js que divide dois números e trata erros sem try/catch.",
+        "arquivos": [
+          "dividir.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=groq-compound",
+          "agente=coding"
+        ],
+        "testes": [
+          {
+            "comando": "node dividir.js 10 2",
+            "resultado": "passou",
+            "evidencia": "5\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T17:51:57.893Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:51:39.067Z",
+      "atualizadaEm": "2026-09-15T17:51:57.893Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Crie dividir.js: le process.argv[2] e process.argv[3], divide o primeiro pelo segundo, imprime o resultado. Se faltar argumento ou o divisor for 0, deve imprimir exatamente \"invalido\" (sem quebrar, sem stack trace) — mas SEM usar try/catch em nenhum lugar do código, use validação explícita com if.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: roda sem erro com argumentos válidos; imprime \"invalido\" com divisor 0; imprime \"invalido\" sem argumentos; não usa try/catch"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "groq-compound"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2yxut7_f",
+      "status": "ok",
+      "resultado": "Criado dividir.js que divide dois números e trata erros sem try/catch.",
+      "arquivos": [
+        "dividir.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=groq-compound",
+        "agente=coding"
+      ],
+      "testes": [
+        {
+          "comando": "node dividir.js 10 2",
+          "resultado": "passou",
+          "evidencia": "5\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T17:51:57.893Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:51:39.066Z",
+  "atualizadaEm": "2026-09-15T17:51:57.894Z",
+  "modoExecucao": "AUTO",
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "dividir.js",
+      "10",
+      "2"
+    ],
+    "tipoExecucao": "unica"
+  }
+}

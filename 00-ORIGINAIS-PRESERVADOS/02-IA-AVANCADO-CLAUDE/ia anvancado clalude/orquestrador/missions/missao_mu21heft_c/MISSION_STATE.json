@@ -1,0 +1,353 @@
+{
+  "id": "missao_mu21heft_c",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:15:04.025Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:15:04.025Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (8 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:15:04.027Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:15:04.027Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21hefu_d",
+      "descricao": "Pesquisar modelos open‑source de visão‑linguagem para geração de legendas de imagens",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista comparativa de ≥3 modelos (ex.: BLIP, OFA, ClipCap) com métricas de precisão, requisitos de GPU/CPU e licenças"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisamos identificar modelo com boa precisão, licença permissiva e requisitos de hardware adequados",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar modelos open‑source de visão‑linguagem para geração de legendas de imagens",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista comparativa de ≥3 modelos (ex.: BLIP, OFA, ClipCap) com métricas de precisão, requisitos de GPU/CPU e licenças"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    },
+    {
+      "id": "tarefa_mu21hefu_e",
+      "descricao": "Pesquisar opções de framework backend para expor a API de descrição de imagens",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Comparativo de pelo menos FastAPI e Flask (ou Node/Express) considerando performance, simplicidade e comunidade"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher framework que facilite integração com código Python e modelo de ML",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar opções de framework backend para expor a API de descrição de imagens",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comparativo de pelo menos FastAPI e Flask (ou Node/Express) considerando performance, simplicidade e comunidade"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    },
+    {
+      "id": "tarefa_mu21hefu_f",
+      "descricao": "Pesquisar opções de framework/frontend para a interface web de upload de fotos",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Comparativo de React e Vue (ou Svelte) com foco em tamanho do bundle, curva de aprendizado e suporte a chamadas API"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Selecionar tecnologia que ofereça desenvolvimento rápido e integração fácil com a API",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar opções de framework/frontend para a interface web de upload de fotos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comparativo de React e Vue (ou Svelte) com foco em tamanho do bundle, curva de aprendizado e suporte a chamadas API"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    },
+    {
+      "id": "tarefa_mu21hefu_g",
+      "descricao": "Consolidar resultados de pesquisas e definir arquitetura final (modelo, backend, frontend)",
+      "tipo": "architect",
+      "dependeDe": [
+        "tarefa_mu21hefu_d",
+        "tarefa_mu21hefu_e",
+        "tarefa_mu21hefu_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão contendo escolha de modelo de visão‑linguagem, framework backend e framework frontend, com justificativas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar resultados de pesquisas e definir arquitetura final (modelo, backend, frontend)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão contendo escolha de modelo de visão‑linguagem, framework backend e framework frontend, com justificativas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    },
+    {
+      "id": "tarefa_mu21hefu_h",
+      "descricao": "Desenvolver backend: criar API /describe que recebe imagem, executa modelo e devolve descrição JSON",
+      "tipo": "developer",
+      "dependeDe": [
+        "tarefa_mu21hefu_g"
+      ],
+      "recursoExclusivo": "backend_code",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Código backend funcional com endpoint /describe (multipart/form-data) que retorna {\"description\": \"...\"}"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Desenvolver backend: criar API /describe que recebe imagem, executa modelo e devolve descrição JSON",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código backend funcional com endpoint /describe (multipart/form-data) que retorna {\"description\": \"...\"}"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    },
+    {
+      "id": "tarefa_mu21hefu_i",
+      "descricao": "Desenvolver frontend: página web com campo de upload, botão enviar e exibição da descrição retornada",
+      "tipo": "developer",
+      "dependeDe": [
+        "tarefa_mu21hefu_g"
+      ],
+      "recursoExclusivo": "frontend_code",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Interface funcional que permite escolher foto, enviar ao endpoint /describe e mostrar texto resultante"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver frontend: página web com campo de upload, botão enviar e exibição da descrição retornada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface funcional que permite escolher foto, enviar ao endpoint /describe e mostrar texto resultante"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    },
+    {
+      "id": "tarefa_mu21hefu_j",
+      "descricao": "Criar testes automatizados de integração: validar upload, chamada API e exibição da descrição",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21hefu_h",
+        "tarefa_mu21hefu_i"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Suite de testes que executa fluxo completo e confirma retorno de descrição correta em casos de teste"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar testes automatizados de integração: validar upload, chamada API e exibição da descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Suite de testes que executa fluxo completo e confirma retorno de descrição correta em casos de teste"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    },
+    {
+      "id": "tarefa_mu21hefu_k",
+      "descricao": "Redigir documentação: README com instruções de setup, execução e exemplos de uso",
+      "tipo": "docs",
+      "dependeDe": [
+        "tarefa_mu21hefu_j"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "README completo e claro, contendo requisitos, instalação, execução e captura de tela da UI"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Redigir documentação: README com instruções de setup, execução e exemplos de uso",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README completo e claro, contendo requisitos, instalação, execução e captura de tela da UI"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:04.026Z",
+      "atualizadaEm": "2026-09-15T02:15:04.026Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21hefu_g",
+      "para": "tarefa_mu21hefu_d"
+    },
+    {
+      "de": "tarefa_mu21hefu_g",
+      "para": "tarefa_mu21hefu_e"
+    },
+    {
+      "de": "tarefa_mu21hefu_g",
+      "para": "tarefa_mu21hefu_f"
+    },
+    {
+      "de": "tarefa_mu21hefu_h",
+      "para": "tarefa_mu21hefu_g"
+    },
+    {
+      "de": "tarefa_mu21hefu_i",
+      "para": "tarefa_mu21hefu_g"
+    },
+    {
+      "de": "tarefa_mu21hefu_j",
+      "para": "tarefa_mu21hefu_h"
+    },
+    {
+      "de": "tarefa_mu21hefu_j",
+      "para": "tarefa_mu21hefu_i"
+    },
+    {
+      "de": "tarefa_mu21hefu_k",
+      "para": "tarefa_mu21hefu_j"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:15:04.025Z",
+  "atualizadaEm": "2026-09-15T02:15:04.025Z",
+  "modoExecucao": "AUTO"
+}

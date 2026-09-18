@@ -1,0 +1,236 @@
+{
+  "id": "missao_mu2zhns8_5",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:07:03.080Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:07:03.080Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T18:07:03.081Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:07:03.081Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:07:58.575Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2zhns9_6",
+      "descricao": "Pesquisar estado da arte em codecs de vídeo open-source (FFmpeg, GStreamer, SDL2) e aceleradores de hardware modernos.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de empilhamentos recomendados com justificativa técnica de performance.",
+        "Identificação de libs com licenças compatíveis (GPL/Apache/MIT) para uso comercial."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário definir a empilhamento de I/O e DSP específico para suportar HEVC/AV1 eficientemente. Versões de libcos mudam rapidamente.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar estado da arte em codecs de vídeo open-source (FFmpeg, GStreamer, SDL2) e aceleradores de hardware modernos.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de empilhamentos recomendados com justificativa técnica de performance."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar estado da arte em codecs de ví",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:07:58.559Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:03.081Z",
+      "atualizadaEm": "2026-09-15T18:07:58.559Z"
+    },
+    {
+      "id": "tarefa_mu2zhns9_7",
+      "descricao": "Pesquisar padrões de UI/UX para editores de vídeo profissionais (Premiere, DaVinci, Final Cut) focando em latência de timeline e gerenciamento de camadas.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Sketch ou descritivo da arquitetura de UI recomendada (ex: Virtualized List for timeline).",
+        "Estudo de caso de 3 concorrentes principais com análise de pontos fortes/fracos."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar padrões de UI/UX para editores de vídeo profissionais (Premiere, DaVinci, Final Cut) focando em latência de timeline e gerenciamento de camadas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Sketch ou descritivo da arquitetura de UI recomendada (ex: Virtualized List for timeline)."
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar padrões de UI/UX para editores",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:07:58.559Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:03.081Z",
+      "atualizadaEm": "2026-09-15T18:07:58.559Z"
+    },
+    {
+      "id": "tarefa_mu2ziukp_k",
+      "descricao": "Avaliar viabilidade de arquitetura híbrida (Client/Server) ou substitutos nativos (WebCodecs API) para contornar as limitações de hardware/browser do ffmpeg.wasm no Safari.",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2zhns9_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Relatório comparativo entre WebCodecs API e processamento via servidor",
+        "Definição da estratégia de fallback para navegadores WebKit"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "pesquisador",
+      "contexto": {
+        "objetivo": "Avaliar viabilidade de arquitetura híbrida (Client/Server) ou substitutos nativos (WebCodecs API) para contornar as limitações de hardware/browser do ffmpeg.wasm no Safari.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Avaliar viabilidade de arquitetura híbri",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:07:58.574Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:58.537Z",
+      "atualizadaEm": "2026-09-15T18:07:58.574Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ziukp_k",
+      "para": "tarefa_mu2zhns9_6"
+    }
+  ],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2zhns9_6",
+      "status": "ok",
+      "resultado": "mock: Pesquisar estado da arte em codecs de ví",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:07:58.559Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2zhns9_7",
+      "status": "ok",
+      "resultado": "mock: Pesquisar padrões de UI/UX para editores",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:07:58.559Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ziukp_k",
+      "status": "ok",
+      "resultado": "mock: Avaliar viabilidade de arquitetura híbri",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:07:58.574Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:07:03.080Z",
+  "atualizadaEm": "2026-09-15T18:07:58.575Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A limitação do ffmpeg.wasm no Safari invalida a premissa de uma solução puramente cliente para o processamento de vídeo. É necessário investigar estratégias de processamento server-side ou fallback nativo para garantir compatibilidade cross-browser.",
+      "ts": "2026-09-15T18:07:58.537Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "missao_mu2m2cds_k",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:51:13.456Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:51:13.456Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:51:13.457Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:51:13.457Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m2cdt_l",
+      "descricao": "Escrever o script bash de automação do git (init, add, commit, push)",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup_git.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo .sh criado, com tratamento básico de erros e permissão de execução"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script bash de automação do git (init, add, commit, push)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo .sh criado, com tratamento básico de erros e permissão de execução"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:13.457Z",
+      "atualizadaEm": "2026-09-15T11:51:13.457Z"
+    },
+    {
+      "id": "tarefa_mu2m2cdt_m",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2m2cdt_l"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:51:13.457Z",
+      "atualizadaEm": "2026-09-15T11:51:13.457Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2m2cdt_m",
+      "para": "tarefa_mu2m2cdt_l"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:51:13.456Z",
+  "atualizadaEm": "2026-09-15T11:51:13.456Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "O script deve aceitar o caminho da pasta e a URL do repositório remoto",
+    "Deve inicializar o repositório Git caso não exista",
+    "Deve adicionar, commitar com mensagem padrão e enviar (push) para o remoto"
+  ],
+  "entregaveis": [
+    "Script bash executável (.sh) para backup e publicação"
+  ],
+  "criteriosSucesso": [
+    "Script executado com sucesso e arquivos refletidos no repositório remoto"
+  ]
+}

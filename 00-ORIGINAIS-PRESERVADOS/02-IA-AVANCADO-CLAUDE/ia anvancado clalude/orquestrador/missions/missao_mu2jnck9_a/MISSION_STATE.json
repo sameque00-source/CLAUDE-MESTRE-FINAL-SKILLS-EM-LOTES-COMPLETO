@@ -1,0 +1,169 @@
+{
+  "id": "missao_mu2jnck9_a",
+  "objetivo": "Missão sintética de paralelismo entre agentes",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:43:34.617Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:43:34.617Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:43:34.617Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:43:34.619Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:43:36.574Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jnck9_b",
+      "descricao": "Em 1 frase: vantagem do PostgreSQL",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do PostgreSQL",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "PostgreSQL fornece suporte nativo a conformidade ACID, consultas SQL avançadas e extensibilidade (como tipos, funções e indexadores personalizados), tudo em software livre e sem custos de licenciamento, permitindo que desenvolvedores criem aplicações confiáveis e escaláveis.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:43:35.805Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:43:34.617Z",
+      "atualizadaEm": "2026-09-15T10:43:36.574Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do PostgreSQL\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2jncka_c",
+      "descricao": "Em 1 frase: vantagem do MongoDB",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do MongoDB",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "## 1. “Vantagem do MongoDB” (1 frase)  \n**MongoDB oferece flexibilidade de esquema (schema‑less) aliada a escalabilidade horizontal nativa, permitindo evoluir o modelo de dados rapidamente sem migrações complexas.**  \n\n---\n\n## 2. Levantamento de terreno – opções reais para persistência de dados  \n\n| # | Opção de armazenamento | O que **ganha** | O que **perde** | Custo (R$ 0 – gratuito, ou custos operacionais) | Precedente (exemplo interno ou externo) |\n|---|------------------------|----------------|----------------|----------------------------------------------|------------------------------------------|\n| 1 | **MongoDB (document‑store)** | • Modelagem flexível – documentos JSON‑like <br>• Escalabilidade horizontal (sharding) pronta <br>• Indexação rica (texto, geoespacial, array) <br>• Driver oficial para Node, Python, Go, etc. | • Consistência eventual por padrão (necessita *write concern*/ *read concern* para forte) <br>• Transações",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:43:36.574Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:43:34.618Z",
+      "atualizadaEm": "2026-09-15T10:43:36.574Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do MongoDB\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jnck9_b",
+      "status": "ok",
+      "resultado": "PostgreSQL fornece suporte nativo a conformidade ACID, consultas SQL avançadas e extensibilidade (como tipos, funções e indexadores personalizados), tudo em software livre e sem custos de licenciamento, permitindo que desenvolvedores criem aplicações confiáveis e escaláveis.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:43:35.805Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jncka_c",
+      "status": "ok",
+      "resultado": "## 1. “Vantagem do MongoDB” (1 frase)  \n**MongoDB oferece flexibilidade de esquema (schema‑less) aliada a escalabilidade horizontal nativa, permitindo evoluir o modelo de dados rapidamente sem migrações complexas.**  \n\n---\n\n## 2. Levantamento de terreno – opções reais para persistência de dados  \n\n| # | Opção de armazenamento | O que **ganha** | O que **perde** | Custo (R$ 0 – gratuito, ou custos operacionais) | Precedente (exemplo interno ou externo) |\n|---|------------------------|----------------|----------------|----------------------------------------------|------------------------------------------|\n| 1 | **MongoDB (document‑store)** | • Modelagem flexível – documentos JSON‑like <br>• Escalabilidade horizontal (sharding) pronta <br>• Indexação rica (texto, geoespacial, array) <br>• Driver oficial para Node, Python, Go, etc. | • Consistência eventual por padrão (necessita *write concern*/ *read concern* para forte) <br>• Transações",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:43:36.574Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:43:34.617Z",
+  "atualizadaEm": "2026-09-15T10:43:36.574Z",
+  "modoExecucao": "AUTO"
+}

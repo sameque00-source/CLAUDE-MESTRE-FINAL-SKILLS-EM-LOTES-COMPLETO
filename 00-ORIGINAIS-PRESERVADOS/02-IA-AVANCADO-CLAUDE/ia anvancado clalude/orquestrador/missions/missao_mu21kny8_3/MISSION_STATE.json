@@ -1,0 +1,774 @@
+{
+  "id": "missao_mu21kny8_3",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:17:36.320Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:17:36.320Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via ninerouter-imperion-dev (12 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:17:36.322Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:17:36.323Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T02:17:45.470Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21kny9_4",
+      "descricao": "Mapear funcionalidades essenciais de editores de vídeo profissionais (timeline, efeitos, exportação).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista validada de funcionalidades prioritárias"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Definir escopo funcional preciso.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Mapear funcionalidades essenciais de editores de vídeo profissionais (timeline, efeitos, exportação).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista validada de funcionalidades prioritárias"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Mapear funcionalidades essenciais de edi",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.344Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.344Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_5",
+      "descricao": "Comparar stacks tecnológicos viáveis para aplicação desktop (Electron+React+FFmpeg, Qt/C++, Flutter).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Matriz comparativa com prós, contras e métricas de desempenho"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher tecnologia que ofereça performance e produtividade.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Comparar stacks tecnológicos viáveis para aplicação desktop (Electron+React+FFmpeg, Qt/C++, Flutter).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Matriz comparativa com prós, contras e métricas de desempenho"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Comparar stacks tecnológicos viáveis par",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.344Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.344Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_6",
+      "descricao": "Verificar licenças de FFmpeg, Electron, Qt, Flutter e requisitos de distribuição.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório de licenças e restrições de uso"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir conformidade legal do produto final.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Verificar licenças de FFmpeg, Electron, Qt, Flutter e requisitos de distribuição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de licenças e restrições de uso"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Verificar licenças de FFmpeg, Electron, ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.344Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.344Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_7",
+      "descricao": "Definir arquitetura final (linguagens, frameworks, estrutura de módulos) com base nas pesquisas t1‑t3.",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21kny9_4",
+        "tarefa_mu21kny9_5",
+        "tarefa_mu21kny9_6"
+      ],
+      "recursoExclusivo": "arquitetura.md",
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto",
+        "arquivo"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura aprovado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir arquitetura final (linguagens, frameworks, estrutura de módulos) com base nas pesquisas t1‑t3.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura aprovado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir arquitetura final (linguagens, f",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.360Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.360Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_8",
+      "descricao": "Inicializar repositório Git, configurar CI básica e scaffolding do projeto conforme arquitetura definida.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21kny9_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Repositório com estrutura de diretórios, build scripts e CI funcionando"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Inicializar repositório Git, configurar CI básica e scaffolding do projeto conforme arquitetura definida.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório com estrutura de diretórios, build scripts e CI funcionando"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Inicializar repositório Git, configurar ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.376Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.376Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_9",
+      "descricao": "Implementar camada de processamento de vídeo (wrapper FFmpeg) com operações de corte, trim, concat e transição básica.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21kny9_8"
+      ],
+      "recursoExclusivo": "core/videoProcessor",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Módulo compilado com API testada via linha de comando"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar camada de processamento de vídeo (wrapper FFmpeg) com operações de corte, trim, concat e transição básica.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo compilado com API testada via linha de comando"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar camada de processamento de v",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.391Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.391Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_a",
+      "descricao": "Criar UI base (janela principal, menu, barra de ferramentas) usando o framework escolhido.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21kny9_8"
+      ],
+      "recursoExclusivo": "frontend/appShell",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Tela inicial funcional exibindo menu e área de trabalho"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Criar UI base (janela principal, menu, barra de ferramentas) usando o framework escolhido.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tela inicial funcional exibindo menu e área de trabalho"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar UI base (janela principal, menu, b",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.391Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.391Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_b",
+      "descricao": "Desenvolver componente de timeline multipista com drag‑and‑drop de clips.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21kny9_a"
+      ],
+      "recursoExclusivo": "frontend/timeline",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Timeline interativa que permite inserir, mover e remover clips"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver componente de timeline multipista com drag‑and‑drop de clips.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Timeline interativa que permite inserir, mover e remover clips"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver componente de timeline multi",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.407Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.407Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_c",
+      "descricao": "Integrar UI (t8) com a camada de processamento (t6) para executar operações de edição em tempo real.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21kny9_9",
+        "tarefa_mu21kny9_b"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Ações na timeline geram chamadas corretas ao videoProcessor e resultados visíveis"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar UI (t8) com a camada de processamento (t6) para executar operações de edição em tempo real.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Ações na timeline geram chamadas corretas ao videoProcessor e resultados visíveis"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Integrar UI (t8) com a camada de process",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.422Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.422Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_d",
+      "descricao": "Implementar fluxo de exportação/renderização final com opções de codec, resolução e bitrate.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21kny9_c"
+      ],
+      "recursoExclusivo": "core/exporter",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Exportação gera arquivo de vídeo reproduzível nos principais players"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar fluxo de exportação/renderização final com opções de codec, resolução e bitrate.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Exportação gera arquivo de vídeo reproduzível nos principais players"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar fluxo de exportação/renderiz",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.438Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.438Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_e",
+      "descricao": "Executar testes funcionais e de desempenho (importação, edição, exportação) em Windows, macOS e Linux.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21kny9_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "codigo"
+      ],
+      "criterioConclusao": [
+        "Relatório de testes com cobertura ≥80% e tempos de render aceitáveis (<5min para 1080p, 5 min]"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes funcionais e de desempenho (importação, edição, exportação) em Windows, macOS e Linux.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de testes com cobertura ≥80% e tempos de render aceitáveis (<5min para 1080p, 5 min]"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar testes funcionais e de desempen",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.454Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.454Z"
+    },
+    {
+      "id": "tarefa_mu21kny9_f",
+      "descricao": "Produzir documentação de usuário, guia de desenvolvedor e gerar instaladores para as três plataformas.",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu21kny9_d",
+        "tarefa_mu21kny9_e"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "docs",
+      "modelo": "mock",
+      "ferramentas": [
+        "texto",
+        "arquivo"
+      ],
+      "criterioConclusao": [
+        "Docs completos em markdown e instaladores (.exe, .dmg, .AppImage) disponíveis no release"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Produzir documentação de usuário, guia de desenvolvedor e gerar instaladores para as três plataformas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Docs completos em markdown e instaladores (.exe, .dmg, .AppImage) disponíveis no release"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Produzir documentação de usuário, guia d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:17:45.470Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:36.321Z",
+      "atualizadaEm": "2026-09-15T02:17:45.470Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21kny9_7",
+      "para": "tarefa_mu21kny9_4"
+    },
+    {
+      "de": "tarefa_mu21kny9_7",
+      "para": "tarefa_mu21kny9_5"
+    },
+    {
+      "de": "tarefa_mu21kny9_7",
+      "para": "tarefa_mu21kny9_6"
+    },
+    {
+      "de": "tarefa_mu21kny9_8",
+      "para": "tarefa_mu21kny9_7"
+    },
+    {
+      "de": "tarefa_mu21kny9_9",
+      "para": "tarefa_mu21kny9_8"
+    },
+    {
+      "de": "tarefa_mu21kny9_a",
+      "para": "tarefa_mu21kny9_8"
+    },
+    {
+      "de": "tarefa_mu21kny9_b",
+      "para": "tarefa_mu21kny9_a"
+    },
+    {
+      "de": "tarefa_mu21kny9_c",
+      "para": "tarefa_mu21kny9_9"
+    },
+    {
+      "de": "tarefa_mu21kny9_c",
+      "para": "tarefa_mu21kny9_b"
+    },
+    {
+      "de": "tarefa_mu21kny9_d",
+      "para": "tarefa_mu21kny9_c"
+    },
+    {
+      "de": "tarefa_mu21kny9_e",
+      "para": "tarefa_mu21kny9_d"
+    },
+    {
+      "de": "tarefa_mu21kny9_f",
+      "para": "tarefa_mu21kny9_d"
+    },
+    {
+      "de": "tarefa_mu21kny9_f",
+      "para": "tarefa_mu21kny9_e"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "coding",
+    "frontend",
+    "testing",
+    "docs"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu21kny9_4",
+      "status": "ok",
+      "resultado": "mock: Mapear funcionalidades essenciais de edi",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.344Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_5",
+      "status": "ok",
+      "resultado": "mock: Comparar stacks tecnológicos viáveis par",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.344Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_6",
+      "status": "ok",
+      "resultado": "mock: Verificar licenças de FFmpeg, Electron, ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.344Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_7",
+      "status": "ok",
+      "resultado": "mock: Definir arquitetura final (linguagens, f",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.360Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_8",
+      "status": "ok",
+      "resultado": "mock: Inicializar repositório Git, configurar ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.376Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_9",
+      "status": "ok",
+      "resultado": "mock: Implementar camada de processamento de v",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.391Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_a",
+      "status": "ok",
+      "resultado": "mock: Criar UI base (janela principal, menu, b",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.391Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_b",
+      "status": "ok",
+      "resultado": "mock: Desenvolver componente de timeline multi",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.407Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_c",
+      "status": "ok",
+      "resultado": "mock: Integrar UI (t8) com a camada de process",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.422Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_d",
+      "status": "ok",
+      "resultado": "mock: Implementar fluxo de exportação/renderiz",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.438Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_e",
+      "status": "ok",
+      "resultado": "mock: Executar testes funcionais e de desempen",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.454Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21kny9_f",
+      "status": "ok",
+      "resultado": "mock: Produzir documentação de usuário, guia d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:17:45.470Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:17:36.320Z",
+  "atualizadaEm": "2026-09-15T02:17:45.470Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Editor de vídeo com timeline multipista",
+    "Suporte a corte, trim, concatenação, transições básicas",
+    "Renderização/exportação em formatos comuns (MP4, MOV)",
+    "Interface responsiva e intuitiva",
+    "Funcionar em Windows, macOS e Linux"
+  ],
+  "entregaveis": [
+    "Repositório Git completo com código-fonte",
+    "Instaladores para Windows, macOS e Linux",
+    "Documentação de uso e desenvolvimento",
+    "Relatório de decisões técnicas"
+  ],
+  "criteriosSucesso": [
+    "Aplicativo instalável que permite importar, editar e exportar vídeos sem erros críticos em todas as plataformas alvo"
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "id": "missao_mu21d79g_1",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:11:48.099Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:11:48.100Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (11 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:11:48.107Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21d79l_2",
+      "descricao": "Levantamento de requisitos detalhados de um editor de vídeo profissional",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Documento de requisitos aprovado contendo lista completa de funcionalidades"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar funcionalidades essenciais e fluxos de trabalho de editores de mercado",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Levantamento de requisitos detalhados de um editor de vídeo profissional",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de requisitos aprovado contendo lista completa de funcionalidades"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.105Z",
+      "atualizadaEm": "2026-09-15T02:11:48.105Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_3",
+      "descricao": "Definir stack tecnológica (C++/Qt/FFmpeg, build system, licenças)",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu21d79l_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Decisão de stack documentada e validada com critérios de desempenho e licença"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Confirmar versões compatíveis e implicações de licenciamento",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir stack tecnológica (C++/Qt/FFmpeg, build system, licenças)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Decisão de stack documentada e validada com critérios de desempenho e licença"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_4",
+      "descricao": "Projeto da arquitetura de software (camadas, módulos, integração FFmpeg)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21d79m_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Diagrama de arquitetura e especificação de módulos entregues"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Projeto da arquitetura de software (camadas, módulos, integração FFmpeg)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de arquitetura e especificação de módulos entregues"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_5",
+      "descricao": "Criação de mockups UI/UX (timeline, preview, barra de ferramentas)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21d79l_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "uiux",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "imagem"
+      ],
+      "criterioConclusao": [
+        "Conjunto de mockups aprovados em formato PNG/Sketch"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Criação de mockups UI/UX (timeline, preview, barra de ferramentas)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conjunto de mockups aprovados em formato PNG/Sketch"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_6",
+      "descricao": "Configuração de repositório Git, CI (GitHub Actions) e pipeline de build multiplataforma",
+      "tipo": "configuracao",
+      "dependeDe": [
+        "tarefa_mu21d79m_4"
+      ],
+      "recursoExclusivo": ".github/workflows",
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Workflow CI configurado, builds automáticos para Windows, macOS e Linux"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Configuração de repositório Git, CI (GitHub Actions) e pipeline de build multiplataforma",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Workflow CI configurado, builds automáticos para Windows, macOS e Linux"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_7",
+      "descricao": "Desenvolvimento do núcleo de processamento de vídeo (wrapper FFmpeg, API de corte/concatenação)",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21d79m_4",
+        "tarefa_mu21d79m_3"
+      ],
+      "recursoExclusivo": "src/core",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compiler",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Biblioteca core compilada, testes unitários de corte/concatenação passando"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Desenvolvimento do núcleo de processamento de vídeo (wrapper FFmpeg, API de corte/concatenação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Biblioteca core compilada, testes unitários de corte/concatenação passando"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_8",
+      "descricao": "Implementação da interface de timeline e edição (arrastar, cortar, zoom)",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21d79m_7",
+        "tarefa_mu21d79m_5"
+      ],
+      "recursoExclusivo": "src/ui/timeline",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compiler",
+        "imagem"
+      ],
+      "criterioConclusao": [
+        "Timeline funcional integrada ao core, UI responsiva demonstrada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementação da interface de timeline e edição (arrastar, cortar, zoom)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Timeline funcional integrada ao core, UI responsiva demonstrada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_9",
+      "descricao": "Implementação da funcionalidade de exportação/render usando FFmpeg com opções de codec e resolução",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21d79m_7",
+        "tarefa_mu21d79m_8"
+      ],
+      "recursoExclusivo": "src/export",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compiler",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Exportador gera arquivos corretos para H.264, H.265 e ProRes em 4K"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementação da funcionalidade de exportação/render usando FFmpeg com opções de codec e resolução",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Exportador gera arquivos corretos para H.264, H.265 e ProRes em 4K"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_a",
+      "descricao": "Criação de testes unitários e de integração (import, edit, export) com Catch2",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21d79m_7",
+        "tarefa_mu21d79m_8",
+        "tarefa_mu21d79m_9"
+      ],
+      "recursoExclusivo": "tests",
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compiler"
+      ],
+      "criterioConclusao": [
+        "Cobertura de testes >=80% e pipeline CI aprova todos os testes"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criação de testes unitários e de integração (import, edit, export) com Catch2",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Cobertura de testes >=80% e pipeline CI aprova todos os testes"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_b",
+      "descricao": "Redação da documentação de usuário e guia de desenvolvedor",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu21d79m_9",
+        "tarefa_mu21d79m_a"
+      ],
+      "recursoExclusivo": "docs",
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Manual PDF finalizado e README atualizado no repositório"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Redação da documentação de usuário e guia de desenvolvedor",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Manual PDF finalizado e README atualizado no repositório"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    },
+    {
+      "id": "tarefa_mu21d79m_c",
+      "descricao": "Build e empacotamento de instaladores para Windows (NSIS), macOS (DMG) e Linux (AppImage)",
+      "tipo": "devops",
+      "dependeDe": [
+        "tarefa_mu21d79m_9",
+        "tarefa_mu21d79m_a"
+      ],
+      "recursoExclusivo": "dist",
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compiler"
+      ],
+      "criterioConclusao": [
+        "Instaladores testados e funcionando em cada SO alvo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Build e empacotamento de instaladores para Windows (NSIS), macOS (DMG) e Linux (AppImage)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Instaladores testados e funcionando em cada SO alvo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:11:48.106Z",
+      "atualizadaEm": "2026-09-15T02:11:48.106Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21d79m_3",
+      "para": "tarefa_mu21d79l_2"
+    },
+    {
+      "de": "tarefa_mu21d79m_4",
+      "para": "tarefa_mu21d79m_3"
+    },
+    {
+      "de": "tarefa_mu21d79m_5",
+      "para": "tarefa_mu21d79l_2"
+    },
+    {
+      "de": "tarefa_mu21d79m_6",
+      "para": "tarefa_mu21d79m_4"
+    },
+    {
+      "de": "tarefa_mu21d79m_7",
+      "para": "tarefa_mu21d79m_4"
+    },
+    {
+      "de": "tarefa_mu21d79m_7",
+      "para": "tarefa_mu21d79m_3"
+    },
+    {
+      "de": "tarefa_mu21d79m_8",
+      "para": "tarefa_mu21d79m_7"
+    },
+    {
+      "de": "tarefa_mu21d79m_8",
+      "para": "tarefa_mu21d79m_5"
+    },
+    {
+      "de": "tarefa_mu21d79m_9",
+      "para": "tarefa_mu21d79m_7"
+    },
+    {
+      "de": "tarefa_mu21d79m_9",
+      "para": "tarefa_mu21d79m_8"
+    },
+    {
+      "de": "tarefa_mu21d79m_a",
+      "para": "tarefa_mu21d79m_7"
+    },
+    {
+      "de": "tarefa_mu21d79m_a",
+      "para": "tarefa_mu21d79m_8"
+    },
+    {
+      "de": "tarefa_mu21d79m_a",
+      "para": "tarefa_mu21d79m_9"
+    },
+    {
+      "de": "tarefa_mu21d79m_b",
+      "para": "tarefa_mu21d79m_9"
+    },
+    {
+      "de": "tarefa_mu21d79m_b",
+      "para": "tarefa_mu21d79m_a"
+    },
+    {
+      "de": "tarefa_mu21d79m_c",
+      "para": "tarefa_mu21d79m_9"
+    },
+    {
+      "de": "tarefa_mu21d79m_c",
+      "para": "tarefa_mu21d79m_a"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:11:48.099Z",
+  "atualizadaEm": "2026-09-15T02:11:48.099Z",
+  "modoExecucao": "AUTO"
+}

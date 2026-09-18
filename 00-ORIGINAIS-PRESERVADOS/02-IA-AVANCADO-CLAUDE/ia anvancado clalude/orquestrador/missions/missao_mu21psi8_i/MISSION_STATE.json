@@ -1,0 +1,165 @@
+{
+  "id": "missao_mu21psi8_i",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:21:35.504Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:21:35.504Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:21:35.505Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:21:35.505Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21psi9_j",
+      "descricao": "Pesquisar APIs de Visão/LLMs multimodais gratuitas com boa taxa de QPS para uso em protótipo",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de 2 opções viáveis com documentação de acesso confirmada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisa validar quais APIs (Claude, GPT-4o, Gemini) têm planos gratuitos atuais e qualidade satisfatória para análise de imagem em 2024/2025",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar APIs de Visão/LLMs multimodais gratuitas com boa taxa de QPS para uso em protótipo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de 2 opções viáveis com documentação de acesso confirmada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:35.505Z",
+      "atualizadaEm": "2026-09-15T02:21:35.505Z"
+    },
+    {
+      "id": "tarefa_mu21psi9_k",
+      "descricao": "Definir arquitetura técnica: stack de frontend (React/Vue/Pure) e backend (Node/Python) apoiando o upload e a chamada à API de visão escolhida",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu21psi9_j"
+      ],
+      "recursoExclusivo": "arquitetura.md",
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão de arquitetura com justificativa para cada escolha"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir arquitetura técnica: stack de frontend (React/Vue/Pure) e backend (Node/Python) apoiando o upload e a chamada à API de visão escolhida",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão de arquitetura com justificativa para cada escolha"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:35.505Z",
+      "atualizadaEm": "2026-09-15T02:21:35.505Z"
+    },
+    {
+      "id": "tarefa_mu21psi9_l",
+      "descricao": "Implementar backend que recebe a imagem, chama a API de visão/LLM e retorna a descrição gerada",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21psi9_k"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint POST /describe funcional que retorna JSON com o texto da descrição"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar backend que recebe a imagem, chama a API de visão/LLM e retorna a descrição gerada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint POST /describe funcional que retorna JSON com o texto da descrição"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:35.505Z",
+      "atualizadaEm": "2026-09-15T02:21:35.505Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21psi9_k",
+      "para": "tarefa_mu21psi9_j"
+    },
+    {
+      "de": "tarefa_mu21psi9_l",
+      "para": "tarefa_mu21psi9_k"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:21:35.504Z",
+  "atualizadaEm": "2026-09-15T02:21:35.504Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "arquitetura.md"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

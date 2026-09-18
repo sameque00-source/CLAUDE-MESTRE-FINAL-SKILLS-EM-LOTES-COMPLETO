@@ -1,0 +1,248 @@
+{
+  "id": "missao_mu21pjl3_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:21:23.941Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:21:23.943Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (5 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:21:23.949Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:21:23.949Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21pjl8_2",
+      "descricao": "Confirmar a presença do arquivo README.md no diretório raiz do projeto.",
+      "tipo": "acao",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo README.md encontrado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Confirmar a presença do arquivo README.md no diretório raiz do projeto.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo README.md encontrado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:23.948Z",
+      "atualizadaEm": "2026-09-15T02:21:23.948Z"
+    },
+    {
+      "id": "tarefa_mu21pjl8_3",
+      "descricao": "Buscar todas as ocorrências da palavra \"aplicacao\" (case‑insensitive) no README.md.",
+      "tipo": "acao",
+      "dependeDe": [
+        "tarefa_mu21pjl8_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Lista de linhas/posições onde \"aplicacao\" aparece"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Buscar todas as ocorrências da palavra \"aplicacao\" (case‑insensitive) no README.md.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de linhas/posições onde \"aplicacao\" aparece"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:23.948Z",
+      "atualizadaEm": "2026-09-15T02:21:23.948Z"
+    },
+    {
+      "id": "tarefa_mu21pjl8_4",
+      "descricao": "Substituir cada ocorrência de \"aplicacao\" por \"aplicação\" no README.md.",
+      "tipo": "acao",
+      "dependeDe": [
+        "tarefa_mu21pjl8_3"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Todas as ocorrências trocadas; nenhuma linha contém \"aplicacao\""
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Substituir cada ocorrência de \"aplicacao\" por \"aplicação\" no README.md.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Todas as ocorrências trocadas; nenhuma linha contém \"aplicacao\""
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:23.948Z",
+      "atualizadaEm": "2026-09-15T02:21:23.948Z"
+    },
+    {
+      "id": "tarefa_mu21pjl8_5",
+      "descricao": "Salvar o arquivo e garantir que está codificado em UTF‑8 sem erros de formatação.",
+      "tipo": "acao",
+      "dependeDe": [
+        "tarefa_mu21pjl8_4"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md salvo, codificação UTF‑8 confirmada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Salvar o arquivo e garantir que está codificado em UTF‑8 sem erros de formatação.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md salvo, codificação UTF‑8 confirmada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:23.948Z",
+      "atualizadaEm": "2026-09-15T02:21:23.948Z"
+    },
+    {
+      "id": "tarefa_mu21pjl8_6",
+      "descricao": "Se o diretório for um repositório Git, adicionar e commitar a mudança com a mensagem \"Corrige ortografia de aplicação no README\".",
+      "tipo": "acao",
+      "dependeDe": [
+        "tarefa_mu21pjl8_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Commit criado e presente no log do Git"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Se o diretório for um repositório Git, adicionar e commitar a mudança com a mensagem \"Corrige ortografia de aplicação no README\".",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Commit criado e presente no log do Git"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:23.948Z",
+      "atualizadaEm": "2026-09-15T02:21:23.948Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21pjl8_3",
+      "para": "tarefa_mu21pjl8_2"
+    },
+    {
+      "de": "tarefa_mu21pjl8_4",
+      "para": "tarefa_mu21pjl8_3"
+    },
+    {
+      "de": "tarefa_mu21pjl8_5",
+      "para": "tarefa_mu21pjl8_4"
+    },
+    {
+      "de": "tarefa_mu21pjl8_6",
+      "para": "tarefa_mu21pjl8_5"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:21:23.941Z",
+  "atualizadaEm": "2026-09-15T02:21:23.941Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "README.md deve existir no diretório raiz do repositório.",
+    "Todas as ocorrências de \"aplicacao\" devem ser substituídas por \"aplicação\".",
+    "Alteração deve ser salva com codificação UTF-8.",
+    "Alteração deve ser registrada em commit Git (se o repositório estiver versionado)."
+  ],
+  "entregaveis": [
+    "Arquivo README.md atualizado contendo \"aplicação\".",
+    "Commit Git contendo a correção (se aplicável)."
+  ],
+  "criteriosSucesso": [
+    "README.md contém a palavra \"aplicação\" e não contém mais \"aplicacao\".",
+    "Commit de correção presente no histórico (quando Git está disponível)."
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "id": "missao_mu21fuob_1",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:13:51.754Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:13:51.755Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (9 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:13:51.761Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:13:51.762Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21fuog_2",
+      "descricao": "Coletar e especificar requisitos funcionais e não funcionais do editor de vídeo",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Documento de requisitos aprovado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Coletar e especificar requisitos funcionais e não funcionais do editor de vídeo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de requisitos aprovado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_3",
+      "descricao": "Selecionar stack tecnológica (linguagem, framework UI, biblioteca de processamento, sistema de build)",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu21fuog_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Decisão de stack documentada e justificada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher entre C++/Qt, Electron, Flutter; versão de FFmpeg, licenças e suporte multiplataforma",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Selecionar stack tecnológica (linguagem, framework UI, biblioteca de processamento, sistema de build)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Decisão de stack documentada e justificada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_4",
+      "descricao": "Definir arquitetura modular do aplicativo, incluindo camadas de core, UI e integração",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fuog_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "texto",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Diagrama de arquitetura e especificação de módulos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir arquitetura modular do aplicativo, incluindo camadas de core, UI e integração",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de arquitetura e especificação de módulos"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_5",
+      "descricao": "Configurar repositório Git com CI (GitHub Actions) e estrutura de build (CMake)",
+      "tipo": "configuracao",
+      "dependeDe": [
+        "tarefa_mu21fuog_4"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Pipeline CI executando builds nas três plataformas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Configurar repositório Git com CI (GitHub Actions) e estrutura de build (CMake)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Pipeline CI executando builds nas três plataformas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_6",
+      "descricao": "Implementar camada core de processamento usando libav/FFmpeg: import, corte, concatenação, export",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fuog_4",
+        "tarefa_mu21fuog_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compilador",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "API C++ para operações básicas funcionando e testada com arquivos de exemplo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar camada core de processamento usando libav/FFmpeg: import, corte, concatenação, export",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "API C++ para operações básicas funcionando e testada com arquivos de exemplo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_7",
+      "descricao": "Desenvolver interface UI principal com Qt (QML) contendo timeline, preview e barra de ferramentas",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fuog_4",
+        "tarefa_mu21fuog_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compilador",
+        "arquivos",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Protótipo funcional da UI demonstrando carga de vídeo e visualização"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver interface UI principal com Qt (QML) contendo timeline, preview e barra de ferramentas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Protótipo funcional da UI demonstrando carga de vídeo e visualização"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_8",
+      "descricao": "Integrar core e UI via camada de serviço, definir contratos C++/Qt",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fuog_6",
+        "tarefa_mu21fuog_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compilador",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Edição básica (corte, trim) operando via UI sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar core e UI via camada de serviço, definir contratos C++/Qt",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Edição básica (corte, trim) operando via UI sem erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_9",
+      "descricao": "Adicionar funcionalidades avançadas: transições, efeitos simples, mixagem de áudio",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21fuog_8"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compilador",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Pelo menos 3 transições e 2 efeitos aplicáveis na UI"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Adicionar funcionalidades avançadas: transições, efeitos simples, mixagem de áudio",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Pelo menos 3 transições e 2 efeitos aplicáveis na UI"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    },
+    {
+      "id": "tarefa_mu21fuog_a",
+      "descricao": "Criar suíte de testes automatizados (unitários com GoogleTest, integração com QtTest)",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21fuog_6",
+        "tarefa_mu21fuog_7",
+        "tarefa_mu21fuog_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "compilador",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Cobertura de código ≥ 70% e todos os testes passando no CI"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar suíte de testes automatizados (unitários com GoogleTest, integração com QtTest)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Cobertura de código ≥ 70% e todos os testes passando no CI"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:13:51.760Z",
+      "atualizadaEm": "2026-09-15T02:13:51.760Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21fuog_3",
+      "para": "tarefa_mu21fuog_2"
+    },
+    {
+      "de": "tarefa_mu21fuog_4",
+      "para": "tarefa_mu21fuog_3"
+    },
+    {
+      "de": "tarefa_mu21fuog_5",
+      "para": "tarefa_mu21fuog_4"
+    },
+    {
+      "de": "tarefa_mu21fuog_6",
+      "para": "tarefa_mu21fuog_4"
+    },
+    {
+      "de": "tarefa_mu21fuog_6",
+      "para": "tarefa_mu21fuog_5"
+    },
+    {
+      "de": "tarefa_mu21fuog_7",
+      "para": "tarefa_mu21fuog_4"
+    },
+    {
+      "de": "tarefa_mu21fuog_7",
+      "para": "tarefa_mu21fuog_5"
+    },
+    {
+      "de": "tarefa_mu21fuog_8",
+      "para": "tarefa_mu21fuog_6"
+    },
+    {
+      "de": "tarefa_mu21fuog_8",
+      "para": "tarefa_mu21fuog_7"
+    },
+    {
+      "de": "tarefa_mu21fuog_9",
+      "para": "tarefa_mu21fuog_8"
+    },
+    {
+      "de": "tarefa_mu21fuog_a",
+      "para": "tarefa_mu21fuog_6"
+    },
+    {
+      "de": "tarefa_mu21fuog_a",
+      "para": "tarefa_mu21fuog_7"
+    },
+    {
+      "de": "tarefa_mu21fuog_a",
+      "para": "tarefa_mu21fuog_9"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:13:51.754Z",
+  "atualizadaEm": "2026-09-15T02:13:51.754Z",
+  "modoExecucao": "AUTO"
+}

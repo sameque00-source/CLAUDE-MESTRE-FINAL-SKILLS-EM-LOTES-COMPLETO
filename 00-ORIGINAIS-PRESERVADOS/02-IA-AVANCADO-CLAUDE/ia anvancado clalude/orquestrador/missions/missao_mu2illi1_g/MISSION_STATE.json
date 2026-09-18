@@ -1,0 +1,399 @@
+{
+  "id": "missao_mu2illi1_g",
+  "objetivo": "Crie um pequeno aplicativo web funcional: um servidor Node.js (http nativo, sem dependências externas) que responde na rota / com uma pagina HTML simples dizendo \"Ola, mundo!\", rodando na porta 3900.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:14:13.273Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:14:13.273Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (5 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T10:14:13.277Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:14:13.278Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T10:17:58.254Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T10:17:58.255Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2illi5_h",
+      "descricao": "Pesquisar a API nativa do módulo http do Node.js para criar um servidor, definir cabeçalhos e tratar a rota raiz",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento resumido com exemplos de createServer, tratamento de req.url e escrita de cabeçalho Content-Type"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Confirmar a sintaxe correta de createServer, manipulação de req.url e envio de resposta HTML sem dependências externas",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar a API nativa do módulo http do Node.js para criar um servidor, definir cabeçalhos e tratar a rota raiz",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento resumido com exemplos de createServer, tratamento de req.url e escrita de cabeçalho Content-Type"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "## Visão geral da API **`http`** nativa do Node.js  \n\nO módulo **`http`** (incluído na distribuição padrão do Node) permite criar servidores web sem precisar instalar dependências externas. Ele fornece:\n\n| Recurso | Descrição |\n|---------|------------|\n| `http.createServer([requestListener])` | Cria um objeto **`Server`**. O `requestListener` recebe `(req, res)` e já está ligado ao evento **`'request'`**. |\n| `server.listen(port[, hostname][, backlog][, listeningListener])` | Faz o servidor aceitar conexões. |\n| `IncomingMessage` (`req`) | Representa a requisição HTTP (cabeçalhos, método, URL, corpo). |\n| `ServerResponse` (`res`) | Representa a resposta que será enviada ao cliente. |\n| `res.writeHead(statusCode[, statusMessage][, headers])` | Define o **código de status** e **cabeçalhos** da resposta. |\n| `res.setHeader(name, value)` / `res.getHeader(name)` | Manipula cabeçalhos individualmente. |\n| `res.write(chunk[, encoding][, callback])` | Envia parte do corpo da resposta (streaming). |\n| `res.end([data][, encoding][, callback])` | Finaliza a resposta – opcionalmente enviando o último bloco de dados. |\n| Eventos do `Server` | `request`, `connection`, `close`, `error`, `listening`, etc. |\n| `http.STATUS_CODES` | Objeto com textos padrão para cada código de status (e.g. `200: 'OK'`). |\n\n> **Importante:** Toda a API é **sincrônica** na criação do servidor (os callbacks são assíncronos). Não há abstrações como *routing* ou *middleware* – tudo deve ser tratado manualmente ou com a ajuda de módulos auxiliares (Express, Koa, etc.).\n\n---\n\n## Como criar um servidor básico que responde à rota raiz (`/`)\n\n```js\n// server.js\nconst http = require('http');            // módulo nativo\nconst { URL } = require('url');          // utilitário para analisar a URL\n\n// ----------- 1. Função que lida com cada requisição -----------\nfunction requestHandler(req, res) {\n  // 1️⃣ Parse da URL (inclui path, query string, etc.)\n  const parsedUrl = new URL(req.url, `http://${req.headers.host}`);\n\n  // 2️⃣ Determina a rota (pathname)\n  const pathname = parsedUrl.pathname;\n\n  // 3️⃣ Definindo cabeçalhos comuns (ex.: JSON, CORS, Cache)\n  res.setHeader('X-Powered-By', 'Node.js');\n  res.setHeader('Access-Control-Allow-Origin', '*'); // CORS simples\n  // Se for JSON:\n  // res.setHeader('Content-Type",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:15.214Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:13.277Z",
+      "atualizadaEm": "2026-09-15T10:14:15.214Z"
+    },
+    {
+      "id": "tarefa_mu2illi5_i",
+      "descricao": "Definir a estrutura do projeto: nome do arquivo principal (server.js) e escolha do sistema de módulos (CommonJS)",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2illi5_h"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Decisão documentada indicando que o projeto consistirá de um único arquivo server.js usando require('http')"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a estrutura do projeto: nome do arquivo principal (server.js) e escolha do sistema de módulos (CommonJS)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Decisão documentada indicando que o projeto consistirá de um único arquivo server.js usando require('http')"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "## Estrutura do Projeto  \n\nA ideia é manter tudo o mais simples possível, já que vamos trabalhar apenas com a API **nativa** do Node (`http`).  \nA estrutura abaixo segue o padrão **CommonJS** (`require / module.exports`) e deixa espaço para que, futuramente, você adicione módulos auxiliares (rotas, controllers, middlewares, etc.) sem precisar reorganizar tudo.\n\n```\nmy-http-api/\n│\n├─ src/                     # Código-fonte da aplicação\n│   ├─ routes/              # (opcional) arquivos que exportam funções de rota\n│   │   └─ index.js\n│   ├─ utils/               # (opcional) helpers, parseadores, etc.\n│   │   └─ logger.js\n│   └─ server.js            # ← **arquivo principal** da API\n│\n├─ .gitignore               # arquivos/ pastas que não devem ser versionados\n├─ package.json             # meta‑dados, scripts e dependências (mesmo que não haja)\n├─ README.md                # documentação básica\n└─ LICENSE                  # (opcional) licença do projeto\n```\n\n> **Obs.:** Se preferir, pode colocar o `server.js` direto na raiz (`my-http-api/server.js`). A pasta `src/` é apenas uma convenção para separar a lógica da camada de “infra‑estrutura” (scripts de build, CI, etc.). Sinta‑se à vontade para remover ou renomear conforme a necessidade da sua equipe.\n\n---\n\n## Por que **CommonJS**?\n\n- **Compatibilidade total** com a versão LTS do Node que já vem instalada na maioria dos ambientes de produção.\n- Não requer a flag `--experimental-modules` nem a extensão `.mjs`.\n- Permite usar `require` de forma síncrona, o que combina perfeitamente com a criação de um servidor **imperativo** (ex.: `const http = require('http');`).\n- Caso, no futuro, você queira migrar para **ESM**, basta mudar a extensão dos arquivos para `.mjs` ou adicionar `\"type\": \"module\"` no `package.json` – a lógica de negócio continua a mesma.\n\n---\n\n## Arquivo principal – `src/server.js`\n\n```js\n// src/server.js\n// ---------------------------------------------------\n// 1️⃣ IMPORTAÇÕES (CommonJS)\n// ---------------------------------------------------\nconst http = require('http');                // módulo nativo\nconst { URL } = require('url');              // utilitário para parsing de URL\n// (opcional) importar rotas auxiliares\n// const routes = require('./routes');        // ← exemplo\n\n// ---------------------------------------------------\n// 2️⃣ CONFIGURAÇÕES DO SERVIDOR\n// ---------------------------------------------------\nconst PORT = process.env.PORT || 3000;\nconst HOST = process.env.HOST || '",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:17.306Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:13.277Z",
+      "atualizadaEm": "2026-09-15T10:14:17.306Z"
+    },
+    {
+      "id": "tarefa_mu2illi5_j",
+      "descricao": "Escrever o código do servidor em server.js conforme especificado (porta 3900, rota '/', resposta HTML \"Ola, mundo!\")",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2illi5_i"
+      ],
+      "recursoExclusivo": "server.js",
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [
+        "editor",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Arquivo server.js criado e contém código executável que compila sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o código do servidor em server.js conforme especificado (porta 3900, rota '/', resposta HTML \"Ola, mundo!\")",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo server.js criado e contém código executável que compila sem erros"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [
+          "server.js"
+        ],
+        "erros": [
+          "execução real falhou (tipo=erro_codigo, estratégia=corrigir): Command failed: node server.js\n\nstderr: \nstdout: Server listening on port 3900"
+        ],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "falhou",
+            "evidencia": "Command failed: node server.js\n\nstderr: \nstdout: Server listening on port 3900"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:17:58.253Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T10:14:13.277Z",
+      "atualizadaEm": "2026-09-15T10:17:58.255Z",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2illi5_k",
+      "descricao": "Testar o servidor localmente: iniciar o script e validar via curl ou navegador que a resposta na raiz contém \"Ola, mundo!\" e status 200",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2illi5_j"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Comando curl http://localhost:3900/ retorna HTML com o texto exato e código 200"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Testar o servidor localmente: iniciar o script e validar via curl ou navegador que a resposta na raiz contém \"Ola, mundo!\" e status 200",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comando curl http://localhost:3900/ retorna HTML com o texto exato e código 200"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:13.277Z",
+      "atualizadaEm": "2026-09-15T10:17:58.255Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2illi5_j\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2illi5_l",
+      "descricao": "Criar README.md com instruções de instalação (Node.js), execução (`node server.js`) e verificação da aplicação",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu2illi5_j"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "cancelada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "editor"
+      ],
+      "criterioConclusao": [
+        "Arquivo README.md presente contendo passos claros para rodar o servidor e validar a resposta"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Criar README.md com instruções de instalação (Node.js), execução (`node server.js`) e verificação da aplicação",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo README.md presente contendo passos claros para rodar o servidor e validar a resposta"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:13.277Z",
+      "atualizadaEm": "2026-09-15T10:17:58.255Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2illi5_j\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2illi5_i",
+      "para": "tarefa_mu2illi5_h"
+    },
+    {
+      "de": "tarefa_mu2illi5_j",
+      "para": "tarefa_mu2illi5_i"
+    },
+    {
+      "de": "tarefa_mu2illi5_k",
+      "para": "tarefa_mu2illi5_j"
+    },
+    {
+      "de": "tarefa_mu2illi5_l",
+      "para": "tarefa_mu2illi5_j"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture"
+  ],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2illi5_h",
+      "status": "ok",
+      "resultado": "## Visão geral da API **`http`** nativa do Node.js  \n\nO módulo **`http`** (incluído na distribuição padrão do Node) permite criar servidores web sem precisar instalar dependências externas. Ele fornece:\n\n| Recurso | Descrição |\n|---------|------------|\n| `http.createServer([requestListener])` | Cria um objeto **`Server`**. O `requestListener` recebe `(req, res)` e já está ligado ao evento **`'request'`**. |\n| `server.listen(port[, hostname][, backlog][, listeningListener])` | Faz o servidor aceitar conexões. |\n| `IncomingMessage` (`req`) | Representa a requisição HTTP (cabeçalhos, método, URL, corpo). |\n| `ServerResponse` (`res`) | Representa a resposta que será enviada ao cliente. |\n| `res.writeHead(statusCode[, statusMessage][, headers])` | Define o **código de status** e **cabeçalhos** da resposta. |\n| `res.setHeader(name, value)` / `res.getHeader(name)` | Manipula cabeçalhos individualmente. |\n| `res.write(chunk[, encoding][, callback])` | Envia parte do corpo da resposta (streaming). |\n| `res.end([data][, encoding][, callback])` | Finaliza a resposta – opcionalmente enviando o último bloco de dados. |\n| Eventos do `Server` | `request`, `connection`, `close`, `error`, `listening`, etc. |\n| `http.STATUS_CODES` | Objeto com textos padrão para cada código de status (e.g. `200: 'OK'`). |\n\n> **Importante:** Toda a API é **sincrônica** na criação do servidor (os callbacks são assíncronos). Não há abstrações como *routing* ou *middleware* – tudo deve ser tratado manualmente ou com a ajuda de módulos auxiliares (Express, Koa, etc.).\n\n---\n\n## Como criar um servidor básico que responde à rota raiz (`/`)\n\n```js\n// server.js\nconst http = require('http');            // módulo nativo\nconst { URL } = require('url');          // utilitário para analisar a URL\n\n// ----------- 1. Função que lida com cada requisição -----------\nfunction requestHandler(req, res) {\n  // 1️⃣ Parse da URL (inclui path, query string, etc.)\n  const parsedUrl = new URL(req.url, `http://${req.headers.host}`);\n\n  // 2️⃣ Determina a rota (pathname)\n  const pathname = parsedUrl.pathname;\n\n  // 3️⃣ Definindo cabeçalhos comuns (ex.: JSON, CORS, Cache)\n  res.setHeader('X-Powered-By', 'Node.js');\n  res.setHeader('Access-Control-Allow-Origin', '*'); // CORS simples\n  // Se for JSON:\n  // res.setHeader('Content-Type",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:15.214Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2illi5_i",
+      "status": "ok",
+      "resultado": "## Estrutura do Projeto  \n\nA ideia é manter tudo o mais simples possível, já que vamos trabalhar apenas com a API **nativa** do Node (`http`).  \nA estrutura abaixo segue o padrão **CommonJS** (`require / module.exports`) e deixa espaço para que, futuramente, você adicione módulos auxiliares (rotas, controllers, middlewares, etc.) sem precisar reorganizar tudo.\n\n```\nmy-http-api/\n│\n├─ src/                     # Código-fonte da aplicação\n│   ├─ routes/              # (opcional) arquivos que exportam funções de rota\n│   │   └─ index.js\n│   ├─ utils/               # (opcional) helpers, parseadores, etc.\n│   │   └─ logger.js\n│   └─ server.js            # ← **arquivo principal** da API\n│\n├─ .gitignore               # arquivos/ pastas que não devem ser versionados\n├─ package.json             # meta‑dados, scripts e dependências (mesmo que não haja)\n├─ README.md                # documentação básica\n└─ LICENSE                  # (opcional) licença do projeto\n```\n\n> **Obs.:** Se preferir, pode colocar o `server.js` direto na raiz (`my-http-api/server.js`). A pasta `src/` é apenas uma convenção para separar a lógica da camada de “infra‑estrutura” (scripts de build, CI, etc.). Sinta‑se à vontade para remover ou renomear conforme a necessidade da sua equipe.\n\n---\n\n## Por que **CommonJS**?\n\n- **Compatibilidade total** com a versão LTS do Node que já vem instalada na maioria dos ambientes de produção.\n- Não requer a flag `--experimental-modules` nem a extensão `.mjs`.\n- Permite usar `require` de forma síncrona, o que combina perfeitamente com a criação de um servidor **imperativo** (ex.: `const http = require('http');`).\n- Caso, no futuro, você queira migrar para **ESM**, basta mudar a extensão dos arquivos para `.mjs` ou adicionar `\"type\": \"module\"` no `package.json` – a lógica de negócio continua a mesma.\n\n---\n\n## Arquivo principal – `src/server.js`\n\n```js\n// src/server.js\n// ---------------------------------------------------\n// 1️⃣ IMPORTAÇÕES (CommonJS)\n// ---------------------------------------------------\nconst http = require('http');                // módulo nativo\nconst { URL } = require('url');              // utilitário para parsing de URL\n// (opcional) importar rotas auxiliares\n// const routes = require('./routes');        // ← exemplo\n\n// ---------------------------------------------------\n// 2️⃣ CONFIGURAÇÕES DO SERVIDOR\n// ---------------------------------------------------\nconst PORT = process.env.PORT || 3000;\nconst HOST = process.env.HOST || '",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:17.306Z"
+    }
+  ],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2illi5_j",
+      "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node server.js & sleep 2 && curl -s -f http://localhost:3900/ && kill %1 2>/dev/null || echo \"Teste executado\" ENOENT\nstderr: \nstdout:",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:14:49.223Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2illi5_j",
+      "erro": "execução real falhou (tipo=erro_codigo, estratégia=corrigir): Command failed: node server.js\n\nstderr: \nstdout: Servidor rodando em http://localhost:3900",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:16:23.132Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2illi5_j",
+      "erro": "execução real falhou (tipo=erro_codigo, estratégia=corrigir): Command failed: node server.js\n\nstderr: \nstdout: Server listening on port 3900",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:17:58.254Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2illi5_j",
+        "erro": "execução real falhou (tipo=erro_ambiente, estratégia=bloquear): spawn node server.js & sleep 2 && curl -s -f http://localhost:3900/ && kill %1 2>/dev/null || echo \"Teste executado\" ENOENT\nstderr: \nstdout:",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:14:49.223Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:14:49.223Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2illi5_j",
+        "erro": "execução real falhou (tipo=erro_codigo, estratégia=corrigir): Command failed: node server.js\n\nstderr: \nstdout: Servidor rodando em http://localhost:3900",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:16:23.132Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:16:23.132Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2illi5_j",
+        "erro": "execução real falhou (tipo=erro_codigo, estratégia=corrigir): Command failed: node server.js\n\nstderr: \nstdout: Server listening on port 3900",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:17:58.254Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T10:17:58.254Z"
+    }
+  ],
+  "progresso": 0.4,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T10:17:58.255Z"
+  },
+  "criadaEm": "2026-09-15T10:14:13.273Z",
+  "atualizadaEm": "2026-09-15T10:17:58.255Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Servidor HTTP nativo Node.js (sem dependências externas)",
+    "Escuta na porta 3900",
+    "Rota \"/\" responde com HTML contendo exatamente \"Ola, mundo!\"",
+    "Código em um único arquivo executável",
+    "Instruções de uso em README"
+  ],
+  "entregaveis": [
+    "server.js (código do servidor)",
+    "README.md (instruções de execução)"
+  ],
+  "criteriosSucesso": [
+    "Ao executar `node server.js`, acessar http://localhost:3900/ retorna página HTML que exibe exatamente \"Ola, mundo!\" com código de status 200"
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "id": "missao_mu21pvzg_m",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:21:40.012Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:21:40.012Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T02:21:40.013Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:21:40.013Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21pvzh_n",
+      "descricao": "Definir a stack tecnológica (ex: Next.js com API Routes e SDK da OpenAI) e estruturar o projeto base.",
+      "tipo": "implementacao",
+      "dependeDe": [],
+      "recursoExclusivo": "projeto_base",
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Estrutura básica de pastas criada e dependências instaladas com sucesso."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a stack tecnológica (ex: Next.js com API Routes e SDK da OpenAI) e estruturar o projeto base.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Estrutura básica de pastas criada e dependências instaladas com sucesso."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:40.013Z",
+      "atualizadaEm": "2026-09-15T02:21:40.013Z"
+    },
+    {
+      "id": "tarefa_mu21pvzh_o",
+      "descricao": "Desenvolver a interface frontend para upload de imagem e exibição da descrição gerada.",
+      "tipo": "implementacao",
+      "dependeDe": [
+        "tarefa_mu21pvzh_n"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Página web exibe input de arquivo, botão de envio e área de resultado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface frontend para upload de imagem e exibição da descrição gerada.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Página web exibe input de arquivo, botão de envio e área de resultado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:40.013Z",
+      "atualizadaEm": "2026-09-15T02:21:40.013Z"
+    },
+    {
+      "id": "tarefa_mu21pvzh_p",
+      "descricao": "Implementar a rota de backend para receber a imagem, enviá-la para a API multimodal de IA e retornar a descrição.",
+      "tipo": "implementacao",
+      "dependeDe": [
+        "tarefa_mu21pvzh_n"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint recebe imagem via POST e retorna texto descritivo gerado pela IA."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a rota de backend para receber a imagem, enviá-la para a API multimodal de IA e retornar a descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint recebe imagem via POST e retorna texto descritivo gerado pela IA."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:40.013Z",
+      "atualizadaEm": "2026-09-15T02:21:40.013Z"
+    },
+    {
+      "id": "tarefa_mu21pvzh_q",
+      "descricao": "Integrar frontend e backend e realizar teste ponta a ponta do fluxo de envio de foto e geração de descrição.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21pvzh_o",
+        "tarefa_mu21pvzh_p"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Upload de foto de teste gera descrição exibida corretamente na interface."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Integrar frontend e backend e realizar teste ponta a ponta do fluxo de envio de foto e geração de descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Upload de foto de teste gera descrição exibida corretamente na interface."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:40.013Z",
+      "atualizadaEm": "2026-09-15T02:21:40.013Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21pvzh_o",
+      "para": "tarefa_mu21pvzh_n"
+    },
+    {
+      "de": "tarefa_mu21pvzh_p",
+      "para": "tarefa_mu21pvzh_n"
+    },
+    {
+      "de": "tarefa_mu21pvzh_q",
+      "para": "tarefa_mu21pvzh_o"
+    },
+    {
+      "de": "tarefa_mu21pvzh_q",
+      "para": "tarefa_mu21pvzh_p"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:21:40.012Z",
+  "atualizadaEm": "2026-09-15T02:21:40.012Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface web minimalista para upload de imagem",
+    "Integração com API de IA multimodal (ex: GPT-4o-mini via API) para análise da imagem",
+    "Exibição clara da descrição gerada para o usuário"
+  ],
+  "entregaveis": [
+    "Código-fonte funcional da aplicação",
+    "Instruções básicas de configuração e execução"
+  ],
+  "criteriosSucesso": [
+    "Aplicação rodando localmente, capaz de receber upload de foto e retornar uma descrição coerente gerada por IA."
+  ]
+}

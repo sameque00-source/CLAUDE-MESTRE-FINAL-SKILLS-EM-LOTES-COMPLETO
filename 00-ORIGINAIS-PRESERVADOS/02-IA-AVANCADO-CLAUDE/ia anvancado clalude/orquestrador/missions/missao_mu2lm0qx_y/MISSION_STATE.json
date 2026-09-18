@@ -1,0 +1,264 @@
+{
+  "id": "missao_mu2lm0qx_y",
+  "objetivo": "Melhore um pequeno aplicativo web: crie uma pagina HTML simples com um contador de cliques em JavaScript puro (sem framework), pesquisando rapidamente a melhor pratica de acessibilidade para botoes antes de implementar, e revise o resultado final.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:38:31.881Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:38:31.881Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:38:31.882Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:38:31.882Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T11:38:33.856Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:38:33.857Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lm0qy_z",
+      "descricao": "Pesquisar as melhores práticas de acessibilidade (WAI-ARIA e semântica HTML) para botões interativos",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de requisitos de acessibilidade para botões documentada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir conformidade com diretrizes atuais de acessibilidade (WCAG) para elementos de botão.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar as melhores práticas de acessibilidade (WAI-ARIA e semântica HTML) para botões interativos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de requisitos de acessibilidade para botões documentada"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)"
+        ],
+        "evidencias": [
+          "agente=research",
+          "tentativas=[{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:38:33.855Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:38:31.882Z",
+      "atualizadaEm": "2026-09-15T11:38:33.857Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Pesquisar as melhores práticas de acessibilidade (WAI-ARIA e semântica HTML) para botões interativos\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Lista de requisitos de acessibilidade para botões documentada\nSUCCESS_CRITERIA: Lista de requisitos de acessibilidade para botões documentada",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2lm0qy_10",
+      "descricao": "Desenvolver a página HTML e o script em JavaScript puro com o contador e os atributos de acessibilidade pesquisados",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2lm0qy_z"
+      ],
+      "recursoExclusivo": "index.html",
+      "status": "cancelada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo index.html criado contendo HTML, JS e estilos básicos funcionais"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a página HTML e o script em JavaScript puro com o contador e os atributos de acessibilidade pesquisados",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo index.html criado contendo HTML, JS e estilos básicos funcionais"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:38:31.882Z",
+      "atualizadaEm": "2026-09-15T11:38:33.857Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lm0qy_z\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2lm0qy_11",
+      "descricao": "Revisar o código final quanto à simplicidade, funcionamento do contador e conformidade com as práticas de acessibilidade estabelecidas",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2lm0qy_10"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Relatório de revisão aprovando o código para entrega final"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código final quanto à simplicidade, funcionamento do contador e conformidade com as práticas de acessibilidade estabelecidas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de revisão aprovando o código para entrega final"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:38:31.882Z",
+      "atualizadaEm": "2026-09-15T11:38:33.857Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lm0qy_10\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lm0qy_10",
+      "para": "tarefa_mu2lm0qy_z"
+    },
+    {
+      "de": "tarefa_mu2lm0qy_11",
+      "para": "tarefa_mu2lm0qy_10"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2lm0qy_z",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:38:32.732Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2lm0qy_z",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:38:33.278Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2lm0qy_z",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:38:33.856Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lm0qy_z",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:38:32.732Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:38:32.732Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lm0qy_z",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:38:33.278Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:38:33.278Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lm0qy_z",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:38:33.856Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:38:33.856Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:38:33.857Z"
+  },
+  "criadaEm": "2026-09-15T11:38:31.881Z",
+  "atualizadaEm": "2026-09-15T11:38:33.857Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Página HTML simples",
+    "Contador de cliques em JavaScript puro (sem frameworks)",
+    "Implementação de boas práticas de acessibilidade para botões",
+    "Revisão do código e do resultado final"
+  ],
+  "entregaveis": [
+    "Arquivo HTML contendo a estrutura e o script do contador acessível"
+  ],
+  "criteriosSucesso": [
+    "Página HTML funcional aberta no navegador com contador operando por clique e teclado, seguindo diretrizes de acessibilidade."
+  ]
+}

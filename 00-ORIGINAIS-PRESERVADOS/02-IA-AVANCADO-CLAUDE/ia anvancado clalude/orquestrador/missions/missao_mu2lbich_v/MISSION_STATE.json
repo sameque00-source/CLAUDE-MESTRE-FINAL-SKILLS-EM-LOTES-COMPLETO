@@ -1,0 +1,270 @@
+{
+  "id": "missao_mu2lbich_v",
+  "objetivo": "Melhore um pequeno aplicativo web: crie uma pagina HTML simples com um contador de cliques em JavaScript puro (sem framework), pesquisando rapidamente a melhor pratica de acessibilidade para botoes antes de implementar, e revise o resultado final.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:30:21.473Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:30:21.473Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T11:30:21.474Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:30:21.474Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T11:30:23.202Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:30:23.204Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lbici_w",
+      "descricao": "Pesquisar e sintetizar as melhores práticas de W3C/WCAG para atributos ARIA, ordem de markup e estados de foco em botões de contadores.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Geração de um guia resumido com os atributos HTML/ARIA obrigatórios para o botão e o display do contador."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisa confirmar a abordagem recomendada atual para anúncios dinâmicos (aria-live vs onscreen) e gestão de estado ARIA para contadores simples.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e sintetizar as melhores práticas de W3C/WCAG para atributos ARIA, ordem de markup e estados de foco em botões de contadores.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Geração de um guia resumido com os atributos HTML/ARIA obrigatórios para o botão e o display do contador."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)"
+        ],
+        "evidencias": [
+          "agente=research",
+          "tentativas=[{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:30:23.202Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:30:21.474Z",
+      "atualizadaEm": "2026-09-15T11:30:23.203Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Pesquisar e sintetizar as melhores práticas de W3C/WCAG para atributos ARIA, ordem de markup e estados de foco em botões de contadores.\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Geração de um guia resumido com os atributos HTML/ARIA obrigatórios para o botão e o display do contador.\nSUCCESS_CRITERIA: Geração de um guia resumido com os atributos HTML/ARIA obrigatórios para o botão e o display do contador.",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2lbici_x",
+      "descricao": "Implementar o HTML, CSS e JavaScript do contador de cliques aplicando rigorosamente as práticas de acessibilidade definidas na pesquisa.",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2lbici_w"
+      ],
+      "recursoExclusivo": "index.html",
+      "status": "cancelada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Criar o arquivo index.html com a lógica de incremento funcional.",
+        "Incluir atributos ARIA adequados para leitores de tela.",
+        "Garantir navegação por teclado e foco visual claro."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar o HTML, CSS e JavaScript do contador de cliques aplicando rigorosamente as práticas de acessibilidade definidas na pesquisa.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Criar o arquivo index.html com a lógica de incremento funcional."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:30:21.474Z",
+      "atualizadaEm": "2026-09-15T11:30:23.203Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lbici_w\", que foi cancelada"
+    },
+    {
+      "id": "tarefa_mu2lbici_y",
+      "descricao": "Revisar o código final em busca de bugs, refatorar para melhorar a semântica e validar a conformidade acessível.",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2lbici_x"
+      ],
+      "recursoExclusivo": "index.html",
+      "status": "cancelada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Aplicar correções necessárias e confirmar que o código está limpo e acessível para entrega."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código final em busca de bugs, refatorar para melhorar a semântica e validar a conformidade acessível.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicar correções necessárias e confirmar que o código está limpo e acessível para entrega."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:30:21.474Z",
+      "atualizadaEm": "2026-09-15T11:30:23.203Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2lbici_x\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lbici_x",
+      "para": "tarefa_mu2lbici_w"
+    },
+    {
+      "de": "tarefa_mu2lbici_y",
+      "para": "tarefa_mu2lbici_x"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2lbici_w",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:30:22.174Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2lbici_w",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:30:22.703Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2lbici_w",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:30:23.202Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lbici_w",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:30:22.174Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:30:22.174Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lbici_w",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:30:22.703Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:30:22.703Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2lbici_w",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:30:23.202Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:30:23.202Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:30:23.204Z"
+  },
+  "criadaEm": "2026-09-15T11:30:21.473Z",
+  "atualizadaEm": "2026-09-15T11:30:23.204Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Página HTML única e autocontida (sem build step).",
+    "Lógica de contador em JavaScript puro (ES6+).",
+    "Acessibilidade: botão com aria-label/aria-live e foco visível.",
+    "Código limpo e comentado."
+  ],
+  "entregaveis": [
+    "Arquivo index.html completo.",
+    "Briefing técnico sobre práticas de acessibilidade para botões."
+  ],
+  "criteriosSucesso": [
+    "O contador incrementa a cada clique.",
+    "A tela leitora anuncia a mudança de valor.",
+    "O botão é navegável por teclado e possui focus state visível.",
+    "O código passa em uma revisão básica de melhorias."
+  ]
+}

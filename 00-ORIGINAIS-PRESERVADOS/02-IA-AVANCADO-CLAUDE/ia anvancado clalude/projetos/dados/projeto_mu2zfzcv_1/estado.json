@@ -1,0 +1,36 @@
+{
+  "id": "projeto_mu2zfzcv_1",
+  "nome": "debug-teste-19",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zfzcv_1\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [
+    {
+      "memoriaId": "projeto_mu2zfzcw_1",
+      "resumo": "teste de integração real com memória da FASE 6 debug",
+      "ts": "2026-09-15T18:05:44.770Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"debug-teste-19\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:05:44.767Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "teste de integração real com memória da FASE 6 debug",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:05:44.770Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:05:44.765Z",
+  "atualizadoEm": "2026-09-15T18:05:44.770Z"
+}

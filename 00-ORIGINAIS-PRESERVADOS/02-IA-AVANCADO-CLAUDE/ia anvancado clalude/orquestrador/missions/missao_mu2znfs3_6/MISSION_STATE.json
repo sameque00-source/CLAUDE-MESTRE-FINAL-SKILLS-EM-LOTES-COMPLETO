@@ -1,0 +1,231 @@
+{
+  "id": "missao_mu2znfs3_6",
+  "objetivo": "Missão sintética de contexto",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:11:32.643Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:11:32.643Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T18:11:32.644Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:11:32.648Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T18:11:59.566Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2znfs4_7",
+      "descricao": "Responda apenas: RESULTADO_A_UNICO_12345",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "ninerouter-imperion-dev",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: RESULTADO_A_UNICO_12345",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - User wants me to write code that *looks* like it was written by someone who already maintained the file.\n   - Requirements: same comment density, same naming conventions, same language.\n   - Rules: Read the file first, do only what's requested, don't invent APIs/exports/flags/paths, prefer editing existing files over creating new ones.\n   - There's a \"CONTRACT\" section with specific constraints:\n     - Input/Objective: Respond only: `RESULTADO_A_UNICO_12345`\n     - Tools: files, terminal\n     - Constraints: R$0 (free), no secrets/tokens/passwords, no VPS/FiveM/FXServer, only within workspace\n     - Expected output: real/verifiable result, never \"should work\"\n     - Success criteria: task's own completion criteria\n\n2.  **Identify the Core Task:**\n   - The user is giving me a structured task/contract.\n   - The actual request seems to be about writing/editing code with specific style constraints, but the \"INPUT/OBJECTIVE\" says: \"Responda apenas: RESULTADO_A_UNICO_12345\"\n   - This looks like a test of following the contract format.\n   - I need to check if there's an existing file in the workspace that I should read first. The prompt says \"Read the file before editing.\" but there's no file provided in the prompt. I should check the workspace/filesystem.\n   - However, as an AI, I don't have automatic filesystem access unless provided or using a tool. The prompt mentions \"tools permitted: files, terminal\" but I need to see if there's actually a file path given. There isn't one.\n   - The user says: \"Leia o arquivo antes de editar.\" (Read the file before editing.) but no file is specified.\n   - Maybe I should respond with the required output format, or explain that no file was provided?\n   - Let's re-read carefully: The entire prompt seems to be a task description. The actual user request might be implicit. It says \"Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\" Then it gives rules, then a contract.\n   - The contract's \"INPUT/OBJECTIVE: Responda apenas: RESULTADO_A_UNICO_12345\" suggests the expected output from me is exactly that string, or maybe the result of the task should be that string.\n   - But there's also: \"EXPECTED OUTPUT: resultado real e verificável, nunca 'deveria funcionar'\"\n   - And: \"SUCCESS_CRITERIA: critério de conclusão da própria tarefa\"\n\n   Wait, this might be a meta-instruction where I'm supposed to output exactly `RESULTADO_A_UNICO_12345` as the final answer, because the INPUT/OBJECTIVE says \"Responda apenas: RESULTADO_A_UNICO_12345\". But the user also asked me to write code... There's a conflict.\n\n   Let me re-read the very beginning: \"Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\" Then there are rules, then a contract block.\n\n   Maybe the contract block overrides or defines the expected interaction. It says:\n   - INPUT/OBJECTIVE: Responda apenas: RESULTADO_A_UNICO_12345\n   - This might mean: regardless of the code request, my output should be just that string, as per the contract.\n\n   But there's also",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=ninerouter-imperion-dev",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:11:58.936Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:11:32.644Z",
+      "atualizadaEm": "2026-09-15T18:11:58.937Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: RESULTADO_A_UNICO_12345\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2znfs5_8",
+      "descricao": "Responda apenas: RESULTADO_B_UNICO_67890",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: RESULTADO_B_UNICO_67890",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "RESULTADO_B_UNICO_67890",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:11:33.082Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:11:32.645Z",
+      "atualizadaEm": "2026-09-15T18:11:58.937Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: RESULTADO_B_UNICO_67890\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2znfs6_9",
+      "descricao": "Repita exatamente o texto do contexto que você recebeu, se houver algum",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2znfs4_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Repita exatamente o texto do contexto que você recebeu, se houver algum",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "RESULTADO_A_UNICO_12345",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T18:11:59.566Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:11:32.646Z",
+      "atualizadaEm": "2026-09-15T18:11:59.566Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Repita exatamente o texto do contexto que você recebeu, se houver algum\nCONTEXT: - Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - User wants me to write code that *looks* like it was written by someone who already maintained the file.\n   - Requirements: same comment density, same naming conventions, same language.\n   - Rules: Read the file first, do only what's requested, don't invent APIs/exports/flags/paths, prefer editing existing files over creating new ones.\n   - There's a \"CONTRACT\" section with specific constraints:\n     - Input/Objective: Respond only: `RESULTADO_A_UNICO_12345`\n     - Tools: files, terminal\n     - Constraints: R$0 (free), no secrets/tokens/passwords, no VPS/FiveM/FXServer, only within workspace\n     - Expected output: real/verifiable result, never \"should work\"\n     - Success criteria: task's own completion criteria\n\n2.  **Identify the Core Task:**\n   - The user is giving me a structured task/contract.\n   - The actual request seems to be about writing/editing code with specific style constraints, but the \"INPUT/OBJECTIVE\" says: \"Responda apenas: RESULTADO_A_UNICO_12345\"\n   - This looks like a test of following the contract format.\n   - I need to check if there's an existing file in the workspace that I should read first. The prompt says \"Read the file before editing.\" but there's no file provided in the prompt. I should check the workspace/filesystem.\n   - However, as an AI, I don't have automatic filesystem access unless provided or using a tool. The prompt mentions \"tools permitted: files, terminal\" but I need to see if there's actually a file path given. There isn't one.\n   - The user says: \"Leia o arquivo antes de editar.\" (Read the file before editing.) but no file is specified.\n   - Maybe I should respond with the required output format, or explain that no file was provided?\n   - Let's re-read carefully: The entire prompt seems to be a task description. The actual user request might be implicit. It says \"Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\" Then it gives rules, then a contract.\n   - The contract's \"INPUT/OBJECTIVE: Responda apenas: RESULTADO_A_UNICO_12345\" suggests the expected output from me is exactly that string, or maybe the result of the task should be that string.\n   - But there's also: \"EXPECTED OUTPUT: resultado real e verificável, nunca 'deveria funcionar'\"\n   - And: \"SUCCESS_CRITERIA: critério de conclusão da própria tarefa\"\n\n   Wait, this might be a meta-instruction where I'm supposed to output exactly `RESULTADO_A_UNICO_12345` as the final answer, because the INPUT/OBJECTIVE says \"Responda apenas: RESULTADO_A_UNICO_12345\". But the user also asked me to write code... There's a conflict.\n\n   Let me re-read the very beginning: \"Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\" Then there are rules, then a contract block.\n\n   Maybe the contract block overrides or defines the expected interaction. It says:\n   - INPUT/OBJECTIVE: Responda apenas: RESULTADO_A_UNICO_12345\n   - This might mean: regardless of the code request, my output should be just that string, as per the contract.\n\n   But there's also\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2znfs6_9",
+      "para": "tarefa_mu2znfs4_7"
+    }
+  ],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "ninerouter-imperion-dev",
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2znfs4_7",
+      "status": "ok",
+      "resultado": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - User wants me to write code that *looks* like it was written by someone who already maintained the file.\n   - Requirements: same comment density, same naming conventions, same language.\n   - Rules: Read the file first, do only what's requested, don't invent APIs/exports/flags/paths, prefer editing existing files over creating new ones.\n   - There's a \"CONTRACT\" section with specific constraints:\n     - Input/Objective: Respond only: `RESULTADO_A_UNICO_12345`\n     - Tools: files, terminal\n     - Constraints: R$0 (free), no secrets/tokens/passwords, no VPS/FiveM/FXServer, only within workspace\n     - Expected output: real/verifiable result, never \"should work\"\n     - Success criteria: task's own completion criteria\n\n2.  **Identify the Core Task:**\n   - The user is giving me a structured task/contract.\n   - The actual request seems to be about writing/editing code with specific style constraints, but the \"INPUT/OBJECTIVE\" says: \"Responda apenas: RESULTADO_A_UNICO_12345\"\n   - This looks like a test of following the contract format.\n   - I need to check if there's an existing file in the workspace that I should read first. The prompt says \"Read the file before editing.\" but there's no file provided in the prompt. I should check the workspace/filesystem.\n   - However, as an AI, I don't have automatic filesystem access unless provided or using a tool. The prompt mentions \"tools permitted: files, terminal\" but I need to see if there's actually a file path given. There isn't one.\n   - The user says: \"Leia o arquivo antes de editar.\" (Read the file before editing.) but no file is specified.\n   - Maybe I should respond with the required output format, or explain that no file was provided?\n   - Let's re-read carefully: The entire prompt seems to be a task description. The actual user request might be implicit. It says \"Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\" Then it gives rules, then a contract.\n   - The contract's \"INPUT/OBJECTIVE: Responda apenas: RESULTADO_A_UNICO_12345\" suggests the expected output from me is exactly that string, or maybe the result of the task should be that string.\n   - But there's also: \"EXPECTED OUTPUT: resultado real e verificável, nunca 'deveria funcionar'\"\n   - And: \"SUCCESS_CRITERIA: critério de conclusão da própria tarefa\"\n\n   Wait, this might be a meta-instruction where I'm supposed to output exactly `RESULTADO_A_UNICO_12345` as the final answer, because the INPUT/OBJECTIVE says \"Responda apenas: RESULTADO_A_UNICO_12345\". But the user also asked me to write code... There's a conflict.\n\n   Let me re-read the very beginning: \"Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\" Then there are rules, then a contract block.\n\n   Maybe the contract block overrides or defines the expected interaction. It says:\n   - INPUT/OBJECTIVE: Responda apenas: RESULTADO_A_UNICO_12345\n   - This might mean: regardless of the code request, my output should be just that string, as per the contract.\n\n   But there's also",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=ninerouter-imperion-dev",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:11:58.936Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2znfs5_8",
+      "status": "ok",
+      "resultado": "RESULTADO_B_UNICO_67890",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:11:33.082Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2znfs6_9",
+      "status": "ok",
+      "resultado": "RESULTADO_A_UNICO_12345",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T18:11:59.566Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:11:32.643Z",
+  "atualizadaEm": "2026-09-15T18:11:59.566Z",
+  "modoExecucao": "AUTO"
+}

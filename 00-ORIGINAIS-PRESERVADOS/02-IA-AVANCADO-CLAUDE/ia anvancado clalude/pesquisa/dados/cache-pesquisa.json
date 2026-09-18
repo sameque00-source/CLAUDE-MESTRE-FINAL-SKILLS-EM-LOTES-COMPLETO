@@ -1,0 +1,1586 @@
+{
+  "versao_pacote::express": {
+    "query": "express",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "express",
+      "evidencias": [
+        {
+          "query": "express",
+          "fonte": "npm-registry",
+          "url": "https://expressjs.com/",
+          "titulo": "express@5.2.1",
+          "data": null,
+          "trecho": "Fast, unopinionated, minimalist web framework",
+          "evidencia": "Fast, unopinionated, minimalist web framework",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://expressjs.com/"
+      ],
+      "sintese": "Fast, unopinionated, minimalist web framework",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Fast, unopinionated, minimalist web framework",
+          "fontes": [
+            "https://expressjs.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:09:37.238Z"
+    },
+    "criadoEm": 1789470577239,
+    "expiraEm": 1789729777239
+  },
+  "default::inteligencia artificial": {
+    "query": "inteligencia artificial",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "inteligencia artificial",
+      "evidencias": [
+        {
+          "query": "inteligencia artificial",
+          "fonte": "wikipedia",
+          "url": "https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial",
+          "titulo": "Inteligência artificial",
+          "data": "2026-08-30T09:36:05Z",
+          "trecho": "Inteligência artificial é, de forma genérica, a capacidade de máquinas demonstrarem inteligência, raciocínio e aprendizado de forma semelhante ao pensamento humano. O campo busca desenvolver máquinas autónomas ou sistemas especialistas capazes de simular o comportamento humano e realizar tarefas complexas de forma independente. Trata-se de um sistema que permite aos computadores executar funções avançadas, como a análise de dados em grande escala e a formulação de previsões ou recomendações. Como campo de pesquisa na ciência da computação, dedica-se ao estudo e desenvolvimento de métodos e softwares que capacitam as máquinas a perceberem o seu ambiente e a utilizarem o aprendizado para tomar ações que maximizem as hipóteses de atingir objetivos definidos.",
+          "evidencia": "Inteligência artificial é, de forma genérica, a capacidade de máquinas demonstrarem inteligência, raciocínio e aprendizado de forma semelhante ao pensamento humano. O campo busca desenvolver máquinas autónomas ou sistemas especialistas capazes de simular o comportamento humano e realizar tarefas complexas de forma independente. Trata-se de um sistema que permite aos computadores executar funções avançadas, como a análise de dados em grande escala e a formulação de previsões ou recomendações. Como campo de pesquisa na ciência da computação, dedica-se ao estudo e desenvolvimento de métodos e softwares que capacitam as máquinas a perceberem o seu ambiente e a utilizarem o aprendizado para tomar ações que maximizem as hipóteses de atingir objetivos definidos.",
+          "confianca": 0.68,
+          "classificacaoFonte": "publicação técnica",
+          "pesoFonte": 0.75
+        }
+      ],
+      "fontes": [
+        "https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial"
+      ],
+      "sintese": "Inteligência artificial é, de forma genérica, a capacidade de máquinas demonstrarem inteligência, raciocínio e aprendizado de forma semelhante ao pensamento humano. O campo busca desenvolver máquinas autónomas ou sistemas especialistas capazes de simular o comportamento humano e realizar tarefas complexas de forma independente. Trata-se de um sistema que permite aos computadores executar funções avançadas, como a análise de dados em grande escala e a formulação de previsões ou recomendações. Como campo de pesquisa na ciência da computação, dedica-se ao estudo e desenvolvimento de métodos e softwares que capacitam as máquinas a perceberem o seu ambiente e a utilizarem o aprendizado para tomar ações que maximizem as hipóteses de atingir objetivos definidos.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Inteligência artificial é, de forma genérica, a capacidade de máquinas demonstrarem inteligência, raciocínio e aprendizado de forma semelhante ao pensamento humano. O campo busca desenvolver máquinas autónomas ou sistemas especialistas capazes de simular o comportamento humano e realizar tarefas complexas de forma independente. Trata-se de um sistema que permite aos computadores executar funções avançadas, como a análise de dados em grande escala e a formulação de previsões ou recomendações. Como campo de pesquisa na ciência da computação, dedica-se ao estudo e desenvolvimento de métodos e softwares que capacitam as máquinas a perceberem o seu ambiente e a utilizarem o aprendizado para tomar ações que maximizem as hipóteses de atingir objetivos definidos.",
+          "fontes": [
+            "https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial"
+          ],
+          "confiabilidade": 0.68
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.68,
+      "provider": "wikipedia",
+      "tentativas": [
+        {
+          "provider": "wikipedia",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:09:44.472Z"
+    },
+    "criadoEm": 1789470584473,
+    "expiraEm": 1790075384473
+  },
+  "versao_pacote::react": {
+    "query": "react",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "react",
+      "evidencias": [
+        {
+          "query": "react",
+          "fonte": "npm-registry",
+          "url": "https://react.dev/",
+          "titulo": "react@19.3.0",
+          "data": null,
+          "trecho": "React is a JavaScript library for building user interfaces.",
+          "evidencia": "React is a JavaScript library for building user interfaces.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://react.dev/"
+      ],
+      "sintese": "React is a JavaScript library for building user interfaces.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "React is a JavaScript library for building user interfaces.",
+          "fontes": [
+            "https://react.dev/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:11:37.404Z"
+    },
+    "criadoEm": 1789470697405,
+    "expiraEm": 1789729897405
+  },
+  "versao_pacote::identificar a versão atual do pacote npm express via api do registro npm.": {
+    "query": "Identificar a versão atual do pacote npm express via API do registro npm.",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Identificar a versão atual do pacote npm express via API do registro npm.",
+      "evidencias": [
+        {
+          "query": "Identificar a versão atual do pacote npm express via API do registro npm.",
+          "fonte": "npm-registry",
+          "url": "https://expressjs.com/",
+          "titulo": "express@5.2.1",
+          "data": null,
+          "trecho": "Fast, unopinionated, minimalist web framework",
+          "evidencia": "Fast, unopinionated, minimalist web framework",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://expressjs.com/"
+      ],
+      "sintese": "Fast, unopinionated, minimalist web framework",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Fast, unopinionated, minimalist web framework",
+          "fontes": [
+            "https://expressjs.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:14:30.972Z"
+    },
+    "criadoEm": 1789470870974,
+    "expiraEm": 1789730070974
+  },
+  "default::consultar a documentação oficial do express para entender a arquitetura, estabilidade e práticas recomendadas atuais.": {
+    "query": "Consultar a documentação oficial do Express para entender a arquitetura, estabilidade e práticas recomendadas atuais.",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar a documentação oficial do Express para entender a arquitetura, estabilidade e práticas recomendadas atuais.",
+      "evidencias": [
+        {
+          "query": "Consultar a documentação oficial do Express para entender a arquitetura, estabilidade e práticas recomendadas atuais.",
+          "fonte": "npm-registry",
+          "url": "https://expressjs.com/",
+          "titulo": "express@5.2.1",
+          "data": null,
+          "trecho": "Fast, unopinionated, minimalist web framework",
+          "evidencia": "Fast, unopinionated, minimalist web framework",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://expressjs.com/"
+      ],
+      "sintese": "Fast, unopinionated, minimalist web framework",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Fast, unopinionated, minimalist web framework",
+          "fontes": [
+            "https://expressjs.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:14:32.003Z"
+    },
+    "criadoEm": 1789470872003,
+    "expiraEm": 1790075672003
+  },
+  "versao_pacote::descobrir a versão estável mais recente do pacote 'express' no repositório npm oficial.": {
+    "query": "Descobrir a versão estável mais recente do pacote 'express' no repositório NPM oficial.",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Descobrir a versão estável mais recente do pacote 'express' no repositório NPM oficial.",
+      "evidencias": [
+        {
+          "query": "Descobrir a versão estável mais recente do pacote 'express' no repositório NPM oficial.",
+          "fonte": "npm-registry",
+          "url": "https://expressjs.com/",
+          "titulo": "express@5.2.1",
+          "data": null,
+          "trecho": "Fast, unopinionated, minimalist web framework",
+          "evidencia": "Fast, unopinionated, minimalist web framework",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://expressjs.com/"
+      ],
+      "sintese": "Fast, unopinionated, minimalist web framework",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Fast, unopinionated, minimalist web framework",
+          "fontes": [
+            "https://expressjs.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:14:38.193Z"
+    },
+    "criadoEm": 1789470878193,
+    "expiraEm": 1789730078193
+  },
+  "versao_pacote::analisar a documentação oficial do express buscando requisitos de sistema, grandes mudanças de versão (changelog) e guia de boas práticas.": {
+    "query": "Analisar a documentação oficial do Express buscando requisitos de sistema, grandes mudanças de versão (changelog) e guia de boas práticas.",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Analisar a documentação oficial do Express buscando requisitos de sistema, grandes mudanças de versão (changelog) e guia de boas práticas.",
+      "evidencias": [
+        {
+          "query": "Analisar a documentação oficial do Express buscando requisitos de sistema, grandes mudanças de versão (changelog) e guia de boas práticas.",
+          "fonte": "npm-registry",
+          "url": "https://expressjs.com/",
+          "titulo": "express@5.2.1",
+          "data": null,
+          "trecho": "Fast, unopinionated, minimalist web framework",
+          "evidencia": "Fast, unopinionated, minimalist web framework",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://expressjs.com/"
+      ],
+      "sintese": "Fast, unopinionated, minimalist web framework",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Fast, unopinionated, minimalist web framework",
+          "fontes": [
+            "https://expressjs.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:14:38.921Z"
+    },
+    "criadoEm": 1789470878921,
+    "expiraEm": 1789730078921
+  },
+  "versao_pacote::consultar a versão atual do pacote lodash no registro npm": {
+    "query": "Consultar a versão atual do pacote lodash no registro npm",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar a versão atual do pacote lodash no registro npm",
+      "evidencias": [
+        {
+          "query": "Consultar a versão atual do pacote lodash no registro npm",
+          "fonte": "npm-registry",
+          "url": "https://lodash.com/",
+          "titulo": "lodash@4.18.1",
+          "data": null,
+          "trecho": "Lodash modular utilities.",
+          "evidencia": "Lodash modular utilities.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://lodash.com/"
+      ],
+      "sintese": "Lodash modular utilities.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Lodash modular utilities.",
+          "fontes": [
+            "https://lodash.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:14:54.841Z"
+    },
+    "criadoEm": 1789470894841,
+    "expiraEm": 1789730094841
+  },
+  "versao_pacote::consultar a versão atual do pacote lodash no registro oficial do npm": {
+    "query": "Consultar a versão atual do pacote lodash no registro oficial do npm",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar a versão atual do pacote lodash no registro oficial do npm",
+      "evidencias": [
+        {
+          "query": "Consultar a versão atual do pacote lodash no registro oficial do npm",
+          "fonte": "npm-registry",
+          "url": "https://lodash.com/",
+          "titulo": "lodash@4.18.1",
+          "data": null,
+          "trecho": "Lodash modular utilities.",
+          "evidencia": "Lodash modular utilities.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://lodash.com/"
+      ],
+      "sintese": "Lodash modular utilities.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Lodash modular utilities.",
+          "fontes": [
+            "https://lodash.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:14:56.537Z"
+    },
+    "criadoEm": 1789470896538,
+    "expiraEm": 1789730096538
+  },
+  "versao_pacote::consultar o registro oficial do npm para obter a versão atual do pacote axios": {
+    "query": "Consultar o registro oficial do npm para obter a versão atual do pacote axios",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar o registro oficial do npm para obter a versão atual do pacote axios",
+      "evidencias": [
+        {
+          "query": "Consultar o registro oficial do npm para obter a versão atual do pacote axios",
+          "fonte": "npm-registry",
+          "url": "https://axios-http.com",
+          "titulo": "axios@1.20.0",
+          "data": null,
+          "trecho": "Promise based HTTP client for the browser and node.js",
+          "evidencia": "Promise based HTTP client for the browser and node.js",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://axios-http.com"
+      ],
+      "sintese": "Promise based HTTP client for the browser and node.js",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Promise based HTTP client for the browser and node.js",
+          "fontes": [
+            "https://axios-http.com"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:15:31.269Z"
+    },
+    "criadoEm": 1789470931269,
+    "expiraEm": 1789730131269
+  },
+  "versao_pacote::consultar o registro npm para obter a versão atual do pacote axios": {
+    "query": "Consultar o registro npm para obter a versão atual do pacote axios",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar o registro npm para obter a versão atual do pacote axios",
+      "evidencias": [
+        {
+          "query": "Consultar o registro npm para obter a versão atual do pacote axios",
+          "fonte": "npm-registry",
+          "url": "https://axios-http.com",
+          "titulo": "axios@1.20.0",
+          "data": null,
+          "trecho": "Promise based HTTP client for the browser and node.js",
+          "evidencia": "Promise based HTTP client for the browser and node.js",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://axios-http.com"
+      ],
+      "sintese": "Promise based HTTP client for the browser and node.js",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Promise based HTTP client for the browser and node.js",
+          "fontes": [
+            "https://axios-http.com"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:15:33.233Z"
+    },
+    "criadoEm": 1789470933233,
+    "expiraEm": 1789730133233
+  },
+  "versao_pacote::consultar o registro npm para obter a versão latest do pacote chalk.": {
+    "query": "Consultar o registro npm para obter a versão latest do pacote chalk.",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar o registro npm para obter a versão latest do pacote chalk.",
+      "evidencias": [
+        {
+          "query": "Consultar o registro npm para obter a versão latest do pacote chalk.",
+          "fonte": "npm-registry",
+          "url": "https://github.com/chalk/chalk#readme",
+          "titulo": "chalk@6.0.0",
+          "data": null,
+          "trecho": "Terminal string styling done right",
+          "evidencia": "Terminal string styling done right",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://github.com/chalk/chalk#readme"
+      ],
+      "sintese": "Terminal string styling done right",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Terminal string styling done right",
+          "fontes": [
+            "https://github.com/chalk/chalk#readme"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:18:01.177Z"
+    },
+    "criadoEm": 1789471081177,
+    "expiraEm": 1789730281177
+  },
+  "versao_pacote::consultar a versão atual do pacote typescript no registro npm": {
+    "query": "Consultar a versão atual do pacote typescript no registro npm",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar a versão atual do pacote typescript no registro npm",
+      "evidencias": [
+        {
+          "query": "Consultar a versão atual do pacote typescript no registro npm",
+          "fonte": "npm-registry",
+          "url": "https://www.typescriptlang.org/",
+          "titulo": "typescript@7.0.2",
+          "data": null,
+          "trecho": "TypeScript is a language for application scale JavaScript development",
+          "evidencia": "TypeScript is a language for application scale JavaScript development",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://www.typescriptlang.org/"
+      ],
+      "sintese": "TypeScript is a language for application scale JavaScript development",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "TypeScript is a language for application scale JavaScript development",
+          "fontes": [
+            "https://www.typescriptlang.org/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:18:11.547Z"
+    },
+    "criadoEm": 1789471091547,
+    "expiraEm": 1789730291547
+  },
+  "versao_pacote::is-even": {
+    "query": "is-even",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "is-even",
+      "evidencias": [
+        {
+          "query": "is-even",
+          "fonte": "npm-registry",
+          "url": "https://github.com/jonschlinkert/is-even",
+          "titulo": "is-even@1.0.0",
+          "data": null,
+          "trecho": "Return true if the given number is even.",
+          "evidencia": "Return true if the given number is even.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://github.com/jonschlinkert/is-even"
+      ],
+      "sintese": "Return true if the given number is even.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Return true if the given number is even.",
+          "fontes": [
+            "https://github.com/jonschlinkert/is-even"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T18:13:39.402Z"
+    },
+    "criadoEm": 1789496019405,
+    "expiraEm": 1789755219405
+  },
+  "versao_pacote::vue": {
+    "query": "vue",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "vue",
+      "evidencias": [
+        {
+          "query": "vue",
+          "fonte": "npm-registry",
+          "url": "https://vuejs.org/",
+          "titulo": "vue@3.5.42",
+          "data": null,
+          "trecho": "The progressive JavaScript framework for building modern web UI.",
+          "evidencia": "The progressive JavaScript framework for building modern web UI.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://vuejs.org/"
+      ],
+      "sintese": "The progressive JavaScript framework for building modern web UI.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "The progressive JavaScript framework for building modern web UI.",
+          "fontes": [
+            "https://vuejs.org/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T18:15:02.035Z"
+    },
+    "criadoEm": 1789496102036,
+    "expiraEm": 1789755302036
+  },
+  "versao_pacote::svelte": {
+    "query": "svelte",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "svelte",
+      "evidencias": [
+        {
+          "query": "svelte",
+          "fonte": "npm-registry",
+          "url": "https://svelte.dev",
+          "titulo": "svelte@5.57.0",
+          "data": null,
+          "trecho": "Cybernetically enhanced web apps",
+          "evidencia": "Cybernetically enhanced web apps",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://svelte.dev"
+      ],
+      "sintese": "Cybernetically enhanced web apps",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Cybernetically enhanced web apps",
+          "fontes": [
+            "https://svelte.dev"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T18:15:02.302Z"
+    },
+    "criadoEm": 1789496102303,
+    "expiraEm": 1789755302303
+  },
+  "versao_pacote::deno": {
+    "query": "deno",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "deno",
+      "evidencias": [
+        {
+          "query": "deno",
+          "fonte": "npm-registry",
+          "url": "https://deno.com",
+          "titulo": "deno@2.9.6",
+          "data": null,
+          "trecho": "A modern runtime for JavaScript and TypeScript.",
+          "evidencia": "A modern runtime for JavaScript and TypeScript.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://deno.com"
+      ],
+      "sintese": "A modern runtime for JavaScript and TypeScript.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "A modern runtime for JavaScript and TypeScript.",
+          "fontes": [
+            "https://deno.com"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T18:15:03.363Z"
+    },
+    "criadoEm": 1789496103364,
+    "expiraEm": 1789755303364
+  },
+  "versao_pacote::pesquisar a versão atual do pacote npm dayjs": {
+    "query": "Pesquisar a versão atual do pacote npm dayjs",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Pesquisar a versão atual do pacote npm dayjs",
+      "evidencias": [
+        {
+          "query": "Pesquisar a versão atual do pacote npm dayjs",
+          "fonte": "npm-registry",
+          "url": "https://day.js.org",
+          "titulo": "dayjs@1.11.23",
+          "data": null,
+          "trecho": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "evidencia": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://day.js.org"
+      ],
+      "sintese": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "fontes": [
+            "https://day.js.org"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:19:33.018Z"
+    },
+    "criadoEm": 1789471173019,
+    "expiraEm": 1789730373019
+  },
+  "versao_pacote::ramda": {
+    "query": "ramda",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "ramda",
+      "evidencias": [
+        {
+          "query": "ramda",
+          "fonte": "npm-registry",
+          "url": "https://ramdajs.com/",
+          "titulo": "ramda@0.32.0",
+          "data": null,
+          "trecho": "A practical functional library for JavaScript programmers.",
+          "evidencia": "A practical functional library for JavaScript programmers.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://ramdajs.com/"
+      ],
+      "sintese": "A practical functional library for JavaScript programmers.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "A practical functional library for JavaScript programmers.",
+          "fontes": [
+            "https://ramdajs.com/"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T17:59:12.251Z"
+    },
+    "criadoEm": 1789495152251,
+    "expiraEm": 1789754352251
+  },
+  "versao_pacote::descobrir a versão atual do pacote npm uuid": {
+    "query": "Descobrir a versão atual do pacote npm uuid",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Descobrir a versão atual do pacote npm uuid",
+      "evidencias": [
+        {
+          "query": "Descobrir a versão atual do pacote npm uuid",
+          "fonte": "npm-registry",
+          "url": "https://github.com/uuidjs/uuid#readme",
+          "titulo": "uuid@14.0.2",
+          "data": null,
+          "trecho": "RFC9562 UUIDs",
+          "evidencia": "RFC9562 UUIDs",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://github.com/uuidjs/uuid#readme"
+      ],
+      "sintese": "RFC9562 UUIDs",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "RFC9562 UUIDs",
+          "fontes": [
+            "https://github.com/uuidjs/uuid#readme"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:19:41.733Z"
+    },
+    "criadoEm": 1789471181734,
+    "expiraEm": 1789730381734
+  },
+  "versao_pacote::descobrir a versão atual do pacote npm semver": {
+    "query": "Descobrir a versão atual do pacote npm semver",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Descobrir a versão atual do pacote npm semver",
+      "evidencias": [
+        {
+          "query": "Descobrir a versão atual do pacote npm semver",
+          "fonte": "npm-registry",
+          "url": "https://github.com/npm/node-semver#readme",
+          "titulo": "semver@7.8.5",
+          "data": null,
+          "trecho": "The semantic version parser used by npm.",
+          "evidencia": "The semantic version parser used by npm.",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://github.com/npm/node-semver#readme"
+      ],
+      "sintese": "The semantic version parser used by npm.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "The semantic version parser used by npm.",
+          "fontes": [
+            "https://github.com/npm/node-semver#readme"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:19:41.815Z"
+    },
+    "criadoEm": 1789471181815,
+    "expiraEm": 1789730381815
+  },
+  "versao_pacote::consultar a versão atual do pacote date-fns no registro oficial do npm": {
+    "query": "Consultar a versão atual do pacote date-fns no registro oficial do npm",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar a versão atual do pacote date-fns no registro oficial do npm",
+      "evidencias": [
+        {
+          "query": "Consultar a versão atual do pacote date-fns no registro oficial do npm",
+          "fonte": "npm-registry",
+          "url": "https://www.npmjs.com/package/date-fns",
+          "titulo": "date-fns@4.4.0",
+          "data": null,
+          "trecho": "Modern JavaScript date utility library",
+          "evidencia": "Modern JavaScript date utility library",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://www.npmjs.com/package/date-fns"
+      ],
+      "sintese": "Modern JavaScript date utility library",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Modern JavaScript date utility library",
+          "fontes": [
+            "https://www.npmjs.com/package/date-fns"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:20:25.205Z"
+    },
+    "criadoEm": 1789471225206,
+    "expiraEm": 1789730425206
+  },
+  "documentacao::consultar a documentação oficial do day.js para entender principais usos e recursos": {
+    "query": "Consultar a documentação oficial do Day.js para entender principais usos e recursos",
+    "categoria": "documentacao",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar a documentação oficial do Day.js para entender principais usos e recursos",
+      "evidencias": [
+        {
+          "query": "Consultar a documentação oficial do Day.js para entender principais usos e recursos",
+          "fonte": "wikipedia",
+          "url": "https://pt.wikipedia.org/wiki/Three.js",
+          "titulo": "Three.js",
+          "data": "2026-04-18T12:50:15Z",
+          "trecho": "Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. O código-fonte é hospedado em um repositório no GitHub.",
+          "evidencia": "Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. O código-fonte é hospedado em um repositório no GitHub.",
+          "confianca": 0.68,
+          "classificacaoFonte": "publicação técnica",
+          "pesoFonte": 0.75
+        }
+      ],
+      "fontes": [
+        "https://pt.wikipedia.org/wiki/Three.js"
+      ],
+      "sintese": "Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. O código-fonte é hospedado em um repositório no GitHub.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. O código-fonte é hospedado em um repositório no GitHub.",
+          "fontes": [
+            "https://pt.wikipedia.org/wiki/Three.js"
+          ],
+          "confiabilidade": 0.68
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.68,
+      "provider": "wikipedia",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": false,
+          "motivo": "HTTP 404"
+        },
+        {
+          "provider": "wikipedia",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:20:47.898Z"
+    },
+    "criadoEm": 1789471247899,
+    "expiraEm": 1792063247899
+  },
+  "versao_pacote::pesquisar a versão atual do pacote date-fns no npm registry": {
+    "query": "Pesquisar a versão atual do pacote date-fns no npm registry",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Pesquisar a versão atual do pacote date-fns no npm registry",
+      "evidencias": [
+        {
+          "query": "Pesquisar a versão atual do pacote date-fns no npm registry",
+          "fonte": "npm-registry",
+          "url": "https://www.npmjs.com/package/date-fns",
+          "titulo": "date-fns@4.4.0",
+          "data": null,
+          "trecho": "Modern JavaScript date utility library",
+          "evidencia": "Modern JavaScript date utility library",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://www.npmjs.com/package/date-fns"
+      ],
+      "sintese": "Modern JavaScript date utility library",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Modern JavaScript date utility library",
+          "fontes": [
+            "https://www.npmjs.com/package/date-fns"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T11:20:53.651Z"
+    },
+    "criadoEm": 1789471253652,
+    "expiraEm": 1789730453652
+  },
+  "fato_geral::em 1 frase, defina o que é uma api rest": {
+    "query": "Em 1 frase, defina o que é uma API REST",
+    "categoria": "fato_geral",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Em 1 frase, defina o que é uma API REST",
+      "evidencias": [
+        {
+          "query": "Em 1 frase, defina o que é uma API REST",
+          "fonte": "wikipedia",
+          "url": "https://pt.wikipedia.org/wiki/Web_service",
+          "titulo": "Web service",
+          "data": "2026-01-24T00:26:30Z",
+          "trecho": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+          "evidencia": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+          "confianca": 0.68,
+          "classificacaoFonte": "publicação técnica",
+          "pesoFonte": 0.75
+        }
+      ],
+      "fontes": [
+        "https://pt.wikipedia.org/wiki/Web_service"
+      ],
+      "sintese": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+          "fontes": [
+            "https://pt.wikipedia.org/wiki/Web_service"
+          ],
+          "confiabilidade": 0.68
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.68,
+      "provider": "wikipedia",
+      "tentativas": [
+        {
+          "provider": "wikipedia",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:22:37.601Z"
+    },
+    "criadoEm": 1789471357602,
+    "expiraEm": 1790680957602
+  },
+  "fato_geral::em 1 frase: vantagem do postgresql": {
+    "query": "Em 1 frase: vantagem do PostgreSQL",
+    "categoria": "fato_geral",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Em 1 frase: vantagem do PostgreSQL",
+      "evidencias": [
+        {
+          "query": "Em 1 frase: vantagem do PostgreSQL",
+          "fonte": "wikipedia",
+          "url": "https://pt.wikipedia.org/wiki/Perl",
+          "titulo": "Perl",
+          "data": "2026-05-11T16:21:55Z",
+          "trecho": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+          "evidencia": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+          "confianca": 0.68,
+          "classificacaoFonte": "publicação técnica",
+          "pesoFonte": 0.75
+        }
+      ],
+      "fontes": [
+        "https://pt.wikipedia.org/wiki/Perl"
+      ],
+      "sintese": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+          "fontes": [
+            "https://pt.wikipedia.org/wiki/Perl"
+          ],
+          "confiabilidade": 0.68
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.68,
+      "provider": "wikipedia",
+      "tentativas": [
+        {
+          "provider": "wikipedia",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:23:04.572Z"
+    },
+    "criadoEm": 1789471384572,
+    "expiraEm": 1790680984572
+  },
+  "fato_geral::em 1 frase: vantagem do mongodb": {
+    "query": "Em 1 frase: vantagem do MongoDB",
+    "categoria": "fato_geral",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Em 1 frase: vantagem do MongoDB",
+      "evidencias": [
+        {
+          "query": "Em 1 frase: vantagem do MongoDB",
+          "fonte": "wikipedia",
+          "url": "https://pt.wikipedia.org/wiki/Delphi_(software)",
+          "titulo": "Delphi (software)",
+          "data": "2025-12-17T17:42:30Z",
+          "trecho": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+          "evidencia": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+          "confianca": 0.68,
+          "classificacaoFonte": "publicação técnica",
+          "pesoFonte": 0.75
+        }
+      ],
+      "fontes": [
+        "https://pt.wikipedia.org/wiki/Delphi_(software)"
+      ],
+      "sintese": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+          "fontes": [
+            "https://pt.wikipedia.org/wiki/Delphi_(software)"
+          ],
+          "confiabilidade": 0.68
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.68,
+      "provider": "wikipedia",
+      "tentativas": [
+        {
+          "provider": "wikipedia",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:23:05.145Z"
+    },
+    "criadoEm": 1789471385145,
+    "expiraEm": 1790680985145
+  },
+  "versao_pacote::consultar o registry npm ou site oficial para obter a versão atual do pacote dayjs.": {
+    "query": "Consultar o registry npm ou site oficial para obter a versão atual do pacote dayjs.",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar o registry npm ou site oficial para obter a versão atual do pacote dayjs.",
+      "evidencias": [
+        {
+          "query": "Consultar o registry npm ou site oficial para obter a versão atual do pacote dayjs.",
+          "fonte": "npm-registry",
+          "url": "https://day.js.org",
+          "titulo": "dayjs@1.11.23",
+          "data": null,
+          "trecho": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "evidencia": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://day.js.org"
+      ],
+      "sintese": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "fontes": [
+            "https://day.js.org"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T11:54:28.379Z"
+    },
+    "criadoEm": 1789473268380,
+    "expiraEm": 1789732468380
+  },
+  "versao_pacote::consultar o registro do pacote dayjs no npm para obter a tag 'latest' e a versão correspondente.": {
+    "query": "Consultar o registro do pacote dayjs no npm para obter a tag 'latest' e a versão correspondente.",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar o registro do pacote dayjs no npm para obter a tag 'latest' e a versão correspondente.",
+      "evidencias": [
+        {
+          "query": "Consultar o registro do pacote dayjs no npm para obter a tag 'latest' e a versão correspondente.",
+          "fonte": "npm-registry",
+          "url": "https://day.js.org",
+          "titulo": "dayjs@1.11.23",
+          "data": null,
+          "trecho": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "evidencia": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://day.js.org"
+      ],
+      "sintese": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+          "fontes": [
+            "https://day.js.org"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "questão técnica normal — 2 fontes para reduzir risco de erro isolado",
+      "ts": "2026-09-15T12:01:43.329Z"
+    },
+    "criadoEm": 1789473703329,
+    "expiraEm": 1789732903329
+  },
+  "fato_geral::acesse o registro npm do pacote date-fns e retrieve the latest version number.": {
+    "query": "Acesse o registro npm do pacote date-fns e retrieve the latest version number.",
+    "categoria": "fato_geral",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Acesse o registro npm do pacote date-fns e retrieve the latest version number.",
+      "evidencias": [
+        {
+          "query": "Acesse o registro npm do pacote date-fns e retrieve the latest version number.",
+          "fonte": "npm-registry",
+          "url": "https://www.npmjs.com/package/date-fns",
+          "titulo": "date-fns@4.4.0",
+          "data": null,
+          "trecho": "Modern JavaScript date utility library",
+          "evidencia": "Modern JavaScript date utility library",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://www.npmjs.com/package/date-fns"
+      ],
+      "sintese": "Modern JavaScript date utility library",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Modern JavaScript date utility library",
+          "fontes": [
+            "https://www.npmjs.com/package/date-fns"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T17:59:10.709Z"
+    },
+    "criadoEm": 1789495150710,
+    "expiraEm": 1790704750710
+  },
+  "versao_pacote::consultar o site oficial do npm (npmjs.com) para o pacote date-fns e extrair o número da versão marcada como 'latest'.": {
+    "query": "Consultar o site oficial do npm (npmjs.com) para o pacote date-fns e extrair o número da versão marcada como 'latest'.",
+    "categoria": "versao_pacote",
+    "resultado": {
+      "ok": true,
+      "status": "ok",
+      "query": "Consultar o site oficial do npm (npmjs.com) para o pacote date-fns e extrair o número da versão marcada como 'latest'.",
+      "evidencias": [
+        {
+          "query": "Consultar o site oficial do npm (npmjs.com) para o pacote date-fns e extrair o número da versão marcada como 'latest'.",
+          "fonte": "npm-registry",
+          "url": "https://www.npmjs.com/package/date-fns",
+          "titulo": "date-fns@4.4.0",
+          "data": null,
+          "trecho": "Modern JavaScript date utility library",
+          "evidencia": "Modern JavaScript date utility library",
+          "confianca": 0.8,
+          "classificacaoFonte": "documentação oficial",
+          "pesoFonte": 1
+        }
+      ],
+      "fontes": [
+        "https://www.npmjs.com/package/date-fns"
+      ],
+      "sintese": "Modern JavaScript date utility library",
+      "situacao": "insuficiente",
+      "afirmacoes": [
+        {
+          "texto": "Modern JavaScript date utility library",
+          "fontes": [
+            "https://www.npmjs.com/package/date-fns"
+          ],
+          "confiabilidade": 0.8
+        }
+      ],
+      "motivoDivergencia": "só 1 fonte — não dá pra triangular, resultado fica com confiança limitada",
+      "confianca": 0.8,
+      "provider": "npm",
+      "tentativas": [
+        {
+          "provider": "npm",
+          "ok": true,
+          "motivo": "sucesso"
+        }
+      ],
+      "profundidade": "pergunta simples — 1 fonte é suficiente",
+      "ts": "2026-09-15T17:59:12.171Z"
+    },
+    "criadoEm": 1789495152172,
+    "expiraEm": 1789754352172
+  }
+}

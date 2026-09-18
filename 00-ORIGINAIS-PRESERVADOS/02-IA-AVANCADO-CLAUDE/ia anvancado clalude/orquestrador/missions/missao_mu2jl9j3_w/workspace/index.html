@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador Acessível</title>
+  <style>
+    /* Mobile‑first layout */
+    body {
+      margin: 0;
+      padding: 1rem;
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .counter {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+      min-width: 44px;
+      min-height: 44px;
+      cursor: pointer;
+      background: #0069d9;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+    button:hover,
+    button:focus-visible {
+      background: #0053aa;
+      outline: 2px solid #ffbf47; /* contraste visível */
+      outline-offset: 2px;
+    }
+    /* Evita scroll horizontal abaixo de 390px */
+    @media (max-width: 390px) {
+      body { padding: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Contador de Cliques</h1>
+  <p class="counter" aria-live="polite" aria-atomic="true">0</p>
+  <button id="counterBtn" type="button">Incrementar</button>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('counterBtn');
+      const counterEl = document.querySelector('.counter');
+      let count = 0;
+
+      btn.addEventListener('click', function () {
+        count++;
+        counterEl.textContent = count;
+      });
+
+      // Garantir foco visível ao usar teclado
+      btn.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          btn.click();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

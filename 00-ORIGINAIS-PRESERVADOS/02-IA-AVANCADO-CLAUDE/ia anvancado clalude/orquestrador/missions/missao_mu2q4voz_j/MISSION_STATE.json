@@ -1,0 +1,134 @@
+{
+  "id": "missao_mu2q4voz_j",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:45:10.259Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:45:10.259Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T13:45:10.260Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:45:10.260Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q4vp0_k",
+      "descricao": "Escrever o código do script bash de backup e publicação via git",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo bash criado com tratamento de erros básicos para comandos git"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o código do script bash de backup e publicação via git",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo bash criado com tratamento de erros básicos para comandos git"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:10.260Z",
+      "atualizadaEm": "2026-09-15T13:45:10.260Z"
+    },
+    {
+      "id": "tarefa_mu2q4vp0_l",
+      "descricao": "Validar e testar o script bash em um diretório temporário",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2q4vp0_k"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Script executado com sucesso em ambiente simulado sem erros fatais de sintaxe"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar e testar o script bash em um diretório temporário",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script executado com sucesso em ambiente simulado sem erros fatais de sintaxe"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:10.260Z",
+      "atualizadaEm": "2026-09-15T13:45:10.260Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2q4vp0_l",
+      "para": "tarefa_mu2q4vp0_k"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:45:10.259Z",
+  "atualizadaEm": "2026-09-15T13:45:10.259Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Aceitar o caminho da pasta e a URL do repositório remoto como parâmetros ou variáveis",
+    "Verificar se o diretório é um repositório git e inicializar caso não seja",
+    "Adicionar arquivos, criar commit com mensagem padrão ou timestamp e enviar para o remoto"
+  ],
+  "entregaveis": [
+    "Script bash executável (.sh) documentado"
+  ],
+  "criteriosSucesso": [
+    "Script criado, testado localmente e capaz de realizar o ciclo completo de git add, commit e push"
+  ]
+}

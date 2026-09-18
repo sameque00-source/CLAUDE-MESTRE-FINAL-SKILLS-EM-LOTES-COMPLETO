@@ -1,0 +1,369 @@
+{
+  "id": "missao_mu2l7e11_n",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:27:09.253Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:27:09.253Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via openrouter-nemotron-3-super-120b (7 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:27:09.254Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l7e12_o",
+      "descricao": "Pesquisar modelos open‑source de legenda de imagem adequados para fotos de produtos (ex: BLIP, Git-Large, OSCAR)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de 3‑5 modelos com prós/contras e escolha do modelo mais adequado"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "É necessário comparar acurácia, tamanho e licença dos modelos disponíveis",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar modelos open‑source de legenda de imagem adequados para fotos de produtos (ex: BLIP, Git-Large, OSCAR)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de 3‑5 modelos com prós/contras e escolha do modelo mais adequado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "id": "tarefa_mu2l7e12_p",
+      "descricao": "Pesquisar opções de servir o modelo via API (FastAPI, Flask, TorchServe) considerando facilidade de uso e performance",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Comparativo de frameworks e escolha do mais adequado para o protótipo"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Definir o framework que melhor equilibra simplicidade de integração com PyTorch/TensorFlow e overhead baixo",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar opções de servir o modelo via API (FastAPI, Flask, TorchServe) considerando facilidade de uso e performance",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comparativo de frameworks e escolha do mais adequado para o protótipo"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "id": "tarefa_mu2l7e12_q",
+      "descricao": "Pesquisar tecnologias de frontend para upload de imagem e exibição de legenda (HTML+JS puro, Streamlit, Gradio)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Comparativo de alternativas e decisão sobre a tecnologia frontend a ser usada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher a opção que minimiza dependências e permite demonstração rápida",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar tecnologias de frontend para upload de imagem e exibição de legenda (HTML+JS puro, Streamlit, Gradio)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comparativo de alternativas e decisão sobre a tecnologia frontend a ser usada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "id": "tarefa_mu2l7e12_r",
+      "descricao": "Consolidar escolhas de modelo, framework de API e frontend, definindo arquitetura do sistema",
+      "tipo": "consolidacao",
+      "dependeDe": [
+        "tarefa_mu2l7e12_o",
+        "tarefa_mu2l7e12_p",
+        "tarefa_mu2l7e12_q"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura com modelo escolhido, framework de API e tecnologia frontend aprovados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar escolhas de modelo, framework de API e frontend, definindo arquitetura do sistema",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura com modelo escolhido, framework de API e tecnologia frontend aprovados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "id": "tarefa_mu2l7e12_s",
+      "descricao": "Implementar backend: carregar o modelo escolhido, expor endpoint /predict que aceita imagem e retorna legenda em JSON",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2l7e12_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Backend rodando localmente, responde corretamente a requisições de teste com imagem e texto"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar backend: carregar o modelo escolhido, expor endpoint /predict que aceita imagem e retorna legenda em JSON",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Backend rodando localmente, responde corretamente a requisições de teste com imagem e texto"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "id": "tarefa_mu2l7e12_t",
+      "descricao": "Implementar frontend: página com upload de imagem, chamada ao endpoint /predict e exibição da legenda retornada",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2l7e12_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Frontend carrega, permite selecionar uma imagem, mostra a legenda retornada pelo backend sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar frontend: página com upload de imagem, chamada ao endpoint /predict e exibição da legenda retornada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Frontend carrega, permite selecionar uma imagem, mostra a legenda retornada pelo backend sem erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "id": "tarefa_mu2l7e12_u",
+      "descricao": "Executar teste de integração com algumas imagens de produto verificando que a legenda é relevante e não há falhas",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2l7e12_s",
+        "tarefa_mu2l7e12_t"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Três imagens de teste processadas com legendas coerentes e nenhuma exceção no backend ou frontend"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar teste de integração com algumas imagens de produto verificando que a legenda é relevante e não há falhas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Três imagens de teste processadas com legendas coerentes e nenhuma exceção no backend ou frontend"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    },
+    {
+      "id": "tarefa_mu2l7e12_v",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2l7e12_s",
+        "tarefa_mu2l7e12_t"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:09.254Z",
+      "atualizadaEm": "2026-09-15T11:27:09.254Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2l7e12_r",
+      "para": "tarefa_mu2l7e12_o"
+    },
+    {
+      "de": "tarefa_mu2l7e12_r",
+      "para": "tarefa_mu2l7e12_p"
+    },
+    {
+      "de": "tarefa_mu2l7e12_r",
+      "para": "tarefa_mu2l7e12_q"
+    },
+    {
+      "de": "tarefa_mu2l7e12_s",
+      "para": "tarefa_mu2l7e12_r"
+    },
+    {
+      "de": "tarefa_mu2l7e12_t",
+      "para": "tarefa_mu2l7e12_r"
+    },
+    {
+      "de": "tarefa_mu2l7e12_u",
+      "para": "tarefa_mu2l7e12_s"
+    },
+    {
+      "de": "tarefa_mu2l7e12_u",
+      "para": "tarefa_mu2l7e12_t"
+    },
+    {
+      "de": "tarefa_mu2l7e12_v",
+      "para": "tarefa_mu2l7e12_s"
+    },
+    {
+      "de": "tarefa_mu2l7e12_v",
+      "para": "tarefa_mu2l7e12_t"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:27:09.253Z",
+  "atualizadaEm": "2026-09-15T11:27:09.253Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Aceitar upload de imagem pelo usuário",
+    "Processar a imagem com um modelo de legenda de imagem (image captioning)",
+    "Retornar a legenda em texto na interface",
+    "Funcionar localmente sem serviços pagos"
+  ],
+  "entregaveis": [
+    "Código fonte do backend (API)",
+    "Código fonte do frontend (interface de upload e exibição)",
+    "README com instruções de instalação e uso",
+    "Lista de modelo escolhido e justificativa"
+  ],
+  "criteriosSucesso": [
+    "A ferramenta aceita uma imagem de produto e retorna uma descrição textual coerente",
+    "Tudo funciona offline após a instalação inicial",
+    "O código está documentado e pode ser executado por um desenvolvedor médio"
+  ]
+}

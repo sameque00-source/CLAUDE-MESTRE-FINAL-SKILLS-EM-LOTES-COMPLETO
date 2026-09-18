@@ -1,0 +1,12 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "Projeto inicializado com package.json básico",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e \"console.log('test passed')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

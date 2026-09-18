@@ -1,0 +1,549 @@
+{
+  "id": "missao_mu2lysx5_4",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:48:28.265Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:48:28.265Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (7 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T11:48:28.266Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:48:28.266Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T11:48:36.871Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lysx6_5",
+      "descricao": "Pesquisar bibliotecas e engines de manipulação de vídeo de alta performance (ex: FFmpeg, WebCodecs, OpenCV)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de tecnologias de mídia entregue"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a melhor stack atual para processamento de vídeo em ambiente desktop/web",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas e engines de manipulação de vídeo de alta performance (ex: FFmpeg, WebCodecs, OpenCV)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de tecnologias de mídia entregue"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas e engines de manip",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.808Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:28.266Z",
+      "atualizadaEm": "2026-09-15T11:48:36.808Z"
+    },
+    {
+      "id": "tarefa_mu2lysx6_6",
+      "descricao": "Pesquisar padrões de UI/UX e arquitetura de interfaces profissionais de edição de vídeo (referências como Premiere, DaVinci Resolve)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento de diretrizes de interface e layout da timeline definido"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir ergonomia e familiaridade para editores profissionais",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Pesquisar padrões de UI/UX e arquitetura de interfaces profissionais de edição de vídeo (referências como Premiere, DaVinci Resolve)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de diretrizes de interface e layout da timeline definido"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar padrões de UI/UX e arquitetura",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.808Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:28.266Z",
+      "atualizadaEm": "2026-09-15T11:48:36.808Z"
+    },
+    {
+      "id": "tarefa_mu2lysx6_7",
+      "descricao": "Definir a arquitetura geral do sistema, escolha do framework base (ex: Electron + React + C++ Native Modules) e fluxo de dados",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2lysx6_5",
+        "tarefa_mu2lysx6_6"
+      ],
+      "recursoExclusivo": "docs/architecture.md",
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura de software aprovado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura geral do sistema, escolha do framework base (ex: Electron + React + C++ Native Modules) e fluxo de dados",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura de software aprovado"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir a arquitetura geral do sistema, ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.824Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:28.266Z",
+      "atualizadaEm": "2026-09-15T11:48:36.824Z"
+    },
+    {
+      "id": "tarefa_mu2lysx6_8",
+      "descricao": "Implementar a interface do usuário (UI) principal, incluindo painel de preview, gerenciador de arquivos e timeline multi-trilha",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2lysx6_7"
+      ],
+      "recursoExclusivo": "src/frontend",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Interface responsiva funcional com os componentes principais renderizados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a interface do usuário (UI) principal, incluindo painel de preview, gerenciador de arquivos e timeline multi-trilha",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface responsiva funcional com os componentes principais renderizados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar a interface do usuário (UI) ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.840Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:28.266Z",
+      "atualizadaEm": "2026-09-15T11:48:36.840Z"
+    },
+    {
+      "id": "tarefa_mu2lysx6_9",
+      "descricao": "Implementar o motor de backend para processamento, decodificação e exportação de vídeo utilizando a engine escolhida",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2lysx6_7"
+      ],
+      "recursoExclusivo": "src/backend",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "multimidia",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Módulo de manipulação e exportação de mídia funcional via código"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o motor de backend para processamento, decodificação e exportação de vídeo utilizando a engine escolhida",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo de manipulação e exportação de mídia funcional via código"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o motor de backend para proc",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.840Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:28.266Z",
+      "atualizadaEm": "2026-09-15T11:48:36.840Z"
+    },
+    {
+      "id": "tarefa_mu2lysx6_a",
+      "descricao": "Integrar o frontend com o motor de backend de vídeo e realizar testes de integração end-to-end",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2lysx6_8",
+        "tarefa_mu2lysx6_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "testes",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Aplicação consegue importar, editar e exportar um vídeo com sucesso validado por testes"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Integrar o frontend com o motor de backend de vídeo e realizar testes de integração end-to-end",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicação consegue importar, editar e exportar um vídeo com sucesso validado por testes"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Integrar o frontend com o motor de backe",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.855Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:28.266Z",
+      "atualizadaEm": "2026-09-15T11:48:36.855Z"
+    },
+    {
+      "id": "tarefa_mu2lysx6_b",
+      "descricao": "Realizar revisão crítica final do código, performance e empacotamento do instalador do aplicativo",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2lysx6_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [
+        "git",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Pacote instalador gerado e código revisado sem alertas críticos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Realizar revisão crítica final do código, performance e empacotamento do instalador do aplicativo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Pacote instalador gerado e código revisado sem alertas críticos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Realizar revisão crítica final do código",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.870Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:28.266Z",
+      "atualizadaEm": "2026-09-15T11:48:36.871Z"
+    },
+    {
+      "id": "tarefa_mu2lyzhz_q",
+      "descricao": "Pesquisar e avaliar estratégias de fallback (ex: processamento via servidor/cloud ou API nativa) para mitigar a incompatibilidade do ffmpeg.wasm no Safari",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2lysx6_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Documento de viabilidade técnica mapeando os custos e a arquitetura do fallback para o Safari."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e avaliar estratégias de fallback (ex: processamento via servidor/cloud ou API nativa) para mitigar a incompatibilidade do ffmpeg.wasm no Safari",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar e avaliar estratégias de fallb",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:48:36.824Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:36.791Z",
+      "atualizadaEm": "2026-09-15T11:48:36.824Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lysx6_7",
+      "para": "tarefa_mu2lysx6_5"
+    },
+    {
+      "de": "tarefa_mu2lysx6_7",
+      "para": "tarefa_mu2lysx6_6"
+    },
+    {
+      "de": "tarefa_mu2lysx6_8",
+      "para": "tarefa_mu2lysx6_7"
+    },
+    {
+      "de": "tarefa_mu2lysx6_9",
+      "para": "tarefa_mu2lysx6_7"
+    },
+    {
+      "de": "tarefa_mu2lysx6_a",
+      "para": "tarefa_mu2lysx6_8"
+    },
+    {
+      "de": "tarefa_mu2lysx6_a",
+      "para": "tarefa_mu2lysx6_9"
+    },
+    {
+      "de": "tarefa_mu2lysx6_b",
+      "para": "tarefa_mu2lysx6_a"
+    },
+    {
+      "de": "tarefa_mu2lyzhz_q",
+      "para": "tarefa_mu2lysx6_5"
+    }
+  ],
+  "agentes": [
+    "research",
+    "uiux",
+    "architecture",
+    "frontend",
+    "backend",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2lysx6_5",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas e engines de manip",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.808Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lysx6_6",
+      "status": "ok",
+      "resultado": "mock: Pesquisar padrões de UI/UX e arquitetura",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.808Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lysx6_7",
+      "status": "ok",
+      "resultado": "mock: Definir a arquitetura geral do sistema, ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.824Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lyzhz_q",
+      "status": "ok",
+      "resultado": "mock: Pesquisar e avaliar estratégias de fallb",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.824Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lysx6_8",
+      "status": "ok",
+      "resultado": "mock: Implementar a interface do usuário (UI) ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.840Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lysx6_9",
+      "status": "ok",
+      "resultado": "mock: Implementar o motor de backend para proc",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.840Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lysx6_a",
+      "status": "ok",
+      "resultado": "mock: Integrar o frontend com o motor de backe",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.855Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2lysx6_b",
+      "status": "ok",
+      "resultado": "mock: Realizar revisão crítica final do código",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T11:48:36.870Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:48:28.265Z",
+  "atualizadaEm": "2026-09-15T11:48:36.871Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Timeline multi-trilha para vídeo e áudio",
+    "Suporte a aceleração por hardware (GPU)",
+    "Renderização e exportação em múltiplos formatos (MP4, WebM, MOV)",
+    "Ferramentas básicas de corte, transição, efeitos e correção de cor"
+  ],
+  "entregaveis": [
+    "Código-fonte completo da aplicação",
+    "Executável construído para a plataforma alvo",
+    "Documentação técnica de arquitetura e uso"
+  ],
+  "criteriosSucesso": [
+    "Aplicação executa sem vazamentos críticos de memória",
+    "Capacidade de importar, editar na timeline e exportar um vídeo renderizado com sucesso"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A descoberta de suporte limitado da ffmpeg.wasm no navegador Safari afeta a arquitetura de processamento de vídeo, exigindo uma investigação adicional sobre soluções de fallback baseadas em servidor ou processamento nativo remoto para garantir compatibilidade multiplataforma.",
+      "ts": "2026-09-15T11:48:36.791Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

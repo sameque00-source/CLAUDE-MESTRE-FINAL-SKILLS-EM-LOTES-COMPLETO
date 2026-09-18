@@ -1,0 +1,131 @@
+{
+  "id": "missao_mu21kutn_r",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:17:45.227Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:17:45.227Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:17:45.228Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:17:45.228Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21kuto_s",
+      "descricao": "Pesquisar melhores práticas para scripts de backup com Git em Bash, focando em tratamento de erros e configuração de remotos de forma segura.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Identificadas 3 práticas recomendadas para tratamento de erros em Git Bash.",
+        "Definida a estratégia padrão para configuração do remoto (argumento vs variável de ambiente)."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Há nuances em como lidar com conflitos e segurança de credenciais em scripts automatizados que beneficiam de consulta a padrões atuais.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar melhores práticas para scripts de backup com Git em Bash, focando em tratamento de erros e configuração de remotos de forma segura.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Identificadas 3 práticas recomendadas para tratamento de erros em Git Bash."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:45.228Z",
+      "atualizadaEm": "2026-09-15T02:17:45.228Z"
+    },
+    {
+      "id": "tarefa_mu21kuto_t",
+      "descricao": "Implementar o script Bash 'backup_git.sh' incluindo verificação de dependências, lógica de inicialização, commit e push, integrando as práticas identificadas.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21kuto_s"
+      ],
+      "recursoExclusivo": "backup_git.sh",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Script criado na pasta raiz.",
+        "Script contém flags de verificação -e para captura de erros.",
+        "Script aceita o URL do repositório como parâmetro ou usa fallback configurável."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar o script Bash 'backup_git.sh' incluindo verificação de dependências, lógica de inicialização, commit e push, integrando as práticas identificadas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script criado na pasta raiz."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:17:45.228Z",
+      "atualizadaEm": "2026-09-15T02:17:45.228Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21kuto_t",
+      "para": "tarefa_mu21kuto_s"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:17:45.227Z",
+  "atualizadaEm": "2026-09-15T02:17:45.227Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "backup_git.sh"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

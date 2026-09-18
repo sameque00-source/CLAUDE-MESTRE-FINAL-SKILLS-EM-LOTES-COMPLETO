@@ -1,0 +1,223 @@
+{
+  "id": "missao_mu2q5030_1",
+  "objetivo": "Missão sintética de paralelismo real",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:45:15.947Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:45:15.948Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T13:45:15.949Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:45:15.952Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T13:45:17.296Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q5031_2",
+      "descricao": "Em uma frase, diga uma vantagem do Node.js.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Node.js.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Como não há nenhum arquivo fornecido no workspace para eu ler e imitar o estilo (densidade de comentários, nomenclatura, idioma), preciso declarar: **se não leu, diga que não leu**. \n\nPortanto, não posso inventar um arquivo de código inexistente. No entanto, atendendo estritamente ao objetivo solicitado (\"Em uma frase, diga uma vantagem do Node.js\"), aqui está o resultado real e verificável:\n\nO Node.js permite utilizar JavaScript tanto no frontend quanto no backend, unificando a linguagem de programação em toda a stack da aplicação.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:45:17.295Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:15.949Z",
+      "atualizadaEm": "2026-09-15T13:45:17.296Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Node.js.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2q5032_3",
+      "descricao": "Em uma frase, diga uma vantagem do Python.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Python.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Como você não forneceu nenhum arquivo pré-existente no workspace para eu analisar a densidade de comentários, a nomenclatura e o idioma (e pelas regras estabelecidas, eu não devo inventar ou assumir nada sem ler), informo que **não li nenhum arquivo existente**. \n\nPortanto, seguindo estritamente as regras de não inventar e fazer apenas o escopo solicitado:\n\nUma vantagem do Python é a sua alta legibilidade de código, o que facilita a manutenção e acelera o desenvolvimento.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:45:17.231Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:15.950Z",
+      "atualizadaEm": "2026-09-15T13:45:17.296Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Python.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2q5033_4",
+      "descricao": "Em uma frase, diga uma vantagem do Go.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Go.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Como não há nenhum arquivo fornecido no workspace para leitura prévia (e portanto não posso imitar um estilo existente), atendo estritamente ao contrato e às regras da tarefa fornecendo a frase solicitada:\n\nUma grande vantagem do Go é a sua forte concorrência nativa baseada em goroutines e canais, que torna a construção de sistemas paralelos eficiente e de fácil leitura.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:45:17.275Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:15.951Z",
+      "atualizadaEm": "2026-09-15T13:45:17.296Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em uma frase, diga uma vantagem do Go.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2q5031_2",
+      "status": "ok",
+      "resultado": "Como não há nenhum arquivo fornecido no workspace para eu ler e imitar o estilo (densidade de comentários, nomenclatura, idioma), preciso declarar: **se não leu, diga que não leu**. \n\nPortanto, não posso inventar um arquivo de código inexistente. No entanto, atendendo estritamente ao objetivo solicitado (\"Em uma frase, diga uma vantagem do Node.js\"), aqui está o resultado real e verificável:\n\nO Node.js permite utilizar JavaScript tanto no frontend quanto no backend, unificando a linguagem de programação em toda a stack da aplicação.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T13:45:17.295Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2q5032_3",
+      "status": "ok",
+      "resultado": "Como você não forneceu nenhum arquivo pré-existente no workspace para eu analisar a densidade de comentários, a nomenclatura e o idioma (e pelas regras estabelecidas, eu não devo inventar ou assumir nada sem ler), informo que **não li nenhum arquivo existente**. \n\nPortanto, seguindo estritamente as regras de não inventar e fazer apenas o escopo solicitado:\n\nUma vantagem do Python é a sua alta legibilidade de código, o que facilita a manutenção e acelera o desenvolvimento.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T13:45:17.231Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2q5033_4",
+      "status": "ok",
+      "resultado": "Como não há nenhum arquivo fornecido no workspace para leitura prévia (e portanto não posso imitar um estilo existente), atendo estritamente ao contrato e às regras da tarefa fornecendo a frase solicitada:\n\nUma grande vantagem do Go é a sua forte concorrência nativa baseada em goroutines e canais, que torna a construção de sistemas paralelos eficiente e de fácil leitura.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T13:45:17.275Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:45:15.947Z",
+  "atualizadaEm": "2026-09-15T13:45:17.296Z",
+  "modoExecucao": "AUTO"
+}

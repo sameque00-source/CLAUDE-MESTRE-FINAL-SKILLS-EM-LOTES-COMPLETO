@@ -1,0 +1,462 @@
+{
+  "id": "missao_mu219i2q_1",
+  "objetivo": "Crie um pequeno projeto web de demonstracao (uma pagina com um formulario de contato que salva mensagens).",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:08:55.488Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:08:55.490Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (9 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:08:55.496Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:08:55.497Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu219i2v_2",
+      "descricao": "Pesquisar stack leve e estável para backend (Node.js + Express) e método de persistência (SQLite vs arquivo JSON) incluindo versões atuais compatíveis.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Decisão documentada: Node.js LTS X.Y, Express ^Z, SQLite via better-sqlite3 ^A.B ou JSON file"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisamos confirmar a versão LTS do Node.js, compatibilidade das bibliotecas Express e sqlite3 ou better-sqlite3, e escolher a abordagem de persistência mais simples para o escopo.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar stack leve e estável para backend (Node.js + Express) e método de persistência (SQLite vs arquivo JSON) incluindo versões atuais compatíveis.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Decisão documentada: Node.js LTS X.Y, Express ^Z, SQLite via better-sqlite3 ^A.B ou JSON file"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_3",
+      "descricao": "Inicializar repositório Git, criar estrutura de diretórios (backend, frontend, data) e configurar package.json com as dependências escolhidas.",
+      "tipo": "developer",
+      "dependeDe": [
+        "tarefa_mu219i2v_2"
+      ],
+      "recursoExclusivo": "repo",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Repositório Git criado, diretórios 'backend', 'frontend' e 'data' presentes, package.json com scripts start e dev"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Inicializar repositório Git, criar estrutura de diretórios (backend, frontend, data) e configurar package.json com as dependências escolhidas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório Git criado, diretórios 'backend', 'frontend' e 'data' presentes, package.json com scripts start e dev"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_4",
+      "descricao": "Implementar servidor Express com rota POST '/api/contact' que recebe JSON do formulário e insere a mensagem na camada de persistência.",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu219i2v_3"
+      ],
+      "recursoExclusivo": "backend",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo server.js criado, endpoint '/api/contact' responde 200 e grava registro"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar servidor Express com rota POST '/api/contact' que recebe JSON do formulário e insere a mensagem na camada de persistência.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo server.js criado, endpoint '/api/contact' responde 200 e grava registro"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_5",
+      "descricao": "Criar esquema SQLite (arquivo data/messages.db) com tabela 'messages' (id, name, email, message, created_at) e script de inicialização.",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu219i2v_3"
+      ],
+      "recursoExclusivo": "data",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Banco SQLite criado, script init-db.js executa sem erro e cria tabela"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Criar esquema SQLite (arquivo data/messages.db) com tabela 'messages' (id, name, email, message, created_at) e script de inicialização.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Banco SQLite criado, script init-db.js executa sem erro e cria tabela"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_6",
+      "descricao": "Desenvolver página HTML/CSS/JS em 'frontend/index.html' contendo formulário (nome, email, mensagem) e lógica JavaScript para enviar dados via fetch POST ao endpoint '/api/contact'.",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu219i2v_4"
+      ],
+      "recursoExclusivo": "frontend",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Formulário funcional, ao submeter envia request e exibe mensagem de sucesso"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver página HTML/CSS/JS em 'frontend/index.html' contendo formulário (nome, email, mensagem) e lógica JavaScript para enviar dados via fetch POST ao endpoint '/api/contact'.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Formulário funcional, ao submeter envia request e exibe mensagem de sucesso"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_7",
+      "descricao": "Adicionar validação básica de campos (não vazio, formato de email) e sanitização mínima no backend.",
+      "tipo": "security",
+      "dependeDe": [
+        "tarefa_mu219i2v_4",
+        "tarefa_mu219i2v_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "security",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Validação no frontend impede submissão vazia; backend rejeita payloads inválidos com 400"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "security",
+      "contexto": {
+        "objetivo": "Adicionar validação básica de campos (não vazio, formato de email) e sanitização mínima no backend.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Validação no frontend impede submissão vazia; backend rejeita payloads inválidos com 400"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_8",
+      "descricao": "Executar testes de integração: submeter formulário manualmente, verificar resposta HTTP e confirmar registro no banco SQLite.",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu219i2v_5",
+        "tarefa_mu219i2v_6",
+        "tarefa_mu219i2v_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Teste manual concluído: mensagem aparece na tabela 'messages' com timestamp correto"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes de integração: submeter formulário manualmente, verificar resposta HTTP e confirmar registro no banco SQLite.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Teste manual concluído: mensagem aparece na tabela 'messages' com timestamp correto"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_9",
+      "descricao": "Escrever README.md contendo descrição do projeto, instruções de instalação (Node.js, npm install), inicialização (npm run dev), e como testar o formulário.",
+      "tipo": "docs",
+      "dependeDe": [
+        "tarefa_mu219i2v_8"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md presente, com passos claros e exemplo de uso"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever README.md contendo descrição do projeto, instruções de instalação (Node.js, npm install), inicialização (npm run dev), e como testar o formulário.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md presente, com passos claros e exemplo de uso"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2v_a",
+      "descricao": "Configurar script npm 'start' para rodar servidor e servir arquivos estáticos da pasta frontend.",
+      "tipo": "devops",
+      "dependeDe": [
+        "tarefa_mu219i2v_3",
+        "tarefa_mu219i2v_4",
+        "tarefa_mu219i2v_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "npm start inicia servidor e a página index.html abre sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Configurar script npm 'start' para rodar servidor e servir arquivos estáticos da pasta frontend.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "npm start inicia servidor e a página index.html abre sem erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.495Z",
+      "atualizadaEm": "2026-09-15T02:08:55.495Z"
+    },
+    {
+      "id": "tarefa_mu219i2x_b",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu219i2v_4",
+        "tarefa_mu219i2v_5",
+        "tarefa_mu219i2v_6",
+        "tarefa_mu219i2v_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:08:55.497Z",
+      "atualizadaEm": "2026-09-15T02:08:55.497Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu219i2v_3",
+      "para": "tarefa_mu219i2v_2"
+    },
+    {
+      "de": "tarefa_mu219i2v_4",
+      "para": "tarefa_mu219i2v_3"
+    },
+    {
+      "de": "tarefa_mu219i2v_5",
+      "para": "tarefa_mu219i2v_3"
+    },
+    {
+      "de": "tarefa_mu219i2v_6",
+      "para": "tarefa_mu219i2v_4"
+    },
+    {
+      "de": "tarefa_mu219i2v_7",
+      "para": "tarefa_mu219i2v_4"
+    },
+    {
+      "de": "tarefa_mu219i2v_7",
+      "para": "tarefa_mu219i2v_6"
+    },
+    {
+      "de": "tarefa_mu219i2v_8",
+      "para": "tarefa_mu219i2v_5"
+    },
+    {
+      "de": "tarefa_mu219i2v_8",
+      "para": "tarefa_mu219i2v_6"
+    },
+    {
+      "de": "tarefa_mu219i2v_8",
+      "para": "tarefa_mu219i2v_7"
+    },
+    {
+      "de": "tarefa_mu219i2v_9",
+      "para": "tarefa_mu219i2v_8"
+    },
+    {
+      "de": "tarefa_mu219i2v_a",
+      "para": "tarefa_mu219i2v_3"
+    },
+    {
+      "de": "tarefa_mu219i2v_a",
+      "para": "tarefa_mu219i2v_4"
+    },
+    {
+      "de": "tarefa_mu219i2v_a",
+      "para": "tarefa_mu219i2v_6"
+    },
+    {
+      "de": "tarefa_mu219i2x_b",
+      "para": "tarefa_mu219i2v_4"
+    },
+    {
+      "de": "tarefa_mu219i2x_b",
+      "para": "tarefa_mu219i2v_5"
+    },
+    {
+      "de": "tarefa_mu219i2x_b",
+      "para": "tarefa_mu219i2v_6"
+    },
+    {
+      "de": "tarefa_mu219i2x_b",
+      "para": "tarefa_mu219i2v_a"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:08:55.488Z",
+  "atualizadaEm": "2026-09-15T02:08:55.488Z",
+  "modoExecucao": "AUTO"
+}

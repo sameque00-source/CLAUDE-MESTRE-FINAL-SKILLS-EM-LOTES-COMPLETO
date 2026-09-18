@@ -1,0 +1,293 @@
+{
+  "id": "missao_mu2k6rk6_p",
+  "objetivo": "Analise um arquivo utils.js típico (contém uma função soma(a,b) sem nenhum tratamento de erro/validação de tipo) e proponha melhorias reais de código para torná-lo mais robusto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:58:40.518Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:58:40.518Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via openrouter-nemotron-3-super-120b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:58:40.522Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:58:40.522Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T10:59:45.891Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T10:59:45.893Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2k6rka_q",
+      "descricao": "Ler e analisar o conteúdo atual de utils.js para identificar a implementação de soma(a,b)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Função soma(a,b) identificada e sua implementação atual documentada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Ler e analisar o conteúdo atual de utils.js para identificar a implementação de soma(a,b)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função soma(a,b) identificada e sua implementação atual documentada"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Não li o arquivo `utils.js`.\n\nConforme as regras estabelecidas: \"Se não leu, diga que não li.\" e \"Leia o arquivo antes de editar.\"\n\nSem acesso ao conteúdo atual do arquivo, não posso:\n1. Identificar a existência ou a implementação da função `soma(a,b)`.\n2. Documentar sua implementação atual.\n3. Garantir que qualquer edição futura respeitará a densidade de comentário, nomenclatura e idioma existentes.\n\n**Ação necessária:** Forneça o conteúdo do arquivo `utils.js` ou permita o acesso ao workspace para que eu possa lê-lo antes de prosseguir.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:58:41.086Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:58:40.522Z",
+      "atualizadaEm": "2026-09-15T10:58:41.087Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Ler e analisar o conteúdo atual de utils.js para identificar a implementação de soma(a,b)\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Função soma(a,b) identificada e sua implementação atual documentada\nSUCCESS_CRITERIA: Função soma(a,b) identificada e sua implementação atual documentada"
+    },
+    {
+      "id": "tarefa_mu2k6rka_r",
+      "descricao": "Escrever versão aprimorada de soma(a,b) com validação de tipos (Number) e lançamento de erro para argumentos inválidos",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2k6rka_q"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "utils.js atualizado contém função soma com checagem de tipo e tratamento de erro (lança TypeError para argumentos não numéricos ou ausentes)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever versão aprimorada de soma(a,b) com validação de tipos (Number) e lançamento de erro para argumentos inválidos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "utils.js atualizado contém função soma com checagem de tipo e tratamento de erro (lança TypeError para argumentos não numéricos ou ausentes)"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: ```json\n{\n  \"erros_criticos\": true,\n  \"mensagem\": \"Tarefa não executada. O contrato especifica nos REGRAS e no CONTEXT: 'Leia o arquivo antes de editar' e 'Se não leu, diga que não li'. O contexto explicitamente declara: 'Não li o arquivo utils.js'. Não há acesso a tools de leitura de arquivos neste"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:59:45.891Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T10:58:40.522Z",
+      "atualizadaEm": "2026-09-15T10:59:45.893Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Escrever versão aprimorada de soma(a,b) com validação de tipos (Number) e lançamento de erro para argumentos inválidos\nCONTEXT: - Não li o arquivo `utils.js`.\n\nConforme as regras estabelecidas: \"Se não leu, diga que não li.\" e \"Leia o arquivo antes de editar.\"\n\nSem acesso ao conteúdo atual do arquivo, não posso:\n1. Identificar a existência ou a implementação da função `soma(a,b)`.\n2. Documentar sua implementação atual.\n3. Garantir que qualquer edição futura respeitará a densidade de comentário, nomenclatura e idioma existentes.\n\n**Ação necessária:** Forneça o conteúdo do arquivo `utils.js` ou permita o acesso ao workspace para que eu possa lê-lo antes de prosseguir.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: utils.js atualizado contém função soma com checagem de tipo e tratamento de erro (lança TypeError para argumentos não numéricos ou ausentes)\nSUCCESS_CRITERIA: utils.js atualizado contém função soma com checagem de tipo e tratamento de erro (lança TypeError para argumentos não numéricos ou ausentes)",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2k6rka_s",
+      "descricao": "Criar e executar testes unitários para validar o comportamento da soma melhorada (entradas válidas, tipos não numéricos, argumentos faltantes)",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2k6rka_r"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Todos os testes passam: soma(2,3) => 5, soma('a',1) lança TypeError, soma() lança TypeError"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Criar e executar testes unitários para validar o comportamento da soma melhorada (entradas válidas, tipos não numéricos, argumentos faltantes)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Todos os testes passam: soma(2,3) => 5, soma('a',1) lança TypeError, soma() lança TypeError"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:58:40.522Z",
+      "atualizadaEm": "2026-09-15T10:59:45.893Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2k6rka_r\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2k6rka_r",
+      "para": "tarefa_mu2k6rka_q"
+    },
+    {
+      "de": "tarefa_mu2k6rka_s",
+      "para": "tarefa_mu2k6rka_r"
+    }
+  ],
+  "agentes": [
+    "coding"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2k6rka_q",
+      "status": "ok",
+      "resultado": "Não li o arquivo `utils.js`.\n\nConforme as regras estabelecidas: \"Se não leu, diga que não li.\" e \"Leia o arquivo antes de editar.\"\n\nSem acesso ao conteúdo atual do arquivo, não posso:\n1. Identificar a existência ou a implementação da função `soma(a,b)`.\n2. Documentar sua implementação atual.\n3. Garantir que qualquer edição futura respeitará a densidade de comentário, nomenclatura e idioma existentes.\n\n**Ação necessária:** Forneça o conteúdo do arquivo `utils.js` ou permita o acesso ao workspace para que eu possa lê-lo antes de prosseguir.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:58:41.086Z"
+    }
+  ],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2k6rka_r",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": null,\n  \"comandoTesteArgs\": [],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": null,\n  \"explicacao\": \"Não li o arquivo utils.js.\"\n}",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:59:35.613Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2k6rka_r",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": null,\n  \"comandoTesteArgs\": [],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Não li o arquivo utils.js, portanto não pude editá-lo conforme as regras.\"\n}",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:59:45.223Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2k6rka_r",
+      "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: ```json\n{\n  \"erros_criticos\": true,\n  \"mensagem\": \"Tarefa não executada. O contrato especifica nos REGRAS e no CONTEXT: 'Leia o arquivo antes de editar' e 'Se não leu, diga que não li'. O contexto explicitamente declara: 'Não li o arquivo utils.js'. Não há acesso a tools de leitura de arquivos neste",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T10:59:45.891Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2k6rka_r",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": null,\n  \"comandoTesteArgs\": [],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": null,\n  \"explicacao\": \"Não li o arquivo utils.js.\"\n}",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:59:35.613Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:59:35.613Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2k6rka_r",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: {\n  \"arquivos\": [],\n  \"comandoTeste\": null,\n  \"comandoTesteArgs\": [],\n  \"tipoExecucao\": \"unica\",\n  \"porta\": null,\n  \"rotaTeste\": \"/\",\n  \"explicacao\": \"Não li o arquivo utils.js, portanto não pude editá-lo conforme as regras.\"\n}",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:59:45.223Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T10:59:45.223Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2k6rka_r",
+        "erro": "geração de código falhou: LLM não devolveu arquivos válidos. Resposta: ```json\n{\n  \"erros_criticos\": true,\n  \"mensagem\": \"Tarefa não executada. O contrato especifica nos REGRAS e no CONTEXT: 'Leia o arquivo antes de editar' e 'Se não leu, diga que não li'. O contexto explicitamente declara: 'Não li o arquivo utils.js'. Não há acesso a tools de leitura de arquivos neste",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T10:59:45.891Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T10:59:45.891Z"
+    }
+  ],
+  "progresso": 0.333,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T10:59:45.893Z"
+  },
+  "criadaEm": "2026-09-15T10:58:40.518Z",
+  "atualizadaEm": "2026-09-15T10:59:45.893Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Identificar a falta de validação de tipos e tratamento de erro na função existente",
+    "Propor uma versão aprimorada que verifique se os argumentos são números e trate casos inválidos",
+    "Manter a assinatura original da função (dois parâmetros) para garantir compatibilidade"
+  ],
+  "entregaveis": [
+    "Código fonte atualizado de utils.js com a função soma robusta",
+    "Suite de testes unitários que demostra o comportamento esperado"
+  ],
+  "criteriosSucesso": [
+    "O código proposto passa em testes unitários para entradas válidas e inválidas",
+    "Os comentários no código explicam claramente as melhorias realizadas"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "missao_mu2m1yrp_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:50:55.812Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:50:55.813Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T11:50:55.820Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:50:55.821Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2m1yrv_2",
+      "descricao": "Executar busca e substituição no terminal: localizar 'aplicacao' e substituir por 'aplicação' no README.md.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Comando de substituição executado com sucesso.",
+        "Nenhuma ocorrência residual de 'aplicacao' (caixa baixa) sem acento no arquivo."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Executar busca e substituição no terminal: localizar 'aplicacao' e substituir por 'aplicação' no README.md.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comando de substituição executado com sucesso."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:50:55.819Z",
+      "atualizadaEm": "2026-09-15T11:50:55.819Z"
+    },
+    {
+      "id": "tarefa_mu2m1yrw_3",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2m1yrv_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:50:55.820Z",
+      "atualizadaEm": "2026-09-15T11:50:55.820Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2m1yrw_3",
+      "para": "tarefa_mu2m1yrv_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:50:55.812Z",
+  "atualizadaEm": "2026-09-15T11:50:55.812Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Identificar a(s) ocorrência(s) exata(s) da palavra 'aplicacao' no arquivo.",
+    "Substituir por 'aplicação' mantendo a codificação do arquivo (UTF-8).",
+    "Não alterar nenhum outro conteúdo do arquivo."
+  ],
+  "entregaveis": [
+    "Arquivo README.md atualizado com a ortografia corrigida."
+  ],
+  "criteriosSucesso": [
+    "O termo 'aplicacao' não existe mais no arquivo README.md.",
+    "O termo 'aplicação' existe no local corretamente grafado.",
+    "O restante do arquivo permanece intacto."
+  ]
+}

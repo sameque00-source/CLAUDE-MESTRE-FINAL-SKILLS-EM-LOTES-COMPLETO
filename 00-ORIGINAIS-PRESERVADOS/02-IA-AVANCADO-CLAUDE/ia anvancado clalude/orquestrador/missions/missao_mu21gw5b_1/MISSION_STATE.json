@@ -1,0 +1,431 @@
+{
+  "id": "missao_mu21gw5b_1",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:14:40.318Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:14:40.319Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (10 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:14:40.325Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:14:40.326Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21gw5g_2",
+      "descricao": "Pesquisar motores de renderização e bibliotecas de manipulação de vídeo de alta performance (ex: FFmpeg, libav, WebCodecs).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo de desempenho e facilidade de integração das bibliotecas de vídeo."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a melhor stack base para processamento de vídeo em desktop com suporte a GPU.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar motores de renderização e bibliotecas de manipulação de vídeo de alta performance (ex: FFmpeg, libav, WebCodecs).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo de desempenho e facilidade de integração das bibliotecas de vídeo."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.324Z",
+      "atualizadaEm": "2026-09-15T02:14:40.324Z"
+    },
+    {
+      "id": "tarefa_mu21gw5g_3",
+      "descricao": "Pesquisar frameworks de UI para desktop de alta performance (ex: Tauri + React/Rust ou Electron) adequados para timeline complexa.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Definição técnica da arquitetura frontend/backend para o editor de vídeo."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir que o framework escolhido suporte renderização fluida de múltiplos elementos na timeline.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar frameworks de UI para desktop de alta performance (ex: Tauri + React/Rust ou Electron) adequados para timeline complexa.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Definição técnica da arquitetura frontend/backend para o editor de vídeo."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.324Z",
+      "atualizadaEm": "2026-09-15T02:14:40.324Z"
+    },
+    {
+      "id": "tarefa_mu21gw5g_4",
+      "descricao": "Consolidar a arquitetura técnica geral do aplicativo com base nas pesquisas de motor de vídeo e framework de UI.",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu21gw5g_2",
+        "tarefa_mu21gw5g_3"
+      ],
+      "recursoExclusivo": "docs/architecture.md",
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura aprovado detalhando o fluxo de dados entre UI, gerenciador de estado e motor de mídia."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar a arquitetura técnica geral do aplicativo com base nas pesquisas de motor de vídeo e framework de UI.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura aprovado detalhando o fluxo de dados entre UI, gerenciador de estado e motor de mídia."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.324Z",
+      "atualizadaEm": "2026-09-15T02:14:40.324Z"
+    },
+    {
+      "id": "tarefa_mu21gw5g_5",
+      "descricao": "Configurar o projeto base, estrutura de pastas, controle de versão e integração com o motor de mídia escolhido.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21gw5g_4"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Repositório inicializado com build bem-sucedido para o ambiente de desenvolvimento local."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Configurar o projeto base, estrutura de pastas, controle de versão e integração com o motor de mídia escolhido.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório inicializado com build bem-sucedido para o ambiente de desenvolvimento local."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.324Z",
+      "atualizadaEm": "2026-09-15T02:14:40.324Z"
+    },
+    {
+      "id": "tarefa_mu21gw5g_6",
+      "descricao": "Implementar o módulo core de manipulação de mídia, integração com FFmpeg e pipeline de decodificação.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21gw5g_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Módulo capaz de carregar, decodificar e extrair metadados de arquivos de vídeo e áudio via código."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar o módulo core de manipulação de mídia, integração com FFmpeg e pipeline de decodificação.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo capaz de carregar, decodificar e extrair metadados de arquivos de vídeo e áudio via código."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.324Z",
+      "atualizadaEm": "2026-09-15T02:14:40.324Z"
+    },
+    {
+      "id": "tarefa_mu21gw5g_7",
+      "descricao": "Desenvolver a interface gráfica do usuário (UI/UX), incluindo a timeline multitrack, painel de preview e controles de reprodução.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21gw5g_5"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Interface responsiva com timeline interativa e player de vídeo funcional."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface gráfica do usuário (UI/UX), incluindo a timeline multitrack, painel de preview e controles de reprodução.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface responsiva com timeline interativa e player de vídeo funcional."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.324Z",
+      "atualizadaEm": "2026-09-15T02:14:40.324Z"
+    },
+    {
+      "id": "tarefa_mu21gw5g_8",
+      "descricao": "Integrar a interface da timeline com o motor de backend de mídia para sincronizar corte, edição e renderização em tempo real.",
+      "tipo": "integracao",
+      "dependeDe": [
+        "tarefa_mu21gw5g_6",
+        "tarefa_mu21gw5g_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Usuário consegue importar vídeo, realizar cortes na timeline e visualizar o resultado no player."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar a interface da timeline com o motor de backend de mídia para sincronizar corte, edição e renderização em tempo real.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Usuário consegue importar vídeo, realizar cortes na timeline e visualizar o resultado no player."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.324Z",
+      "atualizadaEm": "2026-09-15T02:14:40.324Z"
+    },
+    {
+      "id": "tarefa_mu21gw5h_9",
+      "descricao": "Implementar o sistema de exportação e renderização final do projeto de vídeo em diferentes formatos.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21gw5g_8"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Funcionalidade de exportação gera arquivos de vídeo válidos e reproduzíveis a partir do projeto editado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar o sistema de exportação e renderização final do projeto de vídeo em diferentes formatos.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Funcionalidade de exportação gera arquivos de vídeo válidos e reproduzíveis a partir do projeto editado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.325Z",
+      "atualizadaEm": "2026-09-15T02:14:40.325Z"
+    },
+    {
+      "id": "tarefa_mu21gw5h_a",
+      "descricao": "Realizar testes de usabilidade, estabilidade de memória e validação de performance da aplicação.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21gw5h_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Relatório de testes sem falhas críticas ou travamentos durante edições prolongadas."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Realizar testes de usabilidade, estabilidade de memória e validação de performance da aplicação.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de testes sem falhas críticas ou travamentos durante edições prolongadas."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.325Z",
+      "atualizadaEm": "2026-09-15T02:14:40.325Z"
+    },
+    {
+      "id": "tarefa_mu21gw5h_b",
+      "descricao": "Configurar pipeline de CI/CD para geração automatizada dos instaladores multiplataforma.",
+      "tipo": "devops",
+      "dependeDe": [
+        "tarefa_mu21gw5h_a"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "devops",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Instaladores gerados automaticamente para Windows, macOS e Linux via pipeline."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "devops",
+      "contexto": {
+        "objetivo": "Configurar pipeline de CI/CD para geração automatizada dos instaladores multiplataforma.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Instaladores gerados automaticamente para Windows, macOS e Linux via pipeline."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:14:40.325Z",
+      "atualizadaEm": "2026-09-15T02:14:40.325Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21gw5g_4",
+      "para": "tarefa_mu21gw5g_2"
+    },
+    {
+      "de": "tarefa_mu21gw5g_4",
+      "para": "tarefa_mu21gw5g_3"
+    },
+    {
+      "de": "tarefa_mu21gw5g_5",
+      "para": "tarefa_mu21gw5g_4"
+    },
+    {
+      "de": "tarefa_mu21gw5g_6",
+      "para": "tarefa_mu21gw5g_5"
+    },
+    {
+      "de": "tarefa_mu21gw5g_7",
+      "para": "tarefa_mu21gw5g_5"
+    },
+    {
+      "de": "tarefa_mu21gw5g_8",
+      "para": "tarefa_mu21gw5g_6"
+    },
+    {
+      "de": "tarefa_mu21gw5g_8",
+      "para": "tarefa_mu21gw5g_7"
+    },
+    {
+      "de": "tarefa_mu21gw5h_9",
+      "para": "tarefa_mu21gw5g_8"
+    },
+    {
+      "de": "tarefa_mu21gw5h_a",
+      "para": "tarefa_mu21gw5h_9"
+    },
+    {
+      "de": "tarefa_mu21gw5h_b",
+      "para": "tarefa_mu21gw5h_a"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:14:40.318Z",
+  "atualizadaEm": "2026-09-15T02:14:40.318Z",
+  "modoExecucao": "AUTO"
+}

@@ -1,0 +1,253 @@
+{
+  "id": "missao_mu2q4ttr_d",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:45:07.839Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:45:07.839Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T13:45:07.841Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:45:07.841Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q4tts_e",
+      "descricao": "Definir a stack tecnológica (ex: Node.js/Express + HTML/JS vanilla ou Next.js) e a API de IA multimodal a ser utilizada.",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Stack e biblioteca de IA definidas e documentadas no projeto."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a stack tecnológica (ex: Node.js/Express + HTML/JS vanilla ou Next.js) e a API de IA multimodal a ser utilizada.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Stack e biblioteca de IA definidas e documentadas no projeto."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:07.840Z",
+      "atualizadaEm": "2026-09-15T13:45:07.840Z"
+    },
+    {
+      "id": "tarefa_mu2q4tts_f",
+      "descricao": "Desenvolver a interface de usuário (frontend) com suporte a upload de imagem e exibição da resposta.",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2q4tts_e"
+      ],
+      "recursoExclusivo": "src/index.html",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Interface funcional permitindo selecionar/arrastar imagem e visualizar o resultado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface de usuário (frontend) com suporte a upload de imagem e exibição da resposta.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface funcional permitindo selecionar/arrastar imagem e visualizar o resultado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:07.840Z",
+      "atualizadaEm": "2026-09-15T13:45:07.840Z"
+    },
+    {
+      "id": "tarefa_mu2q4tts_g",
+      "descricao": "Implementar a lógica de backend para receber a imagem, chamar a API multimodal de IA com prompt adequado e retornar a descrição.",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2q4tts_e"
+      ],
+      "recursoExclusivo": "src/server.js",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint funcional que recebe a imagem, processa via IA e retorna o texto formatado."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a lógica de backend para receber a imagem, chamar a API multimodal de IA com prompt adequado e retornar a descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint funcional que recebe a imagem, processa via IA e retorna o texto formatado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:07.840Z",
+      "atualizadaEm": "2026-09-15T13:45:07.840Z"
+    },
+    {
+      "id": "tarefa_mu2q4tts_h",
+      "descricao": "Integrar frontend e backend, realizar testes end-to-end do fluxo completo de envio de foto e geração de descrição.",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu2q4tts_f",
+        "tarefa_mu2q4tts_g"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Fluxo completo validado sem erros de integração."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Integrar frontend e backend, realizar testes end-to-end do fluxo completo de envio de foto e geração de descrição.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Fluxo completo validado sem erros de integração."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:07.840Z",
+      "atualizadaEm": "2026-09-15T13:45:07.840Z"
+    },
+    {
+      "id": "tarefa_mu2q4ttt_i",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2q4tts_f",
+        "tarefa_mu2q4tts_g"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:45:07.841Z",
+      "atualizadaEm": "2026-09-15T13:45:07.841Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2q4tts_f",
+      "para": "tarefa_mu2q4tts_e"
+    },
+    {
+      "de": "tarefa_mu2q4tts_g",
+      "para": "tarefa_mu2q4tts_e"
+    },
+    {
+      "de": "tarefa_mu2q4tts_h",
+      "para": "tarefa_mu2q4tts_f"
+    },
+    {
+      "de": "tarefa_mu2q4tts_h",
+      "para": "tarefa_mu2q4tts_g"
+    },
+    {
+      "de": "tarefa_mu2q4ttt_i",
+      "para": "tarefa_mu2q4tts_f"
+    },
+    {
+      "de": "tarefa_mu2q4ttt_i",
+      "para": "tarefa_mu2q4tts_g"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:45:07.839Z",
+  "atualizadaEm": "2026-09-15T13:45:07.839Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface simples com upload de imagem e exibição da descrição gerada",
+    "Integração com API de IA multimodal (ex: Google Gemini API ou OpenAI GPT-4o) para processar a foto",
+    "Geração de título e descrição otimizados para e-commerce"
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação web",
+    "Instruções claras de configuração e execução"
+  ],
+  "criteriosSucesso": [
+    "O usuário consegue enviar uma foto de produto e receber uma descrição coerente em texto gerada por IA."
+  ]
+}

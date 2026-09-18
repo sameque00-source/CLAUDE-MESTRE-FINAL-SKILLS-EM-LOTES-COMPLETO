@@ -1,0 +1,36 @@
+{
+  "id": "projeto_mu2zgvyu_6",
+  "nome": "Projeto B 1789495587030",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zgvyu_6\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [
+    {
+      "memoriaId": "decisao_mu2zgvyx_p",
+      "resumo": "segredo-B-1789495587031: decisão exclusiva do projeto B",
+      "ts": "2026-09-15T18:06:27.034Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto B 1789495587030\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:27.030Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "segredo-B-1789495587031: decisão exclusiva do projeto B",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:27.034Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:06:27.030Z",
+  "atualizadoEm": "2026-09-15T18:06:27.034Z"
+}

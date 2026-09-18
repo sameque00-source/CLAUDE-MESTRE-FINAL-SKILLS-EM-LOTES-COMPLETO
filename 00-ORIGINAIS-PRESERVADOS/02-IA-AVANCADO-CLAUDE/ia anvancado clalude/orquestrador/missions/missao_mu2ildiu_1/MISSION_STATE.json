@@ -1,0 +1,212 @@
+{
+  "id": "missao_mu2ildiu_1",
+  "objetivo": "Missão sintética de paralelismo real",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:14:02.932Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:14:02.934Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:14:02.935Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "3 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:14:02.937Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:14:03.592Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ildiv_2",
+      "descricao": "Em uma frase, diga uma vantagem do Node.js.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Node.js.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Node.js permite desenvolvimento full‑stack em JavaScript, oferecendo alta escalabilidade e desempenho graças ao seu modelo de I/O não bloqueante e orientado a eventos.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:03.508Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:02.935Z",
+      "atualizadaEm": "2026-09-15T10:14:03.592Z"
+    },
+    {
+      "id": "tarefa_mu2ildiw_3",
+      "descricao": "Em uma frase, diga uma vantagem do Python.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Python.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Python possui sintaxe clara e legível, o que acelera o desenvolvimento e facilita a manutenção do código.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:03.467Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:02.936Z",
+      "atualizadaEm": "2026-09-15T10:14:03.592Z"
+    },
+    {
+      "id": "tarefa_mu2ildix_4",
+      "descricao": "Em uma frase, diga uma vantagem do Go.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Em uma frase, diga uma vantagem do Go.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Go oferece compilação rápida e gerenciamento de memória eficiente, permitindo desenvolvimento de sistemas de alta performance com código simples e concorrente.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:03.592Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:02.937Z",
+      "atualizadaEm": "2026-09-15T10:14:03.592Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2ildiv_2",
+      "status": "ok",
+      "resultado": "Node.js permite desenvolvimento full‑stack em JavaScript, oferecendo alta escalabilidade e desempenho graças ao seu modelo de I/O não bloqueante e orientado a eventos.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:03.508Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ildiw_3",
+      "status": "ok",
+      "resultado": "Python possui sintaxe clara e legível, o que acelera o desenvolvimento e facilita a manutenção do código.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:03.467Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ildix_4",
+      "status": "ok",
+      "resultado": "Go oferece compilação rápida e gerenciamento de memória eficiente, permitindo desenvolvimento de sistemas de alta performance com código simples e concorrente.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:03.592Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:14:02.932Z",
+  "atualizadaEm": "2026-09-15T10:14:03.592Z",
+  "modoExecucao": "AUTO"
+}

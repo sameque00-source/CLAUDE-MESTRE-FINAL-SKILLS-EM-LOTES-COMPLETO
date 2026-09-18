@@ -1,0 +1,1877 @@
+{
+  "pesquisa_mu2knf0f_1": {
+    "id": "pesquisa_mu2knf0f_1",
+    "tipo": "pesquisa",
+    "conteudo": "React is a JavaScript library for building user interfaces.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "react"
+    ],
+    "contexto": {
+      "query": "react",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "react",
+        "fonte": "npm-registry",
+        "url": "https://react.dev/",
+        "titulo": "react@19.3.0",
+        "data": null,
+        "trecho": "React is a JavaScript library for building user interfaces.",
+        "evidencia": "React is a JavaScript library for building user interfaces.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_x",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789470697408,
+    "atualizadoEm": 1789470697408,
+    "expiraEm": 1790680297408,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kraia_1": {
+    "id": "pesquisa_mu2kraia_1",
+    "tipo": "pesquisa",
+    "conteudo": "Fast, unopinionated, minimalist web framework",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "descobrir",
+      "a",
+      "versão",
+      "estável",
+      "mais"
+    ],
+    "contexto": {
+      "query": "Descobrir a versão estável mais recente do pacote 'express' no repositório NPM oficial.",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Descobrir a versão estável mais recente do pacote 'express' no repositório NPM oficial.",
+        "fonte": "npm-registry",
+        "url": "https://expressjs.com/",
+        "titulo": "express@5.2.1",
+        "data": null,
+        "trecho": "Fast, unopinionated, minimalist web framework",
+        "evidencia": "Fast, unopinionated, minimalist web framework",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2krae0_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789470878195,
+    "atualizadoEm": 1789470878195,
+    "expiraEm": 1790680478195,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2krb2i_2": {
+    "id": "pesquisa_mu2krb2i_2",
+    "tipo": "pesquisa",
+    "conteudo": "Fast, unopinionated, minimalist web framework",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "analisar",
+      "a",
+      "documentação",
+      "oficial",
+      "do"
+    ],
+    "contexto": {
+      "query": "Analisar a documentação oficial do Express buscando requisitos de sistema, grandes mudanças de versão (changelog) e guia de boas práticas.",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Analisar a documentação oficial do Express buscando requisitos de sistema, grandes mudanças de versão (changelog) e guia de boas práticas.",
+        "fonte": "npm-registry",
+        "url": "https://expressjs.com/",
+        "titulo": "express@5.2.1",
+        "data": null,
+        "trecho": "Fast, unopinionated, minimalist web framework",
+        "evidencia": "Fast, unopinionated, minimalist web framework",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2krae0_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789470878922,
+    "atualizadoEm": 1789470878922,
+    "expiraEm": 1790680478922,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2krncr_1": {
+    "id": "pesquisa_mu2krncr_1",
+    "tipo": "pesquisa",
+    "conteudo": "Lodash modular utilities.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Consultar a versão atual do pacote lodash no registro npm",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar a versão atual do pacote lodash no registro npm",
+        "fonte": "npm-registry",
+        "url": "https://lodash.com/",
+        "titulo": "lodash@4.18.1",
+        "data": null,
+        "trecho": "Lodash modular utilities.",
+        "evidencia": "Lodash modular utilities.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2krn35_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789470894843,
+    "atualizadoEm": 1789470894843,
+    "expiraEm": 1790680494843,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kronv_2": {
+    "id": "pesquisa_mu2kronv_2",
+    "tipo": "pesquisa",
+    "conteudo": "Lodash modular utilities.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Consultar a versão atual do pacote lodash no registro oficial do npm",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar a versão atual do pacote lodash no registro oficial do npm",
+        "fonte": "npm-registry",
+        "url": "https://lodash.com/",
+        "titulo": "lodash@4.18.1",
+        "data": null,
+        "trecho": "Lodash modular utilities.",
+        "evidencia": "Lodash modular utilities.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kroms_3",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789470896539,
+    "atualizadoEm": 1789470896539,
+    "expiraEm": 1790680496539,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2ksfgm_1": {
+    "id": "pesquisa_mu2ksfgm_1",
+    "tipo": "pesquisa",
+    "conteudo": "Promise based HTTP client for the browser and node.js",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "o",
+      "registro",
+      "oficial",
+      "do"
+    ],
+    "contexto": {
+      "query": "Consultar o registro oficial do npm para obter a versão atual do pacote axios",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar o registro oficial do npm para obter a versão atual do pacote axios",
+        "fonte": "npm-registry",
+        "url": "https://axios-http.com",
+        "titulo": "axios@1.20.0",
+        "data": null,
+        "trecho": "Promise based HTTP client for the browser and node.js",
+        "evidencia": "Promise based HTTP client for the browser and node.js",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2ksf6u_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789470931271,
+    "atualizadoEm": 1789470931271,
+    "expiraEm": 1790680531271,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2ksgz6_2": {
+    "id": "pesquisa_mu2ksgz6_2",
+    "tipo": "pesquisa",
+    "conteudo": "Promise based HTTP client for the browser and node.js",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "o",
+      "registro",
+      "npm",
+      "para"
+    ],
+    "contexto": {
+      "query": "Consultar o registro npm para obter a versão atual do pacote axios",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar o registro npm para obter a versão atual do pacote axios",
+        "fonte": "npm-registry",
+        "url": "https://axios-http.com",
+        "titulo": "axios@1.20.0",
+        "data": null,
+        "trecho": "Promise based HTTP client for the browser and node.js",
+        "evidencia": "Promise based HTTP client for the browser and node.js",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2ksgy1_3",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789470933234,
+    "atualizadoEm": 1789470933234,
+    "expiraEm": 1790680533234,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kvn4r_1": {
+    "id": "pesquisa_mu2kvn4r_1",
+    "tipo": "pesquisa",
+    "conteudo": "Terminal string styling done right",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "o",
+      "registro",
+      "npm",
+      "para"
+    ],
+    "contexto": {
+      "query": "Consultar o registro npm para obter a versão latest do pacote chalk.",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar o registro npm para obter a versão latest do pacote chalk.",
+        "fonte": "npm-registry",
+        "url": "https://github.com/chalk/chalk#readme",
+        "titulo": "chalk@6.0.0",
+        "data": null,
+        "trecho": "Terminal string styling done right",
+        "evidencia": "Terminal string styling done right",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kvmv1_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471081179,
+    "atualizadoEm": 1789471081179,
+    "expiraEm": 1790680681179,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kvv4t_1": {
+    "id": "pesquisa_mu2kvv4t_1",
+    "tipo": "pesquisa",
+    "conteudo": "TypeScript is a language for application scale JavaScript development",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Consultar a versão atual do pacote typescript no registro npm",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar a versão atual do pacote typescript no registro npm",
+        "fonte": "npm-registry",
+        "url": "https://www.typescriptlang.org/",
+        "titulo": "typescript@7.0.2",
+        "data": null,
+        "trecho": "TypeScript is a language for application scale JavaScript development",
+        "evidencia": "TypeScript is a language for application scale JavaScript development",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kvv10_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471091549,
+    "atualizadoEm": 1789471091549,
+    "expiraEm": 1790680691549,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kxjph_4": {
+    "id": "pesquisa_mu2kxjph_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471170053,
+    "atualizadoEm": 1789471170053,
+    "expiraEm": 1790680770053,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kxlzw_5": {
+    "id": "pesquisa_mu2kxlzw_5",
+    "tipo": "pesquisa",
+    "conteudo": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "pesquisar",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Pesquisar a versão atual do pacote npm dayjs",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Pesquisar a versão atual do pacote npm dayjs",
+        "fonte": "npm-registry",
+        "url": "https://day.js.org",
+        "titulo": "dayjs@1.11.23",
+        "data": null,
+        "trecho": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+        "evidencia": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kxlse_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471173020,
+    "atualizadoEm": 1789471173020,
+    "expiraEm": 1790680773020,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789471179380": {
+    "id": "pesquisa_teste29_1789471179380",
+    "tipo": "pesquisa",
+    "conteudo": "ramda: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": 60000,
+    "criadoEm": 1789471179380,
+    "atualizadoEm": 1789471179382,
+    "expiraEm": 1789471239382,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kxr3m_6": {
+    "id": "pesquisa_mu2kxr3m_6",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471179634,
+    "atualizadoEm": 1789471179634,
+    "expiraEm": 1790680779634,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kxspz_a": {
+    "id": "pesquisa_mu2kxspz_a",
+    "tipo": "pesquisa",
+    "conteudo": "RFC9562 UUIDs",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "descobrir",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Descobrir a versão atual do pacote npm uuid",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Descobrir a versão atual do pacote npm uuid",
+        "fonte": "npm-registry",
+        "url": "https://github.com/uuidjs/uuid#readme",
+        "titulo": "uuid@14.0.2",
+        "data": null,
+        "trecho": "RFC9562 UUIDs",
+        "evidencia": "RFC9562 UUIDs",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kxsiv_9",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471181735,
+    "atualizadoEm": 1789471181735,
+    "expiraEm": 1790680781735,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kxss9_b": {
+    "id": "pesquisa_mu2kxss9_b",
+    "tipo": "pesquisa",
+    "conteudo": "The semantic version parser used by npm.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "descobrir",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Descobrir a versão atual do pacote npm semver",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Descobrir a versão atual do pacote npm semver",
+        "fonte": "npm-registry",
+        "url": "https://github.com/npm/node-semver#readme",
+        "titulo": "semver@7.8.5",
+        "data": null,
+        "trecho": "The semantic version parser used by npm.",
+        "evidencia": "The semantic version parser used by npm.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kxsiv_9",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471181817,
+    "atualizadoEm": 1789471181817,
+    "expiraEm": 1790680781817,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kyq9j_1": {
+    "id": "pesquisa_mu2kyq9j_1",
+    "tipo": "pesquisa",
+    "conteudo": "Modern JavaScript date utility library",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Consultar a versão atual do pacote date-fns no registro oficial do npm",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar a versão atual do pacote date-fns no registro oficial do npm",
+        "fonte": "npm-registry",
+        "url": "https://www.npmjs.com/package/date-fns",
+        "titulo": "date-fns@4.4.0",
+        "data": null,
+        "trecho": "Modern JavaScript date utility library",
+        "evidencia": "Modern JavaScript date utility library",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kypuv_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471225207,
+    "atualizadoEm": 1789471225207,
+    "expiraEm": 1790680825207,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kz3wj_4": {
+    "id": "pesquisa_mu2kz3wj_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471242883,
+    "atualizadoEm": 1789471242883,
+    "expiraEm": 1790680842883,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kz7rw_5": {
+    "id": "pesquisa_mu2kz7rw_5",
+    "tipo": "pesquisa",
+    "conteudo": "Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. O código-fonte é hospedado em um repositório no GitHub.",
+    "origem": "pesquisa:wikipedia",
+    "tags": [
+      "consultar",
+      "a",
+      "documentação",
+      "oficial",
+      "do"
+    ],
+    "contexto": {
+      "query": "Consultar a documentação oficial do Day.js para entender principais usos e recursos",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar a documentação oficial do Day.js para entender principais usos e recursos",
+        "fonte": "wikipedia",
+        "url": "https://pt.wikipedia.org/wiki/Three.js",
+        "titulo": "Three.js",
+        "data": "2026-04-18T12:50:15Z",
+        "trecho": "Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. O código-fonte é hospedado em um repositório no GitHub.",
+        "evidencia": "Three.js é uma biblioteca JavaScript/API cross-browser usada para criar e mostrar gráficos 3D animados em um navegador web. Three.js usa WebGL. O código-fonte é hospedado em um repositório no GitHub.",
+        "confianca": 0.68,
+        "classificacaoFonte": "publicação técnica",
+        "pesoFonte": 0.75
+      }
+    ],
+    "missaoId": "missao_mu2kz6qh_1",
+    "projetoId": null,
+    "confianca": 0.68,
+    "criadoEm": 1789471247900,
+    "atualizadoEm": 1789471247900,
+    "expiraEm": 1790680847900,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kzc7p_6": {
+    "id": "pesquisa_mu2kzc7p_6",
+    "tipo": "pesquisa",
+    "conteudo": "Modern JavaScript date utility library",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "pesquisar",
+      "a",
+      "versão",
+      "atual",
+      "do"
+    ],
+    "contexto": {
+      "query": "Pesquisar a versão atual do pacote date-fns no npm registry",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Pesquisar a versão atual do pacote date-fns no npm registry",
+        "fonte": "npm-registry",
+        "url": "https://www.npmjs.com/package/date-fns",
+        "titulo": "date-fns@4.4.0",
+        "data": null,
+        "trecho": "Modern JavaScript date utility library",
+        "evidencia": "Modern JavaScript date utility library",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2kzc48_5",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471253653,
+    "atualizadoEm": 1789471253653,
+    "expiraEm": 1790680853653,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789471255391": {
+    "id": "pesquisa_teste29_1789471255391",
+    "tipo": "pesquisa",
+    "conteudo": "ramda: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789471255391,
+    "atualizadoEm": 1789471255391,
+    "expiraEm": 1789471254391,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2kzdl2_7": {
+    "id": "pesquisa_mu2kzdl2_7",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471255430,
+    "atualizadoEm": 1789471255430,
+    "expiraEm": 1790680855430,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_debug": {
+    "id": "pesquisa_teste29_debug",
+    "tipo": "pesquisa",
+    "conteudo": "ramda: versao antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versao do pacote npm ramda registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789471264161,
+    "atualizadoEm": 1789471264161,
+    "expiraEm": 1789471263161,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2l07id_4": {
+    "id": "pesquisa_mu2l07id_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471294213,
+    "atualizadoEm": 1789471294213,
+    "expiraEm": 1790680894213,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789471304277": {
+    "id": "pesquisa_teste29_1789471304277",
+    "tipo": "pesquisa",
+    "conteudo": "ramda-teste29-1789471304277: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda-teste29-1789471304277 registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda-teste29-1789471304277 antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789471304277,
+    "atualizadoEm": 1789471304277,
+    "expiraEm": 1789471303277,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2l0fcq_5": {
+    "id": "pesquisa_mu2l0fcq_5",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789471304378,
+    "atualizadoEm": 1789471304378,
+    "expiraEm": 1790680904378,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2l1kf8_1": {
+    "id": "pesquisa_mu2l1kf8_1",
+    "tipo": "pesquisa",
+    "conteudo": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+    "origem": "pesquisa:wikipedia",
+    "tags": [
+      "em",
+      "1",
+      "frase,",
+      "defina",
+      "o"
+    ],
+    "contexto": {
+      "query": "Em 1 frase, defina o que é uma API REST",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Em 1 frase, defina o que é uma API REST",
+        "fonte": "wikipedia",
+        "url": "https://pt.wikipedia.org/wiki/Web_service",
+        "titulo": "Web service",
+        "data": "2026-01-24T00:26:30Z",
+        "trecho": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+        "evidencia": "Web Service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria \"linguagem\", que é traduzida para uma linguagem universal, um formato intermediário como XML, JSON, CSV, etc.",
+        "confianca": 0.68,
+        "classificacaoFonte": "publicação técnica",
+        "pesoFonte": 0.75
+      }
+    ],
+    "missaoId": "missao_mu2l1k0g_3",
+    "projetoId": null,
+    "confianca": 0.68,
+    "criadoEm": 1789471357604,
+    "atualizadoEm": 1789471357604,
+    "expiraEm": 1790680957604,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2l258e_2": {
+    "id": "pesquisa_mu2l258e_2",
+    "tipo": "pesquisa",
+    "conteudo": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+    "origem": "pesquisa:wikipedia",
+    "tags": [
+      "em",
+      "1",
+      "frase:",
+      "vantagem",
+      "do"
+    ],
+    "contexto": {
+      "query": "Em 1 frase: vantagem do PostgreSQL",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Em 1 frase: vantagem do PostgreSQL",
+        "fonte": "wikipedia",
+        "url": "https://pt.wikipedia.org/wiki/Perl",
+        "titulo": "Perl",
+        "data": "2026-05-11T16:21:55Z",
+        "trecho": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+        "evidencia": "Perl é uma família de duas linguagens de programação multiplataforma, Perl 5 e Perl 6.",
+        "confianca": 0.68,
+        "classificacaoFonte": "publicação técnica",
+        "pesoFonte": 0.75
+      }
+    ],
+    "missaoId": "missao_mu2l24tj_a",
+    "projetoId": null,
+    "confianca": 0.68,
+    "criadoEm": 1789471384574,
+    "atualizadoEm": 1789471384574,
+    "expiraEm": 1790680984574,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2l25ob_3": {
+    "id": "pesquisa_mu2l25ob_3",
+    "tipo": "pesquisa",
+    "conteudo": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+    "origem": "pesquisa:wikipedia",
+    "tags": [
+      "em",
+      "1",
+      "frase:",
+      "vantagem",
+      "do"
+    ],
+    "contexto": {
+      "query": "Em 1 frase: vantagem do MongoDB",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Em 1 frase: vantagem do MongoDB",
+        "fonte": "wikipedia",
+        "url": "https://pt.wikipedia.org/wiki/Delphi_(software)",
+        "titulo": "Delphi (software)",
+        "data": "2025-12-17T17:42:30Z",
+        "trecho": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+        "evidencia": "Embarcadero Delphi, anteriormente conhecido como CodeGear Delphi, Inprise Delphi e Borland Delphi, também conhecido como Delphi, é um compilador, uma IDE e uma linguagem de programação, produzido anteriormente pela Borland Software Corporation e atualmente pela Embarcadero. O Delphi, originalmente direcionado para a plataforma Windows, chegou a ser usado para desenvolvimento de aplicações nativas para Linux através do Kylix, e para o framework Microsoft .NET em suas versões mais recentes. O desenvolvimento do Kylix foi descontinuado.",
+        "confianca": 0.68,
+        "classificacaoFonte": "publicação técnica",
+        "pesoFonte": 0.75
+      }
+    ],
+    "missaoId": "missao_mu2l24tj_a",
+    "projetoId": null,
+    "confianca": 0.68,
+    "criadoEm": 1789471385147,
+    "atualizadoEm": 1789471385147,
+    "expiraEm": 1790680985147,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2lwmvp_4": {
+    "id": "pesquisa_mu2lwmvp_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789472807125,
+    "atualizadoEm": 1789472807125,
+    "expiraEm": 1790682407125,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2lwzxb_4": {
+    "id": "pesquisa_mu2lwzxb_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789472824031,
+    "atualizadoEm": 1789472824031,
+    "expiraEm": 1790682424031,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2ly8f4_4": {
+    "id": "pesquisa_mu2ly8f4_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789472881696,
+    "atualizadoEm": 1789472881696,
+    "expiraEm": 1790682481696,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789472889923": {
+    "id": "pesquisa_teste29_1789472889923",
+    "tipo": "pesquisa",
+    "conteudo": "ramda-teste29-1789472889923: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda-teste29-1789472889923 registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda-teste29-1789472889923 antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789472889923,
+    "atualizadoEm": 1789472889923,
+    "expiraEm": 1789472888923,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2lyf0n_5": {
+    "id": "pesquisa_mu2lyf0n_5",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789472890247,
+    "atualizadoEm": 1789472890247,
+    "expiraEm": 1790682490247,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2m6gxq_4": {
+    "id": "pesquisa_mu2m6gxq_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789473265982,
+    "atualizadoEm": 1789473265982,
+    "expiraEm": 1790682865982,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2m6isd_5": {
+    "id": "pesquisa_mu2m6isd_5",
+    "tipo": "pesquisa",
+    "conteudo": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "o",
+      "registry",
+      "npm",
+      "ou"
+    ],
+    "contexto": {
+      "query": "Consultar o registry npm ou site oficial para obter a versão atual do pacote dayjs.",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar o registry npm ou site oficial para obter a versão atual do pacote dayjs.",
+        "fonte": "npm-registry",
+        "url": "https://day.js.org",
+        "titulo": "dayjs@1.11.23",
+        "data": null,
+        "trecho": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+        "evidencia": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2m6il2_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789473268381,
+    "atualizadoEm": 1789473268381,
+    "expiraEm": 1790682868381,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789473328192": {
+    "id": "pesquisa_teste29_1789473328192",
+    "tipo": "pesquisa",
+    "conteudo": "ramda-teste29-1789473328192: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda-teste29-1789473328192 registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda-teste29-1789473328192 antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789473328192,
+    "atualizadoEm": 1789473328192,
+    "expiraEm": 1789473327192,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2m7t66_6": {
+    "id": "pesquisa_mu2m7t66_6",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789473328494,
+    "atualizadoEm": 1789473328494,
+    "expiraEm": 1790682928494,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2mfqlq_4": {
+    "id": "pesquisa_mu2mfqlq_4",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789473698414,
+    "atualizadoEm": 1789473698414,
+    "expiraEm": 1790683298414,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2mfueb_5": {
+    "id": "pesquisa_mu2mfueb_5",
+    "tipo": "pesquisa",
+    "conteudo": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "o",
+      "registro",
+      "do",
+      "pacote"
+    ],
+    "contexto": {
+      "query": "Consultar o registro do pacote dayjs no npm para obter a tag 'latest' e a versão correspondente.",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar o registro do pacote dayjs no npm para obter a tag 'latest' e a versão correspondente.",
+        "fonte": "npm-registry",
+        "url": "https://day.js.org",
+        "titulo": "dayjs@1.11.23",
+        "data": null,
+        "trecho": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+        "evidencia": "2KB immutable date time library alternative to Moment.js with the same modern API ",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2mfu69_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789473703331,
+    "atualizadoEm": 1789473703331,
+    "expiraEm": 1790683303331,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789473739060": {
+    "id": "pesquisa_teste29_1789473739060",
+    "tipo": "pesquisa",
+    "conteudo": "ramda-teste29-1789473739060: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda-teste29-1789473739060 registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda-teste29-1789473739060 antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789473739060,
+    "atualizadoEm": 1789473739060,
+    "expiraEm": 1789473738060,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2mgm7p_6": {
+    "id": "pesquisa_mu2mgm7p_6",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789473739381,
+    "atualizadoEm": 1789473739381,
+    "expiraEm": 1790683339381,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2z123x_7": {
+    "id": "pesquisa_mu2z123x_7",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789494848493,
+    "atualizadoEm": 1789494848493,
+    "expiraEm": 1790704448493,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789494873371": {
+    "id": "pesquisa_teste29_1789494873371",
+    "tipo": "pesquisa",
+    "conteudo": "ramda-teste29-1789494873371: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda-teste29-1789494873371 registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda-teste29-1789494873371 antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789494873371,
+    "atualizadoEm": 1789494873371,
+    "expiraEm": 1789494872371,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2z1ljz_e": {
+    "id": "pesquisa_mu2z1ljz_e",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789494873695,
+    "atualizadoEm": 1789494873695,
+    "expiraEm": 1790704473695,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2z611c_6": {
+    "id": "pesquisa_mu2z611c_6",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789495080384,
+    "atualizadoEm": 1789495080384,
+    "expiraEm": 1790704680384,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2z7jav_b": {
+    "id": "pesquisa_mu2z7jav_b",
+    "tipo": "pesquisa",
+    "conteudo": "Modern JavaScript date utility library",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "acesse",
+      "o",
+      "registro",
+      "npm",
+      "do"
+    ],
+    "contexto": {
+      "query": "Acesse o registro npm do pacote date-fns e retrieve the latest version number.",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Acesse o registro npm do pacote date-fns e retrieve the latest version number.",
+        "fonte": "npm-registry",
+        "url": "https://www.npmjs.com/package/date-fns",
+        "titulo": "date-fns@4.4.0",
+        "data": null,
+        "trecho": "Modern JavaScript date utility library",
+        "evidencia": "Modern JavaScript date utility library",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2z7ix1_1",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789495150711,
+    "atualizadoEm": 1789495150711,
+    "expiraEm": 1790704750711,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2z7kfi_d": {
+    "id": "pesquisa_mu2z7kfi_d",
+    "tipo": "pesquisa",
+    "conteudo": "Modern JavaScript date utility library",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "consultar",
+      "o",
+      "site",
+      "oficial",
+      "do"
+    ],
+    "contexto": {
+      "query": "Consultar o site oficial do npm (npmjs.com) para o pacote date-fns e extrair o número da versão marcada como 'latest'.",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "Consultar o site oficial do npm (npmjs.com) para o pacote date-fns e extrair o número da versão marcada como 'latest'.",
+        "fonte": "npm-registry",
+        "url": "https://www.npmjs.com/package/date-fns",
+        "titulo": "date-fns@4.4.0",
+        "data": null,
+        "trecho": "Modern JavaScript date utility library",
+        "evidencia": "Modern JavaScript date utility library",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_mu2z7kd4_3",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789495152174,
+    "atualizadoEm": 1789495152174,
+    "expiraEm": 1790704752174,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_teste29_1789495152180": {
+    "id": "pesquisa_teste29_1789495152180",
+    "tipo": "pesquisa",
+    "conteudo": "ramda-teste29-1789495152180: versão antiga simulada 0.1.0",
+    "origem": "teste",
+    "contexto": {
+      "query": "versão do pacote npm ramda-teste29-1789495152180 registro oficial"
+    },
+    "evidencias": [
+      {
+        "url": "https://x.com",
+        "titulo": "ramda-teste29-1789495152180 antigo"
+      }
+    ],
+    "confianca": 0.7,
+    "validadeMs": -1000,
+    "criadoEm": 1789495152180,
+    "atualizadoEm": 1789495152180,
+    "expiraEm": 1789495151180,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "tags": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2z7kho_e": {
+    "id": "pesquisa_mu2z7kho_e",
+    "tipo": "pesquisa",
+    "conteudo": "A practical functional library for JavaScript programmers.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "ramda"
+    ],
+    "contexto": {
+      "query": "ramda",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "ramda",
+        "fonte": "npm-registry",
+        "url": "https://ramdajs.com/",
+        "titulo": "ramda@0.32.0",
+        "data": null,
+        "trecho": "A practical functional library for JavaScript programmers.",
+        "evidencia": "A practical functional library for JavaScript programmers.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": null,
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789495152252,
+    "atualizadoEm": 1789495152252,
+    "expiraEm": 1790704752252,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "pesquisa_mu2zrydi_6": {
+    "id": "pesquisa_mu2zrydi_6",
+    "tipo": "pesquisa",
+    "conteudo": "A modern runtime for JavaScript and TypeScript.",
+    "origem": "pesquisa:npm",
+    "tags": [
+      "deno"
+    ],
+    "contexto": {
+      "query": "deno",
+      "situacao": "insuficiente"
+    },
+    "evidencias": [
+      {
+        "query": "deno",
+        "fonte": "npm-registry",
+        "url": "https://deno.com",
+        "titulo": "deno@2.9.6",
+        "data": null,
+        "trecho": "A modern runtime for JavaScript and TypeScript.",
+        "evidencia": "A modern runtime for JavaScript and TypeScript.",
+        "confianca": 0.8,
+        "classificacaoFonte": "documentação oficial",
+        "pesoFonte": 1
+      }
+    ],
+    "missaoId": "missao_teste_19",
+    "projetoId": null,
+    "confianca": 0.8,
+    "criadoEm": 1789496103366,
+    "atualizadoEm": 1789496103366,
+    "expiraEm": 1790705703366,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  }
+}

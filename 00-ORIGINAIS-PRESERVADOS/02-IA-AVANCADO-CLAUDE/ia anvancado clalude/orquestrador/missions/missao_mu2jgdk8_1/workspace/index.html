@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador Acessível</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .counter-container {
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter-container">
+    <h1>Contador</h1>
+    <p>Contagem: <span id="contador-valor" aria-live="polite">0</span></p>
+    <button id="botao-incrementar" aria-pressed="false">Incrementar</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

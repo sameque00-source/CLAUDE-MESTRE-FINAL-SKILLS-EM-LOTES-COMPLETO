@@ -1,0 +1,274 @@
+{
+  "id": "missao_mu21eebh_1",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:12:43.900Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:12:43.901Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (6 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:12:43.907Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:12:43.907Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21eebm_2",
+      "descricao": "Pesquisar boas práticas para scripts de backup com Git e métodos de autenticação (SSH vs HTTPS).",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista resumida de práticas recomendadas e opções de autenticação"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir que o script siga práticas seguras e compatíveis com diferentes ambientes.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar boas práticas para scripts de backup com Git e métodos de autenticação (SSH vs HTTPS).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista resumida de práticas recomendadas e opções de autenticação"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:43.906Z",
+      "atualizadaEm": "2026-09-15T02:12:43.906Z"
+    },
+    {
+      "id": "tarefa_mu21eebm_3",
+      "descricao": "Definir especificação detalhada do script (parâmetros de entrada, fluxo de operações e mensagens de log).",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21eebm_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Documento de especificação contendo lista de argumentos e sequência de comandos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir especificação detalhada do script (parâmetros de entrada, fluxo de operações e mensagens de log).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de especificação contendo lista de argumentos e sequência de comandos"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:43.906Z",
+      "atualizadaEm": "2026-09-15T02:12:43.906Z"
+    },
+    {
+      "id": "tarefa_mu21eebm_4",
+      "descricao": "Implementar o script Bash conforme a especificação, incluindo init, add, commit, push e tratamento de erros.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21eebm_3"
+      ],
+      "recursoExclusivo": "backup_git.sh",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo backup_git.sh criado, com permissões executáveis e sem erros de sintaxe"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar o script Bash conforme a especificação, incluindo init, add, commit, push e tratamento de erros.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo backup_git.sh criado, com permissões executáveis e sem erros de sintaxe"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:43.906Z",
+      "atualizadaEm": "2026-09-15T02:12:43.906Z"
+    },
+    {
+      "id": "tarefa_mu21eebm_5",
+      "descricao": "Testar o script em um diretório de exemplo, verificando criação de commit e push para um repositório teste.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu21eebm_4"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Log de teste mostrando commit e push bem‑sucedidos no repositório remoto"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Testar o script em um diretório de exemplo, verificando criação de commit e push para um repositório teste.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Log de teste mostrando commit e push bem‑sucedidos no repositório remoto"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:43.906Z",
+      "atualizadaEm": "2026-09-15T02:12:43.906Z"
+    },
+    {
+      "id": "tarefa_mu21eebm_6",
+      "descricao": "Escrever documentação de uso (README.md) incluindo exemplos de configuração, execução e agendamento via cron.",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu21eebm_4"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "README.md revisado e pronto para publicação"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever documentação de uso (README.md) incluindo exemplos de configuração, execução e agendamento via cron.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md revisado e pronto para publicação"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:43.906Z",
+      "atualizadaEm": "2026-09-15T02:12:43.906Z"
+    },
+    {
+      "id": "tarefa_mu21eebm_7",
+      "descricao": "Empacotar os artefatos finais (script, README e .gitignore opcional) e validar que todos os critérios de sucesso são atendidos.",
+      "tipo": "coordenacao",
+      "dependeDe": [
+        "tarefa_mu21eebm_5",
+        "tarefa_mu21eebm_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [
+        "arquivo"
+      ],
+      "criterioConclusao": [
+        "Diretório de entrega contendo backup_git.sh, README.md e .gitignore (se houver) pronto para entrega ao usuário"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "coordinator",
+      "contexto": {
+        "objetivo": "Empacotar os artefatos finais (script, README e .gitignore opcional) e validar que todos os critérios de sucesso são atendidos.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diretório de entrega contendo backup_git.sh, README.md e .gitignore (se houver) pronto para entrega ao usuário"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:43.906Z",
+      "atualizadaEm": "2026-09-15T02:12:43.906Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21eebm_3",
+      "para": "tarefa_mu21eebm_2"
+    },
+    {
+      "de": "tarefa_mu21eebm_4",
+      "para": "tarefa_mu21eebm_3"
+    },
+    {
+      "de": "tarefa_mu21eebm_5",
+      "para": "tarefa_mu21eebm_4"
+    },
+    {
+      "de": "tarefa_mu21eebm_6",
+      "para": "tarefa_mu21eebm_4"
+    },
+    {
+      "de": "tarefa_mu21eebm_7",
+      "para": "tarefa_mu21eebm_5"
+    },
+    {
+      "de": "tarefa_mu21eebm_7",
+      "para": "tarefa_mu21eebm_6"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:12:43.900Z",
+  "atualizadaEm": "2026-09-15T02:12:43.900Z",
+  "modoExecucao": "AUTO"
+}

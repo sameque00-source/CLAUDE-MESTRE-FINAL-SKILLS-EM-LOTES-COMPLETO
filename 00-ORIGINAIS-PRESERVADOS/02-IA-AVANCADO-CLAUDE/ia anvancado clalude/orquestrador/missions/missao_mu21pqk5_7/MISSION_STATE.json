@@ -1,0 +1,663 @@
+{
+  "id": "missao_mu21pqk5_7",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:21:32.981Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:21:32.981Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (10 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:21:32.982Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "4 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:21:32.982Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T02:21:42.830Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21pqk6_8",
+      "descricao": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav) avaliando cobertura de formatos, API C++ e performance.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório comparativo com pontuação de cobertura, performance e facilidade de integração"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Precisamos escolher a base de processamento que oferece maior suporte e integração em C++.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas de processamento de vídeo (FFmpeg, GStreamer, libav) avaliando cobertura de formatos, API C++ e performance.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório comparativo com pontuação de cobertura, performance e facilidade de integração"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas de processamento d",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.767Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_9",
+      "descricao": "Pesquisar frameworks de UI desktop (Qt, Electron+React, Flutter) para aplicação profissional e multiplataforma.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Matriz de decisão com critérios de performance, produtividade, licenciamento e suporte multiplataforma"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Determinar a tecnologia que melhor equilibra performance nativa e produtividade de desenvolvimento.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar frameworks de UI desktop (Qt, Electron+React, Flutter) para aplicação profissional e multiplataforma.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Matriz de decisão com critérios de performance, produtividade, licenciamento e suporte multiplataforma"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar frameworks de UI desktop (Qt, ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.767Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_a",
+      "descricao": "Analisar licenças de todas as dependências candidatas para garantir compatibilidade com distribuição comercial.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento resumindo licenças permitidas e restrições de uso"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Evitar conflitos legais que impeçam a comercialização do produto.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Analisar licenças de todas as dependências candidatas para garantir compatibilidade com distribuição comercial.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento resumindo licenças permitidas e restrições de uso"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Analisar licenças de todas as dependênci",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.767Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_b",
+      "descricao": "Pesquisar opções de aceleração de hardware (CUDA, NVENC, AMD VCE, Apple Metal) compatíveis com FFmpeg nas três plataformas.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Tabela comparativa de suporte, desempenho esperado e requisitos de driver"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher a estratégia de GPU que ofereça melhor ganho de performance sem restrições de driver.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar opções de aceleração de hardware (CUDA, NVENC, AMD VCE, Apple Metal) compatíveis com FFmpeg nas três plataformas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tabela comparativa de suporte, desempenho esperado e requisitos de driver"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar opções de aceleração de hardwa",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.767Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_c",
+      "descricao": "Consolidar resultados das pesquisas e definir stack tecnológico: linguagem, UI framework, biblioteca de vídeo e estratégia de aceleração.",
+      "tipo": "decisão",
+      "dependeDe": [
+        "tarefa_mu21pqk6_8",
+        "tarefa_mu21pqk6_9",
+        "tarefa_mu21pqk6_a",
+        "tarefa_mu21pqk6_b"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão contendo stack escolhido e justificativas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar resultados das pesquisas e definir stack tecnológico: linguagem, UI framework, biblioteca de vídeo e estratégia de aceleração.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão contendo stack escolhido e justificativas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Consolidar resultados das pesquisas e de",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.783Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.783Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_d",
+      "descricao": "Desenhar arquitetura geral do aplicativo (módulos de importação, timeline, processamento, render e UI).",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21pqk6_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Diagrama de arquitetura e especificação de interfaces entre módulos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Desenhar arquitetura geral do aplicativo (módulos de importação, timeline, processamento, render e UI).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de arquitetura e especificação de interfaces entre módulos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenhar arquitetura geral do aplicativo",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.798Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.798Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_e",
+      "descricao": "Criar wireframes e protótipos de UI (media bin, timeline, preview, barra de ferramentas).",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21pqk6_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "uiux",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Conjunto de mockups em alta‑fidelidade aprovados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "uiux",
+      "contexto": {
+        "objetivo": "Criar wireframes e protótipos de UI (media bin, timeline, preview, barra de ferramentas).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Conjunto de mockups em alta‑fidelidade aprovados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Criar wireframes e protótipos de UI (med",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.798Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.798Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_f",
+      "descricao": "Implementar módulo central de processamento de vídeo (import, decodificação, operações de corte/trim) usando a biblioteca escolhida.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21pqk6_d"
+      ],
+      "recursoExclusivo": "src/video_core",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "compilador",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Biblioteca funcional capaz de abrir arquivos, executar corte e gerar fluxo de frames sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar módulo central de processamento de vídeo (import, decodificação, operações de corte/trim) usando a biblioteca escolhida.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Biblioteca funcional capaz de abrir arquivos, executar corte e gerar fluxo de frames sem erros"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar módulo central de processame",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.814Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.814Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_g",
+      "descricao": "Desenvolver camada de UI em Qt conforme os wireframes, integrando o timeline e preview ao módulo de vídeo.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21pqk6_e",
+        "tarefa_mu21pqk6_f"
+      ],
+      "recursoExclusivo": "src/ui",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "compilador",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Aplicativo com interface operacional que permite carregar vídeo, visualizar timeline e reproduzir preview"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver camada de UI em Qt conforme os wireframes, integrando o timeline e preview ao módulo de vídeo.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicativo com interface operacional que permite carregar vídeo, visualizar timeline e reproduzir preview"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver camada de UI em Qt conforme ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.830Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.830Z"
+    },
+    {
+      "id": "tarefa_mu21pqk6_h",
+      "descricao": "Implementar pipeline de exportação usando aceleração GPU escolhida, suportando MP4/H.264 e H.265.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21pqk6_f"
+      ],
+      "recursoExclusivo": "src/export",
+      "status": "concluida",
+      "agente": "backend",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "git",
+        "compilador",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Função de export que gera arquivos de vídeo corretos nas três plataformas com aceleração habilitada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar pipeline de exportação usando aceleração GPU escolhida, suportando MP4/H.264 e H.265.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Função de export que gera arquivos de vídeo corretos nas três plataformas com aceleração habilitada"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar pipeline de exportação usand",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T02:21:42.830Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:21:32.982Z",
+      "atualizadaEm": "2026-09-15T02:21:42.830Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21pqk6_c",
+      "para": "tarefa_mu21pqk6_8"
+    },
+    {
+      "de": "tarefa_mu21pqk6_c",
+      "para": "tarefa_mu21pqk6_9"
+    },
+    {
+      "de": "tarefa_mu21pqk6_c",
+      "para": "tarefa_mu21pqk6_a"
+    },
+    {
+      "de": "tarefa_mu21pqk6_c",
+      "para": "tarefa_mu21pqk6_b"
+    },
+    {
+      "de": "tarefa_mu21pqk6_d",
+      "para": "tarefa_mu21pqk6_c"
+    },
+    {
+      "de": "tarefa_mu21pqk6_e",
+      "para": "tarefa_mu21pqk6_c"
+    },
+    {
+      "de": "tarefa_mu21pqk6_f",
+      "para": "tarefa_mu21pqk6_d"
+    },
+    {
+      "de": "tarefa_mu21pqk6_g",
+      "para": "tarefa_mu21pqk6_e"
+    },
+    {
+      "de": "tarefa_mu21pqk6_g",
+      "para": "tarefa_mu21pqk6_f"
+    },
+    {
+      "de": "tarefa_mu21pqk6_h",
+      "para": "tarefa_mu21pqk6_f"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "uiux",
+    "backend",
+    "frontend"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu21pqk6_8",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas de processamento d",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_9",
+      "status": "ok",
+      "resultado": "mock: Pesquisar frameworks de UI desktop (Qt, ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_a",
+      "status": "ok",
+      "resultado": "mock: Analisar licenças de todas as dependênci",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_b",
+      "status": "ok",
+      "resultado": "mock: Pesquisar opções de aceleração de hardwa",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.767Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_c",
+      "status": "ok",
+      "resultado": "mock: Consolidar resultados das pesquisas e de",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.783Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_d",
+      "status": "ok",
+      "resultado": "mock: Desenhar arquitetura geral do aplicativo",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.798Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_e",
+      "status": "ok",
+      "resultado": "mock: Criar wireframes e protótipos de UI (med",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.798Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_f",
+      "status": "ok",
+      "resultado": "mock: Implementar módulo central de processame",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.814Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_g",
+      "status": "ok",
+      "resultado": "mock: Desenvolver camada de UI em Qt conforme ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.830Z"
+    },
+    {
+      "tarefaId": "tarefa_mu21pqk6_h",
+      "status": "ok",
+      "resultado": "mock: Implementar pipeline de exportação usand",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T02:21:42.830Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:21:32.981Z",
+  "atualizadaEm": "2026-09-15T02:21:42.830Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "src/video_core",
+    "src/ui",
+    "src/export"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A nova informação menciona restrições do ffmpeg.wasm no Safari, o que sugere um contexto de aplicação web. No entanto, o plano atual (tarefas de 'mu21pqk6_8' a 'mu21pqk6_h') foca explicitamente em frameworks desktop nativos/multiplataforma (Qt, Electron+React, Flutter) e aceleração de hardware local (CUDA, NVENC, Metal). Como a missão é nativa/desktop e não web-based (wasm), a informação sobre o Safari não afeta o escopo atual, tornando o replanejamento desnecessário para o stack já definido.",
+      "ts": "2026-09-15T02:21:42.755Z",
+      "canceladas": 0,
+      "adicionadas": 0
+    }
+  ]
+}

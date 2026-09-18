@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Acessível</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #0f172a;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --focus-ring: #f59e0b;
+            --card-bg: #ffffff;
+            --border-color: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        main {
+            width: 100%;
+            max-width: 400px;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .counter-display {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: #ffffff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Foco de teclado visível e acessível */
+        button:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid var(--focus-ring);
+            outline-offset: 2px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Contador Interativo</h1>
+        
+        <!-- Região ao vivo para leitores de tela anunciarem mudanças numéricas -->
+        <div class="sr-only" aria-live="polite" id="contador-status">Contador em zero</div>
+        
+        <div class="counter-display" id="contador-valor" aria-hidden="true">0</div>
+        
+        <div class="controls">
+            <button id="btn-decrementar" aria-label="Decrementar valor do contador">Decrementar</button>
+            <button id="btn-incrementar" aria-label="Incrementar valor do contador">Incrementar</button>
+        </div>
+    </main>
+
+    <script>
+        let contador = 0;
+        const MIN_VAL = -999;
+        const MAX_VAL = 999;
+
+        const elValor = document.getElementById('contador-valor');
+        const elStatus = document.getElementById('contador-status');
+        const btnIncrementar = document.getElementById('btn-incrementar');
+        const btnDecrementar = document.getElementById('btn-decrementar');
+
+        function atualizarContador(novoValor) {
+            if (novoValor < MIN_VAL || novoValor > MAX_VAL) return;
+            contador = novoValor;
+            elValor.textContent = contador;
+            elStatus.textContent = `Contador atualizado para ${contador}`;
+        }
+
+        btnIncrementar.addEventListener('click', () => {
+            atualizarContador(contador + 1);
+        });
+
+        btnDecrementar.addEventListener('click', () => {
+            atualizarContador(contador - 1);
+        });
+    </script>
+</body>
+</html>

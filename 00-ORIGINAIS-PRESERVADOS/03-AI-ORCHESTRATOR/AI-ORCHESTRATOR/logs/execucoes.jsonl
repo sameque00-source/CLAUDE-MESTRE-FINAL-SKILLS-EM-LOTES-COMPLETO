@@ -1,0 +1,7 @@
+{"ts":"2026-09-13T23:10:24.951Z","input_preview":"olá","level":0,"candidate":"google-gemini-flash-lite-latest","provider":"Google AI Studio","ok":true,"latency_ms":683,"error":null}
+{"ts":"2026-09-13T23:10:26.187Z","input_preview":"quanto é 2+2?","level":0,"candidate":"google-gemini-flash-lite-latest","provider":"Google AI Studio","ok":true,"latency_ms":1031,"error":null}
+{"ts":"2026-09-13T23:10:31.626Z","input_preview":"explique o que é recursão em programação","level":1,"candidate":"google-gemini-flash-lite-latest","provider":"Google AI Studio","ok":true,"latency_ms":5243,"error":null}
+{"ts":"2026-09-13T23:10:33.231Z","input_preview":"crie um pequeno script em python que soma dois numeros","level":2,"candidate":"groq-gpt-oss-120b","provider":"Groq","ok":true,"latency_ms":1413,"error":null}
+{"ts":"2026-09-13T23:10:51.438Z","input_preview":"analise esta arquitetura de microsservicos e aponte gargalos: 5 servicos com cha","level":3,"candidate":"google-gemini-3.6-flash","provider":"Google AI Studio","ok":true,"latency_ms":18009,"error":null}
+{"ts":"2026-09-13T23:10:58.479Z","input_preview":"debugue esta race condition dificil de reproduzir em um sistema distribuido com ","level":1,"candidate":"google-gemini-flash-lite-latest","provider":"Google AI Studio","ok":true,"latency_ms":6857,"error":null}
+{"ts":"2026-09-13T23:11:40.043Z","input_preview":"debugue esta race condition dificil de reproduzir em um sistema distribuido com ","level":3,"candidate":"google-gemini-3.6-flash","provider":"Google AI Studio","ok":true,"latency_ms":21158,"error":null}

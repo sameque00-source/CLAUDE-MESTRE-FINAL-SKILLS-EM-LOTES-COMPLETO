@@ -1,0 +1,173 @@
+{
+  "id": "missao_mu2z41v1_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:56:28.140Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:56:28.141Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T17:56:28.147Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:56:28.148Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2z41v7_2",
+      "descricao": "Verificar a existência do arquivo README.md e localizar as ocorrências da palavra 'aplicacao'.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Confirmado se o arquivo existe",
+        "Listadas as linhas onde 'aplicacao' aparece (ou confirmado que não aparece)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Verificar a existência do arquivo README.md e localizar as ocorrências da palavra 'aplicacao'.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Confirmado se o arquivo existe"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:56:28.147Z",
+      "atualizadaEm": "2026-09-15T17:56:28.147Z"
+    },
+    {
+      "id": "tarefa_mu2z41v7_3",
+      "descricao": "Realizar a substituição exata de 'aplicacao' por 'aplicação' no arquivo README.md.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2z41v7_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Arquivo salvo com as alterações",
+        "Nenhuma ocorrência de 'aplicacao' sem acento permanece no arquivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Realizar a substituição exata de 'aplicacao' por 'aplicação' no arquivo README.md.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo salvo com as alterações"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:56:28.147Z",
+      "atualizadaEm": "2026-09-15T17:56:28.147Z"
+    },
+    {
+      "id": "tarefa_mu2z41v7_4",
+      "descricao": "Validar a integridade do arquivo após a edição, garantindo que apenas a palavra alvo foi modificada.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2z41v7_3"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Dif de alterações confirma apenas a mudança de 'aplicacao' para 'aplicação'",
+        "Outras partes do arquivo permanecem intactas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar a integridade do arquivo após a edição, garantindo que apenas a palavra alvo foi modificada.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Dif de alterações confirma apenas a mudança de 'aplicacao' para 'aplicação'"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:56:28.147Z",
+      "atualizadaEm": "2026-09-15T17:56:28.147Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2z41v7_3",
+      "para": "tarefa_mu2z41v7_2"
+    },
+    {
+      "de": "tarefa_mu2z41v7_4",
+      "para": "tarefa_mu2z41v7_3"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:56:28.140Z",
+  "atualizadaEm": "2026-09-15T17:56:28.140Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Localizar o arquivo README.md",
+    "Substituir todas as ocorrências de 'aplicacao' por 'aplicação'"
+  ],
+  "entregaveis": [
+    "Arquivo README.md com a letra cedilha adicionada na palavra 'aplicação'"
+  ],
+  "criteriosSucesso": [
+    "A palavra 'aplicacao' não deve mais aparecer no README.md",
+    "A palavra 'aplicação' deve estar presente nos locais onde 'aplicacao' existia"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "id": "missao_mu2ilf0p_b",
+  "objetivo": "Missão sintética de recuperação",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:14:04.873Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:14:04.873Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:14:04.874Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:14:04.876Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:14:05.622Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T10:14:05.624Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T10:14:05.625Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ilf0q_c",
+      "descricao": "Responda apenas: primeira",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: primeira",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "primeira",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:05.180Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:04.874Z",
+      "atualizadaEm": "2026-09-15T10:14:05.180Z"
+    },
+    {
+      "id": "tarefa_mu2ilf0q_d",
+      "descricao": "Responda apenas: segunda",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2ilf0q_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": null,
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: segunda",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "segunda",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:14:05.622Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:14:04.874Z",
+      "atualizadaEm": "2026-09-15T10:14:05.622Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ilf0q_d",
+      "para": "tarefa_mu2ilf0q_c"
+    }
+  ],
+  "agentes": [],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2ilf0q_c",
+      "status": "ok",
+      "resultado": "primeira",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:05.180Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ilf0q_d",
+      "status": "ok",
+      "resultado": "segunda",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:14:05.622Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T10:14:05.623Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+    "ts": "2026-09-15T10:14:05.625Z"
+  },
+  "criadaEm": "2026-09-15T10:14:04.873Z",
+  "atualizadaEm": "2026-09-15T10:14:05.625Z",
+  "modoExecucao": "AUTO"
+}

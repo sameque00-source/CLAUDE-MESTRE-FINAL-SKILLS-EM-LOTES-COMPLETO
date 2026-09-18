@@ -1,0 +1,170 @@
+{
+  "id": "missao_mu2k541a_a",
+  "objetivo": "Missão sintética de paralelismo entre agentes",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:57:23.374Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:57:23.374Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:57:23.375Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:57:23.376Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:57:25.837Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2k541b_b",
+      "descricao": "Em 1 frase: vantagem do PostgreSQL",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do PostgreSQL",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Analisando o contexto para levantar as opções reais antes de uma decisão sobre tecnologia de banco de dados:\n\n### 1. Opções Reais (Não Teóricas) baseadas em cenários comuns de projetos de software/game development (contexto FiveM/fxserver mencionado nas constraints)\n\nComo o contrato menciona \"nunca tocar VPS/FiveM/fxServer\" e \"escrever só dentro do workspace da missão\", assumo que estamos decidindo a **base de dados** para uma aplicação externa (ex: painel de admin, sistema de economia, logs) que *interagirá* com o servidor, mas não será instalada *no* VPS do FiveM (para manter a separação de responsabilidades e segurança).\n\n| Opção | O que Ganha | O que Perde | O que Custa (Infra/Tempo) |\n| :--- | :--- | :--- | :--- |\n| **PostgreSQL 15+** | Suporte nativo a JSONB (flexibilidade de dados semi-estruturados), ACID robusto, índices GIN/GiST avançados, excelente performance em consultas complexas (joins), ecossistema de extensões maduras (PostGIS, pgjwt, etc.). Mais seguro por padrão. | Curva de aprendizado levemente maior que MySQL para configurações avançadas (ex: tuning de memória compartilhada, planejamento de consultas). Menos \"soluções prontas\" em tutoriais básicos do que MySQL. | Hospedagem gerenciada barata (R$50-150/mês em provedores nacionais/internacionais). Esforço de setup inicial: baixo. Manutenção: baixa se usar backup automatizado. |\n| **MySQL 8.0 / MariaDB 10.6** | Muito documentado, fácil de encontrar ajuda na internet, ampla compatibilidade com bibliotecas legadas. Simplicidade em setups pequenos. | Performance inferior em consultas complexas com muitos joins. Suporte a JSON é mais limitado que JSONB do Postgres. Menos tipos de dados especializados (ex: arrays, geometria avançada). Risco de \"locking\" em escritas simultâneas altas. | Hospedagem similar ao Postgres. Esforço de setup: baixo. **Custo oculto:** tempo gasto reescrevendo consultas para contornar limitações de performance em escala. |\n| **MongoDB (NoSQL)** | Escalabilidade horizontal fácil, modelagem de dados flexível (sem schema rígido), ideal para logs e dados não estruturados. | Falta de ACID transacional robusto (melhorou, mas ainda abaixo de Postgres para integridade crítica). Maior consumo de memória. Morte de muitas bibliotecas que dependiam de drivers antigos. | Hospedagem gerenciada (Atlas, etc.) pode ficar cara rápido. Esforço de setup: médio. **Custo oculto:** dificuldade em relacionar dados complexos, necessidade de duplicar dados ou denormalizar muito. |\n| **SQLite** | Zero configuração, arquivo único, portável, levemente leve para leitura. | Não suporta bem concorrencia de escrita alta (single writer lock). Não é um servidor de rede (requer acesso ao arquivo do disco). Inadequado para múltiplos serviços escrevendo simultaneamente. | R$0 de infra (lo no mesmo disco da aplicação). Esforço de setup: mínimo. **Custo oculto:** risco de corrução de arquivo em falha de disco, dificuldade de backup/restore em produção, bloqueio de escrita se um processo travar. |\n\n### 2. Precedente\n\n*   **Dentro do projeto (FiveM/fxServer):** A comunidade FiveM/ES",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-qwen3.8-27b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:57:25.331Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:57:23.375Z",
+      "atualizadaEm": "2026-09-15T10:57:25.837Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do PostgreSQL\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2k541c_c",
+      "descricao": "Em 1 frase: vantagem do MongoDB",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "ninerouter-imperion-dev",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do MongoDB",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Vou primeiro levantar o contexto real do projeto para que as opções reais (e não teóricas) estejam ancoradas no que existe, e então entregar exatamente o que o contrato pede.\n\n<tool_call>\n<function=list_files>\n<parameter=path>\n.\n</parameter>\n</function>\n</tool_call>",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=ninerouter-imperion-dev",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:57:25.837Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:57:23.376Z",
+      "atualizadaEm": "2026-09-15T10:57:25.837Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do MongoDB\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b",
+    "ninerouter-imperion-dev"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2k541b_b",
+      "status": "ok",
+      "resultado": "Analisando o contexto para levantar as opções reais antes de uma decisão sobre tecnologia de banco de dados:\n\n### 1. Opções Reais (Não Teóricas) baseadas em cenários comuns de projetos de software/game development (contexto FiveM/fxserver mencionado nas constraints)\n\nComo o contrato menciona \"nunca tocar VPS/FiveM/fxServer\" e \"escrever só dentro do workspace da missão\", assumo que estamos decidindo a **base de dados** para uma aplicação externa (ex: painel de admin, sistema de economia, logs) que *interagirá* com o servidor, mas não será instalada *no* VPS do FiveM (para manter a separação de responsabilidades e segurança).\n\n| Opção | O que Ganha | O que Perde | O que Custa (Infra/Tempo) |\n| :--- | :--- | :--- | :--- |\n| **PostgreSQL 15+** | Suporte nativo a JSONB (flexibilidade de dados semi-estruturados), ACID robusto, índices GIN/GiST avançados, excelente performance em consultas complexas (joins), ecossistema de extensões maduras (PostGIS, pgjwt, etc.). Mais seguro por padrão. | Curva de aprendizado levemente maior que MySQL para configurações avançadas (ex: tuning de memória compartilhada, planejamento de consultas). Menos \"soluções prontas\" em tutoriais básicos do que MySQL. | Hospedagem gerenciada barata (R$50-150/mês em provedores nacionais/internacionais). Esforço de setup inicial: baixo. Manutenção: baixa se usar backup automatizado. |\n| **MySQL 8.0 / MariaDB 10.6** | Muito documentado, fácil de encontrar ajuda na internet, ampla compatibilidade com bibliotecas legadas. Simplicidade em setups pequenos. | Performance inferior em consultas complexas com muitos joins. Suporte a JSON é mais limitado que JSONB do Postgres. Menos tipos de dados especializados (ex: arrays, geometria avançada). Risco de \"locking\" em escritas simultâneas altas. | Hospedagem similar ao Postgres. Esforço de setup: baixo. **Custo oculto:** tempo gasto reescrevendo consultas para contornar limitações de performance em escala. |\n| **MongoDB (NoSQL)** | Escalabilidade horizontal fácil, modelagem de dados flexível (sem schema rígido), ideal para logs e dados não estruturados. | Falta de ACID transacional robusto (melhorou, mas ainda abaixo de Postgres para integridade crítica). Maior consumo de memória. Morte de muitas bibliotecas que dependiam de drivers antigos. | Hospedagem gerenciada (Atlas, etc.) pode ficar cara rápido. Esforço de setup: médio. **Custo oculto:** dificuldade em relacionar dados complexos, necessidade de duplicar dados ou denormalizar muito. |\n| **SQLite** | Zero configuração, arquivo único, portável, levemente leve para leitura. | Não suporta bem concorrencia de escrita alta (single writer lock). Não é um servidor de rede (requer acesso ao arquivo do disco). Inadequado para múltiplos serviços escrevendo simultaneamente. | R$0 de infra (lo no mesmo disco da aplicação). Esforço de setup: mínimo. **Custo oculto:** risco de corrução de arquivo em falha de disco, dificuldade de backup/restore em produção, bloqueio de escrita se um processo travar. |\n\n### 2. Precedente\n\n*   **Dentro do projeto (FiveM/fxServer):** A comunidade FiveM/ES",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-qwen3.8-27b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:57:25.331Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2k541c_c",
+      "status": "ok",
+      "resultado": "Vou primeiro levantar o contexto real do projeto para que as opções reais (e não teóricas) estejam ancoradas no que existe, e então entregar exatamente o que o contrato pede.\n\n<tool_call>\n<function=list_files>\n<parameter=path>\n.\n</parameter>\n</function>\n</tool_call>",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=ninerouter-imperion-dev",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:57:25.837Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:57:23.374Z",
+  "atualizadaEm": "2026-09-15T10:57:25.837Z",
+  "modoExecucao": "AUTO"
+}

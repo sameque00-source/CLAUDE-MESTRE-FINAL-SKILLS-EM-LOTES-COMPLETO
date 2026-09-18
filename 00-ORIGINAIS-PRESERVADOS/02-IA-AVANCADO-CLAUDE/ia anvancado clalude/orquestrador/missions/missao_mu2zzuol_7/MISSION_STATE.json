@@ -1,0 +1,37 @@
+{
+  "id": "missao_mu2zzuol_7",
+  "objetivo": "Missão para testar transição inválida",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "ANALISANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:21:11.829Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:21:11.829Z"
+    }
+  ],
+  "subtarefas": [],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:21:11.829Z",
+  "atualizadaEm": "2026-09-15T18:21:11.829Z",
+  "modoExecucao": "AUTO"
+}

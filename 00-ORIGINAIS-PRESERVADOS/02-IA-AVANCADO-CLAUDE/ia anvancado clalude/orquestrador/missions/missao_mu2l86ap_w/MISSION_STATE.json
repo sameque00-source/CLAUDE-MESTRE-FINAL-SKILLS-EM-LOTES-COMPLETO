@@ -1,0 +1,212 @@
+{
+  "id": "missao_mu2l86ap_w",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:27:45.889Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:27:45.889Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via openrouter-nemotron-3-super-120b (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T11:27:45.891Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:27:45.891Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l86ar_x",
+      "descricao": "Definir interface do script (parâmetros, fluxo de etapas: validar args, iniciar repo se necessário, adicionar, commitar com timestamp, push) e decidir convenções de branch e mensagem.",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de especificação contendo assinatura do script e fluxo de etapas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir interface do script (parâmetros, fluxo de etapas: validar args, iniciar repo se necessário, adicionar, commitar com timestamp, push) e decidir convenções de branch e mensagem.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de especificação contendo assinatura do script e fluxo de etapas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:45.891Z",
+      "atualizadaEm": "2026-09-15T11:27:45.891Z"
+    },
+    {
+      "id": "tarefa_mu2l86ar_y",
+      "descricao": "Escrever o script backup_git.sh implementando a arquitetura definida, com checagem de erros e uso de git.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2l86ar_x"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo backup_git.sh criado, permissões de execução, contém shebang #!/usr/bin/env bash e funções principais"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script backup_git.sh implementando a arquitetura definida, com checagem de erros e uso de git.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo backup_git.sh criado, permissões de execução, contém shebang #!/usr/bin/env bash e funções principais"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:45.891Z",
+      "atualizadaEm": "2026-09-15T11:27:45.891Z"
+    },
+    {
+      "id": "tarefa_mu2l86ar_z",
+      "descricao": "Executar o script em um diretório temporário com um repositório bare local como remote, verificando que ele cria commit e push sem erros.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2l86ar_y"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Teste termina com código de saída 0, repositório remoto bare contém ao menos um commit e os arquivos do diretório de origem estão presentes"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar o script em um diretório temporário com um repositório bare local como remote, verificando que ele cria commit e push sem erros.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Teste termina com código de saída 0, repositório remoto bare contém ao menos um commit e os arquivos do diretório de origem estão presentes"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:45.891Z",
+      "atualizadaEm": "2026-09-15T11:27:45.891Z"
+    },
+    {
+      "id": "tarefa_mu2l86ar_10",
+      "descricao": "Revisar o script quanto à legibilidade, tratamento de erros e conformidade com boas práticas Bash (ex: set -euo pipefail, uso de [[ ]]) e atualizar se necessário.",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2l86ar_z"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Nenhum comentário de revisão pendente; script aprovado pelo reviewer"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o script quanto à legibilidade, tratamento de erros e conformidade com boas práticas Bash (ex: set -euo pipefail, uso de [[ ]]) e atualizar se necessário.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Nenhum comentário de revisão pendente; script aprovado pelo reviewer"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:27:45.891Z",
+      "atualizadaEm": "2026-09-15T11:27:45.891Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2l86ar_y",
+      "para": "tarefa_mu2l86ar_x"
+    },
+    {
+      "de": "tarefa_mu2l86ar_z",
+      "para": "tarefa_mu2l86ar_y"
+    },
+    {
+      "de": "tarefa_mu2l86ar_10",
+      "para": "tarefa_mu2l86ar_z"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:27:45.889Z",
+  "atualizadaEm": "2026-09-15T11:27:45.889Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Aceitar caminho da pasta a ser backuped como primeiro argumento",
+    "Aceitar URL do repositório remoto Git como segundo argumento",
+    "Commitar com mensagem contendo data/hora UTC",
+    "Empurrar para a branch padrão (main ou master)",
+    "Funcionar em ambientes com Bash padrão e Git instalado"
+  ],
+  "entregaveis": [
+    "Script backup_git.sh executável",
+    "README breve de uso (opcional)"
+  ],
+  "criteriosSucesso": [
+    "Script executa sem erros em teste com diretório temporário e repositório bare local",
+    "Script deixa o repositório remoto com pelo menos um commit contendo os arquivos de origem",
+    "Script é legível e inclui tratamento básico de erros (saída não-zero em falhas)"
+  ]
+}

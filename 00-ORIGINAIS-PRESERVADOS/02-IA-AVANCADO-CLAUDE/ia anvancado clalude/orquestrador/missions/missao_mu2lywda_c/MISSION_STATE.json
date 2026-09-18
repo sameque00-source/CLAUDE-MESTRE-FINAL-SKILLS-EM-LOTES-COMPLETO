@@ -1,0 +1,213 @@
+{
+  "id": "missao_mu2lywda_c",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:48:32.734Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:48:32.734Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T11:48:32.735Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:48:32.735Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lywdb_d",
+      "descricao": "Definir a stack tecnológica (escolhido Next.js com Tailwind CSS e API do Google Gemini Flash pelo custo-benefício e facilidade de integração multimodal)",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Stack definida e documentada no README inicial"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a stack tecnológica (escolhido Next.js com Tailwind CSS e API do Google Gemini Flash pelo custo-benefício e facilidade de integração multimodal)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Stack definida e documentada no README inicial"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:32.735Z",
+      "atualizadaEm": "2026-09-15T11:48:32.735Z"
+    },
+    {
+      "id": "tarefa_mu2lywdb_e",
+      "descricao": "Implementar a interface frontend com botão de upload de imagem, pré-visualização e área de exibição da descrição gerada",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2lywdb_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Interface renderiza corretamente e permite selecionar arquivo de imagem"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a interface frontend com botão de upload de imagem, pré-visualização e área de exibição da descrição gerada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interface renderiza corretamente e permite selecionar arquivo de imagem"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:32.735Z",
+      "atualizadaEm": "2026-09-15T11:48:32.735Z"
+    },
+    {
+      "id": "tarefa_mu2lywdb_f",
+      "descricao": "Implementar a rota de backend/API que recebe a imagem, envia para o modelo multimodal e retorna a descrição estruturada",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2lywdb_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint de API responde com sucesso gerando texto a partir de imagem de teste"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a rota de backend/API que recebe a imagem, envia para o modelo multimodal e retorna a descrição estruturada",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint de API responde com sucesso gerando texto a partir de imagem de teste"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:32.735Z",
+      "atualizadaEm": "2026-09-15T11:48:32.735Z"
+    },
+    {
+      "id": "tarefa_mu2lywdb_g",
+      "descricao": "Conectar o frontend ao backend, testando o fluxo completo de ponta a ponta com fotos reais de produtos",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2lywdb_e",
+        "tarefa_mu2lywdb_f"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "testes",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Upload de imagem gera descrição visível na tela sem erros no console"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Conectar o frontend ao backend, testando o fluxo completo de ponta a ponta com fotos reais de produtos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Upload de imagem gera descrição visível na tela sem erros no console"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:32.735Z",
+      "atualizadaEm": "2026-09-15T11:48:32.735Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lywdb_e",
+      "para": "tarefa_mu2lywdb_d"
+    },
+    {
+      "de": "tarefa_mu2lywdb_f",
+      "para": "tarefa_mu2lywdb_d"
+    },
+    {
+      "de": "tarefa_mu2lywdb_g",
+      "para": "tarefa_mu2lywdb_e"
+    },
+    {
+      "de": "tarefa_mu2lywdb_g",
+      "para": "tarefa_mu2lywdb_f"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:48:32.734Z",
+  "atualizadaEm": "2026-09-15T11:48:32.734Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface web para upload de imagens de produtos",
+    "Integração com modelo de IA multimodal (ex: GPT-4o-mini, Claude 3.5 Sonnet ou Gemini Flash) para análise de imagem",
+    "Exibição clara da descrição gerada para o usuário"
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação",
+    "Instruções básicas de execução e configuração"
+  ],
+  "criteriosSucesso": [
+    "Aplicação executa localmente, permite fazer upload de uma foto de produto e exibe a descrição gerada com sucesso."
+  ]
+}

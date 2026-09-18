@@ -1,0 +1,173 @@
+{
+  "id": "missao_mu2ixom9_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:23:37.184Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:23:37.185Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:23:37.192Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:23:37.192Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ixomf_2",
+      "descricao": "Analisar o conteúdo do README.md para confirmar a presença da palavra 'aplicacao' e registrar sua localização.",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Confirmação de que 'aplicacao' está presente e indicação da(s) linha(s) exata(s)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Analisar o conteúdo do README.md para confirmar a presença da palavra 'aplicacao' e registrar sua localização.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Confirmação de que 'aplicacao' está presente e indicação da(s) linha(s) exata(s)"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:37.191Z",
+      "atualizadaEm": "2026-09-15T10:23:37.191Z"
+    },
+    {
+      "id": "tarefa_mu2ixomf_3",
+      "descricao": "Substituir todas as ocorrências de 'aplicacao' por 'aplicação' no README.md, preservando a codificação UTF-8 e realizando commit git.",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu2ixomf_2"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "README.md salvo sem a palavra 'aplicacao' e contendo 'aplicação'",
+        "Commit criado com mensagem 'Corrige ortografia de aplicação no README'"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Substituir todas as ocorrências de 'aplicacao' por 'aplicação' no README.md, preservando a codificação UTF-8 e realizando commit git.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md salvo sem a palavra 'aplicacao' e contendo 'aplicação'"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:37.191Z",
+      "atualizadaEm": "2026-09-15T10:23:37.191Z"
+    },
+    {
+      "id": "tarefa_mu2ixomf_4",
+      "descricao": "Validar que o README.md não contém mais a palavra 'aplicacao' e que permanece em UTF-8 válido.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2ixomf_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Busca no arquivo confirma ausência de 'aplicacao'",
+        "Teste de leitura UTF-8 confirma integridade do arquivo"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar que o README.md não contém mais a palavra 'aplicacao' e que permanece em UTF-8 válido.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Busca no arquivo confirma ausência de 'aplicacao'"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:23:37.191Z",
+      "atualizadaEm": "2026-09-15T10:23:37.191Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ixomf_3",
+      "para": "tarefa_mu2ixomf_2"
+    },
+    {
+      "de": "tarefa_mu2ixomf_4",
+      "para": "tarefa_mu2ixomf_3"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:23:37.184Z",
+  "atualizadaEm": "2026-09-15T10:23:37.184Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Acesso ao repositório local contendo o README.md",
+    "Preservar a codificação UTF-8 do arquivo",
+    "Garantir que nenhuma outra ocorrência de \"aplicacao\" permaneça"
+  ],
+  "entregaveis": [
+    "README.md atualizado contendo a palavra correta \"aplicação\""
+  ],
+  "criteriosSucesso": [
+    "O README.md contém \"aplicação\" e não contém mais \"aplicacao\""
+  ]
+}

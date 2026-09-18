@@ -1,0 +1,94 @@
+{
+  "id": "missao_mu21jezv_r",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:16:38.059Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:16:38.059Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T02:16:38.060Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:16:38.060Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21jezw_s",
+      "descricao": "Desenvolver o script bash contendo a lógica de validação de diretório, comandos git init/add/commit e git push",
+      "tipo": "implementacao",
+      "dependeDe": [],
+      "recursoExclusivo": "backup_script.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo bash criado, com permissão de execução e tratamento básico de erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Desenvolver o script bash contendo a lógica de validação de diretório, comandos git init/add/commit e git push",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo bash criado, com permissão de execução e tratamento básico de erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:16:38.060Z",
+      "atualizadaEm": "2026-09-15T02:16:38.060Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:16:38.059Z",
+  "atualizadaEm": "2026-09-15T02:16:38.059Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Aceitar diretório alvo e URL do repositório remoto como parâmetros",
+    "Inicializar repositório Git se necessário",
+    "Adicionar, commitar e enviar alterações com mensagem padrão ou timestamp"
+  ],
+  "entregaveis": [
+    "Script bash executável (.sh) documentado"
+  ],
+  "criteriosSucesso": [
+    "Script executa sem erros e publica com sucesso o backup no repositório remoto"
+  ]
+}

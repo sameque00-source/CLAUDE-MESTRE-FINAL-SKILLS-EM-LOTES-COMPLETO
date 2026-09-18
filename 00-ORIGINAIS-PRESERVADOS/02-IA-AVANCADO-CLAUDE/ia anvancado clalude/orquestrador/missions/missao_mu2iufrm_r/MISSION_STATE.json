@@ -1,0 +1,134 @@
+{
+  "id": "missao_mu2iufrm_r",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:21:05.746Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:21:05.746Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:21:05.747Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:21:05.747Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iufrn_s",
+      "descricao": "Escrever o código do script Bash de backup e publicação via Git",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Script bash criado com tratamento básico de erros para comandos git (add, commit, push)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o código do script Bash de backup e publicação via Git",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script bash criado com tratamento básico de erros para comandos git (add, commit, push)"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:21:05.747Z",
+      "atualizadaEm": "2026-09-15T10:21:05.747Z"
+    },
+    {
+      "id": "tarefa_mu2iufrn_t",
+      "descricao": "Revisar a robustez e sintaxe do script bash criado",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2iufrn_s"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Script validado quanto a boas práticas em shell script e fluxo correto do git"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar a robustez e sintaxe do script bash criado",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Script validado quanto a boas práticas em shell script e fluxo correto do git"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:21:05.747Z",
+      "atualizadaEm": "2026-09-15T10:21:05.747Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2iufrn_t",
+      "para": "tarefa_mu2iufrn_s"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:21:05.746Z",
+  "atualizadaEm": "2026-09-15T10:21:05.746Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Script Bash executável",
+    "Inicialização ou verificação do repositório Git local",
+    "Adição e commit das alterações com mensagem padrão ou customizada",
+    "Envio (push) para o repositório remoto configurado"
+  ],
+  "entregaveis": [
+    "Arquivo de script bash (.sh) documentado e pronto para uso"
+  ],
+  "criteriosSucesso": [
+    "Script criado, testado logicamente e capaz de realizar o commit e push do diretório especificado."
+  ]
+}

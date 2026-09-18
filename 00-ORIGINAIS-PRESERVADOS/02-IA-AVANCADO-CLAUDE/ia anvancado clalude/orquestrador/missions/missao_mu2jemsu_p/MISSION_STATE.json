@@ -1,0 +1,255 @@
+{
+  "id": "missao_mu2jemsu_p",
+  "objetivo": "Crie um arquivo utils.js com uma função soma(a,b) simples, sem tratamento de erro.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:36:47.982Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:36:47.982Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:36:47.986Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:36:47.987Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:36:48.757Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T10:36:48.758Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: utils.js",
+      "ts": "2026-09-15T10:36:48.759Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jemsy_q",
+      "descricao": "Criar o arquivo utils.js exportando a função soma(a, b) sem validações.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "utils.js",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-qwen3.8-27b",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "O arquivo utils.js foi criado com sucesso na raiz do projeto",
+        "O código contém a definição da função soma(a, b) retornando a + b"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Criar o arquivo utils.js exportando a função soma(a, b) sem validações.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo utils.js foi criado com sucesso na raiz do projeto"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Criei o arquivo utils.js na raiz do projeto exportando a função soma(a, b) que retorna a soma dos parâmetros.",
+        "arquivos": [
+          "utils.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=groq-qwen3.8-27b",
+          "agente=coding"
+        ],
+        "testes": [
+          {
+            "comando": "node -e const { soma } = require('./utils.js'); console.log(soma(2, 3));",
+            "resultado": "passou",
+            "evidencia": "5\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:36:48.687Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:36:47.986Z",
+      "atualizadaEm": "2026-09-15T10:36:48.688Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Criar o arquivo utils.js exportando a função soma(a, b) sem validações.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: O arquivo utils.js foi criado com sucesso na raiz do projeto\nSUCCESS_CRITERIA: O arquivo utils.js foi criado com sucesso na raiz do projeto; O código contém a definição da função soma(a, b) retornando a + b"
+    },
+    {
+      "id": "tarefa_mu2jemsy_r",
+      "descricao": "Executar um script simples no terminal para validar a sintaxe e o retorno da função.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2jemsy_q"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "O carregamento do módulo não gera erros de sintaxe",
+        "A chamada soma(2, 3) retorna 5"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar um script simples no terminal para validar a sintaxe e o retorno da função.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O carregamento do módulo não gera erros de sintaxe"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "teste executado com sucesso (validação real)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "passou",
+            "evidencia": "5\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:36:48.756Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:36:47.986Z",
+      "atualizadaEm": "2026-09-15T10:36:48.756Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2jemsy_r",
+      "para": "tarefa_mu2jemsy_q"
+    }
+  ],
+  "agentes": [
+    "coding",
+    "testing"
+  ],
+  "modelos": [
+    "groq-qwen3.8-27b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jemsy_q",
+      "status": "ok",
+      "resultado": "Criei o arquivo utils.js na raiz do projeto exportando a função soma(a, b) que retorna a soma dos parâmetros.",
+      "arquivos": [
+        "utils.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=groq-qwen3.8-27b",
+        "agente=coding"
+      ],
+      "testes": [
+        {
+          "comando": "node -e const { soma } = require('./utils.js'); console.log(soma(2, 3));",
+          "resultado": "passou",
+          "evidencia": "5\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:36:48.687Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jemsy_r",
+      "status": "ok",
+      "resultado": "teste executado com sucesso (validação real)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [
+        {
+          "comando": "node",
+          "resultado": "passou",
+          "evidencia": "5\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:36:48.756Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: utils.js",
+      "ts": "2026-09-15T10:36:48.758Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 2/2 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: utils.js",
+    "ts": "2026-09-15T10:36:48.759Z"
+  },
+  "criadaEm": "2026-09-15T10:36:47.982Z",
+  "atualizadaEm": "2026-09-15T10:36:48.759Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Criar arquivo utils.js",
+    "Definir função soma(a, b) retornando a + b",
+    "Não incluir tratamento de erros (try/catch ou validação de tipos)"
+  ],
+  "entregaveis": [
+    "Arquivo utils.js contendo a implementação solicitada"
+  ],
+  "criteriosSucesso": [
+    "O arquivo utils.js existe e é carregável/podável no Node.js ou ambiente JavaScript",
+    "A função soma retorna o resultado correto para entradas numéricas válidas"
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "-e",
+      "const { soma } = require('./utils.js'); console.log(soma(2, 3));"
+    ],
+    "tipoExecucao": "unica"
+  }
+}

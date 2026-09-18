@@ -1,0 +1,119 @@
+{
+  "id": "missao_mu2l6nlf_k",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:26:34.995Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:26:34.995Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T11:26:34.996Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:26:34.996Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l6nlg_l",
+      "descricao": "Pesquisar APIs de IA multimodal ativas com melhor custo-benefício e latência para descrição de produtos",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista comparativa de 3 APIs candidatas com preço por 1k tokens de imagem",
+        "Recomendação técnica justificada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar qual API (OpenAI, Anthropic, Gemini, etc.) possui melhor suporte a visão e documentação clara para MVP",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar APIs de IA multimodal ativas com melhor custo-benefício e latência para descrição de produtos",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista comparativa de 3 APIs candidatas com preço por 1k tokens de imagem"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:26:34.996Z",
+      "atualizadaEm": "2026-09-15T11:26:34.996Z"
+    },
+    {
+      "id": "tarefa_mu2l6nlg_m",
+      "descricao": "Pesquisar bibliotecas Python/Node para tratamento de upload e redimensionamento de imagens em background",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Recomendação de 1 biblioteca para processamento de imagem",
+        "Exemplo de código funcional de redimensionamento"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher a biblioteca mais leve e estável para processar arquivos grandes sem travar o servidor",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas Python/Node para tratamento de upload e redimensionamento de imagens em background",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Recomendação de 1 biblioteca para processamento de imagem"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:26:34.996Z",
+      "atualizadaEm": "2026-09-15T11:26:34.996Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:26:34.995Z",
+  "atualizadaEm": "2026-09-15T11:26:34.995Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

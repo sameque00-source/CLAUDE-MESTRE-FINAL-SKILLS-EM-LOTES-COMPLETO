@@ -1,0 +1,262 @@
+{
+  "id": "missao_mu2zhr72_8",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 3,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T18:07:07.502Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T18:07:07.502Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (4 tarefa(s), complexidade=complexo)",
+      "ts": "2026-09-15T18:07:07.503Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T18:07:07.503Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2zhr73_9",
+      "descricao": "Definir a stack tecnológica (escolhido Next.js com Tailwind CSS e API do OpenAI GPT-4o por simplicidade e robustez em visão computacional) e estruturar o projeto.",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Estrutura básica de pastas criada e dependências instaladas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a stack tecnológica (escolhido Next.js com Tailwind CSS e API do OpenAI GPT-4o por simplicidade e robustez em visão computacional) e estruturar o projeto.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Estrutura básica de pastas criada e dependências instaladas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:07.503Z",
+      "atualizadaEm": "2026-09-15T18:07:07.503Z"
+    },
+    {
+      "id": "tarefa_mu2zhr73_a",
+      "descricao": "Implementar a interface de usuário (frontend) com componente de upload de imagem, botão de envio e área de exibição da descrição gerada.",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2zhr73_9"
+      ],
+      "recursoExclusivo": "src/app/page.tsx",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Tela funcional permitindo selecionar arquivo de imagem e visualizar prévia"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a interface de usuário (frontend) com componente de upload de imagem, botão de envio e área de exibição da descrição gerada.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Tela funcional permitindo selecionar arquivo de imagem e visualizar prévia"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:07.503Z",
+      "atualizadaEm": "2026-09-15T18:07:07.503Z"
+    },
+    {
+      "id": "tarefa_mu2zhr73_b",
+      "descricao": "Implementar a rota de API (backend) que recebe a imagem, envia para o modelo multimodal de IA com prompt adequado para descrição de produtos e retorna o texto.",
+      "tipo": "backend",
+      "dependeDe": [
+        "tarefa_mu2zhr73_9"
+      ],
+      "recursoExclusivo": "src/app/api/analisar/route.ts",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "api"
+      ],
+      "criterioConclusao": [
+        "Endpoint funcional processando imagem e retornando descrição textual"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar a rota de API (backend) que recebe a imagem, envia para o modelo multimodal de IA com prompt adequado para descrição de produtos e retorna o texto.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint funcional processando imagem e retornando descrição textual"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:07.503Z",
+      "atualizadaEm": "2026-09-15T18:07:07.503Z"
+    },
+    {
+      "id": "tarefa_mu2zhr73_c",
+      "descricao": "Conectar o frontend ao backend, testar o fluxo completo de ponta a ponta e documentar o uso no README.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2zhr73_a",
+        "tarefa_mu2zhr73_b"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "testes"
+      ],
+      "criterioConclusao": [
+        "Aplicação rodando sem erros e gerando descrições a partir de fotos enviadas pelo usuário"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Conectar o frontend ao backend, testar o fluxo completo de ponta a ponta e documentar o uso no README.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Aplicação rodando sem erros e gerando descrições a partir de fotos enviadas pelo usuário"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:07.503Z",
+      "atualizadaEm": "2026-09-15T18:07:07.503Z"
+    },
+    {
+      "id": "tarefa_mu2zhr73_d",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2zhr73_a",
+        "tarefa_mu2zhr73_b",
+        "tarefa_mu2zhr73_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T18:07:07.503Z",
+      "atualizadaEm": "2026-09-15T18:07:07.503Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2zhr73_a",
+      "para": "tarefa_mu2zhr73_9"
+    },
+    {
+      "de": "tarefa_mu2zhr73_b",
+      "para": "tarefa_mu2zhr73_9"
+    },
+    {
+      "de": "tarefa_mu2zhr73_c",
+      "para": "tarefa_mu2zhr73_a"
+    },
+    {
+      "de": "tarefa_mu2zhr73_c",
+      "para": "tarefa_mu2zhr73_b"
+    },
+    {
+      "de": "tarefa_mu2zhr73_d",
+      "para": "tarefa_mu2zhr73_a"
+    },
+    {
+      "de": "tarefa_mu2zhr73_d",
+      "para": "tarefa_mu2zhr73_b"
+    },
+    {
+      "de": "tarefa_mu2zhr73_d",
+      "para": "tarefa_mu2zhr73_c"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T18:07:07.502Z",
+  "atualizadaEm": "2026-09-15T18:07:07.502Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Interface web para upload de imagens",
+    "Integração com modelo multimodal (ex: GPT-4o ou Claude 3.5 Sonnet) via API",
+    "Exibição da descrição gerada em formato de texto editável",
+    "Arquitetura leve (ex: Next.js ou Node.js + HTML simples) sem complexidade excessiva"
+  ],
+  "entregaveis": [
+    "Código fonte completo da aplicação",
+    "Instruções claras de configuração e execução no arquivo README"
+  ],
+  "criteriosSucesso": [
+    "O usuário consegue enviar uma foto de produto e receber uma descrição textual coerente gerada por IA."
+  ]
+}

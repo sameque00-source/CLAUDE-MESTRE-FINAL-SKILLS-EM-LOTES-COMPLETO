@@ -1,0 +1,316 @@
+{
+  "id": "missao_mu21eivu_8",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:12:49.818Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:12:49.818Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (7 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:12:49.820Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:12:49.820Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21eivv_9",
+      "descricao": "Pesquisar modelos open‑source de captioning de imagens, avaliando qualidade, requisitos de hardware e licença",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Modelo selecionado documentado com link, requisitos de hardware e licença"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher modelo adequado e licença permissiva",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar modelos open‑source de captioning de imagens, avaliando qualidade, requisitos de hardware e licença",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Modelo selecionado documentado com link, requisitos de hardware e licença"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:49.819Z",
+      "atualizadaEm": "2026-09-15T02:12:49.819Z"
+    },
+    {
+      "id": "tarefa_mu21eivv_a",
+      "descricao": "Definir arquitetura da solução: backend FastAPI, frontend HTML/JS, fluxo de dados e integração com o modelo escolhido",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21eivv_9"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "navegador",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Diagrama de arquitetura e especificação dos endpoints criados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir arquitetura da solução: backend FastAPI, frontend HTML/JS, fluxo de dados e integração com o modelo escolhido",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Diagrama de arquitetura e especificação dos endpoints criados"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:49.819Z",
+      "atualizadaEm": "2026-09-15T02:12:49.819Z"
+    },
+    {
+      "id": "tarefa_mu21eivw_b",
+      "descricao": "Inicializar repositório Git e criar estrutura de pastas (backend, frontend, docs)",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21eivv_a"
+      ],
+      "recursoExclusivo": "repo-structure",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "git",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Repositório criado com README inicial e diretórios backend/, frontend/, docs/"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Inicializar repositório Git e criar estrutura de pastas (backend, frontend, docs)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório criado com README inicial e diretórios backend/, frontend/, docs/"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:49.820Z",
+      "atualizadaEm": "2026-09-15T02:12:49.820Z"
+    },
+    {
+      "id": "tarefa_mu21eivw_c",
+      "descricao": "Implementar backend FastAPI com endpoint /describe que recebe imagem, executa o modelo de captioning e devolve descrição JSON",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21eivw_b"
+      ],
+      "recursoExclusivo": "backend-code",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Endpoint funcional testado localmente, retornando descrição para imagem enviada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Implementar backend FastAPI com endpoint /describe que recebe imagem, executa o modelo de captioning e devolve descrição JSON",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint funcional testado localmente, retornando descrição para imagem enviada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:49.820Z",
+      "atualizadaEm": "2026-09-15T02:12:49.820Z"
+    },
+    {
+      "id": "tarefa_mu21eivw_d",
+      "descricao": "Desenvolver frontend simples (HTML + JavaScript) para upload de imagens, chamada ao endpoint e exibição da descrição",
+      "tipo": "development",
+      "dependeDe": [
+        "tarefa_mu21eivw_b"
+      ],
+      "recursoExclusivo": "frontend-code",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Página index.html funcional que envia foto e mostra texto retornado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver frontend simples (HTML + JavaScript) para upload de imagens, chamada ao endpoint e exibição da descrição",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Página index.html funcional que envia foto e mostra texto retornado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:49.820Z",
+      "atualizadaEm": "2026-09-15T02:12:49.820Z"
+    },
+    {
+      "id": "tarefa_mu21eivw_e",
+      "descricao": "Executar testes integrados (manuais ou automatizados) com imagens de produtos variadas para validar fluxo completo",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21eivw_c",
+        "tarefa_mu21eivw_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "multimidia"
+      ],
+      "criterioConclusao": [
+        "Relatório de testes com pelo menos 5 imagens, todas retornando descrições adequadas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes integrados (manuais ou automatizados) com imagens de produtos variadas para validar fluxo completo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de testes com pelo menos 5 imagens, todas retornando descrições adequadas"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:49.820Z",
+      "atualizadaEm": "2026-09-15T02:12:49.820Z"
+    },
+    {
+      "id": "tarefa_mu21eivw_f",
+      "descricao": "Escrever documentação de uso, instalação e execução no README, incluindo instruções de download do modelo",
+      "tipo": "docs",
+      "dependeDe": [
+        "tarefa_mu21eivw_e"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "README completo com passos de setup, execução e exemplos de uso"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever documentação de uso, instalação e execução no README, incluindo instruções de download do modelo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README completo com passos de setup, execução e exemplos de uso"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:12:49.820Z",
+      "atualizadaEm": "2026-09-15T02:12:49.820Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21eivv_a",
+      "para": "tarefa_mu21eivv_9"
+    },
+    {
+      "de": "tarefa_mu21eivw_b",
+      "para": "tarefa_mu21eivv_a"
+    },
+    {
+      "de": "tarefa_mu21eivw_c",
+      "para": "tarefa_mu21eivw_b"
+    },
+    {
+      "de": "tarefa_mu21eivw_d",
+      "para": "tarefa_mu21eivw_b"
+    },
+    {
+      "de": "tarefa_mu21eivw_e",
+      "para": "tarefa_mu21eivw_c"
+    },
+    {
+      "de": "tarefa_mu21eivw_e",
+      "para": "tarefa_mu21eivw_d"
+    },
+    {
+      "de": "tarefa_mu21eivw_f",
+      "para": "tarefa_mu21eivw_e"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:12:49.818Z",
+  "atualizadaEm": "2026-09-15T02:12:49.818Z",
+  "modoExecucao": "AUTO"
+}

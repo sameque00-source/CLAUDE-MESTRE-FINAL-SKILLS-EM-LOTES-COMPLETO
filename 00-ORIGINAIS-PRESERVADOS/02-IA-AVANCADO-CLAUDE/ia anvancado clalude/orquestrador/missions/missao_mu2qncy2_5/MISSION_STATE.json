@@ -1,0 +1,224 @@
+{
+  "id": "missao_mu2qncy2_5",
+  "objetivo": "Missão sintética de dependência estrita A→B→C",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "AGUARDANDO_DEPENDENCIA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:59:32.426Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:59:32.426Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T13:59:32.427Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:59:32.432Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T13:59:44.857Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2qncy3_6",
+      "descricao": "Responda apenas: A",
+      "tipo": "raciocinio",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "erro",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: A",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "resposta vazia (categoria=resposta_vazia)"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T13:59:44.856Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T13:59:32.427Z",
+      "atualizadaEm": "2026-09-15T13:59:44.857Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Responda apenas: A\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2qncy4_7",
+      "descricao": "Responda apenas: B",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2qncy3_6"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: B",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:59:32.428Z",
+      "atualizadaEm": "2026-09-15T13:59:32.428Z"
+    },
+    {
+      "id": "tarefa_mu2qncy5_8",
+      "descricao": "Responda apenas: C",
+      "tipo": "raciocinio",
+      "dependeDe": [
+        "tarefa_mu2qncy4_7"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": null,
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Responda apenas: C",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:59:32.429Z",
+      "atualizadaEm": "2026-09-15T13:59:32.429Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2qncy4_7",
+      "para": "tarefa_mu2qncy3_6"
+    },
+    {
+      "de": "tarefa_mu2qncy5_8",
+      "para": "tarefa_mu2qncy4_7"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2qncy3_6",
+      "erro": "resposta vazia (categoria=resposta_vazia)",
+      "tipo": "vazio",
+      "ts": "2026-09-15T13:59:36.569Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2qncy3_6",
+      "erro": "resposta vazia (categoria=resposta_vazia)",
+      "tipo": "vazio",
+      "ts": "2026-09-15T13:59:40.710Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2qncy3_6",
+      "erro": "resposta vazia (categoria=resposta_vazia)",
+      "tipo": "vazio",
+      "ts": "2026-09-15T13:59:44.857Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2qncy3_6",
+        "erro": "resposta vazia (categoria=resposta_vazia)",
+        "tipo": "vazio",
+        "ts": "2026-09-15T13:59:36.569Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T13:59:36.569Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2qncy3_6",
+        "erro": "resposta vazia (categoria=resposta_vazia)",
+        "tipo": "vazio",
+        "ts": "2026-09-15T13:59:40.710Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T13:59:40.710Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2qncy3_6",
+        "erro": "resposta vazia (categoria=resposta_vazia)",
+        "tipo": "vazio",
+        "ts": "2026-09-15T13:59:44.857Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T13:59:44.857Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:59:32.426Z",
+  "atualizadaEm": "2026-09-15T13:59:44.857Z",
+  "modoExecucao": "AUTO"
+}

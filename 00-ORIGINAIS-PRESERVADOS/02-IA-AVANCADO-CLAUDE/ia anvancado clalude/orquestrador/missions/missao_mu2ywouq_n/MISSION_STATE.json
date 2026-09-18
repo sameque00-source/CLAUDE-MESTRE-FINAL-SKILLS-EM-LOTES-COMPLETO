@@ -1,0 +1,164 @@
+{
+  "id": "missao_mu2ywouq_n",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T17:50:44.690Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T17:50:44.690Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T17:50:44.691Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T17:50:44.691Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ywour_o",
+      "descricao": "Selecionar stack de frontend: Next.js 14 + Tailwind CSS para server-side rendering e estilo rápido. Decidir por cliente de IA (OpenAI GPT-4o ou Claude) baseado em custo/qualidade para visão.",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Decisão final de stack frontend (Next.js/Tailwind)",
+        "Modelo de IA escolhido (ex: gpt-4o-mini) justificado"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário confirmar versões estáveis atuais e comparação custo/eficiência dos modelos de visão multimodal disponíveis no mercado em tempo real.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Selecionar stack de frontend: Next.js 14 + Tailwind CSS para server-side rendering e estilo rápido. Decidir por cliente de IA (OpenAI GPT-4o ou Claude) baseado em custo/qualidade para visão.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Decisão final de stack frontend (Next.js/Tailwind)"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:44.691Z",
+      "atualizadaEm": "2026-09-15T17:50:44.691Z"
+    },
+    {
+      "id": "tarefa_mu2ywour_p",
+      "descricao": "Criar projeto base Next.js com Tailwind CSS formatado e estrutura de pastas organizada (components, app, lib). Configurar variáveis de ambiente (.env.local) para a chave da API de IA.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2ywour_o"
+      ],
+      "recursoExclusivo": "src/lib/config.js",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Projeto inicializado sem erros",
+        "Tailwind CSS funcionando (classe de exemplo visível)",
+        "Arquivo .env.local criado com placeholder"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Criar projeto base Next.js com Tailwind CSS formatado e estrutura de pastas organizada (components, app, lib). Configurar variáveis de ambiente (.env.local) para a chave da API de IA.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Projeto inicializado sem erros"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:44.691Z",
+      "atualizadaEm": "2026-09-15T17:50:44.691Z"
+    },
+    {
+      "id": "tarefa_mu2ywour_q",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2ywour_p"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T17:50:44.691Z",
+      "atualizadaEm": "2026-09-15T17:50:44.691Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ywour_p",
+      "para": "tarefa_mu2ywour_o"
+    },
+    {
+      "de": "tarefa_mu2ywour_q",
+      "para": "tarefa_mu2ywour_p"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T17:50:44.690Z",
+  "atualizadaEm": "2026-09-15T17:50:44.690Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "src/lib/config.js"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

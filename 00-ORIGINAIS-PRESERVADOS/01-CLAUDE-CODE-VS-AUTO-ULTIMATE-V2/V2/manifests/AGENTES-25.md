@@ -1,0 +1,27 @@
+# 25 AGENTES DA BASE ORIGINAL
+
+- 3d
+- architecture
+- backend
+- cli
+- coding
+- coordinator
+- debugger
+- devops
+- docs
+- frontend
+- hooks
+- integration
+- mcp
+- memory
+- optimizer
+- performance
+- queen-coordinator
+- research
+- reviewer
+- security-auditor
+- security
+- seo
+- swarm
+- testing
+- uiux

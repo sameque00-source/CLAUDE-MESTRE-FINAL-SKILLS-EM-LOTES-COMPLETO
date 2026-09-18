@@ -1,0 +1,736 @@
+{
+  "id": "missao_mu2iuatg_b",
+  "objetivo": "Crie um aplicativo profissional de edição de vídeo.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:20:59.332Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:20:59.332Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (10 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T10:20:59.333Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:20:59.333Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:21:07.163Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2iuath_c",
+      "descricao": "Pesquisar bibliotecas e APIs de manipulação de vídeo no navegador (FFmpeg.wasm vs WebCodecs API)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Relatório de viabilidade e escolha da tecnologia de renderização documentados"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Identificar a melhor abordagem de performance para edição e exportação de vídeo no client-side",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar bibliotecas e APIs de manipulação de vídeo no navegador (FFmpeg.wasm vs WebCodecs API)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Relatório de viabilidade e escolha da tecnologia de renderização documentados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar bibliotecas e APIs de manipula",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.070Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.070Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_d",
+      "descricao": "Pesquisar padrões de UX/UI e bibliotecas de timeline para editores de vídeo web",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de referências de UI e bibliotecas de suporte aprovadas"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Avaliar componentes existentes de timeline e design systems para editores de vídeo",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar padrões de UX/UI e bibliotecas de timeline para editores de vídeo web",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de referências de UI e bibliotecas de suporte aprovadas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar padrões de UX/UI e bibliotecas",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.070Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.070Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_e",
+      "descricao": "Definir a arquitetura técnica do aplicativo, gerenciamento de estado e estrutura de componentes",
+      "tipo": "arquitetura",
+      "dependeDe": [
+        "tarefa_mu2iuath_c",
+        "tarefa_mu2iuath_d"
+      ],
+      "recursoExclusivo": "src/arquitetura.md",
+      "status": "concluida",
+      "agente": "architecture",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Documento de arquitetura criado definindo stack (React/Vite/Tailwind) e fluxo de dados"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a arquitetura técnica do aplicativo, gerenciamento de estado e estrutura de componentes",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de arquitetura criado definindo stack (React/Vite/Tailwind) e fluxo de dados"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Definir a arquitetura técnica do aplicat",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.085Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.085Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_f",
+      "descricao": "Configurar o projeto base, dependências, rotas e estrutura de pastas",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iuath_e"
+      ],
+      "recursoExclusivo": "package.json",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "terminal",
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Repositório inicializado com build rodando sem erros"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Configurar o projeto base, dependências, rotas e estrutura de pastas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Repositório inicializado com build rodando sem erros"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Configurar o projeto base, dependências,",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.100Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.100Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_g",
+      "descricao": "Desenvolver a interface do usuário (UI) principal: painel de preview, gerenciador de mídias e controles de playback",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2iuath_f"
+      ],
+      "recursoExclusivo": "src/components/",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Componentes visuais principais implementados e responsivos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Desenvolver a interface do usuário (UI) principal: painel de preview, gerenciador de mídias e controles de playback",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Componentes visuais principais implementados e responsivos"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Desenvolver a interface do usuário (UI) ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.116Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.116Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_h",
+      "descricao": "Implementar o componente de Timeline multi-pista com suporte a arrastar e soltar, cortes e zoom",
+      "tipo": "frontend",
+      "dependeDe": [
+        "tarefa_mu2iuath_f"
+      ],
+      "recursoExclusivo": "src/components/Timeline/",
+      "status": "concluida",
+      "agente": "frontend",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Timeline funcional permitindo manipulação de múltiplos clipes em pistas separadas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar o componente de Timeline multi-pista com suporte a arrastar e soltar, cortes e zoom",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Timeline funcional permitindo manipulação de múltiplos clipes em pistas separadas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar o componente de Timeline mul",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.116Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.116Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_i",
+      "descricao": "Implementar a engine de processamento, edição e exportação de vídeo utilizando a tecnologia escolhida",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iuath_c",
+        "tarefa_mu2iuath_f"
+      ],
+      "recursoExclusivo": "src/engine/",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "multimidia",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Módulo de exportação gerando arquivo de vídeo válido a partir da timeline"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar a engine de processamento, edição e exportação de vídeo utilizando a tecnologia escolhida",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Módulo de exportação gerando arquivo de vídeo válido a partir da timeline"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Implementar a engine de processamento, e",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.116Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.116Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_j",
+      "descricao": "Integrar a interface da timeline e preview com a engine de processamento de vídeo",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu2iuath_g",
+        "tarefa_mu2iuath_h",
+        "tarefa_mu2iuath_i"
+      ],
+      "recursoExclusivo": "src/App.tsx",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "compilador"
+      ],
+      "criterioConclusao": [
+        "Ações na timeline refletem em tempo real no preview e na exportação final"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Integrar a interface da timeline e preview com a engine de processamento de vídeo",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Ações na timeline refletem em tempo real no preview e na exportação final"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Integrar a interface da timeline e previ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.131Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.131Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_k",
+      "descricao": "Executar testes de integração e validar performance de renderização no navegador",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2iuath_j"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": "mock",
+      "ferramentas": [
+        "testes",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Testes de fluxo de ponta a ponta aprovados sem vazamentos severos de memória"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar testes de integração e validar performance de renderização no navegador",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Testes de fluxo de ponta a ponta aprovados sem vazamentos severos de memória"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Executar testes de integração e validar ",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.147Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.147Z"
+    },
+    {
+      "id": "tarefa_mu2iuath_l",
+      "descricao": "Realizar revisão de código final e estruturar documentação de uso do editor",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2iuath_k"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "mock",
+      "ferramentas": [
+        "arquivos",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Código limpo, documentação README.md completa e build de produção pronto"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Realizar revisão de código final e estruturar documentação de uso do editor",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Código limpo, documentação README.md completa e build de produção pronto"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Realizar revisão de código final e estru",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.163Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:20:59.333Z",
+      "atualizadaEm": "2026-09-15T10:21:07.163Z"
+    },
+    {
+      "id": "tarefa_mu2iugrx_10",
+      "descricao": "Pesquisar e definir estratégia de fallback ou alternativa para o Safari na engine de vídeo devido às limitações do ffmpeg.wasm",
+      "tipo": "pesquisa",
+      "dependeDe": [
+        "tarefa_mu2iuath_c"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "mock",
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Estratégia de fallback para o Safari documentada",
+        "Viabilidade de uso de WebCodecs combinado com servidor ou API alternativa validada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar e definir estratégia de fallback ou alternativa para o Safari na engine de vídeo devido às limitações do ffmpeg.wasm",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "mock: Pesquisar e definir estratégia de fallba",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:21:07.085Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:21:07.053Z",
+      "atualizadaEm": "2026-09-15T10:21:07.085Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2iuath_e",
+      "para": "tarefa_mu2iuath_c"
+    },
+    {
+      "de": "tarefa_mu2iuath_e",
+      "para": "tarefa_mu2iuath_d"
+    },
+    {
+      "de": "tarefa_mu2iuath_f",
+      "para": "tarefa_mu2iuath_e"
+    },
+    {
+      "de": "tarefa_mu2iuath_g",
+      "para": "tarefa_mu2iuath_f"
+    },
+    {
+      "de": "tarefa_mu2iuath_h",
+      "para": "tarefa_mu2iuath_f"
+    },
+    {
+      "de": "tarefa_mu2iuath_i",
+      "para": "tarefa_mu2iuath_c"
+    },
+    {
+      "de": "tarefa_mu2iuath_i",
+      "para": "tarefa_mu2iuath_f"
+    },
+    {
+      "de": "tarefa_mu2iuath_j",
+      "para": "tarefa_mu2iuath_g"
+    },
+    {
+      "de": "tarefa_mu2iuath_j",
+      "para": "tarefa_mu2iuath_h"
+    },
+    {
+      "de": "tarefa_mu2iuath_j",
+      "para": "tarefa_mu2iuath_i"
+    },
+    {
+      "de": "tarefa_mu2iuath_k",
+      "para": "tarefa_mu2iuath_j"
+    },
+    {
+      "de": "tarefa_mu2iuath_l",
+      "para": "tarefa_mu2iuath_k"
+    },
+    {
+      "de": "tarefa_mu2iugrx_10",
+      "para": "tarefa_mu2iuath_c"
+    }
+  ],
+  "agentes": [
+    "research",
+    "architecture",
+    "coding",
+    "frontend",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "mock"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2iuath_c",
+      "status": "ok",
+      "resultado": "mock: Pesquisar bibliotecas e APIs de manipula",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.070Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_d",
+      "status": "ok",
+      "resultado": "mock: Pesquisar padrões de UX/UI e bibliotecas",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.070Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_e",
+      "status": "ok",
+      "resultado": "mock: Definir a arquitetura técnica do aplicat",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.085Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iugrx_10",
+      "status": "ok",
+      "resultado": "mock: Pesquisar e definir estratégia de fallba",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.085Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_f",
+      "status": "ok",
+      "resultado": "mock: Configurar o projeto base, dependências,",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.100Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_g",
+      "status": "ok",
+      "resultado": "mock: Desenvolver a interface do usuário (UI) ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.116Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_h",
+      "status": "ok",
+      "resultado": "mock: Implementar o componente de Timeline mul",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.116Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_i",
+      "status": "ok",
+      "resultado": "mock: Implementar a engine de processamento, e",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.116Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_j",
+      "status": "ok",
+      "resultado": "mock: Integrar a interface da timeline e previ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.131Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_k",
+      "status": "ok",
+      "resultado": "mock: Executar testes de integração e validar ",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.147Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2iuath_l",
+      "status": "ok",
+      "resultado": "mock: Realizar revisão de código final e estru",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:21:07.163Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:20:59.332Z",
+  "atualizadaEm": "2026-09-15T10:21:07.163Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Timeline multi-pista para vídeo, áudio e legendas",
+    "Suporte a cortes, divisões, transições e efeitos visuais básicos",
+    "Renderização e exportação de vídeo no navegador (WebCodecs API / FFmpeg.wasm)",
+    "Interface de usuário altamente responsiva inspirada em softwares profissionais (Premiere/DaVinci)",
+    "Gerenciamento de arquivos de mídia locais (importação e pré-visualização)"
+  ],
+  "entregaveis": [
+    "Código-fonte completo do editor de vídeo profissional",
+    "Build de produção otimizado",
+    "Documentação técnica e guia de uso"
+  ],
+  "criteriosSucesso": [
+    "Aplicação executa localmente sem erros críticos",
+    "Timeline permite manipulação fluida de múltiplos arquivos de mídia",
+    "Exportação de vídeo renderizado funciona com sucesso"
+  ],
+  "replanejamentos": [
+    {
+      "novaInformacao": "Descobrimos que a biblioteca ffmpeg.wasm tem suporte limitado no navegador Safari — é preciso considerar uma alternativa nativa ou um fallback no servidor.",
+      "resumo": "A descoberta de suporte limitado ao ffmpeg.wasm no Safari exige uma tarefa adicional de pesquisa e definição de estratégia de fallback (servidor ou API nativa WebCodecs) antes de avançar para a arquitetura e implementação da engine.",
+      "ts": "2026-09-15T10:21:07.053Z",
+      "canceladas": 0,
+      "adicionadas": 1
+    }
+  ]
+}

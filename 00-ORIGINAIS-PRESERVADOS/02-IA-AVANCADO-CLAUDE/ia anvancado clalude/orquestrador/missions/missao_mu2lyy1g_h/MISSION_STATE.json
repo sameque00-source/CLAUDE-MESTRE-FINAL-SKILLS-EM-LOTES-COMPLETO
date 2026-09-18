@@ -1,0 +1,132 @@
+{
+  "id": "missao_mu2lyy1g_h",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:48:34.900Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:48:34.900Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:48:34.901Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:48:34.901Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2lyy1h_i",
+      "descricao": "Escrever o script bash que valida os parâmetros, inicializa o git, realiza commit e executa o push.",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo de script criado com permissão de execução e lógica completa de git add, commit e push."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script bash que valida os parâmetros, inicializa o git, realiza commit e executa o push.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo de script criado com permissão de execução e lógica completa de git add, commit e push."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:34.901Z",
+      "atualizadaEm": "2026-09-15T11:48:34.901Z"
+    },
+    {
+      "id": "tarefa_mu2lyy1h_j",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2lyy1h_i"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:48:34.901Z",
+      "atualizadaEm": "2026-09-15T11:48:34.901Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2lyy1h_j",
+      "para": "tarefa_mu2lyy1h_i"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:48:34.900Z",
+  "atualizadaEm": "2026-09-15T11:48:34.900Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Aceitar o caminho da pasta e a URL do repositório remoto como parâmetros ou variáveis",
+    "Inicializar o repositório git caso ainda não exista",
+    "Adicionar, commitar e enviar (push) os arquivos",
+    "Incluir tratamento básico de erros"
+  ],
+  "entregaveis": [
+    "Script bash executável de backup e publicação"
+  ],
+  "criteriosSucesso": [
+    "O script executa sem erros, faz o commit das alterações e envia com sucesso para o repositório remoto."
+  ]
+}

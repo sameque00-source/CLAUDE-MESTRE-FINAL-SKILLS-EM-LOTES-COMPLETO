@@ -1,0 +1,134 @@
+{
+  "id": "missao_mu2q46vw_c",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T13:44:38.108Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T13:44:38.108Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T13:44:38.110Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T13:44:38.110Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2q46vx_d",
+      "descricao": "Escrever o código do script bash de automação do Git (verificação, init, add, commit, push).",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "backup_git.sh",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Arquivo `backup_git.sh` criado com tratamento básico de erros e comandos git corretos."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o código do script bash de automação do Git (verificação, init, add, commit, push).",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo `backup_git.sh` criado com tratamento básico de erros e comandos git corretos."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:38.109Z",
+      "atualizadaEm": "2026-09-15T13:44:38.109Z"
+    },
+    {
+      "id": "tarefa_mu2q46vy_e",
+      "descricao": "Validar a sintaxe do script e testar a execução em um diretório de exemplo.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2q46vx_d"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Bash executado sem erros de sintaxe (shellcheck) e teste simulado bem-sucedido."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar a sintaxe do script e testar a execução em um diretório de exemplo.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Bash executado sem erros de sintaxe (shellcheck) e teste simulado bem-sucedido."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T13:44:38.110Z",
+      "atualizadaEm": "2026-09-15T13:44:38.110Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2q46vy_e",
+      "para": "tarefa_mu2q46vx_d"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T13:44:38.108Z",
+  "atualizadaEm": "2026-09-15T13:44:38.108Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Aceitar o caminho da pasta e a URL do repositório remoto como parâmetros ou variáveis configuráveis",
+    "Verificar se o diretório existe e se já é um repositório Git",
+    "Inicializar o repositório, adicionar os arquivos, criar um commit com mensagem padrão/data e fazer o push para o remoto"
+  ],
+  "entregaveis": [
+    "Script bash executável (`backup_git.sh`)"
+  ],
+  "criteriosSucesso": [
+    "Script criado, com permissão de execução e capaz de commitar e enviar alterações para o repositório remoto com sucesso."
+  ]
+}

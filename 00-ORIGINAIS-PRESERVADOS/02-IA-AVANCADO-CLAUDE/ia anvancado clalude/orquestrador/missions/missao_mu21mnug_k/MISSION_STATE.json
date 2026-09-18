@@ -1,0 +1,166 @@
+{
+  "id": "missao_mu21mnug_k",
+  "objetivo": "Crie uma ferramenta que analisa fotos de produtos enviadas pelo usuário e gera automaticamente uma descrição de texto para cada foto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:19:09.496Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:19:09.496Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T02:19:09.498Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:19:09.498Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21mnui_l",
+      "descricao": "Selecionar a API de Visão mais adequada (custo vs. qualidade) e definir o schema de entrada/saída.",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Documento de decisão definindo a API escolhida e o endpoint a ser chamado.",
+        "Definição do formato do prompt que será enviado à IA."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Necessário comparar as atualizações recentes das APIs de visão (OpenAI, Anthropic, Google) quanto a preço por token e formato de pedido/requisição para definir a arquitetura de integração.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Selecionar a API de Visão mais adequada (custo vs. qualidade) e definir o schema de entrada/saída.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Documento de decisão definindo a API escolhida e o endpoint a ser chamado."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:09.498Z",
+      "atualizadaEm": "2026-09-15T02:19:09.498Z"
+    },
+    {
+      "id": "tarefa_mu21mnui_m",
+      "descricao": "Construir o backend que recebe a imagem via upload, validação de tipo, e encaminha à API de IA selecionada, retornando o texto.",
+      "tipo": "codigo",
+      "dependeDe": [
+        "tarefa_mu21mnui_l"
+      ],
+      "recursoExclusivo": "backend-code",
+      "status": "bloqueada",
+      "agente": "backend",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Endpoint POST /analyze funcionando localmente.",
+        "Retorno JSON padrão: { status: 'success', descricao: 'texto...' }.",
+        "Tratamento de erro para arquivos não imagem."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "backend",
+      "contexto": {
+        "objetivo": "Construir o backend que recebe a imagem via upload, validação de tipo, e encaminha à API de IA selecionada, retornando o texto.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Endpoint POST /analyze funcionando localmente."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:09.498Z",
+      "atualizadaEm": "2026-09-15T02:19:09.498Z"
+    },
+    {
+      "id": "tarefa_mu21mnui_n",
+      "descricao": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu21mnui_m"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "reviewer",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "aprovação ou reprovação explícita registrada",
+        "todas as tarefas de implementação foram cobertas pela revisão"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": null,
+      "contexto": {
+        "objetivo": "Revisar e validar o resultado das tarefas de implementação (adicionada automaticamente pelo Revisor de Plano — lacuna detectada: implementação sem validação)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:19:09.498Z",
+      "atualizadaEm": "2026-09-15T02:19:09.498Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21mnui_m",
+      "para": "tarefa_mu21mnui_l"
+    },
+    {
+      "de": "tarefa_mu21mnui_n",
+      "para": "tarefa_mu21mnui_m"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:19:09.496Z",
+  "atualizadaEm": "2026-09-15T02:19:09.496Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [],
+  "entregaveis": [
+    "backend-code"
+  ],
+  "criteriosSucesso": [
+    "todas as subtarefas concluídas com seus critérios individuais satisfeitos (derivado automaticamente — o LLM não gerou critério geral nesta rodada)"
+  ]
+}

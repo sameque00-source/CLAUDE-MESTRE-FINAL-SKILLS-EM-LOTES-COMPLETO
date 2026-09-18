@@ -1,0 +1,36 @@
+{
+  "id": "projeto_mu2zfsx2_6",
+  "nome": "Projeto B 1789495536422",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zfsx2_6\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [
+    {
+      "memoriaId": "projeto_mu2zfsx4_8",
+      "resumo": "segredo-B-1789495536423: decisão exclusiva do projeto B",
+      "ts": "2026-09-15T18:05:36.425Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto B 1789495536422\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:05:36.422Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "segredo-B-1789495536423: decisão exclusiva do projeto B",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:05:36.425Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:05:36.422Z",
+  "atualizadoEm": "2026-09-15T18:05:36.425Z"
+}

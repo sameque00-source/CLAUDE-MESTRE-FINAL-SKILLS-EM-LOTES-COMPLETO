@@ -1,0 +1,36 @@
+{
+  "id": "projeto_mu2zzg1v_3",
+  "nome": "Projeto Integração Memória 1789496452867",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zzg1v_3\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [
+    {
+      "memoriaId": "decisao_mu2zzg1w_4",
+      "resumo": "teste de integração real com memória da FASE 6",
+      "ts": "2026-09-15T18:20:52.869Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto Integração Memória 1789496452867\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:20:52.867Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "teste de integração real com memória da FASE 6",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:20:52.869Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:20:52.867Z",
+  "atualizadoEm": "2026-09-15T18:20:52.869Z"
+}

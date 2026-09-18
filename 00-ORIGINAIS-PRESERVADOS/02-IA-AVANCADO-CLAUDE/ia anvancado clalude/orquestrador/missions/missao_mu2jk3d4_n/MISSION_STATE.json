@@ -1,0 +1,140 @@
+{
+  "id": "missao_mu2jk3d4_n",
+  "objetivo": "Missão sintética de recuperação com agente",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:41:02.728Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:41:02.728Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:41:02.729Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:41:02.729Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:41:04.449Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T10:41:04.452Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T10:41:04.453Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jk3d5_o",
+      "descricao": "Em 1 frase: o que é HTTP?",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: o que é HTTP?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "**Opções reais:**\n\n1. **Protocolo de transferência de hipertexto**\n   * **O que ganha:** Precisão técnica exata sobre a natureza do protocolo de aplicação.\n   * **O que perde:** Contexto prático para quem é leigo.\n   * **O que custa:** Zero recursos financeiros.\n   * **Precedente:** Utilizado em toda a documentação oficial da W3C, MDN Web Docs e literaturas de redes de computadores.\n\n2. **A base de comunicação da web que permite a troca de dados entre clientes e servidores**\n   * **O que ganha:** Clareza imediata e aplicabilidade prática para qualquer público.\n   * **O que perde:** Rigor acadêmico/formal estrito.\n   * **O que custa:** Zero recursos financeiros.\n   * **Precedente:** Utilizado universalmente em treinamentos de desenvolvimento de software e onboarding de engenheiros.\n\n**Recomendação com o motivo:**\nOptar pela **Opção 2 (com o complemento da Opção 1)**, pois define com exatidão o que é a tecnologia sem perder a utilidade prática do conceito.\n\n---\n**RESULTADO (SUCCESS CRITERIA ATINGIDO):**\nHTTP (Hypertext Transfer Protocol) é o protocolo de comunicação fundamental utilizado na World Wide Web para a transferência de dados estruturados (como hipertexto) entre um cliente (ex: navegador) e um servidor.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:41:04.449Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:41:02.729Z",
+      "atualizadaEm": "2026-09-15T10:41:04.449Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: o que é HTTP?\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jk3d5_o",
+      "status": "ok",
+      "resultado": "**Opções reais:**\n\n1. **Protocolo de transferência de hipertexto**\n   * **O que ganha:** Precisão técnica exata sobre a natureza do protocolo de aplicação.\n   * **O que perde:** Contexto prático para quem é leigo.\n   * **O que custa:** Zero recursos financeiros.\n   * **Precedente:** Utilizado em toda a documentação oficial da W3C, MDN Web Docs e literaturas de redes de computadores.\n\n2. **A base de comunicação da web que permite a troca de dados entre clientes e servidores**\n   * **O que ganha:** Clareza imediata e aplicabilidade prática para qualquer público.\n   * **O que perde:** Rigor acadêmico/formal estrito.\n   * **O que custa:** Zero recursos financeiros.\n   * **Precedente:** Utilizado universalmente em treinamentos de desenvolvimento de software e onboarding de engenheiros.\n\n**Recomendação com o motivo:**\nOptar pela **Opção 2 (com o complemento da Opção 1)**, pois define com exatidão o que é a tecnologia sem perder a utilidade prática do conceito.\n\n---\n**RESULTADO (SUCCESS CRITERIA ATINGIDO):**\nHTTP (Hypertext Transfer Protocol) é o protocolo de comunicação fundamental utilizado na World Wide Web para a transferência de dados estruturados (como hipertexto) entre um cliente (ex: navegador) e um servidor.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:41:04.449Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+      "ts": "2026-09-15T10:41:04.452Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "sem tarefa de revisão dedicada no plano — veredito baseado na validação: 1/1 subtarefas concluídas (0 canceladas por falha definitiva), 0 arquivo(s) real(is) no workspace: (nenhum)",
+    "ts": "2026-09-15T10:41:04.454Z"
+  },
+  "criadaEm": "2026-09-15T10:41:02.728Z",
+  "atualizadaEm": "2026-09-15T10:41:04.454Z",
+  "modoExecucao": "AUTO",
+  "_rodadasRevisaoMissao": 0
+}

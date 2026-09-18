@@ -1,0 +1,321 @@
+{
+  "id": "missao_mu21hi11_l",
+  "objetivo": "Escreva um script bash que faz backup de uma pasta usando git e o publica em um repositório.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 4,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:15:08.677Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:15:08.677Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (7 tarefa(s), complexidade=muito complexo)",
+      "ts": "2026-09-15T02:15:08.678Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:15:08.678Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21hi12_m",
+      "descricao": "Pesquisar boas práticas para backup de diretórios usando Git (init, .gitignore, commit automático)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Lista de práticas recomendadas compilada"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Garantir que o script siga padrões recomendados e evite armadilhas comuns",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar boas práticas para backup de diretórios usando Git (init, .gitignore, commit automático)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Lista de práticas recomendadas compilada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:08.678Z",
+      "atualizadaEm": "2026-09-15T02:15:08.678Z"
+    },
+    {
+      "id": "tarefa_mu21hi12_n",
+      "descricao": "Pesquisar opções de autenticação para push Git em ambientes automatizados (SSH keys vs HTTPS token)",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Comparativo de métodos com prós, contras e comandos de configuração"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "Escolher método confiável que possa ser usado em script Bash sem intervenção humana",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Pesquisar opções de autenticação para push Git em ambientes automatizados (SSH keys vs HTTPS token)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comparativo de métodos com prós, contras e comandos de configuração"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:08.678Z",
+      "atualizadaEm": "2026-09-15T02:15:08.678Z"
+    },
+    {
+      "id": "tarefa_mu21hi12_o",
+      "descricao": "Definir plataforma de hospedagem remota padrão (ex.: GitHub) baseada nas pesquisas",
+      "tipo": "decisao",
+      "dependeDe": [
+        "tarefa_mu21hi12_m",
+        "tarefa_mu21hi12_n"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Plataforma escolhida e URL de exemplo documentada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir plataforma de hospedagem remota padrão (ex.: GitHub) baseada nas pesquisas",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Plataforma escolhida e URL de exemplo documentada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:08.678Z",
+      "atualizadaEm": "2026-09-15T02:15:08.678Z"
+    },
+    {
+      "id": "tarefa_mu21hi12_p",
+      "descricao": "Arquitetar fluxo do script (argumentos, verificação de repo, commit, push, tratamento de erros)",
+      "tipo": "design",
+      "dependeDe": [
+        "tarefa_mu21hi12_m",
+        "tarefa_mu21hi12_n",
+        "tarefa_mu21hi12_o"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Especificação de passos do script em texto estruturado"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Arquitetar fluxo do script (argumentos, verificação de repo, commit, push, tratamento de erros)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Especificação de passos do script em texto estruturado"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:08.678Z",
+      "atualizadaEm": "2026-09-15T02:15:08.678Z"
+    },
+    {
+      "id": "tarefa_mu21hi12_q",
+      "descricao": "Desenvolver o script Bash backup.sh conforme arquitetura definida",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21hi12_p"
+      ],
+      "recursoExclusivo": "backup.sh",
+      "status": "bloqueada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo backup.sh criado, com shebang, permissões executáveis e sem erros de sintaxe"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Desenvolver o script Bash backup.sh conforme arquitetura definida",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo backup.sh criado, com shebang, permissões executáveis e sem erros de sintaxe"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:08.678Z",
+      "atualizadaEm": "2026-09-15T02:15:08.678Z"
+    },
+    {
+      "id": "tarefa_mu21hi12_r",
+      "descricao": "Testar o script em um diretório de exemplo, verificando commit e push para repositório remoto",
+      "tipo": "qa",
+      "dependeDe": [
+        "tarefa_mu21hi12_q"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "git"
+      ],
+      "criterioConclusao": [
+        "Logs de teste mostram commit criado e push concluído sem erro"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Testar o script em um diretório de exemplo, verificando commit e push para repositório remoto",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Logs de teste mostram commit criado e push concluído sem erro"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:08.678Z",
+      "atualizadaEm": "2026-09-15T02:15:08.678Z"
+    },
+    {
+      "id": "tarefa_mu21hi12_s",
+      "descricao": "Escrever README.md com instruções de instalação, configuração (remote, autenticação) e uso do script",
+      "tipo": "documentacao",
+      "dependeDe": [
+        "tarefa_mu21hi12_q",
+        "tarefa_mu21hi12_r"
+      ],
+      "recursoExclusivo": "README.md",
+      "status": "bloqueada",
+      "agente": "docs",
+      "modelo": null,
+      "ferramentas": [
+        "texto",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md presente, formatado em Markdown, cobrindo todos os requisitos"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "docs",
+      "contexto": {
+        "objetivo": "Escrever README.md com instruções de instalação, configuração (remote, autenticação) e uso do script",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md presente, formatado em Markdown, cobrindo todos os requisitos"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:08.678Z",
+      "atualizadaEm": "2026-09-15T02:15:08.678Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21hi12_o",
+      "para": "tarefa_mu21hi12_m"
+    },
+    {
+      "de": "tarefa_mu21hi12_o",
+      "para": "tarefa_mu21hi12_n"
+    },
+    {
+      "de": "tarefa_mu21hi12_p",
+      "para": "tarefa_mu21hi12_m"
+    },
+    {
+      "de": "tarefa_mu21hi12_p",
+      "para": "tarefa_mu21hi12_n"
+    },
+    {
+      "de": "tarefa_mu21hi12_p",
+      "para": "tarefa_mu21hi12_o"
+    },
+    {
+      "de": "tarefa_mu21hi12_q",
+      "para": "tarefa_mu21hi12_p"
+    },
+    {
+      "de": "tarefa_mu21hi12_r",
+      "para": "tarefa_mu21hi12_q"
+    },
+    {
+      "de": "tarefa_mu21hi12_s",
+      "para": "tarefa_mu21hi12_q"
+    },
+    {
+      "de": "tarefa_mu21hi12_s",
+      "para": "tarefa_mu21hi12_r"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:15:08.677Z",
+  "atualizadaEm": "2026-09-15T02:15:08.677Z",
+  "modoExecucao": "AUTO"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "projeto_mu2zh0dq_5",
+  "nome": "Projeto A 1789495592750",
+  "descricao": "",
+  "diretorio": "C:\\Users\\Administrator\\Downloads\\ia anvancado clalude\\projetos\\dados\\projeto_mu2zh0dq_5\\workspace",
+  "estado": "ativo",
+  "missoes": [],
+  "artefatos": [],
+  "decisoes": [
+    {
+      "memoriaId": "decisao_mu2zh0ds_7",
+      "resumo": "segredo-A-1789495592752: decisão exclusiva do projeto A",
+      "ts": "2026-09-15T18:06:32.753Z"
+    }
+  ],
+  "historico": [
+    {
+      "tipo": "criacao",
+      "descricao": "projeto \"Projeto A 1789495592750\" criado",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.751Z"
+    },
+    {
+      "tipo": "decisao",
+      "descricao": "segredo-A-1789495592752: decisão exclusiva do projeto A",
+      "missaoId": null,
+      "tarefaId": null,
+      "ts": "2026-09-15T18:06:32.753Z"
+    }
+  ],
+  "resultados": [],
+  "testes": [],
+  "criadoEm": "2026-09-15T18:06:32.750Z",
+  "atualizadoEm": "2026-09-15T18:06:32.753Z"
+}

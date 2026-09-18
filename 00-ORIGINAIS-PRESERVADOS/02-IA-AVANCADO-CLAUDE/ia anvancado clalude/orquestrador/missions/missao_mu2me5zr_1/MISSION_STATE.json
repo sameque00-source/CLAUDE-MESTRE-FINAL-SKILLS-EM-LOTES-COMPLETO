@@ -1,0 +1,233 @@
+{
+  "id": "missao_mu2me5zr_1",
+  "objetivo": "Crie um pequeno aplicativo web funcional: um servidor Node.js (http nativo, sem dependências externas) que responde na rota / com uma pagina HTML simples dizendo \"Ola, mundo!\", rodando na porta 3900.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T12:00:25.046Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T12:00:25.047Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via ninerouter-imperion-dev (2 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T12:00:25.053Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T12:00:25.053Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T12:00:37.484Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T12:00:37.486Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2me5zw_2",
+      "descricao": "Implementar o servidor HTTP em Node.js nativo. Criar um arquivo 'server.js' que importe o módulo 'http', crie um servidor que responda a rotas GET na raiz com um string HTML contendo 'Olá, mundo!', e escute na porta 3900.",
+      "tipo": "backend",
+      "dependeDe": [],
+      "recursoExclusivo": "server.js",
+      "status": "cancelada",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos",
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "O arquivo 'server.js' existe e não contém require de pacotes npm externos",
+        "O código chama http.createServer",
+        "O código registra o handler para a rota '/' retornando conteúdo de tipo 'text/html'",
+        "O código chama .listen(3900)"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Implementar o servidor HTTP em Node.js nativo. Criar um arquivo 'server.js' que importe o módulo 'http', crie um servidor que responda a rotas GET na raiz com um string HTML contendo 'Olá, mundo!', e escute na porta 3900.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O arquivo 'server.js' existe e não contém require de pacotes npm externos"
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "geração de código falhou: resposta vazia"
+        ],
+        "evidencias": [],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T12:00:37.484Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T12:00:25.052Z",
+      "atualizadaEm": "2026-09-15T12:00:37.485Z",
+      "_contrato": "Escreva codigo que parece escrito por quem ja mantinha o arquivo: mesma densidade de comentario, mesma nomenclatura, mesmo idioma.\n\nREGRAS\n- Leia o arquivo antes de editar.\n- Faca so o que foi pedido. Alteracao fora de escopo e defeito.\n- Nao invente API, export, flag nem caminho. Se nao leu, diga que nao leu.\n- Prefira editar arquivo existente a criar arquivo novo.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Implementar o servidor HTTP em Node.js nativo. Criar um arquivo 'server.js' que importe o módulo 'http', crie um servidor que responda a rotas GET na raiz com um string HTML contendo 'Olá, mundo!', e escute na porta 3900.\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: O arquivo 'server.js' existe e não contém require de pacotes npm externos\nSUCCESS_CRITERIA: O arquivo 'server.js' existe e não contém require de pacotes npm externos; O código chama http.createServer; O código registra o handler para a rota '/' retornando conteúdo de tipo 'text/html'; O código chama .listen(3900)",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2me5zw_3",
+      "descricao": "Validar a execução do servidor. Iniciar o servidor via terminal, realizar uma requisição HTTP GET para http://localhost:3900 e verificar a resposta.",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2me5zw_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "O comando de inicialização (ex: node server.js) roda sem erros de syntax ou module not found",
+        "Uma requisição (curl ou navegador) a http://localhost:3900 retorna status code 200",
+        "O corpo da resposta contém a string 'Olá, mundo!'"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Validar a execução do servidor. Iniciar o servidor via terminal, realizar uma requisição HTTP GET para http://localhost:3900 e verificar a resposta.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "O comando de inicialização (ex: node server.js) roda sem erros de syntax ou module not found"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T12:00:25.052Z",
+      "atualizadaEm": "2026-09-15T12:00:37.485Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2me5zw_2\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2me5zw_3",
+      "para": "tarefa_mu2me5zw_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2me5zw_2",
+      "erro": "geração de código falhou: resposta vazia",
+      "tipo": "vazio",
+      "ts": "2026-09-15T12:00:29.185Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2me5zw_2",
+      "erro": "geração de código falhou: resposta vazia",
+      "tipo": "vazio",
+      "ts": "2026-09-15T12:00:33.340Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2me5zw_2",
+      "erro": "geração de código falhou: resposta vazia",
+      "tipo": "vazio",
+      "ts": "2026-09-15T12:00:37.484Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2me5zw_2",
+        "erro": "geração de código falhou: resposta vazia",
+        "tipo": "vazio",
+        "ts": "2026-09-15T12:00:29.185Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T12:00:29.185Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2me5zw_2",
+        "erro": "geração de código falhou: resposta vazia",
+        "tipo": "vazio",
+        "ts": "2026-09-15T12:00:33.340Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T12:00:33.340Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2me5zw_2",
+        "erro": "geração de código falhou: resposta vazia",
+        "tipo": "vazio",
+        "ts": "2026-09-15T12:00:37.484Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T12:00:37.484Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T12:00:37.486Z"
+  },
+  "criadaEm": "2026-09-15T12:00:25.046Z",
+  "atualizadaEm": "2026-09-15T12:00:37.486Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Servidor HTTP usando módulo nativo 'http' do Node.js",
+    "Resposta para a rota '/' deve ser um documento HTML válido",
+    "O HTML deve conter o texto exato 'Olá, mundo!'",
+    "O servidor deve escutar na porta 3900"
+  ],
+  "entregaveis": [
+    "Arquivo único node (ex: server.js) contendo a lógica do servidor",
+    "Servidor funcional acessível em http://localhost:3900"
+  ],
+  "criteriosSucesso": [
+    "Executar 'node server.js' inicia o servidor sem erros de dependência",
+    "Requisição GET para http://localhost:3900 retorna status 200",
+    "O corpo da resposta contém o texto 'Olá, mundo!' dentro de uma tag HTML"
+  ]
+}

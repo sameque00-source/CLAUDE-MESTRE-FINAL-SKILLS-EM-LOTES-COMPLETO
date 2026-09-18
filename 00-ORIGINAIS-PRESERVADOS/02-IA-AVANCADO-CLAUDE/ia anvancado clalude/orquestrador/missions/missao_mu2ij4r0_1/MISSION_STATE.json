@@ -1,0 +1,309 @@
+{
+  "id": "missao_mu2ij4r0_1",
+  "objetivo": "Crie um arquivo Node.js chamado soma.js que soma os numeros de um array [2,4,6] e imprime o resultado no console.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:12:18.251Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:12:18.252Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-gpt-oss-120b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T10:12:18.258Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:12:18.259Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:12:20.235Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T10:12:20.236Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "O código utiliza const adequadamente, tem nomes claros e não contém código morto. Está bem estruturado e legível.",
+      "ts": "2026-09-15T10:12:20.237Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ij4r5_2",
+      "descricao": "Escrever o script soma.js que define o array [2,4,6], calcula a soma e imprime o resultado com console.log",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "soma.js",
+      "status": "concluida",
+      "agente": "coding",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [
+        "terminal",
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "soma.js criado com código sem erros de sintaxe"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Escrever o script soma.js que define o array [2,4,6], calcula a soma e imprime o resultado com console.log",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "soma.js criado com código sem erros de sintaxe"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Criado soma.js que soma os valores do array e exibe o resultado.",
+        "arquivos": [
+          "soma.js"
+        ],
+        "erros": [],
+        "evidencias": [
+          "tentativa 1/3",
+          "modelo=groq-gpt-oss-120b"
+        ],
+        "testes": [
+          {
+            "comando": "node soma.js",
+            "resultado": "passou",
+            "evidencia": "12\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:12:19.489Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:12:18.257Z",
+      "atualizadaEm": "2026-09-15T10:12:19.489Z"
+    },
+    {
+      "id": "tarefa_mu2ij4r5_3",
+      "descricao": "Executar `node soma.js` e validar que a saída no console é `12`",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2ij4r5_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "terminal"
+      ],
+      "criterioConclusao": [
+        "Comando `node soma.js` exibe exatamente o número 12"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Executar `node soma.js` e validar que a saída no console é `12`",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Comando `node soma.js` exibe exatamente o número 12"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "teste executado com sucesso",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [],
+        "testes": [
+          {
+            "comando": "node",
+            "resultado": "passou",
+            "evidencia": "12\n"
+          }
+        ],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:12:19.561Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:12:18.257Z",
+      "atualizadaEm": "2026-09-15T10:12:19.561Z"
+    },
+    {
+      "id": "tarefa_mu2ij4r5_4",
+      "descricao": "Revisar o código para garantir boas práticas (uso de const, clareza e ausência de código morto)",
+      "tipo": "revisao",
+      "dependeDe": [
+        "tarefa_mu2ij4r5_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "reviewer",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [
+        "texto"
+      ],
+      "criterioConclusao": [
+        "Revisão concluída sem observações críticas"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "reviewer",
+      "contexto": {
+        "objetivo": "Revisar o código para garantir boas práticas (uso de const, clareza e ausência de código morto)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Revisão concluída sem observações críticas"
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "O código utiliza const adequadamente, tem nomes claros e não contém código morto. Está bem estruturado e legível.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "aprovado=true"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:12:20.235Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:12:18.257Z",
+      "atualizadaEm": "2026-09-15T10:12:20.235Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2ij4r5_3",
+      "para": "tarefa_mu2ij4r5_2"
+    },
+    {
+      "de": "tarefa_mu2ij4r5_4",
+      "para": "tarefa_mu2ij4r5_3"
+    }
+  ],
+  "agentes": [
+    "coding",
+    "testing",
+    "reviewer"
+  ],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2ij4r5_2",
+      "status": "ok",
+      "resultado": "Criado soma.js que soma os valores do array e exibe o resultado.",
+      "arquivos": [
+        "soma.js"
+      ],
+      "erros": [],
+      "evidencias": [
+        "tentativa 1/3",
+        "modelo=groq-gpt-oss-120b"
+      ],
+      "testes": [
+        {
+          "comando": "node soma.js",
+          "resultado": "passou",
+          "evidencia": "12\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:12:19.489Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ij4r5_3",
+      "status": "ok",
+      "resultado": "teste executado com sucesso",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [],
+      "testes": [
+        {
+          "comando": "node",
+          "resultado": "passou",
+          "evidencia": "12\n"
+        }
+      ],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:12:19.561Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2ij4r5_4",
+      "status": "ok",
+      "resultado": "O código utiliza const adequadamente, tem nomes claros e não contém código morto. Está bem estruturado e legível.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "aprovado=true"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:12:20.235Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "3/3 subtarefas concluídas (0 canceladas por falha definitiva), 1 arquivo(s) real(is) no workspace: soma.js",
+      "ts": "2026-09-15T10:12:20.236Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "O código utiliza const adequadamente, tem nomes claros e não contém código morto. Está bem estruturado e legível.",
+    "ts": "2026-09-15T10:12:20.237Z"
+  },
+  "criadaEm": "2026-09-15T10:12:18.251Z",
+  "atualizadaEm": "2026-09-15T10:12:20.237Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Arquivo soma.js contendo código JavaScript válido para Node.js",
+    "Soma dos números 2, 4 e 6",
+    "Impressão do resultado usando console.log"
+  ],
+  "entregaveis": [
+    "soma.js"
+  ],
+  "criteriosSucesso": [
+    "Arquivo soma.js presente e, ao ser executado com `node soma.js`, imprime exatamente `12` no console"
+  ],
+  "_ultimoComandoTeste": {
+    "comando": "node",
+    "args": [
+      "soma.js"
+    ]
+  }
+}

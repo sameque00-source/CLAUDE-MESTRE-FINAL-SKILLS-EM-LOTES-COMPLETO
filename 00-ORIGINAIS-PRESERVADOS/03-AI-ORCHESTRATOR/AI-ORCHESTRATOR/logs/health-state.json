@@ -1,0 +1,1124 @@
+{
+  "google-gemini-flash-lite-latest": {
+    "falhasSeguidas": 0,
+    "cooldownAte": 0,
+    "ultimoErro": null,
+    "amostras": [
+      {
+        "ok": true,
+        "latency_ms": 2171,
+        "ts": 1789497033556
+      },
+      {
+        "ok": true,
+        "latency_ms": 59699,
+        "ts": 1789497091806
+      },
+      {
+        "ok": true,
+        "latency_ms": 3112,
+        "ts": 1789516782439
+      },
+      {
+        "ok": true,
+        "latency_ms": 2250,
+        "ts": 1789518745849
+      },
+      {
+        "ok": true,
+        "latency_ms": 2388,
+        "ts": 1789518845389
+      },
+      {
+        "ok": true,
+        "latency_ms": 1608,
+        "ts": 1789518885153
+      },
+      {
+        "ok": true,
+        "latency_ms": 2403,
+        "ts": 1789518896480
+      },
+      {
+        "ok": false,
+        "latency_ms": 20017,
+        "ts": 1789519886730
+      },
+      {
+        "ok": true,
+        "latency_ms": 6227,
+        "ts": 1789520031463
+      },
+      {
+        "ok": false,
+        "latency_ms": 20014,
+        "ts": 1789520104732
+      },
+      {
+        "ok": true,
+        "latency_ms": 3525,
+        "ts": 1789520798513
+      },
+      {
+        "ok": true,
+        "latency_ms": 1959,
+        "ts": 1789521543816
+      },
+      {
+        "ok": true,
+        "latency_ms": 1920,
+        "ts": 1789521717555
+      },
+      {
+        "ok": true,
+        "latency_ms": 1706,
+        "ts": 1789521720609
+      },
+      {
+        "ok": true,
+        "latency_ms": 1445,
+        "ts": 1789521785655
+      },
+      {
+        "ok": true,
+        "latency_ms": 1600,
+        "ts": 1789521790981
+      },
+      {
+        "ok": true,
+        "latency_ms": 1680,
+        "ts": 1789521820074
+      },
+      {
+        "ok": true,
+        "latency_ms": 2286,
+        "ts": 1789521893461
+      },
+      {
+        "ok": true,
+        "latency_ms": 2777,
+        "ts": 1789522327698
+      },
+      {
+        "ok": true,
+        "latency_ms": 2912,
+        "ts": 1789522364355
+      }
+    ]
+  },
+  "google-gemini-3.6-flash": {
+    "falhasSeguidas": 9,
+    "cooldownAte": 1789536319787,
+    "ultimoErro": "quota",
+    "amostras": [
+      {
+        "ok": false,
+        "latency_ms": 6591,
+        "ts": 1789428826658
+      },
+      {
+        "ok": false,
+        "latency_ms": 1280,
+        "ts": 1789429210900
+      },
+      {
+        "ok": false,
+        "latency_ms": 20016,
+        "ts": 1789429234243
+      },
+      {
+        "ok": false,
+        "latency_ms": 1055,
+        "ts": 1789429241869
+      },
+      {
+        "ok": false,
+        "latency_ms": 952,
+        "ts": 1789429247260
+      },
+      {
+        "ok": false,
+        "latency_ms": 980,
+        "ts": 1789429254779
+      },
+      {
+        "ok": false,
+        "latency_ms": 1036,
+        "ts": 1789429285593
+      },
+      {
+        "ok": false,
+        "latency_ms": 11004,
+        "ts": 1789430245487
+      },
+      {
+        "ok": false,
+        "latency_ms": 1060,
+        "ts": 1789430255097
+      },
+      {
+        "ok": false,
+        "latency_ms": 895,
+        "ts": 1789496916914
+      },
+      {
+        "ok": false,
+        "latency_ms": 895,
+        "ts": 1789496916915
+      },
+      {
+        "ok": false,
+        "latency_ms": 20011,
+        "ts": 1789516914619
+      },
+      {
+        "ok": false,
+        "latency_ms": 1032,
+        "ts": 1789517093929
+      },
+      {
+        "ok": false,
+        "latency_ms": 1100,
+        "ts": 1789520142907
+      },
+      {
+        "ok": false,
+        "latency_ms": 2557,
+        "ts": 1789520590894
+      },
+      {
+        "ok": false,
+        "latency_ms": 1140,
+        "ts": 1789520598547
+      },
+      {
+        "ok": false,
+        "latency_ms": 1120,
+        "ts": 1789520624546
+      },
+      {
+        "ok": false,
+        "latency_ms": 1158,
+        "ts": 1789520657608
+      },
+      {
+        "ok": false,
+        "latency_ms": 1115,
+        "ts": 1789520691759
+      },
+      {
+        "ok": false,
+        "latency_ms": 887,
+        "ts": 1789521919787
+      }
+    ]
+  },
+  "groq-gpt-oss-120b": {
+    "falhasSeguidas": 0,
+    "cooldownAte": 0,
+    "ultimoErro": null,
+    "amostras": [
+      {
+        "ok": true,
+        "latency_ms": 1187,
+        "ts": 1789433834473
+      },
+      {
+        "ok": true,
+        "latency_ms": 1135,
+        "ts": 1789434618969
+      },
+      {
+        "ok": true,
+        "latency_ms": 1495,
+        "ts": 1789435119131
+      },
+      {
+        "ok": true,
+        "latency_ms": 1215,
+        "ts": 1789470576224
+      },
+      {
+        "ok": false,
+        "latency_ms": 120,
+        "ts": 1789470615870
+      },
+      {
+        "ok": true,
+        "latency_ms": 816,
+        "ts": 1789496331889
+      },
+      {
+        "ok": false,
+        "latency_ms": 91,
+        "ts": 1789496697149
+      },
+      {
+        "ok": true,
+        "latency_ms": 1613,
+        "ts": 1789433112570
+      },
+      {
+        "ok": true,
+        "latency_ms": 1187,
+        "ts": 1789433834474
+      },
+      {
+        "ok": true,
+        "latency_ms": 1135,
+        "ts": 1789434618970
+      },
+      {
+        "ok": true,
+        "latency_ms": 1495,
+        "ts": 1789435119132
+      },
+      {
+        "ok": true,
+        "latency_ms": 1215,
+        "ts": 1789470576224
+      },
+      {
+        "ok": false,
+        "latency_ms": 120,
+        "ts": 1789470615871
+      },
+      {
+        "ok": true,
+        "latency_ms": 816,
+        "ts": 1789496331890
+      },
+      {
+        "ok": false,
+        "latency_ms": 91,
+        "ts": 1789496697149
+      },
+      {
+        "ok": true,
+        "latency_ms": 1611,
+        "ts": 1789516896210
+      },
+      {
+        "ok": true,
+        "latency_ms": 716,
+        "ts": 1789518774175
+      },
+      {
+        "ok": true,
+        "latency_ms": 871,
+        "ts": 1789518843868
+      },
+      {
+        "ok": true,
+        "latency_ms": 940,
+        "ts": 1789518895013
+      },
+      {
+        "ok": true,
+        "latency_ms": 1274,
+        "ts": 1789521400716
+      }
+    ]
+  },
+  "groq-qwen3.8-27b": {
+    "falhasSeguidas": 0,
+    "cooldownAte": 0,
+    "ultimoErro": "rate_limit",
+    "amostras": [
+      {
+        "ok": true,
+        "latency_ms": 398,
+        "ts": 1789471345138
+      },
+      {
+        "ok": true,
+        "latency_ms": 378,
+        "ts": 1789472940848
+      },
+      {
+        "ok": true,
+        "latency_ms": 286,
+        "ts": 1789472941137
+      },
+      {
+        "ok": true,
+        "latency_ms": 271,
+        "ts": 1789472941410
+      },
+      {
+        "ok": true,
+        "latency_ms": 248,
+        "ts": 1789473051299
+      },
+      {
+        "ok": true,
+        "latency_ms": 1070,
+        "ts": 1789473052373
+      },
+      {
+        "ok": true,
+        "latency_ms": 628,
+        "ts": 1789473053005
+      },
+      {
+        "ok": true,
+        "latency_ms": 1018,
+        "ts": 1789479858958
+      },
+      {
+        "ok": true,
+        "latency_ms": 285,
+        "ts": 1789479859248
+      },
+      {
+        "ok": true,
+        "latency_ms": 231,
+        "ts": 1789479859482
+      },
+      {
+        "ok": true,
+        "latency_ms": 304,
+        "ts": 1789494626320
+      },
+      {
+        "ok": true,
+        "latency_ms": 294,
+        "ts": 1789494626620
+      },
+      {
+        "ok": true,
+        "latency_ms": 218,
+        "ts": 1789494626842
+      },
+      {
+        "ok": true,
+        "latency_ms": 271,
+        "ts": 1789494983440
+      },
+      {
+        "ok": true,
+        "latency_ms": 295,
+        "ts": 1789494983738
+      },
+      {
+        "ok": true,
+        "latency_ms": 218,
+        "ts": 1789494983959
+      },
+      {
+        "ok": true,
+        "latency_ms": 646,
+        "ts": 1789495616259
+      },
+      {
+        "ok": true,
+        "latency_ms": 365,
+        "ts": 1789495616643
+      },
+      {
+        "ok": true,
+        "latency_ms": 369,
+        "ts": 1789495617016
+      },
+      {
+        "ok": false,
+        "latency_ms": 84,
+        "ts": 1789496697234
+      }
+    ]
+  },
+  "google-gemini-3.1-flash-lite": {
+    "falhasSeguidas": 0,
+    "cooldownAte": 0,
+    "ultimoErro": null,
+    "amostras": [
+      {
+        "ok": true,
+        "latency_ms": 6198,
+        "ts": 1789387517026
+      },
+      {
+        "ok": false,
+        "latency_ms": 1603,
+        "ts": 1789393590061
+      },
+      {
+        "ok": false,
+        "latency_ms": 2638,
+        "ts": 1789393691876
+      },
+      {
+        "ok": false,
+        "latency_ms": 5210,
+        "ts": 1789394505966
+      },
+      {
+        "ok": false,
+        "latency_ms": 20016,
+        "ts": 1789394687044
+      },
+      {
+        "ok": false,
+        "latency_ms": 20004,
+        "ts": 1789394755845
+      },
+      {
+        "ok": false,
+        "latency_ms": 3411,
+        "ts": 1789394822549
+      },
+      {
+        "ok": false,
+        "latency_ms": 3004,
+        "ts": 1789394974863
+      },
+      {
+        "ok": false,
+        "latency_ms": 20021,
+        "ts": 1789395095511
+      },
+      {
+        "ok": false,
+        "latency_ms": 2287,
+        "ts": 1789430204467
+      },
+      {
+        "ok": false,
+        "latency_ms": 20009,
+        "ts": 1789430275107
+      },
+      {
+        "ok": false,
+        "latency_ms": 20018,
+        "ts": 1789432744059
+      },
+      {
+        "ok": true,
+        "latency_ms": 3887,
+        "ts": 1789435117615
+      },
+      {
+        "ok": true,
+        "latency_ms": 5836,
+        "ts": 1789496435269
+      },
+      {
+        "ok": false,
+        "latency_ms": 1089,
+        "ts": 1789496916018
+      },
+      {
+        "ok": true,
+        "latency_ms": 3887,
+        "ts": 1789435117616
+      },
+      {
+        "ok": true,
+        "latency_ms": 5836,
+        "ts": 1789496435269
+      },
+      {
+        "ok": false,
+        "latency_ms": 1089,
+        "ts": 1789496916019
+      },
+      {
+        "ok": true,
+        "latency_ms": 16786,
+        "ts": 1789520121519
+      },
+      {
+        "ok": true,
+        "latency_ms": 4746,
+        "ts": 1789520185662
+      }
+    ]
+  },
+  "ninerouter-imperion-dev": {
+    "falhasSeguidas": 0,
+    "cooldownAte": 0,
+    "ultimoErro": null,
+    "amostras": [
+      {
+        "ok": true,
+        "latency_ms": 8801,
+        "ts": 1789521759351
+      },
+      {
+        "ok": false,
+        "latency_ms": 30004,
+        "ts": 1789521789379
+      },
+      {
+        "ok": false,
+        "latency_ms": 32710,
+        "ts": 1789521818393
+      },
+      {
+        "ok": true,
+        "latency_ms": 9101,
+        "ts": 1789521923115
+      },
+      {
+        "ok": true,
+        "latency_ms": 9906,
+        "ts": 1789521930331
+      },
+      {
+        "ok": true,
+        "latency_ms": 12666,
+        "ts": 1789521943033
+      },
+      {
+        "ok": true,
+        "latency_ms": 14388,
+        "ts": 1789521957458
+      },
+      {
+        "ok": true,
+        "latency_ms": 19940,
+        "ts": 1789521977431
+      },
+      {
+        "ok": true,
+        "latency_ms": 4699,
+        "ts": 1789521982161
+      },
+      {
+        "ok": true,
+        "latency_ms": 12826,
+        "ts": 1789521995016
+      },
+      {
+        "ok": true,
+        "latency_ms": 9893,
+        "ts": 1789522004938
+      },
+      {
+        "ok": true,
+        "latency_ms": 19744,
+        "ts": 1789522024710
+      },
+      {
+        "ok": true,
+        "latency_ms": 10297,
+        "ts": 1789522035034
+      },
+      {
+        "ok": true,
+        "latency_ms": 22521,
+        "ts": 1789522253770
+      },
+      {
+        "ok": true,
+        "latency_ms": 11399,
+        "ts": 1789522265212
+      },
+      {
+        "ok": true,
+        "latency_ms": 15900,
+        "ts": 1789522281146
+      },
+      {
+        "ok": true,
+        "latency_ms": 6211,
+        "ts": 1789522287389
+      },
+      {
+        "ok": true,
+        "latency_ms": 24015,
+        "ts": 1789522351741
+      },
+      {
+        "ok": true,
+        "latency_ms": 11854,
+        "ts": 1789522361412
+      },
+      {
+        "ok": true,
+        "latency_ms": 21720,
+        "ts": 1789522386107
+      }
+    ]
+  },
+  "google-gemini-flash-latest": {
+    "falhasSeguidas": 4,
+    "cooldownAte": 1789523353501,
+    "ultimoErro": "timeout",
+    "amostras": [
+      {
+        "ok": false,
+        "latency_ms": 904,
+        "ts": 1789430254036
+      },
+      {
+        "ok": false,
+        "latency_ms": 1184,
+        "ts": 1789430455927
+      },
+      {
+        "ok": false,
+        "latency_ms": 1745,
+        "ts": 1789470576774
+      },
+      {
+        "ok": false,
+        "latency_ms": 1680,
+        "ts": 1789496335737
+      },
+      {
+        "ok": false,
+        "latency_ms": 20007,
+        "ts": 1789496455305
+      },
+      {
+        "ok": false,
+        "latency_ms": 20008,
+        "ts": 1789496937360
+      },
+      {
+        "ok": false,
+        "latency_ms": 1745,
+        "ts": 1789470576775
+      },
+      {
+        "ok": false,
+        "latency_ms": 1680,
+        "ts": 1789496335738
+      },
+      {
+        "ok": false,
+        "latency_ms": 20007,
+        "ts": 1789496455306
+      },
+      {
+        "ok": false,
+        "latency_ms": 20008,
+        "ts": 1789496937361
+      },
+      {
+        "ok": false,
+        "latency_ms": 2482,
+        "ts": 1789516917103
+      },
+      {
+        "ok": false,
+        "latency_ms": 15220,
+        "ts": 1789518203208
+      },
+      {
+        "ok": false,
+        "latency_ms": 20006,
+        "ts": 1789518793470
+      },
+      {
+        "ok": false,
+        "latency_ms": 20017,
+        "ts": 1789519571879
+      },
+      {
+        "ok": false,
+        "latency_ms": 20014,
+        "ts": 1789520141806
+      },
+      {
+        "ok": true,
+        "latency_ms": 5064,
+        "ts": 1789520179819
+      },
+      {
+        "ok": false,
+        "latency_ms": 1028,
+        "ts": 1789520180915
+      },
+      {
+        "ok": false,
+        "latency_ms": 1085,
+        "ts": 1789520597406
+      },
+      {
+        "ok": false,
+        "latency_ms": 4852,
+        "ts": 1789520803411
+      },
+      {
+        "ok": false,
+        "latency_ms": 20009,
+        "ts": 1789521913501
+      }
+    ]
+  },
+  "groq-compound": {
+    "falhasSeguidas": 0,
+    "cooldownAte": 0,
+    "ultimoErro": null,
+    "amostras": [
+      {
+        "ok": false,
+        "latency_ms": 41,
+        "ts": 1789380438537
+      },
+      {
+        "ok": false,
+        "latency_ms": 41,
+        "ts": 1789380469321
+      },
+      {
+        "ok": false,
+        "latency_ms": 48,
+        "ts": 1789381528230
+      },
+      {
+        "ok": false,
+        "latency_ms": 41,
+        "ts": 1789380438537
+      },
+      {
+        "ok": false,
+        "latency_ms": 41,
+        "ts": 1789380469321
+      },
+      {
+        "ok": false,
+        "latency_ms": 48,
+        "ts": 1789381528230
+      },
+      {
+        "ok": false,
+        "latency_ms": 41,
+        "ts": 1789380438537
+      },
+      {
+        "ok": false,
+        "latency_ms": 41,
+        "ts": 1789380469321
+      },
+      {
+        "ok": false,
+        "latency_ms": 48,
+        "ts": 1789381528230
+      }
+    ]
+  },
+  "openrouter-nemotron-3-super-120b": {
+    "falhasSeguidas": 10,
+    "cooldownAte": 1789536320424,
+    "ultimoErro": "quota",
+    "amostras": [
+      {
+        "ok": true,
+        "latency_ms": 13969,
+        "ts": 1789520045472
+      },
+      {
+        "ok": true,
+        "latency_ms": 5587,
+        "ts": 1789520051094
+      },
+      {
+        "ok": true,
+        "latency_ms": 27790,
+        "ts": 1789520058736
+      },
+      {
+        "ok": true,
+        "latency_ms": 4079,
+        "ts": 1789520063083
+      },
+      {
+        "ok": true,
+        "latency_ms": 3519,
+        "ts": 1789520067239
+      },
+      {
+        "ok": true,
+        "latency_ms": 3516,
+        "ts": 1789520070893
+      },
+      {
+        "ok": true,
+        "latency_ms": 3794,
+        "ts": 1789520074707
+      },
+      {
+        "ok": true,
+        "latency_ms": 2763,
+        "ts": 1789520077488
+      },
+      {
+        "ok": true,
+        "latency_ms": 2705,
+        "ts": 1789520080210
+      },
+      {
+        "ok": true,
+        "latency_ms": 3771,
+        "ts": 1789520083998
+      },
+      {
+        "ok": false,
+        "latency_ms": 199,
+        "ts": 1789520084214
+      },
+      {
+        "ok": false,
+        "latency_ms": 439,
+        "ts": 1789520143705
+      },
+      {
+        "ok": false,
+        "latency_ms": 817,
+        "ts": 1789520592400
+      },
+      {
+        "ok": false,
+        "latency_ms": 353,
+        "ts": 1789520599224
+      },
+      {
+        "ok": false,
+        "latency_ms": 322,
+        "ts": 1789520625030
+      },
+      {
+        "ok": false,
+        "latency_ms": 308,
+        "ts": 1789520658196
+      },
+      {
+        "ok": false,
+        "latency_ms": 420,
+        "ts": 1789520692537
+      },
+      {
+        "ok": false,
+        "latency_ms": 515,
+        "ts": 1789520803927
+      },
+      {
+        "ok": false,
+        "latency_ms": 511,
+        "ts": 1789521914013
+      },
+      {
+        "ok": false,
+        "latency_ms": 338,
+        "ts": 1789521920424
+      }
+    ]
+  },
+  "openrouter-nemotron-3.5-lightning": {
+    "falhasSeguidas": 5,
+    "cooldownAte": 1789535088576,
+    "ultimoErro": "quota",
+    "amostras": [
+      {
+        "ok": false,
+        "latency_ms": 20010,
+        "ts": 1789394565061
+      },
+      {
+        "ok": false,
+        "latency_ms": 222,
+        "ts": 1789395253319
+      },
+      {
+        "ok": false,
+        "latency_ms": 243,
+        "ts": 1789395274811
+      },
+      {
+        "ok": false,
+        "latency_ms": 231,
+        "ts": 1789395367787
+      },
+      {
+        "ok": false,
+        "latency_ms": 237,
+        "ts": 1789395388694
+      },
+      {
+        "ok": false,
+        "latency_ms": 690,
+        "ts": 1789429212617
+      },
+      {
+        "ok": false,
+        "latency_ms": 290,
+        "ts": 1789429235166
+      },
+      {
+        "ok": false,
+        "latency_ms": 348,
+        "ts": 1789429242999
+      },
+      {
+        "ok": false,
+        "latency_ms": 407,
+        "ts": 1789429248542
+      },
+      {
+        "ok": false,
+        "latency_ms": 339,
+        "ts": 1789429255815
+      },
+      {
+        "ok": false,
+        "latency_ms": 188,
+        "ts": 1789429286419
+      },
+      {
+        "ok": false,
+        "latency_ms": 317,
+        "ts": 1789430253131
+      },
+      {
+        "ok": true,
+        "latency_ms": 70554,
+        "ts": 1789432815414
+      },
+      {
+        "ok": false,
+        "latency_ms": 210,
+        "ts": 1789496917351
+      },
+      {
+        "ok": false,
+        "latency_ms": 210,
+        "ts": 1789496917351
+      },
+      {
+        "ok": false,
+        "latency_ms": 177,
+        "ts": 1789520084717
+      },
+      {
+        "ok": false,
+        "latency_ms": 461,
+        "ts": 1789520174171
+      },
+      {
+        "ok": false,
+        "latency_ms": 379,
+        "ts": 1789520622792
+      },
+      {
+        "ok": false,
+        "latency_ms": 324,
+        "ts": 1789520655366
+      },
+      {
+        "ok": false,
+        "latency_ms": 365,
+        "ts": 1789520688576
+      }
+    ]
+  },
+  "openrouter-nemotron-3-ultra-550b": {
+    "falhasSeguidas": 8,
+    "cooldownAte": 1789536320085,
+    "ultimoErro": "quota",
+    "amostras": [
+      {
+        "ok": false,
+        "latency_ms": 344,
+        "ts": 1789429234587
+      },
+      {
+        "ok": false,
+        "latency_ms": 464,
+        "ts": 1789429242334
+      },
+      {
+        "ok": false,
+        "latency_ms": 527,
+        "ts": 1789429247787
+      },
+      {
+        "ok": false,
+        "latency_ms": 373,
+        "ts": 1789429255153
+      },
+      {
+        "ok": false,
+        "latency_ms": 285,
+        "ts": 1789429285879
+      },
+      {
+        "ok": false,
+        "latency_ms": 278,
+        "ts": 1789430246700
+      },
+      {
+        "ok": false,
+        "latency_ms": 282,
+        "ts": 1789430275389
+      },
+      {
+        "ok": false,
+        "latency_ms": 225,
+        "ts": 1789496917140
+      },
+      {
+        "ok": false,
+        "latency_ms": 225,
+        "ts": 1789496917141
+      },
+      {
+        "ok": true,
+        "latency_ms": 51212,
+        "ts": 1789519937943
+      },
+      {
+        "ok": true,
+        "latency_ms": 83805,
+        "ts": 1789519960691
+      },
+      {
+        "ok": true,
+        "latency_ms": 12726,
+        "ts": 1789520020353
+      },
+      {
+        "ok": false,
+        "latency_ms": 324,
+        "ts": 1789520084539
+      },
+      {
+        "ok": false,
+        "latency_ms": 357,
+        "ts": 1789520143265
+      },
+      {
+        "ok": false,
+        "latency_ms": 687,
+        "ts": 1789520591582
+      },
+      {
+        "ok": false,
+        "latency_ms": 322,
+        "ts": 1789520598870
+      },
+      {
+        "ok": false,
+        "latency_ms": 160,
+        "ts": 1789520624707
+      },
+      {
+        "ok": false,
+        "latency_ms": 277,
+        "ts": 1789520657887
+      },
+      {
+        "ok": false,
+        "latency_ms": 356,
+        "ts": 1789520692116
+      },
+      {
+        "ok": false,
+        "latency_ms": 297,
+        "ts": 1789521920085
+      }
+    ]
+  }
+}

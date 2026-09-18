@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques Acessível</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #cbd5e1;
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --focus-ring: #facc15;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        main {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            width: 100%;
+            max-width: 390px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .contador-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .contador-label {
+            font-size: 1rem;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        #contador-valor {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: #0f172a;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Foco visível obrigatório com contraste adequado */
+        :focus-visible {
+            outline: 3px solid var(--focus-ring);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Contador Interativo</h1>
+        <div class="contador-container">
+            <span class="contador-label" id="label-contador">Cliques realizados:</span>
+            <span id="contador-valor" aria-live="polite" aria-atomic="true">0</span>
+        </div>
+        <button class="btn" id="btn-clique" aria-describedby="label-contador">Clique aqui</button>
+    </main>
+
+    <script>
+        const btn = document.getElementById('btn-clique');
+        const contadorValor = document.getElementById('contador-valor');
+        let cliques = 0;
+
+        btn.addEventListener('click', () => {
+            cliques++;
+            contadorValor.textContent = cliques;
+        });
+    </script>
+</body>
+</html>

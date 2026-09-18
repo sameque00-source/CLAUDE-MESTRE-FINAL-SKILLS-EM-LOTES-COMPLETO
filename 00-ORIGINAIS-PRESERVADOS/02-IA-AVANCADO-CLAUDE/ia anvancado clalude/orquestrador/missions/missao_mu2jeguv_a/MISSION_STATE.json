@@ -1,0 +1,169 @@
+{
+  "id": "missao_mu2jeguv_a",
+  "objetivo": "Missão sintética de paralelismo entre agentes",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:36:40.279Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:36:40.279Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:36:40.280Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:36:40.281Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:36:42.358Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2jeguw_b",
+      "descricao": "Em 1 frase: vantagem do PostgreSQL",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do PostgreSQL",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "**Levantamento do terreno – Como apresentar a vantagem do PostgreSQL em 1 frase**\n\n| Opção (frase‑única) | O que ganha (benefício concreto) | O que perde (limitações ou trade‑offs) | Custo (real, mensurável) | Precedente (exemplo verificável) | Recomendação (por quê) |\n|--------------------|----------------------------------|----------------------------------------|--------------------------|-----------------------------------|------------------------|\n| **1. “PostgreSQL entrega plena conformidade SQL, extensibilidade via linguagens PL e tipos de dados personalizados, tudo sob licença livre.”** | • Compatibilidade com o padrão SQL (reduz esforço de migração)<br>• Possibilidade de criar funções, tipos e operadores próprios (flexibilidade para requisitos específicos) | • Curva de aprendizado maior para quem vem de bancos mais “simples” (ex.: SQLite) | • 0 USD – o SGBD é open‑source<br>• Possível aumento de 5‑10 % no tempo de treinamento da equipe",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:36:42.358Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:36:40.280Z",
+      "atualizadaEm": "2026-09-15T10:36:42.358Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do PostgreSQL\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2jegux_c",
+      "descricao": "Em 1 frase: vantagem do MongoDB",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "groq-gpt-oss-120b",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase: vantagem do MongoDB",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "**Objetivo da tarefa** – “Vantagem do MongoDB” em **uma única frase**:  \n> *MongoDB oferece flexibilidade de esquema e escalabilidade horizontal nativa, permitindo que aplicações evoluam rapidamente sem necessidade de migrações de estrutura de dados.*  \n\n---\n\n## Levantamento de terreno – opções reais para adotar (ou não) MongoDB\n\n| Opção | O que ganha | O que perde | O que custa (R$ 0 / gratuito) | Precedente",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=groq-gpt-oss-120b",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:36:42.254Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:36:40.281Z",
+      "atualizadaEm": "2026-09-15T10:36:42.358Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase: vantagem do MongoDB\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research"
+  ],
+  "modelos": [
+    "groq-gpt-oss-120b"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2jeguw_b",
+      "status": "ok",
+      "resultado": "**Levantamento do terreno – Como apresentar a vantagem do PostgreSQL em 1 frase**\n\n| Opção (frase‑única) | O que ganha (benefício concreto) | O que perde (limitações ou trade‑offs) | Custo (real, mensurável) | Precedente (exemplo verificável) | Recomendação (por quê) |\n|--------------------|----------------------------------|----------------------------------------|--------------------------|-----------------------------------|------------------------|\n| **1. “PostgreSQL entrega plena conformidade SQL, extensibilidade via linguagens PL e tipos de dados personalizados, tudo sob licença livre.”** | • Compatibilidade com o padrão SQL (reduz esforço de migração)<br>• Possibilidade de criar funções, tipos e operadores próprios (flexibilidade para requisitos específicos) | • Curva de aprendizado maior para quem vem de bancos mais “simples” (ex.: SQLite) | • 0 USD – o SGBD é open‑source<br>• Possível aumento de 5‑10 % no tempo de treinamento da equipe",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:36:42.358Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2jegux_c",
+      "status": "ok",
+      "resultado": "**Objetivo da tarefa** – “Vantagem do MongoDB” em **uma única frase**:  \n> *MongoDB oferece flexibilidade de esquema e escalabilidade horizontal nativa, permitindo que aplicações evoluam rapidamente sem necessidade de migrações de estrutura de dados.*  \n\n---\n\n## Levantamento de terreno – opções reais para adotar (ou não) MongoDB\n\n| Opção | O que ganha | O que perde | O que custa (R$ 0 / gratuito) | Precedente",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=groq-gpt-oss-120b",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:36:42.254Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:36:40.279Z",
+  "atualizadaEm": "2026-09-15T10:36:42.358Z",
+  "modoExecucao": "AUTO"
+}

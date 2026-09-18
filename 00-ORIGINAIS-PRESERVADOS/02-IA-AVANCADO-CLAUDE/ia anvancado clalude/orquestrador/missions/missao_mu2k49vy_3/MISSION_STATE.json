@@ -1,0 +1,170 @@
+{
+  "id": "missao_mu2k49vy_3",
+  "objetivo": "Missão sintética multi-agente",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "TESTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T10:56:44.302Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T10:56:44.303Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T10:56:44.303Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T10:56:44.305Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T10:56:46.898Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2k49vz_4",
+      "descricao": "Em 1 frase, defina o que é uma API REST",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "research",
+      "modelo": "google-gemini-flash-lite-latest",
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Em 1 frase, defina o que é uma API REST",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "- **As opções reais:**\n  1. *Opção A:* Uma API REST é uma interface de programação de aplicações que utiliza o protocolo HTTP e o modelo arquitetural REST (Representational State Transfer) para permitir a comunicação entre sistemas através de operações padrão como GET, POST, PUT e DELETE.\n  2. *Opção B:* Uma API REST é um conjunto de regras e padrões arquiteturais que permite a troca de dados via protocolo HTTP, utilizando verbos padronizados e formatos como JSON para desacoplar o cliente do servidor.\n\n- **Para cada uma:**\n  - *Opção A:*\n    - **O que ganha:** Clareza direta e objetiva, ideal para definições acadêmicas ou documentações técnicas rápidas.\n    - **O que perde:** Detalhes arquiteturais importantes, como o desacoplamento entre cliente e servidor.\n    - **O que custa:** Zero recursos financeiros; custo cognitivo mínimo.\n  - *Opção B:*\n    - **O que ganha:** Precisão técnica superior, mencionando o desacoplamento e formatos de dados comuns (JSON).\n    - **O que perde:** Brevidade em comparação à Opção A.\n    - **O que custa:** Zero recursos financeiros; custo cognitivo mínimo.\n\n- **O precedente:** \n  - Definições padronizadas de API REST são amplamente documentadas e utilizadas na indústria de software (ex: especificações RESTful de Roy Fielding e documentações da W3C/MDN) há décadas.\n\n- **Uma recomendacao com o motivo:**\n  - Recomendo a **Opção B**, pois ela não apenas define o que é a API, mas também encapsula os pilares fundamentais da arquitetura (verbos HTTP, formato de dados e desacoplamento), oferecendo uma resposta mais completa e tecnicamente precisa dentro do objetivo proposto.\n\n---\n\n**INPUT/OBJECTIVE (resolvido):** Uma API REST é um conjunto de regras e padrões arquiteturais baseados no protocolo HTTP que permite a comunicação e a troca de dados entre sistemas de forma desacoplada, utilizando verbos padrão e formatos como JSON.\n**TOOLS PERMITIDAS:** Nenhuma ferramenta externa necessária (informação conceitual pura).\n**CONSTRAINTS:** Respeitado (R$0, sem segredos expostos, sem toque em VPS/FiveM, restrito ao workspace).\n**EXPECTED_OUTPUT:** Definição real e verificável.\n**SUCCESS_CRITERIA:** A definição foi entregue em exatamente 1 frase.",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "modelo=google-gemini-flash-lite-latest",
+          "agente=research"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:56:46.897Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:44.303Z",
+      "atualizadaEm": "2026-09-15T10:56:46.898Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, defina o que é uma API REST\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    },
+    {
+      "id": "tarefa_mu2k49w0_5",
+      "descricao": "Em 1 frase, qual o risco de armazenar senha em texto puro?",
+      "tipo": "security",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "security",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "security",
+      "contexto": {
+        "objetivo": "Em 1 frase, qual o risco de armazenar senha em texto puro?",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "Security: nenhum risco óbvio encontrado na varredura determinística (5 padrões, 0 arquivo(s))",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "veto=false",
+          "agente=security"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T10:56:44.309Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T10:56:44.304Z",
+      "atualizadaEm": "2026-09-15T10:56:46.898Z",
+      "_contrato": "Voce tem VETO. Se reprovar, a mudanca nao integra.\n\nPROCURE\n1. Validacao que so existe no cliente.\n2. Injecao: SQL, comando, template, path traversal.\n3. Credencial em codigo, log, URL ou mensagem de erro.\n4. Permissao verificada no lugar errado ou nao verificada.\n5. Dado sensivel indo para onde nao devia.\n\nVEREDICTO obrigatorio ao final, exatamente uma destas linhas:\nAPROVADO\nAPROVADO COM RESSALVAS - <motivo em uma linha>\nREPROVADO - <o que precisa ser corrigido antes de integrar>\n\nNao reprove por estilo. Reprove por risco real e demonstravel.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Em 1 frase, qual o risco de armazenar senha em texto puro?\nTOOLS PERMITIDAS: arquivos, terminal\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: resultado real e verificável, nunca \"deveria funcionar\"\nSUCCESS_CRITERIA: critério de conclusão da própria tarefa"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [
+    "research",
+    "security"
+  ],
+  "modelos": [
+    "google-gemini-flash-lite-latest"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu2k49vz_4",
+      "status": "ok",
+      "resultado": "- **As opções reais:**\n  1. *Opção A:* Uma API REST é uma interface de programação de aplicações que utiliza o protocolo HTTP e o modelo arquitetural REST (Representational State Transfer) para permitir a comunicação entre sistemas através de operações padrão como GET, POST, PUT e DELETE.\n  2. *Opção B:* Uma API REST é um conjunto de regras e padrões arquiteturais que permite a troca de dados via protocolo HTTP, utilizando verbos padronizados e formatos como JSON para desacoplar o cliente do servidor.\n\n- **Para cada uma:**\n  - *Opção A:*\n    - **O que ganha:** Clareza direta e objetiva, ideal para definições acadêmicas ou documentações técnicas rápidas.\n    - **O que perde:** Detalhes arquiteturais importantes, como o desacoplamento entre cliente e servidor.\n    - **O que custa:** Zero recursos financeiros; custo cognitivo mínimo.\n  - *Opção B:*\n    - **O que ganha:** Precisão técnica superior, mencionando o desacoplamento e formatos de dados comuns (JSON).\n    - **O que perde:** Brevidade em comparação à Opção A.\n    - **O que custa:** Zero recursos financeiros; custo cognitivo mínimo.\n\n- **O precedente:** \n  - Definições padronizadas de API REST são amplamente documentadas e utilizadas na indústria de software (ex: especificações RESTful de Roy Fielding e documentações da W3C/MDN) há décadas.\n\n- **Uma recomendacao com o motivo:**\n  - Recomendo a **Opção B**, pois ela não apenas define o que é a API, mas também encapsula os pilares fundamentais da arquitetura (verbos HTTP, formato de dados e desacoplamento), oferecendo uma resposta mais completa e tecnicamente precisa dentro do objetivo proposto.\n\n---\n\n**INPUT/OBJECTIVE (resolvido):** Uma API REST é um conjunto de regras e padrões arquiteturais baseados no protocolo HTTP que permite a comunicação e a troca de dados entre sistemas de forma desacoplada, utilizando verbos padrão e formatos como JSON.\n**TOOLS PERMITIDAS:** Nenhuma ferramenta externa necessária (informação conceitual pura).\n**CONSTRAINTS:** Respeitado (R$0, sem segredos expostos, sem toque em VPS/FiveM, restrito ao workspace).\n**EXPECTED_OUTPUT:** Definição real e verificável.\n**SUCCESS_CRITERIA:** A definição foi entregue em exatamente 1 frase.",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "modelo=google-gemini-flash-lite-latest",
+        "agente=research"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:56:46.897Z"
+    },
+    {
+      "tarefaId": "tarefa_mu2k49w0_5",
+      "status": "ok",
+      "resultado": "Security: nenhum risco óbvio encontrado na varredura determinística (5 padrões, 0 arquivo(s))",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "veto=false",
+        "agente=security"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T10:56:44.309Z"
+    }
+  ],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T10:56:44.302Z",
+  "atualizadaEm": "2026-09-15T10:56:46.898Z",
+  "modoExecucao": "AUTO"
+}

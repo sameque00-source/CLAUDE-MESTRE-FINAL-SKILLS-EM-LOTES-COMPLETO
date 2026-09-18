@@ -1,0 +1,171 @@
+{
+  "projeto_mu2zfspe_1": {
+    "id": "projeto_mu2zfspe_1",
+    "tipo": "projeto",
+    "conteudo": "usar Node.js puro sem dependências externas",
+    "origem": "projeto",
+    "tags": [
+      "arquitetura",
+      "projeto:projeto_mu2zfspc_1"
+    ],
+    "contexto": {
+      "query": "usar Node.js puro sem dependências externas"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zfspc_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495536146,
+    "atualizadoEm": 1789495536146,
+    "expiraEm": 1821031536146,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "projeto_mu2zfspi_2": {
+    "id": "projeto_mu2zfspi_2",
+    "tipo": "projeto",
+    "conteudo": "decisao-unica-1789495536150: usar arquitetura modular por domínio",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zfspc_1"
+    ],
+    "contexto": {
+      "query": "decisao-unica-1789495536150: usar arquitetura modular por domínio"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zfspc_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495536150,
+    "atualizadoEm": 1789495536150,
+    "expiraEm": 1821031536150,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "projeto_mu2zfsqb_4": {
+    "id": "projeto_mu2zfsqb_4",
+    "tipo": "projeto",
+    "conteudo": "teste de integração real com memória da FASE 6",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zfsqa_3"
+    ],
+    "contexto": {
+      "query": "teste de integração real com memória da FASE 6"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zfsqa_3",
+    "confianca": 0.6,
+    "criadoEm": 1789495536179,
+    "atualizadoEm": 1789495536179,
+    "expiraEm": 1821031536179,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "projeto_mu2zfsx3_7": {
+    "id": "projeto_mu2zfsx3_7",
+    "tipo": "projeto",
+    "conteudo": "segredo-A-1789495536423: decisão exclusiva do projeto A",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zfsx0_5"
+    ],
+    "contexto": {
+      "query": "segredo-A-1789495536423: decisão exclusiva do projeto A"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zfsx0_5",
+    "confianca": 0.6,
+    "criadoEm": 1789495536423,
+    "atualizadoEm": 1789495536423,
+    "expiraEm": 1821031536423,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "projeto_mu2zfsx4_8": {
+    "id": "projeto_mu2zfsx4_8",
+    "tipo": "projeto",
+    "conteudo": "segredo-B-1789495536423: decisão exclusiva do projeto B",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zfsx2_6"
+    ],
+    "contexto": {
+      "query": "segredo-B-1789495536423: decisão exclusiva do projeto B"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zfsx2_6",
+    "confianca": 0.6,
+    "criadoEm": 1789495536424,
+    "atualizadoEm": 1789495536424,
+    "expiraEm": 1821031536424,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "projeto_mu2zfsy0_9": {
+    "id": "projeto_mu2zfsy0_9",
+    "tipo": "projeto",
+    "conteudo": "decisão tomada na missão A: usar formato texto simples",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zfsxy_7"
+    ],
+    "contexto": {
+      "query": "decisão tomada na missão A: usar formato texto simples"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zfsxy_7",
+    "confianca": 0.6,
+    "criadoEm": 1789495536456,
+    "atualizadoEm": 1789495536456,
+    "expiraEm": 1821031536456,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  },
+  "projeto_mu2zfzcw_1": {
+    "id": "projeto_mu2zfzcw_1",
+    "tipo": "projeto",
+    "conteudo": "teste de integração real com memória da FASE 6 debug",
+    "origem": "projeto",
+    "tags": [
+      "projeto:projeto_mu2zfzcv_1"
+    ],
+    "contexto": {
+      "query": "teste de integração real com memória da FASE 6 debug"
+    },
+    "evidencias": [],
+    "missaoId": null,
+    "projetoId": "projeto_mu2zfzcv_1",
+    "confianca": 0.6,
+    "criadoEm": 1789495544768,
+    "atualizadoEm": 1789495544768,
+    "expiraEm": 1821031544768,
+    "invalidada": false,
+    "motivoInvalidacao": null,
+    "historico": [],
+    "_sanitizado": false,
+    "_tipoConteudo": "dado"
+  }
+}

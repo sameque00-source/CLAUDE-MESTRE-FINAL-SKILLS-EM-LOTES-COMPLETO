@@ -1,0 +1,134 @@
+{
+  "id": "missao_mu2l6eun_1",
+  "objetivo": "Corrija a ortografia da palavra \"aplicacao\" para \"aplicação\" no arquivo README.md deste projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:26:23.662Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:26:23.663Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via openrouter-nemotron-3-super-120b (2 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T11:26:23.669Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:26:23.670Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2l6eus_2",
+      "descricao": "Substituir \"aplicacao\" por \"aplicação\" no arquivo README.md",
+      "tipo": "codigo",
+      "dependeDe": [],
+      "recursoExclusivo": "README.md",
+      "status": "pendente",
+      "agente": "coding",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Arquivo README.md modificado com a substituição realizada"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "developer",
+      "contexto": {
+        "objetivo": "Substituir \"aplicacao\" por \"aplicação\" no arquivo README.md",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Arquivo README.md modificado com a substituição realizada"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:26:23.668Z",
+      "atualizadaEm": "2026-09-15T11:26:23.668Z"
+    },
+    {
+      "id": "tarefa_mu2l6eus_3",
+      "descricao": "Verificar que a correção foi aplicada corretamente",
+      "tipo": "teste",
+      "dependeDe": [
+        "tarefa_mu2l6eus_2"
+      ],
+      "recursoExclusivo": null,
+      "status": "bloqueada",
+      "agente": "testing",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "README.md contém a palavra \"aplicação\"",
+        "README.md não contém mais a palavra \"aplicacao\""
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "qa",
+      "contexto": {
+        "objetivo": "Verificar que a correção foi aplicada corretamente",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "README.md contém a palavra \"aplicação\""
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:26:23.668Z",
+      "atualizadaEm": "2026-09-15T11:26:23.668Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2l6eus_3",
+      "para": "tarefa_mu2l6eus_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:26:23.662Z",
+  "atualizadaEm": "2026-09-15T11:26:23.662Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "O arquivo README.md deve existir na raiz do projeto",
+    "Substituir todas as ocorrências de \"aplicacao\" por \"aplicação\"",
+    "Manter o restante do conteúdo inalterado"
+  ],
+  "entregaveis": [
+    "README.md atualizado com a ortografia correta",
+    "Confirmação de que a substituição foi realizada"
+  ],
+  "criteriosSucesso": [
+    "README.md contém a string \"aplicação\" onde antes havia \"aplicacao\"",
+    "README.md não contém mais a string \"aplicacao\"",
+    "Nenhuma outra alteração indesejada no arquivo"
+  ]
+}

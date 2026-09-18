@@ -1,0 +1,340 @@
+{
+  "id": "missao_mu2kpmfh_1",
+  "objetivo": "Descubra qual e a versao atual do pacote npm express, consulte a documentacao oficial e produza uma recomendacao curta sobre usa-lo ou nao em um novo projeto.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "FALHA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:13:20.332Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:13:20.333Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=normal)",
+      "ts": "2026-09-15T11:13:20.339Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:13:20.339Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "AGUARDANDO_DEPENDENCIA",
+      "motivo": "sem tarefas prontas no momento, aguardando dependências",
+      "ts": "2026-09-15T11:13:22.487Z"
+    },
+    {
+      "de": "AGUARDANDO_DEPENDENCIA",
+      "para": "FALHA",
+      "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+      "ts": "2026-09-15T11:13:22.488Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2kpmfm_2",
+      "descricao": "Consultar o repositório oficial do Express no GitHub e o npm para identificar a versão tag 'latest' e a data do último commit/release relevante.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Identificar a string da versão exata do pacote express no registry npm."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "A versão do software muda com frequência; é um dado factual que não deve ser inventado.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Consultar o repositório oficial do Express no GitHub e o npm para identificar a versão tag 'latest' e a data do último commit/release relevante.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Identificar a string da versão exata do pacote express no registry npm."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (npm, wikipedia, duckduckgo)"
+        ],
+        "evidencias": [
+          "agente=research",
+          "tentativas=[{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"},{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"}]"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:13:22.453Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:13:20.338Z",
+      "atualizadaEm": "2026-09-15T11:13:22.488Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Consultar o repositório oficial do Express no GitHub e o npm para identificar a versão tag 'latest' e a data do último commit/release relevante.\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Identificar a string da versão exata do pacote express no registry npm.\nSUCCESS_CRITERIA: Identificar a string da versão exata do pacote express no registry npm.",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2kpmfm_3",
+      "descricao": "Analisar a documentação oficial do Express (site ou repositório) para avaliar clareza, completude e recência dos exemplos.",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "navegador"
+      ],
+      "criterioConclusao": [
+        "Listar 2-3 pontos fortes e 1 fraco da documentação atual com evidência (ex: link para seção específica)."
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "A qualidade da doc é percepção subjetiva baseada em análise do conteúdo atual, necessário para a recomendação.",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Analisar a documentação oficial do Express (site ou repositório) para avaliar clareza, completude e recência dos exemplos.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Listar 2-3 pontos fortes e 1 fraco da documentação atual com evidência (ex: link para seção específica)."
+      },
+      "resultado": {
+        "status": "erro",
+        "resultado": null,
+        "arquivos": [],
+        "erros": [
+          "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)"
+        ],
+        "evidencias": [
+          "agente=research",
+          "tentativas=[{\"provider\":\"wikipedia\",\"ok\":false,\"motivo\":\"nenhum artigo encontrado na Wikipedia para esta query\"},{\"provider\":\"duckduckgo\",\"ok\":false,\"motivo\":\"DuckDuckGo Instant Answer não tem tópico casando com esta query (limitação real da API, não erro de rede)\"},{\"provider\":\"npm\",\"ok\":false,\"motivo\":\"HTTP 404\"}]"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T11:13:22.486Z"
+      },
+      "tentativas": 3,
+      "criadaEm": "2026-09-15T11:13:20.338Z",
+      "atualizadaEm": "2026-09-15T11:13:22.488Z",
+      "_contrato": "Voce levanta o terreno antes de alguem decidir.\n\nENTREGUE\n- As opcoes reais (nao as teoricas).\n- Para cada uma: o que ganha, o que perde, o que custa.\n- O precedente: alguem ja resolveu isso neste projeto ou fora dele?\n- Uma recomendacao com o motivo.\n\nSe a informacao nao existe ou voce nao conseguiu confirmar, diga isso.\nNao preencha lacuna com suposicao apresentada como fato.\n\n---\nCONTRATO DESTA TAREFA:\n\nINPUT/OBJECTIVE: Analisar a documentação oficial do Express (site ou repositório) para avaliar clareza, completude e recência dos exemplos.\nTOOLS PERMITIDAS: arquivos, navegador, api\nCONSTRAINTS: R$0 — nenhuma ação paga; nunca expor secrets/tokens/senhas; nunca tocar VPS/FiveM/FXServer; escrever só dentro do workspace da missão\nEXPECTED_OUTPUT: Listar 2-3 pontos fortes e 1 fraco da documentação atual com evidência (ex: link para seção específica).\nSUCCESS_CRITERIA: Listar 2-3 pontos fortes e 1 fraco da documentação atual com evidência (ex: link para seção específica).",
+      "motivoCancelamento": "falha definitiva após esgotar tentativas — cancelada para a missão poder prosseguir com o que é possível"
+    },
+    {
+      "id": "tarefa_mu2kpmfm_4",
+      "descricao": "Consolidar as informações das tarefas anteriores em um parecer técnico curto recomendando ou não o uso do Express.",
+      "tipo": "consolidacao",
+      "dependeDe": [
+        "tarefa_mu2kpmfm_2",
+        "tarefa_mu2kpmfm_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "cancelada",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Texto final contém a versão identificada em t1.",
+        "Texto final cita a avaliação da doc de t2.",
+        "Texto final termina com uma recomendação clara (sim/não) justificada em 1 parágrafo."
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Consolidar as informações das tarefas anteriores em um parecer técnico curto recomendando ou não o uso do Express.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Texto final contém a versão identificada em t1."
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:13:20.338Z",
+      "atualizadaEm": "2026-09-15T11:13:22.488Z",
+      "motivoCancelamento": "cascata: dependia de \"tarefa_mu2kpmfm_3\", que foi cancelada"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu2kpmfm_4",
+      "para": "tarefa_mu2kpmfm_2"
+    },
+    {
+      "de": "tarefa_mu2kpmfm_4",
+      "para": "tarefa_mu2kpmfm_3"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [
+    {
+      "subtarefaId": "tarefa_mu2kpmfm_2",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (npm, wikipedia, duckduckgo)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:13:21.336Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2kpmfm_3",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:13:21.336Z",
+      "tentativas": 1
+    },
+    {
+      "subtarefaId": "tarefa_mu2kpmfm_2",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (npm, wikipedia, duckduckgo)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:13:21.941Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2kpmfm_3",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:13:21.941Z",
+      "tentativas": 2
+    },
+    {
+      "subtarefaId": "tarefa_mu2kpmfm_2",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (npm, wikipedia, duckduckgo)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:13:22.487Z",
+      "tentativas": 3
+    },
+    {
+      "subtarefaId": "tarefa_mu2kpmfm_3",
+      "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+      "tipo": "desconhecido",
+      "ts": "2026-09-15T11:13:22.487Z",
+      "tentativas": 3
+    }
+  ],
+  "correcoes": [
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2kpmfm_2",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (npm, wikipedia, duckduckgo)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:13:21.336Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:13:21.336Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2kpmfm_3",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:13:21.336Z",
+        "tentativas": 1
+      },
+      "diagnostico": "retry automático (1/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:13:21.336Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2kpmfm_2",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (npm, wikipedia, duckduckgo)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:13:21.941Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:13:21.941Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2kpmfm_3",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:13:21.941Z",
+        "tentativas": 2
+      },
+      "diagnostico": "retry automático (2/3)",
+      "correcao": "reenfileirada para nova tentativa",
+      "resultado": "pendente",
+      "ts": "2026-09-15T11:13:21.941Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2kpmfm_2",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (npm, wikipedia, duckduckgo)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:13:22.487Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:13:22.487Z"
+    },
+    {
+      "erroRef": {
+        "subtarefaId": "tarefa_mu2kpmfm_3",
+        "erro": "pesquisa indisponível: todos os providers gratuitos tentados sem resultado (wikipedia, duckduckgo, npm)",
+        "tipo": "desconhecido",
+        "ts": "2026-09-15T11:13:22.487Z",
+        "tentativas": 3
+      },
+      "diagnostico": "esgotou tentativas (3/3)",
+      "correcao": "nenhuma — escalada",
+      "resultado": "falha definitiva desta subtarefa",
+      "ts": "2026-09-15T11:13:22.487Z"
+    }
+  ],
+  "progresso": 0,
+  "proximaAcao": "aguardando dependência ou correção de erro",
+  "estadoFinal": {
+    "sucesso": false,
+    "motivo": "sem progresso após múltiplas tentativas — possível dependência impossível de resolver",
+    "ts": "2026-09-15T11:13:22.488Z"
+  },
+  "criadaEm": "2026-09-15T11:13:20.332Z",
+  "atualizadaEm": "2026-09-15T11:13:22.488Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Identificar a versão estável mais recente do Express.",
+    "Verificar a qualidade e atualização da documentação oficial.",
+    "Gerar uma recomendação binária (usar/não usar) com justificativa técnica."
+  ],
+  "entregaveis": [
+    "Relatório breve contendo: versão atual, status da documentação, pros/contras resumidos e recomendação final."
+  ],
+  "criteriosSucesso": [
+    "O relatório traz a versão exata do último release estável.",
+    "A recomendação está fundamentada em fatos citados na pesquisa."
+  ]
+}

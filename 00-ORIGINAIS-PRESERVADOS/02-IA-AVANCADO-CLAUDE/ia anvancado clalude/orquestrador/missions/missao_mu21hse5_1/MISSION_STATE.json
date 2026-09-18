@@ -1,0 +1,157 @@
+{
+  "id": "missao_mu21hse5_1",
+  "objetivo": "Crie um pequeno projeto web de demonstracao.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T02:15:22.108Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T02:15:22.110Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via groq-qwen3.8-27b (3 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T02:15:22.115Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T02:15:22.116Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu21hseb_2",
+      "descricao": "Definir a stack tecnológica leve (ex: HTML5 + CSS3 + Vanilla JS ou React via CDN) e a estrutura de pastas.",
+      "tipo": "arquitetura",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "architecture",
+      "modelo": null,
+      "ferramentas": [],
+      "criterioConclusao": [
+        "Decisão documentada sobre tecnologia",
+        "Estrutura de diretórios definida"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "architect",
+      "contexto": {
+        "objetivo": "Definir a stack tecnológica leve (ex: HTML5 + CSS3 + Vanilla JS ou React via CDN) e a estrutura de pastas.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Decisão documentada sobre tecnologia"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:22.115Z",
+      "atualizadaEm": "2026-09-15T02:15:22.115Z"
+    },
+    {
+      "id": "tarefa_mu21hseb_3",
+      "descricao": "Implementar a estrutura HTML semântica e os estilos CSS responsivos para a interface de demonstração.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21hseb_2"
+      ],
+      "recursoExclusivo": "estrutura-ui",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Visual correto em diferentes tamanhos de janela",
+        "HTML validado e semântico"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Implementar a estrutura HTML semântica e os estilos CSS responsivos para a interface de demonstração.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Visual correto em diferentes tamanhos de janela"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:22.115Z",
+      "atualizadaEm": "2026-09-15T02:15:22.115Z"
+    },
+    {
+      "id": "tarefa_mu21hseb_4",
+      "descricao": "Adicionar a lógica de interação principal (ex: validação de input, toggle de tema, ou lista dinâmica) em JavaScript.",
+      "tipo": "desenvolvimento",
+      "dependeDe": [
+        "tarefa_mu21hseb_2"
+      ],
+      "recursoExclusivo": "logica-js",
+      "status": "bloqueada",
+      "agente": "frontend",
+      "modelo": null,
+      "ferramentas": [
+        "arquivos"
+      ],
+      "criterioConclusao": [
+        "Interação funcional testada manualmente",
+        "Sem erros na console do navegador"
+      ],
+      "precisaPesquisa": false,
+      "justificativaPesquisa": null,
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "frontend",
+      "contexto": {
+        "objetivo": "Adicionar a lógica de interação principal (ex: validação de input, toggle de tema, ou lista dinâmica) em JavaScript.",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "Interação funcional testada manualmente"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T02:15:22.115Z",
+      "atualizadaEm": "2026-09-15T02:15:22.115Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu21hseb_3",
+      "para": "tarefa_mu21hseb_2"
+    },
+    {
+      "de": "tarefa_mu21hseb_4",
+      "para": "tarefa_mu21hseb_2"
+    }
+  ],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T02:15:22.108Z",
+  "atualizadaEm": "2026-09-15T02:15:22.108Z",
+  "modoExecucao": "AUTO"
+}

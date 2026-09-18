@@ -1,0 +1,229 @@
+{
+  "id": "missao_mu20wnk1_1",
+  "objetivo": "Missão de teste da FASE 1",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 2,
+  "estado": "CONCLUIDA",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T01:58:56.063Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T01:58:56.065Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "construindo grafo de tarefas",
+      "ts": "2026-09-15T01:58:56.066Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "2 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T01:58:56.071Z"
+    },
+    {
+      "de": "EXECUTANDO",
+      "para": "TESTANDO",
+      "motivo": "todas as subtarefas concluídas, iniciando validação da missão",
+      "ts": "2026-09-15T01:58:56.123Z"
+    },
+    {
+      "de": "TESTANDO",
+      "para": "REVISANDO",
+      "motivo": "testes passaram, indo para revisão",
+      "ts": "2026-09-15T01:58:56.124Z"
+    },
+    {
+      "de": "REVISANDO",
+      "para": "CONCLUIDA",
+      "motivo": "mock: revisão aprovou",
+      "ts": "2026-09-15T01:58:56.125Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu20wnk2_2",
+      "descricao": "Tarefa A (independente)",
+      "tipo": "texto",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "mock-agent",
+      "modelo": "mock-model",
+      "contexto": {
+        "objetivo": "Tarefa A (independente)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "resultado de Tarefa A (independente)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "execução mock concluída"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T01:58:56.092Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T01:58:56.066Z",
+      "atualizadaEm": "2026-09-15T01:58:56.092Z"
+    },
+    {
+      "id": "tarefa_mu20wnk3_3",
+      "descricao": "Tarefa B (independente)",
+      "tipo": "texto",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "mock-agent",
+      "modelo": "mock-model",
+      "contexto": {
+        "objetivo": "Tarefa B (independente)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "resultado de Tarefa B (independente)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "execução mock concluída"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T01:58:56.092Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T01:58:56.067Z",
+      "atualizadaEm": "2026-09-15T01:58:56.092Z"
+    },
+    {
+      "id": "tarefa_mu20wnk4_4",
+      "descricao": "Tarefa C (depende de A e B)",
+      "tipo": "consolidacao",
+      "dependeDe": [
+        "tarefa_mu20wnk2_2",
+        "tarefa_mu20wnk3_3"
+      ],
+      "recursoExclusivo": null,
+      "status": "concluida",
+      "agente": "mock-agent",
+      "modelo": "mock-model",
+      "contexto": {
+        "objetivo": "Tarefa C (depende de A e B)",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": null
+      },
+      "resultado": {
+        "status": "ok",
+        "resultado": "resultado de Tarefa C (depende de A e B)",
+        "arquivos": [],
+        "erros": [],
+        "evidencias": [
+          "execução mock concluída"
+        ],
+        "testes": [],
+        "recomendacoes": [],
+        "ts": "2026-09-15T01:58:56.123Z"
+      },
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T01:58:56.068Z",
+      "atualizadaEm": "2026-09-15T01:58:56.123Z"
+    }
+  ],
+  "dependencias": [
+    {
+      "de": "tarefa_mu20wnk4_4",
+      "para": "tarefa_mu20wnk2_2"
+    },
+    {
+      "de": "tarefa_mu20wnk4_4",
+      "para": "tarefa_mu20wnk3_3"
+    }
+  ],
+  "agentes": [
+    "mock-agent"
+  ],
+  "modelos": [
+    "mock-model"
+  ],
+  "ferramentas": [],
+  "resultados": [
+    {
+      "tarefaId": "tarefa_mu20wnk2_2",
+      "status": "ok",
+      "resultado": "resultado de Tarefa A (independente)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "execução mock concluída"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T01:58:56.092Z"
+    },
+    {
+      "tarefaId": "tarefa_mu20wnk3_3",
+      "status": "ok",
+      "resultado": "resultado de Tarefa B (independente)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "execução mock concluída"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T01:58:56.092Z"
+    },
+    {
+      "tarefaId": "tarefa_mu20wnk4_4",
+      "status": "ok",
+      "resultado": "resultado de Tarefa C (depende de A e B)",
+      "arquivos": [],
+      "erros": [],
+      "evidencias": [
+        "execução mock concluída"
+      ],
+      "testes": [],
+      "recomendacoes": [],
+      "ts": "2026-09-15T01:58:56.123Z"
+    }
+  ],
+  "testes": [
+    {
+      "subtarefaId": null,
+      "oQue": "validação consolidada da missão",
+      "resultado": "passou",
+      "evidencia": "mock: 3/3 subtarefas com resultado",
+      "ts": "2026-09-15T01:58:56.124Z"
+    }
+  ],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 1,
+  "proximaAcao": "testar resultado consolidado da missão",
+  "estadoFinal": {
+    "sucesso": true,
+    "motivo": "mock: revisão aprovou",
+    "ts": "2026-09-15T01:58:56.125Z"
+  },
+  "criadaEm": "2026-09-15T01:58:56.063Z",
+  "atualizadaEm": "2026-09-15T01:58:56.125Z",
+  "modoExecucao": "AUTO"
+}

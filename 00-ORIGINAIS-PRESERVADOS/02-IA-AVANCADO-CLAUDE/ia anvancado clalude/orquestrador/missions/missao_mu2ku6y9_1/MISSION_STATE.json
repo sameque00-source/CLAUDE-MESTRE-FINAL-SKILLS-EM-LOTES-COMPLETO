@@ -1,0 +1,91 @@
+{
+  "id": "missao_mu2ku6y9_1",
+  "objetivo": "Descubra qual e a versao atual do pacote npm chalk.",
+  "contexto": {},
+  "prioridade": "media",
+  "complexidade": 1,
+  "estado": "EXECUTANDO",
+  "historicoEstados": [
+    {
+      "de": null,
+      "para": "RECEBIDA",
+      "motivo": "criação",
+      "ts": "2026-09-15T11:16:53.552Z"
+    },
+    {
+      "de": "RECEBIDA",
+      "para": "ANALISANDO",
+      "motivo": "objetivo recebido, iniciando análise",
+      "ts": "2026-09-15T11:16:53.554Z"
+    },
+    {
+      "de": "ANALISANDO",
+      "para": "PLANEJANDO",
+      "motivo": "plano decomposto automaticamente via google-gemini-flash-lite-latest (1 tarefa(s), complexidade=simples)",
+      "ts": "2026-09-15T11:16:53.559Z"
+    },
+    {
+      "de": "PLANEJANDO",
+      "para": "EXECUTANDO",
+      "motivo": "1 tarefa(s) pronta(s) para execução imediata",
+      "ts": "2026-09-15T11:16:53.560Z"
+    }
+  ],
+  "subtarefas": [
+    {
+      "id": "tarefa_mu2ku6yf_2",
+      "descricao": "Consultar a versão mais recente do pacote npm chalk no registro oficial",
+      "tipo": "pesquisa",
+      "dependeDe": [],
+      "recursoExclusivo": null,
+      "status": "pendente",
+      "agente": "research",
+      "modelo": null,
+      "ferramentas": [
+        "terminal",
+        "api"
+      ],
+      "criterioConclusao": [
+        "A string correspondente à versão atual do chalk foi obtida com sucesso"
+      ],
+      "precisaPesquisa": true,
+      "justificativaPesquisa": "A versão de pacotes npm muda constantemente e requer consulta em tempo real",
+      "decisaoUsuario": false,
+      "motivoDecisaoUsuario": null,
+      "agenteFuncaoSugerida": "researcher",
+      "contexto": {
+        "objetivo": "Consultar a versão mais recente do pacote npm chalk no registro oficial",
+        "arquivos": [],
+        "dependencias": [],
+        "resultadoEsperado": "A string correspondente à versão atual do chalk foi obtida com sucesso"
+      },
+      "resultado": null,
+      "tentativas": 0,
+      "criadaEm": "2026-09-15T11:16:53.559Z",
+      "atualizadaEm": "2026-09-15T11:16:53.559Z"
+    }
+  ],
+  "dependencias": [],
+  "agentes": [],
+  "modelos": [],
+  "ferramentas": [],
+  "resultados": [],
+  "testes": [],
+  "erros": [],
+  "correcoes": [],
+  "progresso": 0,
+  "proximaAcao": "analisar objetivo",
+  "estadoFinal": null,
+  "criadaEm": "2026-09-15T11:16:53.552Z",
+  "atualizadaEm": "2026-09-15T11:16:53.552Z",
+  "modoExecucao": "AUTO",
+  "requisitos": [
+    "Acessar o registro do npm para obter a informação atualizada"
+  ],
+  "entregaveis": [
+    "Número da versão atual do pacote npm chalk"
+  ],
+  "criteriosSucesso": [
+    "A versão atual do pacote chalk foi identificada corretamente e informada ao usuário"
+  ]
+}
