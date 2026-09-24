@@ -1,0 +1,189 @@
+{
+  "folders": [
+    {
+      "name": "CLAUDE CODE VS AUTO ULTIMATE",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+      "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+      },
+      "Command Prompt": {
+        "path": [
+          "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+      },
+      "Git Bash": {
+        "source": "Git Bash",
+        "icon": "terminal-bash"
+      }
+    },
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "claudeCode.preferredLocation": "sidebar",
+    "claudeCode.useTerminal": false,
+    "claudeCode.autosave": true,
+    "claudeCode.respectGitIgnore": true,
+    "claudeCode.hideOnboarding": true,
+    "claudeCode.enableReopenClosedSessionShortcut": true,
+    "files.exclude": {
+      "**/logs/*.log": true,
+      "**/.claude-flow/system": true
+    },
+    "files.eol": "\r\n",
+    "editor.tabSize": 2,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/logs": true,
+      "**/.claude-flow": true
+    },
+    "powershell.promptToUpdatePowerShell": false,
+    "git.openRepositoryInParentFolders": "never"
+  },
+  "extensions": {
+    "recommendations": [
+      "anthropic.claude-code",
+      "ms-vscode.powershell"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Verificar ambiente (tudo)",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "${workspaceFolder}\\scripts\\verificar-ambiente.ps1"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "group": "diag"
+        },
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Verificar 9Router",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "${workspaceFolder}\\scripts\\verificar-9router.ps1"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "group": "diag"
+        }
+      },
+      {
+        "label": "Verificar imperion-dev",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "${workspaceFolder}\\scripts\\verificar-imperion-dev.ps1"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "group": "diag"
+        }
+      },
+      {
+        "label": "Verificar Ruflo",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "${workspaceFolder}\\scripts\\verificar-ruflo.ps1"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "group": "diag"
+        }
+      },
+      {
+        "label": "Verificar agentes",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "${workspaceFolder}\\scripts\\verificar-agentes.ps1"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "group": "diag"
+        }
+      },
+      {
+        "label": "Verificar MCP",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "${workspaceFolder}\\scripts\\verificar-mcp.ps1"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "group": "diag"
+        }
+      },
+      {
+        "label": "Verificar Claude Code (estável)",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "${workspaceFolder}\\scripts\\verificar-claude-code.ps1"
+        ],
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "group": "diag"
+        }
+      }
+    ]
+  }
+}

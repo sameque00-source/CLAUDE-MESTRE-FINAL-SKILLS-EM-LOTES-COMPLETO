@@ -1,0 +1,649 @@
+{
+  "_meta": {
+    "generated_at": "2026-09-13",
+    "source": "pesquisa em documentação oficial (Groq, Google AI Studio, OpenRouter, Cloudflare Workers AI, Pollinations.ai, ElevenLabs, Cerebras, DeepSeek, xAI, Mistral, Together AI, HuggingFace, GitHub Models) via agente de pesquisa em 2026-09-13",
+    "rule": "nenhuma entrada com requires_card=true ou free=false é elegível para roteamento automático. Nenhuma chamada de API real foi testada ainda (PENDENTE — NÃO TESTADO).",
+    "note_video": "Não existe opção de geração de vídeo gratuita e estável confirmada em 2026-09. Gap real do mercado, não falha de pesquisa.",
+    "refresh_policy": "catálogo do OpenRouter :free muda com frequência — o router deve consultar https://openrouter.ai/api/v1/models dinamicamente antes de confiar em nomes fixos aqui; este arquivo é o fallback offline. O catálogo do Google também muda rápido: gemini-2.5-flash/-pro foram descontinuados para contas novas entre a pesquisa (2026-09-13) e a validação real (2026-09-14) — sempre validar por execução real antes de confiar em nomes de modelo documentados.",
+    "tools_note": "Campo tools verificado por execucao real em 2026-09-14 (nao e suposicao). Modelos sem o campo tools_verificado_em nunca foram testados para tool-calling."
+  },
+  "models": [
+    {
+      "id": "groq-gpt-oss-120b",
+      "provider": "Groq",
+      "model": "openai/gpt-oss-120b",
+      "modality": [
+        "text"
+      ],
+      "context_window": 131072,
+      "coding_score": "forte",
+      "reasoning_score": "forte",
+      "vision": false,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "muito alta (LPU Groq)",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "30 RPM / 1000 RPD / 8000 TPM / 200000 TPD",
+      "health": "ok",
+      "health_checked_at": "2026-09-13",
+      "health_evidence": "chamada real via chat/completions, HTTP 200, total_time 0.025s",
+      "priority": 90,
+      "level_tags": [
+        2,
+        3,
+        4
+      ],
+      "endpoint": "https://api.groq.com/openai/v1",
+      "docs_url": "https://console.groq.com/docs/rate-limits",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO",
+      "max_request_tokens": 7000,
+      "notes_limit": "Groq free tier: 8000 tokens/minuto. Pedidos maiores recebem HTTP 413 (confirmado em teste real 2026-09-13).",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos"
+    },
+    {
+      "id": "groq-qwen3.8-27b",
+      "provider": "Groq",
+      "model": "qwen/qwen3.8-27b",
+      "modality": [
+        "text"
+      ],
+      "context_window": 32768,
+      "coding_score": "boa",
+      "reasoning_score": "boa",
+      "vision": false,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "muito alta",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "30 RPM / 1000 RPD / 8000 TPM / 200000 TPD",
+      "health": "unknown",
+      "priority": 70,
+      "level_tags": [
+        0,
+        1,
+        2
+      ],
+      "endpoint": "https://api.groq.com/openai/v1",
+      "docs_url": "https://console.groq.com/docs/rate-limits",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO",
+      "max_request_tokens": 7000,
+      "notes_limit": "Groq free tier: 8000 tokens/minuto. Pedidos maiores recebem HTTP 413 (confirmado em teste real 2026-09-13).",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos"
+    },
+    {
+      "id": "groq-compound",
+      "provider": "Groq",
+      "model": "groq/compound",
+      "modality": [
+        "text"
+      ],
+      "context_window": null,
+      "coding_score": "boa",
+      "reasoning_score": "boa",
+      "vision": false,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "alta",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "30 RPM / 250 RPD / 70000 TPM",
+      "health": "unknown",
+      "priority": 15,
+      "level_tags": [
+        3,
+        4
+      ],
+      "endpoint": "https://api.groq.com/openai/v1",
+      "docs_url": "https://console.groq.com/docs/rate-limits",
+      "notes": "tem web search e code exec embutidos (bom p/ nível 3 sem precisar de agente externo)",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO",
+      "max_request_tokens": 7000,
+      "notes_limit": "Groq free tier: 8000 tokens/minuto. Pedidos maiores recebem HTTP 413 (confirmado em teste real 2026-09-13).",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos",
+      "telemetria": "2026-09-14: 0/9 sucesso. Prioridade rebaixada por telemetria (nao desabilitado: pode ser so lentidao, nao defeito)."
+    },
+    {
+      "id": "groq-whisper-large-v3-turbo",
+      "provider": "Groq",
+      "model": "whisper-large-v3-turbo",
+      "modality": [
+        "audio_stt"
+      ],
+      "context_window": null,
+      "coding_score": null,
+      "reasoning_score": null,
+      "vision": false,
+      "tools": false,
+      "agent_capable": false,
+      "speed_tps": "alta",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "20 RPM / 2000 RPD / 7200 ASH / 28800 ASD",
+      "health": "unknown",
+      "priority": 80,
+      "level_tags": [
+        "audio"
+      ],
+      "endpoint": "https://api.groq.com/openai/v1/audio/transcriptions",
+      "docs_url": "https://console.groq.com/docs/rate-limits",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "modelo de audio (STT), nao aplicavel a tool-calling"
+    },
+    {
+      "id": "google-gemini-flash-latest",
+      "provider": "Google AI Studio",
+      "model": "gemini-flash-latest",
+      "modality": [
+        "text",
+        "vision",
+        "audio_in",
+        "video_in"
+      ],
+      "context_window": 1048576,
+      "coding_score": "forte",
+      "reasoning_score": "forte",
+      "vision": true,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "alta",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "conta confirmada em Nivel gratuito (aistudio.google.com/rate-limit); numero exato de RPD nao exposto na UI para conta nova",
+      "health": "ok",
+      "health_checked_at": "2026-09-14",
+      "health_evidence": "chamada real generateContent, HTTP 200, 1237ms, projeto sem faturamento configurado",
+      "priority": 90,
+      "level_tags": [
+        2,
+        3,
+        "vision"
+      ],
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+      "docs_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "notes": "gemini-2.5-flash/-pro foram DESCONTINUADOS para contas novas (HTTP 404 confirmado em 2026-09-14, API recomenda esta familia). gemini-3.1-pro-preview aparece na lista de modelos mas NAO foi testado - pricing.md indicava pago, evitar ate confirmar.",
+      "source_checked_at": "2026-09-14",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos"
+    },
+    {
+      "id": "google-gemini-flash-lite-latest",
+      "provider": "Google AI Studio",
+      "model": "gemini-flash-lite-latest",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": 1048576,
+      "coding_score": "boa",
+      "reasoning_score": "boa",
+      "vision": true,
+      "tools": true,
+      "agent_capable": false,
+      "speed_tps": "muito alta",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "conta em Nivel gratuito (ver nota acima)",
+      "health": "ok",
+      "health_checked_at": "2026-09-14",
+      "health_evidence": "chamada real generateContent, HTTP 200, 872ms",
+      "priority": 80,
+      "level_tags": [
+        0,
+        1
+      ],
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+      "docs_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "source_checked_at": "2026-09-14",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos"
+    },
+    {
+      "id": "google-gemini-3.6-flash",
+      "provider": "Google AI Studio",
+      "model": "gemini-3.6-flash",
+      "modality": [
+        "text",
+        "vision",
+        "audio_in",
+        "video_in"
+      ],
+      "context_window": 1048576,
+      "coding_score": "muito forte",
+      "reasoning_score": "muito forte",
+      "vision": true,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "alta",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "conta em Nivel gratuito (ver nota acima)",
+      "health": "ok",
+      "health_checked_at": "2026-09-14",
+      "health_evidence": "chamada real generateContent, HTTP 200, 1371ms",
+      "priority": 95,
+      "level_tags": [
+        3,
+        4
+      ],
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+      "docs_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "notes": "modelo geracao mais recente confirmado gratuito nesta conta; melhor candidato a 'muito forte/raciocinio'",
+      "source_checked_at": "2026-09-14",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos"
+    },
+    {
+      "id": "google-gemini-3.1-flash-lite",
+      "provider": "Google AI Studio",
+      "model": "gemini-3.1-flash-lite",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": 1048576,
+      "coding_score": "simples",
+      "reasoning_score": "simples",
+      "vision": true,
+      "tools": true,
+      "agent_capable": false,
+      "speed_tps": "media",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "conta em Nivel gratuito (ver nota acima)",
+      "health": "ok",
+      "health_checked_at": "2026-09-14",
+      "health_evidence": "chamada real generateContent, HTTP 200, 2755ms (mais lento que os outros nesta amostra)",
+      "priority": 60,
+      "level_tags": [
+        0,
+        1
+      ],
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+      "docs_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "source_checked_at": "2026-09-14",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos"
+    },
+    {
+      "id": "openrouter-nemotron-3-ultra-550b",
+      "provider": "OpenRouter",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "modality": [
+        "text"
+      ],
+      "context_window": 1000000,
+      "coding_score": "boa",
+      "reasoning_score": "forte",
+      "vision": false,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "media",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "20 RPM; 50 RPD sem credito",
+      "max_request_tokens": null,
+      "health": "unknown",
+      "priority": 15,
+      "level_tags": [
+        3,
+        4
+      ],
+      "endpoint": "https://openrouter.ai/api/v1",
+      "docs_url": "https://openrouter.ai/docs/api-reference/limits",
+      "source_checked_at": "2026-09-14",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos",
+      "telemetria": "2026-09-14: 0/8 sucesso, sempre timeout em 20s. Prioridade rebaixada por telemetria (nao desabilitado: pode ser so lentidao, nao defeito)."
+    },
+    {
+      "id": "openrouter-nemotron-3-super-120b",
+      "provider": "OpenRouter",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "modality": [
+        "text"
+      ],
+      "context_window": 262144,
+      "coding_score": "boa",
+      "reasoning_score": "boa",
+      "vision": false,
+      "tools": true,
+      "agent_capable": false,
+      "speed_tps": "media",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "20 RPM; 50-1000 RPD (ver acima)",
+      "health": "unknown",
+      "priority": 92,
+      "level_tags": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "endpoint": "https://openrouter.ai/api/v1",
+      "docs_url": "https://openrouter.ai/docs/api-reference/limits",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos",
+      "telemetria": "2026-09-14: 19/20 sucesso real, o mais confiavel do pool. Promovido a todos os niveis por evidencia, nao por suposicao."
+    },
+    {
+      "id": "openrouter-nex-n2.5-pro",
+      "provider": "OpenRouter",
+      "model": "nex-agi/nex-n2.5-pro:free",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": 262144,
+      "coding_score": "nao confirmado",
+      "reasoning_score": "nao confirmado",
+      "vision": true,
+      "tools": "nao confirmado",
+      "agent_capable": false,
+      "speed_tps": "media",
+      "free": false,
+      "requires_card": false,
+      "daily_limit": "20 RPM; 50-1000 RPD",
+      "health": "ruim",
+      "priority": 50,
+      "level_tags": [
+        "vision"
+      ],
+      "endpoint": "https://openrouter.ai/api/v1",
+      "docs_url": "https://openrouter.ai/docs/api-reference/limits",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO",
+      "health_checked_at": "2026-09-14",
+      "health_evidence": "chamada real chat/completions, HTTP 200, conteudo correto, MAS latencia de 120s (2 testes consecutivos) -- inadequado para roteamento interativo. Desabilitado (free:false) para nunca ser elegivel, sem apagar o registro."
+    },
+    {
+      "id": "cloudflare-llama-3.2-3b",
+      "provider": "Cloudflare Workers AI",
+      "model": "@cf/meta/llama-3.2-3b-instruct",
+      "modality": [
+        "text"
+      ],
+      "context_window": null,
+      "coding_score": "simples",
+      "reasoning_score": "simples",
+      "vision": false,
+      "tools": "nao confirmado",
+      "agent_capable": false,
+      "speed_tps": "alta",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "10000 Neurons/dia (plano Workers Free, sem cartao)",
+      "health": "unknown",
+      "priority": 55,
+      "level_tags": [
+        0,
+        1
+      ],
+      "endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/platform/pricing",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "id": "cloudflare-llama-3.2-11b-vision",
+      "provider": "Cloudflare Workers AI",
+      "model": "@cf/meta/llama-3.2-11b-vision-instruct",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": null,
+      "coding_score": "simples",
+      "reasoning_score": "simples",
+      "vision": true,
+      "tools": "nao confirmado",
+      "agent_capable": false,
+      "speed_tps": "media",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "10000 Neurons/dia (compartilhado)",
+      "health": "unknown",
+      "priority": 45,
+      "level_tags": [
+        "vision"
+      ],
+      "endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/platform/pricing",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "id": "cloudflare-flux-1-schnell",
+      "provider": "Cloudflare Workers AI",
+      "model": "@cf/black-forest-labs/flux-1-schnell",
+      "modality": [
+        "image_gen"
+      ],
+      "context_window": null,
+      "vision": false,
+      "tools": false,
+      "agent_capable": false,
+      "speed_tps": null,
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "dentro dos 10000 Neurons/dia (poucas dezenas de imagens)",
+      "health": "unknown",
+      "priority": 50,
+      "level_tags": [
+        "image_fallback"
+      ],
+      "endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/platform/pricing",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "id": "pollinations-flux",
+      "provider": "Pollinations.ai",
+      "model": "flux",
+      "modality": [
+        "image_gen"
+      ],
+      "context_window": null,
+      "vision": false,
+      "tools": false,
+      "agent_capable": false,
+      "speed_tps": null,
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "anonimo: 1 req/15s (com marca d'agua); registrado (Seed tier, gratis): 1 req/5s sem marca d'agua",
+      "health": "unknown",
+      "priority": 80,
+      "level_tags": [
+        "image"
+      ],
+      "endpoint": "https://image.pollinations.ai",
+      "docs_url": "https://github.com/pollinations/pollinations/blob/master/APIDOCS.md",
+      "notes": "sem login necessario para uso basico",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "id": "pollinations-turbo",
+      "provider": "Pollinations.ai",
+      "model": "turbo",
+      "modality": [
+        "image_gen"
+      ],
+      "context_window": null,
+      "vision": false,
+      "tools": false,
+      "agent_capable": false,
+      "speed_tps": null,
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "igual ao flux",
+      "health": "unknown",
+      "priority": 60,
+      "level_tags": [
+        "image_fallback"
+      ],
+      "endpoint": "https://image.pollinations.ai",
+      "docs_url": "https://github.com/pollinations/pollinations/blob/master/APIDOCS.md",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "id": "elevenlabs-tts-free",
+      "provider": "ElevenLabs",
+      "model": "tts-free-tier",
+      "modality": [
+        "audio_tts"
+      ],
+      "context_window": null,
+      "vision": false,
+      "tools": false,
+      "agent_capable": false,
+      "speed_tps": null,
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "10000 creditos/mes",
+      "health": "unknown",
+      "priority": 70,
+      "level_tags": [
+        "audio"
+      ],
+      "endpoint": "https://api.elevenlabs.io/v1",
+      "docs_url": "https://elevenlabs.io/pricing",
+      "source_checked_at": "2026-09-13",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "id": "ninerouter-imperion-dev",
+      "provider": "9Router",
+      "model": "imperion-dev",
+      "modality": [
+        "text"
+      ],
+      "context_window": 200000,
+      "coding_score": "boa",
+      "reasoning_score": "boa",
+      "vision": false,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "media",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "depende dos provedores internos do combo (OpenCode/Cloudflare/Groq)",
+      "health": "ok",
+      "health_checked_at": "2026-09-14",
+      "health_evidence": "chamada real /v1/chat/completions HTTP 200 via combo imperion-dev",
+      "priority": 25,
+      "level_tags": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "endpoint": "http://127.0.0.1:20128/v1",
+      "docs_url": "local",
+      "notes": "Backup local. Combo com fallback proprio de 17 modelos. Cota independente da Groq/Google.",
+      "source_checked_at": "2026-09-14",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos",
+      "telemetria": "2026-09-14: 2/20 sucesso (lento com payload grande). Mantido: e o unico backup local independente."
+    },
+    {
+      "id": "openrouter-nemotron-3.5-lightning",
+      "provider": "OpenRouter",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "modality": [
+        "text"
+      ],
+      "context_window": 1000000,
+      "coding_score": "boa",
+      "reasoning_score": "forte",
+      "vision": false,
+      "tools": true,
+      "agent_capable": true,
+      "speed_tps": "media (pool compartilhado)",
+      "free": true,
+      "requires_card": false,
+      "daily_limit": "20 RPM; 50 RPD sem credito / 1000 RPD com saldo (conta sem saldo real, so 0 travado)",
+      "max_request_tokens": null,
+      "health": "ok",
+      "health_checked_at": "2026-09-14",
+      "health_evidence": "chamada real chat/completions, HTTP 200, 694ms, chave com Key limit $0",
+      "priority": 15,
+      "level_tags": [
+        3,
+        4
+      ],
+      "endpoint": "https://openrouter.ai/api/v1",
+      "docs_url": "https://openrouter.ai/docs/api-reference/limits",
+      "notes": "catalogo :free do OpenRouter muda com frequencia -- adapter recusa qualquer modelo sem sufixo :free por seguranca.",
+      "source_checked_at": "2026-09-14",
+      "confidence": "CONFIRMADO",
+      "tools_verificado_em": "2026-09-14",
+      "tools_evidencia": "chamada real com tools: devolveu bloco tool_use com argumentos corretos",
+      "telemetria": "2026-09-14: 0/8 sucesso, sempre timeout em 20s. Prioridade rebaixada por telemetria (nao desabilitado: pode ser so lentidao, nao defeito)."
+    }
+  ],
+  "excluded": [
+    {
+      "provider": "Cerebras",
+      "reason": "Free Trial exige cartao verificado para liberar $5 em creditos que expiram em 30 dias; FAQ oficial confirma que nao ha tier permanentemente gratis.",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "provider": "GitHub Models",
+      "reason": "Servico encerrado permanentemente em 30/07/2026.",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "provider": "DeepSeek API",
+      "reason": "Nenhum tier gratuito encontrado na documentacao atual de precos.",
+      "confidence": "CONFIRMADO_AUSENCIA"
+    },
+    {
+      "provider": "xAI (Grok)",
+      "reason": "Nenhuma mencao a free tier; pago desde o primeiro token.",
+      "confidence": "CONFIRMADO_AUSENCIA"
+    },
+    {
+      "provider": "Together AI",
+      "reason": "Pagina de pricing atual nao menciona trial/credito gratuito.",
+      "confidence": "CONFIRMADO_AUSENCIA"
+    },
+    {
+      "provider": "Mistral (La Plateforme)",
+      "reason": "Estado do tier gratuito da API pura nao confirmado (doc 404); nao incluir ate verificar.",
+      "confidence": "PRECISA_VERIFICACAO"
+    },
+    {
+      "provider": "HuggingFace Inference Providers",
+      "reason": "Free tier e apenas $0.10/mes em creditos - simbolico demais para ser fonte primaria; manter so como fallback de teste.",
+      "confidence": "CONFIRMADO"
+    },
+    {
+      "provider": "*",
+      "reason": "Nenhuma opcao de geracao de VIDEO gratuita e estavel encontrada em 2026-09. Gap de mercado real.",
+      "confidence": "CONFIRMADO_AUSENCIA"
+    }
+  ]
+}
